@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Override>
+<!-- 
+SingleRoundSkillGainMultiplier:
+  All skill gains are multiplied when playing a single round (i.e. any other game mode than campaign) 
+  
+SkillIncreasePerRepair:
+  Skill gained for repairing a device. Divided by the character's current skill, 
+  so a character with a skill level 10 will be able to increase the skill twice as fast as a lvl 20 character.
+  
+SkillIncreasePerSabotage:
+  Skill gained for sabotaging a device as a traitor. Works the same as SkillIncreasePerRepair.
+  
+SkillIncreasePerCprRevive:
+  Skill gained when reviving someone with CPR. 
+  
+SkillIncreasePerRepairedStructureDamage:
+  Skill gained per amount of repaired structure damage. Divided by the character's current skill.
+  
+SkillIncreasePerSecondWhenSteering:
+  Skill gained per second when operating a nav terminal. Divided by the character's current skill.
+  
+SkillIncreasePerFabricatorRequiredSkill:
+  Skill gained when fabricating an item. Multiplied by the skill requirements of fabricating the item,
+  and divided by the character's current skill. For example, if fabricating an item requires a mechanical skill of 50,
+  this value is set to 1, and a character with a mechanical skill of 25 fabricates the item, their skill increases by 1 * 25 / 50 = 0.5.
+-->
+
+<SkillSettings
+  SingleRoundSkillGainMultiplier="8.0"
+  SkillIncreasePerRepair="10.0"
+  SkillIncreasePerCprRevive="1"
+  SkillIncreasePerRepairedStructureDamage="0.01"
+  SkillIncreasePerSecondWhenSteering="0.008"
+  SkillIncreasePerFabricatorRequiredSkill="1"
+  />
+</Override>

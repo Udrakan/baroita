@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Override>
+<Character speciesname="Watcher" humanoid="false">
+
+  <ragdolls folder="default"/>
+  <animations folder="default"/>
+
+  <bloodemitter particle="blood" particleamount="10" scalemin="1" scalemax="2"/>
+  <bloodemitter particle="waterblood" particleamount="1" scalemin="1" scalemax="2"/>
+  <gibemitter particle="gib" particleamount="30" velocitymin="200" velocitymax="1500" anglemin="0" anglemax="360" scalemin="1" scalemax="2"/>
+  <gibemitter particle="heavygib" particleamount="15" velocitymin="50" velocitymax="1000" anglemin="0" anglemax="360" scalemin="1" scalemax="2"/>
+
+  <health
+    vitality="1000"
+    doesbleed="true"/>
+
+  <sound file="Content/Characters/Watcher/attack1.ogg" state="Attack" range="500"/>
+  <sound file="Content/Characters/Watcher/attack2.ogg" state="Attack" range="500"/>
+  <sound file="Content/Characters/Watcher/attack3.ogg" state="Attack" range="500"/>
+  
+  <sound file="Content/Characters/Watcher/watch1.ogg" state="Idle" range="500"/>
+  <sound file="Content/Characters/Watcher/watch2.ogg" state="Idle" range="500"/>
+  <sound file="Content/Characters/Watcher/watch3.ogg" state="Idle" range="500"/>
+  <sound file="Content/Characters/Watcher/watch4.ogg" state="Idle" range="500"/>
+  <sound file="Content/Characters/Watcher/watch5.ogg" state="Idle" range="500"/>
+  <sound file="Content/Characters/Watcher/watch6.ogg" state="Idle" range="500"/>
+
+  <ai
+    combatstrength="1000"
+    attackwhenprovoked="true"
+    sight="1.0"
+    hearing="0.0">
+    <target tag="decoy" state="Attack" priority="600" />
+    <target tag="stronger" state="Escape" priority="15" />
+    <target tag="sonar" state="Attack" priority="10" />
+    <target tag="human" state="Idle" priority="10"/>
+    <target tag="light" state="Idle" priority="10"/>
+    <target tag="room" state="Attack" priority="10" />
+  </ai>
+
+</Character>
+</Override>

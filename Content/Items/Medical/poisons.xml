@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+<Items>
+
+  <!-- ********************************************************************************************* -->
+  <!-- ****************************************Poisons********************************************** -->
+  <!-- ********************************************************************************************* -->
+  
+  <!-- Name: Morbusine -->
+  <!-- Description: A highly potent neurotoxin. -->
+  <!-- *************************************************************************************************************************************************************************** -->
+  <Morbusine name="" identifier="morbusine" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="toxcab" spawnprobability="0.01"/>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="90">
+      <RequiredSkill identifier="medical" level="58" />
+      <RequiredItem identifier="sulphuricacid" />
+      <RequiredItem identifier="deusizine" count="2" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="sulphuricacid" copycondition="true" mincondition="0.1" />
+      <Item identifier="deusizine" copycondition="true" mincondition="0.1" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,640,64,64" origin="0.5,0.5" />
+    <Sprite texture="Medicines.png" sourcerect="311,120,62,115" depth="0.6" origin="0.5,0.5" />
+    <Body width="60" height="110" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
+      <StatusEffect tags="poison" type="OnUse" target="Character">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Affliction identifier="morbusinepoisoning" amount="1" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90">
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="poison" type="OnImpact" target="Character">
+        <Affliction identifier="morbusinepoisoning" amount="1" />
+      </StatusEffect>
+    </Projectile>
+  </Morbusine>
+
+  <!-- Name: Chloral Hydrate -->
+  <!-- Description: A sedative that can be used to knock someone out for a short period of time. -->
+  <!-- *************************************************************************************************************************************************************************** -->
+  <ChloralHydrate name="" identifier="chloralhydrate" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="toxcab" minamount="0" maxamount="3"/>
+    <Price locationtype="Research" buyprice="2100" />
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="90">
+      <RequiredSkill identifier="medical" level="50" />
+      <RequiredItem identifier="chlorine" />
+      <RequiredItem identifier="ethanol" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="chlorine" copycondition="true" mincondition="0.1" />
+      <Item identifier="ethanol" copycondition="true" mincondition="0.1" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,704,64,64" origin="0.5,0.5" />
+    <Sprite texture="Medicines.png" sourcerect="126,232,67,124" depth="0.6" origin="0.5,0.5" />
+    <Body width="65" height="120" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="Limb">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Affliction identifier="internaldamage" amount="1" />
+        <Affliction identifier="stun" amount="10.0" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90">
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="Limb">
+        <Affliction identifier="internaldamage" amount="1" />
+        <Affliction identifier="stun" amount="10.0" />
+      </StatusEffect>
+    </Projectile>
+  </ChloralHydrate>
+
+  <!-- Name: Cyanide -->
+  <!-- Description: A highly potent neurotoxin. -->
+  <!-- *************************************************************************************************************************************************************************** -->
+  <Cyanide name="" identifier="cyanide" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="toxcab" spawnprobability="0.05"/>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="90">
+      <RequiredSkill identifier="medical" level="54" />
+      <RequiredItem identifier="chloralhydrate" />
+      <RequiredItem identifier="sodium" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="chloralhydrate" copycondition="true" mincondition="0.1" />
+      <Item identifier="sodium" copycondition="true" mincondition="0.1" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,640,64,64" origin="0.5,0.5" />
+    <Sprite texture="Medicines.png" sourcerect="63,117,62,115" depth="0.6" origin="0.5,0.5" />
+    <Body width="60" height="110" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
+      <StatusEffect tags="poison" type="OnUse" target="Character">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Affliction identifier="cyanidepoisoning" amount="1" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90">
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="poison" type="OnImpact" target="Character">
+        <Affliction identifier="cyanidepoisoning" amount="1" />
+      </StatusEffect>
+    </Projectile>
+  </Cyanide>
+
+  <!-- Name: Radiotoxin -->
+  <!-- Description: A highly potent neurotoxin. FIX ME FIX ME FIX ME -->
+  <!-- *************************************************************************************************************************************************************************** -->
+  <Radiotoxin name="" identifier="radiotoxin" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="toxcab" spawnprobability="0.05"/>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="90">
+      <RequiredSkill identifier="medical" level="56" />
+      <RequiredItem identifier="thorium" />
+      <RequiredItem identifier="uranium" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="thorium" copycondition="true" mincondition="0.1" />
+      <Item identifier="thorium" copycondition="true" mincondition="0.1" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,448,64,64" origin="0.5,0.5" />
+    <Sprite texture="Medicines.png" sourcerect="0,115,62,115" depth="0.6" origin="0.5,0.5" />
+    <Body width="60" height="110" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
+      <StatusEffect tags="poison" type="OnUse" target="Character" duration="5">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Affliction identifier="radiationsickness" amount="8" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90">
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="poison" type="OnImpact" target="Character" duration="5">
+        <Affliction identifier="radiationsickness" amount="4" />
+      </StatusEffect>
+    </Projectile>
+  </Radiotoxin>
+
+  <!-- Name: Sufforin -->
+  <!-- Description: A highly potent neurotoxin. -->
+  <!-- *************************************************************************************************************************************************************************** -->
+  <Sufforin name="" identifier="sufforin" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="toxcab" spawnprobability="0.05"/>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="90">
+      <RequiredSkill identifier="medical" level="60" />
+      <RequiredItem identifier="sulphuricacid" />
+      <RequiredItem identifier="flashpowder" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="sulphuricacid" copycondition="true" mincondition="0.1" />
+      <Item identifier="flashpowder" copycondition="true" mincondition="0.1" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,640,64,64" origin="0.5,0.5" />
+    <Sprite texture="Medicines.png" sourcerect="188,120,62,115" depth="0.6" origin="0.5,0.5" />
+    <Body width="60" height="110" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
+      <StatusEffect tags="poison" type="OnUse" target="Character">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Affliction identifier="sufforinpoisoning" amount="1" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90">
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="poison" type="OnImpact" target="Character">
+        <Affliction identifier="sufforinpoisoning" amount="1" />
+      </StatusEffect>
+    </Projectile>
+  </Sufforin>
+  
+  <!-- Name: Deliriumine -->
+  <!-- Description: A psychosis-inducing toxin. -->
+  <!-- *************************************************************************************************************************************************************************** -->
+  <Deliriumine name="" identifier="deliriumine" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="toxcab" spawnprobability="0.05"/>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="90">
+      <RequiredSkill identifier="medical" level="50" />
+      <RequiredItem identifier="dementonite" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="dementonite" copycondition="true" mincondition="0.1" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,704,64,64" origin="0.5,0.5" />
+    <Sprite texture="Medicines.png" sourcerect="378,239,62,115" depth="0.6" origin="0.5,0.5" />
+    <Body width="60" height="110" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
+      <StatusEffect tags="poison" type="OnUse" target="Character">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Affliction identifier="deliriuminepoisoning" amount="1" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90">
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="poison" type="OnImpact" target="Character">
+        <Affliction identifier="deliriuminepoisoning" amount="1" />
+      </StatusEffect>
+    </Projectile>
+  </Deliriumine>
+  
+</Items>
+</Override>

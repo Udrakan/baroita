@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+ <Override>
+  <Item name="" identifier="fuelrod" Tags="smallitem,reactorfuel" cargocontaineridentifier="metalcrate" scale="0.5">
+    <PreferredContainer primary="reactorcab" minamount="2" maxamount="5" spawnprobability="1" />
+    <Price locationtype="Military" buyprice="4500" />
+    <Price locationtype="Research" buyprice="4500" />
+    <Price locationtype="City" buyprice="4200" />
+    <Price locationtype="Outpost" buyprice="4500" />
+    <Price locationtype="Mine" buyprice="3900" />
+    <Deconstruct time="10">
+      <Item identifier="steel"/>
+      <Item identifier="lead" />
+      <Item identifier="uranium" copycondition="true"/>
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="uranium" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="lead" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Tools/tools_new.png" depth="0.55" sourcerect="371,3,19,68" />
+    <Body radius="6" width="20" height="70" density="5" />
+    <Holdable handle1="0,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
+	</Holdable>
+	</Item>
+	</Override>
+</Items>
