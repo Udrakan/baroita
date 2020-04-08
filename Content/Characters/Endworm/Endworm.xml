@@ -16,11 +16,10 @@
     <sound file="Content/Characters/Endworm/ENDWORM_damage3.ogg" state="Damage" range="8000" volume="1000" gender="None" />
     <sound file="Content/Characters/Endworm/ENDWORM_death1.ogg" state="Die" range="8000" volume="1000" gender="None" />
     <ai combatstrength="10000" sight="10" hearing="20" aggressionhurt="100" aggressiongreed="10" fleehealththreshold="0" attackwhenprovoked="False" avoidgunfire="False" aggressiveboarding="False">
-      <target tag="decoy" state="Attack" priority="600" reactdistance="0" />
-      <target tag="room" state="Attack" priority="100" reactdistance="0" />
-      <target tag="sonar" state="Attack" priority="80" reactdistance="0" />
-      <target tag="stronger" state="Attack" priority="30" reactdistance="0" />
-      <target tag="human" state="Attack" priority="120" reactdistance="0" />
+      <target tag="decoy" state="Attack" priority="600" reactdistance="50000" />
+      <target tag="room" state="Attack" priority="100" reactdistance="20000" />
+      <target tag="sonar" state="Attack" priority="80" reactdistance="50000" />
+      <target tag="human" state="Attack" priority="120" reactdistance="5000" />
     </ai>
   </Character>
 </Override>
