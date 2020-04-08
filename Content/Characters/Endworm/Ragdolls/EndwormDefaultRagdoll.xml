@@ -41,20 +41,20 @@
   </limb>
   <limb id="8" width="50" height="100" name="Limb 8" type="None" spriteorientation="NaN" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" attackpriority="1" steerforce="0" radius="100" density="10" ignorecollisions="False" angulardamping="7" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" notes="" healthindex="0" friction="0.3" restitution="0.05">
     <sprite sourcerect="755,552,137,470" depth="0.08" origin="0.5,0.5" texture="" />
-    <attack range="500" hitdetectiontype="Distance" duration="1" force="100" torque="-100" structuredamage="500" structuresoundtype="Pressure" context="NotDefined" targettype="Structure" targetlimbtype="None" afterattack="FallBack" reverse="False" damagerange="500" cooldown="30" secondarycooldown="0" cooldownrandomfactor="0" itemdamage="500" stun="0" onlyhumans="False" applyforceonlimbs="" applyforcesonlyonce="False" targetimpulse="1000" targetimpulseworld="0,0" targetforce="1000" targetforceworld="0,0" severlimbsprobability="0" priority="0">
+    <attack range="500" hitdetectiontype="Contact" duration="1" force="100" torque="-100" structuredamage="500" structuresoundtype="Pressure" context="NotDefined" targettype="Structure" targetlimbtype="None" afterattack="FallBackUntilCanAttack" reverse="False" damagerange="500" cooldown="15" secondarycooldown="0" cooldownrandomfactor="0" itemdamage="500" stun="0" onlyhumans="False" applyforceonlimbs="" applyforcesonlyonce="False" targetimpulse="1000" targetimpulseworld="0,0" targetforce="1000" targetforceworld="0,0" severlimbsprobability="0" priority="0">
       <StatusEffect type="OnUse" target="This">
         <Explosion range="10000" stun="0" force="1.5" flames="false" shockwave="false" sparks="false" underwaterbubble="false">
-          <Affliction identifier="blunttrauma" strength="300" />
+          <Affliction identifier="blunttrauma" strength="150" />
         </Explosion>
       </StatusEffect>
     </attack>
   </limb>
   <limb id="9" width="50" height="100" name="Limb 9" type="None" spriteorientation="0" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" attackpriority="1" steerforce="0" radius="100" density="10" ignorecollisions="False" angulardamping="7" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" notes="" healthindex="0" friction="0.3" restitution="0.05">
     <sprite sourcerect="891,552,137,470" depth="0.08" origin="0.6072997,0.5" texture="" />
-    <attack range="500" hitdetectiontype="Distance" duration="1" force="100" torque="100" structuredamage="500" structuresoundtype="Pressure" context="NotDefined" targettype="Structure" targetlimbtype="None" afterattack="FallBack" reverse="False" damagerange="500" cooldown="30" secondarycooldown="0" cooldownrandomfactor="0" itemdamage="0" stun="0" onlyhumans="False" applyforceonlimbs="" applyforcesonlyonce="False" targetimpulse="1000" targetimpulseworld="0,0" targetforce="1000" targetforceworld="0,0" severlimbsprobability="0" priority="0">
+    <attack range="500" hitdetectiontype="Contact" duration="1" force="100" torque="100" structuredamage="500" structuresoundtype="Pressure" context="NotDefined" targettype="Structure" targetlimbtype="None" afterattack="FallBackUntilCanAttack" reverse="False" damagerange="500" cooldown="15" secondarycooldown="0" cooldownrandomfactor="0" itemdamage="0" stun="0" onlyhumans="False" applyforceonlimbs="" applyforcesonlyonce="False" targetimpulse="1000" targetimpulseworld="0,0" targetforce="1000" targetforceworld="0,0" severlimbsprobability="0" priority="0">
       <StatusEffect type="OnUse" target="This">
         <Explosion range="10000" stun="0" force="1.5" flames="false" shockwave="false" sparks="false" underwaterbubble="false">
-          <Affliction identifier="blunttrauma" strength="300" />
+          <Affliction identifier="blunttrauma" strength="150" />
         </Explosion>
       </StatusEffect>
     </attack>

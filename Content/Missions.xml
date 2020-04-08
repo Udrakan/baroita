@@ -1,13 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Override>
 <Missions>
+
+   <MonsterMission
+    name="Beast from the Abyss"
+    identifier="killendworm"
+    type="Monster"
+    description="Seismic readings are indicating that something colossal has emerged from the depths of Europa. A reward of 20,000 has been promised to those who get rid of whatever is causing the seismic activity."
+    commonness="2147483647"
+    reward="20000"
+    sonarlabel="Target"
+    successmessage="The Endworm is dead. The tremors have ceased and the Europan crater is a much safer place due to your heroic actions."
+    monsterfile="Endworm">
+
+    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,512,256,256" color="214,50,48"/>
+    <LocationType from="Research" to="Mine"/>
+    <LocationType from="City" to="Centre"/>
+    <LocationType from="Military" to="Centre"/>
+    <LocationType from="Outpost" to="Centre"/>
+    <LocationType from="Research" to="Centre"/>
+	<LocationType from="None" to="Centre"/>
+	<LocationType from="Lair" to="Centre"/>
+	<LocationType from="Centre" to="Centre"/>
+    
+    <message header="Target terminated" text="The beast is dead. Navigate the submarine out of the cavern to claim the reward."/>
+    
+  </MonsterMission>
+
   <SalvageMission 
     name="Salvaging an artifact" 
     identifier="salvageskyholderartifactruins"
     type="Salvage"
     description="[location1] want you to salvage an artifact."
     commonness="25"
-    reward="3000"
+    reward="4000"
     achievementidentifier="artifactmission"
     sonarlabel="Infrasonic signal"
     sonaricon="artifact"
@@ -18,7 +44,7 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
 	
-    <LocationType from="City" to="Research"/>        
+    <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -27,8 +53,10 @@
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
     <LocationType from="Research" to="Lair"/>
+	<LocationType from="Military" to="None"/>
 	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
+	<LocationType from="None" to="None"/>
 
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
@@ -40,7 +68,7 @@
     type="Salvage"
     description="Researchers of [location1] have picked up an infrasonic signal similar to other alien tech. Grab it for them."
     commonness="12"
-    reward="3000"
+    reward="4000"
     achievementidentifier="artifactmission"
     sonarlabel="Infrasonic signal"
     sonaricon="artifact"
@@ -51,7 +79,7 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
     
-    <LocationType from="City" to="Research"/>        
+    <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -60,8 +88,10 @@
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
     <LocationType from="Research" to="Lair"/>
+	<LocationType from="Military" to="None"/>
 	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
+	<LocationType from="None" to="None"/>
 
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
@@ -73,7 +103,7 @@
     type="Salvage"
     description="Researchers of [location1] have picked up an infrasonic signal similar to other alien tech. Investigate the signal and retrieve the potential artifact."
     commonness="25"
-    reward="3000"
+    reward="4000"
     achievementidentifier="artifactmission"
     sonarlabel="Infrasonic signal"
     sonaricon="artifact"
@@ -84,7 +114,7 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
 
-    <LocationType from="City" to="Research"/>        
+    <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -93,8 +123,10 @@
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
     <LocationType from="Research" to="Lair"/>
+	<LocationType from="Military" to="None"/>
 	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
+	<LocationType from="None" to="None"/>
 
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
@@ -117,7 +149,7 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
 
-    <LocationType from="City" to="Research"/>        
+     <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -126,8 +158,10 @@
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
     <LocationType from="Research" to="Lair"/>
+	<LocationType from="Military" to="None"/>
 	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
+	<LocationType from="None" to="None"/>
 
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
@@ -150,7 +184,7 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
 
-    <LocationType from="City" to="Research"/>        
+     <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -159,8 +193,10 @@
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
     <LocationType from="Research" to="Lair"/>
+	<LocationType from="Military" to="None"/>
 	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
+	<LocationType from="None" to="None"/>
 
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
@@ -172,7 +208,7 @@
     type="Salvage"
     description="Researchers of [location1] have picked up an infrasonic signal similar to other alien tech. Investigate the signal and retrieve the potential artifact."
     commonness="12"
-    reward="3000"
+    reward="4000"
     achievementidentifier="artifactmission"
     sonarlabel="Infrasonic signal"
     sonaricon="artifact"
@@ -183,7 +219,7 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,0,256,256" color="49,93,233"/>
     
-    <LocationType from="City" to="Research"/>        
+    <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -192,8 +228,10 @@
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
     <LocationType from="Research" to="Lair"/>
+	<LocationType from="Military" to="None"/>
 	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
+	<LocationType from="None" to="None"/>
     
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
@@ -250,7 +288,7 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,0,256,256" color="49,93,233"/>
     
-    <LocationType from="City" to="Research"/>        
+    <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -259,8 +297,10 @@
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
     <LocationType from="Research" to="Lair"/>
+	<LocationType from="Military" to="None"/>
 	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
+	<LocationType from="None" to="None"/>
     
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
@@ -283,7 +323,7 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,0,256,256" color="49,93,233"/>
 
-    <LocationType from="City" to="Research"/>        
+    <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -292,8 +332,10 @@
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
     <LocationType from="Research" to="Lair"/>
+	<LocationType from="Military" to="None"/>
 	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
+	<LocationType from="None" to="None"/>
 	
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
@@ -316,7 +358,7 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,0,256,256" color="49,93,233"/>
 
-    <LocationType from="City" to="Research"/>        
+    <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -325,8 +367,11 @@
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
     <LocationType from="Research" to="Lair"/>
+	<LocationType from="Military" to="None"/>
 	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
+	<LocationType from="None" to="None"/>
+	
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
 
@@ -337,7 +382,7 @@
     type="Monster"
     description="A particularly aggressive Moloch has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to those who kill the creature."
     commonness="25"
-    reward="8000"
+    reward="7500"
     sonarlabel="Moloch"
     maxsonarmarkerdistance="10000"
     successmessage="The Moloch has been killed."
@@ -345,19 +390,24 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,512,256,256" color="214,50,48"/>
             
-    <LocationType from="Outpost" to="None"/>
-    <LocationType from="Outpost" to="Military"/>
-    <LocationType from="Outpost" to="Lair"/>
-    
-    <LocationType from="Military" to="None"/>
-    <LocationType from="Military" to="Lair"/>
+    <LocationType from="Military" to="Military"/>
 
-	<LocationType from="None" to="City"/>
-	<LocationType from="None" to="Outpost"/>
-	<LocationType from="None" to="Research"/>
-	<LocationType from="None" to="Mine"/>
-	<LocationType from="None" to="Military"/>
+    <LocationType from="Military" to="Mine"/>	
+
+	<LocationType from="Military" to="Lair"/>
+
+    <LocationType from="Research" to="Lair"/>
+
+    <LocationType from="City" to="Lair"/>
+	
+    <LocationType from="Mine" to="Lair"/>
+        
+    <LocationType from="Outpost" to="Lair"/>
+	
 	<LocationType from="None" to="Lair"/>
+	
+	<LocationType from="Lair" to="Lair"/>
+
     
     <message header="Target terminated" text="The moloch is dead. Navigate the submarine out of the cavern to claim the reward."/>
   </MonsterMission>
@@ -379,36 +429,24 @@
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 
 
-    <LocationType from="Outpost" to="None"/>
-    <LocationType from="Outpost" to="Lair"/>
-
-    <LocationType from="Military" to="None"/>
-    <LocationType from="Military" to="City"/>
-    <LocationType from="Military" to="Outpost"/>
     <LocationType from="Military" to="Military"/>
-    <LocationType from="Military" to="Research"/>
-    <LocationType from="Military" to="Mine"/>
-    <LocationType from="Military" to="Lair"/>
 
-    <LocationType from="Research" to="None"/>
+    <LocationType from="Military" to="Mine"/>	
+
+	<LocationType from="Military" to="Lair"/>
+
     <LocationType from="Research" to="Lair"/>
 
-    <LocationType from="Mine" to="None"/>
+    <LocationType from="City" to="Lair"/>
+	
     <LocationType from="Mine" to="Lair"/>
+        
+    <LocationType from="Outpost" to="Lair"/>
 	
-	<LocationType from="Lair" to="City"/>
-	<LocationType from="Lair" to="Outpost"/>
-	<LocationType from="Lair" to="Research"/>
-	<LocationType from="Lair" to="Mine"/>
-	<LocationType from="Lair" to="Military"/>
-	<LocationType from="Lair" to="None"/>
-	
-	<LocationType from="None" to="City"/>
-	<LocationType from="None" to="Outpost"/>
-	<LocationType from="None" to="Research"/>
-	<LocationType from="None" to="Mine"/>
-	<LocationType from="None" to="Military"/>
 	<LocationType from="None" to="Lair"/>
+	
+	<LocationType from="Lair" to="Lair"/>
+
     
     <message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward."/>
   </MonsterMission>
@@ -427,46 +465,31 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,768,256,256" color="214,50,48"/>
     
-    <LocationType from="City" to="None"/>
-    <LocationType from="City" to="City"/>
-    <LocationType from="City" to="Outpost"/>
-    <LocationType from="City" to="Military"/>
-    <LocationType from="City" to="Research"/>
-    <LocationType from="City" to="Mine"/>
-    <LocationType from="City" to="Lair"/>
-        
-
-    <LocationType from="Outpost" to="City"/>
-    <LocationType from="Outpost" to="Outpost"/>
-    <LocationType from="Outpost" to="Military"/>
-    <LocationType from="Outpost" to="Research"/>
-    <LocationType from="Outpost" to="Mine"/>
-
-    
-
     <LocationType from="Military" to="City"/>
     <LocationType from="Military" to="Outpost"/>
     <LocationType from="Military" to="Military"/>
     <LocationType from="Military" to="Research"/>
-    <LocationType from="Military" to="Mine"/>
+    <LocationType from="Military" to="Mine"/>	
 
-    
+	<LocationType from="Military" to="None"/>
+	<LocationType from="Military" to="Lair"/>
 
-    <LocationType from="Research" to="City"/>
-    <LocationType from="Research" to="Outpost"/>
-    <LocationType from="Research" to="Military"/>
-    <LocationType from="Research" to="Research"/>
-    <LocationType from="Research" to="Mine"/>
+    <LocationType from="Research" to="None"/>
+    <LocationType from="Research" to="Lair"/>
 
-    
+    <LocationType from="City" to="None"/>
+    <LocationType from="City" to="Lair"/>
+	
+	<LocationType from="Mine" to="None"/>
+    <LocationType from="Mine" to="Lair"/>
+        
+	<LocationType from="Outpost" to="None"/>
+    <LocationType from="Outpost" to="Lair"/>
 
-    <LocationType from="Mine" to="City"/>
-    <LocationType from="Mine" to="Outpost"/>
-    <LocationType from="Mine" to="Military"/>
-    <LocationType from="Mine" to="Research"/>
-    <LocationType from="Mine" to="Mine"/>
-
-    
+    <LocationType from="None" to="None"/>
+	<LocationType from="None" to="Outpost"/>
+	<LocationType from="None" to="Mine"/>
+   
     <message header="Target terminated" text="The Hammerhead is dead. Navigate the submarine out of the cavern to claim the reward."/>
 
   </MonsterMission>
@@ -486,35 +509,30 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,768,256,256" color="214,50,48"/>
 
-    <LocationType from="City" to="City"/>
-    <LocationType from="City" to="Outpost"/>
-    <LocationType from="City" to="Military"/>
-    <LocationType from="City" to="Research"/>
-    <LocationType from="City" to="Mine"/>
-        
-    <LocationType from="Outpost" to="City"/>
-    <LocationType from="Outpost" to="Outpost"/>
-    <LocationType from="Outpost" to="Military"/>
-    <LocationType from="Outpost" to="Research"/>
-    <LocationType from="Outpost" to="Mine"/>
-
     <LocationType from="Military" to="City"/>
     <LocationType from="Military" to="Outpost"/>
     <LocationType from="Military" to="Military"/>
     <LocationType from="Military" to="Research"/>
-    <LocationType from="Military" to="Mine"/>
+    <LocationType from="Military" to="Mine"/>	
 
-    <LocationType from="Research" to="City"/>
-    <LocationType from="Research" to="Outpost"/>
-    <LocationType from="Research" to="Military"/>
-    <LocationType from="Research" to="Research"/>
-    <LocationType from="Research" to="Mine"/>
+	<LocationType from="Military" to="None"/>
+	<LocationType from="Military" to="Lair"/>
 
-    <LocationType from="Mine" to="City"/>
-    <LocationType from="Mine" to="Outpost"/>
-    <LocationType from="Mine" to="Military"/>
-    <LocationType from="Mine" to="Research"/>
-    <LocationType from="Mine" to="Mine"/>
+    <LocationType from="Research" to="None"/>
+    <LocationType from="Research" to="Lair"/>
+
+    <LocationType from="City" to="None"/>
+    <LocationType from="City" to="Lair"/>
+	
+	<LocationType from="Mine" to="None"/>
+    <LocationType from="Mine" to="Lair"/>
+        
+	<LocationType from="Outpost" to="None"/>
+    <LocationType from="Outpost" to="Lair"/>
+	
+	<LocationType from="None" to="None"/>
+	<LocationType from="None" to="Outpost"/>
+	<LocationType from="None" to="Mine"/>
 
     <message header="Target terminated" text="The Hammerhead is dead. Navigate the submarine out of the cavern to claim the reward."/>
 
@@ -536,42 +554,24 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 
+    <LocationType from="Military" to="Military"/>
 
-    <LocationType from="Outpost" to="None"/>
+    <LocationType from="Military" to="Mine"/>	
 
-
-    <LocationType from="Outpost" to="Military"/>
-
-    <LocationType from="Outpost" to="Mine"/>
-    <LocationType from="Outpost" to="Lair"/>
-
-    <LocationType from="Military" to="None"/>
-
-    <LocationType from="Military" to="Outpost"/>
-
-    <LocationType from="Military" to="Lair"/>
-
-    <LocationType from="Research" to="None"/>
+	<LocationType from="Military" to="Lair"/>
 
     <LocationType from="Research" to="Lair"/>
 
-    <LocationType from="Mine" to="None"/>
-
+    <LocationType from="City" to="Lair"/>
+	
     <LocationType from="Mine" to="Lair"/>
+        
+    <LocationType from="Outpost" to="Lair"/>
 	
-
-
-	<LocationType from="Lair" to="Research"/>
-	<LocationType from="Lair" to="Mine"/>
-	<LocationType from="Lair" to="Military"/>
-	<LocationType from="Lair" to="None"/>
-	
-
-
-	<LocationType from="None" to="Research"/>
-	<LocationType from="None" to="Mine"/>
-	<LocationType from="None" to="Military"/>
 	<LocationType from="None" to="Lair"/>
+	
+	<LocationType from="Lair" to="Lair"/>
+
 
   </MonsterMission>
 
@@ -592,36 +592,24 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 
-    <LocationType from="Outpost" to="None"/>
+    <LocationType from="Military" to="Military"/>
 
-    <LocationType from="Outpost" to="Military"/>
+    <LocationType from="Military" to="Mine"/>	
 
-    <LocationType from="Outpost" to="Mine"/>
-    <LocationType from="Outpost" to="Lair"/>
-
-    <LocationType from="Military" to="None"/>
-
-    <LocationType from="Military" to="Outpost"/>
-
-    <LocationType from="Military" to="Lair"/>
-
-    <LocationType from="Research" to="None"/>
+	<LocationType from="Military" to="Lair"/>
 
     <LocationType from="Research" to="Lair"/>
 
-    <LocationType from="Mine" to="None"/>
-
+    <LocationType from="City" to="Lair"/>
+	
     <LocationType from="Mine" to="Lair"/>
+        
+    <LocationType from="Outpost" to="Lair"/>
 	
-	<LocationType from="Lair" to="Research"/>
-	<LocationType from="Lair" to="Mine"/>
-	<LocationType from="Lair" to="Military"/>
-	<LocationType from="Lair" to="None"/>
-	
-	<LocationType from="None" to="Research"/>
-	<LocationType from="None" to="Mine"/>
-	<LocationType from="None" to="Military"/>
 	<LocationType from="None" to="Lair"/>
+	
+	<LocationType from="Lair" to="Lair"/>
+
 
   </MonsterMission>
   
@@ -640,43 +628,165 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
 
-    <LocationType from="City" to="None"/>
+    <LocationType from="Military" to="Military"/>
 
-    <LocationType from="City" to="Lair"/>
-        
-    <LocationType from="Outpost" to="None"/>
+    <LocationType from="Military" to="Mine"/>	
 
-    <LocationType from="Outpost" to="Lair"/>
-    
-    <LocationType from="Military" to="None"/>
-
-    <LocationType from="Military" to="Lair"/>
-    
-    <LocationType from="Research" to="None"/>
+	<LocationType from="Military" to="Lair"/>
 
     <LocationType from="Research" to="Lair"/>
-    
-    <LocationType from="Mine" to="None"/>
 
-    <LocationType from="Mine" to="Lair"/> 
+    <LocationType from="City" to="Lair"/>
 	
-	<LocationType from="Lair" to="City"/>
-	<LocationType from="Lair" to="Outpost"/>
-	<LocationType from="Lair" to="Research"/>
-	<LocationType from="Lair" to="Mine"/>
-	<LocationType from="Lair" to="Military"/>
-	<LocationType from="Lair" to="None"/>
+    <LocationType from="Mine" to="Lair"/>
+        
+    <LocationType from="Outpost" to="Lair"/>
 	
-	<LocationType from="None" to="City"/>
-	<LocationType from="None" to="Outpost"/>
-	<LocationType from="None" to="Research"/>
-	<LocationType from="None" to="Mine"/>
-	<LocationType from="None" to="Military"/>
 	<LocationType from="None" to="Lair"/>
+	
+	<LocationType from="Lair" to="Lair"/>
+
 
     <message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward."/>
 
   </MonsterMission>
+  
+    <MonsterMission
+    name="Terminate a Swarm"
+    identifier="killmudraptorswarm"
+    type="Monster"
+    description="A large swarm of mudraptors has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it."
+    commonness="35"
+    reward="4000"
+    sonarlabel="Swarm"
+    maxsonarmarkerdistance="10000"
+    successmessage="The swarm has been terminated."
+    monsterfile="Mudraptor"
+    monstercount="15" >
+
+    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
+
+    <LocationType from="Military" to="Military"/>
+
+    <LocationType from="Military" to="Mine"/>	
+
+	<LocationType from="Military" to="Lair"/>
+
+    <LocationType from="Research" to="Lair"/>
+
+    <LocationType from="City" to="Lair"/>
+	
+    <LocationType from="Mine" to="Lair"/>
+        
+    <LocationType from="Outpost" to="Lair"/>
+	
+	<LocationType from="None" to="Lair"/>
+	
+	<LocationType from="Lair" to="Lair"/>
+
+
+    <message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward."/>
+
+  </MonsterMission>
+  
+    <MonsterMission
+    name="Terminate a Swarm"
+    identifier="killcrawlerswarm2"
+    type="Monster"
+    description="A large swarm of crawlers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it."
+    commonness="35"
+    reward="2000"
+    sonarlabel="Swarm"
+    maxsonarmarkerdistance="10000"
+    successmessage="The swarm has been terminated."
+    monsterfile="Crawler"
+    monstercount="15" >
+
+    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
+
+    <LocationType from="Military" to="City"/>
+    <LocationType from="Military" to="Outpost"/>
+    <LocationType from="Military" to="Military"/>
+    <LocationType from="Military" to="Research"/>
+    <LocationType from="Military" to="Mine"/>	
+
+	<LocationType from="Military" to="None"/>
+	<LocationType from="Military" to="Lair"/>
+
+    <LocationType from="Research" to="None"/>
+    <LocationType from="Research" to="Lair"/>
+
+    <LocationType from="City" to="None"/>
+    <LocationType from="City" to="Lair"/>
+	
+	<LocationType from="Mine" to="None"/>
+    <LocationType from="Mine" to="Lair"/>
+        
+	<LocationType from="Outpost" to="None"/>
+    <LocationType from="Outpost" to="Lair"/>
+	
+	<LocationType from="None" to="None"/>
+	<LocationType from="None" to="Outpost"/>
+	<LocationType from="None" to="Mine"/>
+
+    <message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward."/>
+
+  </MonsterMission>
+ 
+<!--LOW DIFFICULTY MONSTER MISSIONS
+    <LocationType from="Military" to="City"/>
+    <LocationType from="Military" to="Outpost"/>
+    <LocationType from="Military" to="Military"/>
+    <LocationType from="Military" to="Research"/>
+    <LocationType from="Military" to="Mine"/>	
+
+	<LocationType from="Military" to="None"/>
+	<LocationType from="Military" to="Lair"/>
+
+    <LocationType from="Research" to="None"/>
+    <LocationType from="Research" to="Lair"/>
+
+    <LocationType from="City" to="None"/>
+    <LocationType from="City" to="Lair"/>
+	
+	<LocationType from="Mine" to="None"/>
+    <LocationType from="Mine" to="Lair"/>
+        
+	<LocationType from="Outpost" to="None"/>
+    <LocationType from="Outpost" to="Lair"/>
+	
+	<LocationType from="None" to="None"/>
+	<LocationType from="None" to="Outpost"/>
+	<LocationType from="None" to="Mine"/>
+	
+-->	
+
+<!--  HIGH DIFFICULTY MONSTER MISSIONS
+	
+    <LocationType from="Military" to="Military"/>
+
+    <LocationType from="Military" to="Mine"/>	
+
+	<LocationType from="Military" to="Lair"/>
+
+    <LocationType from="Research" to="Lair"/>
+
+    <LocationType from="City" to="Lair"/>
+	
+    <LocationType from="Mine" to="Lair"/>
+        
+    <LocationType from="Outpost" to="Lair"/>
+	
+	<LocationType from="None" to="Lair"/>
+	
+	<LocationType from="Lair" to="Lair"/>
+-->
+
+
+
+
+
+
 
 
    <!--  <MonsterMission
@@ -769,9 +879,9 @@
   
   <CargoMission
     name="Military Supplies"
-    identifier="cargocompoundn"
+    identifier="cargomil1"
     type="Cargo"
-    description="Deliver explosives to [location2]."
+    description="Ressuply [location2] with explosives."
     commonness="45"
     reward="1100"
     achievementidentifier="cargomission"
@@ -798,7 +908,7 @@
 
   <CargoMission
     name="Military supplies"
-    identifier="cargovolatilecompoundn"
+    identifier="cargomil2"
     type="Cargo"
     description="Deliver explosives to [location2]."
     commonness="15"
@@ -854,7 +964,14 @@
     <LocationType from="Research" to="Outpost"/>
     <LocationType from="Research" to="Military"/>
     <LocationType from="Research" to="Research"/>
-    <LocationType from="Research" to="Mine"/>     
+    <LocationType from="Research" to="Mine"/>   
+
+    <LocationType from="City" to="City"/>
+    <LocationType from="City" to="Outpost"/>
+    <LocationType from="City" to="Military"/>
+    <LocationType from="City" to="Research"/>
+    <LocationType from="City" to="Mine"/>   
+	
 
   </CargoMission>
 

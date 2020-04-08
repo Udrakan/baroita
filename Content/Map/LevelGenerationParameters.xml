@@ -5,7 +5,7 @@
     <Biome
       identifier="coldcaverns"
       name="Cold Caverns"
-      description=""
+      description="HELLO THERE"
       AllowedZones="1" />
     <Biome
       identifier="europanridge"
@@ -21,18 +21,18 @@
       identifier="thegreatvoid"
       name="The Great Void"
       description=""
-      AllowedZones="4" />
+      AllowedZones="4,5" />
     <Biome
       identifier="hydrothermalwastes"
       name="Hydrothermal Wastes"
       description=""
-      AllowedZones="5,6" />
+      AllowedZones="6" />
     <!-- TODO: "END ZONE" -->
   </Biomes>
   <ColdCavernsTutorial
     biomes="None"
     height="30000"
-    levelobjectamount="100"
+    levelobjectamount="0"
     ambientlightcolor="3,3,3,3"
     backgroundtexturecolor="20,40,50,255"
     backgroundcolor="54,60,72,255"
@@ -78,8 +78,8 @@
   </ColdCavernsTutorial>
   <ColdCavernsBasic
     biomes="coldcaverns"
-    height="120000"
-    levelobjectamount="1000"
+    height="50000"
+    levelobjectamount="0"
     ambientlightcolor="3,3,3,3"
     backgroundtexturecolor="20,40,50,255"
     backgroundcolor="54,60,72,255"
@@ -92,18 +92,18 @@
     cellroundingamount="0.5"
     cellirregularity="0.1"
     mainpathnodeintervalrange="10000,30000"
-    smalltunnelcount="5"
+    smalltunnelcount="0"
     smalltunnellengthrange="10000,20000"
-    itemcount="10"
+    itemcount="0"
     floatingicechunkcount="0"
-    seafloordepth="-300000"
+    seafloordepth="-500000"
     seafloorvariance="1000"
     mountaincountmin="0"
     mountaincountmax="3"
     mountainheightmin="10000"
     mountainheightmax="20000"
     ruincount="1"
-    bottomholeprobability="1"
+    bottomholeprobability="0.2"
     waterparticlescale="1">
     <Background
       texture="Content/Map/iceBackgroundFade.png" />
@@ -125,23 +125,23 @@
   </ColdCavernsBasic>
   <ColdCavernsMaze
     biomes="coldcaverns"
-    height="100000"
-    levelobjectamount="1000"
+    height="60000"
+    levelobjectamount="0"
     ambientlightcolor="3,3,3,3"
     backgroundtexturecolor="20,40,50,255"
     backgroundcolor="27,30,36,255"
     wallcolor="192,192,192,255"
-    minwidth="60000"
-    maxwidth="60000"
+    minwidth="200000"
+    maxwidth="300000"
     voronoisiteinterval="1500,1500"
     voronoisitevariance="700,700"
     cellsubdivisionlength="1000"
     cellroundingamount="0.5"
     cellirregularity="0.1"
     mainpathnodeintervalrange="20000,30000"
-    smalltunnelcount="10"
+    smalltunnelcount="0"
     smalltunnellengthrange="5000,50000"
-    itemcount="10"
+    itemcount="0"
     floatingicechunkcount="0"
     seafloordepth="-300000"
     seafloorvariance="20000"
@@ -149,8 +149,8 @@
     mountaincountmax="3"
     mountainheightmin="10000"
     mountainheightmax="20000"
-    ruincount="3"
-    bottomholeprobability="1"
+    ruincount="1"
+    bottomholeprobability="0.2"
     waterparticlescale="1">
     <Background
       texture="Content/Map/iceBackgroundFade.png" />
@@ -173,7 +173,7 @@
   <RidgeBasic
     biomes="europanridge"
     height="80000"
-    levelobjectamount="1500"
+    levelobjectamount="10"
     ambientlightcolor="3,3,3,3"
     backgroundtexturecolor="20,40,50,255"
     backgroundcolor="27,30,36,255"
@@ -186,7 +186,7 @@
     cellroundingamount="0.5"
     cellirregularity="0.1"
     mainpathnodeintervalrange="6000,10000"
-    smalltunnelcount="10"
+    smalltunnelcount="0"
     smalltunnellengthrange="5000,50000"
     itemcount="10"
     floatingicechunkcount="3"
@@ -196,8 +196,8 @@
     mountaincountmax="1"
     mountainheightmin="80000"
     mountainheightmax="100000"
-    ruincount="3"
-    bottomholeprobability="1"
+    ruincount="1"
+    bottomholeprobability="0.75"
     waterparticlescale="1">
     <Background
       texture="Content/Map/iceBackgroundFade.png" />
@@ -220,8 +220,8 @@
   <PlateauBasic
     biomes="theaphoticplateau"
     height="50000"
-    levelobjectamount="1000"
-    ambientlightcolor="3,3,3,3"
+    levelobjectamount="20"
+    ambientlightcolor="1,1,1,3"
     backgroundtexturecolor="20,20,10,255"
     backgroundcolor="20,20,10,255"
     wallcolor="75,75,60,255"
@@ -233,9 +233,9 @@
     cellroundingamount="0.5"
     cellirregularity="0.1"
     mainpathnodeintervalrange="10000,20000"
-    smalltunnelcount="5"
+    smalltunnelcount="0"
     smalltunnellengthrange="5000,10000"
-    itemcount="10"
+    itemcount="30"
     floatingicechunkcount="0"
     seafloordepth="-1000000"
     seafloorvariance="500"
@@ -267,22 +267,22 @@
   <VoidBasic
     biomes="thegreatvoid"
     height="25000"
-    levelobjectamount="800"
-    ambientlightcolor="3,3,3,3"
+    levelobjectamount="0"
+    ambientlightcolor="0,0,0,0"
     backgroundtexturecolor="20,40,50,255"
     backgroundcolor="54,60,72,255"
     wallcolor="148,163,162,255"
-    minwidth="100000"
-    maxwidth="200000"
+    minwidth="200000"
+    maxwidth="300000"
     voronoisiteinterval="2000,2000"
     voronoisitevariance="800,800"
     cellsubdivisionlength="1000"
     cellroundingamount="0.5"
     cellirregularity="0.1"
     mainpathnodeintervalrange="5000,10000"
-    smalltunnelcount="3"
+    smalltunnelcount="0"
     smalltunnellengthrange="10000,20000"
-    itemcount="1"
+    itemcount="40"
     floatingicechunkcount="20"
     seafloordepth="-1500000"
     seafloorvariance="1000"
@@ -314,7 +314,7 @@
   <WastesBasic
     biomes="hydrothermalwastes"
     height="60000"
-    levelobjectamount="1000"
+    levelobjectamount="0"
     ambientlightcolor="3,3,3,3"
     backgroundtexturecolor="100,20,0,255"
     backgroundcolor="200,75,75,255"
@@ -327,7 +327,7 @@
     cellroundingamount="0.5"
     cellirregularity="0.1"
     mainpathnodeintervalrange="6000,10000"
-    smalltunnelcount="1"
+    smalltunnelcount="0"
     smalltunnellengthrange="5000,50000"
     itemcount="1"
     floatingicechunkcount="0"
