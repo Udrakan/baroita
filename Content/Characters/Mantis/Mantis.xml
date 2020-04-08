@@ -3,7 +3,7 @@
 <Character speciesname="Mantis" humanoid="False" group="" husk="False" needsair="False" canspeak="False" noise="100" blooddecal="blood" eatingspeed="10">
   <ragdolls />
   <animations />
-  <health vitality="250" doesbleed="false" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="1" burnreduction="0" constanthealthregeneration="1" healthregenerationwheneating="1" />
+  <health vitality="200" doesbleed="false" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="1" burnreduction="0" constanthealthregeneration="0" healthregenerationwheneating="1" />
   <bloodemitter particle="blood" particleamount="1" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
   <bloodemitter particle="waterblood" particleamount="1" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
   <damageemitter particle="brownchunks" particleamount="10" velocitymin="50" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" />
@@ -22,10 +22,10 @@
     <latchonto attachtowalls="true" attachtosub="false" />
     <target tag="decoy" state="Attack" priority="600" />
     <target tag="provocative" state="Attack" priority="200" />
-    <target tag="nasonov" state="Attack" priority="200" />
+    <target tag="nasonov" state="Attack" priority="500" />
     <target tag="light" state="Attack" priority="80" />
-    <target tag="human" state="Attack" priority="100" />
-    <target tag="weapon" state="Attack" priority="100" />
+    <target tag="human" state="Attack" priority="400" />
+    <target tag="weapon" state="Attack" priority="430" />
     <target tag="tool" state="Aggressive" priority="50" reactdistance="100"/>
     <target tag="stronger" state="Avoid" priority="50" reactdistance="100"/>
     <target tag="dead" state="Eat" priority="10" />
