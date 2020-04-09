@@ -18,7 +18,7 @@ Heres a sneakpeak at whats waiting for you in the centre node (max mission diffi
 <https://imgur.com/gallery/gaqhywX>  
 Enjoy!  
 
-##UPDATE 2
+## UPDATE 2
 -NEW CENTRE NODE FOR ENDWORM FIGHT
 -new mission for the Endworm node
 -new mudraptor swarm mission for 8000 credits
