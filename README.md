@@ -19,24 +19,24 @@ Heres a sneakpeak at whats waiting for you in the centre node (max mission diffi
 Enjoy!  
 
 ## UPDATE 2
--NEW CENTRE NODE FOR ENDWORM FIGHT
--new mission for the Endworm node
--new mudraptor swarm mission for 8000 credits
--changed mission availability:
-  -easier missions on the outer rings
-  -harder missions towards the mid and centre
-  -transportation missions between outposts
-  -toughest missions are for the Breeding grounds
-  -missions available for all nodes (fixed)
--changed store goods availability
-  -removed logic components from stores
-  -removed all the wire variants from stores
-  -advanced military goods only at military outposts
-  -advanced research goods only at research outposts
--adrenaline now cures Stun!
--spawns now include the new vanilla moloch, crawler and husked crawler
--mantises have 20% less HP and spawn later in the game
--revised the monster spawning (still hellish!)
+- NEW CENTRE NODE FOR ENDWORM FIGHT
+- new mission for the Endworm node
+- new mudraptor swarm mission for 8000 credits
+- changed mission availability:
+  - easier missions on the outer rings
+  - harder missions towards the mid and centre
+  - transportation missions between outposts
+  - toughest missions are for the Breeding grounds
+  - missions available for all nodes (fixed)
+- changed store goods availability
+  - removed logic components from stores
+  - removed all the wire variants from stores
+  - advanced military goods only at military outposts
+  - advanced research goods only at research outposts
+- adrenaline now cures Stun!
+- spawns now include the new vanilla moloch, crawler and husked crawler
+- mantises have 20% less HP and spawn later in the game
+- revised the monster spawning (still hellish!)
 Rip&Tear until it is done.
 
 ### How to install:
