@@ -161,6 +161,7 @@
 			<SuitableTreatment identifier="bitewounds" suitability="50" />
 			<SuitableTreatment identifier="gunshotwound" suitability="50" />
 			<SuitableTreatment identifier="huskinfection" suitability="50" />
+			<SuitableTreatment identifier="burn" suitability="50" />
 			<SuitableTreatment identifier="opiatewithdrawal" suitability="30" />
 			<SuitableTreatment identifier="opiateoverdose" suitability="-10" />
 			<SuitableTreatment identifier="opiateaddiction" suitability="-5" />
@@ -229,6 +230,7 @@
 			<SuitableTreatment identifier="bitewounds" suitability="75" />
 			<SuitableTreatment identifier="gunshotwound" suitability="75" />
 			<SuitableTreatment identifier="huskinfection" suitability="75" />
+			<SuitableTreatment identifier="burn" suitability="75" />
 			<SuitableTreatment identifier="opiatewithdrawal" suitability="100" />
 			<SuitableTreatment identifier="opiateoverdose" suitability="-22.5" />
 			<SuitableTreatment identifier="opiateaddiction" suitability="-7.5" />
@@ -396,6 +398,7 @@
 			<SuitableTreatment identifier="gunshotwound" suitability="90" />
 			<SuitableTreatment identifier="oxygenlow" suitability="45" />
 			<SuitableTreatment identifier="bloodloss" suitability="30" />
+			<SuitableTreatment identifier="burn" suitability="-25" />
 			<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
 				<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
 				<StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
@@ -934,6 +937,7 @@
 			<Price locationtype="Outpost" buyprice="600" />
 
 			<SuitableTreatment identifier="damage" suitability="20" />
+			<SuitableTreatment identifier="burn" suitability="20" />
 			<SuitableTreatment identifier="opiateoverdose" suitability="-8.75" />
 			<SuitableTreatment identifier="oxygenlow" suitability="-17.5" />
 			<SuitableTreatment identifier="opiatewithdrawal" suitability="15" />
@@ -947,6 +951,7 @@
 				<StatusEffect tags="medical" type="OnUse" target="Character" duration="5">
 					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
 					<ReduceAffliction identifier="damage" amount="4" />
+					<ReduceAffliction identifier="burn" amount="4" />
 					<Affliction identifier="opiateaddiction" amount="1" />
 					<Affliction identifier="opiateoverdose" amount="1.75" />
 					<Affliction identifier="oxygenlow" amount="3.5" />
@@ -1088,7 +1093,6 @@
 			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="388,768,64,64" origin="0.5,0.5" />
 			<Sprite texture="Content/Items/Materials/CraftingElements2.png" sourcerect="87,0,61,141" depth="0.6" origin="0.5,0.5" />
 			<Body width="60" height="140" density="20" />
-			<SuitableTreatment identifier="stun" suitability="90" />
 			<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
 				<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
 				<StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
