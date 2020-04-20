@@ -2,7 +2,7 @@
 ![img](https://i.imgur.com/fIOgolp.png)
 
 ## Description 
-This mod changes how you play campaign to make it more intense and immersive experience. Missions in the outer rings between colonies are easier cargo transport missions or single monster hunts, while missions in the inner rings are more dangerous swarm and big game hunt missions. Prices have been adjusted so that you really have to think about supplies in the long run and carefuly manage your supplies. No more 50+ items shopping lists! Differences between colonies have been emphasized (different supplies sold and missions) and at the centre of the campaign, the biggest challenge awaits - the ENDWORM. You will have a goal to strive towards! Unorganised crews will not make it far... so lead your team carefully and play your profession to the fullest! Good luck!
+This mod changes how you play campaign to make it more intense and immersive experience, but still keeps most of the vanilla "feel". Missions in the outer rings between colonies are easier cargo transport missions or single monster hunts, while missions in the inner rings are more dangerous swarm and big game hunt missions. Prices have been adjusted so that you really have to think about supplies in the long run and carefuly manage your supplies. No more 50+ items shopping lists! Differences between colonies have been emphasized (different supplies sold and missions) and at the centre of the campaign, the biggest challenge awaits - the ENDWORM. You will have a goal to strive towards! Unorganised crews will not make it far... so lead your team carefully and play your profession to the fullest! Good luck!
 
 Features:  
 - no more runs with long boring streches with no enemies  
