@@ -40,6 +40,11 @@ Enjoy!
 - revised the monster spawning (still hellish!)
 Rip&Tear until it is done.
 
+### COMPATIBILITY WITH REALLYBIGMAP:
+This mod is compatible with LordFrith's RBM, however some of the ITA features are lost.
+-the map is enormous
+-there is no endworm fight in the centre
+
 ### How to install:
 - subscribe to the mod https://steamcommunity.com/sharedfiles/filedetails/?id=2005463692  
 - in main menu, go to settings and enable it top left  
