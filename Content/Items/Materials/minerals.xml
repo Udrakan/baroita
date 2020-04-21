@@ -15,7 +15,7 @@
     <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.55" sourcerect="394,133,118,123" origin="0.5,0.5" />
     <Body radius="40" width="20" density="50" />
     <LevelResource deattachduration="10">
-      <Commonness commonness="2" />
+      <Commonness commonness="1" />
       <RequiredItem items="cuttingequipment" type="Equipped" />
     </LevelResource>
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
@@ -33,7 +33,7 @@
     <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.55" sourcerect="524,262,109,117" origin="0.5,0.5" />
     <Body radius="40" width="20" density="50" />
     <LevelResource deattachduration="10">
-      <Commonness commonness="2" />
+      <Commonness commonness="0" />
       <RequiredItem items="cuttingequipment" type="Equipped" />
     </LevelResource>
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
@@ -51,7 +51,7 @@
     <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.55" sourcerect="14,393,111,114" origin="0.5,0.5" />
     <Body radius="40" width="20" density="50" />
     <LevelResource deattachduration="10">
-      <Commonness commonness="2" />
+      <Commonness commonness="0" />
       <RequiredItem items="cuttingequipment" type="Equipped" />
     </LevelResource>
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
@@ -171,8 +171,6 @@
     <PreferredContainer primary="mineralcontainer" spawnprobability="0.1"/>
     <Deconstruct time="5">
       <Item identifier="uranium" />
-      <Item identifier="uranium" />
-      <Item identifier="uranium" />
     </Deconstruct>
     <!-- TODO: sprite and inventory icon -->
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="455,580,60,60" origin="0.5,0.5" />
@@ -180,7 +178,7 @@
     <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.55" sourcerect="912,265,107,116" origin="0.5,0.5" />
     <Body radius="40" width="20" density="50" />
     <LevelResource deattachduration="10">
-      <Commonness commonness="4" />
+      <Commonness commonness="1" />
       <RequiredItem items="cuttingequipment" type="Equipped" />
     </LevelResource>
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />

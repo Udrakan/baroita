@@ -34,13 +34,13 @@
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="10.0">
-        <ReduceAffliction identifier="internaldamage" amount="0.5" />
+        <ReduceAffliction identifier="damage" amount="0.50" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnUse" target="Character" disabledeltatime="true">
         <Affliction identifier="durationincrease" amount="300" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="10.0">
-        <ReduceAffliction identifier="internaldamage" amount="0.25" />
+        <ReduceAffliction identifier="damage" amount="0.25" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" disabledeltatime="true">
         <Affliction identifier="durationincrease" amount="100" />
