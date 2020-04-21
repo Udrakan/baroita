@@ -61,7 +61,7 @@ Rip&Tear until it is done.
   - thorium ores are extremely rare
   - uraninite deconstructs into only 1 uranium
   - removed faraday artifact from random artifact spawns (no challenge, free fuel)
- -updated tonic liquid's damage heal type from old internal damage to "damage" (it slowly heals again)
+ - updated tonic liquid's damage heal type from old internal damage to "damage" (it slowly heals again)
  
 
 
