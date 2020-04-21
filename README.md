@@ -56,11 +56,13 @@ Rip&Tear until it is done.
  - increased mantis' cooldown on attacks and nerfed blood loss damage
  - changed visuals of aphotic plateau and the great void
 - changes to resources 
- - minerals often spawned on the outside of map, so I've doubled their spawnrate to compensate
- - plastic now deconstructs into silicon and carbon
- - thorium ores are extremely rare
- - uraninite deconstructs into only 1 uranium
- - removed faraday artifact from random artifact spawns (no challenge, free fuel)
+  - minerals often spawned on the outside of map, so I've doubled their spawnrate to compensate
+  - plastic now deconstructs into silicon and carbon
+  - thorium ores are extremely rare
+  - uraninite deconstructs into only 1 uranium
+  - removed faraday artifact from random artifact spawns (no challenge, free fuel)
+ -updated tonic liquid's damage heal type from old internal damage to "damage" (it slowly heals again)
+ 
 
 
 ### COMPATIBILITY WITH REALLYBIGMAP:
