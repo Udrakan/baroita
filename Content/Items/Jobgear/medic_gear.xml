@@ -72,5 +72,36 @@
       <Containable items="chem,medical" excludeditems="toolbox" />
     </ItemContainer>
   </Item>
+  
+   <Item name="" identifier="doctorsuniform3" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem" fireproof="true" description="This suit has a syringe gun holder, kevlar  and protects against fire and husk infection." scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <Price locationtype="Research" buyprice="500" />
+    <InventoryIcon name="Medic Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="256,151,128,105" origin="0.5,0.5" />
+    <Sprite name="Medic Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="232,629,201,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Medic Uniform 3 Torso" texture="medic_torso_[GENDER]_3.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Right Lower Arm" texture="medic_torso_[GENDER]_3.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Left Lower Arm" texture="medic_torso_[GENDER]_3.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Right Upper Arm" texture="medic_torso_[GENDER]_3.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Left Upper Arm" texture="medic_torso_[GENDER]_3.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Waist" texture="medic_legs_[GENDER]_3.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Right Thigh" texture="medic_legs_[GENDER]_3.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Left Thigh" texture="medic_legs_[GENDER]_3.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Right Leg" texture="medic_legs_[GENDER]_3.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Left Leg" texture="medic_legs_[GENDER]_3.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Right Shoe" texture="medic_legs_[GENDER]_3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Left Shoe" texture="medic_legs_[GENDER]_3.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+	  <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+	  <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+	  <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+	  					
+						
+      <!--<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />-->
+    </Wearable>
+    <ItemContainer capacity="3">
+      <Containable items="chem,medical,syringegun" excludeditems="toolbox,orangejumpsuit3,doctorsuniform1,doctorsuniform2,doctorsuniform3,bluejumpsuit3" />
+    </ItemContainer>
+  </Item>
 </Items>
 </Override>
