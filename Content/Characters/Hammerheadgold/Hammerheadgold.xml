@@ -10,7 +10,7 @@
   <health vitality="200" doesbleed="True" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="0.5" burnreduction="0" constanthealthregeneration="0" healthregenerationwheneating="0" />
   <Inventory slots="Any, Any" accessiblewhenalive="False" commonness="1">
     <Item identifier="swimbladder" />
-    <Item identifier="fulgurium" condition="0.34" />
+    <Item identifier="physicorium" />
   </Inventory>
   <sound file="Content/Characters/Hammerheadgold/HAMMERHEADg_idle1.ogg" state="Idle" range="5000" volume="1" gender="None" />
   <sound file="Content/Characters/Hammerheadgold/HAMMERHEADg_idle2.ogg" state="Idle" range="5000" volume="1" gender="None" />

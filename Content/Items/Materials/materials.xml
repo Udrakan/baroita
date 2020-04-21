@@ -1,541 +1,545 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Override>
-<Items>
-  <!-- Elements ************************************************************************************************ -->
-  <Item name="" identifier="carbon" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="250" />
-    <Price locationtype="City" buyprice="250" />
-    <Price locationtype="Mine" buyprice="110" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="384,192,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="10,110,93,76" depth="0.55" origin="0.5,0.5" />
-    <Body width="90" height="60" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="iron" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="4" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="City" buyprice="150" />
-    <Price locationtype="Mine" buyprice="90" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,192,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="9,186,94,73" depth="0.55" origin="0.5,0.5" />
-    <Body width="90" height="60" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="tin" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="City" buyprice="250" />
-    <Price locationtype="Mine" buyprice="170" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,192,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="300,184,94,77" depth="0.55" origin="0.5,0.5" />
-    <Body width="90" height="60" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="lead" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Military" buyprice="410" />
-    <Price locationtype="City" buyprice="410" />
-    <Price locationtype="Mine" buyprice="320" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="768,192,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="203,185,94,76" depth="0.55" origin="0.5,0.5" />
-    <Body width="90" height="60" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="phosphorus" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="3" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Military" buyprice="360" />
-    <Price locationtype="City" buyprice="360" />
-    <Price locationtype="Mine" buyprice="240" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,192,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="307,13,46,88" depth="0.55" origin="0.5,0.5" />
-    <Body width="29" height="58" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="copper" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="3" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="City" buyprice="440" />
-    <Price locationtype="Mine" buyprice="390" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,192,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="107,184,95,76" depth="0.55" origin="0.5,0.5" />
-    <Body width="90" height="60" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  <Item name="" identifier="zinc" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="520" />
-    <Price locationtype="City" buyprice="520" />
-    <Price locationtype="Mine" buyprice="440" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,192,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="204,105,93,80" depth="0.55" origin="0.5,0.5" />
-    <Body width="90" height="60" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="sodium" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="medfabcab" minamount="1" maxamount="3" spawnprobability="1"/>
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Military" buyprice="660" />
-    <Price locationtype="City" buyprice="660" />
-    <Price locationtype="Mine" buyprice="610" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,192,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="59,14,47,88" depth="0.55" origin="0.5,0.5" />
-    <Body width="29" height="59" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="silicon" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="620" />
-    <Price locationtype="City" buyprice="620" />
-    <Price locationtype="Mine" buyprice="540" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,128,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="393,109,92,77" depth="0.55" origin="0.5,0.5" />
-    <Body width="90" height="60" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="calcium" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="medfabcab" minamount="1" maxamount="3" spawnprobability="1"/>
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="620" />
-    <Price locationtype="City" buyprice="620" />
-    <Price locationtype="Mine" buyprice="540" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,192,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="258,13,47,88" depth="0.55" origin="0.5,0.5" />
-    <Body width="28" height="58" density="15" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="aluminium" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="840" />
-    <Price locationtype="Military" buyprice="840" />
-    <Price locationtype="City" buyprice="840" />
-    <Price locationtype="Mine" buyprice="760" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,192,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="106,106,94,79" depth="0.55" origin="0.5,0.5" />
-    <Body width="90" height="60" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="uranium" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="1" maxamount="2" spawnprobability="0.75"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="3000" />
-    <Price locationtype="Military" buyprice="3000" />
-    <Price locationtype="City" buyprice="2500" />
-    <Price locationtype="Outpost" buyprice="3500" />
-    <Price locationtype="Mine" buyprice="2100" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="898,192,61,63" origin="0.5,0.5" />
-    <Sprite texture="CraftingElements1.png" sourcerect="8,260,98,82" depth="0.55" origin="0.5,0.5" />
-    <Body width="90" height="65" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="potassium" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="0.5"/>
-    <PreferredContainer primary="medfabcab" minamount="1" maxamount="3" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="180" />
-    <Price locationtype="Military" buyprice="200" />
-    <Price locationtype="Mine" buyprice="120" />
-    <!-- TODO: sprite -->
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="128,192,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="155,13,46,88" depth="0.55" origin="0.5,0.5" />
-    <Body width="29" height="58" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="InWater" target="This" Condition="0.0" setvalue="true"/>
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="All" range="5000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" selectionmode="All" range="5000" />
-        <Explosion range="250.0" structuredamage="10" force="5.0">
-          <Affliction identifier="burn" amount="20" />
-          <Affliction identifier="stun" amount="3" />
-        </Explosion>        
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="titanium" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Military" buyprice="1300" />
-    <Price locationtype="City" buyprice="1300" />
-    <Price locationtype="Mine" buyprice="1000" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,192,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="301,107,92,77" depth="0.55" origin="0.5,0.5" />
-    <Body width="90" height="60" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="magnesium" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="1100" />
-    <Price locationtype="City" buyprice="1300" />
-    <Price locationtype="Mine" buyprice="1100" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,192,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="205,13,47,88" depth="0.55" origin="0.5,0.5" />
-    <Body width="29" height="58" density="15" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="InWater" target="This" Condition="0.0" setvalue="true"/>
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="All" range="5000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" selectionmode="All" range="5000" />
-        <Explosion range="250.0" structuredamage="10" force="5.0">
-          <Affliction identifier="burn" amount="20" />
-          <Affliction identifier="stun" amount="3" />
-        </Explosion>        
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="lithium" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="City" buyprice="1750" />
-    <Price locationtype="Mine" buyprice="1400" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,192,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="7,14,49,88" depth="0.55" origin="0.5,0.5" />
-    <Body width="29" height="59" density="15" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="chlorine" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="480" />
-    <Price locationtype="Mine" buyprice="450" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,256,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="110,14,45,88" depth="0.6" origin="0.5,0.5" />
-    <Body width="29" height="57" density="20" />
-    <Throwable characterusable="true" canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Throwable>
-  </Item>
-  
-  <Item name="" identifier="thorium" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="1" spawnprobability="0.125"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="City" buyprice="6800" />
-    <Price locationtype="Mine" buyprice="4750" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,192,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="108,263,92,79" depth="0.55" origin="0.5,0.5" />
-    <Body width="90" height="60" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <!-- Compounds ************************************************************************************************ -->
-  <Item name="" identifier="steel" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="1" maxamount="4" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="500" />
-    <Price locationtype="Military" buyprice="500" />
-    <Price locationtype="City" buyprice="500" />
-    <Price locationtype="Outpost" buyprice="550" />
-    <Price locationtype="Mine" buyprice="450" />
-    <Fabricate suitablefabricators="fabricator" requiredtime="5">
-      <RequiredItem identifier="carbon" />
-      <RequiredItem identifier="iron" />
-    </Fabricate>
-    <Deconstruct time="5">
-      <Item identifier="carbon" copycondition="true"/>
-      <Item identifier="iron" copycondition="true"/>
-    </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,128,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="8,343,108,54" depth="0.55" origin="0.5,0.5" />
-    <Body width="100" height="50" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="titaniumaluminiumalloy" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="1" maxamount="2" spawnprobability="0.5"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="4000" />
-    <Price locationtype="Military" buyprice="3750" />
-    <Price locationtype="Mine" buyprice="3900" />
-    <Fabricate suitablefabricators="fabricator" requiredtime="5">
-      <RequiredItem identifier="titanium" />
-      <RequiredItem identifier="aluminium" />
-    </Fabricate>
-    <Deconstruct time="5">
-      <Item identifier="aluminium" copycondition="true"/>
-      <Item identifier="titanium" copycondition="true"/>
-    </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,768,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="125,407,111,55" depth="0.55" origin="0.5,0.5" />
-    <Body width="100" height="50" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="plastic" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="1" maxamount="4" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="800" />
-    <Price locationtype="Military" buyprice="800" />
-    <Price locationtype="City" buyprice="800" />
-    <Fabricate suitablefabricators="fabricator" requiredtime="5">
-      <RequiredItem identifier="silicon" />
-      <RequiredItem identifier="carbon" />
-    </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,128,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="405,200,85,60" depth="0.55" origin="0.5,0.5" />
-    <Body width="80" height="55" density="20" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="ballisticfiber" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_soft">
-    <PreferredContainer primary="storagecab" minamount="1" maxamount="2" spawnprobability="0.5"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Military" buyprice="2500" />
-    <Fabricate suitablefabricators="fabricator" requiredtime="5">
-      <RequiredItem identifier="plastic" />
-      <RequiredItem identifier="titanium" />
-    </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="706,770,62,61" origin="0.5,0.5" />
-    <Sprite texture="CraftingElements2.png" sourcerect="0,140,89,134" depth="0.55" origin="0.5,0.5" />
-    <Body width="80" height="110" density="20" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="organicfiber" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_soft">
-    <PreferredContainer primary="medfabcab" minamount="1" maxamount="3" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="800" />
-    <Price locationtype="Military" buyprice="900" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,768,64,64" />
-    <Sprite texture="CraftingElements2.png" sourcerect="102,157,113,122" depth="0.55" origin="0.5,0.5" />
-    <Body width="100" height="100" density="20" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" />
-  </Item>
-  
-  <Item name="" identifier="rubber" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
-    <PreferredContainer primary="storagecab" minamount="1" maxamount="2" spawnprobability="1"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="200" />
-    <Price locationtype="Military" buyprice="200" />
-    <Price locationtype="City" buyprice="200" />
-    <Price locationtype="Outpost" buyprice="250" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,770,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="266,443,70,64" depth="0.55" origin="0.5,0.5" />
-    <Body width="10" radius="20" density="8" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="flashpowder" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,explosive" impacttolerance="8" useinhealthinterface="true" scale="0.4" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="1" maxamount="2" spawnprobability="0.5"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="300" />
-    <Price locationtype="Military" buyprice="350" />
-    <Fabricate suitablefabricators="fabricator,medicalfabricator" requiredtime="5">
-      <RequiredItem identifier="magnesium" />
-      <RequiredItem identifier="potassium" />
-    </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,256,64,64" />
-    <Sprite texture="CraftingElements1.png" sourcerect="255,268,45,85" origin="0.5,0.5" />
-    <Body width="45" height="87" density="20" />
-    <Throwable characterusable="false" canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
-      <StatusEffect type="OnFire" target="this" condition="-50" />
-      <StatusEffect type="OnUse" target="This" Condition="-100.0" />
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="All" range="5000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" selectionmode="All" range="5000" />
-        <Explosion range="500" force="0.1">
-          <Affliction identifier="burn" amount="5" />
-          <Affliction identifier="stun" amount="3" />
-        </Explosion>
-        <Remove />
-      </StatusEffect>
-    </Throwable>
-  </Item>
-  
-  <Item name="" identifier="incendium" category="Material" Tags="smallitem" cargocontaineridentifier="metalcrate" canbepicked="true" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab,secarmcab,armcab"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="4000" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="260,835,53,61" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Alien/AlienMaterials.png" sourcerect="105,439,52,61" depth="0.55" origin="0.5,0.5" />
-    <Body width="60" height="26" density="60" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" characterusable="false" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnUse" target="This" Condition="-100.0">
-        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" range="5000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris3.ogg" range="5000" />
-        <Explosion range="500.0" structuredamage="2" force="20.0">
-          <Affliction identifier="burn" strength="50" />
-          <Affliction identifier="stun" strength="3" />
-        </Explosion>
-        <Remove />
-        <Fire size="100.0" />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="fulgurium" category="Material" Tags="smallitem" cargocontaineridentifier="metalcrate" canbepicked="true" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="6100" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="328,833,51,63" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Alien/AlienMaterials.png" sourcerect="186,351,59,67" depth="0.55" origin="0.5,0.5" />
-    <Body radius="25" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  <Item name="" identifier="physicorium" category="Material" Tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" canbepicked="true">
-    <PreferredContainer primary="storagecab"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="4150" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="70,835,52,59" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Alien/AlienMaterials.png" sourcerect="97,349,58,71" depth="0.55" origin="0.5,0.5" />
-    <Body radius="25" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  
-  <Item name="" identifier="dementonite" category="Material" Tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" canbepicked="true">
-    <PreferredContainer primary="toxcab,medfabcab,storagecab"/>
-    <!-- TODO: adjust prices -->
-    <Price locationtype="Research" buyprice="1500" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,830,64,64" />
-    <Sprite texture="Content/Items/Alien/AlienMaterials.png" sourcerect="15,356,60,54" depth="0.55" origin="0.5,0.5" />
-    <Body radius="25" density="50" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-</Items>
+	<Items>
+		<!-- Elements ************************************************************************************************ -->
+		<Item name="" identifier="carbon" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="250" />
+			<Price locationtype="City" buyprice="250" />
+			<Price locationtype="Mine" buyprice="110" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="384,192,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="10,110,93,76" depth="0.55" origin="0.5,0.5" />
+			<Body width="90" height="60" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="iron" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="4" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="City" buyprice="150" />
+			<Price locationtype="Mine" buyprice="90" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,192,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="9,186,94,73" depth="0.55" origin="0.5,0.5" />
+			<Body width="90" height="60" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="tin" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="City" buyprice="250" />
+			<Price locationtype="Mine" buyprice="170" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,192,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="300,184,94,77" depth="0.55" origin="0.5,0.5" />
+			<Body width="90" height="60" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="lead" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Military" buyprice="410" />
+			<Price locationtype="City" buyprice="410" />
+			<Price locationtype="Mine" buyprice="320" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="768,192,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="203,185,94,76" depth="0.55" origin="0.5,0.5" />
+			<Body width="90" height="60" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="phosphorus" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="3" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Military" buyprice="360" />
+			<Price locationtype="City" buyprice="360" />
+			<Price locationtype="Mine" buyprice="240" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,192,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="307,13,46,88" depth="0.55" origin="0.5,0.5" />
+			<Body width="29" height="58" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="copper" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="3" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="City" buyprice="440" />
+			<Price locationtype="Mine" buyprice="390" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,192,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="107,184,95,76" depth="0.55" origin="0.5,0.5" />
+			<Body width="90" height="60" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+		<Item name="" identifier="zinc" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="520" />
+			<Price locationtype="City" buyprice="520" />
+			<Price locationtype="Mine" buyprice="440" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,192,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="204,105,93,80" depth="0.55" origin="0.5,0.5" />
+			<Body width="90" height="60" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="sodium" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="medfabcab" minamount="1" maxamount="3" spawnprobability="1"/>
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Military" buyprice="660" />
+			<Price locationtype="City" buyprice="660" />
+			<Price locationtype="Mine" buyprice="610" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,192,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="59,14,47,88" depth="0.55" origin="0.5,0.5" />
+			<Body width="29" height="59" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="silicon" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="620" />
+			<Price locationtype="City" buyprice="620" />
+			<Price locationtype="Mine" buyprice="540" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,128,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="393,109,92,77" depth="0.55" origin="0.5,0.5" />
+			<Body width="90" height="60" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="calcium" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="medfabcab" minamount="1" maxamount="3" spawnprobability="1"/>
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="620" />
+			<Price locationtype="City" buyprice="620" />
+			<Price locationtype="Mine" buyprice="540" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,192,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="258,13,47,88" depth="0.55" origin="0.5,0.5" />
+			<Body width="28" height="58" density="15" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="aluminium" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="840" />
+			<Price locationtype="Military" buyprice="840" />
+			<Price locationtype="City" buyprice="840" />
+			<Price locationtype="Mine" buyprice="760" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,192,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="106,106,94,79" depth="0.55" origin="0.5,0.5" />
+			<Body width="90" height="60" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="uranium" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="1" maxamount="2" spawnprobability="0.75"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="3000" />
+			<Price locationtype="Military" buyprice="3000" />
+			<Price locationtype="City" buyprice="2500" />
+			<Price locationtype="Outpost" buyprice="3500" />
+			<Price locationtype="Mine" buyprice="2100" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="898,192,61,63" origin="0.5,0.5" />
+			<Sprite texture="CraftingElements1.png" sourcerect="8,260,98,82" depth="0.55" origin="0.5,0.5" />
+			<Body width="90" height="65" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="potassium" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="0.5"/>
+			<PreferredContainer primary="medfabcab" minamount="1" maxamount="3" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="180" />
+			<Price locationtype="Military" buyprice="200" />
+			<Price locationtype="Mine" buyprice="120" />
+			<!-- TODO: sprite -->
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="128,192,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="155,13,46,88" depth="0.55" origin="0.5,0.5" />
+			<Body width="29" height="58" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<StatusEffect type="InWater" target="This" Condition="0.0" setvalue="true"/>
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="All" range="5000" />
+					<sound file="Content/Items/Weapons/ExplosionDebris1.ogg" selectionmode="All" range="5000" />
+					<Explosion range="250.0" structuredamage="10" force="5.0">
+						<Affliction identifier="burn" amount="20" />
+						<Affliction identifier="stun" amount="3" />
+					</Explosion>        
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="titanium" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Military" buyprice="1300" />
+			<Price locationtype="City" buyprice="1300" />
+			<Price locationtype="Mine" buyprice="1000" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,192,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="301,107,92,77" depth="0.55" origin="0.5,0.5" />
+			<Body width="90" height="60" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="magnesium" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="1100" />
+			<Price locationtype="City" buyprice="1300" />
+			<Price locationtype="Mine" buyprice="1100" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,192,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="205,13,47,88" depth="0.55" origin="0.5,0.5" />
+			<Body width="29" height="58" density="15" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<StatusEffect type="InWater" target="This" Condition="0.0" setvalue="true"/>
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="All" range="5000" />
+					<sound file="Content/Items/Weapons/ExplosionDebris1.ogg" selectionmode="All" range="5000" />
+					<Explosion range="250.0" structuredamage="10" force="5.0">
+						<Affliction identifier="burn" amount="20" />
+						<Affliction identifier="stun" amount="3" />
+					</Explosion>        
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="lithium" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="City" buyprice="1750" />
+			<Price locationtype="Mine" buyprice="1400" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,192,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="7,14,49,88" depth="0.55" origin="0.5,0.5" />
+			<Body width="29" height="59" density="15" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="chlorine" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="480" />
+			<Price locationtype="Mine" buyprice="450" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,256,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="110,14,45,88" depth="0.6" origin="0.5,0.5" />
+			<Body width="29" height="57" density="20" />
+			<Throwable characterusable="true" canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Throwable>
+		</Item>
+
+		<Item name="" identifier="thorium" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="0" maxamount="1" spawnprobability="0.125"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="City" buyprice="6800" />
+			<Price locationtype="Mine" buyprice="4750" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,192,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="108,263,92,79" depth="0.55" origin="0.5,0.5" />
+			<Body width="90" height="60" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<!-- Compounds ************************************************************************************************ -->
+		<Item name="" identifier="steel" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="1" maxamount="4" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="500" />
+			<Price locationtype="Military" buyprice="500" />
+			<Price locationtype="City" buyprice="500" />
+			<Price locationtype="Outpost" buyprice="550" />
+			<Price locationtype="Mine" buyprice="450" />
+			<Fabricate suitablefabricators="fabricator" requiredtime="5">
+				<RequiredItem identifier="carbon" />
+				<RequiredItem identifier="iron" />
+			</Fabricate>
+			<Deconstruct time="5">
+				<Item identifier="carbon" copycondition="true"/>
+				<Item identifier="iron" copycondition="true"/>
+			</Deconstruct>
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,128,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="8,343,108,54" depth="0.55" origin="0.5,0.5" />
+			<Body width="100" height="50" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="titaniumaluminiumalloy" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="1" maxamount="2" spawnprobability="0.5"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="4000" />
+			<Price locationtype="Military" buyprice="3750" />
+			<Price locationtype="Mine" buyprice="3900" />
+			<Fabricate suitablefabricators="fabricator" requiredtime="5">
+				<RequiredItem identifier="titanium" />
+				<RequiredItem identifier="aluminium" />
+			</Fabricate>
+			<Deconstruct time="5">
+				<Item identifier="aluminium" copycondition="true"/>
+				<Item identifier="titanium" copycondition="true"/>
+			</Deconstruct>
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,768,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="125,407,111,55" depth="0.55" origin="0.5,0.5" />
+			<Body width="100" height="50" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="plastic" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="1" maxamount="4" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="800" />
+			<Price locationtype="Military" buyprice="800" />
+			<Price locationtype="City" buyprice="800" />
+			<Fabricate suitablefabricators="fabricator" requiredtime="5">
+				<RequiredItem identifier="silicon" />
+				<RequiredItem identifier="carbon" />
+			</Fabricate>
+			<Deconstruct time="5">
+				<Item identifier="carbon" copycondition="true"/>
+				<Item identifier="silicon" copycondition="true"/>
+			</Deconstruct>
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,128,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="405,200,85,60" depth="0.55" origin="0.5,0.5" />
+			<Body width="80" height="55" density="20" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="ballisticfiber" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_soft">
+			<PreferredContainer primary="storagecab" minamount="1" maxamount="2" spawnprobability="0.5"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Military" buyprice="2500" />
+			<Fabricate suitablefabricators="fabricator" requiredtime="5">
+				<RequiredItem identifier="plastic" />
+				<RequiredItem identifier="titanium" />
+			</Fabricate>
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="706,770,62,61" origin="0.5,0.5" />
+			<Sprite texture="CraftingElements2.png" sourcerect="0,140,89,134" depth="0.55" origin="0.5,0.5" />
+			<Body width="80" height="110" density="20" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="organicfiber" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_soft">
+			<PreferredContainer primary="medfabcab" minamount="1" maxamount="3" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="800" />
+			<Price locationtype="Military" buyprice="900" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,768,64,64" />
+			<Sprite texture="CraftingElements2.png" sourcerect="102,157,113,122" depth="0.55" origin="0.5,0.5" />
+			<Body width="100" height="100" density="20" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" />
+		</Item>
+
+		<Item name="" identifier="rubber" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+			<PreferredContainer primary="storagecab" minamount="1" maxamount="2" spawnprobability="1"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="200" />
+			<Price locationtype="Military" buyprice="200" />
+			<Price locationtype="City" buyprice="200" />
+			<Price locationtype="Outpost" buyprice="250" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,770,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="266,443,70,64" depth="0.55" origin="0.5,0.5" />
+			<Body width="10" radius="20" density="8" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="flashpowder" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,explosive" impacttolerance="8" useinhealthinterface="true" scale="0.4" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab" minamount="1" maxamount="2" spawnprobability="0.5"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="300" />
+			<Price locationtype="Military" buyprice="350" />
+			<Fabricate suitablefabricators="fabricator,medicalfabricator" requiredtime="5">
+				<RequiredItem identifier="magnesium" />
+				<RequiredItem identifier="potassium" />
+			</Fabricate>
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,256,64,64" />
+			<Sprite texture="CraftingElements1.png" sourcerect="255,268,45,85" origin="0.5,0.5" />
+			<Body width="45" height="87" density="20" />
+			<Throwable characterusable="false" canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
+				<StatusEffect type="OnFire" target="this" condition="-50" />
+				<StatusEffect type="OnUse" target="This" Condition="-100.0" />
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="All" range="5000" />
+					<sound file="Content/Items/Weapons/ExplosionDebris2.ogg" selectionmode="All" range="5000" />
+					<Explosion range="500" force="0.1">
+						<Affliction identifier="burn" amount="5" />
+						<Affliction identifier="stun" amount="3" />
+					</Explosion>
+					<Remove />
+				</StatusEffect>
+			</Throwable>
+		</Item>
+
+		<Item name="" identifier="incendium" category="Material" Tags="smallitem" cargocontaineridentifier="metalcrate" canbepicked="true" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab,secarmcab,armcab"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="4000" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="260,835,53,61" origin="0.5,0.5" />
+			<Sprite texture="Content/Items/Alien/AlienMaterials.png" sourcerect="105,439,52,61" depth="0.55" origin="0.5,0.5" />
+			<Body width="60" height="26" density="60" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" characterusable="false" msg="ItemMsgPickUpSelect">
+				<StatusEffect type="OnUse" target="This" Condition="-100.0">
+					<sound file="Content/Items/Weapons/ExplosionSmall3.ogg" range="5000" />
+					<sound file="Content/Items/Weapons/ExplosionDebris3.ogg" range="5000" />
+					<Explosion range="500.0" structuredamage="2" force="20.0">
+						<Affliction identifier="burn" strength="50" />
+						<Affliction identifier="stun" strength="3" />
+					</Explosion>
+					<Remove />
+					<Fire size="100.0" />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="fulgurium" category="Material" Tags="smallitem" cargocontaineridentifier="metalcrate" canbepicked="true" scale="0.5" impactsoundtag="impact_metal_light">
+			<PreferredContainer primary="storagecab"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="6100" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="328,833,51,63" origin="0.5,0.5" />
+			<Sprite texture="Content/Items/Alien/AlienMaterials.png" sourcerect="186,351,59,67" depth="0.55" origin="0.5,0.5" />
+			<Body radius="25" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+		<Item name="" identifier="physicorium" category="Material" Tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" canbepicked="true">
+			<PreferredContainer primary="storagecab"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="4150" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="70,835,52,59" origin="0.5,0.5" />
+			<Sprite texture="Content/Items/Alien/AlienMaterials.png" sourcerect="97,349,58,71" depth="0.55" origin="0.5,0.5" />
+			<Body radius="25" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+
+		<Item name="" identifier="dementonite" category="Material" Tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" canbepicked="true">
+			<PreferredContainer primary="toxcab,medfabcab,storagecab"/>
+			<!-- TODO: adjust prices -->
+			<Price locationtype="Research" buyprice="1500" />
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,830,64,64" />
+			<Sprite texture="Content/Items/Alien/AlienMaterials.png" sourcerect="15,356,60,54" depth="0.55" origin="0.5,0.5" />
+			<Body radius="25" density="50" />
+			<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
+				</StatusEffect>
+			</Holdable>
+		</Item>
+	</Items>
 </Override>
