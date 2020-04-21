@@ -41,26 +41,26 @@ Enjoy!
 Rip&Tear until it is done.
 
 ## UPDATE 3
--NEW UNIFORM VARIANTS (visit habitation outpost, mining facility and research outpost)
-  -vanilla game has some unused, very cool looking gear variants, I've enabled them
-  -these uniforms come with pocket slots and increased defense stats
-  -mechanic, engineer and doctor's suits, 500 a piece, read description in stores
--changed thresher swarm behaviour
-  -threshers are more vulnerable but more numerous
-  -bonethreshers punch a hole through outer shell
-  -tigerthreshers agressively board through the hole
-  -yes, it's as terrifying as it sounds!
-  -tigerthreshers cannot breach through doors and hatches
- -rare golden hammerhead drops physicorium
- -updated mantis' attack to new damagetypes (lacerations, instead of internal damage)
- -increased mantis' cooldown on attacks and nerfed blood loss damage
- -changed visuals of aphotic plateau and the great void
--changes to resources 
- -minerals often spawned on the outside of map, so I've doubled their spawnrate to compensate
- -plastic now deconstructs into silicon and carbon
- -thorium ores are extremely rare
- -uraninite deconstructs into only 1 uranium
- -removed faraday artifact from random artifact spawns (no challenge, free fuel)
+- NEW UNIFORM VARIANTS (visit habitation outpost, mining facility and research outpost)
+  - vanilla game has some unused, very cool looking gear variants, I've enabled them
+  - these uniforms come with pocket slots and increased defense stats
+  - mechanic, engineer and doctor's suits, 500 a piece, read description in stores
+- changed thresher swarm behaviour
+  - threshers are more vulnerable but more numerous
+  - bonethreshers punch a hole through outer shell
+  - tigerthreshers agressively board through the hole
+  - yes, it's as terrifying as it sounds!
+  - tigerthreshers cannot breach through doors and hatches
+ - rare golden hammerhead now drops physicorium + swim bladder
+ - updated mantis' attack to new damagetypes (lacerations, instead of internal damage)
+ - increased mantis' cooldown on attacks and nerfed blood loss damage
+ - changed visuals of aphotic plateau and the great void
+- changes to resources 
+ - minerals often spawned on the outside of map, so I've doubled their spawnrate to compensate
+ - plastic now deconstructs into silicon and carbon
+ - thorium ores are extremely rare
+ - uraninite deconstructs into only 1 uranium
+ - removed faraday artifact from random artifact spawns (no challenge, free fuel)
 
 
 ### COMPATIBILITY WITH REALLYBIGMAP:
