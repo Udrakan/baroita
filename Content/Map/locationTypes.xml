@@ -46,7 +46,7 @@
 		<Outpost
     identifier="Outpost"
     namefile="Content/Map/cityNames.txt"
-    commonnessperzone="1: 3, 2: 3, 3: 2.5, 4:1">
+    commonnessperzone="1: 3, 2: 3, 3: 2.5">
 
 			<Symbol texture="Content/Map/MapIconAtlas.png" sourcerect="545,275,181,220" color="198,252,222,255"/>
 			<Portrait texture="Content/Map/LocationPortraits/HabitationOutpost.png" premultiplyalpha="false"/>
@@ -78,7 +78,7 @@
 		<Military
     identifier="Military"
     namefile="Content/Map/locationNames.txt"
-    commonnessperzone="3: 3.0">
+    commonnessperzone="4: 3.0">
 
 			<Symbol texture="Mods/IntoTheAbyss/Content/Map/MapIconAtlas.png" sourcerect="768,512,256,256" color="198,252,222,255"/>
 			<Portrait texture="Content/Map/LocationPortraits/WorkCampMilitary.png" premultiplyalpha="false"/>
@@ -101,7 +101,7 @@
     identifier="Research"
     namefile="Content/Map/locationNames.txt"
     commonness="3"
-    commonnessperzone="3: 2.0">
+    commonnessperzone="4: 2.0">
 
 			<Symbol texture="Content/Map/MapIconAtlas.png" sourcerect="803,265,190,241" color="198,252,222,255"/>
 			<Portrait texture="Content/Map/LocationPortraits/WorkCampResearchFacility1.png" premultiplyalpha="false"/>
@@ -124,7 +124,7 @@
     identifier="Mine"
     namefile="Content/Map/locationNames.txt"
     commonness="3"
-    commonnessperzone="3: 2, 4: 1.0">
+    commonnessperzone="4: 2.0">
 
 			<Symbol texture="Content/Map/MapIconAtlas.png" sourcerect="284,773,220,244" color="198,252,222,255"/>
 			<Portrait texture="Content/Map/LocationPortraits/WorkCampMining1.png" premultiplyalpha="false"/>
