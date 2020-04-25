@@ -103,6 +103,8 @@
     mountainheightmin="10000"
     mountainheightmax="20000"
     ruincount="1"
+	wreckcount="1"
+    thalamusprobability="0.2"
     bottomholeprobability="0.2"
     waterparticlescale="1">
     <Background
@@ -150,6 +152,8 @@
     mountainheightmin="10000"
     mountainheightmax="20000"
     ruincount="1"
+	wreckcount="1"
+    thalamusprobability="0.2"
     bottomholeprobability="0.2"
     waterparticlescale="1">
     <Background
@@ -197,6 +201,8 @@
     mountainheightmin="80000"
     mountainheightmax="100000"
     ruincount="1"
+	wreckcount="1"
+    thalamusprobability="0.4"
     bottomholeprobability="0.75"
     waterparticlescale="1">
     <Background
@@ -244,6 +250,8 @@
     mountainheightmin="80000"
     mountainheightmax="100000"
     ruincount="1"
+	wreckcount="1"
+    thalamusprobability="0.75"
     bottomholeprobability="1"
     waterparticlescale="1">
     <Background
@@ -290,7 +298,9 @@
     mountaincountmax="0"
     mountainheightmin="80000"
     mountainheightmax="100000"
-    ruincount="0"
+    ruincount="1"
+	wreckcount="1"
+    thalamusprobability="1"
     bottomholeprobability="1"
     waterparticlescale="0.5">
     <Background
@@ -337,7 +347,9 @@
     mountaincountmax="4"
     mountainheightmin="10000"
     mountainheightmax="50000"
-    ruincount="0"
+    ruincount="1"
+	wreckcount="1"
+    thalamusprobability="1"
     bottomholeprobability="1"
     waterparticlescale="1">
     <Background
