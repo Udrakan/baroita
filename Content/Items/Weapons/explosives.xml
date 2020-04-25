@@ -13,7 +13,7 @@
     </Fabricate>
     <!-- TODO: sprite and inventory icon -->
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="897,896,64,64" origin="0.5,0.5" />
-    <Sprite texture="weapons_new.png" depth="0.8" sourcerect="220,380,47,32" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.8" sourcerect="220,380,47,32" origin="0.5,0.5" />
     <Body width="45" height="30" density="20" />
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" type="OnBroken" range="10000" selectionmode="All" />
@@ -39,7 +39,7 @@
       <RequiredItem identifier="plastic" />
     </Fabricate>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="768,64,64,64" origin="0.5,0.5" />
-    <Sprite texture="weapons_new.png" depth="0.8" sourcerect="274,380,48,33" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.8" sourcerect="274,380,48,33" origin="0.5,0.5" />
     <Body width="45" height="30" density="20" />
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" type="OnBroken" range="10000" selectionmode="All" />
@@ -65,7 +65,7 @@
       <RequiredItem identifier="sulphuricacid" />
     </Fabricate>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,64,64,64" origin="0.5,0.5" />
-    <Sprite texture="weapons_new.png" depth="0.8" sourcerect="339,378,49,34" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.8" sourcerect="339,378,49,34" origin="0.5,0.5" />
     <Body width="45" height="30" density="20" />
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <sound file="Content/Items/Weapons/ExplosionMedium2.ogg" type="OnBroken" range="10000" selectionmode="All" />
@@ -91,7 +91,7 @@
       <RequiredItem identifier="flashpowder" />
     </Fabricate>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,64,64,64" origin="0.5,0.5" />
-    <Sprite texture="weapons_new.png" depth="0.8" sourcerect="402,377,50,34" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.8" sourcerect="402,377,50,34" origin="0.5,0.5" />
     <Body width="45" height="30" density="20" />
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <sound file="Content/Items/Weapons/ExplosionMedium3.ogg" type="OnBroken" range="10000" selectionmode="All" />
@@ -113,7 +113,7 @@
     <Upgrade gameversion="0.9.3.0" scale="0.5"/>
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="0.5"/>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,64,64,64" origin="0.5,0.5" />
-    <Sprite texture="weapons_new.png" depth="0.8" sourcerect="462,378,50,34" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.8" sourcerect="462,378,50,34" origin="0.5,0.5" />
     <Body width="50" height="30" density="20" />
     <Fabricate suitablefabricators="fabricator" requiredtime="20">
       <RequiredSkill identifier="weapons" level="50" />
@@ -140,7 +140,7 @@
     <PreferredContainer primary="armcab" minamount="1" maxamount="2" spawnprobability="0.5"/>
     <Price locationtype="Military" buyprice="1000" />
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,64,64,64" origin="0.5,0.5" />
-    <Sprite texture="weapons_new.png" depth="0.8" sourcerect="-1,385,41,21" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.8" sourcerect="-1,385,41,21" origin="0.5,0.5" />
     <Body width="40" height="22" density="20" />
     <Holdable selectkey="Action" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" aimpos="35,-10" handle1="0,0" attachable="true" aimable="true">
       <RequiredItem items="wrench" type="Equipped" />
@@ -164,7 +164,7 @@
   <Item name="" identifier="nitroglycerin" category="Material" description="" spritecolor="1.0,1.0,1.0,1.0" containercolor="1.0,1.0,1.0,1.0" cargocontaineridentifier="explosivecrate" Tags="smallitem,chem,medical" impacttolerance="6" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab,armcab,storagecab"/>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="653,769,37,62" origin="0.5,0.5" />
-    <Sprite texture="weapons_new.png" sourcerect="481,-1,31,62" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="481,-1,31,62" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="60" density="20" />
     <Throwable characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />

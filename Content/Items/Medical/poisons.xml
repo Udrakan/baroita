@@ -21,7 +21,7 @@
       <Item identifier="deusizine" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,640,64,64" origin="0.5,0.5" />
-    <Sprite texture="Medicines.png" sourcerect="311,120,62,115" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="311,120,62,115" depth="0.6" origin="0.5,0.5" />
     <Body width="60" height="110" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
@@ -60,7 +60,7 @@
       <Item identifier="ethanol" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,704,64,64" origin="0.5,0.5" />
-    <Sprite texture="Medicines.png" sourcerect="126,232,67,124" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="126,232,67,124" depth="0.6" origin="0.5,0.5" />
     <Body width="65" height="120" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
@@ -100,7 +100,7 @@
       <Item identifier="sodium" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,640,64,64" origin="0.5,0.5" />
-    <Sprite texture="Medicines.png" sourcerect="63,117,62,115" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="63,117,62,115" depth="0.6" origin="0.5,0.5" />
     <Body width="60" height="110" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
@@ -138,7 +138,7 @@
       <Item identifier="thorium" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,448,64,64" origin="0.5,0.5" />
-    <Sprite texture="Medicines.png" sourcerect="0,115,62,115" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="0,115,62,115" depth="0.6" origin="0.5,0.5" />
     <Body width="60" height="110" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
@@ -176,7 +176,7 @@
       <Item identifier="flashpowder" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,640,64,64" origin="0.5,0.5" />
-    <Sprite texture="Medicines.png" sourcerect="188,120,62,115" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="188,120,62,115" depth="0.6" origin="0.5,0.5" />
     <Body width="60" height="110" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
@@ -212,7 +212,7 @@
       <Item identifier="dementonite" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,704,64,64" origin="0.5,0.5" />
-    <Sprite texture="Medicines.png" sourcerect="378,239,62,115" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="378,239,62,115" depth="0.6" origin="0.5,0.5" />
     <Body width="60" height="110" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />

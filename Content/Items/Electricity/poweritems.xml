@@ -19,7 +19,7 @@
       <RequiredItem identifier="lithium" />
     </Fabricate>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="battery.png" sourcerect="357,0,57,38" depth="0.8" />
+    <Sprite texture="Content/Items/Electricity/battery.png" sourcerect="357,0,57,38" depth="0.8" />
     <Body width="55" height="38" density="30" />
     <Pickable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
   </Item>

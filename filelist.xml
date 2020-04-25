@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
-<contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.9.8.0" steamworkshopurl="http://steamcommunity.com/sharedfiles/filedetails/?source=Facepunch.Steamworks&amp;id=2005463692" installtime="1586978691">
+<contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.9.8.0" steamworkshopurl="http://steamcommunity.com/sharedfiles/filedetails/?source=Facepunch.Steamworks&amp;id=2005463692" installtime="1587566571">
   <RandomEvents file="Mods/IntoTheAbyss/Content/randomevents.xml" />
   <EventManagerSettings file="Mods/IntoTheAbyss/Content/EventManagerSettings.xml" />
   <SkillSettings file="Mods/IntoTheAbyss/Content/SkillSettings.xml" />
@@ -17,7 +16,6 @@
   <Character file="Mods/IntoTheAbyss/Content/Characters/Mudraptor/Mudraptor.xml" />
   <Character file="Mods/IntoTheAbyss/Content/Characters/Moloch/Moloch.xml" />
   <Character file="Mods/IntoTheAbyss/Content/Characters/Molochboss/Molochboss.xml" />
-  <Character file="Mods/IntoTheAbyss/Content/Characters/Watcher/Watcher.xml" />
   <Character file="Mods/IntoTheAbyss/Content/Characters/Crawler/Crawler.xml" />
   <Character file="Mods/IntoTheAbyss/Content/Characters/Hammerheadgold/Hammerheadgold.xml" />
   <Character file="Mods/IntoTheAbyss/Content/Characters/Hammerheadspawn/Hammerheadspawn.xml" />
@@ -45,5 +43,9 @@
   <Item file="Mods/IntoTheAbyss/Content/Items/Jobgear/engineer_gear.xml" />
   <Item file="Mods/IntoTheAbyss/Content/Items/Jobgear/assistant_gear.xml" />
   <Item file="Mods/IntoTheAbyss/Content/Items/Jobgear/misc.xml" />
+  <Item file="Mods/IntoTheAbyss/Content/Items/Jobgear/misc.xml" />
+  <Item file="Mods/IntoTheAbyss/Content/Map/Thalamus/thalamusitems.xml" />
+  <WreckAIConfig file="Mods/IntoTheAbyss/Content/Map/Thalamus/ThalamusAI.xml" />
+  <Corpses file="Mods/IntoTheAbyss/Content/Corpses.xml" />
   <Text file="Mods/IntoTheAbyss/Content/Texts/EnglishITA.xml" />
 </contentpackage>

@@ -43,8 +43,7 @@
     itemidentifier="skyholderartifact">
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
-	
-    <LocationType from="City" to="None"/>        
+	        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -52,11 +51,7 @@
     <LocationType from="Research" to="Military"/>
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
-    <LocationType from="Research" to="Lair"/>
-	<LocationType from="Military" to="None"/>
-	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
-	<LocationType from="None" to="None"/>
 
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
@@ -79,7 +74,6 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
     
-    <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -87,11 +81,7 @@
     <LocationType from="Research" to="Military"/>
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
-    <LocationType from="Research" to="Lair"/>
-	<LocationType from="Military" to="None"/>
-	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
-	<LocationType from="None" to="None"/>
 
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
@@ -114,7 +104,6 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
 
-    <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -122,11 +111,7 @@
     <LocationType from="Research" to="Military"/>
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
-    <LocationType from="Research" to="Lair"/>
-	<LocationType from="Military" to="None"/>
-	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
-	<LocationType from="None" to="None"/>
 
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
@@ -149,7 +134,6 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
 
-     <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -157,11 +141,7 @@
     <LocationType from="Research" to="Military"/>
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
-    <LocationType from="Research" to="Lair"/>
-	<LocationType from="Military" to="None"/>
-	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
-	<LocationType from="None" to="None"/>
 
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
@@ -184,7 +164,6 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
 
-     <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -192,11 +171,7 @@
     <LocationType from="Research" to="Military"/>
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
-    <LocationType from="Research" to="Lair"/>
-	<LocationType from="Military" to="None"/>
-	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
-	<LocationType from="None" to="None"/>
 
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
@@ -219,7 +194,6 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,0,256,256" color="49,93,233"/>
     
-    <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -227,11 +201,7 @@
     <LocationType from="Research" to="Military"/>
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
-    <LocationType from="Research" to="Lair"/>
-	<LocationType from="Military" to="None"/>
-	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
-	<LocationType from="None" to="None"/>
     
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
@@ -288,7 +258,6 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,0,256,256" color="49,93,233"/>
     
-    <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -296,11 +265,7 @@
     <LocationType from="Research" to="Military"/>
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
-    <LocationType from="Research" to="Lair"/>
-	<LocationType from="Military" to="None"/>
-	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
-	<LocationType from="None" to="None"/>
     
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
@@ -323,7 +288,6 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,0,256,256" color="49,93,233"/>
 
-    <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -331,11 +295,7 @@
     <LocationType from="Research" to="Military"/>
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
-    <LocationType from="Research" to="Lair"/>
-	<LocationType from="Military" to="None"/>
-	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
-	<LocationType from="None" to="None"/>
 	
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
@@ -358,7 +318,6 @@
 
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,0,256,256" color="49,93,233"/>
 
-    <LocationType from="City" to="None"/>        
     <LocationType from="Outpost" to="Research"/>
     <LocationType from="Research" to="None"/>
     <LocationType from="Research" to="City"/>
@@ -366,21 +325,17 @@
     <LocationType from="Research" to="Military"/>
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>
-    <LocationType from="Research" to="Lair"/>
-	<LocationType from="Military" to="None"/>
-	<LocationType from="Lair" to="Research"/>
 	<LocationType from="None" to="Research"/>
-	<LocationType from="None" to="None"/>
 	
     <message header="Artifact collected" text="Artifact is on board."/>
   </SalvageMission>
 
 
   <MonsterMission
-    name="Kill a grumpy old Moloch"
+    name="Kill Ancient Moloch"
     identifier="killmoloch"
     type="Monster"
-    description="A particularly aggressive Moloch has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to those who kill the creature."
+    description="Ancient Moloch is preventing us from expanding to [location2] due to it's territorial behaviour. Reward of [reward] is promised to any crew who kill it."
     commonness="25"
     reward="7500"
     sonarlabel="Moloch"
@@ -395,6 +350,8 @@
     <LocationType from="Military" to="Mine"/>	
 
 	<LocationType from="Military" to="Lair"/>
+	
+	<LocationType from="Military" to="None"/>
 
     <LocationType from="Research" to="Lair"/>
 
@@ -404,9 +361,6 @@
         
     <LocationType from="Outpost" to="Lair"/>
 	
-	<LocationType from="None" to="Lair"/>
-	
-	<LocationType from="Lair" to="Lair"/>
 
     
     <message header="Target terminated" text="The moloch is dead. Navigate the submarine out of the cavern to claim the reward."/>
@@ -1230,6 +1184,58 @@
     <LocationType from="Research" to="Research"/>
     <LocationType from="Research" to="Mine"/>    
   </CargoMission>
+
+  <SalvageMission
+    name="Wreck salvage"
+    identifier="salvagewreck1"
+    type="Salvage"
+    description="Wreck salvage mission description goes here"
+    commonness="50"
+    reward="3000"
+    achievementidentifier="salvagewreckmission"
+    sonarlabel="Wreck"
+    failuremessage="Salvaging the wreck failed"
+    successmessage="Mission successful"
+    spawntype="wreck"
+    showmessagewhenpickedup="true"
+    itemidentifier="handheldterminal"
+    containertag="locker">
+
+    <chooserandom>
+      <StatusEffect target="This" welcomemessage="cbspusbvnbhbnf.com/efsfmjdu/[ERR:_INSERT_PASS].htm"/>
+      <StatusEffect target="This" welcomemessage="[PASS_1]beweht"/>
+      <StatusEffect target="This" welcomemessage="[PASS_2]108 101 116 109 101 105 110"/>
+      <StatusEffect target="This" welcomemessage="[PASS_3]LLL SLS SL LS LLS S LSSS LLL LSLL"/>
+      <StatusEffect target="This" welcomemessage="[PASS_4]zorxv"/>
+      <StatusEffect target="This" welcomemessage="[PASS_5]s_m_l_t_d_ _i_i_i_u_e"/>
+      <StatusEffect target="This" welcomemessage="[PASS_6]DSPERiapa"/>
+      <StatusEffect target="This" welcomemessage="[PASS_7]4 5 1 4 13 5 14"/>
+    </chooserandom>
+
+    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,512,256,256" color="49,93,233"/>
+
+    <LocationType from="Outpost" to="Outpost"/>
+    <LocationType from="Outpost" to="Military"/>
+    <LocationType from="Outpost" to="Research"/>
+    <LocationType from="Outpost" to="Mine"/>
+
+    <LocationType from="Research" to="None"/>
+    <LocationType from="Research" to="Military"/>
+    <LocationType from="Research" to="Research"/>
+    <LocationType from="Research" to="Mine"/>
+
+    <LocationType from="Military" to="None"/>
+    <LocationType from="Military" to="Military"/>
+    <LocationType from="Military" to="Research"/>
+    <LocationType from="Military" to="Mine"/>
+
+    <message header="Thing collected" text="The thing is now on board. Navigate the submarine out of the cavern to claim the reward."/>
+  </SalvageMission>
+
+
+
+
+
 
   <CombatMission
     name="Search and Destroy"

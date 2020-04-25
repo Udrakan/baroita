@@ -5,7 +5,7 @@
   General green highlight color used for elements that are highlighted from code 
   ("thing done successfully" messages, green highlights when placing an item in an inventory slot, full progress bars, etc) 
     -->
-  <Green color="109,241,130,255" />
+  <Green color="154,213,163,255" />
   <!-- 
   General orange highlight color used for elements that are highlighted from code 
   (half-full progress bars, medium difficulty, etc) 
@@ -16,48 +16,65 @@
   (warning messages, red highlights when trying to place an item in an incorrect slot, almost empty progress bars, etc) 
     -->
   <Red color="245,105,105,255" />
-  
   <Blue color="126,211,224,255" />
+
+  <ColorInventoryEmpty color="245,105,105,255" />
+  <ColorInventoryHalf color="243,162,50,255" />
+  <ColorInventoryFull color="96,222,146,255" />
+  <ColorInventoryBackground color="56,56,56,255" />
   
   <TextColorNormal color="228,217,167,255" />
   <TextColorBright color="255,255,255,255" />
   <TextColorDark color="0,0,0,230" />
   <TextColorDim color="153,153,153,153" />
-  
+  <!-- Inventory -->
+  <EquipmentSlotIconColor color="99,70,64,255" />
+  <!-- Health HUD -->
+  <BuffColorLow color="144,238,144,255" />
+  <BuffColorMedium color="0,128,0,255" />
+  <BuffColorHigh color="0,100,0,255" />
+  <DebuffColorLow color="233,150,122,255" />
+  <DebuffColorMedium color="255,0,0,255" />
+  <DebuffColorHigh color="139,0,0,255" />
+  <HealthBarColorLow color="255,0,0,255" />
+  <HealthBarColorMedium color="255,165,0,255" />
+  <HealthBarColorHigh color="78,114,88" />
+  <!-- Equipment toggle button indicators -->
+  <EquipmentIndicatorNotEquipped color="128,128,128,255" />
+  <EquipmentIndicatorEquipped color="105,202,125,255" />
+  <EquipmentIndicatorRunningOut color="202,105,105,255" />
   <Cursor>
-    <Sprite name="Cursor.Pointer" state="0" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="386,483,37,50" origin="0.17,0.10"  />
-    <Sprite name="Cursor.Hand" state="1" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="523,479,33,42" origin="0.4,0.05"  />
-    <Sprite name="Cursor.Move" state="2" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="604,477,45,45" origin="0.5,0.5"  />
-    <Sprite name="Cursor.IBeam" state="3" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="498,480,22,37" origin="0.5,0.5"  />
-    <Sprite name="Cursor.Dragging" state="4" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="560,487,33,34" origin="0.5,0.5"  />
-    <Sprite name="Cursor.Waiting" state="5" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="469,480,28,39" origin="0.5,0.5"  />
-    <Sprite name="Cursor.WaitingBG" state="6" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="429,480,39,49" origin="0.17,0.10" />
+    <Sprite name="Cursor.Pointer" state="0" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="386,483,37,50" origin="0.17,0.1" />
+    <Sprite name="Cursor.Hand" state="1" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="523,479,33,42" origin="0.4,0.05" />
+    <Sprite name="Cursor.Move" state="2" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="604,477,45,45" origin="0.5,0.5" />
+    <Sprite name="Cursor.IBeam" state="3" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="498,480,22,37" origin="0.5,0.5" />
+    <Sprite name="Cursor.Dragging" state="4" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="560,487,33,34" origin="0.5,0.5" />
+    <Sprite name="Cursor.Waiting" state="5" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="469,480,28,39" origin="0.5,0.5" />
+    <Sprite name="Cursor.WaitingBG" state="6" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="429,480,39,49" origin="0.17,0.1" />
   </Cursor>
-
   <UIGlow texture="Content/UI/InnerGlow.png" sourcerect="0,0,512,384" slice="128,128,384,256" />
   <UIGlowCircular texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="177,637,170,170" origin="0.5,0.5" tile="false" />
   <FocusIndicator texture="Content/UI/FocusIndicator.png" sourcerect="0,0,448,224" rows="2" columns="4" />
-
   <!-- LEGACY
   <Font file="Content/Fonts/Exo2-Medium.otf" size="14"/>
   <SmallFont file="Content/Fonts/Exo2-Light.otf" size="12"/>
   <LargeFont file="Content/Fonts/BebasNeue-Regular.otf" size="22"/>
   -->
   <Font file="Content/Fonts/Exo2-SemiBold.otf">
-    <override language="Traditional Chinese" file="Content/Fonts/NotoSans/NotoSansTC-Medium.otf" dynamicloading="true" iscjk="true"/>
-    <override language="Simplified Chinese" file="Content/Fonts/NotoSans/NotoSansCJKsc-Medium.otf" dynamicloading="true" iscjk="true"/>
-    <override language="Japanese" file="Content/Fonts/NotoSans/NotoSansCJKsc-Medium.otf" dynamicloading="true" iscjk="true"/>
-    <override language="Korean" file="Content/Fonts/NotoSans/NotoSansCJKsc-Medium.otf" dynamicloading="true" iscjk="true"/>
-    <Size maxresolution="1024,768" size="11"/>
-    <Size maxresolution="1280,800" size="12"/>
-    <Size maxresolution="1920,1080" size="14"/>
-    <Size maxresolution="2048,1080" size="16"/>
-    <Size maxresolution="2560,1600" size="16"/>
-    <Size size="24"/>
     <override language="Traditional Chinese" file="Content/Fonts/NotoSans/NotoSansTC-Medium.otf" dynamicloading="true" iscjk="true" />
     <override language="Simplified Chinese" file="Content/Fonts/NotoSans/NotoSansCJKsc-Medium.otf" dynamicloading="true" iscjk="true" />
     <override language="Japanese" file="Content/Fonts/NotoSans/NotoSansCJKsc-Medium.otf" dynamicloading="true" iscjk="true" />
-    <override language="Korean" file="Content/Fonts/NotoSans/NotoSansCJKsc-Medium.otf" dynamicloading="true" iscjk="true"/>
+    <override language="Korean" file="Content/Fonts/NotoSans/NotoSansCJKsc-Medium.otf" dynamicloading="true" iscjk="true" />
+    <Size maxresolution="1024,768" size="11" />
+    <Size maxresolution="1280,800" size="12" />
+    <Size maxresolution="1920,1080" size="14" />
+    <Size maxresolution="2048,1080" size="16" />
+    <Size maxresolution="2560,1600" size="16" />
+    <Size size="24" />
+    <override language="Traditional Chinese" file="Content/Fonts/NotoSans/NotoSansTC-Medium.otf" dynamicloading="true" iscjk="true" />
+    <override language="Simplified Chinese" file="Content/Fonts/NotoSans/NotoSansCJKsc-Medium.otf" dynamicloading="true" iscjk="true" />
+    <override language="Japanese" file="Content/Fonts/NotoSans/NotoSansCJKsc-Medium.otf" dynamicloading="true" iscjk="true" />
+    <override language="Korean" file="Content/Fonts/NotoSans/NotoSansCJKsc-Medium.otf" dynamicloading="true" iscjk="true" />
     <Size maxresolution="1024,768" size="11" />
     <Size maxresolution="1280,800" size="12" />
     <Size maxresolution="1920,1080" size="14" />
@@ -222,6 +239,9 @@
     <Sprite name="MainMenuGUIButton" texture="Mods/IntoTheAbyss/Content/UI/UI_MainMenu.png" state="Hover" sourcerect="513,3,356,36" tile="false" origin="0.5,0.5" />
     <GUITextBlock textcolor="228,217,167,255" disabledcolor="125,125,125,125" disabledtextcolor="125,125,125,125" padding="10.0, 0.0, 10.0, 0.0" />
   </MainMenuGUIButton>
+  <MainMenuNotifBackground>
+    <Sprite name="MainMenuGUIButton" texture="Mods/IntoTheAbyss/Content/UI/UI_MainMenu.png" sourcerect="513,3,356,36" tile="false" origin="0.5,0.5" />
+  </MainMenuNotifBackground>
   <MainMenuCampaignIcon color="44,208,150,255">
     <Sprite name="MainMenuCampaignIcon" texture="Mods/IntoTheAbyss/Content/UI/UI_MainMenu.png" sourcerect="277,522,210,235" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
   </MainMenuCampaignIcon>
@@ -282,19 +302,24 @@
     <Sprite name="GUITabButton.Pressed" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" state="Pressed" sourcerect="662,376,185,43" tile="false" origin="0.5,0.5" />
     <GUITextBlock textcolor="129,140,132,255" selectedtextcolor="16,34,33,255" padding="10.0, 0.0, 10.0, 0.0" font="subheading" />
   </GUITabButton>
-  <GUISlopedHeader color="183,0,0,240" hovercolor="250,0,0,240" selectedcolor="150,0,0,200" pressedcolor="50,20,20,240" disabledcolor="80,0,0,0" textcolor="255,255,255,255" padding="10.0, 0.0, 10.0, 0.0">
+  <GUICharacterInfoButton color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="255,255,255,255" disabledcolor="255,255,255,255" pressedcolor="255,255,255,255">
+    <Sprite name="GUICharacterInfoButton.None" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" state="None" sourcerect="662,217,185,43" tile="false" origin="0.5,0.5" />
+    <Sprite name="GUICharacterInfoButton.Hover" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" state="Hover" sourcerect="662,325,185,43" tile="false" origin="0.5,0.5" />
+    <GUITextBlock textcolor="16,34,33,255" padding="10.0, 0.0, 10.0, 0.0" font="subheading" />
+  </GUICharacterInfoButton>
+  <GUISlopedHeader color="73,157,148,240" hovercolor="145,204,198,240" selectedcolor="73,157,148,240" pressedcolor="50,109,103,240" disabledcolor="125,125,125,125" textcolor="14,35,33,255" padding="10.0, 0.0, 10.0, 0.0">
     <Sprite texture="Content/UI/CampaignUIAtlas.png" sourcerect="10,461,404,101" tile="false" />
     <GUITextBlock textcolor="16,34,33,255" padding="20.0, 0.0, 20.0, 0.0" />
   </GUISlopedHeader>
-  <GUISlopedTabButtonLeft color="183,0,0,240" hovercolor="250,0,0,240" selectedcolor="150,0,0,200" pressedcolor="50,20,20,240" disabledcolor="80,0,0,0">
+  <GUISlopedTabButtonLeft color="105,118,116,240" hovercolor="136,153,150,240" selectedcolor="117,157,153,255" pressedcolor="80,90,88,255" disabledcolor="125,125,125,125">
     <Sprite texture="Content/UI/CampaignUIAtlas.png" sourcerect="11,380,207,68" tile="false" maintainaspectratio="true" />
     <GUITextBlock textcolor="16,34,33,255" padding="20.0, 0.0, 20.0, 0.0" />
   </GUISlopedTabButtonLeft>
-  <GUISlopedTabButtonMid color="183,0,0,240" hovercolor="250,0,0,240" selectedcolor="150,0,0,200" pressedcolor="50,20,20,240" disabledcolor="80,0,0,0">
+  <GUISlopedTabButtonMid color="105,118,116,240" hovercolor="136,153,150,240" selectedcolor="117,157,153,255" pressedcolor="80,90,88,255" disabledcolor="125,125,125,125">
     <Sprite texture="Content/UI/CampaignUIAtlas.png" sourcerect="218,380,257,68" tile="false" maintainaspectratio="true" />
     <GUITextBlock textcolor="16,34,33,255" padding="20.0, 0.0, 20.0, 0.0" />
   </GUISlopedTabButtonMid>
-  <GUISlopedTabButtonRight color="183,0,0,240" hovercolor="250,0,0,240" selectedcolor="150,0,0,200" pressedcolor="50,20,20,240">
+  <GUISlopedTabButtonRight color="105,118,116,240" hovercolor="136,153,150,240" selectedcolor="117,157,153,255" pressedcolor="80,90,88,255">
     <Sprite texture="Content/UI/CampaignUIAtlas.png" sourcerect="475,380,207,68" tile="false" maintainaspectratio="true" />
     <GUITextBlock textcolor="16,34,33,255" padding="20.0, 0.0, 20.0, 0.0" />
   </GUISlopedTabButtonRight>
@@ -471,8 +496,7 @@
     <Sprite name="GUITextBox.Selected" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" state="Selected" sourcerect="395,348,118,118" origin="0.5,0.5" />
     <GUITextBlock textcolor="228,217,167,255" disabledtextcolor="125,125,125,125" padding="10.0, 0.0, 10.0, 0.0" />
   </GUITextBoxNoBorder>
-  <GUIServerListTextBox color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="0,128,0,255" textcolor="228,217,167,255">
-  </GUIServerListTextBox>
+  <GUIServerListTextBox color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="0,128,0,255" textcolor="228,217,167,255"></GUIServerListTextBox>
   <GUINumberInput>
     <GUITextBox color="169,212,187,255" hovercolor="255,255,255,255" selectedcolor="169,212,187,255" disabledcolor="125,125,125,125" textcolor="228,217,167,255">
       <Sprite name="GUITextBox.None" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" state="None" sourcerect="520,212,126,126" slice="524,216,642,334" origin="0.5,0.5" />
@@ -487,7 +511,7 @@
     </MinusButton>
   </GUINumberInput>
   <GUITickBox color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="255,255,255,255" disabledcolor="125,125,125,125">
-    <Sprite name="GUITickBox.None" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" state="None" sourcerect="1,107,46,46" tile="false" origin="0.5,0.5" slice="6,112,42,148" minborderscale="1"/>
+    <Sprite name="GUITickBox.None" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" state="None" sourcerect="1,107,46,46" tile="false" origin="0.5,0.5" slice="6,112,42,148" minborderscale="1" />
     <Sprite name="GUITickBox.Pressed" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" state="Pressed" sourcerect="104,107,46,46" tile="false" origin="0.5,0.5" slice="109,112,145,148" minborderscale="1" />
     <Sprite name="GUITickBox.Hover" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" state="Hover" sourcerect="155,107,46,46" tile="false" origin="0.5,0.5" slice="160,112,196,148" minborderscale="1" />
     <Sprite name="GUITickBox.Selected" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" state="Selected" sourcerect="52,107,46,46" tile="false" origin="0.5,0.5" slice="57,112,93,148" minborderscale="1" />
@@ -535,6 +559,9 @@
   <GUIMinusButton color="200,200,200,255" hovercolor="255,255,255,255" pressedcolor="150,150,150,255" disabledcolor="125,125,125,125">
     <Sprite name="GUIMinusButton" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" tile="false" maintainaspectratio="true" sourcerect="418,49,46,46" origin="0.5,0.5" />
   </GUIMinusButton>
+  <GUIReloadButton color="200,200,200,255" hovercolor="255,255,255,255" pressedcolor="150,150,150,255" disabledcolor="125,125,125,125">
+    <Sprite name="GUIReloadButton" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" tile="false" maintainaspectratio="true" sourcerect="470,49,46,46" origin="0.5,0.5" />
+  </GUIReloadButton>
   <JobVariantButton color="100,100,100,255" hovercolor="255,255,255,255" selectedcolor="255,255,255,255" pressedcolor="150,150,150,255" disabledcolor="125,125,125,125">
     <Sprite name="JobVariantButton" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" tile="false" maintainaspectratio="true" sourcerect="767,61,47,35" origin="0.5,0.5" />
     <GUITextBlock textcolor="16,34,33,255" font="smallfont" padding="5,5,5,0" />
@@ -552,10 +579,10 @@
     <Sprite name="GUIStarIconBright" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" tile="false" maintainaspectratio="true" sourcerect="201,47,45,45" origin="0.5,0.5" />
   </GUIStarIconBright>
   <GUISoundIcon color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="255,255,255,255" sheetindices="0,1; 1,1; 0,2; 1,2">
-    <Sprite name="GUISoundIcon" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="26,497,36,38" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="GUISoundIcon" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="25,497,35,38" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
   </GUISoundIcon>
   <GUISoundIconDisabled color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="255,255,255,255">
-    <Sprite name="GUISoundIconDisabled" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="62,497,36,38" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="GUISoundIconDisabled" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="61,497,35,38" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
   </GUISoundIconDisabled>
   <GUIReadyToStart color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="255,255,255,255">
     <Sprite name="GUIReadyToStart" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="133,606,18,15" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
@@ -610,7 +637,7 @@
     <Sprite name="SerializableEntityEditor" texture="Content/UI/UIAtlasFrames.png" size="0.0, 0.0" sourcerect="751,1,187,189" slice="759,10,927,178" origin="0.5,0.5" />
   </SerializableEntityEditor>
   <ChatBox color="255,255,255,255" hovercolor="255,255,255,242" disabledcolor="127,127,127,127" selectedcolor="169,212,187,204" textcolor="228,217,167,255">
-    <Sprite name="ChatBox" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" state="None" tile="false" sourcerect="785,694,239,308" />
+    <Sprite name="ChatBox" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" state="None" tile="false" sourcerect="785,694,239,308" origin="0.5,0.5" />
   </ChatBox>
   <ChatTextBox color="169,212,187,255" hovercolor="255,255,255,255" selectedcolor="169,212,187,255" disabledcolor="125,125,125,125" textcolor="228,217,167,255">
     <Sprite name="ChatTextBox.None" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" state="None" sourcerect="520,212,126,126" slice="524,216,642,334" origin="0.5,0.5" minborderscale="1" />
@@ -631,6 +658,9 @@
   <SaveButton color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
     <Sprite name="SaveButton" texture="Content/UI/UIAtlasSubEditor.png" sourcerect="70,396,53,53" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
   </SaveButton>
+  <TestButton color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
+    <Sprite name="TestButton" texture="Content/UI/UIAtlasSubEditor.png" sourcerect="70,456,53,53" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+  </TestButton>
   <EditSubButton color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
     <Sprite name="EditSubButton" texture="Content/UI/UIAtlasSubEditor.png" sourcerect="136,392,49,53" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
   </EditSubButton>
@@ -676,6 +706,12 @@
   <CategoryButton.Alien color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
     <Sprite name="CategoryButton.Alien" texture="Content/UI/UIAtlasSubEditor.png" sourcerect="256,0,128,128" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
   </CategoryButton.Alien>
+  <CategoryButton.Wrecked color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
+    <Sprite name="CategoryButton.Wrecked" texture="Content/UI/UIAtlasSubEditor.png" sourcerect="512,0,128,128" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+  </CategoryButton.Wrecked>
+  <CategoryButton.Thalamus color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
+    <Sprite name="CategoryButton.Thalamus" texture="Content/UI/UIAtlasSubEditor.png" sourcerect="384,256,128,128" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+  </CategoryButton.Thalamus>
   <CategoryButton.ItemAssembly color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
     <Sprite name="CategoryButton.ItemAssembly" texture="Content/UI/UIAtlasSubEditor.png" sourcerect="384,128,128,128" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
   </CategoryButton.ItemAssembly>
@@ -739,10 +775,10 @@
     </GUIButtonVertical>
   </OnOffLever>
   <DeviceSlider>
-    <GUIFrameHorizontal color="255,255,255,255" disabledcolor="180,180,180,255" textcolor="255,255,255,255" padding="15,2,15,2" colorfadetime="1" colortransition="easein">
+    <GUIFrameHorizontal color="255,255,255,255" disabledcolor="180,180,180,255" textcolor="255,255,255,255" padding="10,2,10,2" colorfadetime="1" colortransition="easein">
       <Sprite texture="Content/UI/UIAtlasDevices.png" sourcerect="0,213,123,47" slice="19,234,103,238" origin="0.5,0.5" />
     </GUIFrameHorizontal>
-    <GUIFrameVertical color="255,255,255,255" disabledcolor="180,180,180,255" textcolor="255,255,255,255" padding="2,15,2,15" colorfadetime="1" colortransition="easein">
+    <GUIFrameVertical color="255,255,255,255" disabledcolor="180,180,180,255" textcolor="255,255,255,255" padding="2,10,2,10" colorfadetime="1" colortransition="easein">
       <Sprite texture="Content/UI/UIAtlasDevices.png" sourcerect="0,261,47,124" slice="21,280,25,363" origin="0.5,0.5" />
     </GUIFrameVertical>
     <GUIButtonHorizontal color="204,204,204,255" disabledcolor="180,180,180,255" hovercolor="255,255,255,255" selectedcolor="204,204,204,255" pressedcolor="0,0,0,255" colorfadetime="0.75" colortransition="easein">
@@ -864,14 +900,35 @@
     <Sprite name="DigitalFrameDark" texture="Content/UI/UIAtlasDevices.png" sourcerect="672,219,168,66" slice="677,224,835,280" tile="true" origin="0.5,0.5" />
   </DigitalFrameDark>
   <!-- In-game HUD -->
+  <InfoAreaPortraitBG>
+    <Sprite name="InfoAreaPortraitBG" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="834,299,140,96" origin="0.5,0.5" />
+  </InfoAreaPortraitBG>
   <CharacterHealthBarSlider color="255,255,255,255">
     <Slider color="255,255,255,255">
       <Sprite name="CharacterHealthBarSlider" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="989,412,12,12" origin="0.5,0.5" />
     </Slider>
   </CharacterHealthBarSlider>
   <CharacterHealthBarBG color="255,255,255,255">
-    <Sprite name="CharacterHealthBarBG" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="862,402,116,50" slice="912,430,970,431" origin="0.5,0.5" />
+    <Sprite name="CharacterHealthBarBG" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="864,402,111,49" slice="912,430,970,431" origin="0.5,0.5" />
   </CharacterHealthBarBG>
+  <EquipmentToggleButton color="255,255,255,255">
+    <Sprite name="EquipmentToggleButton" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="492,140,25,95" origin="0.5,0.5" />
+  </EquipmentToggleButton>
+  <EquipmentIndicatorDivingSuit color="255,255,255,255">
+    <Sprite name="EquipmentIndicatorDivingSuit" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="450,151,12,9" origin="0.5,0.5" />
+  </EquipmentIndicatorDivingSuit>
+  <EquipmentIndicatorID color="255,255,255,255">
+    <Sprite name="EquipmentIndicatorID" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="450,164,12,9" origin="0.5,0.5" />
+  </EquipmentIndicatorID>
+  <EquipmentIndicatorOutfit color="255,255,255,255">
+    <Sprite name="EquipmentIndicatorOutfit" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="450,176,12,9" origin="0.5,0.5" />
+  </EquipmentIndicatorOutfit>
+  <EquipmentIndicatorHeadwear color="255,255,255,255">
+    <Sprite name="EquipmentIndicatorHeadwear" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="450,188,12,9" origin="0.5,0.5" />
+  </EquipmentIndicatorHeadwear>
+  <EquipmentIndicatorHeadphones color="255,255,255,255">
+    <Sprite name="EquipmentIndicatorHeadphones" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="450,200,12,9" origin="0.5,0.5" />
+  </EquipmentIndicatorHeadphones>
   <PowerButton color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="255,255,255,255" pressedcolor="220,220,220,255" disabledcolor="120,120,120,255" colorfadetime="0.75" spritefadetime="0.25" colortransition="easein">
     <Sprite name="PowerButton_None" texture="Content/UI/UIAtlasDevices.png" state="None" maintainaspectratio="true" sourcerect="90,266,130,130" tile="false" origin="0.5,0.5" crossfadein="false" crossfadeout="false" />
     <Sprite name="PowerButton_Hover" texture="Content/UI/UIAtlasDevices.png" state="Hover" maintainaspectratio="true" sourcerect="859,164,130,130" tile="false" origin="0.5,0.5" crossfadein="false" crossfadeout="false" />
@@ -906,16 +963,16 @@
     <Sprite name="CommandButton_Pressed" texture="Content/UI/InventoryUIAtlas.png" state="Pressed" tile="false" sourcerect="13,743,182,99" maintainaspectratio="true" />
   </CommandButton>
   <CommandStartNode color="180,196,137,250">
-    <Sprite name ="CommandStartNode" texture="Content/UI/CommandUIAtlas.png" sourcerect="896,0,128,128" maintainaspectratio="true" tile="false" />
+    <Sprite name="CommandStartNode" texture="Content/UI/CommandUIAtlas.png" sourcerect="896,0,128,128" maintainaspectratio="true" tile="false" />
   </CommandStartNode>
   <CommandShortcutNode color="230,114,114,255">
-    <Sprite name ="CommandShortcutNode" texture="Content/UI/CommandUIAtlas.png" sourcerect="640,384,128,128" maintainaspectratio="true" tile="false" />
+    <Sprite name="CommandShortcutNode" texture="Content/UI/CommandUIAtlas.png" sourcerect="640,384,128,128" maintainaspectratio="true" tile="false" />
   </CommandShortcutNode>
   <CommandExpandNode color="255,255,255,255">
-    <Sprite name ="CommandExpandNode" texture="Content/UI/CommandUIAtlas.png" sourcerect="256,384,128,128" maintainaspectratio="true" tile="false" />
+    <Sprite name="CommandExpandNode" texture="Content/UI/CommandUIAtlas.png" sourcerect="256,384,128,128" maintainaspectratio="true" tile="false" />
   </CommandExpandNode>
   <CommandNodeContainer color="255,255,255,255">
-    <Sprite name ="CommandNodeContainer" texture="Content/UI/CommandUIAtlas.png" sourcerect="384,384,128,128" maintainaspectratio="true" tile="false" />
+    <Sprite name="CommandNodeContainer" texture="Content/UI/CommandUIAtlas.png" sourcerect="384,384,128,128" maintainaspectratio="true" tile="false" />
   </CommandNodeContainer>
   <CommandHotkeyContainer color="180,196,137,250">
     <Sprite name="CommandHotkeyContainer" texture="Content/UI/CommandUIAtlas.png" sourcerect="257,513,28,28" maintainaspectratio="true" tile="false" />
@@ -933,6 +990,23 @@
   <MouseButtonIconRight color="240,228,201,255">
     <Sprite name="MouseButtonIconRight" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" tile="false" sourcerect="638,527,9,16" origin="0.5,0.5" maintainaspectratio="true" />
   </MouseButtonIconRight>
+  <VoipIconInactive>
+    <Sprite name="VoipIconInactive" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="25,535,35,38" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+  </VoipIconInactive>
+  <VoipIconLow>
+    <Sprite name="VoipIconLow" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="61,535,35,38" tile="false" maintainaspectratio="true" origin="0.49733084,0.4983146" />
+  </VoipIconLow>
+  <VoipIconMedium>
+    <Sprite name="VoipIconMedium" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="25,573,35,38" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+  </VoipIconMedium>
+  <VoipIconHigh>
+    <Sprite name="VoipIconHigh" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" sourcerect="61,573,35,38" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+  </VoipIconHigh>
+  <CrewListToggleButton color="255,255,255,255">
+    <Sprite name="CrewListToggleButton_None" texture="Content/UI/InventoryUIAtlas.png" state="None" tile="false" sourcerect="248,531,175,64" maintainaspectratio="true" />
+    <Sprite name="CrewListToggleButton_Hover" texture="Content/UI/InventoryUIAtlas.png" state="Hover" tile="false" sourcerect="248,606,175,64" maintainaspectratio="true" />
+    <Sprite name="CrewListToggleButton_Pressed" texture="Content/UI/InventoryUIAtlas.png" state="Pressed" tile="false" sourcerect="248,681,175,64" maintainaspectratio="true" />
+  </CrewListToggleButton>
   <CrewListBackground color="255,255,255,255">
     <Sprite name="CrewListBackground_None" texture="Content/UI/CommandUIAtlas.png" state="None" tile="false" sourcerect="0,728,320,40" />
     <Sprite name="CrewListBackground_Selected" texture="Content/UI/CommandUIAtlas.png" state="Selected" tile="false" sourcerect="0,782,320,40" />
@@ -945,6 +1019,21 @@
     <Sprite name="CrewListCommandButton_Hover" texture="Content/UI/CommandUIAtlas.png" state="Hover" tile="false" sourcerect="427,640,40,40" maintainaspectratio="true" />
     <Sprite name="CrewListCommandButton_Pressed" texture="Content/UI/CommandUIAtlas.png" state="Pressed" tile="false" sourcerect="470,640,40,40" maintainaspectratio="true" />
   </CrewListCommandButton>
-
+  <!-- Tab Menu -->
+  <SpectateIcon>
+    <Sprite name="SpectateIcon" texture="Content/UI/MainIconsAtlas.png" sourcerect="129,256,128,128" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+  </SpectateIcon>
+  <DeadIcon>
+    <Sprite name="DeadIcon" texture="Content/UI/MainIconsAtlas.png" sourcerect="809,32,48,63" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+  </DeadIcon>
+  <DisconnectedIcon>
+    <Sprite name="DisconnectedIcon" texture="Content/UI/MainIconsAtlas.png" sourcerect="640,0,128,128" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+  </DisconnectedIcon>
+  <OwnerIcon>
+    <Sprite name="OwnerIcon" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" tile="false" sourcerect="606,549,14,12" origin="0.5,0.5" maintainaspectratio="true" />
+  </OwnerIcon>
+  <ModeratorIcon>
+    <Sprite name="ModeratorIcon" texture="Mods/IntoTheAbyss/Content/UI/UIAtlasGeneralITA.png" tile="false" sourcerect="607,567,13,12" origin="0.5,0.5" maintainaspectratio="true" />
+  </ModeratorIcon>
 </style>
 </Override>

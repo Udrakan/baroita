@@ -4,6 +4,7 @@
  <Override> 
   <Item name="" identifier="coilgunammobox" scale="0.5" tags="coilgunequipment,coilgunammo" category="Equipment" linkable="true" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="coilgunammocontainer" minamount="1" maxamount="3"/>
+	<PreferredContainer primary="wreckcoilgun" minamount="0" maxamount="3" spawnprobability="0.33"/>
     <Price locationtype="Outpost" buyprice="1500" />
     <Price locationtype="Military" buyprice="1300" />
     <Price locationtype="City" buyprice="1500" />
@@ -68,14 +69,14 @@
     </ItemContainer>
   </Item>
   
-    <Item name="" identifier="physicoriumbolt" category="Misc" scale="0.32" sonarsize="2" hideinmenus="true">
+  <Item name="" identifier="physicoriumbolt" category="Misc" scale="0.32" sonarsize="2" hideinmenus="true">
     <Sprite texture="weapons_new.png" sourcerect="0,498,177,14" depth="0.55" />
     <Body width="160" height="10" density="20" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" launchimpulse="80.0">
-      <Attack structuredamage="20" severlimbsprobability="0.5">
-        <Affliction identifier="internaldamage" strength="20" />
-        <Affliction identifier="bleeding" strength="10.0" />
+      <Attack structuredamage="10" severlimbsprobability="0.5">
+        <Affliction identifier="gunshotwound" strength="18.0" />
+        <Affliction identifier="bleeding" strength="1.0" />
       </Attack>
       <StatusEffect type="OnActive" target="This">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
@@ -85,6 +86,8 @@
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="This">
+        <ParticleEmitter particle="underwaterexplosion" copyentityangle="true" anglemin="0" anglemax="360" particleamount="1" scalemin="0.25" scalemax="0.5" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
@@ -129,7 +132,7 @@
   </Item>
   
   <Item name="" identifier="coilgunboltexplosive" category="Misc" scale="0.32" sonarsize="2" hideinmenus="true">
-    <Sprite texture="weapons_new.png" sourcerect="0,470,177,14" depth="0.55" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,470,177,14" depth="0.55" />
     <Body width="160" height="10" density="20" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" launchimpulse="80.0">
@@ -141,9 +144,10 @@
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="This">
-        <Explosion range="200.0" structuredamage="5" stun="0" force="30.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
-          <Affliction identifier="burn" strength="10" />
-          <Affliction identifier="internaldamage" strength="17.5" />
+        <Explosion range="150.0" structuredamage="5" stun="0" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+          <Affliction identifier="bleeding" strength="1" />
+          <Affliction identifier="gunshotwound" strength="18" />
+		  <Affliction identifier="burn" strength="2" />
         </Explosion>
         <Remove />
       </StatusEffect>
@@ -187,13 +191,13 @@
   </Item>
   
     <Item name="" identifier="coilgunboltpiercing" category="Misc" scale="0.32" sonarsize="2" hideinmenus="true">
-    <Sprite texture="weapons_new.png" sourcerect="186,484,175,19" depth="0.55" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="186,484,175,19" depth="0.55" />
     <Body width="160" height="10" density="20" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" launchimpulse="80.0">
       <Attack structuredamage="10" severlimbsprobability="0.5">
-        <Affliction identifier="internaldamage" strength="15" />
-        <Affliction identifier="lacerations" strength="5.0" />
+        <Affliction identifier="gunshotwound" strength="15" />
+        <Affliction identifier="bleeding" strength="1.0" />
       </Attack>
       <StatusEffect type="OnActive" target="This">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
