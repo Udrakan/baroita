@@ -7,9 +7,9 @@
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
     <Sprite name="Headset" texture="Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="28,321,49,62" origin="0.5,0.5" />
     <Body radius="15" height="10" density="30" />
-    <Deconstruct time="10">
-      <Item identifier="plastic" />
-      <Item identifier="fpgacircuit" />
+    <Deconstruct time="5">
+      <Item identifier="silicon" />
+      <Item identifier="copper" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="10">
       <RequiredItem identifier="plastic" />
