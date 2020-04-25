@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Override>
   <Item name="" identifier="button" category="Electrical" tags="smallitem,button" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
-    <Sprite texture="button.png" sourcerect="0,0,44,50" depth="0.8" origin="0.5,0.5" />
-    <Sprite texture="button.png" sourcerect="0,0,44,50" depth="0.8" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Button/button.png" sourcerect="0,0,44,50" depth="0.8" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Button/button.png" sourcerect="0,0,44,50" depth="0.8" origin="0.5,0.5" />
     <Deconstruct time="10">
       <Item identifier="fpgacircuit" />
       <Item identifier="plastic" />
@@ -27,7 +27,7 @@
   </Item>
   <Item name="" identifier="switch" category="Electrical" tags="smallitem,switch" cargocontaineridentifier="metalcrate" scale="0.7" impactsoundtag="impact_metal_light" isshootable="true">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,448,64,64" origin="0.5,0.5" />
-    <Sprite texture="button.png" sourcerect="45,1,18,31" depth="0.79" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Button/button.png" sourcerect="45,1,18,31" depth="0.79" origin="0.5,0.5" />
     <Deconstruct time="10">
       <Item identifier="fpgacircuit" />
       <Item identifier="plastic" />

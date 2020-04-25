@@ -8,6 +8,7 @@
   <!-- *************************************************************************************************************************************************************************** -->
   <TonicLiquid name="" identifier="tonicliquid" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical" description="" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="medcab" spawnprobability="0.5"/>
+	    <PreferredContainer primary="wreckmedcab" minamount="0" maxamount="1" spawnprobability="0.05"/>
     <SuitableTreatment identifier="internaldamage" suitability="-10" />
     <SuitableTreatment identifier="damage" suitability="-10" />
     <SuitableTreatment identifier="burn" suitability="-10" />
@@ -27,7 +28,7 @@
       <Item identifier="zinc" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,704,64,64" origin="0.5,0.5" />
-    <Sprite texture="Medicines.png" sourcerect="138,759,63,150" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="138,759,63,150" depth="0.6" origin="0.5,0.5" />
     <Body width="60" height="140" density="9" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <RequiredSkill identifier="medical" level="72"></RequiredSkill>
@@ -57,6 +58,7 @@
   <!-- *************************************************************************************************************************************************************************** -->
   <Methamphetamine name="" identifier="meth" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="medcab" spawnprobability="0.1"/>
+	    <PreferredContainer primary="wreckmedcab" minamount="0" maxamount="1" spawnprobability="0.05"/>
     <Price locationtype="Research" buyprice="800" />
     <Price locationtype="Outpost" buyprice="1000" />
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="90">
@@ -71,7 +73,7 @@
       <Item identifier="chlorine" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,448,64,64" origin="0.5,0.5" />
-    <Sprite texture="Medicines.png" sourcerect="124,0,62,115" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="124,0,62,115" depth="0.6" origin="0.5,0.5" />
     <Body width="60" height="110" density="15" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -124,6 +126,7 @@
   <!-- *************************************************************************************************************************************************************************** -->
   <AnabolicSteroids name="" identifier="steroids" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="medcab" spawnprobability="0.1"/>
+	   <PreferredContainer primary="wreckmedcab" minamount="0" maxamount="1" spawnprobability="0.05"/>
     <Price locationtype="Research" buyprice="2500" />
     <Price locationtype="Military" buyprice="3000" />
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="90">
@@ -137,7 +140,7 @@
     </Deconstruct>
     <!-- TODO: sprite -->
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,448,64,64" origin="0.5,0.5" />
-    <Sprite texture="Medicines.png" sourcerect="187,0,62,115" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="187,0,62,115" depth="0.6" origin="0.5,0.5" />
     <Body width="60" height="110" density="15" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
@@ -183,8 +186,7 @@
   <!-- *************************************************************************************************************************************************************************** -->
   <Hyperzine name="" identifier="hyperzine" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="medcab" spawnprobability="0.1"/>
-    <Price locationtype="Research" buyprice="6000" />
-    <Price locationtype="Military" buyprice="7000" />
+	   <PreferredContainer primary="wreckmedcab" minamount="0" maxamount="1" spawnprobability="0.05"/>
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="90">
       <RequiredSkill identifier="medical" level="48" />
       <RequiredItem identifier="meth" />
@@ -195,7 +197,7 @@
       <Item identifier="steroids" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,448,64,64" origin="0.5,0.5" />
-    <Sprite texture="Medicines.png" sourcerect="249,0,62,115" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="249,0,62,115" depth="0.6" origin="0.5,0.5" />
     <Body width="60" height="110" density="15" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <RequiredSkill identifier="medical" level="60" />
@@ -253,6 +255,7 @@
   <!-- *************************************************************************************************************************************************************************** --> 
   <Ethanol name="" identifier="ethanol" category="Material" cargocontaineridentifier="chemicalcrate" description="" Tags="smallitem,chem,medical" useinhealthinterface="true" scale="0.2" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="medfabcab" minamount="1" maxamount="4" spawnprobability="1"/>
+	   <PreferredContainer primary="wreckmedcab" minamount="0" maxamount="3" spawnprobability="0.06"/>
     <!-- TODO: adjust prices -->
     <Price locationtype="Research" buyprice="300" />
     <Price locationtype="Military" buyprice="300" />

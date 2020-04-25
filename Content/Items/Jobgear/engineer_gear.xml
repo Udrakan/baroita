@@ -9,18 +9,18 @@
     <Sprite name="Engineer Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="13,446,208,71" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Engineer Uniform 1 Torso" texture="engineer_torso_[GENDER]_1.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 1 Left Upper Arm" texture="engineer_torso_[GENDER]_1.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 1 Right Upper Arm" texture="engineer_torso_[GENDER]_1.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 1 Left Lower Arm" texture="engineer_torso_[GENDER]_1.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 1 Right Lower Arm" texture="engineer_torso_[GENDER]_1.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 1 Waist" texture="engineer_legs_[GENDER]_1.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 1 Right Thigh" texture="engineer_legs_[GENDER]_1.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 1 Left Thigh" texture="engineer_legs_[GENDER]_1.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 1 Right Leg" texture="engineer_legs_[GENDER]_1.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 1 Left Leg" texture="engineer_legs_[GENDER]_1.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 1 Right Shoe" texture="engineer_legs_[GENDER]_1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 1 Left Shoe" texture="engineer_legs_[GENDER]_1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 1 Torso" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_1.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 1 Left Upper Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_1.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 1 Right Upper Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_1.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 1 Left Lower Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_1.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 1 Right Lower Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_1.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 1 Waist" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_1.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 1 Right Thigh" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_1.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 1 Left Thigh" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_1.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 1 Right Leg" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_1.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 1 Left Leg" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_1.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 1 Right Shoe" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 1 Left Shoe" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
     </Wearable>
@@ -33,18 +33,18 @@
     <Sprite name="Engineer Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="227,452,202,65" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Engineer Uniform 2 Torso" texture="engineer_torso_[GENDER]_2.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 2 Left Upper Arm" texture="engineer_torso_[GENDER]_2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 2 Right Upper Arm" texture="engineer_torso_[GENDER]_2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 2 Left Lower Arm" texture="engineer_torso_[GENDER]_2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 2 Right Lower Arm" texture="engineer_torso_[GENDER]_2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 2 Waist" texture="engineer_legs_[GENDER]_2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 2 Right Thigh" texture="engineer_legs_[GENDER]_2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 2 Left Thigh" texture="engineer_legs_[GENDER]_2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 2 Right Leg" texture="engineer_legs_[GENDER]_2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 2 Left Leg" texture="engineer_legs_[GENDER]_2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 2 Right Shoe" texture="engineer_legs_[GENDER]_2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 2 Left Shoe" texture="engineer_legs_[GENDER]_2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 2 Torso" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_2.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 2 Left Upper Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 2 Right Upper Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 2 Left Lower Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 2 Right Lower Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 2 Waist" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 2 Right Thigh" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 2 Left Thigh" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 2 Right Leg" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 2 Left Leg" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 2 Right Shoe" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 2 Left Shoe" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
     </Wearable>
   </Item>
@@ -55,18 +55,18 @@
     <Sprite name="Engineer Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="227,452,202,65" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Engineer Uniform 3 Torso" texture="engineer_torso_[GENDER]_3.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 3 Left Upper Arm" texture="engineer_torso_[GENDER]_3.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 3 Right Upper Arm" texture="engineer_torso_[GENDER]_3.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 3 Left Lower Arm" texture="engineer_torso_[GENDER]_3.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 3 Right Lower Arm" texture="engineer_torso_[GENDER]_3.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 3 Waist" texture="engineer_legs_[GENDER]_3.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 3 Right Thigh" texture="engineer_legs_[GENDER]_3.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 3 Left Thigh" texture="engineer_legs_[GENDER]_3.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 3 Right Leg" texture="engineer_legs_[GENDER]_3.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 3 Left Leg" texture="engineer_legs_[GENDER]_3.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 3 Right Shoe" texture="engineer_legs_[GENDER]_3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Engineer Uniform 3 Left Shoe" texture="engineer_legs_[GENDER]_3.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Torso" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_3.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Left Upper Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_3.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Right Upper Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_3.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Left Lower Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_3.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Right Lower Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_3.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Waist" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Right Thigh" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Left Thigh" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Right Leg" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Left Leg" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Right Shoe" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Left Shoe" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
 	  <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.85" damagesound="LimbArmor" deflectprojectiles="true" />
     </Wearable>
