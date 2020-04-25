@@ -33,8 +33,8 @@
 		<ArtifactEvent itemidentifier="skyholderartifact" />
 
 		<!-- populate the ruins -->
-		<MonsterEvent characterfile="Fractalguardian" minamount="0" maxamount="2" spawntype="ruin" musictype="monster" />
-		<MonsterEvent characterfile="Fractalguardian2" minamount="0" maxamount="2" spawntype="ruin" musictype="monster" />
+		<MonsterEvent characterfile="Fractalguardian" minamount="4" maxamount="6" spawntype="ruin" musictype="monster" />
+		<MonsterEvent characterfile="Fractalguardian2" minamount="4" maxamount="6" spawntype="ruin" musictype="monster" />
 
 		<EventSet identifier="wreck" chooserandom="false" allowatstart="true" perwreck="true">
 			<MonsterEvent characterfile="Crawler" minamount="2" maxamount="4" spawntype="wreck" musictype="monster" spawnprobability="0.6" allowonlyonce="false"/>
@@ -159,13 +159,13 @@
 
 		<EventSet chooserandom="true" mindistancetraveled="0.10" minmissiontime="120" minintensity="0.0" maxintensity="55">
 			<MonsterEvent characterfile="Crawler" minamount="2" maxamount="5" spawntype="mainpath" musictype="monster" />
-			<MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="4" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="2" spawntype="mainpath" musictype="monster" />
 			<MonsterEvent characterfile="Crawlerhusk" minamount="1" maxamount="4" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
 		<EventSet chooserandom="true" mindistancetraveled="0.15" minmissiontime="120" minintensity="0.0" maxintensity="55">
 			<MonsterEvent characterfile="Crawler" minamount="2" maxamount="5" spawntype="mainpath" musictype="monster" />
-			<MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="4" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="2" spawntype="mainpath" musictype="monster" />
 			<MonsterEvent characterfile="Crawlerhusk" minamount="1" maxamount="4" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
@@ -173,7 +173,7 @@
 		<!-- 0-1 crawler or 0-1 mudraptor or 0-1 husk after 300 seconds or passing 10% -->
 		<EventSet chooserandom="true" mindistancetraveled="0.20" minmissiontime="300" minintensity="0.0" maxintensity="55">
 			<MonsterEvent characterfile="Crawler" minamount="3" maxamount="6" spawntype="mainpath" musictype="monster" />
-			<MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="3" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="2" spawntype="mainpath" musictype="monster" />
 			<MonsterEvent characterfile="Crawlerhusk" minamount="0" maxamount="4" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
@@ -185,25 +185,25 @@
 
 		<!-- 1-3 crawlers or 1 mudraptor after 9 minutes or passing 40% -->
 		<EventSet chooserandom="true" mindistancetraveled="0.40" minmissiontime="540" minintensity="0.0" maxintensity="55">
-			<MonsterEvent characterfile="Mudraptor" minamount="3" maxamount="5" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="3" spawntype="mainpath" musictype="monster" />
 			<MonsterEvent characterfile="Crawler" minamount="3" maxamount="10" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
 		<!-- 1-3 crawlers or 1 mudraptor after 11 minutes or passing 50% -->
 		<EventSet chooserandom="true" mindistancetraveled="0.50" minmissiontime="660" minintensity="0.0" maxintensity="55">
-			<MonsterEvent characterfile="Mudraptor" minamount="3" maxamount="6" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="4" spawntype="mainpath" musictype="monster" />
 			<MonsterEvent characterfile="Crawler" minamount="2" maxamount="8" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
 		<!-- 1-3 crawlers or 1 mudraptor after 13 minutes or passing 60% -->
 		<EventSet chooserandom="true" mindistancetraveled="0.60" minmissiontime="780" minintensity="0.0" maxintensity="55">
-			<MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="6" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="4" spawntype="mainpath" musictype="monster" />
 			<MonsterEvent characterfile="Crawler" minamount="2" maxamount="8" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
 		<!-- 1-3 crawlers or 1 mudraptor after 9 minutes or passing 70% -->
 		<EventSet chooserandom="true" mindistancetraveled="0.70" minmissiontime="900" minintensity="0.0" maxintensity="55">
-			<MonsterEvent characterfile="Mudraptor" minamount="3" maxamount="6" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="4" spawntype="mainpath" musictype="monster" />
 			<MonsterEvent characterfile="Crawler" minamount="4" maxamount="8" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
@@ -280,12 +280,12 @@
 		<!-- 1-5 crawlers or 1-2 raptors after passing 40% -->
 		<EventSet chooserandom="true" mindistancetraveled="0.40" minmissiontime="3000" minintensity="0.0" maxintensity="55">
 			<MonsterEvent characterfile="Crawler" minamount="3" maxamount="10" spawntype="mainpath" musictype="monster" />
-			<MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="6" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="5" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
 		<!-- 3-8 crawlers or 2-4 raptors or a small thresher pack after passing 60% -->
 		<EventSet chooserandom="true" mindistancetraveled="0.60" minmissiontime="3000" minintensity="0.0" maxintensity="55">
-			<MonsterEvent characterfile="Mudraptor" minamount="4" maxamount="8" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Mudraptor" minamount="3" maxamount="6" spawntype="mainpath" musictype="monster" />
 			<MonsterEvent characterfile="Crawler" minamount="6" maxamount="12" spawntype="mainpath" musictype="monster" />
 			<EventSet chooserandom="false">
 				<MonsterEvent characterfile="Tigerthresher" minamount="1" maxamount="2" spawntype="mainpath" musictype="monster" />
@@ -296,7 +296,7 @@
 		<!-- 1-5 crawlers or 1-2 raptors after passing 40% -->
 		<EventSet chooserandom="true" mindistancetraveled="0.80" minmissiontime="3000" minintensity="0.0" maxintensity="55">
 			<MonsterEvent characterfile="Crawler" minamount="2" maxamount="10" spawntype="mainpath" musictype="monster" />
-			<MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="7" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="4" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
 	</EventSet>
@@ -387,25 +387,25 @@
 		<!-- 1-5 crawlers or 1-2 raptors after 9 minutes or passing 40% -->
 		<EventSet chooserandom="true" mindistancetraveled="0.50" minmissiontime="540" minintensity="0.0" maxintensity="55">
 			<MonsterEvent characterfile="Crawler" minamount="4" maxamount="10" spawntype="mainpath" musictype="monster" />
-			<MonsterEvent characterfile="Mudraptor" minamount="3" maxamount="6" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Mudraptor" minamount="3" maxamount="4" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
 		<!-- 1-5 crawlers or 1-2 raptors after 11 minutes or passing 50% -->
 		<EventSet chooserandom="true" mindistancetraveled="0.60" minmissiontime="660" minintensity="0.0" maxintensity="55">
 			<MonsterEvent characterfile="Crawler" minamount="4" maxamount="10" spawntype="mainpath" musictype="monster" />
-			<MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="8" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="4" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
 		<!-- 1-5 crawlers or 1-2 raptors after 13 minutes or passing 60% -->
 		<EventSet chooserandom="true" mindistancetraveled="0.70" minmissiontime="780" minintensity="0.0" maxintensity="55">
 			<MonsterEvent characterfile="Crawler" minamount="2" maxamount="10" spawntype="mainpath" musictype="monster" />
-			<MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="8" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="4" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
 		<!-- 1-5 crawlers or 1-2 raptors after 15 minutes or passing 70% -->
 		<EventSet chooserandom="true" mindistancetraveled="0.80" minmissiontime="900" minintensity="0.0" maxintensity="55">
 			<MonsterEvent characterfile="Crawler" minamount="0" maxamount="8" spawntype="mainpath" musictype="monster" />
-			<MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="8" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="4" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
 	</EventSet>
