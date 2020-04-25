@@ -4,7 +4,7 @@
  <Override> 
   <Item name="" identifier="coilgunammobox" scale="0.5" tags="coilgunequipment,coilgunammo" category="Equipment" linkable="true" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="coilgunammocontainer" minamount="1" maxamount="3"/>
-	<PreferredContainer primary="wreckcoilgun" minamount="0" maxamount="3" spawnprobability="0.33"/>
+	<PreferredContainer primary="wreckcoilgun" minamount="0" maxamount="1" spawnprobability="0.33"/>
     <Price locationtype="Outpost" buyprice="1500" />
     <Price locationtype="Military" buyprice="1300" />
     <Price locationtype="City" buyprice="1500" />

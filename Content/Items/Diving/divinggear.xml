@@ -113,7 +113,7 @@
   </Item>
   
   <Item name="" identifier="divingsuit" category="Equipment" tags="diving,divingsuit" scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.8"/>
+    <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.4"/>
     <Price locationtype="Research" buyprice="5000" />
     <Price locationtype="City" buyprice="4500" />
     <Price locationtype="Military" buyprice="4500" />
