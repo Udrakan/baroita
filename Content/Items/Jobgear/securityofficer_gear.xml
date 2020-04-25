@@ -160,7 +160,6 @@
   <!-- HEADGEAR END -->
   <Item name="" identifier="handcuffs" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="armcab" minamount="0" maxamount="2" spawnprobability="1" />
-    <Price locationtype="Military" buyprice="600" />
     <Deconstruct time="10">
       <Item identifier="steel" />
     </Deconstruct>

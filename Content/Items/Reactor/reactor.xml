@@ -30,7 +30,6 @@
     </Holdable>
   </Item>
     <Item name="" identifier="fulguriumfuelrod" Tags="smallitem,reactorfuel" cargocontaineridentifier="metalcrate" health="150" scale="0.5">
-    <PreferredContainer primary="reactorcab,storagecab" />
     <Deconstruct time="10">
       <Item identifier="steel"/>
       <Item identifier="lead" />
@@ -48,7 +47,6 @@
   </Item>
   
     <Item name="" identifier="thoriumfuelrod" Tags="smallitem,reactorfuel" cargocontaineridentifier="metalcrate" health="200" scale="0.5">
-    <PreferredContainer primary="reactorcab" minamount="1" maxamount="2" spawnprobability="0.05" />
     <Deconstruct time="10">
       <Item identifier="steel"/>
       <Item identifier="lead" />
