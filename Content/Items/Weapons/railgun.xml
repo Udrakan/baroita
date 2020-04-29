@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
 <Items>
   <Item name="" identifier="railgun" description="" Tags="turret" category="Machine" interactthroughwalls="true" interactdistance="10" focusonselected="true" offsetonselected="800" linkable="true" allowedlinks="railgunammosource">
     <Sprite texture="Turrets.png" depth="0.01" sourcerect="512,0,256,256" canflipy="false" />
@@ -121,9 +122,6 @@
   <Item name="" identifier="railgunshell" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Misc" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="railgunammocontainer" minamount="3" maxamount="6"/>
     <PreferredContainer primary="wreckrailgun" minamount="0" maxamount="3" spawnprobability="0.33"/>
-    <Price locationtype="Military" buyprice="30" />
-    <Price locationtype="City" buyprice="50" />
-    <Price locationtype="Outpost" buyprice="100" />
     <Deconstruct time="10">
       <Item identifier="steel" />
     </Deconstruct>
@@ -160,8 +158,6 @@
   </Item>
   
   <Item name="" identifier="nuclearshell" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Misc" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="railgunammocontainer" spawnprobability="0.05"/>
-    <Price locationtype="Military" buyprice="200" />
     <Deconstruct time="10">
       <Item identifier="steel" />
       <Item identifier="uranium" />
@@ -214,8 +210,6 @@
   </Item>
   
   <Item name="" identifier="alienshell" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Misc" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="railgunammocontainer" spawnprobability="0.01"/>
-    <Price locationtype="Military" buyprice="400" />
     <Deconstruct time="20">
       <Item identifier="physicorium" />
     </Deconstruct>
@@ -248,3 +242,4 @@
     </ItemContainer>
   </Item>
 </Items>
+</Override>
