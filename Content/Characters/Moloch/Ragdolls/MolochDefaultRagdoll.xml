@@ -8,8 +8,8 @@
       <Affliction identifier="stun" strength="5" />
 	   <StatusEffect type="OnUse" target="This" targetlimb="Head">
         <Explosion range="8000" stun="50" force="1.5" flames="false" shockwave="false" sparks="false" underwaterbubble="false" >
-		 <Affliction identifier="blunttrauma" strength="150" />
-		 <Affliction identifier="stun" strength="15" />
+		 <Affliction identifier="blunttrauma" strength="250" />
+		 <Affliction identifier="stun" strength="5" />
 	    </Explosion>
      </StatusEffect>
     </attack>
