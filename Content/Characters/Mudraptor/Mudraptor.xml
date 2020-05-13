@@ -34,13 +34,13 @@
     <latchonto attachtowalls="true" attachtosub="false" />
     <target tag="decoy" state="Attack" priority="600" />
     <target tag="provocative" state="Attack" priority="200" />
-    <target tag="weapon" state="Attack" priority="200" />
+    <target tag="weapon" state="Attack" priority="210" />
     <target tag="nasonov" state="Attack" priority="250" />
     <target tag="stronger" state="Avoid" priority="110" reactdistance="2000"/>
     <target tag="human" state="Attack" priority="200" />
     <target tag="light" state="Attack" priority="80" />
-    <target tag="tool" state="Aggressive" priority="80" reactdistance="1000"/>
-    <target tag="dead" state="Eat" priority="60" />
+    <target tag="tool" state="Attack" priority="205" />
+    <target tag="dead" state="Eat" priority="200" />
     <target tag="weaker" state="Attack" priority="60" />
     <target tag="sonar" state="Attack" priority="60" />
     <target tag="door" state="Attack" priority="180" />

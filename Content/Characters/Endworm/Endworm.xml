@@ -1,25 +1,24 @@
 ﻿<Override>
-  <Character speciesname="Endworm" humanoid="False" displayname="" group="" husk="False" needsair="False" canspeak="False" noise="100" blooddecal="blood" eatingspeed="10" pathfinderpriority="1">
+  <Character speciesname="Endworm" humanoid="False" displayname="" group="" husk="False" needsair="False" canspeak="False" noise="500" blooddecal="blood" eatingspeed="10" pathfinderpriority="1" hasinfo="False" usehuskappendage="False" needswater="False" visibility="500" bleedparticleair="blooddrop" bleedparticlewater="waterblood" hideinsonar="False">
     <ragdolls folder="default" />
     <animations folder="default" />
     <gibemitter particle="brownchunks" particleamount="40" velocitymin="50" velocitymax="1000" anglemin="0" anglemax="360" scalemin="1" scalemax="1" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
     <gibemitter particle="blackwaterblood" particleamount="40" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="5" scalemax="10" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
     <health vitality="8000" doesbleed="False" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="0" burnreduction="0" constanthealthregeneration="0" healthregenerationwheneating="0" />
-    <sound file="Content/Characters/Endworm/ENDWORM_idle1.ogg" state="Idle" range="100000" volume="1000" gender="None" />
-    <sound file="Content/Characters/Endworm/ENDWORM_idle2.ogg" state="Idle" range="100000" volume="1000" gender="None" />
-    <sound file="Content/Characters/Endworm/ENDWORM_idle3.ogg" state="Idle" range="100000" volume="1000" gender="None" />
-    <sound file="Content/Characters/Endworm/ENDWORM_attack1.ogg" state="Attack" range="8000" volume="1000" gender="None" />
-    <sound file="Content/Characters/Endworm/ENDWORM_attack2.ogg" state="Attack" range="8000" volume="1000" gender="None" />
-    <sound file="Content/Characters/Endworm/ENDWORM_attack3.ogg" state="Attack" range="8000" volume="1000" gender="None" />
-    <sound file="Content/Characters/Endworm/ENDWORM_damage1.ogg" state="Damage" range="8000" volume="1000" gender="None" />
-    <sound file="Content/Characters/Endworm/ENDWORM_damage2.ogg" state="Damage" range="8000" volume="1000" gender="None" />
-    <sound file="Content/Characters/Endworm/ENDWORM_damage3.ogg" state="Damage" range="8000" volume="1000" gender="None" />
-    <sound file="Content/Characters/Endworm/ENDWORM_death1.ogg" state="Die" range="8000" volume="1000" gender="None" />
-    <ai combatstrength="10000" sight="10" hearing="20" aggressionhurt="100" aggressiongreed="10" fleehealththreshold="0" attackwhenprovoked="False" avoidgunfire="False" aggressiveboarding="False">
-      <target tag="decoy" state="Attack" priority="600" reactdistance="50000" />
-      <target tag="room" state="Attack" priority="100" reactdistance="20000" />
-      <target tag="sonar" state="Attack" priority="80" reactdistance="50000" />
-      <target tag="human" state="Attack" priority="120" reactdistance="5000" />
+    <sound file="Content/Characters/Endworm/ENDWORM_idle1.ogg" state="Idle" range="100000" volume="1" gender="None" />
+    <sound file="Content/Characters/Endworm/ENDWORM_idle2.ogg" state="Idle" range="100000" volume="1" gender="None" />
+    <sound file="Content/Characters/Endworm/ENDWORM_idle3.ogg" state="Idle" range="100000" volume="1" gender="None" />
+    <sound file="Content/Characters/Endworm/ENDWORM_attack1.ogg" state="Attack" range="8000" volume="1" gender="None" />
+    <sound file="Content/Characters/Endworm/ENDWORM_attack2.ogg" state="Attack" range="8000" volume="1" gender="None" />
+    <sound file="Content/Characters/Endworm/ENDWORM_attack3.ogg" state="Attack" range="8000" volume="1" gender="None" />
+    <sound file="Content/Characters/Endworm/ENDWORM_damage1.ogg" state="Damage" range="8000" volume="1" gender="None" />
+    <sound file="Content/Characters/Endworm/ENDWORM_damage2.ogg" state="Damage" range="8000" volume="1" gender="None" />
+    <sound file="Content/Characters/Endworm/ENDWORM_damage3.ogg" state="Damage" range="8000" volume="1" gender="None" />
+    <sound file="Content/Characters/Endworm/ENDWORM_death1.ogg" state="Die" range="8000" volume="1" gender="None" />
+    <ai combatstrength="10000" sight="1" hearing="1" aggressionhurt="100" aggressiongreed="10" fleehealththreshold="0" attackwhenprovoked="False" avoidgunfire="False" aggressiveboarding="False" enforceaggressivebehaviorformissions="False" targetinnerwalls="False" randomattack="False">
+      <target tag="room" state="Attack" priority="100" reactdistance="0" attackdistance="20000" />
+      <target tag="decoy" state="Attack" priority="120" reactdistance="0" attackdistance="20000" />
+      <target tag="human" state="Attack" priority="80" reactdistance="0" attackdistance="20000" />
     </ai>
   </Character>
 </Override>
