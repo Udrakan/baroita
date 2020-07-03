@@ -1,218 +1,215 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Items>
-  
- <Override> 
-  <Item name="" identifier="coilgunammobox" scale="0.5" tags="coilgunequipment,coilgunammo" category="Equipment" linkable="true" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="coilgunammocontainer" minamount="1" maxamount="3"/>
-	<PreferredContainer primary="wreckcoilgun" minamount="0" maxamount="1" spawnprobability="0.33"/>
-    <Price locationtype="Outpost" buyprice="1500" />
-    <Price locationtype="Military" buyprice="1300" />
-    <Price locationtype="City" buyprice="1500" />
-    <Deconstruct time="10">
-      <Item identifier="steel" copycondition="true"/>
-      <Item identifier="aluminium" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="mechanical" level="25"/>
-      <RequiredItem identifier="steel"/>
-      <RequiredItem identifier="aluminium"/>
-    </Fabricate>
-    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
-    <Sprite texture="Content/Items/Containers/crates.png" depth="0.54" sourcerect="344,197,117,89" origin="0.5,0.5" />
-    <Body width="115" height="88" density="50" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect"/>
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
-      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="2,121,53,22" />
-      <!-- we cheat a bit with ammunition boxes - they don't actually contain hundreds of rounds, 
+<Override> 
+	<Item name="" identifier="coilgunammobox" scale="0.5" tags="coilgunequipment,coilgunammo" category="Equipment" linkable="true" impactsoundtag="impact_metal_heavy">
+		<PreferredContainer primary="coilgunammocontainer" minamount="1" maxamount="3"/>
+		<PreferredContainer primary="wreckcoilgun" minamount="0" maxamount="1" spawnprobability="0.33"/>
+		<Price locationtype="Outpost" buyprice="1500" />
+		<Price locationtype="Military" buyprice="1300" />
+		<Price locationtype="City" buyprice="1500" />
+		<Deconstruct time="10">
+			<Item identifier="steel" copycondition="true"/>
+			<Item identifier="aluminium" />
+		</Deconstruct>
+		<Fabricate suitablefabricators="fabricator" requiredtime="20">
+			<RequiredSkill identifier="mechanical" level="25"/>
+			<RequiredItem identifier="steel"/>
+			<RequiredItem identifier="aluminium"/>
+		</Fabricate>
+		<!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
+		<Sprite texture="Content/Items/Containers/crates.png" depth="0.54" sourcerect="344,197,117,89" origin="0.5,0.5" />
+		<Body width="115" height="88" density="50" />
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
+			<ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="2,121,53,22" />
+			<!-- we cheat a bit with ammunition boxes - they don't actually contain hundreds of rounds, 
       but spawn a new round every time the OnUse effect is triggered. OnUse also reduces the condition
       of the item, and when the condition is 0, the box is considered empty. -->
-      <!--  -0.5 per usage = 200 shots per box -->
-      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
-        <SpawnItem identifiers="coilgunbolt" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true">
-        <RequiredItem items="coilgunbolt" type="Contained" />
-      </StatusEffect>
-      <Containable items="coilgunbolt" />
-    </ItemContainer>
-  </Item>
-   </Override> 
-  <Override>  
-  <Item name="" identifier="physicoriumammobox" scale="0.5" tags="coilgunequipment,coilgunammo" category="Equipment" linkable="true" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="coilgunammocontainer" spawnprobability="0.05"/>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="mechanical" level="30"/>
-      <RequiredItem identifier="steel"/>
-      <RequiredItem identifier="physicorium"/>
-      <RequiredItem identifier="aluminium"/>
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="aluminium" />
-    </Deconstruct>
-    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
-    <Sprite texture="Content/Items/Containers/crates.png" depth="0.54" sourcerect="344,197,117,89" origin="0.5,0.5" />
-    <Body width="115" height="88" density="50" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect"/>
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
-      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="2,121,53,22" />
-      <!-- we cheat a bit with ammunition boxes - they don't actually contain hundreds of rounds, 
-      but spawn a new round every time the OnUse effect is triggered. OnUse also reduces the condition
-      of the item, and when the condition is 0, the box is considered empty. -->
-      <!--  -0.5 per usage = 200 shots per box -->
-      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
-        <SpawnItem identifiers="physicoriumbolt" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true">
-        <RequiredItem items="physicoriumbolt" type="Contained" />
-      </StatusEffect>
-      <Containable items="physicoriumbolt" />
-    </ItemContainer>
-  </Item>
-  
-  <Item name="" identifier="physicoriumbolt" category="Misc" scale="0.32" sonarsize="2" hideinmenus="true">
-    <Sprite texture="weapons_new.png" sourcerect="0,498,177,14" depth="0.55" />
-    <Body width="160" height="10" density="20" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
-    <Projectile characterusable="false" launchimpulse="80.0">
-      <Attack structuredamage="10" severlimbsprobability="0.5">
-        <Affliction identifier="gunshotwound" strength="18.0" />
-        <Affliction identifier="bleeding" strength="1.0" />
-      </Attack>
-      <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <!-- a 5 second lifetime after being fired -->
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="5">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="This">
-        <ParticleEmitter particle="underwaterexplosion" copyentityangle="true" anglemin="0" anglemax="360" particleamount="1" scalemin="0.25" scalemax="0.5" />
-        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Projectile>
-  </Item>
-   </Override> 
-	 <Override> 
-  <Item name="" identifier="coilgunammoboxexplosive" scale="0.5" tags="coilgunequipment,coilgunammo" category="Equipment" linkable="true" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="coilgunammocontainer" spawnprobability="0.05"/>
-    <Price locationtype="Military" buyprice="2200" />
-    <Deconstruct time="10">
-      <Item identifier="steel" copycondition="true" />
-      <Item identifier="uex" copycondition="true" mincondition="0.1"/>
-      <Item identifier="aluminium" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="mechanical" level="25" />
-      <RequiredItem identifier="aluminium" />
-      <RequiredItem identifier="uex" />
-      <RequiredItem identifier="steel" />
-    </Fabricate>
-    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
-    <Sprite texture="Content/Items/Containers/crates.png" depth="0.54" sourcerect="25,197,117,89" origin="0.5,0.5" />
-    <Body width="115" height="88" density="50" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
-      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="2,121,53,22" />
-      <!-- we cheat a bit with ammunition boxes - they don't actually contain hundreds of rounds, 
-      but spawn a new round every time the OnUse effect is triggered. OnUse also reduces the condition
-      of the item, and when the condition is 0, the box is considered empty. -->
-      <!--  -0.5 per usage = 200 shots per box -->
-      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
-        <SpawnItem identifiers="coilgunboltexplosive" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true">
-        <RequiredItem items="coilgunboltexplosive" type="Contained" />
-      </StatusEffect>
-      <Containable items="coilgunboltexplosive" />
-    </ItemContainer>
-  </Item>
-  
-  <Item name="" identifier="coilgunboltexplosive" category="Misc" scale="0.32" sonarsize="2" hideinmenus="true">
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,470,177,14" depth="0.55" />
-    <Body width="160" height="10" density="20" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
-    <Projectile characterusable="false" launchimpulse="80.0">
-      <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <!-- a 5 second lifetime after being fired -->
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="5">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="This">
-        <Explosion range="150.0" structuredamage="5" stun="0" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
-          <Affliction identifier="bleeding" strength="1" />
-          <Affliction identifier="gunshotwound" strength="18" />
-		  <Affliction identifier="burn" strength="2" />
-        </Explosion>
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Projectile>
-  </Item>
- </Override> 
-   <Override> 
-  <Item name="" identifier="coilgunammoboxpiercing" scale="0.5" tags="coilgunequipment,coilgunammo" category="Equipment" linkable="true" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="coilgunammocontainer" spawnprobability="0.05"/>
-    <Price locationtype="Military" buyprice="2500" />
-    <Deconstruct time="10">
-      <Item identifier="titanium" copycondition="true" />
-      <Item identifier="aluminium" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="mechanical" level="25" />
-      <RequiredItem identifier="aluminium" />
-      <RequiredItem identifier="titanium" />
-    </Fabricate>
-    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
-    <Sprite texture="Content/Items/Containers/crates.png" depth="0.54" sourcerect="184,197,117,89" origin="0.5,0.5" />
-    <Body width="115" height="88" density="50" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
-      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="2,121,53,22" />
-      <!-- we cheat a bit with ammunition boxes - they don't actually contain hundreds of rounds, 
-      but spawn a new round every time the OnUse effect is triggered. OnUse also reduces the condition
-      of the item, and when the condition is 0, the box is considered empty. -->
-      <!--  -0.5 per usage = 200 shots per box -->
-      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
-        <SpawnItem identifiers="coilgunboltpiercing" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true">
-        <RequiredItem items="coilgunboltpiercing" type="Contained" />
-      </StatusEffect>
-      <Containable items="coilgunboltpiercing" />
-    </ItemContainer>
-  </Item>
-  
-    <Item name="" identifier="coilgunboltpiercing" category="Misc" scale="0.32" sonarsize="2" hideinmenus="true">
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="186,484,175,19" depth="0.55" />
-    <Body width="160" height="10" density="20" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
-    <Projectile characterusable="false" launchimpulse="80.0">
-      <Attack structuredamage="10" severlimbsprobability="0.5">
-        <Affliction identifier="gunshotwound" strength="15" />
-        <Affliction identifier="bleeding" strength="1.0" />
-      </Attack>
-      <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <!-- a 5 second lifetime after being fired -->
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="5">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="This" condition="-34" />
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Projectile>
-  </Item>
- </Override> 
+			<!--  -0.5 per usage = 200 shots per box -->
+			<StatusEffect type="OnUse" target="This" disabledeltatime="true">
+				<SpawnItem identifiers="coilgunbolt" spawnposition="ThisInventory" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true">
+				<RequiredItem items="coilgunbolt" type="Contained" />
+			</StatusEffect>
+			<Containable items="coilgunbolt" />
+		</ItemContainer>
+	</Item>
 
- 
-</Items>
+	<Item name="" identifier="physicoriumammobox" scale="0.5" tags="coilgunequipment,coilgunammo" category="Equipment" linkable="true" impactsoundtag="impact_metal_heavy">
+		<PreferredContainer primary="coilgunammocontainer" spawnprobability="0.05"/>
+		<Fabricate suitablefabricators="fabricator" requiredtime="20">
+			<RequiredSkill identifier="mechanical" level="30"/>
+			<RequiredItem identifier="steel"/>
+			<RequiredItem identifier="physicorium"/>
+			<RequiredItem identifier="aluminium"/>
+		</Fabricate>
+		<Deconstruct time="10">
+			<Item identifier="aluminium" />
+		</Deconstruct>
+		<!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
+		<Sprite texture="Content/Items/Containers/crates.png" depth="0.54" sourcerect="344,197,117,89" origin="0.5,0.5" />
+		<Body width="115" height="88" density="50" />
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
+			<ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="2,121,53,22" />
+			<!-- we cheat a bit with ammunition boxes - they don't actually contain hundreds of rounds, 
+      but spawn a new round every time the OnUse effect is triggered. OnUse also reduces the condition
+      of the item, and when the condition is 0, the box is considered empty. -->
+			<!--  -0.5 per usage = 200 shots per box -->
+			<StatusEffect type="OnUse" target="This" disabledeltatime="true">
+				<SpawnItem identifiers="physicoriumbolt" spawnposition="ThisInventory" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true">
+				<RequiredItem items="physicoriumbolt" type="Contained" />
+			</StatusEffect>
+			<Containable items="physicoriumbolt" />
+		</ItemContainer>
+	</Item>
+
+	<Item name="" identifier="physicoriumbolt" category="Misc" scale="0.32" sonarsize="2" hideinmenus="true">
+		<Sprite texture="weapons_new.png" sourcerect="0,498,177,14" depth="0.55" />
+		<Body width="160" height="10" density="20" />
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+		<Projectile characterusable="false" launchimpulse="80.0">
+			<Attack structuredamage="10" severlimbsprobability="0.5">
+				<Affliction identifier="gunshotwound" strength="18.0" />
+				<Affliction identifier="bleeding" strength="1.0" />
+			</Attack>
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+			</StatusEffect>
+			<!-- a 5 second lifetime after being fired -->
+			<StatusEffect type="OnNotContained" target="This" stackable="false" delay="5">
+				<Remove />
+			</StatusEffect>
+			<StatusEffect type="OnImpact" target="This">
+				<ParticleEmitter particle="underwaterexplosion" copyentityangle="true" anglemin="0" anglemax="360" particleamount="1" scalemin="0.25" scalemax="0.5" />
+				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
+				<Remove />
+			</StatusEffect>
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+		</Projectile>
+	</Item>
+
+	<Item name="" identifier="coilgunammoboxexplosive" scale="0.5" tags="coilgunequipment,coilgunammo" category="Equipment" linkable="true" impactsoundtag="impact_metal_heavy">
+		<PreferredContainer primary="coilgunammocontainer" spawnprobability="0.05"/>
+		<Price locationtype="Military" buyprice="2200" />
+		<Deconstruct time="10">
+			<Item identifier="steel" copycondition="true" />
+			<Item identifier="uex" copycondition="true" mincondition="0.1"/>
+			<Item identifier="aluminium" />
+		</Deconstruct>
+		<Fabricate suitablefabricators="fabricator" requiredtime="20">
+			<RequiredSkill identifier="weapons" level="50" />
+			<RequiredItem identifier="aluminium" />
+			<RequiredItem identifier="uex" />
+			<RequiredItem identifier="steel" />
+		</Fabricate>
+		<!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
+		<Sprite texture="Content/Items/Containers/crates.png" depth="0.54" sourcerect="25,197,117,89" origin="0.5,0.5" />
+		<Body width="115" height="88" density="50" />
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
+		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
+			<ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="2,121,53,22" />
+			<!-- we cheat a bit with ammunition boxes - they don't actually contain hundreds of rounds, 
+      but spawn a new round every time the OnUse effect is triggered. OnUse also reduces the condition
+      of the item, and when the condition is 0, the box is considered empty. -->
+			<!--  -0.5 per usage = 200 shots per box -->
+			<StatusEffect type="OnUse" target="This" disabledeltatime="true">
+				<SpawnItem identifiers="coilgunboltexplosive" spawnposition="ThisInventory" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true">
+				<RequiredItem items="coilgunboltexplosive" type="Contained" />
+			</StatusEffect>
+			<Containable items="coilgunboltexplosive" />
+		</ItemContainer>
+	</Item>
+
+	<Item name="" identifier="coilgunboltexplosive" category="Misc" scale="0.32" sonarsize="2" hideinmenus="true">
+		<Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,470,177,14" depth="0.55" />
+		<Body width="160" height="10" density="20" />
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+		<Projectile characterusable="false" launchimpulse="80.0">
+			<Attack structuredamage="10" severlimbsprobability="0.5">
+				<Affliction identifier="lacerations" strength="12.5" />
+				<Affliction identifier="bleeding" strength="1.0" />
+			</Attack>
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+			</StatusEffect>
+			<!-- a 5 second lifetime after being fired -->
+			<StatusEffect type="OnNotContained" target="This" stackable="false" delay="5">
+				<Remove />
+			</StatusEffect>
+			<StatusEffect type="OnImpact" target="This">
+				<Explosion range="300.0" structuredamage="5" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+					<Affliction identifier="burn" strength="2" />
+					<Affliction identifier="lacerations" strength="40" />
+				</Explosion>
+				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
+				<Remove />
+			</StatusEffect>
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+		</Projectile>
+	</Item>
+
+	<Item name="" identifier="coilgunammoboxpiercing" scale="0.5" tags="coilgunequipment,coilgunammo" category="Equipment" linkable="true" impactsoundtag="impact_metal_heavy">
+		<PreferredContainer primary="coilgunammocontainer" spawnprobability="0.05"/>
+		<Price locationtype="Military" buyprice="2500" />
+		<Deconstruct time="10">
+			<Item identifier="titanium" copycondition="true" />
+			<Item identifier="aluminium" />
+		</Deconstruct>
+		<Fabricate suitablefabricators="fabricator" requiredtime="20">
+			<RequiredSkill identifier="weapons" level="30" />
+			<RequiredItem identifier="aluminium" />
+			<RequiredItem identifier="titanium" />
+		</Fabricate>
+		<!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
+		<Sprite texture="Content/Items/Containers/crates.png" depth="0.54" sourcerect="184,197,117,89" origin="0.5,0.5" />
+		<Body width="115" height="88" density="50" />
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
+		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
+			<ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="2,121,53,22" />
+			<!-- we cheat a bit with ammunition boxes - they don't actually contain hundreds of rounds, 
+      but spawn a new round every time the OnUse effect is triggered. OnUse also reduces the condition
+      of the item, and when the condition is 0, the box is considered empty. -->
+			<!--  -0.5 per usage = 200 shots per box -->
+			<StatusEffect type="OnUse" target="This" disabledeltatime="true">
+				<SpawnItem identifiers="coilgunboltpiercing" spawnposition="ThisInventory" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true">
+				<RequiredItem items="coilgunboltpiercing" type="Contained" />
+			</StatusEffect>
+			<Containable items="coilgunboltpiercing" />
+		</ItemContainer>
+	</Item>
+
+	<Item name="" identifier="coilgunboltpiercing" category="Misc" scale="0.32" sonarsize="2" hideinmenus="true">
+		<Sprite texture="weapons_new.png" sourcerect="186,484,175,19" depth="0.55" />
+		<Body width="160" height="10" density="20" />
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+		<Projectile characterusable="false" launchimpulse="80.0" maxtargetstohit="3">
+			<Attack structuredamage="10" severlimbsprobability="0.5">
+				<Affliction identifier="lacerations" strength="15" />
+				<Affliction identifier="bleeding" strength="1.0" />
+			</Attack>
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+			</StatusEffect>
+			<!-- a 5 second lifetime after being fired -->
+			<StatusEffect type="OnNotContained" target="This" stackable="false" delay="5">
+				<Remove />
+			</StatusEffect>
+			<StatusEffect type="OnImpact" target="This" condition="-34" />
+			<StatusEffect type="OnBroken" target="This">
+				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="0.5" scalemax="0.75" />
+				<Remove />
+			</StatusEffect>
+		</Projectile>
+	</Item>
+</Override> 

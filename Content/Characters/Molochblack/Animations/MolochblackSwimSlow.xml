@@ -1,4 +1,4 @@
-﻿<MolochSwimSlow
+﻿<MolochblackSwimSlow
   animationtype="SwimSlow"
   flip="True"
   mirror="True"
@@ -17,7 +17,7 @@
   torsoangle="-30"
   tailangle="NaN"
   usesinemovement="True"
-  tailtorquemultiplier="1"
   flipcooldown="5"
   flipdelay="3"
-  mirrorlerp="False" />
+  mirrorlerp="False"
+  tailtorquemultiplier="1" />

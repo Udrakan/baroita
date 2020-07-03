@@ -920,7 +920,7 @@
 		</EventSet>
 
 		<EventSet chooserandom="false" mindistancetraveled="0.80" minmissiontime="1920" minintensity="0.0" maxintensity="1.0">
-			<MonsterEvent characterfile="Molochboss" minamount="1" maxamount="1" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Molochblack" minamount="1" maxamount="1" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
 
@@ -1012,7 +1012,7 @@
 
 		<!-- 4-7 crawlers and 1-7 husks or 3-6 raptors or a small pack of threshers after 300 seconds or passing 20% -->
 		<EventSet chooserandom="false" mindistancetraveled="0.60" minmissiontime="1560" minintensity="0.0" maxintensity="1.0">
-			<MonsterEvent characterfile="MolochBoss" minamount="1" maxamount="1" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Molochblack" minamount="1" maxamount="1" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
 		<!-- spawn a large thresher pack or 2-3 hammerheads or more rarely a golden hammerhead after passing 40% -->
@@ -1102,7 +1102,7 @@
 
 		<!-- 4-7 crawlers and 1-7 husks or 3-6 raptors or a small pack of threshers after 300 seconds or passing 20% -->
 		<EventSet chooserandom="false" mindistancetraveled="0.60" minmissiontime="1560" minintensity="0.0" maxintensity="1.0">
-			<MonsterEvent characterfile="MolochBoss" minamount="1" maxamount="1" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Molochblack" minamount="1" maxamount="1" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
 		<!-- spawn a large thresher pack or 2-3 hammerheads or more rarely a golden hammerhead after passing 40% -->
@@ -1184,7 +1184,7 @@
 		</EventSet>
 
 		<EventSet chooserandom="false" mindistancetraveled="0.40" minmissiontime="3100" minintensity="0.0" maxintensity="1.0">
-			<MonsterEvent characterfile="MolochBoss" minamount="1" maxamount="2" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Molochblack" minamount="1" maxamount="2" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
 		<EventSet chooserandom="false" mindistancetraveled="0.50" minmissiontime="3400" minintensity="0.0" maxintensity="1.0">
@@ -1203,7 +1203,7 @@
 		</EventSet>
 
 		<EventSet chooserandom="false" mindistancetraveled="0.80" minmissiontime="3900" minintensity="0.0" maxintensity="1.0">
-			<MonsterEvent characterfile="MolochBoss" minamount="2" maxamount="2" spawntype="mainpath" musictype="monster" />
+			<MonsterEvent characterfile="Molochblack" minamount="2" maxamount="2" spawntype="mainpath" musictype="monster" />
 		</EventSet>
 
 	</EventSet>

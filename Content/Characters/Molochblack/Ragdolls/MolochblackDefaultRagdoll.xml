@@ -1,4 +1,4 @@
-﻿<Ragdoll type="Moloch" limbscale="1" jointscale="1" texturescale="1" colliderheightfromfloor="45" impacttolerance="50" canentersubmarine="False" canwalk="False" draggable="True" spritesheetorientation="0" texture="Content/Characters/Moloch/Moloch.png" mainlimb="Torso">
+﻿<Ragdoll type="Molochblack" limbscale="1" jointscale="1" texturescale="1" colliderheightfromfloor="45" impacttolerance="50" canentersubmarine="False" canwalk="False" draggable="True" spritesheetorientation="0" texture="Content/Characters/Molochblack/Molochblack.png" mainlimb="Torso">
 	<collider radius="360" width="0" name="Main Collider" height="0" />
 	<limb id="0" name="Core" type="Torso" radius="300" width="0" flip="True" healthindex="0" attackpriority="10" steerforce="0" stepoffset="0,0" height="0" mass="0" density="10" pullpos="0,0" refjoint="-1" ignorecollisions="False" friction="0.3" restitution="0.05" spriteorientation="NaN" mirrorvertically="False" mirrorhorizontally="False" hide="False" angulardamping="7" mouthpos="0,0" constanttorque="0" constantangle="0" scale="1" attackforcemultiplier="1" minseverancedamage="1" notes="">
 		<deformablesprite sourcerect="0,1216,864,832" depth="0.19" origin="0.48274615,0.40562853" subdivisions="15,15" texture="" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0">
@@ -12,6 +12,14 @@
 			<deformablesprite sourcerect="864,1216,864,832" depth="0.19" origin="0.48274615,0.40562853" subdivisions="15,15" texture="" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
 		</conditionalsprite>
 		<damagemodifier armorsector="0,360" afflictiontypes="bleeding,damage" damagemultiplier="2" deflectprojectiles="False" damagesound="" afflictionidentifiers="" probabilitymultiplier="1" />
+		<lightsource color="255,255,255,0" range="150">
+			<deformablesprite texture="Content/Characters/Molochblack/Molochblack.png" sourcerect="864,384,864,832" origin="0.48274615,0.40562853" size="1,1" alpha="1" />
+		</lightsource>
+		<StatusEffect type="OnDamaged" target="This">
+			<Conditional isdead="False" />
+			<particleemitter particle="blackgib" drawontop="True" particleamount="20" velocitymin="100" velocitymax="400" anglemin="0" anglemax="360" scalemin="1" scalemax="2" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+			<particleemitter particle="blackwaterblood" drawontop="True" particleamount="1" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="3" scalemax="5" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+		</StatusEffect>
 	</limb>
 	<limb id="1" width="400" height="300" name="ShellCore" type="None" spriteorientation="NaN" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" attackpriority="1" steerforce="0" radius="0" density="10" ignorecollisions="True" angulardamping="1000" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" notes="" constanttorque="0" constantangle="0" scale="1" attackforcemultiplier="1" minseverancedamage="1" healthindex="0" friction="0.3" restitution="0.05">
 		<deformablesprite texture="" sourcerect="0,736,656,482" origin="0.5,0.5" depth="0" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
@@ -39,22 +47,22 @@
 		<StatusEffect type="OnSevered" target="This">
 			<particleemitter particle="brownchunks" drawontop="true" particleamount="30" velocitymin="300" velocitymax="800" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1" />
 		</StatusEffect>
-		<StatusEffect type="OnDamaged" target="This">
-			<Conditional isdead="False" />
-			<particleemitter particle="blackgib" drawontop="True" particleamount="20" velocitymin="100" velocitymax="400" anglemin="0" anglemax="360" scalemin="1" scalemax="2" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
-			<particleemitter particle="blackwaterblood" drawontop="True" particleamount="1" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="3" scalemax="5" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
-		</StatusEffect>
 		<attack cooldown="15" range="600" damagerange="500" duration="0.25" force="15" targetforce="0" structuresoundtype="StructureBlunt" context="Any" targettype="Any" hitdetectiontype="Distance" afterattack="FollowThrough" secondarycooldown="5" structuredamage="20" itemdamage="25" stun="0" onlyhumans="False" applyforceonlimbs="" torque="0" applyforcesonlyonce="False" targetimpulse="500" targetimpulseworld="0,0" targetforceworld="0,0" severlimbsprobability="0" stickchance="0" priority="0" cooldownrandomfactor="0.1" targetlimbtype="None" reverse="False" retreat="False" targetdistance="0" afterattackdelay="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear">
 			<Affliction identifier="bitewounds" strength="50" probability="1" />
 			<Affliction identifier="stun" strength="2.5" probability="1" />
+			<StatusEffect type="OnUse" target="this" disabledeltatime="true">
+				<Explosion range="2000" force="20" underwaterbubble="false" flames="false" sparks="false" flash="true" shockwave="true" camerashake="12" empstrength="1" flashrange="2000" flashduration="0.1">
+					<Affliction identifier="stun" strength="2" />
+				</Explosion>
+				<sound file="Content/Characters/Molochblack/BLACKMOLOCH_EMPHit.ogg" range="5000" volume="1" dontmuffle="true" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="15000" stun="3" force="100" flames="false" shockwave="false" sparks="false" underwaterbubble="false">
+					<Affliction identifier="blunttrauma" strength="450" targetlimb="Head" />
+					<Affliction identifier="stun" strength="10" />
+				</Explosion>
+			</StatusEffect>
 		</attack>
-		<StatusEffect type="OnUse" target="This">
-			<Explosion range="15000" stun="3" force="100" flames="false" shockwave="false" sparks="false" underwaterbubble="false">
-				<Affliction identifier="blunttrauma" strength="500" targetlimb="Head" />
-				<Affliction identifier="stun" strength="10" />
-			</Explosion>
-		</StatusEffect>
-
 	</limb>
 	<limb id="5" radius="160" width="0" height="0" name="ShellPiece4" type="None" spriteorientation="NaN" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" attackpriority="1" steerforce="0" density="10" ignorecollisions="False" angulardamping="1000" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" notes="" constanttorque="0" constantangle="0" scale="1" attackforcemultiplier="1" minseverancedamage="10" healthindex="0" friction="0.3" restitution="0.05">
 		<deformablesprite texture="" sourcerect="0,0,448,432" origin="0.46114203,0.565195" depth="0" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />

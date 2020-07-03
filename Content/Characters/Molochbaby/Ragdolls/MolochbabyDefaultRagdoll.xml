@@ -1,0 +1,23 @@
+﻿<Ragdoll type="Molochbaby" texture="Content/Characters/Molochbaby/molochbaby.png" canentersubmarine="False" canwalk="False" spritesheetorientation="0" limbscale="1" jointscale="1" texturescale="1" colliderheightfromfloor="45" impacttolerance="50" draggable="True" mainlimb="Torso">
+  <collider height="0" radius="100" name="Main Collider" width="0" />
+  <limb id="0" name="MainLimb" type="Torso" height="0" width="0" notes="" spriteorientation="NaN" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" attackpriority="1" steerforce="0" radius="100" density="20" ignorecollisions="False" angulardamping="7" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" scale="1" attackforcemultiplier="1" minseverancedamage="1" healthindex="0" friction="0.3" restitution="0.05">
+    <deformablesprite texture="" sourcerect="0,0,256,256" origin="0.49609375,0.40625" depth="0" color="255,255,255,255" deadcolor="110,150,150,255" deadcolortime="5">
+      <spritedeformation type="inflate" resolution="5,5" frequency="2" scale="0.25" blendmode="Add" usemovementsine="False" sineoffset="0" sync="1" typename="inflate" strength="1" maxrotation="90" stopwhenhostisdead="True" onlyinwater="False" />
+      <spritedeformation type="inflate" resolution="5,5" frequency="3" scale="0.25" blendmode="Add" usemovementsine="True" sineoffset="0" sync="1" typename="inflate" strength="1" maxrotation="90" stopwhenhostisdead="False" onlyinwater="False" />
+      <spritedeformation type="custom" resolution="5,5" frequency="0" amplitude="1" blendmode="Multiply" row0="0.1,0.1 0.1,0.1 0.1,0.1 0.1,0.1 0.1,0.1" row1="0.5,0.5 0.5,0.5 0.5,0.5 0.5,0.5 0.5,0.5" row2="0.5,0.5 1,1 1,1 1,1 0.5,0.5" row3="0.5,0.5 1,1 1,1 1,1 0.5,0.5" row4="0.5,0.5 0.5,0.5 0.5,0.5 0.5,0.5 0.5,0.5" sync="-1" typename="custom" strength="1" maxrotation="90" usemovementsine="False" stopwhenhostisdead="True" sineoffset="0.5" onlyinwater="False" />
+    </deformablesprite>
+    <conditionalsprite exclusive="True">
+      <conditional isDead="True" />
+      <deformablesprite sourcerect="0,256,256,256" depth="0" origin="0.49609375,0.40625" subdivisions="5,5" />
+    </conditionalsprite>
+    <lightsource color="255,255,255,0" range="150">
+      <lighttexture texture="Content/Lights/pointlight_bright.png" origin="0.5,0.5" size="1,1" />
+      <deformablesprite texture="Content/Characters/Molochbaby/molochbaby.png" sourcerect="256,0,256,256" origin="0.49609375,0.40625" size="1,1" alpha="1" />
+    </lightsource>
+  </limb>
+  <limb id="1" name="AttachTarget" type="None" height="0" width="0" notes="" spriteorientation="NaN" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="True" attackpriority="1" steerforce="0" radius="9.775" density="0.1" ignorecollisions="True" angulardamping="7" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" scale="1" attackforcemultiplier="1" minseverancedamage="1" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="211,179,25,23" origin="0.5,0.5" depth="0" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+    <attack cooldown="5" range="50" damagerange="50" duration="0.25" force="0" targetforce="0" structuresoundtype="StructureBlunt" context="Water" targettype="Structure" hitdetectiontype="Distance" afterattack="Pursue" secondarycooldown="0" structuredamage="0" itemdamage="0" stun="0" onlyhumans="False" applyforceonlimbs="" torque="0" applyforcesonlyonce="False" targetimpulse="0" targetimpulseworld="0,0" targetforceworld="0,0" severlimbsprobability="0" stickchance="0" priority="0" cooldownrandomfactor="0.5" targetlimbtype="None" reverse="True" retreat="False" targetdistance="0" afterattackdelay="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear"></attack>
+  </limb>
+  <joint limb1="0" limb2="1" limb1anchor="-0.21192738,-68.7254" limb2anchor="-0,0" name="Joint 0 - 1" canbesevered="False" severanceprobabilitymodifier="1" breaksound="gore" limitenabled="True" upperlimit="0" lowerlimit="0" stiffness="0.25" scale="1" />
+</Ragdoll>
