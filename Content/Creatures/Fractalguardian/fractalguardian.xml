@@ -1,0 +1,36 @@
+﻿<Override>
+	<Character speciesname="Fractalguardian" humanoid="False" speciestranslationoverride="" displayname="" group="" hasinfo="False" husk="False" usehuskappendage="False" needsair="False" needswater="False" canspeak="False" noise="100" visibility="100" blooddecal="" bleedparticleair="" bleedparticlewater="" eatingspeed="10" pathfinderpriority="1" hideinsonar="False" sonardisruption="0">
+		<ragdolls folder="default" />
+		<animations folder="default" />
+		<health vitality="80" doesbleed="False" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="0" burnreduction="0" constanthealthregeneration="0" healthregenerationwheneating="0" />
+		<sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_idle1.ogg" state="Idle" range="3000" volume="1" gender="None" />
+		<sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_idle2.ogg" state="Idle" range="3000" volume="1" gender="None" />
+		<sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_attack1.ogg" state="Attack" range="3000" volume="1" gender="None" />
+		<sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_attack2.ogg" state="Attack" range="3000" volume="1" gender="None" />
+		<sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_damage1.ogg" state="Damage" range="3000" volume="1" gender="None" />
+		<sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_damage2.ogg" state="Damage" range="3000" volume="1" gender="None" />
+		<sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_damage3.ogg" state="Damage" range="3000" volume="1" gender="None" />
+		<sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_death1.ogg" state="Die" range="3000" volume="1" gender="None" />
+		<sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_death2.ogg" state="Die" range="3000" volume="1" gender="None" />
+		<ai combatstrength="150" sight="1" hearing="1" >
+			<target tag="husk" state="PassiveAggressive" priority="100" reactdistance="2000" attackdistance="100"/>
+			<target tag="decoy" state="Attack" priority="150" reactdistance="0" />
+			<target tag="weapon" state="Attack" priority="100" reactdistance="0" />
+			<target tag="Crawlerhusk" state="Attack" priority="40" reactdistance="0" />
+			<target tag="Mudraptor" state="Attack" priority="30" reactdistance="0" />
+			<target tag="human" state="Attack" priority="80" reactdistance="0" />
+			<target tag="tool" state="Aggressive" priority="50" reactdistance="1000" />
+			<target tag="nasonov" state="Attack" priority="70" reactdistance="0" />
+			<target tag="spooky" state="Avoid" priority="200" reactdistance="300" />
+			<latchonto attachtowalls="true" attachtosub="false" mindeattachspeed="3.0" maxdeattachspeed="10.0" damageondetach="1000" detachstun="5.0" attachlimb="Head" localattachpos="40,10" offset="50" attachlimbrotation="100" />
+			<SwarmBehavior mindistfromclosest="200" maxdistfromcenter="1000" cohesion="1" />
+		</ai>
+		<StatusEffect type="OnDeath" target="This" targetlimb="Head">
+			<Explosion range="50" force="10" smoke="false" sparks="false" shockwave="true" underwaterbubble="false">
+				<Affliction identifier="burn" strength="20" />
+			</Explosion>
+			<ParticleEmitter particle="bubbles" particleamount="60" scalemin="1" scalemax="2" velocitymin="50" velocitymax="100" anglemin="0" anglemax="360" />
+		</StatusEffect>
+		<gibemitter particle="plasmaspark" anglemin="-35" anglemax="35" scalemin="1" scalemax="2" velocitymin="200" velocitymax="1500" emitinterval="0" particlespersecond="0" particleamount="30" highqualitycollisiondetection="False" copyentityangle="True" />
+	</Character>
+</Override>

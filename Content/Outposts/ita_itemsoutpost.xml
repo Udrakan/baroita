@@ -1,0 +1,938 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!-- Tools -->
+  <Item name="Access Card - City Fabrication Room" identifier="idcard_fabrication1" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/idcard.png" depth="0.8" sourcerect="0,0,16,16" />
+    <Body width="16" height="12" density="20" />
+    <IdCard slots="RightHand" msg="ItemMsgPickUpSelect" />
+    <Holdable slots="RightHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="This" delay="60">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="npc_outpostcard" identifier="ita_adresscard" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/idcard.png" depth="0.8" sourcerect="0,0,16,16" />
+    <Body width="16" height="12" density="20" />
+    <IdCard slots="Card" msg="ItemMsgPickUpSelect" />
+    <Holdable slots="Card" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" stackable="false" disabledeltatime="true" delay="0.6">
+        <Affliction identifier="stun" strength="-50" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="HealMist" identifier="healmist" category="Equipment" Tags="smallitem,medical" useinhealthinterface="true" cargocontaineridentifier="chemicalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/InventoryIconAtlas.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+    <Body width="25" height="40" density="20" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="This" condition="-100" />
+      <StatusEffect type="OnBroken" target="this">
+        <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_doc1.ogg" range="500" />
+        <ParticleEmitter particle="extinguisher" anglemin="0" anglemax="360" velocitymin="5.0" velocitymax="50.0" particlespersecond="40" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="this" delay="1.1">
+        <Explosion range="400.0" force="3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0">
+          <Affliction identifier="heal1" strength="100" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Disinfector" identifier="ita_disinfect" tags="ita_disinfect" scale="0.5" health="100" damagedbyrepairtools="true" allowrotatingineditor="false" allowedlinks="structure,item" linkable="true">
+    <Sprite texture="Content/Items/Door/door.png" sourcerect="0,0,49,416" depth="0.51" origin="0.5,0.5" />
+    <MotionSensor range="25" output="0" onlyhumans="true" ignoredead="true" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This" stackable="false" disabledeltatime="true">
+        <Conditional MotionDetected="true" targetitemcomponent="MotionSensor" />
+        <sound file="Content/Items/Tools/Extinguisher.ogg" range="300" />
+        <ParticleEmitter particle="extinguisher" anglemin="-95" anglemax="-85" velocitymin="10" velocitymax="100" particlespersecond="100" colormultiplier="0,255,255,255" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <!--<Item name="Sparker1" identifier="ita_effect_spark1" tags="ita_disinfect" scale="0.5" health="100" damagedbyrepairtools="true" allowrotatingineditor="false" allowedlinks="structure,item" linkable="true">
+		<Sprite texture="Content/Items/Door/door.png" sourcerect="0,0,49,416" depth="0.51" origin="0.5,0.5" />
+		<ItemComponent>
+			<StatusEffect type="Always" target="This" stackable="false" disabledeltatime="true">
+				<Conditional MotionDetected="true" targetitemcomponent="MotionSensor" />
+				<sound file="Content/Items/Tools/Extinguisher.ogg" range="300" />
+				<ParticleEmitter particle="extinguisher" anglemin="-95" anglemax="-85" velocitymin="10" velocitymax="100" particlespersecond="100" colormultiplier="0,255,255,255"/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>-->
+  <Item name="Ancient Combiner" identifier="ita_fabricator1" tags="ita_fabricator1" category="Machine" description="" scale="0.5">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Ruins/ita_sprites_alien.png" sourcerect="678,667,502,513" depth="0.8" />
+    <DecorativeSprite texture="Mods/IntoTheAbyss/Content/Ruins/ita_sprites_alien.png" sourcerect="6,676,178,178" depth="0.75" origin="0.5,0.5" rotationspeed="180" offset="16,-14">
+      <Conditional charge="gt 1" targetitemcomponent="PowerContainer" />
+    </DecorativeSprite>
+    <LightComponent range="10.0" lightcolor="255,255,255,255" IsOn="true" castshadows="false" allowingameediting="false">
+      <sprite texture="Mods/IntoTheAbyss/Content/Ruins/ita_sprites_alien.png" depth="0.025" sourcerect="1210,21,502,513" />
+    </LightComponent>
+    <Fabricator canbeselected="true" msg="ItemMsgInteractSelect">
+      <StatusEffect type="Always" target="This" charge="-4" />
+      <StatusEffect type="OnActive" target="This" charge="100" />
+      <GuiFrame relativesize="0.4,0.45" style="ItemUI" anchor="Center" />
+      <sound file="Mods/IntoTheAbyss/Content/Outposts/ita_ancientcombiner.ogg" type="OnActive" range="1000.0" loop="true" dontmuffle="true" />
+      <StatusEffect type="OnActive" target="This" stackable="false" delay="4.85">
+        <!--<ParticleEmitter particle="artifactspark" anglemin="0" anglemax="360" particleamount="30" velocitymin="50" velocitymax="250" scalemin="1" scalemax="2"/> -->
+        <ParticleEmitter particle="plasmaspark" particleamount="100" anglemin="0" anglemax="360" velocitymin="100" velocitymax="500" />
+        <Explosion range="300.0" stun="3" force="50.0" severlimbsprobability="0.5" flames="false" shockwave="false" sparks="false" underwaterbubble="false">
+          <Affliction identifier="psychosis" strength="2" />
+        </Explosion>
+        <sound file="Mods/IntoTheAbyss/Content/Outposts/ita_sounds_ancientexplosion.ogg" range="1000" volume="0.70" />
+      </StatusEffect>
+    </Fabricator>
+    <PowerContainer capacity="10.0" canbeselected="false" maxrechargespeed="1000.0" maxoutput="10000.0">
+      <StatusEffect type="Always" target="This" charge="-50" />
+      <StatusEffect type="Always" target="This" charge="100">
+        <RequiredItem items="alienpowercell" type="Contained" />
+      </StatusEffect>
+    </PowerContainer>
+    <ConnectionPanel canbeselected="true" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="shutdown" displayname="connection.shutdown" />
+      <output name="power_out" displayname="connection.powerout" />
+      <output name="charge" displayname="connection.batterychargestatusout" />
+    </ConnectionPanel>
+    <ItemContainer capacity="5" canbeselected="true" hideitems="true" slotsperrow="5" uilabel="" allowuioverlap="true" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="false" slotsperrow="1" uilabel="" allowuioverlap="true" itempos="260,-268" />
+  </Item>
+  <Item name="Unregulated Fabricator" identifier="ita_fabricator" tags="ita_fabricator" category="Machine" linkable="true" allowedlinks="deconstructor,locker" description="" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+    <Upgrade gameversion="0.10.4.0">
+      <Repairable Msg="ItemMsgRepairWrench" />
+    </Upgrade>
+    <Sprite texture="Content/Items/Fabricators/FabricatorsAndDeconstructors.png" sourcerect="0,624,336,400" depth="0.8" />
+    <BrokenSprite texture="Content/Items/Fabricators/FabricatorsAndDeconstructors.png" sourcerect="336,624,336,400" depth="0.8" maxcondition="80" fadein="true" />
+    <BrokenSprite texture="Content/Items/Fabricators/FabricatorsAndDeconstructors.png" sourcerect="672,624,336,400" depth="0.8" maxcondition="0" />
+    <DecorativeSprite texture="Content/Items/Fabricators/FabricatorsAndDeconstructors.png" depth="0.84" offset="-103,99" sourcerect="908,301,116,87" />
+    <DecorativeSprite texture="Content/Items/Fabricators/FabricatorsAndDeconstructors.png" depth="0.81" offset="-103,99" sourcerect="825,395,114,83" />
+    <DecorativeSprite texture="Content/Items/Fabricators/FabricatorsAndDeconstructors.png" depth="0.83" offset="-72,129" sourcerect="944,395,74,74" origin="0.5,0.5" rotationspeed="-715">
+      <AnimationConditional Voltage="gt 0.5" targetitemcomponent="Fabricator" />
+      <AnimationConditional IsActive="True" targetitemcomponent="Fabricator" />
+      <IsActiveConditional Condition="gt 0.0" />
+    </DecorativeSprite>
+    <DecorativeSprite texture="Content/Items/Fabricators/FabricatorsAndDeconstructors.png" depth="0.83" offset="-117,71" sourcerect="805,537,54,54" origin="0.5,0.5" rotationspeed="400">
+      <AnimationConditional Voltage="gt 0.5" targetitemcomponent="Fabricator" />
+      <AnimationConditional IsActive="True" targetitemcomponent="Fabricator" />
+      <IsActiveConditional Condition="gt 0.0" />
+    </DecorativeSprite>
+    <LightComponent range="10.0" lightcolor="255,255,255,0" powerconsumption="5" IsOn="true" castshadows="false" allowingameediting="false">
+      <sprite texture="Content/Items/Command/navigatorLights.png" depth="0.025" sourcerect="351,624,336,400" alpha="1.0" />
+    </LightComponent>
+    <LightComponent range="10.0" lightcolor="255,255,255,0" powerconsumption="5" IsOn="true" castshadows="false" blinkfrequency="1" allowingameediting="false">
+      <sprite texture="Content/Items/Command/navigatorLights.png" depth="0.025" sourcerect="688,624,336,400" alpha="1.0" />
+    </LightComponent>
+    <Fabricator canbeselected="true" powerconsumption="500.0" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.4,0.45" style="ItemUI" anchor="Center" />
+      <sound file="Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="1000.0" loop="true" />
+      <poweronsound file="Content/Items/PowerOnLight1.ogg" range="600" loop="false" />
+      <StatusEffect type="InWater" target="This" condition="-0.5" />
+    </Fabricator>
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10" msg="ItemMsgRewireScrewdriver">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredSkill identifier="electrical" level="70" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Sounds/Damage/Electrocution1.ogg" range="1000" />
+        <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+        <Affliction identifier="stun" strength="5" />
+        <Affliction identifier="burn" strength="5" />
+      </StatusEffect>
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+    </ConnectionPanel>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.50" mindeteriorationdelay="60" maxdeteriorationdelay="120" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,216" anchor="Center" relativeoffset="0.1,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="wrench" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="5" />
+      </StatusEffect>
+    </Repairable>
+    <ItemContainer capacity="5" canbeselected="true" hideitems="true" slotsperrow="5" uilabel="" allowuioverlap="true" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="" allowuioverlap="true" />
+  </Item>
+  <Item name="Blood Punch" identifier="ita_bloodpunch" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical" description="Trick is to pinch your nose when you pop this open and swallow fast!" useinhealthinterface="true" scale="0.25" impactsoundtag="impact_metal_light">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/ita_sprites_campaign.png" depth="0.54" sourcerect="347,265,31,85" origin="0.5,0.5" />
+    <Body width="31" height="85" density="9" />
+    <Holdable slots="RightHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect tags="medical" type="OnContained" target="Character" stackable="false" disabledeltatime="true" delay="1.7" duration="60">
+        <ReduceAffliction identifier="damage" amount="0.25" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" stackable="false" disabledeltatime="true" delay="1.6">
+        <Sound file="Mods/IntoTheAbyss/Content/Items/ita_sodapop1.ogg" range="500" />
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Crispy Chitin Bits" identifier="ita_crispychitin" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical" description="If one of the pieces is tougher to chew than the rest, uppercut yourself to break it apart." useinhealthinterface="true" scale="0.25" impactsoundtag="impact_metal_light">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/ita_sprites_campaign.png" depth="0.54" sourcerect="279,355,43,58" origin="0.5,0.5" />
+    <Body width="43" height="58" density="9" />
+    <Holdable slots="RightHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect tags="medical" type="OnContained" target="Character" stackable="false" disabledeltatime="true" delay="1.5" duration="90">
+        <ReduceAffliction identifier="damage" amount="0.167" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" stackable="false" disabledeltatime="true" delay="1.6">
+        <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_crunch.ogg" range="500" />
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Override>
+    <Item name="Drinks Vending Machine" identifier="op_vendingmachine1" width="238" height="396" texturescale="1.0,1.0" scale="0.5" category="Decorative" description="Insert vending machine coin">
+      <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="1,497,238,396" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+      <LightComponent range="0.0" lightcolor="255,255,255,111" IsOn="true" castshadows="false" allowingameediting="false">
+        <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="241,497,238,396" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      </LightComponent>
+      <ItemContainer hideitems="true" capacity="1" canbeselected="false" maxstacksize="1">
+        <sound file="Mods/IntoTheAbyss/Content/Outposts/ita_vending2.ogg" type="Always" loop="true" />
+        <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+        <Containable items="ita_coin1" />
+        <StatusEffect type="Always" target="Contained" stackable="false" disabledeltatime="true">
+          <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_vending1.ogg" range="500" />
+          <RequiredItem items="ita_coin1" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" stackable="false" delay="0.3" disabledeltatime="true">
+          <SpawnItem identifier="ita_bloodpunch" count="1" />
+          <RequiredItem items="ita_coin1" type="Contained" />
+        </StatusEffect>
+      </ItemContainer>
+    </Item>
+  </Override>
+  <Override>
+    <Item name="Snacks Vending Machine" identifier="op_vendingmachine2" nameidentifier="op_vendingmachine1" width="238" height="396" texturescale="1.0,1.0" scale="0.5" category="Decorative" description="Insert vending machine coin">
+      <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="481,497,238,396" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+      <LightComponent range="0.0" lightcolor="255,255,255,111" IsOn="true" castshadows="false" allowingameediting="false">
+        <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="721,497,238,396" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      </LightComponent>
+      <ItemContainer hideitems="true" capacity="1" canbeselected="false" maxstacksize="1">
+        <sound file="Mods/IntoTheAbyss/Content/Outposts/ita_vending2.ogg" type="Always" loop="true" />
+        <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+        <Containable items="ita_coin1" />
+        <StatusEffect type="Always" target="Contained" stackable="false" disabledeltatime="true">
+          <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_vending1.ogg" range="500" />
+          <RequiredItem items="ita_coin1" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" stackable="false" delay="0.3" disabledeltatime="true">
+          <SpawnItem identifier="ita_crispychitin" count="1" />
+          <RequiredItem items="ita_coin1" type="Contained" />
+        </StatusEffect>
+      </ItemContainer>
+    </Item>
+  </Override>
+  <!-- NPCs -->
+  <Item name="SuitMechaHands" identifier="ita_engineersuitmecha1" aliases="orangejumpsuit" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <InventoryIcon name="Engineer Uniform 1 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <Sprite name="Engineer Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="13,446,208,71" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Engineer Uniform 3 Torso" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_3.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" depth="0.7" />
+      <sprite name="Engineer Uniform 3 Left Upper Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_3.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" depth="0.71" />
+      <sprite name="Engineer Uniform 3 Right Upper Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_3.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" depth="0.65" />
+      <sprite name="Engineer Uniform 3 Left Lower Arm" texture="Mods/IntoTheAbyss/Content/Outposts/ita_prosthetic_engineer_torso_male_3.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" depth="0.72" />
+      <sprite name="Engineer Uniform 3 Right Lower Arm" texture="Mods/IntoTheAbyss/Content/Outposts/ita_prosthetic_engineer_torso_male_3.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" depth="0.64" />
+      <sprite name="Engineer Uniform 3 Waist" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" depth="0.73" />
+      <sprite name="Engineer Uniform 3 Right Thigh" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" depth="0.62" />
+      <sprite name="Engineer Uniform 3 Left Thigh" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" depth="0.74" />
+      <sprite name="Engineer Uniform 3 Right Leg" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" depth="0.63" />
+      <sprite name="Engineer Uniform 3 Left Leg" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" depth="0.75" />
+      <sprite name="Engineer Uniform 3 Right Shoe" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" depth="0.64" />
+      <sprite name="Engineer Uniform 3 Left Shoe" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" depth="0.76" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+    </Wearable>
+  </Item>
+  <Item name="Expert Mechanic Outfit" identifier="bluejumpsuit3" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="Pockets and damage protection. Rich mechanic's clothes." scale="0.5" impactsoundtag="impact_soft">
+    <InventoryIcon name="Mechanic Uniform 1 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="129,274,128,110" origin="0.5,0.5" />
+    <Sprite name="Mechanic Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="223,531,207,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Mechanic Uniform 3 Torso" texture="Content/Items/Jobgear/Mechanic/mechanic_torso_[GENDER]_3.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic Uniform 3 Left Upper Arm" texture="Content/Items/Jobgear/Mechanic/mechanic_torso_[GENDER]_3.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic Uniform 3 Right Upper Arm" texture="Content/Items/Jobgear/Mechanic/mechanic_torso_[GENDER]_3.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic Uniform 3 Left Lower Arm" texture="Content/Items/Jobgear/Mechanic/mechanic_torso_[GENDER]_3.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic Uniform 3 Right Lower Arm" texture="Content/Items/Jobgear/Mechanic/mechanic_torso_[GENDER]_3.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic Uniform 3 Waist" texture="Content/Items/Jobgear/Mechanic/mechanic_legs_[GENDER]_3.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic Uniform 3 Right Thigh" texture="Content/Items/Jobgear/Mechanic/mechanic_legs_[GENDER]_3.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic Uniform 3 Left Thigh" texture="Content/Items/Jobgear/Mechanic/mechanic_legs_[GENDER]_3.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic Uniform 3 Right Leg" texture="Content/Items/Jobgear/Mechanic/mechanic_legs_[GENDER]_3.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic Uniform 3 Left Leg" texture="Content/Items/Jobgear/Mechanic/mechanic_legs_[GENDER]_3.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic Uniform 3 Right Shoe" texture="Content/Items/Jobgear/Mechanic/mechanic_legs_[GENDER]_3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic Uniform 3 Left Shoe" texture="Content/Items/Jobgear/Mechanic/mechanic_legs_[GENDER]_3.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.85" damagesound="LimbArmor" deflectprojectiles="true" />
+    </Wearable>
+    <ItemContainer capacity="2">
+      <Containable items="wrench,screwdriver" />
+    </ItemContainer>
+  </Item>
+  <Item name="Expert Engineer Outfit" identifier="orangejumpsuit3" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="Pockets and damage protection. Rich engineer's clothes." scale="0.5" impactsoundtag="impact_soft">
+    <InventoryIcon name="Engineer Uniform 1 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,150,128,107" origin="0.5,0.5" />
+    <Sprite name="Engineer Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="227,452,202,65" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Engineer Uniform 3 Torso" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_3.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Left Upper Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_3.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Right Upper Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_3.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Left Lower Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_3.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Right Lower Arm" texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_3.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Waist" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Right Thigh" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Left Thigh" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Right Leg" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Left Leg" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Right Shoe" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer Uniform 3 Left Shoe" texture="Content/Items/Jobgear/Engineer/engineer_legs_[GENDER]_3.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.85" damagesound="LimbArmor" deflectprojectiles="true" />
+    </Wearable>
+    <ItemContainer capacity="2">
+      <Containable items="screwdriver,wrench" />
+    </ItemContainer>
+  </Item>
+  <Item name="Expert Medic Outfit" identifier="doctorsuniform3" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" fireproof="true" description="This suit has a syringe gun holder, kevlar  and protects against fire and husk infection." scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <Price locationtype="Research" buyprice="500" />
+    <InventoryIcon name="Medic Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="256,151,128,105" origin="0.5,0.5" />
+    <Sprite name="Medic Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="232,629,201,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Medic Uniform 3 Torso" texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_3.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Right Lower Arm" texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_3.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Left Lower Arm" texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_3.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Right Upper Arm" texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_3.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Left Upper Arm" texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_3.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Waist" texture="Content/Items/Jobgear/Medic/medic_legs_[GENDER]_3.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Right Thigh" texture="Content/Items/Jobgear/Medic/medic_legs_[GENDER]_3.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Left Thigh" texture="Content/Items/Jobgear/Medic/medic_legs_[GENDER]_3.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Right Leg" texture="Content/Items/Jobgear/Medic/medic_legs_[GENDER]_3.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Left Leg" texture="Content/Items/Jobgear/Medic/medic_legs_[GENDER]_3.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Right Shoe" texture="Content/Items/Jobgear/Medic/medic_legs_[GENDER]_3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 3 Left Shoe" texture="Content/Items/Jobgear/Medic/medic_legs_[GENDER]_3.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <!--<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />-->
+    </Wearable>
+    <ItemContainer capacity="3">
+      <Containable items="chem,medical,syringegun" excludeditems="toolbox,orangejumpsuit3,doctorsuniform1,doctorsuniform2,doctorsuniform3,bluejumpsuit3" />
+    </ItemContainer>
+  </Item>
+  <Item name="Botanist Outfit" identifier="greenjumpsuit" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <InventoryIcon name="Botanist Uniform Icon" texture="Mods/IntoTheAbyss/Content/Outposts/ita_spritesoutpost.png" sourcerect="419,78,128,110" origin="0.5,0.5" />
+    <Sprite name="Botanist Uniform" texture="Mods/IntoTheAbyss/Content/Outposts/ita_spritesoutpost.png" sourcerect="409,7,207,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Mechanic Uniform 3 Torso" texture="Mods/IntoTheAbyss/Content/Outposts/botanist_torso_[GENDER]_3.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="botanist Uniform 3 Left Upper Arm" texture="Mods/IntoTheAbyss/Content/Outposts/botanist_torso_[GENDER]_3.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="botanist Uniform 3 Right Upper Arm" texture="Mods/IntoTheAbyss/Content/Outposts/botanist_torso_[GENDER]_3.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="botanist Uniform 3 Left Lower Arm" texture="Mods/IntoTheAbyss/Content/Outposts/botanist_torso_[GENDER]_3.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="botanist Uniform 3 Right Lower Arm" texture="Mods/IntoTheAbyss/Content/Outposts/botanist_torso_[GENDER]_3.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="botanist Uniform 3 Waist" texture="Mods/IntoTheAbyss/Content/Outposts/botanist_legs_[GENDER]_3.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="botanist Uniform 3 Right Thigh" texture="Mods/IntoTheAbyss/Content/Outposts/botanist_legs_[GENDER]_3.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="botanist Uniform 3 Left Thigh" texture="Mods/IntoTheAbyss/Content/Outposts/botanist_legs_[GENDER]_3.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="botanist Uniform 3 Right Leg" texture="Mods/IntoTheAbyss/Content/Outposts/botanist_legs_[GENDER]_3.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="botanist Uniform 3 Left Leg" texture="Mods/IntoTheAbyss/Content/Outposts/botanist_legs_[GENDER]_3.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="botanist Uniform 3 Right Shoe" texture="Mods/IntoTheAbyss/Content/Outposts/botanist_legs_[GENDER]_3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="botanist Uniform 3 Left Shoe" texture="Mods/IntoTheAbyss/Content/Outposts/botanist_legs_[GENDER]_3.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+    </Wearable>
+  </Item>
+  <Override>
+    <!--minerclothes-->
+    <Item name="Miner's Overalls" identifier="minerclothes" nameidentifier="mineroutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+      <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.5" />
+      <Price baseprice="75">
+        <Price locationtype="outpost" multiplier="1" minavailable="1" />
+        <Price locationtype="city" multiplier="0.9" minavailable="1" />
+        <Price locationtype="research" multiplier="1" minavailable="1" />
+        <Price locationtype="military" multiplier="1" minavailable="1" />
+        <Price locationtype="mine" multiplier="1" minavailable="1" />
+      </Price>
+      <Sprite name="miner" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="442,376,206,63" depth="0.6" origin="0.5,0.5" />
+      <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+      <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+        <sprite name="miner Torso" texture="Content/Items/Jobgear/Commoner/miner_torso_[GENDER].png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="miner Right Lower Arm" texture="Content/Items/Jobgear/Commoner/miner_torso_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="miner Left Lower Arm" texture="Content/Items/Jobgear/Commoner/miner_torso_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="miner Right Upper Arm" texture="Content/Items/Jobgear/Commoner/miner_torso_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="miner Left Upper Arm" texture="Content/Items/Jobgear/Commoner/miner_torso_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="miner Waist" texture="Content/Items/Jobgear/Commoner/miner_legs_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="miner Right Thigh" texture="Content/Items/Jobgear/Commoner/miner_legs_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="miner Left Thigh" texture="Content/Items/Jobgear/Commoner/miner_legs_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="miner Right Leg" texture="Content/Items/Jobgear/Commoner/miner_legs_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="miner Left Leg" texture="Content/Items/Jobgear/Commoner/miner_legs_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="miner Left Shoe" texture="Content/Items/Jobgear/Commoner/miner_legs_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="miner Right Shoe" texture="Content/Items/Jobgear/Commoner/miner_legs_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, blunttrauma, lacerations" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      </Wearable>
+    </Item>
+  </Override>
+  <Item name="ita_bountycard1" identifier="ita_bountycard1" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/idcard.png" depth="0.8" sourcerect="0,0,16,16" />
+    <Body width="16" height="12" density="20" />
+    <IdCard slots="Card" msg="ItemMsgPickUpSelect" />
+    <Holdable slots="Card" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" stackable="false" disabledeltatime="true" delay="0.2">
+        <Affliction identifier="stun" strength="-50" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This,Character">
+        <Conditional IsDead="true" />
+        <TriggerEvent identifier="ita_bounty1_win1" />
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- BAR -->
+  <Item name="Fishtail Cocktail" identifier="ita_drinkfishtail" category="Material" cargocontaineridentifier="chemicalcrate" description="" Tags="smallitem,chem,medical,petfood2" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Mods/IntoTheAbyss/Content/Outposts/ita_spritesoutpost.png" sourcerect="0,0,21,58" origin="0.5,0.5" />
+    <Sprite texture="Mods/IntoTheAbyss/Content/Outposts/ita_spritesoutpost.png" sourcerect="0,0,21,58" depth="0.6" origin="0.5,0.5" />
+    <Body width="30" height="55" density="20" />
+    <Holdable slots="RightHand" holdpos="30,-25" aimpos="50,30" handle1="0,-29" handle2="0,-29" msg="ItemMsgPickUpSelect">
+      <StatusEffect tags="medical" type="OnContained" target="Character" stackable="false" disabledeltatime="true" delay="2">
+        <Affliction identifier="heal4" amount="25" />
+        <Affliction identifier="drunk" amount="10" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" stackable="false" disabledeltatime="false" condition="-10" />
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Bed" identifier="ita_bed" width="356" height="264" texturescale="1.0,1.0" scale="0.5" category="Decorative" spritecolor="255,255,255,255" noninteractable="false">
+    <sprite texture="Content/Map/Outposts/Art/Storage.png" sourcerect="1598,1752,389,149" depth="0.750" premultiplyalpha="false" origin="0.5,0.5" />
+    <Controller UserPos="0,-100" direction="Right" hidehud="false" canbeselected="true">
+      <StatusEffect target="Character" disabledeltatime="true" stackable="false" delay="0.5">
+        <Affliction identifier="heal3" strength="100" />
+      </StatusEffect>
+      <limbposition limb="Head" position="25,-25" />
+      <limbposition limb="Torso" position="131,-10" />
+      <limbposition limb="Waist" position="203,-10" />
+      <limbposition limb="RightFoot" position="335,-10" />
+      <limbposition limb="LeftFoot" position="300,-10" />
+      <limbposition limb="RightHand" position="35,-25" allowusinglimb="true" />
+      <limbposition limb="LeftHand" position="35,-15" allowusinglimb="true" />
+    </Controller>
+  </Item>
+  <Item name="Craw-Yum!" identifier="ita_crawyum" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical" description="Don't look into the bowl when you are eating this and try to burn your tongue a little so you can ignore the taste." scale="0.5" impactsoundtag="impact_metal_light">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/ita_sprites_campaign.png" depth="0.54" sourcerect="311,241,34,8" origin="0.5,0.5" />
+    <Body width="34" height="8" density="9" />
+    <Holdable slots="RightHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect tags="medical" type="OnContained" target="Character" stackable="false" disabledeltatime="true" delay="1.5">
+        <Affliction identifier="heal2" amount="15" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" stackable="false" disabledeltatime="false" condition="-10">
+        <ParticleEmitter particle="steamspray" particlespersecond="10" anglemin="-95" anglemax="-85" velocitymin="30" velocitymax="50" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" stackable="false" disabledeltatime="false" condition="-1">
+        <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_slurp.ogg" range="500" />
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Bar Table" identifier="ita_bartable" tags="ita_bartable" pickdistance="150" scale="0.5">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Outposts/ita_spritesoutpost.png" depth="0.84" sourcerect="4,65,390,223" canflipx="false" origin="0.5,0.5" />
+    <ItemContainer capacity="8" canbeselected="true" hideitems="false" itempos="67,28" iteminterval="42,0" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="ita_drinkfishtail" />
+    </ItemContainer>
+  </Item>
+  <Item name="Canteen Table" identifier="ita_canteentable" tags="ita_canteentable" pickdistance="150" scale="0.5">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Outposts/ita_spritesoutpost.png" depth="0.84" sourcerect="0,491,340,254" canflipx="false" origin="0.5,0.5" />
+    <ItemContainer capacity="8" canbeselected="true" hideitems="false" itempos="17,4" iteminterval="44,0" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="ita_crawyum" />
+    </ItemContainer>
+  </Item>
+  <Item name="Canteen Sign" identifier="ita_canteensign" tags="ita_canteensign" pickdistance="150" scale="0.5">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Outposts/ita_spritesoutpost.png" depth="0.84" sourcerect="422,296,710,284" canflipx="false" origin="0.5,0.5" />
+  </Item>
+  <Item name="Clothier Table" identifier="ita_clothiertable" tags="ita_clothiertable" pickdistance="150" scale="0.5">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Outposts/ita_spritesoutpost.png" depth="0.84" sourcerect="3,289,141,159" canflipx="true" origin="0.5,0.5" />
+    <ItemContainer capacity="10" canbeselected="true" hideitems="false" itempos="84,16" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="clothing,ita_duffelbag1,money" />
+    </ItemContainer>
+  </Item>
+  <Item name="Pet Trader Table" identifier="ita_pettradertable" tags="ita_pettradertable" pickdistance="150" scale="0.5">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Outposts/ita_spritesoutpost.png" depth="0.84" sourcerect="3,289,141,159" canflipx="true" origin="0.5,0.5" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="false" itempos="84,16" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="smallitem" />
+    </ItemContainer>
+  </Item>
+  <Item name="Botanist Table" identifier="ita_botanisttable" tags="ita_botanisttable" pickdistance="150" scale="0.5">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Outposts/ita_spritesoutpost.png" depth="0.84" sourcerect="3,289,141,159" canflipx="true" origin="0.5,0.5" />
+    <ItemContainer capacity="10" canbeselected="true" hideitems="false" itempos="84,16" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="planter,wateringcan,fertilizer,seed,seedbag" />
+    </ItemContainer>
+  </Item>
+  <Item name="Bar Stool" identifier="ita_outpostchair1" nameidentifier="ita_opdeco_officechair" tags="ita_outpostchair1" allowattachitems="true" texturescale="1.0,1.0" scale="0.5" category="Decorative" canflipy="false">
+    <sprite texture="Mods/IntoTheAbyss/Content/Outposts/ita_spritesoutpost.png" sourcerect="1140,89,94,182" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
+    <Controller UserPos="10,0" direction="Left" hidehud="false" canbeselected="true">
+      <StatusEffect target="Character" disabledeltatime="true" stackable="false" delay="0.5">
+        <ReduceAffliction identifier="drunk" strength="0.3" />
+      </StatusEffect>
+      <limbposition limb="Head" position="30,115" />
+      <limbposition limb="Torso" position="40,80" />
+      <limbposition limb="Waist" position="60,30" />
+      <limbposition limb="RightFoot" position="0,-70" />
+      <limbposition limb="LeftFoot" position="0,-70" />
+      <limbposition limb="RightHand" position="-20,20" allowusinglimb="true" />
+      <limbposition limb="LeftHand" position="-20,20" allowusinglimb="true" />
+    </Controller>
+  </Item>
+  <Item name="Outpost Computer" identifier="ita_terminal" category="Electrical" Tags="smallitem,logic" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <Upgrade gameversion="0.10.0" scale="*0.5" />
+    <Sprite texture="Content/Map/Outposts/Art/Storage.png" depth="0.8" sourcerect="1107,0,123,269" origin="0.5,0.5" />
+    <Terminal canbeselected="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false">
+      <GuiFrame relativesize="0.35,0.35" anchor="Center" style="ItemUI" />
+    </Terminal>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem identifier="screwdriver" type="Equipped" />
+      <input name="signal_in" displayname="connection.signalin" />
+      <output name="signal_out" displayname="connection.signalout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Message Board" identifier="ita_board1" tags="ita_board1" width="238" height="396" texturescale="1.0,1.0" scale="0.5">
+    <sprite texture="Mods/IntoTheAbyss/Content/Campaign/ita_board1.png" sourcerect="0,0,311,238" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <BrokenSprite texture="Mods/IntoTheAbyss/Content/Campaign/ita_board2.png" sourcerect="0,0,311,238" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" maxcondition="50" />
+    <Body width="36" height="40" density="40" />
+    <Controller direction="None" canbepicked="true" msg="ItemMsgPressSelect" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="10.0" aimpos="35,-10" handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
+      <requireditem identifier="wrench" type="Equipped" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem identifier="screwdriver" type="Equipped" />
+      <output name="signal_out" displayname="connection.signalout" />
+      <input name="activate" displayname="connection.activate">
+        <StatusEffect type="OnUse" target="This" condition="-100" disabledeltatime="true" setvalue="true" eventtag="statuseffecttarget">
+          <Conditional condition="gt 1" target="this" />
+          <sound file="Mods/IntoTheAbyss/Content/Campaign/ita_sound_papertear.ogg" type="OnUse" range="500.0" />
+          <TriggerEvent identifier="ita_noticeboard_1" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="Office Client Chair" identifier="ita_outpostchair2" tags="chair" allowattachitems="true" texturescale="1.0,1.0" scale="0.5" category="Decorative" canflipy="false">
+    <sprite texture="Content/Map/Outposts/Art/Storage.png" sourcerect="1233,31,144,240" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
+    <Controller UserPos="-10,30" direction="Left" hidehud="false" canbeselected="true">
+      <StatusEffect target="this" statuseffecttarget="true">
+        <TriggerEvent identifier="ita_citymissions1" />
+      </StatusEffect>
+      <limbposition limb="Head" position="100,20" />
+      <limbposition limb="Torso" position="75,-52" />
+      <limbposition limb="Waist" position="80,-110" />
+      <limbposition limb="RightFoot" position="0,-210" />
+      <limbposition limb="LeftFoot" position="0,-210" />
+      <limbposition limb="RightHand" position="20,-120" allowusinglimb="true" />
+      <limbposition limb="LeftHand" position="20,-120" allowusinglimb="true" />
+    </Controller>
+  </Item>
+  <Item name="Notice Board" identifier="ita_board2" tags="ita_board2" width="238" height="396" texturescale="1.0,1.0" scale="0.5">
+    <sprite texture="Mods/IntoTheAbyss/Content/Outposts/ita_board2a.png" sourcerect="581,414,307,231" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <BrokenSpritesprite texture="Mods/IntoTheAbyss/Content/Outposts/ita_board2b.png" sourcerect="581,414,307,231" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" maxcondition="50" />
+    <Body width="36" height="40" density="40" />
+    <Controller direction="None" canbepicked="true" msg="ItemMsgPressSelect">
+      <sound file="Mods/IntoTheAbyss/Content/Outposts/ita_paperrip1.ogg" type="OnUse" range="500.0" />
+      <StatusEffect type="OnUse" target="This" condition="-100" disabledeltatime="true" setvalue="true" eventtag="statuseffecttarget">
+        <Conditional condition="gt 1" target="this" />
+        <TriggerEvent identifier="ita_bounty_1" />
+      </StatusEffect>
+    </Controller>
+  </Item>
+  <!-- Event Items -->
+  <Item name="spawnershop" identifier="spawnershop" category="Electrical" Tags="smallitem,signal,logic,explosive" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,388,63,57" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="96,35,31,26" origin="0.5,0.5" />
+    <Body width="31" height="25" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="Trigger" displayname="Trigger">
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_clothier" />
+          <RequiredItem items="baseballcap" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_workshopscript" />
+          <RequiredItem items="wrench" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_bar" />
+          <RequiredItem items="ethanol" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_collectorspawn" />
+          <RequiredItem items="alienpowercell" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_doc1" />
+          <RequiredItem items="antibleeding1" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_collectorsell1" />
+          <RequiredItem items="sulphuriteshard" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_collectorsell2" />
+          <RequiredItem items="incendium" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_collectorsell3" />
+          <RequiredItem items="fulgurium" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_researchlock1" />
+          <RequiredItem items="physicorium" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_fablock" />
+          <RequiredItem items="nuclearshell" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_canteen" />
+          <RequiredItem items="creepingorange" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_pettrader1" />
+          <RequiredItem items="ita_pettrader1" type="Contained" />
+          <SpawnCharacter speciesname="outpostorangeboy" count="2" spread="1" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_beacon_sep1.0" />
+          <RequiredItem items="revolver" type="Contained" />
+          <Remove />
+        </StatusEffect>
+		<StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_clothier1" />
+          <RequiredItem items="ita_clothier1" type="Contained" />
+          <Remove />
+        </StatusEffect>
+		<StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_botanist1" />
+          <RequiredItem items="ita_botanist1" type="Contained" />
+          <Remove />
+        </StatusEffect>
+		<StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_botanist2" />
+          <RequiredItem items="ita_botanist2" type="Contained" />
+          <Remove />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+    <ItemContainer canbeselected="true" capacity="1" itempos="0,0" hideitems="false" />
+  </Item>
+  <Item name="spawnerevents" identifier="spawnerevents" category="Electrical" Tags="smallitem,signal,logic,explosive" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,388,63,57" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="96,35,31,26" origin="0.5,0.5" />
+    <Body width="31" height="25" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="Trigger" displayname="Trigger">
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_prisonbreak1" />
+          <RequiredItem items="handcuffs" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_prisonbreak2" />
+          <RequiredItem items="toyhammer" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_prisonescape1.0" />
+          <RequiredItem items="prison1detector" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_prisonescape2.0" />
+          <RequiredItem items="prison2detector" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_prisonescape2.1" />
+          <RequiredItem items="prisoner2.1" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_prisonescape2.2" />
+          <RequiredItem items="prisoner2.2" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_prisonescape2.3" />
+          <RequiredItem items="prisoner2.3" type="Contained" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="rebelbase" />
+          <RequiredItem items="rebelbase" type="Contained" />
+          <Remove />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+    <ItemContainer canbeselected="true" capacity="1" itempos="0,0" hideitems="false" />
+  </Item>
+  <Item name="eventdetector" identifier="eventdetector" category="Electrical" Tags="smallitem,sensor" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,288,48,48" origin="0.5,0.5" />
+    <MotionSensor range="100" canbeselected="true" />
+    <Body width="42" height="36" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <output name="state_out" displayname="connection.stateout" fallbackdisplayname="connection.signalout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="huskevent1" identifier="huskevent1" category="Electrical" tags="huskevent1" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Sprite texture="Content/Items/Button/button.png" sourcerect="33,70,38,51" depth="0.8" origin="0.5,0.5" />
+    <Body width="36" height="40" density="40" />
+    <Controller direction="None" canbepicked="true" msg="ItemMsgPressSelect">
+      <RequiredItem identifier="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" />
+      <sound file="Content/Items/Button/Button.ogg" type="OnUse" range="500.0" />
+    </Controller>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem identifier="screwdriver" type="Equipped" />
+      <output name="signal_out" displayname="connection.signalout">
+        <Remove />
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_husk1" />
+        </StatusEffect>
+      </output>
+    </ConnectionPanel>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="10.0" aimpos="35,-10" handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
+      <requireditem identifier="wrench" type="Equipped" />
+    </Holdable>
+  </Item>
+  <Item name="crawlerevent1" identifier="crawlerevent1" category="Electrical" tags="crawlerevent1" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Sprite texture="Content/Items/Button/button.png" sourcerect="33,70,38,51" depth="0.8" origin="0.5,0.5" />
+    <Body width="36" height="40" density="40" />
+    <Controller direction="None" canbepicked="true" msg="ItemMsgPressSelect">
+      <RequiredItem identifier="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" />
+      <sound file="Content/Items/Button/Button.ogg" type="OnUse" range="500.0" />
+    </Controller>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem identifier="screwdriver" type="Equipped" />
+      <output name="signal_out" displayname="connection.signalout">
+        <Remove />
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_crawler1" />
+        </StatusEffect>
+      </output>
+    </ConnectionPanel>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="10.0" aimpos="35,-10" handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
+      <requireditem identifier="wrench" type="Equipped" />
+    </Holdable>
+  </Item>
+  <Item name="Artifact Socket" identifier="itasocket" category="Alien" Tags="itasocket" scale="0.25">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Ruins/ita_sprites_alien.png" depth="0.8" sourcerect="770,300,251,239" />
+    <LightComponent AllowInGameEditing="false" lightcolor="112,146,190,180" canbeselected="false" range="250.0" IsOn="true" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="false" itempos="125,-120" autointeractwithcontained="true">
+      <Containable items="skyholderartifact,thermalartifact,faradayartifact,nasonovartifact,psychosisartifact" />
+    </ItemContainer>
+    <PowerContainer capacity="10.0" canbeselected="false" maxrechargespeed="1000.0" maxoutput="10000.0">
+      <StatusEffect type="Always" target="This" charge="-50" />
+      <StatusEffect type="Always" target="This" charge="100">
+        <RequiredItem items="skyholderartifact,thermalartifact,faradayartifact,nasonovartifact,psychosisartifact" type="Contained" />
+      </StatusEffect>
+    </PowerContainer>
+    <ConnectionPanel canbeselected="true" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <!-- break the item when a shutdown signal is received -->
+      <input name="shutdown" displayname="connection.shutdown">
+        <StatusEffect type="OnUse" target="This">
+          <ParticleEmitter particle="artifactspark" anglemin="0" anglemax="360" particleamount="20" velocitymin="100" velocitymax="500" />
+          <sound file="Content/Items/Alien/AlienCoil2.ogg" range="2000" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Contained">
+          <Remove />
+        </StatusEffect>
+      </input>
+      <output name="power_out" displayname="connection.powerout" />
+      <output name="charge" displayname="connection.batterychargestatusout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Door Opener 1" identifier="dooro1" category="Alien" Tags="dooro1" scale="1.0">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Ruins/ita_sprites_alien.png" depth="0.8" sourcerect="156,1,201,203" />
+    <DecorativeSprite texture="Mods/IntoTheAbyss/Content/Ruins/ita_sprites_alien.png" sourcerect="24,205,201,203" depth="0.750" offset="0,0" origin="0.5,0.5">
+      <Conditional Charge="gt 1" targetitemcomponent="PowerContainer" />
+    </DecorativeSprite>
+    <LightComponent AllowInGameEditing="false" lightcolor="112,146,190,180" canbeselected="false" range="250.0" IsOn="true" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="false" itempos="100,-100" autointeractwithcontained="true">
+      <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="alienpowercell"></Containable>
+    </ItemContainer>
+    <PowerContainer capacity="10.0" canbeselected="false" maxrechargespeed="1000.0" maxoutput="10000.0">
+      <StatusEffect type="Always" target="This" charge="-50" />
+      <StatusEffect type="Always" target="This" charge="100">
+        <RequiredItem items="alienpowercell" type="Contained" />
+      </StatusEffect>
+    </PowerContainer>
+    <ConnectionPanel canbeselected="true" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <!-- break the item when a shutdown signal is received -->
+      <input name="shutdown" displayname="connection.shutdown">
+        <StatusEffect type="OnUse" target="This">
+          <ParticleEmitter particle="artifactspark" anglemin="0" anglemax="360" particleamount="20" velocitymin="100" velocitymax="500" />
+          <sound file="Content/Items/Alien/AlienCoil2.ogg" range="2000" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Contained">
+          <Remove />
+        </StatusEffect>
+      </input>
+      <output name="power_out" displayname="connection.powerout" />
+      <output name="charge" displayname="connection.batterychargestatusout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Door Opener 2" identifier="dooro2" category="Alien" Tags="dooro2" scale="1.0">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Ruins/ita_sprites_alien.png" depth="0.8" sourcerect="156,1,201,203" />
+    <DecorativeSprite texture="Mods/IntoTheAbyss/Content/Ruins/ita_sprites_alien.png" sourcerect="24,205,201,203" depth="0.750" offset="0,0" origin="0.5,0.5">
+      <Conditional Charge="gt 1" targetitemcomponent="PowerContainer" />
+    </DecorativeSprite>
+    <LightComponent AllowInGameEditing="false" lightcolor="112,146,190,180" canbeselected="false" range="250.0" IsOn="true" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="false" itempos="100,-100" autointeractwithcontained="true">
+      <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="alienpowercell"></Containable>
+    </ItemContainer>
+    <PowerContainer capacity="10.0" canbeselected="false" maxrechargespeed="1000.0" maxoutput="10000.0">
+      <StatusEffect type="Always" target="This" charge="-50" />
+      <StatusEffect type="Always" target="This" charge="100">
+        <RequiredItem items="alienpowercell" type="Contained" />
+      </StatusEffect>
+    </PowerContainer>
+    <ConnectionPanel canbeselected="true" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <!-- break the item when a shutdown signal is received -->
+      <input name="shutdown" displayname="connection.shutdown">
+        <StatusEffect type="OnUse" target="This">
+          <ParticleEmitter particle="artifactspark" anglemin="0" anglemax="360" particleamount="20" velocitymin="100" velocitymax="500" />
+          <sound file="Content/Items/Alien/AlienCoil2.ogg" range="2000" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Contained">
+          <Remove />
+        </StatusEffect>
+      </input>
+      <output name="power_out" displayname="connection.powerout" />
+      <output name="charge" displayname="connection.batterychargestatusout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Outpost Locker" identifier="oplock" category="Alien" Tags="oplock" scale="1.0">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Ruins/ita_sprites_alien.png" depth="0.8" sourcerect="110,861,232,227" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="false" itempos="100,-100" autointeractwithcontained="true">
+      <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="alienpowercell"></Containable>
+    </ItemContainer>
+    <PowerContainer capacity="10.0" canbeselected="false" maxrechargespeed="1000.0" maxoutput="10000.0">
+      <StatusEffect type="Always" target="This" charge="-50" />
+      <StatusEffect type="Always" target="This" charge="100">
+        <RequiredItem items="alienpowercell" type="Contained" />
+      </StatusEffect>
+    </PowerContainer>
+    <ConnectionPanel canbeselected="true" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <!-- break the item when a shutdown signal is received -->
+      <input name="shutdown" displayname="connection.shutdown">
+        <StatusEffect type="OnUse" target="This">
+          <ParticleEmitter particle="artifactspark" anglemin="0" anglemax="360" particleamount="20" velocitymin="100" velocitymax="500" />
+          <sound file="Content/Items/Alien/AlienCoil2.ogg" range="2000" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Contained">
+          <Remove />
+        </StatusEffect>
+      </input>
+      <output name="power_out" displayname="connection.powerout" />
+      <output name="charge" displayname="connection.batterychargestatusout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="PetTest" identifier="pettest" category="Electrical" tags="pettest" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Sprite texture="Content/Items/Button/button.png" sourcerect="33,70,38,51" depth="0.8" origin="0.5,0.5" />
+    <Body width="36" height="40" density="40" />
+    <Controller direction="None" canbepicked="true" msg="ItemMsgPressSelect">
+      <RequiredItem identifier="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" />
+      <sound file="Content/Items/Button/Button.ogg" type="OnUse" range="500.0" />
+    </Controller>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem identifier="screwdriver" type="Equipped" />
+      <output name="signal_out" displayname="connection.signalout">
+        <Remove />
+        <StatusEffect type="OnUse" target="This">
+          <SpawnCharacter speciesname="outpostorangeboy" count="2" spread="1" />
+        </StatusEffect>
+      </output>
+    </ConnectionPanel>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="10.0" aimpos="35,-10" handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
+      <requireditem identifier="wrench" type="Equipped" />
+    </Holdable>
+  </Item>
+  <!-- Shops -->
+  <Item name="Display Container" identifier="ita_display" tags="container,display" pickdistance="50" scale="0.5">
+    <Sprite name="Diving Suit Locker Small" texture="Content/Items/Containers/containers.png" sourcerect="714,259,99,82" depth="0.84" origin="0.5,0.5" />
+    <ItemContainer hideitems="false" drawinventory="true" capacity="3" maxstacksize="1" slotsperrow="3" itempos="27,-42" iteminterval="22.5,0" itemrotation="0" canbeselected="true" containedspritedepth="0.83" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.16,0.18" anchor="Center" style="ItemUI" />
+      <Containable items="clothing,display,ita_duffelbag1,smallitem,mediumitem" excludebroken="false">
+        <StatusEffect type="OnContaining" targettype="Contained">
+          <RequiredItem items="purchased" type="Contained" />
+          <Remove />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer>
+  </Item>
+  <Item name="Picker" identifier="itapicker" category="Material" Tags="smallitem,purchased,clothing,container" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="898,192,61,63" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Materials/CraftingElements1.png" sourcerect="4,130,49,41" depth="0.55" origin="0.5,0.5" />
+    <Body width="45" height="32" density="50" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+</Items>

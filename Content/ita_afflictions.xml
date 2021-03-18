@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Afflictions>
+	<Override><!--exposure-->
+		
+		<Affliction
+	  name="Nuclear Waste Exposure"
+	  identifier="exposure"
+	  description="You've been exposed to nuclear material."
+	  type="buff"
+	  causeofdeathdescription="Died to overexposure to nuclear material."
+	  selfcauseofdeathdescription="Died to overexposure to nuclear material."
+	  limbspecific="false"
+	  indicatorlimb="Torso"
+	  maxstrength="100"
+	  damageoverlayalpha="1">
+			<Effect minstrength="0" maxstrength="50" strengthchange="-8">
+				<StatusEffect target="Character">
+					<Affliction identifier="burn" amount="0.1" />
+				</StatusEffect>
+			</Effect>
+			<Effect minstrength="51" maxstrength="100" strengthchange="-20">
+				<StatusEffect target="Character">
+					<Affliction identifier="radiationsickness" amount="1" />
+					<Affliction identifier="organdamage" amount="1" />
+				</StatusEffect>
+			</Effect>
+			<icon texture="Mods/IntoTheAbyss/Content/icons_ita.png" sourcerect="0,424,128,128" color="195,136,60,255" origin="0,0"/>
+		</Affliction>
+	</Override>
+	<Override><!--treatment-->
+		
+		<Affliction
+    name="Treatment"
+    identifier="heal1"
+    description="Good quality treatment at outpost"
+    type="damage"
+    causeofdeathdescription="Burned to death"
+    selfcauseofdeathdescription="You have burned to death."
+    limbspecific="false"
+    maxstrength="100">
+			<Effect minstrength="0" maxstrength="100" strengthchange="-50">
+				<StatusEffect target="Character" disabledeltatime="true">
+					<ReduceAffliction identifier="damage" strength="100" />
+					<ReduceAffliction identifier="burn" strength="100" />
+					<ReduceAffliction identifier="poison" strength="100" />
+					<ReduceAffliction identifier="bleeding" strength="100" />
+					<ReduceAffliction identifier="oxygenlow" strength="100" />
+					<ReduceAffliction identifier="bloodloss" strength="100" />
+					<ReduceAffliction identifier="huskinfection" strength="100" />
+					<ReduceAffliction identifier="paralysis" strength="100" />
+					<ReduceAffliction identifier="nausea" strength="100" />
+				</StatusEffect>
+			</Effect>
+			<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,896,128,128" color="10,193,114,255" origin="0,0"/>
+		</Affliction>
+	</Override>
+	<Override><!--well fed-->
+		
+		<Affliction
+    name="Well fed"
+    identifier="heal2"
+    description="Good food warms you up all the way to the heart.[PHYS REGEN UP]"
+    type="nourishment"
+    causeofdeathdescription="Ate too much."
+    selfcauseofdeathdescription="You ate too much."
+    limbspecific="false"
+    maxstrength="100">
+			<Effect minstrength="0" maxstrength="100" strengthchange="-1">
+				<StatusEffect target="Character" disabledeltatime="false" stackable="false">
+					<ReduceAffliction identifier="damage" strength="0.35" />
+					<ReduceAffliction identifier="bleeding" strength="0.35" />
+					<ReduceAffliction identifier="bloodloss" strength="0.35" />
+					<ReduceAffliction identifier="nausea" strength="0.35" />
+				</StatusEffect>
+			</Effect>
+			<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,896,128,128" origin="0,0" color="0,136,0,255" />
+		</Affliction>
+	</Override>
+	<Override><!--well rested-->
+		
+		<Affliction
+    name="Well rested"
+    identifier="heal3"
+    description="Warm bed in properly ventilated outpost does wonders to your body.[PHYS REGEN UP]"
+    type="nourishment"
+    causeofdeathdescription="Rested too much"
+    selfcauseofdeathdescription="RIP"
+	isbuff="true"
+    limbspecific="false"
+    maxstrength="100">
+			<Effect minstrength="0" maxstrength="100" strengthchange="-50">
+				<StatusEffect target="Character" disabledeltatime="false" stackable="false">
+					<ReduceAffliction identifier="damage" strength="0.2" />
+					<ReduceAffliction identifier="bleeding" strength="0.2" />
+					<ReduceAffliction identifier="bloodloss" strength="0.2" />
+					<ReduceAffliction identifier="nausea" strength="0.2" />
+				</StatusEffect>
+			</Effect>
+			<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,896,128,128" color="10,193,114,255" origin="0,0"/>
+		</Affliction>
+	</Override>
+	<Override><!--well relaxed-->
+		
+		<Affliction
+    name="Well relaxed"
+    identifier="heal4"
+    description="Drinking in company of relatively sane people at the outpost makes you forget about the horrors of the Sea a little.[PSYC RESISTANCE UP][PSYC REGEN UP]"
+    type="resistance"
+	isbuff="true"
+    limbspecific="false"
+    maxstrength="100">
+			<Effect minstrength="0" maxstrength="100" strengthchange="-0.027" resistancefor="psychosis" minresistance="0.5" maxresistance="0.5">
+				<StatusEffect target="Character" disabledeltatime="false" stackable="false">
+					<ReduceAffliction identifier="psychosis" strength="-0.1" />
+				</StatusEffect>
+			</Effect>
+			<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,896,128,128" color="10,193,114,255" origin="0,0"/>
+		</Affliction>
+	</Override>
+	<Override><!--blue burns-->
+		
+		<Affliction
+    name="Blue burns"
+    identifier="ancientburn"
+    description="Burns, dark blue blisters and rotten skin."
+    type="burn"
+    causeofdeathdescription="Burned to death"
+    selfcauseofdeathdescription="You have burned to death."
+    limbspecific="false"
+    maxstrength="100"
+    burnoverlayalpha="1">
+			<Effect minstrength="0" maxstrength="100"
+      minvitalitydecrease="0"
+      maxvitalitydecrease="10000"/>
+			<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" color="195,104,60,255" origin="0,0"/>
+		</Affliction>
+	</Override>
+	<Override><!--chink1-->
+		<Affliction
+	  name="Chink!"
+	  identifier="chink1"
+	  description="Raise your glass!"
+	  type="buff"
+	  isbuff="true"
+	  limbspecific="false"
+	  maxstrength="100"
+	  indicatorlimb="Head"
+	  activationthreshold="10">
+			<Effect minstrength="10" maxstrength="12" strengthchange="-40">
+				<StatusEffect target="Character" stackable="false" duration="60">
+					<Affliction identifier="haste" strength="100"/>
+					<Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_chinksound1.ogg" />
+				</StatusEffect>
+			</Effect>
+
+			<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,640,128,128" color="0,0,0,255" origin="0,0"/>
+		</Affliction>
+	</Override>
+	<Override><!--chink2-->
+		<Affliction
+	  name="Chink!"
+	  identifier="chink2"
+	  description="Cheers!"
+	  type="buff"
+	  isbuff="true"
+	  limbspecific="false"
+	  maxstrength="100"
+	  indicatorlimb="Head"
+	  activationthreshold="10">
+			<Effect minstrength="10" maxstrength="12" strengthchange="-30">
+				<StatusEffect target="Character" duration="60">
+					<Conditional ismale="true"/>
+					<Affliction identifier="durationincrease" strength="100"/>
+					<Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_chink2sound1.ogg" selectionmode="Random" range="500"/>
+				</StatusEffect>
+
+			</Effect>
+			<Effect minstrength="10" maxstrength="12" strengthchange="-50">
+				<StatusEffect target="Character" stackable="false" delay="0.5">
+					<Conditional isfemale="true"/>
+					<Affliction identifier="durationincrease" strength="100"/>
+					<Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_chink2sound3fem.ogg" volume="1" range="500"/>
+				</StatusEffect>
+			</Effect>
+			<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,640,128,128" color="0,0,0,255" origin="0,0"/>
+		</Affliction>
+	</Override>
+	<Override><!--camaraderie-->
+		<Affliction
+	  name="Camaraderie"
+	  identifier="camaraderie"
+	  description="Warmth"
+	  type="buff"
+	  isbuff="true"
+	  limbspecific="false"
+	  maxstrength="100"
+	  indicatorlimb="Head"
+	  activationthreshold="30">
+			<Effect minstrength="1" maxstrength="29" strengthchange="-50"/>
+			<Effect minstrength="25" maxstrength="60" strengthchange="-50" minspeedmultiplier="1.0" maxspeedmultiplier="1.15">
+				<StatusEffect target="Character" setvalue="true" disabledeltatime="true">
+					<Affliction identifier="chink1" strength="12"/>
+				</StatusEffect>
+			</Effect>
+			<Effect minstrength="60" maxstrength="100" strengthchange="-50" minspeedmultiplier="1.0" maxspeedmultiplier="1.15">
+				<StatusEffect target="Character" setvalue="true" disabledeltatime="true">
+					<Affliction identifier="chink2" strength="12"/>
+				</StatusEffect>
+			</Effect>
+			<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,640,128,128" color="170,194,147,255" origin="0,0"/>
+		</Affliction>
+	</Override>
+	<Override><!--poison-->		
+		<Affliction
+    name="Morbusine poisoning"
+    identifier="ita_morb"
+    description="The patient has severe breathing difficulties, and their heartrate is slowing rapidly."
+    type="poison"
+    causeofdeathdescription="Died of morbusine poisoning. You didn't make it in time..."
+    selfcauseofdeathdescription="You have morbusied to death."
+    limbspecific="false"
+	indicatorlimb="Torso"
+    maxstrength="100"
+    >
+			<Effect minstrength="0" maxstrength="20"
+      minvitalitydecrease="0"
+      maxvitalitydecrease="0"
+      strengthchange="2"
+      minscreendistort="0.0"
+      maxscreendistort="1.0"
+      minscreenblur="0.0"
+      maxscreenblur="0.0"
+      minchromaticaberration="0.0"
+      maxchromaticaberration="0.4">
+      <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true"/>
+      <StatusEffect target="Character" setvalue="true">
+        <Affliction identifier="oxygenlow" amount="7" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="20" maxstrength="80"
+      minvitalitydecrease="0"
+      maxvitalitydecrease="0"
+      strengthchange="1"
+      minscreendistort="0.0"
+      maxscreendistort="1.0"
+      minscreenblur="0.0"
+      maxscreenblur="0.8"
+      minchromaticaberration="0.4"
+      maxchromaticaberration="1.6">
+      <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true"/>
+      <StatusEffect target="Character" setvalue="true">
+        <Affliction identifier="oxygenlow" amount="12" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="80" maxstrength="100"
+      minvitalitydecrease="0"
+      maxvitalitydecrease="0"
+      strengthchange="1"
+      minscreendistort="0.0"
+      maxscreendistort="1.0"
+      minscreenblur="0.8"
+      maxscreenblur="1.0"
+      minchromaticaberration="1.6"
+      maxchromaticaberration="2.0">
+      <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true"/>
+      <StatusEffect target="Character" setvalue="true">
+        <Affliction identifier="oxygenlow" amount="15" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0"/>
+		</Affliction>
+	</Override>
+</Afflictions>
