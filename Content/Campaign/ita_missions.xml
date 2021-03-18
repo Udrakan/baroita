@@ -1,0 +1,785 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Override>
+	<Missions>
+		<BeaconMission name="Repair Beacon" identifier="beacontest" textidentifier="beaconmission" tags="beacon,hab1,city1,ita_military1" type="Beacon" description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." commonness="200" reward="3000">
+			<monster character="crawler" min="5" max="7"/>
+			<Icon texture="Content/UI/MissionIcons.png" sourcerect="0,256,256,256" color="243,146,55"/>
+			<LocationType from="Any" to="None"/>
+			<message header="Beacon reactivated" text="The beacon station is back online. Make sure it stays transmitting, and navigate the submarine to [location2] to claim your reward." />
+		</BeaconMission>
+		
+	
+		<SalvageMission
+    name="Wreck salvage"
+    identifier="salvagewreck1"
+    tags="salvage,salvagewreck,ita_wreck1,city1"
+    type="Salvage"
+    description="Wreck salvage mission description goes here"
+    commonness="125"
+    reward="2800"
+    achievementidentifier="salvagewreckmission"
+    sonarlabel="Wreck"
+    failuremessage="Salvaging the wreck failed"
+    successmessage="Mission successful"
+    spawntype="wreck"
+    showmessagewhenpickedup="true"
+    itemidentifier="handheldterminal"
+    containertag="locker">
+
+    <Reputation identifier="location" amount="5" />
+    <Reputation identifier="coalition" amount="10" />
+      
+    <chooserandom>
+      <StatusEffect target="This" welcomemessage="Receiving encrypted transmission: cbspusbvnbhbnf.dpn/efsfmjdu/[ERR:_INSERT_PASS].htm"/>
+      <StatusEffect target="This" welcomemessage="Receiving encrypted transmission: [PASS_1]beweht"/>
+      <StatusEffect target="This" welcomemessage="Receiving encrypted transmission: [PASS_2]108 101 116 109 101 105 110"/>
+      <StatusEffect target="This" welcomemessage="Receiving encrypted transmission: [PASS_3]LLL SLS SL LS LLS S LSSS LLL LSLL"/>
+      <StatusEffect target="This" welcomemessage="Receiving encrypted transmission: [PASS_4]zorxv"/>
+      <StatusEffect target="This" welcomemessage="Receiving encrypted transmission: [PASS_5]s_m_l_t_d_ _i_i_i_u_e"/>
+      <StatusEffect target="This" welcomemessage="Receiving encrypted transmission: [PASS_6]DSPERiapa"/>
+      <StatusEffect target="This" welcomemessage="Receiving encrypted transmission: [PASS_7]4 5 1 4 13 5 14"/>
+    </chooserandom>
+
+    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,512,256,256" color="49,93,233"/>
+
+    <LocationType from="City" to="None"/>
+    <LocationType from="City" to="City"/>
+    <LocationType from="City" to="Outpost"/>
+    <LocationType from="City" to="Military"/>
+    <LocationType from="City" to="Research"/>
+    <LocationType from="City" to="Mine"/>
+
+    <LocationType from="Outpost" to="None"/>
+    <LocationType from="Outpost" to="City"/>
+    <LocationType from="Outpost" to="Outpost"/>
+    <LocationType from="Outpost" to="Military"/>
+    <LocationType from="Outpost" to="Research"/>
+    <LocationType from="Outpost" to="Mine"/>
+
+    <LocationType from="Research" to="None"/>
+    <LocationType from="Research" to="City"/>
+    <LocationType from="Research" to="Outpost"/>
+    <LocationType from="Research" to="Military"/>
+    <LocationType from="Research" to="Research"/>
+    <LocationType from="Research" to="Mine"/>
+
+    <LocationType from="Military" to="None"/>
+    <LocationType from="Military" to="City"/>
+    <LocationType from="Military" to="Outpost"/>
+    <LocationType from="Military" to="Military"/>
+    <LocationType from="Military" to="Research"/>
+    <LocationType from="Military" to="Mine"/>
+
+    <message header="Thing collected" text="The thing is now on board. Navigate the submarine out of the cavern to claim the reward."/>
+  </SalvageMission>
+	<!--TRANSPORT PRISONERS-->
+	<CargoMission name="Passenger Transport" identifier="cargopassanger1" tags="ita_taxi1" type="Cargo" description="Get me to [location2] safely and I'll pay you [reward] marks. " commonness="10" reward="600" achievementidentifier="cargomission" successmessage="Thanks for the ride.">
+		<Items>
+			<Item identifier="ita_taxicheck" />
+		</Items>
+		<Reputation identifier="location" amount="10" />
+		<Icon texture="Mods/IntoTheAbyss/Content/Campaign/ita_missionicon_heart.png" sourcerect="0,0,233,233" color="243,146,55"/>
+		<LocationType from="City" to="City"/>
+		<LocationType from="City" to="Outpost"/>
+		<LocationType from="City" to="Military"/>
+		<LocationType from="City" to="Research"/>
+		<LocationType from="City" to="Mine"/>
+		<LocationType from="Military" to="City"/>
+		<LocationType from="Military" to="Outpost"/>
+		<LocationType from="Military" to="Military"/>
+		<LocationType from="Military" to="Research"/>
+		<LocationType from="Military" to="Mine"/>
+	</CargoMission>
+	<CargoMission name="Prisoner Transport" identifier="cargoprisoner1" tags="ita_prisonertransport,ita_military1,city1" type="Cargo" description="5 prisoners need to be transported to [location2] alive." commonness="10" reward="1900" achievementidentifier="cargomission" successmessage="Prisoners survived the journey.">
+		<Items>
+			<Item identifier="ita_taxicheck2" />
+		</Items>
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="5" />
+		<Reputation identifier="separatists" amount="-5" />
+		<Icon texture="Mods/IntoTheAbyss/Content/Campaign/ita_missionicon_prisonertraitor1.png" sourcerect="0,0,233,233" color="240,170,79"/>
+		<LocationType from="City" to="City"/>
+		<LocationType from="City" to="Outpost"/>
+		<LocationType from="City" to="Military"/>
+		<LocationType from="City" to="Research"/>
+		<LocationType from="City" to="Mine"/>
+	</CargoMission>
+	<CargoMission name="Prisoner Transport" identifier="cargoprisoner2" tags="ita_prisonertransport,ita_military1,city1" type="Cargo" description="A band of clowns are annoying residents at [location1]. A reward of [reward] marks is promised to a crew who will transport them alive to [location2] so they can enjoy the fun too." commonness="10" reward="1600" achievementidentifier="cargomission" successmessage="Please, don't send in the clowns.">
+		<Items>
+			<Item identifier="ita_taxicheck3" />
+		</Items>
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="5" />
+		<Reputation identifier="clowns" amount="-5" />
+		<Icon texture="Mods/IntoTheAbyss/Content/Campaign/ita_missionicon_prisonerclown1.png" sourcerect="0,0,233,233" color="240,170,79"/>
+		<LocationType from="City" to="City"/>
+		<LocationType from="City" to="Outpost"/>
+		<LocationType from="City" to="Military"/>
+		<LocationType from="City" to="Research"/>
+		<LocationType from="City" to="Mine"/>
+	</CargoMission>
+	<CargoMission name="Prisoner Transport" identifier="cargoprisoner3" tags="ita_prisonertransport,ita_military1,city1" type="Cargo" description="A band of crazed cultists have been arrested at [location1] for their involvement in suspicious activities. To receive your reward of [reward]mk, transport all three of them unharmed to a psychiatrist in [location2]." commonness="10" reward="1600" achievementidentifier="cargomission" successmessage="The psychiatrist greeted the cultists as his brothers and paid you the promised reward.">
+		<Items>
+			<Item identifier="ita_taxicheck4" />
+		</Items>
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="5" />
+		<Reputation identifier="huskcult" amount="-5" />
+		<Icon texture="Mods/IntoTheAbyss/Content/Campaign/ita_missionicon_prisonertraitor1.png" sourcerect="0,0,233,233" color="240,170,79"/>
+		<LocationType from="City" to="City"/>
+		<LocationType from="City" to="Outpost"/>
+		<LocationType from="City" to="Military"/>
+		<LocationType from="City" to="Research"/>
+		<LocationType from="City" to="Mine"/>
+	</CargoMission>
+	<!--TRANSPORT CARGO -->
+	<CargoMission name="Emergency Cargo" identifier="cargotime1" tags="cargo,cargotime,city1,ita_cargo" type="Cargo" description="A crate of rapidly deteriorating material needs to be delivered to a researcher in nearby outpost. We predict that after taking it out of the microwave chamber, it has 10 minutes of life. Good luck!" commonness="10" reward="2800" achievementidentifier="cargomission" successmessage="The unstable material was delivered before it decayed.">
+		<Items>
+			<Item identifier="ita_timecrate" />
+		</Items>
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="3" />
+		<Icon texture="Mods/IntoTheAbyss/Content/Campaign/ita_missionicon_watch.png" sourcerect="0,0,233,233" color="243,146,55"/>
+		<LocationType from="City" to="City"/>
+		<LocationType from="City" to="Outpost"/>
+		<LocationType from="City" to="Military"/>
+		<LocationType from="City" to="Research"/>
+		<LocationType from="City" to="Mine"/>
+		<LocationType from="Outpost" to="Mine"/>
+		<LocationType from="Outpost" to="Military"/>
+		<LocationType from="Outpost" to="City"/>
+		<LocationType from="Outpost" to="Outpost"/>
+		<LocationType from="Outpost" to="City"/>
+	</CargoMission>
+	<CargoMission name="Transporting Water Sensitive Goods" identifier="cargowater1" tags="cargo,cargosensitive,city1,ita_cargo" type="Cargo" description="Box of crispy pastry needs to be transported to [location2]. Don't ruin it by getting it wet!" commonness="10" reward="1700" achievementidentifier="cargomission" successmessage="Goods were delivered dry and crispy!">
+		<Items>
+			<Item identifier="ita_watercrate" />
+		</Items>
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="5" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
+		<LocationType from="City" to="City"/>
+		<LocationType from="City" to="Outpost"/>
+		<LocationType from="City" to="Military"/>
+		<LocationType from="City" to="Research"/>
+		<LocationType from="City" to="Mine"/>
+		<LocationType from="Outpost" to="Mine"/>
+		<LocationType from="Outpost" to="Military"/>
+		<LocationType from="Outpost" to="City"/>
+		<LocationType from="Outpost" to="Outpost"/>
+		<LocationType from="Outpost" to="City"/>
+	</CargoMission>
+	<CargoMission name="Egg Transport" identifier="cargoeggs" tags="cargo,cargomonster2,city1,ita_cargo" type="Cargo" description="Crate of 2 mudraptor eggs have to be transported to [location2]'s freezer. After taken from the refrigerator here, eggs will hatch in about 11 minutes. Deliver them in time!" commonness="10" reward="3100" achievementidentifier="cargomission" successmessage="Eggs were delivered to [location2] research freezer before they hatched.">
+		<Items>
+			<Item identifier="ita_eggcrate" />
+		</Items>
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="3" />
+		<Icon texture="Mods/IntoTheAbyss/Content/Campaign/ita_missionicon_egg1.png" sourcerect="0,0,233,233" color="243,146,55"/>
+		<LocationType from="City" to="City"/>
+		<LocationType from="City" to="Outpost"/>
+		<LocationType from="City" to="Military"/>
+		<LocationType from="City" to="Research"/>
+		<LocationType from="City" to="Mine"/>
+		<LocationType from="Outpost" to="Mine"/>
+		<LocationType from="Outpost" to="Military"/>
+		<LocationType from="Outpost" to="City"/>
+		<LocationType from="Outpost" to="Outpost"/>
+		<LocationType from="Outpost" to="City"/>
+	</CargoMission>
+	<CargoMission name="Fragile Transport" identifier="cargofragile1" tags="cargo,cargoexplosive,cargosensitive,city1,ita_cargo" type="Cargo" description="Fragile goods are needed at [location2]. Make sure the cargo doesn't hit the floor hard! If you need to carry it, crouch before dropping the crate." commonness="10" reward="2500" achievementidentifier="cargomission" successmessage="Fragile goods were delivered intact.">
+		<Items>
+			<Item identifier="ita_impactcrate" />
+		</Items>
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="3" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
+		<LocationType from="City" to="City"/>
+		<LocationType from="City" to="Outpost"/>
+		<LocationType from="City" to="Military"/>
+		<LocationType from="City" to="Research"/>
+		<LocationType from="City" to="Mine"/>
+		<LocationType from="Outpost" to="Mine"/>
+		<LocationType from="Outpost" to="Military"/>
+		<LocationType from="Outpost" to="City"/>
+		<LocationType from="Outpost" to="Outpost"/>
+		<LocationType from="Outpost" to="City"/>
+	</CargoMission>		
+	<CargoMission name="Dangerous Egg Transport" identifier="cargoeggs2" tags="cargo,cargomonster1,city1,ita_cargo" type="Cargo" description="Two refrigerated crates of mudraptor eggs need to be delivered to a scientist at [location2]. Crate needs battery cells to keep the eggs frozen, so it's in your best interest to replace them often!" commonness="10" reward="1800" achievementidentifier="cargomission" successmessage="Raptor eggs were delivered to the researcher before hatching.">
+		<Items>
+			<Item identifier="ita_eggcrate2" />
+			<Item identifier="ita_eggcrate2" />
+		</Items>
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="3" />
+		<Icon texture="Mods/IntoTheAbyss/Content/Campaign/ita_missionicon_egg1.png" sourcerect="0,0,233,233" color="243,146,55"/>
+		<LocationType from="City" to="City"/>
+		<LocationType from="City" to="Outpost"/>
+		<LocationType from="City" to="Military"/>
+		<LocationType from="City" to="Research"/>
+		<LocationType from="City" to="Mine"/>
+		<LocationType from="Outpost" to="Mine"/>
+		<LocationType from="Outpost" to="Military"/>
+		<LocationType from="Outpost" to="City"/>
+		<LocationType from="Outpost" to="Outpost"/>
+		<LocationType from="Outpost" to="City"/>
+	</CargoMission>
+	<CargoMission name="Live Specimen Transport" identifier="cargoeggs3" tags="cargo,cargomonster1,city1,ita_cargo" type="Cargo" description="Security at [location1] has caught and chained a mudraptor, which now needs to be transported to [location2] to be trained for the mudraptor races. It requires to be sedated with opium to stay calm." commonness="10" reward="1900" achievementidentifier="cargomission" successmessage="Poor mudraptor survived the journey with humans.">
+		<Items>
+			<Item identifier="ita_raptorcrate" />
+		</Items>
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="3" />
+		<Icon texture="Mods/IntoTheAbyss/Content/Campaign/ita_missionicon_egg1.png" sourcerect="0,0,233,233" color="243,146,55"/>
+		<LocationType from="City" to="City"/>
+		<LocationType from="City" to="Outpost"/>
+		<LocationType from="City" to="Military"/>
+		<LocationType from="City" to="Research"/>
+		<LocationType from="City" to="Mine"/>
+		<LocationType from="Outpost" to="Mine"/>
+		<LocationType from="Outpost" to="Military"/>
+		<LocationType from="Outpost" to="City"/>
+		<LocationType from="Outpost" to="Outpost"/>
+		<LocationType from="Outpost" to="City"/>
+	</CargoMission>
+	<!--LARGE MONSTERS-->
+	<MonsterMission name="Killing Ancient Moloch" identifier="killmolochboss" tags="killmonster,killmoloch,killmonstercommon,ita_monsterlarge" type="Monster" description="This ancient moloch is dangerous enough to cause massive logistics issues and even took down a couple attack submarines. A reward of [reward] is promised to any professional crew who can take it down." commonness="25" reward="6000" sonarlabel="Moloch" maxsonarmarkerdistance="10000" successmessage="The Ancient Moloch has been killed." monsterfile="Molochboss">
+		<Reputation identifier="location" amount="30" />
+		<Reputation identifier="coalition" amount="20" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,512,256,256" color="214,50,48"/>
+		<LocationType from="Military" to="None"/>
+		<LocationType from="Military" to="City"/>
+		<LocationType from="Military" to="Outpost"/>
+		<LocationType from="Military" to="Military"/>
+		<LocationType from="Military" to="Research"/>
+		<LocationType from="Military" to="Mine"/>
+		<LocationType from="Military" to="Lair"/>
+		<message header="Target terminated" text="The moloch is dead. Navigate the submarine out of the cavern to claim the reward."/>
+	</MonsterMission>
+	<MonsterMission name="Killing a Hammerheads" identifier="killhammerhead" tags="killmonster,killhammerhead.killmonstercommon,ita_monsterlarge" type="Monster" description="A particularly aggressive Hammerhead has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to those who kill the creature." commonness="35" reward="1200" sonarlabel="Hammerhead" maxsonarmarkerdistance="10000" successmessage="The Hammerhead has been killed." monsterfile="Hammerhead">
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="15" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,768,256,256" color="214,50,48"/>
+		<LocationType from="Military" to="None"/>
+		<LocationType from="Military" to="City"/>
+		<LocationType from="Military" to="Outpost"/>
+		<LocationType from="Military" to="Military"/>
+		<LocationType from="Military" to="Research"/>
+		<LocationType from="Military" to="Mine"/>
+		<LocationType from="Military" to="Lair"/>
+		<message header="Target terminated" text="The Hammerhead is dead. Navigate the submarine out of the cavern to claim the reward."/>
+	</MonsterMission>
+	<MonsterMission name="Killing a Matriarch" identifier="killmatriarch1" tags="killmonster,killhammerhead,killmonsterrare,ita_monsterlarge" type="Monster" description="Eliminate the Hammerhead Matriarch and her minions." commonness="20" reward="4500" sonarlabel="Matriarch" maxsonarmarkerdistance="10000" successmessage="The Matriarch has been eliminated.">
+		<Reputation identifier="location" amount="15" />
+		<Reputation identifier="coalition" amount="20" />
+		<monster character="hammerheadmatriarch" count="1"/>
+		<monster character="hammerhead" min="4" max="5"/>
+		<monster character="hammerheadgold" min="0" max="1"/>
+		<message header="Target terminated" text="The Matriarch is eliminated. Navigate the submarine out of the cavern to claim the reward."/>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+		<LocationType from="Military" to="None"/>
+		<LocationType from="Military" to="City"/>
+		<LocationType from="Military" to="Outpost"/>
+		<LocationType from="Military" to="Military"/>
+		<LocationType from="Military" to="Research"/>
+		<LocationType from="Military" to="Mine"/>
+		<LocationType from="Military" to="Lair"/>
+	</MonsterMission>
+	<!--SMALL SWARMS-->
+	<MonsterMission name="Terminate a Small Swarm" identifier="ita_swarmsmall_crawler" tags="killmonster,killswarm,ita_swarmsmall,city1" type="Monster" description="A small swarm of crawlers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it." commonness="45" reward="3000" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated." monsterfile="Swarmcrawler" monstercount="16" >
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="10" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
+		<LocationType from="Military" to="None"/>
+		<LocationType from="Military" to="City"/>
+		<LocationType from="Military" to="Outpost"/>
+		<LocationType from="Military" to="Military"/>
+		<LocationType from="Military" to="Research"/>
+		<LocationType from="Military" to="Mine"/>
+		<LocationType from="Military" to="Lair"/>
+		<message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward."/>
+	</MonsterMission>
+	<MonsterMission name="Terminate a Small Swarm" identifier="ita_swarmsmall_thresher" tags="killmonster,killswarm,ita_swarmsmall" type="Monster" description="A small swarm of threshers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it." commonness="30" reward="3000" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated.">
+		<monster character="tigerthresher" min="10" max="12"/>
+		<monster character="bonethresher" min="3" max="4"/>
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="10" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+		<LocationType from="Military" to="None"/>
+		<LocationType from="Military" to="City"/>
+		<LocationType from="Military" to="Outpost"/>
+		<LocationType from="Military" to="Military"/>
+		<LocationType from="Military" to="Research"/>
+		<LocationType from="Military" to="Mine"/>
+		<LocationType from="Military" to="Lair"/>
+		<message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward."/>
+	</MonsterMission>
+	<MonsterMission name="Terminate a Small Swarm" identifier="ita_swarmsmall_mudraptor1" tags="killmonster,killswarm,ita_swarmsmall" type="Monster" description="A small pack of young raptors is roaming between [location1] and [location2]. [reward] marks are yours if you kill not just the males, but the females and the hatchlings too." commonness="30" reward="3000" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated.">
+		<monster character="Mudraptor_unarmored" min="6" max="8"/>
+		<monster character="Mudraptor" min="2" max="2"/>
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="10" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+		<LocationType from="Military" to="None"/>
+		<LocationType from="Military" to="City"/>
+		<LocationType from="Military" to="Outpost"/>
+		<LocationType from="Military" to="Military"/>
+		<LocationType from="Military" to="Research"/>
+		<LocationType from="Military" to="Mine"/>
+		<LocationType from="Military" to="Lair"/>
+		<message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward."/>
+	</MonsterMission>
+	<MonsterMission name="Terminate a Small Swarm" identifier="ita_swarmsmall_mudraptor2" tags="killmonster,killswarm,ita_swarmsmall" type="Monster" description="A small pack of mature mudraptors is roaming between [location1] and [location2]. Take them down and [reward] marks are yours." commonness="30" reward="3500" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated.">
+		<monster character="Mudraptor" min="7" max="7"/>
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="10" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+		<LocationType from="Military" to="None"/>
+		<LocationType from="Military" to="City"/>
+		<LocationType from="Military" to="Outpost"/>
+		<LocationType from="Military" to="Military"/>
+		<LocationType from="Military" to="Research"/>
+		<LocationType from="Military" to="Mine"/>
+		<LocationType from="Military" to="Lair"/>
+		<message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward."/>
+	</MonsterMission>	
+	<!--LARGE SWARMS-->
+	<MonsterMission name="Terminate a Massive Swarm" identifier="ita_swarmlarge_crawler" tags="killmonster,killswarm,ita_swarmlarge" type="Monster" description="A massive swarm of crawlers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it." commonness="45" reward="6000" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated." monsterfile="Swarmcrawler" monstercount="25" >
+		<Reputation identifier="location" amount="15" />
+		<Reputation identifier="coalition" amount="15" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
+		<LocationType from="Military" to="None"/>
+		<LocationType from="Military" to="City"/>
+		<LocationType from="Military" to="Outpost"/>
+		<LocationType from="Military" to="Military"/>
+		<LocationType from="Military" to="Research"/>
+		<LocationType from="Military" to="Mine"/>
+		<LocationType from="Military" to="Lair"/>
+		<message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward."/>
+	</MonsterMission>
+	<MonsterMission name="Terminate a Massive Swarm" identifier="ita_swarmlarge_thresher" tags="killmonster,killswarm,ita_swarmlarge" type="Monster" description="A massive swarm of threshers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it." commonness="30" reward="7000" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated.">
+		<monster character="tigerthresher" min="15" max="20"/>
+		<monster character="bonethresher" min="6" max="6"/>
+		<Reputation identifier="location" amount="20" />
+		<Reputation identifier="coalition" amount="15" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+		<LocationType from="Military" to="None"/>
+		<LocationType from="Military" to="City"/>
+		<LocationType from="Military" to="Outpost"/>
+		<LocationType from="Military" to="Military"/>
+		<LocationType from="Military" to="Research"/>
+		<LocationType from="Military" to="Mine"/>
+		<LocationType from="Military" to="Lair"/>
+		<message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward."/>
+	</MonsterMission>
+	<MonsterMission name="Terminate a Massive Swarm" identifier="ita_swarmlarge_mudraptor1" tags="killmonster,killswarm,ita_swarmlarge" type="Monster" description="A large pack of young raptors is roaming between [location1] and [location2]. [reward] marks are yours if you kill not just the males, but the females and the hatchlings too." commonness="30" reward="7000" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated.">
+		<monster character="Mudraptor_unarmored" min="9" max="12"/>
+		<monster character="Mudraptor" min="4" max="4"/>
+		<Reputation identifier="location" amount="20" />
+		<Reputation identifier="coalition" amount="15" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+		<LocationType from="Military" to="None"/>
+		<LocationType from="Military" to="City"/>
+		<LocationType from="Military" to="Outpost"/>
+		<LocationType from="Military" to="Military"/>
+		<LocationType from="Military" to="Research"/>
+		<LocationType from="Military" to="Mine"/>
+		<LocationType from="Military" to="Lair"/>
+		<message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward."/>
+	</MonsterMission>
+	<MonsterMission name="Terminate a Massive Swarm" identifier="ita_swarmlarge_mudraptor2" tags="killmonster,killswarm,ita_swarmlarge" type="Monster" description="A large pack of mudraptors is roaming back and forth between [location1] and [location2], killing everything in it's path, including military submarines. Over 9000 marks are promised to any mad crew to challenge them." commonness="30" reward="9001" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated.">
+		<monster character="Mudraptor" min="14" max="14"/>
+		<Reputation identifier="location" amount="20" />
+		<Reputation identifier="coalition" amount="15" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+		<LocationType from="Military" to="None"/>
+		<LocationType from="Military" to="City"/>
+		<LocationType from="Military" to="Outpost"/>
+		<LocationType from="Military" to="Military"/>
+		<LocationType from="Military" to="Research"/>
+		<LocationType from="Military" to="Mine"/>
+		<LocationType from="Military" to="Lair"/>
+		<message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward."/>
+	</MonsterMission>	
+	<!--MINING-->
+	<MineralMission name="Collecting titanite" identifier="titanitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="titanite" successmessage="The existence of the titanite deposits has been successfully proven.">
+		<Items>
+			<Item identifier="titanite" />
+			<Item identifier="titanite" />
+			<Item identifier="titanite" />
+			<Item identifier="titanite" />
+			<Item identifier="titanite" />
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+		<LocationType from="Mine" to="City"/>
+		<LocationType from="Mine" to="Outpost"/>
+		<LocationType from="Mine" to="Military"/>
+		<LocationType from="Mine" to="Research"/>
+		<LocationType from="Mine" to="Mine"/>
+		<LocationType from="Mine" to="Lair"/>
+		<LocationType from="Mine" to="None"/>
+		<message header="titanite collected" text="You have collected enough titanite. Bring them to an outpost to claim the reward." />
+	</MineralMission>
+	<MineralMission name="Collecting amblygonite" identifier="amblygonitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="amblygonite" successmessage="The existence of the amblygonite deposits has been successfully proven.">
+		<Items>
+			<Item identifier="amblygonite" />
+			<Item identifier="amblygonite" />
+			<Item identifier="amblygonite" />
+			<Item identifier="amblygonite" />
+			<Item identifier="amblygonite" />
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+		<LocationType from="Mine" to="City"/>
+		<LocationType from="Mine" to="Outpost"/>
+		<LocationType from="Mine" to="Military"/>
+		<LocationType from="Mine" to="Research"/>
+		<LocationType from="Mine" to="Mine"/>
+		<LocationType from="Mine" to="Lair"/>
+		<LocationType from="Mine" to="None"/>
+		<message header="amblygonite collected" text="You have collected enough amblygonite. Bring them to an outpost to claim the reward." />
+	</MineralMission>
+	<MineralMission name="Collecting sphalerite" identifier="sphaleritecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="sphalerite" successmessage="The existence of the sphalerite deposits has been successfully proven.">
+		<Items>
+			<Item identifier="sphalerite" />
+			<Item identifier="sphalerite" />
+			<Item identifier="sphalerite" />
+			<Item identifier="sphalerite" />
+			<Item identifier="sphalerite" />
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+		<LocationType from="Mine" to="City"/>
+		<LocationType from="Mine" to="Outpost"/>
+		<LocationType from="Mine" to="Military"/>
+		<LocationType from="Mine" to="Research"/>
+		<LocationType from="Mine" to="Mine"/>
+		<LocationType from="Mine" to="Lair"/>
+		<LocationType from="Mine" to="None"/>
+		<message header="sphalerite collected" text="You have collected enough sphalerite. Bring them to an outpost to claim the reward." />
+	</MineralMission>
+	<MineralMission name="Collecting pyromorphite" identifier="pyromorphitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="pyromorphite" successmessage="The existence of the pyromorphite deposits has been successfully proven.">
+		<Items>
+			<Item identifier="pyromorphite" />
+			<Item identifier="pyromorphite" />
+			<Item identifier="pyromorphite" />
+			<Item identifier="pyromorphite" />
+			<Item identifier="pyromorphite" />
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+		<LocationType from="Mine" to="City"/>
+		<LocationType from="Mine" to="Outpost"/>
+		<LocationType from="Mine" to="Military"/>
+		<LocationType from="Mine" to="Research"/>
+		<LocationType from="Mine" to="Mine"/>
+		<LocationType from="Mine" to="Lair"/>
+		<LocationType from="Mine" to="None"/>
+		<message header="pyromorphite collected" text="You have collected enough pyromorphite. Bring them to an outpost to claim the reward." />
+	</MineralMission>
+	<MineralMission name="Collecting quartz" identifier="quartzcollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="quartz" successmessage="The existence of the quartz deposits has been successfully proven.">
+		<Items>
+			<Item identifier="quartz" />
+			<Item identifier="quartz" />
+			<Item identifier="quartz" />
+			<Item identifier="quartz" />
+			<Item identifier="quartz" />
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+		<LocationType from="Mine" to="City"/>
+		<LocationType from="Mine" to="Outpost"/>
+		<LocationType from="Mine" to="Military"/>
+		<LocationType from="Mine" to="Research"/>
+		<LocationType from="Mine" to="Mine"/>
+		<LocationType from="Mine" to="Lair"/>
+		<LocationType from="Mine" to="None"/>
+		<message header="quartz collected" text="You have collected enough quartz. Bring them to an outpost to claim the reward." />
+	</MineralMission>
+	<MineralMission name="Collecting diamond" identifier="diamondcollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="diamond" successmessage="The existence of the diamond deposits has been successfully proven.">
+		<Items>
+			<Item identifier="diamond" />
+			<Item identifier="diamond" />
+			<Item identifier="diamond" />
+			<Item identifier="diamond" />
+			<Item identifier="diamond" />
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+		<LocationType from="Mine" to="City"/>
+		<LocationType from="Mine" to="Outpost"/>
+		<LocationType from="Mine" to="Military"/>
+		<LocationType from="Mine" to="Research"/>
+		<LocationType from="Mine" to="Mine"/>
+		<LocationType from="Mine" to="Lair"/>
+		<LocationType from="Mine" to="None"/>
+		<message header="diamond collected" text="You have collected enough diamond. Bring them to an outpost to claim the reward." />
+	</MineralMission>
+	<MineralMission name="Collecting ilmenite" identifier="ilmenitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="ilmenite" successmessage="The existence of the ilmenite deposits has been successfully proven.">
+		<Items>
+			<Item identifier="ilmenite" />
+			<Item identifier="ilmenite" />
+			<Item identifier="ilmenite" />
+			<Item identifier="ilmenite" />
+			<Item identifier="ilmenite" />
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+		<LocationType from="Mine" to="City"/>
+		<LocationType from="Mine" to="Outpost"/>
+		<LocationType from="Mine" to="Military"/>
+		<LocationType from="Mine" to="Research"/>
+		<LocationType from="Mine" to="Mine"/>
+		<LocationType from="Mine" to="Lair"/>
+		<LocationType from="Mine" to="None"/>
+		<message header="ilmenite collected" text="You have collected enough ilmenite. Bring them to an outpost to claim the reward." />
+	</MineralMission>
+	<MineralMission name="Collecting stannite" identifier="stannitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="stannite" successmessage="The existence of the stannite deposits has been successfully proven.">
+		<Items>
+			<Item identifier="stannite" />
+			<Item identifier="stannite" />
+			<Item identifier="stannite" />
+			<Item identifier="stannite" />
+			<Item identifier="stannite" />
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+		<LocationType from="Mine" to="City"/>
+		<LocationType from="Mine" to="Outpost"/>
+		<LocationType from="Mine" to="Military"/>
+		<LocationType from="Mine" to="Research"/>
+		<LocationType from="Mine" to="Mine"/>
+		<LocationType from="Mine" to="Lair"/>
+		<LocationType from="Mine" to="None"/>
+		<message header="stannite collected" text="You have collected enough stannite. Bring them to an outpost to claim the reward." />
+	</MineralMission>
+	<MineralMission name="Collecting chalcopyrite" identifier="chalcopyritecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="chalcopyrite" successmessage="The existence of the chalcopyrite deposits has been successfully proven.">
+		<Items>
+			<Item identifier="chalcopyrite" />
+			<Item identifier="chalcopyrite" />
+			<Item identifier="chalcopyrite" />
+			<Item identifier="chalcopyrite" />
+			<Item identifier="chalcopyrite" />
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+		<LocationType from="Mine" to="City"/>
+		<LocationType from="Mine" to="Outpost"/>
+		<LocationType from="Mine" to="Military"/>
+		<LocationType from="Mine" to="Research"/>
+		<LocationType from="Mine" to="Mine"/>
+		<LocationType from="Mine" to="Lair"/>
+		<LocationType from="Mine" to="None"/>
+		<message header="chalcopyrite collected" text="You have collected enough chalcopyrite. Bring them to an outpost to claim the reward." />
+	</MineralMission>
+	<MineralMission name="Collecting esperite" identifier="esperitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="esperite" successmessage="The existence of the esperite deposits has been successfully proven.">
+		<Items>
+			<Item identifier="esperite" />
+			<Item identifier="esperite" />
+			<Item identifier="esperite" />
+			<Item identifier="esperite" />
+			<Item identifier="esperite" />
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+		<LocationType from="Mine" to="City"/>
+		<LocationType from="Mine" to="Outpost"/>
+		<LocationType from="Mine" to="Military"/>
+		<LocationType from="Mine" to="Research"/>
+		<LocationType from="Mine" to="Mine"/>
+		<LocationType from="Mine" to="Lair"/>
+		<LocationType from="Mine" to="None"/>
+		<message header="esperite collected" text="You have collected enough esperite. Bring them to an outpost to claim the reward." />
+	</MineralMission>
+	<MineralMission name="Collecting galena" identifier="galenacollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="galena" successmessage="The existence of the galena deposits has been successfully proven.">
+		<Items>
+			<Item identifier="galena" />
+			<Item identifier="galena" />
+			<Item identifier="galena" />
+			<Item identifier="galena" />
+			<Item identifier="galena" />
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+		<LocationType from="Mine" to="City"/>
+		<LocationType from="Mine" to="Outpost"/>
+		<LocationType from="Mine" to="Military"/>
+		<LocationType from="Mine" to="Research"/>
+		<LocationType from="Mine" to="Mine"/>
+		<LocationType from="Mine" to="Lair"/>
+		<LocationType from="Mine" to="None"/>
+		<message header="galena collected" text="You have collected enough galena. Bring them to an outpost to claim the reward." />
+	</MineralMission>
+	<!--ARTIFACT-->
+	<SalvageMission name="Salvaging an artifact" identifier="salvageskyholderartifactruins" tags="salvage,salvageartifact,ita_salvageruin" type="Salvage" description="Researchers of [location1] have picked up an infrasonic signal highly similar to those emitted by alien artifacts previously discovered on Europa. Investigate the signal and retrieve the potential artifact." commonness="25" reward="3500" achievementidentifier="artifactmission" sonarlabel="Infrasonic signal" sonaricon="artifact" failuremessage="Retrieving the artifact failed" successmessage="The artifact has been successfully retrieved" spawntype="ruin" itemidentifier="skyholderartifact" containertag="artifactholder">
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="5" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
+		<LocationType from="Research" to="None"/>
+		<LocationType from="Research" to="City"/>
+		<LocationType from="Research" to="Outpost"/>
+		<LocationType from="Research" to="Military"/>
+		<LocationType from="Research" to="Research"/>
+		<LocationType from="Research" to="Mine"/>
+		<LocationType from="Research" to="Lair"/>
+		<message header="Artifact collected" text="The artifact is now on board. Navigate the submarine out of the cavern to claim the reward."/>
+	</SalvageMission>
+	<SalvageMission name="Salvaging an artifact" identifier="salvagethermalartifactruins" textidentifier="salvageskyholderartifactruins"  tags="salvage,salvageartifact,ita_salvageruin" type="Salvage" description="Researchers of [location1] have picked up an infrasonic signal highly similar to those emitted by alien artifacts previously discovered on Europa. Investigate the signal and retrieve the potential artifact." commonness="25" reward="3500" achievementidentifier="artifactmission" sonarlabel="Infrasonic signal" sonaricon="artifact" failuremessage="Retrieving the artifact failed" successmessage="The artifact has been successfully retrieved" spawntype="ruin" itemidentifier="thermalartifact" containertag="artifactholder">
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="5" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
+		<LocationType from="Research" to="None"/>
+		<LocationType from="Research" to="City"/>
+		<LocationType from="Research" to="Outpost"/>
+		<LocationType from="Research" to="Military"/>
+		<LocationType from="Research" to="Research"/>
+		<LocationType from="Research" to="Mine"/>
+		<LocationType from="Research" to="Lair"/>
+		<message header="Artifact collected" text="The artifact is now on board. Navigate the submarine out of the cavern to claim the reward."/>
+	</SalvageMission>
+	<SalvageMission name="Salvaging an artifact" identifier="salvagenasonovartifactruins" tags="salvage,salvageartifact,ita_salvageruin" textidentifier="salvageskyholderartifactruins" type="Salvage" description="Researchers of [location1] have picked up an infrasonic signal highly similar to those emitted by alien artifacts previously discovered on Europa. Investigate the signal and retrieve the potential artifact." commonness="25" reward="3500" achievementidentifier="artifactmission" sonarlabel="Infrasonic signal" sonaricon="artifact" failuremessage="Retrieving the artifact failed" successmessage="The artifact has been successfully retrieved" spawntype="ruin" itemidentifier="nasonovartifact" containertag="artifactholder">
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="5" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
+		<LocationType from="Research" to="None"/>
+		<LocationType from="Research" to="City"/>
+		<LocationType from="Research" to="Outpost"/>
+		<LocationType from="Research" to="Military"/>
+		<LocationType from="Research" to="Research"/>
+		<LocationType from="Research" to="Mine"/>
+		<LocationType from="Research" to="Lair"/>
+		<message header="Artifact collected" text="The artifact is now on board. Navigate the submarine out of the cavern to claim the reward."/>
+	</SalvageMission>
+	<SalvageMission name="Salvaging an artifact" identifier="salvagefaradayartifactruins" textidentifier="salvageskyholderartifactruins" tags="salvage,salvageartifact,ita_salvageruin" type="Salvage" description="Researchers of [location1] have picked up an infrasonic signal highly similar to those emitted by alien artifacts previously discovered on Europa. Investigate the signal and retrieve the potential artifact." commonness="25" reward="3500" achievementidentifier="artifactmission" sonarlabel="Infrasonic signal" sonaricon="artifact" failuremessage="Retrieving the artifact failed" successmessage="The artifact has been successfully retrieved" spawntype="ruin" itemidentifier="faradayartifact" containertag="artifactholder">
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="5" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
+		<LocationType from="Research" to="None"/>
+		<LocationType from="Research" to="City"/>
+		<LocationType from="Research" to="Outpost"/>
+		<LocationType from="Research" to="Military"/>
+		<LocationType from="Research" to="Research"/>
+		<LocationType from="Research" to="Mine"/>
+		<LocationType from="Research" to="Lair"/>
+		<message header="Artifact collected" text="The artifact is now on board. Navigate the submarine out of the cavern to claim the reward."/>
+	</SalvageMission>
+	<SalvageMission name="Salvaging an artifact" identifier="salvagepsychosisartifactruins" textidentifier="salvageskyholderartifactruins" tags="salvage,salvageartifact,ita_salvageruin" type="Salvage" description="Researchers of [location1] have picked up an infrasonic signal highly similar to those emitted by alien artifacts previously discovered on Europa. Investigate the signal and retrieve the potential artifact." commonness="25" reward="3500" achievementidentifier="artifactmission" sonarlabel="Infrasonic signal" sonaricon="artifact" failuremessage="Retrieving the artifact failed" successmessage="The artifact has been successfully retrieved" spawntype="ruin" itemidentifier="psychosisartifact" containertag="artifactholder">
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="5" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
+		<LocationType from="City" to="Research"/>
+		<LocationType from="City" to="None"/>
+		<LocationType from="City" to="Lair"/>
+		<LocationType from="Outpost" to="Research"/>
+		<LocationType from="Outpost" to="None"/>
+		<LocationType from="Outpost" to="Lair"/>
+		<LocationType from="Research" to="None"/>
+		<LocationType from="Research" to="City"/>
+		<LocationType from="Research" to="Outpost"/>
+		<LocationType from="Research" to="Military"/>
+		<LocationType from="Research" to="Research"/>
+		<LocationType from="Research" to="Mine"/>
+		<LocationType from="Research" to="Lair"/>
+		<message header="Artifact collected" text="The artifact is now on board. Navigate the submarine out of the cavern to claim the reward."/>
+	</SalvageMission>
+	<SalvageMission name="Salvaging an artifact" identifier="salvagethermalartifactcave" tags="salvage,salvageartifact,ita_salvageruin" type="Salvage" description="Researchers of [location1] have picked up an infrasonic signal highly similar to those emitted by alien artifacts previously discovered on Europa. Investigate the signal and retrieve the potential artifact." commonness="33" reward="3500" achievementidentifier="artifactmission" sonarlabel="Infrasonic signal" sonaricon="artifact" failuremessage="Retrieving the artifact failed" successmessage="The artifact has been successfully retrieved" spawntype="ruin" itemidentifier="thermalartifact" containertag="artifactholder">
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="5" />
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,0,256,256" color="49,93,233"/>
+		<LocationType from="Research" to="None"/>
+		<LocationType from="Research" to="City"/>
+		<LocationType from="Research" to="Outpost"/>
+		<LocationType from="Research" to="Military"/>
+		<LocationType from="Research" to="Research"/>
+		<LocationType from="Research" to="Mine"/>
+		<LocationType from="Research" to="Lair"/>
+		<message header="Artifact collected" text="The artifact is now on board. Navigate the submarine out of the cavern to claim the reward."/>
+	</SalvageMission>
+	<!--NEST-->
+	<NestMission name="Destroy a crawler nest" identifier="crawlernest" tags="nest,crawlernest,cityvariety1" type="Nest" spawntype="cave" reward="3300" itemspawnradius="200" approachitemsradius="800" monsterspawnradius="4000" commonness="20">
+		<Items>
+			<Item identifier="crawleregg">
+				<StatusEffectOnApproach target="This" Scale="1.0" setvalue="true"/>
+			</Item>
+			<Item identifier="crawleregg">
+				<StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" delay="5" />
+			</Item>
+			<Item identifier="crawleregg">
+				<StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" delay="11" />
+			</Item>
+			<Item identifier="crawleregg" />
+			<Item identifier="crawleregg" />
+			<Item identifier="crawleregg" />
+		</Items>
+		<Monster character="Crawler" min="5" max="10"/>
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="5" />
+		<Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48"/>
+		<LocationType from="City" to="None"/>
+		<LocationType from="City" to="Lair"/>
+		<LocationType from="Mining" to="City"/>
+		<LocationType from="Mining" to="Outpost"/>
+		<LocationType from="Mining" to="Mining"/>
+		<LocationType from="Mining" to="Military"/>
+		<LocationType from="Mining" to="Research"/>
+		<LocationType from="Mining" to="Lair"/>
+		<LocationType from="Mining" to="None"/>
+		<LocationType from="Mining" to="Research"/>
+		<LocationType from="Mining" to="Mine"/>
+		<LocationType from="Mining" to="Lair"/>
+	</NestMission>
+	<NestMission name="Destroy a mudraptor nest" identifier="mudraptornest" tags="nest,mudraptornest,cityvariety1" type="Nest" spawntype="cave" reward="4800" itemspawnradius="200" approachitemsradius="800" monsterspawnradius="4000" commonness="20">
+		<Items>
+			<Item identifier="largemudraptoregg">
+				<StatusEffectOnApproach target="This" Scale="1.0" setvalue="true"/>
+			</Item>
+			<Item identifier="largemudraptoregg">
+				<StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" delay="9" />
+			</Item>
+			<Item identifier="largemudraptoregg" />
+			<Item identifier="largemudraptoregg" />
+		</Items>
+		<Monster character="Mudraptor" min="4" max="6"/>
+		<Reputation identifier="location" amount="10" />
+		<Reputation identifier="coalition" amount="5" />
+		<Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48"/>
+		<LocationType from="City" to="None"/>
+		<LocationType from="City" to="Lair"/>
+		<LocationType from="Mining" to="City"/>
+		<LocationType from="Mining" to="Outpost"/>
+		<LocationType from="Mining" to="Mining"/>
+		<LocationType from="Mining" to="Military"/>
+		<LocationType from="Mining" to="Research"/>
+		<LocationType from="Mining" to="Lair"/>
+		<LocationType from="Mining" to="None"/>
+		<LocationType from="Mining" to="Research"/>
+		<LocationType from="Mining" to="Mine"/>
+		<LocationType from="Mining" to="Lair"/>
+	</NestMission>
+	<NestMission name="Destroy a tiger thresher nest" identifier="tigerthreshernest" tags="nest,tigerthreshernest,cityvariety1" type="Nest" spawntype="cave" reward="3800" itemspawnradius="200" approachitemsradius="800" monsterspawnradius="4000" commonness="20">
+		<Items>
+			<Item identifier="tigerthresheregg">
+				<StatusEffectOnApproach target="This" Scale="1.0" setvalue="true"/>
+			</Item>
+			<Item identifier="tigerthresheregg">
+				<StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" delay="8" />
+			</Item>
+			<Item identifier="tigerthresheregg">
+				<StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" delay="11" />
+			</Item>
+			<Item identifier="tigerthresheregg">
+				<StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" delay="15" />
+			</Item>
+			<Item identifier="tigerthresheregg" />
+			<Item identifier="tigerthresheregg" />
+			<Item identifier="tigerthresheregg" />
+		</Items>
+		<Monster character="Tigerthresher" min="5" max="7"/>
+		<Reputation identifier="location" amount="15" />
+		<Reputation identifier="coalition" amount="8" />
+		<Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48"/>
+		<LocationType from="City" to="None"/>
+		<LocationType from="City" to="Lair"/>
+		<LocationType from="Mining" to="City"/>
+		<LocationType from="Mining" to="Outpost"/>
+		<LocationType from="Mining" to="Mining"/>
+		<LocationType from="Mining" to="Military"/>
+		<LocationType from="Mining" to="Research"/>
+		<LocationType from="Mining" to="Lair"/>
+		<LocationType from="Mining" to="None"/>
+		<LocationType from="Mining" to="Research"/>
+		<LocationType from="Mining" to="Mine"/>
+		<LocationType from="Mining" to="Lair"/>
+	</NestMission>
+</Missions>
+</Override>

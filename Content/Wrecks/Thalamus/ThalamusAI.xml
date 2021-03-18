@@ -1,0 +1,24 @@
+﻿<Override>
+	<WreckAIConfig 
+  Entity="thalamus"
+  DefensiveAgent="Leucocyte"
+  Brain="thalamusbrain"
+  Spawner="cellspawnorgan"
+  BrainRoomBackground="brainroombackground"
+  BrainRoomVerticalWall="thalamuswall_vertical_decorative"
+  BrainRoomHorizontalWall="thalamuswall_horizontal_decorative"
+  AgentSpawnDelay="60"
+  AgentSpawnDelayRandomFactor="0.5"
+  MinAgentsPerBrainRoom="2"
+  MaxAgentsPerRoom="5"
+  MinAgentsOutside="2"
+  MaxAgentsOutside="8"
+  MinAgentsInside="6"
+  MaxAgentsInside="18"
+  MaxAgentCount="20"
+  MinWaterLevel="100.0" 
+  KillAgentsWhenEntityDies="True"
+  DeadEntityColorMultiplier="0.5"
+  DeadEntityColorFadeOutTime="1"
+  ForbiddenAmmunition="nuclearshell,coilgunammoboxexplosive" />
+</Override>

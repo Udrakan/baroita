@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Ragdoll type="fractalguardian" canentersubmarine="true" canwalk="False" limbscale="0.5" jointscale="0.5" texture="Content/Characters/Fractalguardian/fractalguardian.png">
+
+	<collider radius="50"/>
+	<!-- head -->
+	<limb id = "0" radius="65" type="Head" steerforce="3.0">
+		<sprite sourcerect="0,0,129,128" depth="0.04"/>
+		<damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0" deflectprojectiles="True" damagesound="" afflictionidentifiers="" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="2" deflectprojectiles="True" damagesound="" afflictionidentifiers="gunshotwound" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="0.1" deflectprojectiles="True" damagesound="Content/Sounds/Impact/MetalImpactLight5.ogg" afflictionidentifiers="lacerations" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="0.1" deflectprojectiles="True" damagesound="" afflictionidentifiers="bitewounds" probabilitymultiplier="1" />
+		<attack context="Any" cooldown="1.25" range="50" damagerange="50" duration="0.25" stun="0" structuredamage="0" itemdamage="33" structuresoundtype="" targetimpulse="0" targetimpulseworld="0,-5" severlimbsprobability="0.1" force="10" torque="100" hitdetectiontype="Distance" onlyhumans="False" targetforce="50" targetforceworld="0,0" priority="0" targettype="Character" secondarycooldown="0" applyforcesonlyonce="False" stickchance="0" cooldownrandomfactor="0" afterattack="Pursue" reverse="False" targetlimbtype="None" retreat="False" applyforceonlimbs="0, 8" afterattackdelay="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear">
+			<Affliction identifier="bleeding" strength="8" probability="0.5" />
+			<Affliction identifier="bitewounds" strength="20" probability="1" />
+		</attack>
+	</limb>
+
+	<!-- body -->
+	<limb id = "1" radius="50">
+		<damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0" deflectprojectiles="True" damagesound="" afflictionidentifiers="" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="100" deflectprojectiles="True" damagesound="" afflictionidentifiers="emp" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="0.1" deflectprojectiles="True" damagesound="" afflictionidentifiers="lacerations" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="0.1" deflectprojectiles="True" damagesound="" afflictionidentifiers="bitewounds" probabilitymultiplier="1" />
+		<sprite sourcerect="0,125,108,105" depth="0.03" origin="0.5,0.5"/>
+	</limb>
+	<!-- body -->
+	<limb id = "2" radius="45" height="75">
+		<damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0" deflectprojectiles="True" damagesound="" afflictionidentifiers="" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="100" deflectprojectiles="True" damagesound="" afflictionidentifiers="emp" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="0.1" deflectprojectiles="True" damagesound="" afflictionidentifiers="lacerations" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="0.1" deflectprojectiles="True" damagesound="" afflictionidentifiers="bitewounds" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="1.25" deflectprojectiles="True" damagesound="" afflictionidentifiers="gunshotwound" probabilitymultiplier="1" />
+		<sprite sourcerect="0,239,90,136" depth="0.02" origin="0.5,0.5"/>
+	</limb>
+	<limb id = "3" width="30" height="175" type="Tail" minseverancedamage="40">
+		<damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0" deflectprojectiles="True" damagesound="" afflictionidentifiers="" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="100" deflectprojectiles="True" damagesound="" afflictionidentifiers="emp" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="0.1" deflectprojectiles="True" damagesound="" afflictionidentifiers="lacerations" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="0.1" deflectprojectiles="True" damagesound="" afflictionidentifiers="bitewounds" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="1.25" deflectprojectiles="True" damagesound="" afflictionidentifiers="gunshotwound" probabilitymultiplier="1" />
+		<sprite sourcerect="131,0,36,175" depth="0.01" origin="0.5,0.5"/>
+	</limb>
+	<limb id = "4" width="30" height="239" minseverancedamage="40">
+		<damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0" deflectprojectiles="True" damagesound="" afflictionidentifiers="" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="100" deflectprojectiles="True" damagesound="" afflictionidentifiers="emp" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="0.1" deflectprojectiles="True" damagesound="" afflictionidentifiers="lacerations" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="0.1" deflectprojectiles="True" damagesound="" afflictionidentifiers="bitewounds" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="1.25" deflectprojectiles="True" damagesound="" afflictionidentifiers="gunshotwound" probabilitymultiplier="1" />
+		<sprite sourcerect="183,0,53,238" depth="0.05" origin="0.5,0.5"/>
+	</limb>
+	<limb id = "5" width="30" height="239" minseverancedamage="40">
+		<damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0" deflectprojectiles="True" damagesound="" afflictionidentifiers="" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="100" deflectprojectiles="True" damagesound="" afflictionidentifiers="emp" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="0.1" deflectprojectiles="True" damagesound="" afflictionidentifiers="lacerations" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="0.1" deflectprojectiles="True" damagesound="" afflictionidentifiers="bitewounds" probabilitymultiplier="1" />
+		<damagemodifier armorsector="0,360" afflictiontypes="" damagemultiplier="1.25" deflectprojectiles="True" damagesound="" afflictionidentifiers="gunshotwound" probabilitymultiplier="1" />
+		<sprite sourcerect="236,0,53,238" size="-1,1" depth="0.05" origin="0.5,0.5"/>
+	</limb>
+
+
+	<!-- head to body -->
+	<joint limb1="0" limb1anchor="0,-60" limb2="1" limb2anchor="0,30" lowerlimit="-30" upperlimit="30" canbesevered="true"/>
+
+	<joint limb1="1" limb1anchor="0,-47" limb2="2" limb2anchor="0,56" lowerlimit="-30" upperlimit="30" canbesevered="true"/>
+
+	<joint limb1="2" limb1anchor="0,-60" limb2="3" limb2anchor="0,80" lowerlimit="-30" upperlimit="30" canbesevered="true"/>
+
+	<joint limb1="0" limb1anchor="30,10" limb2="4" limb2anchor="0,-110" lowerlimit="-180" upperlimit="-90" canbesevered="true"/>
+
+	<joint limb1="0" limb1anchor="-30,10" limb2="5" limb2anchor="0,-110" lowerlimit="90" upperlimit="180" canbesevered="true"/>
+</Ragdoll>
+
