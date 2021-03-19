@@ -44,6 +44,13 @@
   <EquipmentIndicatorNotEquipped color="128,128,128,255" />
   <EquipmentIndicatorEquipped color="105,202,125,255" />
   <EquipmentIndicatorRunningOut color="202,105,105,255" />
+
+  <ColorReputationVeryLow color="245,105,105,255" />
+  <ColorReputationLow color="243,162,50,255" />
+  <ColorReputationNeutral color="228,217,167,255" />
+  <ColorReputationHigh color="126,211,224,255" />
+  <ColorReputationVeryHigh color="32,123,105,255" />
+
   <Cursor>
     <Sprite name="Cursor.Pointer" state="0" texture="Content/UI/UIAtlasGeneral.png" sourcerect="386,483,37,50" origin="0.17,0.1" compress="false" />
     <Sprite name="Cursor.Hand" state="1" texture="Content/UI/UIAtlasGeneral.png" sourcerect="523,479,33,42" origin="0.4,0.05" compress="false" />
@@ -993,16 +1000,19 @@
     <Sprite name="DockingButtonRight" texture="Content/UI/UIAtlasDevices.png" tile="false" sourcerect="501,599,52,149" origin="0.5,0.5" maintainaspectratio="true" />
   </DockingButtonRight>
   <ChatToggleButton color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="255,255,255,255" disabledcolor="125,125,125,255" pressedcolor="255,255,255,255">
-    <Sprite name="GUIButton.None" texture="Content/UI/InventoryUIAtlas.png" tile="false" state="None" sourcerect="16,136,182,99" origin="0.5,0.5" />
-    <Sprite name="GUIButton.Hover" texture="Content/UI/InventoryUIAtlas.png" tile="false" state="Hover" sourcerect="16,241,182,99" origin="0.5,0.5" />
-    <Sprite name="GUIButton.Selected" texture="Content/UI/InventoryUIAtlas.png" tile="false" state="Selected" sourcerect="16,348,182,99" origin="0.5,0.5" />
-    <Sprite name="GUIButton.Pressed" texture="Content/UI/InventoryUIAtlas.png" tile="false" state="Pressed" sourcerect="16,348,182,99" origin="0.5,0.5" />
+    <Sprite name="GUIButton.None" texture="Content/UI/InventoryUIAtlas.png" tile="false" state="None" sourcerect="8,425,111,66" origin="0.5,0.5" />
+    <Sprite name="GUIButton.Selected" texture="Content/UI/InventoryUIAtlas.png" tile="false" state="Selected" sourcerect="8,635,111,66" origin="0.5,0.5" />
+    <Sprite name="GUIButton.Hover" texture="Content/UI/InventoryUIAtlas.png" tile="false" state="Hover" sourcerect="8,495,111,66" origin="0.5,0.5" />
+    <Sprite name="GUIButton.HoverSelected" texture="Content/UI/InventoryUIAtlas.png" tile="false" state="HoverSelected" sourcerect="8,495,111,66" origin="0.5,0.5" />
+    <Sprite name="GUIButton.Pressed" texture="Content/UI/InventoryUIAtlas.png" tile="false" state="Pressed" sourcerect="8,565,111,66" origin="0.5,0.5" />
   </ChatToggleButton>
   <!-- Command UI starts -->
   <CommandButton color="255,255,255,255">
-    <Sprite name="CommandButton_None" texture="Content/UI/InventoryUIAtlas.png" state="None" tile="false" sourcerect="16,459,182,99" maintainaspectratio="true" origin="0.5,0.5" />
-    <Sprite name="CommandButton_Hover" texture="Content/UI/InventoryUIAtlas.png" state="Hover" tile="false" sourcerect="16,564,182,99" maintainaspectratio="true" origin="0.5,0.5" />
-    <Sprite name="CommandButton_Pressed" texture="Content/UI/InventoryUIAtlas.png" state="Pressed" tile="false" sourcerect="16,668,182,99" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="CommandButton_None" texture="Content/UI/InventoryUIAtlas.png" state="None" tile="false" sourcerect="123,145,111,66" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="CommandButton_Selected" texture="Content/UI/InventoryUIAtlas.png" state="Selected" tile="false" sourcerect="123,355,111,66" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="CommandButton_Hover" texture="Content/UI/InventoryUIAtlas.png" state="Hover" tile="false" sourcerect="123,215,111,66" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="CommandButton_HoverSelected" texture="Content/UI/InventoryUIAtlas.png" state="HoverSelected" tile="false" sourcerect="123,215,111,66" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="CommandButton_Pressed" texture="Content/UI/InventoryUIAtlas.png" state="Pressed" tile="false" sourcerect="123,285,111,66" maintainaspectratio="true" origin="0.5,0.5" />
   </CommandButton>
   <CommandStartNode color="180,196,137,250">
     <Sprite name="CommandStartNode" texture="Content/UI/CommandUIAtlas.png" sourcerect="896,0,128,128" maintainaspectratio="true" tile="false" />
@@ -1048,9 +1058,11 @@
     <Sprite name="VoipIconHigh" texture="Content/UI/UIAtlasGeneral.png" sourcerect="61,573,35,38" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
   </VoipIconHigh>
   <CrewListToggleButton color="255,255,255,255">
-    <Sprite name="CrewListToggleButton_None" texture="Content/UI/InventoryUIAtlas.png" state="None" tile="false" sourcerect="248,531,175,64" maintainaspectratio="true" origin="0.5,0.5" />
-    <Sprite name="CrewListToggleButton_Hover" texture="Content/UI/InventoryUIAtlas.png" state="Hover" tile="false" sourcerect="248,606,175,64" maintainaspectratio="true" origin="0.5,0.5" />
-    <Sprite name="CrewListToggleButton_Pressed" texture="Content/UI/InventoryUIAtlas.png" state="Pressed" tile="false" sourcerect="248,681,175,64" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="CrewListToggleButton_None" texture="Content/UI/InventoryUIAtlas.png" state="None" tile="false" sourcerect="8,145,111,66" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="CrewListToggleButton_Selected" texture="Content/UI/InventoryUIAtlas.png" state="Selected" tile="false" sourcerect="8,355,111,66" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="CrewListToggleButton_Hover" texture="Content/UI/InventoryUIAtlas.png" state="Hover" tile="false" sourcerect="8,215,111,66" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="CrewListToggleButton_HoverSelected" texture="Content/UI/InventoryUIAtlas.png" state="HoverSelected" tile="false" sourcerect="8,215,111,66" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="CrewListToggleButton_Pressed" texture="Content/UI/InventoryUIAtlas.png" state="Pressed" tile="false" sourcerect="8,285,111,66" maintainaspectratio="true" origin="0.5,0.5" />
   </CrewListToggleButton>
   <CrewListBackground color="255,255,255,255">
     <Sprite name="CrewListBackground_None" texture="Content/UI/CommandUIAtlas.png" state="None" tile="false" sourcerect="0,728,320,40" />
@@ -1242,6 +1254,9 @@
   <HuntingGrounds color="255,106,106,255" hovercolor="255,156,156,255">
     <Sprite name="HuntingGrounds" texture="Content/Map/MapAtlas.png" tile="false" sourcerect="799,657,67,90" maintainaspectratio="true" />
   </HuntingGrounds>
+  <LockedLocationConnection color="255,106,106,255" hovercolor="255,156,156,255">
+    <Sprite name="LockedLocationConnection" texture="Content/Map/MapAtlas.png" tile="false" sourcerect="413,921,62,74" maintainaspectratio="true" />
+  </LockedLocationConnection>
   <LocationReputationIcon color="187,198,200,255">
     <Sprite name="LocationReputationIcon" texture="Content/UI/CampaignUIAtlas2.png" tile="false" sourcerect="533,517,87,106" maintainaspectratio="true" />
   </LocationReputationIcon>
@@ -1292,7 +1307,13 @@
   <EditIcon color="220,220,220,220" pressedcolor="125,125,125,125" hovercolor="255,255,255,255" selectedcolor="220,220,220,220" disabledcolor="125,125,125,125">
     <Sprite name="EditIcon" texture="Content/UI/UIAtlasGeneral.png" tile="false" maintainaspectratio="true" sourcerect="149,51,43,43" origin="0.5,0.5" />
   </EditIcon>
-  
+  <TabMenuButton color="255,255,255,255">
+    <Sprite name="TabMenuButton_None" texture="Content/UI/InventoryUIAtlas.png" state="None" tile="false" sourcerect="123,425,111,66" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="TabMenuButton_Selected" texture="Content/UI/InventoryUIAtlas.png" state="Selected" tile="false" sourcerect="123,635,111,66" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="TabMenuButton_Hover" texture="Content/UI/InventoryUIAtlas.png" state="Hover" tile="false" sourcerect="123,495,111,66" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="TabMenuButton_HoverSelected" texture="Content/UI/InventoryUIAtlas.png" state="HoverSelected" tile="false" sourcerect="123,495,111,66" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="TabMenuButton_Pressed" texture="Content/UI/InventoryUIAtlas.png" state="Pressed" tile="false" sourcerect="123,565,111,66" maintainaspectratio="true" origin="0.5,0.5" />
+  </TabMenuButton>
 </style>
 
 </Override>
