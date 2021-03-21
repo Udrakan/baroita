@@ -1783,6 +1783,9 @@
 						<Option text="[MISSION] Killing hammerhead [+10REP][3000mk]" endconversation="true">
 							<MissionAction missionidentifier="killhammerhead" _npos="822.635,-1615.2164" />
 						</Option>
+						<Option text="[MISSION] Killing a Watcher [+10REP][3000mk]" endconversation="true">
+							<MissionAction missionidentifier="killwatcher" _npos="822.635,-1615.2164" />
+						</Option>
 						<Option text="[MISSION] Cave mineral research [+10REP][1500-1800mk]" endconversation="true">
 							<MissionAction missiontag="collectmineralscommon" _npos="822.2362,-1430.2937" />
 						</Option>

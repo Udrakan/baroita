@@ -243,6 +243,30 @@
 		<LocationType from="Outpost" to="City"/>
 	</CargoMission>
 	<!--LARGE MONSTERS-->
+	
+	<MonsterMission name="Killing a Watcher" identifier="killwatcher" tags="ita_military1,killmonsterrare,ita_monsterlarge" type="Monster" description="A nearby Watcher has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] marks has been promised to whoever kills the creature and its thralls." commonness="25" reward="5500" sonarlabel="Watcher" maxsonarmarkerdistance="10000" successmessage="The Watcher has been eliminated.">
+		<Reputation identifier="location" amount="15" />
+		<Reputation identifier="coalition" amount="20" />
+		<monster character="watcher" count="1"/>
+		<monster character="husk" count="7"/>
+		<message header="Target terminated" text="The Watcher is eliminated. Navigate the submarine out of the cavern to claim the reward."/>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+		<LocationType from="Military" to="None"/>
+		<LocationType from="Military" to="City"/>
+		<LocationType from="Military" to="Outpost"/>
+		<LocationType from="Military" to="Military"/>
+		<LocationType from="Military" to="Research"/>
+		<LocationType from="Military" to="Mine"/>
+		<LocationType from="Military" to="Lair"/>
+		
+		<LocationType from="Mine" to="None"/>
+		<LocationType from="Mine" to="City"/>
+		<LocationType from="Mine" to="Outpost"/>
+		<LocationType from="Mine" to="Military"/>
+		<LocationType from="Mine" to="Research"/>
+		<LocationType from="Mine" to="Mine"/>
+		<LocationType from="Mine" to="Lair"/>  
+	
 	<MonsterMission name="Killing Ancient Moloch" identifier="killmolochboss" tags="killmonster,killmoloch,killmonstercommon,ita_monsterlarge" type="Monster" description="This ancient moloch is dangerous enough to cause massive logistics issues and even took down a couple attack submarines. A reward of [reward] is promised to any professional crew who can take it down." commonness="25" reward="6000" sonarlabel="Moloch" maxsonarmarkerdistance="10000" successmessage="The Ancient Moloch has been killed." monsterfile="Molochboss">
 		<Reputation identifier="location" amount="30" />
 		<Reputation identifier="coalition" amount="20" />
