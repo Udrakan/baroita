@@ -2428,12 +2428,14 @@
     <Failure>
       <SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_raceman" targettag="raceman" spawnpointtag="raceman" _npos="-771.48865,-332.17227" />
       <Label name="lab1" _npos="-769.1205,132.83524" />
-      <CheckDataAction identifier="race1done" condition="eq 1" _npos="-400.28992,132.51773">
+      <CheckDataAction identifier="race1done" condition="eq 1" _npos="-393.87476,132.20715">
         <Failure>
-          <ConversationAction text="&quot;Wanna bet 100mk on one of the muddies in the next mudraptor race?&quot;" speakertag="raceman" invokertag="beter1" _npos="-27.086548,196.04863">
-            <Option text="Bet100mk  on the Red mudraptor..." endconversation="true">
-              <SetDataAction operation="Set" value="-100" identifier="r1betsize" _npos="827.1478,228.8372" />
-              <Label name="lab2" _npos="392.31036,782.65594" />
+          <ConversationAction text="&quot;Wanna bet 100mk on one of the muddies in the next mudraptor race?&quot;" speakertag="raceman" invokertag="beter1" _npos="-26.022736,196.0486">
+            <Option text="Bet 100mk  on the Red mudraptor..." endconversation="true">
+              <SetDataAction operation="Set" value="1" identifier="r1bet" _npos="746.70386,55.83765" />
+              <Label name="labop" _npos="365.5538,679.2201" />
+              <SetDataAction operation="Set" value="-100" identifier="r1betsize" _npos="359.88055,786.698" />
+              <Label name="lab2" _npos="359.21527,949.7349" />
               <CheckItemAction targettag="beter1" itemidentifiers="ita_coin1" _npos="806.71814,782.7836">
                 <Success>
                   <RemoveItemAction targettag="beter1" itemidentifier="ita_coin1" amount="1" _npos="1265.9202,792.2302" />
@@ -2446,10 +2448,51 @@
                           <CheckDataAction identifier="r1nocash" condition="eq 1" _npos="2591.8008,2364.153">
                             <Success>
                               <ConversationAction text="Not enough cash..." targettag="beter1" _npos="2599.3228,2616.227" />
+                              <ClearTagAction tag="beter1" _npos="2608.7886,3096.378" />
+                              <GoTo name="lab1" _npos="2607.1135,3196.2913" />
                             </Success>
                             <Failure>
-                              <SpawnAction itemidentifier="redwire" targetinventory="beter1" _npos="2603.8853,3040.357" />
-                              <SetDataAction operation="Set" value="0" identifier="r1betsize" _npos="2602.2825,3486.285" />
+                              <SetDataAction operation="Set" value="0" identifier="r1betsize" _npos="3078.0552,3007.0425" />
+                              <CheckDataAction identifier="r1bet" condition="eq 1" _npos="3495.4678,3003.4565">
+                                <Success>
+                                  <StatusEffectAction targettag="raceman" _npos="4960.7363,-294.79236">
+                                    <StatusEffect _npos="4961.413,-193.60559">
+                                      <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_cashregister.ogg" range="500" _npos="4961.747,-91.940796" />
+                                    </StatusEffect>
+                                  </StatusEffectAction>
+                                  <SpawnAction itemidentifier="redwire" targettag="r1red" targetinventory="beter1" _npos="3496.5498,3200.0813" />
+                                  <ClearTagAction tag="beter1" _npos="3496.6123,3649.8938" />
+                                  <GoTo name="lab1" _npos="3496.2705,3746.4634" />
+                                </Success>
+                                <Failure>
+                                  <CheckDataAction identifier="r1bet" condition="eq 2" _npos="3975.343,3001.3804">
+                                    <Success>
+                                      <StatusEffectAction targettag="raceman" _npos="4960.7363,-294.79236">
+                                        <StatusEffect _npos="4961.413,-193.60559">
+                                          <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_cashregister.ogg" range="500" _npos="4961.747,-91.940796" />
+                                        </StatusEffect>
+                                      </StatusEffectAction>
+                                      <SpawnAction itemidentifier="greenwire" targettag="r1green" targetinventory="beter1" _npos="3975.2458,3196.9917" />
+                                      <ClearTagAction tag="beter1" _npos="3975.963,3646.0427" />
+                                      <GoTo name="lab1" _npos="3977.8508,3746.4634" />
+                                    </Success>
+                                    <Failure>
+                                      <CheckDataAction identifier="r1bet" condition="eq 3" _npos="4418.702,3004.2568">
+                                        <Success>
+                                          <StatusEffectAction targettag="raceman" _npos="4960.7363,-294.79236">
+                                            <StatusEffect _npos="4961.413,-193.60559">
+                                              <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_cashregister.ogg" range="500" _npos="4961.747,-91.940796" />
+                                            </StatusEffect>
+                                          </StatusEffectAction>
+                                          <SpawnAction itemidentifier="bluewire" targettag="r1blue" targetinventory="beter1" _npos="4418.9033,3197.8525" />
+                                          <ClearTagAction tag="beter1" _npos="4418.3384,3646.7163" />
+                                          <GoTo name="lab1" _npos="4417.8154,3746.4634" />
+                                        </Success>
+                                      </CheckDataAction>
+                                    </Failure>
+                                  </CheckDataAction>
+                                </Failure>
+                              </CheckDataAction>
                             </Failure>
                           </CheckDataAction>
                         </Success>
@@ -2504,7 +2547,7 @@
                       </CheckDataAction>
                     </Success>
                     <Failure>
-                      <GoTo name="lab2" _npos="2800.5034,852.5592" />
+                      <GoTo name="lab2" _npos="2799.1753,863.1855" />
                     </Failure>
                   </CheckDataAction>
                 </Success>
@@ -2565,9 +2608,9 @@
                                   </CheckDataAction>
                                 </Success>
                                 <Failure>
-                                  <CheckDataAction identifier="r1betsize" condition="gte 0" _npos="3604.214,859.63904">
+                                  <CheckDataAction identifier="r1betsize" condition="gte 0" _npos="3532.1758,802.18964">
                                     <Success>
-                                      <GoTo name="lab3" _npos="4075.5854,893.08875" />
+                                      <GoTo name="lab3" _npos="4035.9604,833.51556" />
                                     </Success>
                                     <Failure>
                                       <SetDataAction operation="Set" value="1" identifier="r1nocash" _npos="3330.7742,1585.5046" />
@@ -2585,6 +2628,98 @@
                   </CheckItemAction>
                 </Failure>
               </CheckItemAction>
+            </Option>
+            <Option text="Bet 100mk  on the Green mudraptor..." endconversation="true">
+              <SetDataAction operation="Set" value="2" identifier="r1bet" _npos="747.1982,218.36432" />
+              <GoTo name="labop" _npos="1115.3639,218.2757" />
+            </Option>
+            <Option text="Bet 100mk  on the Blue mudraptor..." endconversation="true">
+              <SetDataAction operation="Set" value="3" identifier="r1bet" _npos="747.68463,381.83112" />
+              <GoTo name="labop" _npos="1112.4536,381.48737" />
+            </Option>
+            <Option text="&quot;Not this time.&quot;" endconversation="true">
+              <GoTo name="lab1" _npos="-25.895966,621.08264" />
+            </Option>
+            <Option text="&quot;Start the race!&quot;" endconversation="true">
+              <TriggerEventAction identifier="ita_race1.0" _npos="-1954.4531,399.80865" />
+              <WaitAction time="3" _npos="-1954.6711,500.23813" />
+              <TriggerEventAction identifier="ita_race1start" _npos="-1958.336,600.196" />
+              <StatusEffectAction targettag="raceman" _npos="4960.7363,-294.79236">
+                <StatusEffect _npos="4961.413,-193.60559">
+                  <Sound file="Content/Items/Weapons/Revolver2.ogg" range="500" _npos="4961.747,-91.940796" />
+                </StatusEffect>
+              </StatusEffectAction>
+              <Label name="wait" _npos="-928.4743,398.68762" />
+              <WaitAction time="3" _npos="-928.71704,497.8321" />
+              <CheckDataAction identifier="race1done" condition="eq 1" _npos="-925.91815,594.0613">
+                <Success>
+                  <Label name="lab4" _npos="-411.13293,-1403.126" />
+                  <CheckDataAction identifier="w1" condition="eq 1" _npos="84.21622,-1428.1877">
+                    <Success>
+                      <ConversationAction text="&quot;Red has won the race! Come redeem your tokens!&quot;" speakertag="raceman" invokertag="beterw1" _npos="481.80457,-1428.1719">
+                        <Option text="Redeem your token..." endconversation="true">
+                          <CheckItemAction targettag="beterw1" itemidentifiers="redwire" _npos="1006.0007,-1396.5629">
+                            <Success>
+                              <RemoveItemAction targettag="beterw1" itemidentifier="redwire" amount="1" _npos="1006.0676,-1233.0769" />
+                              <StatusEffectAction targettag="raceman" _npos="4960.7363,-294.79236">
+                                <StatusEffect _npos="4961.413,-193.60559">
+                                  <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_cashregister.ogg" range="500" _npos="4961.747,-91.940796" />
+                                </StatusEffect>
+                              </StatusEffectAction>
+                              <SpawnAction itemidentifier="ita_bill200" targetinventory="beterw1" _npos="1490.1248,-1415.4126" />
+                            </Success>
+                          </CheckItemAction>
+                        </Option>
+                      </ConversationAction>
+                    </Success>
+                    <Failure>
+                      <CheckDataAction identifier="w2" condition="eq 1" _npos="56.630035,-1006.67773">
+                        <Success>
+                          <ConversationAction text="&quot;Green has won the race! Come redeem your tokens!&quot;" speakertag="raceman" invokertag="beterw2" _npos="480.55533,-1012.8739">
+                            <Option text="Redeem your token..." endconversation="true">
+                              <CheckItemAction targettag="beterw2" itemidentifiers="greenwire" _npos="1004.9049,-980.6812">
+                                <Success>
+                                  <RemoveItemAction targettag="beterw2" itemidentifier="greenwire" amount="1" _npos="1004.87036,-820.3992" />
+                                  <StatusEffectAction targettag="raceman" _npos="4960.7363,-294.79236">
+                                    <StatusEffect _npos="4961.413,-193.60559">
+                                      <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_cashregister.ogg" range="500" _npos="4961.747,-91.940796" />
+                                    </StatusEffect>
+                                  </StatusEffectAction>
+                                  <SpawnAction itemidentifier="ita_bill200" targetinventory="beterw1" _npos="1488.592,-962.6271" />
+                                </Success>
+                              </CheckItemAction>
+                            </Option>
+                          </ConversationAction>
+                        </Success>
+                        <Failure>
+                          <CheckDataAction identifier="w3" condition="eq 3" _npos="61.67566,-589.3299">
+                            <Success>
+                              <ConversationAction text="&quot;Blue has won the race! Come redeem your tokens!&quot;" speakertag="raceman" invokertag="beterw3" _npos="479.58395,-594.19366">
+                                <Option text="Redeem your token..." endconversation="true">
+                                  <CheckItemAction targettag="beterw3" itemidentifiers="bluewire" _npos="999.6004,-562.7059">
+                                    <Success>
+                                      <RemoveItemAction targettag="beterw3" itemidentifier="bluewire" amount="1" _npos="998.42126,-399.32703" />
+                                      <StatusEffectAction targettag="raceman" _npos="4960.7363,-294.79236">
+                                        <StatusEffect _npos="4961.413,-193.60559">
+                                          <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_cashregister.ogg" range="500" _npos="4961.747,-91.940796" />
+                                        </StatusEffect>
+                                      </StatusEffectAction>
+                                      <SpawnAction itemidentifier="ita_bill200" targetinventory="beterw1" _npos="1486.4674,-506.3431" />
+                                    </Success>
+                                  </CheckItemAction>
+                                </Option>
+                              </ConversationAction>
+                            </Success>
+                          </CheckDataAction>
+                        </Failure>
+                      </CheckDataAction>
+                    </Failure>
+                  </CheckDataAction>
+                </Success>
+                <Failure>
+                  <GoTo name="wait" _npos="-925.3267,789.6" />
+                </Failure>
+              </CheckDataAction>
             </Option>
           </ConversationAction>
         </Failure>
@@ -2605,16 +2740,19 @@
   <CheckDataAction identifier="w1" condition="eq 1" _npos="1428.9169,-513.31616">
     <Success>
       <ConversationAction text="Red has won the race!" eventsprite="mediator" _npos="1432.308,-262.8426" />
+	  <SetDataAction operation="Set" value="1" identifier="race1done"/>
     </Success>
     <Failure>
       <CheckDataAction identifier="w2" condition="eq 1" _npos="1840.3585,-515.21155">
         <Success>
           <ConversationAction text="Green has won the race!" eventsprite="mediator" _npos="1841.3053,-267.22757" />
+		  <SetDataAction operation="Set" value="1" identifier="race1done"/>
         </Success>
         <Failure>
           <CheckDataAction identifier="w3" condition="eq 1" _npos="2262.5896,-510.76404">
             <Success>
               <ConversationAction text="Blue has won the race!" eventsprite="mediator" _npos="2264.5444,-271.3252" />
+			  <SetDataAction operation="Set" value="1" identifier="race1done"/>
             </Success>
             <Failure>
               <WaitAction time="0.5" _npos="2645.806,-447.23874" />
@@ -2631,7 +2769,7 @@
   <TagAction criteria="itemtag:racestart1" tag="racestart2" _npos="437.5692,-489.6132" />
   <TagAction criteria="itemtag:raceend1" tag="raceend2" _npos="430.7741,-300.49716" />
   <SpawnAction speciesname="mudraptor_red" targettag="red" spawnpointtag="racestart" _npos="894.2991,-487.4691" />
-  <TriggerAction target1tag="red" target2tag="raceend2" radius="200" _npos="1367.6598,-460.98938" />
+  <TriggerAction target1tag="red" target2tag="raceend2" radius="300" _npos="1367.6598,-460.98938" />
   <CheckDataAction identifier="w2" condition="eq 1" _npos="1835.6345,-454.31213">
     <Failure>
       <CheckDataAction identifier="w3" condition="eq 1" _npos="2267.3616,-390.04065">
@@ -2647,7 +2785,7 @@
   <TagAction criteria="itemtag:raceend1" tag="raceend2" _npos="272.4994,-420.84937" />
   <TagAction criteria="itemtag:racestart1" tag="racestart" _npos="272.11383,-255.12164" />
   <SpawnAction speciesname="mudraptor_green" targettag="green" spawnpointtag="racestart" _npos="650.5545,-256.58127" />
-  <TriggerAction target1tag="green" target2tag="raceend2" radius="200" _npos="1175.7659,-271.0426" />
+  <TriggerAction target1tag="green" target2tag="raceend2" radius="300" _npos="1175.7659,-271.0426" />
   <CheckDataAction identifier="w1" condition="eq 1" _npos="1702.1553,-278.68335">
     <Failure>
       <CheckDataAction identifier="w3" condition="eq 1" _npos="2268.8557,-224.1726">
@@ -2664,7 +2802,7 @@
   <TagAction criteria="itemtag:raceend1" tag="raceend2" _npos="934.87695,-355.5407" />
   <TagAction criteria="itemtag:racestart1" tag="racestart2" _npos="934.5123,-191.42786" />
   <SpawnAction speciesname="mudraptor_blue" targettag="blue" spawnpointtag="racestart" _npos="1305.0569,-191.71396" />
-  <TriggerAction target1tag="blue" target2tag="raceend2" radius="200" _npos="1684.6113,-191.00269" />
+  <TriggerAction target1tag="blue" target2tag="raceend2" radius="300" _npos="1684.6113,-191.00269" />
   <CheckDataAction identifier="w1" condition="eq 1" _npos="2053.0217,-191.15247">
     <Failure>
       <CheckDataAction identifier="w2" condition="eq 1" _npos="2419.385,-127.39166">

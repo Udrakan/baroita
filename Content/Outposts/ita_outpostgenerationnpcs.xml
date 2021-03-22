@@ -554,7 +554,7 @@
 		</npc>
 		
 		<!--HABITATION NPCS-->
-		<npc identifier="ita_raceman" job="assistant" commonness="1" spawnpointtags="bar" behavior="Passive" preferredoutpostmoduletypes="ita_city_atrium">
+		<npc identifier="ita_raceman" job="assistant" commonness="1" spawnpointtags="bar" behavior="StayInHull" >
 			<ItemSet commonness="1">
 				<Item identifier="crewchiefclothes" equip="true" />
 				<Item identifier="idcard" equip="true" tags="ita_citymanager"/>

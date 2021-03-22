@@ -648,6 +648,11 @@
           <RequiredItem items="ita_botanist2" type="Contained" />
           <Remove />
         </StatusEffect>
+		<StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_race1bet" />
+          <RequiredItem items="mudraptorshell" type="Contained" />
+          <Remove />
+        </StatusEffect>
       </input>
     </ConnectionPanel>
     <ItemContainer canbeselected="true" capacity="1" itempos="0,0" hideitems="false" />
