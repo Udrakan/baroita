@@ -244,7 +244,7 @@
 			</ItemSet>
 		</npc>		
 		<!--GUARDS-->	
-		<npc identifier="ita_guard1" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol">
+		<npc identifier="ita_guard1" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol" aimspeed="0.65" aimaccuracy="0.55" >
 			<ItemSet>
 				<Item identifier="securitypatrolclothes" equip="true" />
 				<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
@@ -267,7 +267,7 @@
 				</Item> 
 			</ItemSet>
 		</npc>
-		<npc identifier="ita_guard2" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol">
+		<npc identifier="ita_guard2" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol" aimspeed="0.65" aimaccuracy="0.55" >
 			<ItemSet>
 				<Item identifier="securitypatrolclothes" equip="true" />
 				<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
@@ -297,7 +297,7 @@
 				</Item> 
 			</ItemSet>
 		</npc>		
-		<npc identifier="ita_guard3" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol">
+		<npc identifier="ita_guard3" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol" aimspeed="0.65" aimaccuracy="0.55" >
 			<ItemSet>
 				<Item identifier="securitypatrolclothes" equip="true" />
 				<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
@@ -328,7 +328,7 @@
 				</Item> 
 			</ItemSet>
 		</npc>
-		<npc identifier="ita_guardofficer1" job="securityofficer" spawnpointtags="security" healthmultiplier="2" behavior="Patrol">
+		<npc identifier="ita_guardofficer1" job="securityofficer" spawnpointtags="security" healthmultiplier="2" behavior="Patrol" aimspeed="0.65" aimaccuracy="0.55" >
 			<ItemSet>
 				<Item identifier="securitypatrolclothes" equip="true" />
 				<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity"/>
