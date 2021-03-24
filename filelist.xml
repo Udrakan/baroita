@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.12.0.3" steamworkshopid="2005463692" installtime="1614175856">
-  <Particles file="Mods/IntoTheAbyss/Content/ita_particles.xml" />
   <BeaconStation file="Mods/IntoTheAbyss/Content/Beacons/ita_beacon_1a.sub" />
   <None file="Mods/IntoTheAbyss/Content/icons_ita.png" />
   <None file="Mods/IntoTheAbyss/Content/bubbleloop.ogg" />
@@ -26,6 +25,7 @@
   <RuinConfig file="Mods/IntoTheAbyss/Content/Ruins/ita_ruinconfig1.xml" />
   <RuinConfig file="Mods/IntoTheAbyss/Content/Ruins/ita_ruinconfig2.xml" />
   <Structure file="Mods/IntoTheAbyss/Content/ita_structureprefabs.xml" />
+  <Structure file="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CavePrefabs.xml" />
   <Item file="Mods/IntoTheAbyss/Content/Wrecks/Thalamus/thalamusitems.xml" />
   <WreckAIConfig file="Mods/IntoTheAbyss/Content/Wrecks/Thalamus/ThalamusAI.xml" />
   <Character file="Mods/IntoTheAbyss/Content/Creatures/Moloch/Moloch.xml" />
@@ -35,12 +35,6 @@
   <Character file="Mods/IntoTheAbyss/Content/Creatures/Hammerhead/Hammerhead.xml" />
   <Character file="Mods/IntoTheAbyss/Content/Creatures/Hammerheadmatriarch/Hammerheadmatriarch.xml" />
   <Character file="Mods/IntoTheAbyss/Content/Creatures/Hammerheadspawn/Hammerheadspawn.xml" />
-  <Character file="Mods/IntoTheAbyss/Content/Creatures/Mudraptor_racing/Mudraptorbase.xml" />
-  <Character file="Mods/IntoTheAbyss/Content/Creatures/Mudraptor_racing/Mudraptorred.xml" />
-  <Character file="Mods/IntoTheAbyss/Content/Creatures/Mudraptor_racing/Mudraptorgreen.xml" />
-  <Character file="Mods/IntoTheAbyss/Content/Creatures/Mudraptor_racing/Mudraptorblue.xml" />
-  <Character file="Mods/IntoTheAbyss/Content/Creatures/Mudraptor_racing/Vladimir.xml" />
-  <Character file="Mods/IntoTheAbyss/Content/Creatures/Hammerheadspawn/bait.xml" />
   <Decals file="Mods/IntoTheAbyss/Content/ita_decalprefabs.xml" />
   <ItemAssembly file="Mods/IntoTheAbyss/Content/Ruins/Assemblies/ita_lights1.xml" />
   <ItemAssembly file="Mods/IntoTheAbyss/Content/Ruins/Assemblies/ita_lights2.xml" />
@@ -224,7 +218,6 @@
   <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_research_crew1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_research_ancient1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_module_smallengineering1.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_Hall4wayModule_Hab_02.sub" />
   <None file="Mods/IntoTheAbyss/Content/Outposts/ita_barmodule1L.sub" />
   <None file="Mods/IntoTheAbyss/ita_titletext.png" />
   <None file="Mods/IntoTheAbyss/Content/paper.png" />
@@ -240,13 +233,15 @@
   <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_military_prison2.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_module_military_crew1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_module_lifesupport2.sub" />
+  <MapGenerationParameters file="Mods/IntoTheAbyss/Content/Campaign/ita_MapGenerationParameters.xml" />
   <Character file="Mods/IntoTheAbyss/Content/Creatures/OutpostOrangeBoy/OutpostOrangeboy.xml" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_city_shop_petshop1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_city_atrium3.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_city_shop_botanist2.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_module_hab_racetrack1.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_Hall4wayModule_Hab_02.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_shipyard_moonpool.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_module_mine_dock1.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_canteen.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_module_city_racetrack.sub" />
+  <None file="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveBackWalls.png" />
+  <None file="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveDecorative.png" />
+  <None file="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveDecorative2.png" />
+  <None file="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveShells.png" />
+  <None file="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveTileWalls.png" />
 </contentpackage>
