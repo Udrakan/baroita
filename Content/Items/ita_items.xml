@@ -2025,4 +2025,103 @@
 		</input>
     </ConnectionPanel>
   </Item>
+  <!--Caves-->
+  <Item name="Climbing rope" identifier="ita_climber2" health="20" hideinmenus="false" maxstacksize="8" sonarsize="5" scale="0.5" tags="smallitem" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
+    <InventoryIcon texture="Content/Map/Thalamus/thalamus.png" sourcerect="676,296,24,48" origin="0.5,0.5" />
+    <Sprite texture="Content/Map/Thalamus/thalamus.png" sourcerect="676,296,24,48" origin="0.5,0.5" />
+    <Body radius="10" density="35" />
+    <Rope targetpullforce="300" SourcePullForce="100" projectilepullforce="0" maxlength="3000" snaponcollision="true" spritewidth="30" tile="true">
+      <Sprite texture="Content/Map/Thalamus/thalamus.png" sourcerect="617,352,174,32" depth="0.57" origin="0.5,0.5" />
+      <EndSprite texture="Content/Map/Thalamus/thalamus.png" sourcerect="672,288,32,64" depth="0.56" origin="0.5,0.5" />
+      <!-- Automatically snap after 300 seconds -->
+      <!--<StatusEffect type="OnUse" target="This" Snapped="true" delay="1"/>-->
+      <!-- Remove 1 second after snapping -->
+      <StatusEffect type="Always" target="This" delay="1" disabledeltatime="true" setvalue="true" SourcePullForce="100">
+      </StatusEffect>
+      <!-- Snap after 5 seconds if not stuck to anything -->
+      <StatusEffect type="OnUse" target="This" Snapped="true" delay="5" checkconditionalalways="true">
+        <Conditional targetitemcomponent="Projectile" IsStuckToTarget="false" />
+      </StatusEffect>
+      <StatusEffect type="OnDeath" target="This" Snapped="true">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" range="2000" selectionmode="Random" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" range="2000" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" range="2000" />
+      </StatusEffect>
+      <StatusEffect type="OnDamaged" target="This">
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="1000" />
+        <ParticleEmitter particle="bloodsplash" particleamount="1" scalemin="1" scalemax="1.5" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="waterblood" particleamount="1" anglemin="0" anglemax="360" scalemin="2" scalemax="4" />
+        <ParticleEmitter particle="gib" particleamount="4" scalemin="0.25" scalemax="1" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
+      </StatusEffect>
+    </Rope>
+    <Projectile characterusable="false" launchimpulse="50.0" sticktostructures="false" stickpermanently="true" sticktocharacters="true">
+      <Attack structuredamage="0" severlimbsprobability="0.5">
+        <Affliction identifier="psychosis" strength="5" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="Character">
+        <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonHit1.ogg" range="1000" selectionmode="Random" />
+        <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonHit2.ogg" range="1000" />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="Climbing gun" identifier="ita_climber1" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,203,181,39" depth="0.55" origin="0.5,0.5" />
+    <Body width="180" height="30" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon barrelpos="49,10" spread="1" unskilledspread="10" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="Content/Items/Weapons/HarpoonGun1.ogg" type="OnUse" />
+      <Sound file="Content/Items/Weapons/HarpoonGun2.ogg" type="OnUse" />
+      <Sound file="Content/Items/Weapons/HarpoonGun3.ogg" type="OnUse" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <RequiredItems items="ita_climber2" type="Contained" msg="ItemMsgSpearRequired" />
+      <RequiredSkill identifier="weapons" level="30" />
+    </RangedWeapon>
+	<ItemContainer itempos="27,10" iteminterval="0,-4" hideitems="false" capacity="1" maxstacksize="6" containedstateindicatorstyle="spear">
+		<Containable items="ita_climber2" />
+	</ItemContainer>
+	
+    <aitarget sightrange="0" soundrange="500" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Hanger" identifier="ita_cavetrap1" category="Alien" Tags="itatrap" scale="0.25">
+    <Sprite texture="Content/Items/CreatureLoot/CreatureLoot.png" depth="0.18" sourcerect="8,280,118,145" origin="0.5,0.5" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="true" itempos="125,-120" autointeractwithcontained="true">
+      <Containable items="ita_climber2" />
+    </ItemContainer>
+    <StaticBody radius="80" />
+    <Turret canbeselected="false" characterusable="false" maxactiveprojectiles="1" linkable="true" barrelpos="243,50" rotationlimits="180,360" powerconsumption="1000.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="50" reload="5.0" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8" spread="10">
+      <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonLaunch1.ogg" range="10000" type="OnUse" />
+      <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonLaunch2.ogg" range="10000" type="OnUse" />
+      <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonLaunch3.ogg" range="10000" type="OnUse" />
+      <BarrelSprite name="fleshgun barrel" texture="Content/Items/CreatureLoot/CreatureLoot.png" depth="0.18" sourcerect="8,280,118,145" origin="0.5,1.5" />
+      <MoveSound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonMoveLoop.ogg" />
+      <StartMoveSound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonMoveStart.ogg" />
+      <EndMoveSound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonMoveStop.ogg" />
+      <!--TODO: Change the particle effect?-->
+      <ParticleEmitter particle="muzzleflashcoilgun" particleamount="1" velocitymin="50" velocitymax="100" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="5.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+      </StatusEffect>
+    </Turret>
+    <ConnectionPanel canbeselected="true" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <!-- break the item when a shutdown signal is received -->
+      <input name="shutdown" displayname="connection.shutdown">
+        <StatusEffect type="OnUse" target="This">
+          <ParticleEmitter particle="artifactspark" anglemin="0" anglemax="360" particleamount="20" velocitymin="100" velocitymax="500" />
+          <sound file="Content/Items/Alien/AlienCoil2.ogg" range="2000" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Contained">
+          <Remove />
+        </StatusEffect>
+      </input>
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+    </ConnectionPanel>
+  </Item>
 </Items>
