@@ -2036,7 +2036,11 @@
       <!-- Automatically snap after 300 seconds -->
       <!--<StatusEffect type="OnUse" target="This" Snapped="true" delay="1"/>-->
       <!-- Remove 1 second after snapping -->
-      <StatusEffect type="Always" target="This" delay="1" disabledeltatime="true" setvalue="true" SourcePullForce="100">
+     <StatusEffect type="OnUse" target="This" Snapped="true" delay="5"/>
+      <!-- Remove 1 second after snapping -->
+      <StatusEffect type="Always" target="This" delay="1" checkconditionalalways="true">
+        <Conditional Snapped="true" />
+        <Remove />
       </StatusEffect>
       <!-- Snap after 5 seconds if not stuck to anything -->
       <StatusEffect type="OnUse" target="This" Snapped="true" delay="5" checkconditionalalways="true">
