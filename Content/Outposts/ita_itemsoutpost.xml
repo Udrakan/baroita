@@ -578,7 +578,7 @@
           <Remove />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
-          <TriggerEvent identifier="ita_bar" />
+          <TriggerEvent identifier="ita_bar1" />
           <RequiredItem items="ethanol" type="Contained" />
           <Remove />
         </StatusEffect>
@@ -618,7 +618,7 @@
           <Remove />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
-          <TriggerEvent identifier="ita_canteen" />
+          <TriggerEvent identifier="ita_canteen1" />
           <RequiredItem items="creepingorange" type="Contained" />
           <Remove />
         </StatusEffect>
@@ -653,6 +653,7 @@
           <RequiredItem items="mudraptorshell" type="Contained" />
           <Remove />
         </StatusEffect>
+		
       </input>
     </ConnectionPanel>
     <ItemContainer canbeselected="true" capacity="1" itempos="0,0" hideitems="false" />

@@ -107,6 +107,234 @@
 				</Failure>
 			</CheckDataAction>
 		</ScriptedEvent>
+		<ScriptedEvent identifier="ita_canteen1">
+			<TagAction criteria="itemtag:canteentable1" tag="canteentable1" _npos="-3595.7273,65.36722" />
+			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_bartender" targettag="canteencook1" spawnpointtag="canteencook1" _npos="-2195.9033,56.7901" />
+			<Label name="canteencook1" _npos="-1890.9636,55.244232" />
+			<CheckReputationAction targettype="Location" condition="gt 0" _npos="-1508.6138,56.08255">
+				<Success>
+					<NPCWaitAction npctag="canteencook1" wait="true" _npos="-1116.9644,78.27637" />
+					<SetDataAction operation="Set" value="0" identifier="depositcanteen1" _npos="-753.1201,80.390884" />
+					<SetDataAction operation="Set" value="0" identifier="nocashcanteen1" _npos="-754.1396,243.10394" />
+					<ConversationAction text="&quot;Something warm to eat?&quot;" speakertag="canteencook1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="Warm Craw-Yum! soup [12 mk]" endconversation="true">
+							<SetDataAction operation="Set" value="1" identifier="canteen1op1" _npos="437.0307,4.243805" />
+							<SetDataAction operation="Set" value="-12" identifier="depositcanteen1" _npos="819.2318,4.865814" />
+							<Label name="depositcash" _npos="1184.9144,4.7407684" />
+							<CheckDataAction identifier="depositcanteen1" condition="gte 0" _npos="1994.6403,-37.065002">
+								<Success>
+									<Label name="return" _npos="1994.763,-130.27496" />
+									<CheckDataAction identifier="depositcanteen1" condition="gte 200" _npos="2379.6885,-231.36981">
+										<Success>
+											<SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="2379.1628,-684.5402" />
+											<SetDataAction operation="Add" value="-200" identifier="depositcanteen1" _npos="2378.3276,-846.904" />
+											<GoTo name="return" _npos="2378.4004,-945.9211" />
+										</Success>
+										<Failure>
+											<CheckDataAction identifier="depositcanteen1" condition="gte 100" _npos="2798.9253,-230.95618">
+												<Success>
+													<SpawnAction itemidentifier="ita_bill100" targetinventory="customer" _npos="2800.9456,-686.4027" />
+													<SetDataAction operation="Add" value="-100" identifier="depositcanteen1" _npos="2800.6204,-848.9049" />
+													<GoTo name="return" _npos="2799.6467,-943.8685" />
+												</Success>
+												<Failure>
+													<CheckDataAction identifier="depositcanteen1" condition="gte 50" _npos="3175.9202,-227.88037">
+														<Success>
+															<SpawnAction itemidentifier="ita_bill50" targetinventory="customer" _npos="3174.8176,-674.10144" />
+															<SetDataAction operation="Add" value="-50" identifier="depositcanteen1" _npos="3173.973,-841.63306" />
+															<GoTo name="return" _npos="3173.889,-936.1621" />
+														</Success>
+														<Failure>
+															<CheckDataAction identifier="depositcanteen1" condition="gte 5" _npos="3562.474,-223.42236">
+																<Success>
+																	<SpawnAction itemidentifier="ita_coin5" targetinventory="customer" _npos="3563.9531,-675.24927" />
+																	<SetDataAction operation="Add" value="-5" identifier="depositcanteen1" _npos="3563.3877,-836.70825" />
+																	<GoTo name="return" _npos="3563.3613,-933.6582" />
+																</Success>
+																<Failure>
+																	<CheckDataAction identifier="depositcanteen1" condition="gte 1" _npos="3944.5488,-221.9187">
+																		<Success>
+																			<SpawnAction itemidentifier="ita_coin1" targetinventory="customer" _npos="3944.413,-675.11035" />
+																			<SetDataAction operation="Add" value="-1" identifier="depositcanteen1" _npos="3945.087,-836.7053" />
+																			<GoTo name="return" _npos="3944.3184,-933.30054" />
+																		</Success>
+																		<Failure>
+																			<CheckDataAction identifier="nocashcanteen1" condition="eq 1" _npos="4509.685,-157.76965">
+																				<Success>
+																					<ConversationAction text="&quot;Come back with more money.&quot;" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
+																					<GoTo name="end" _npos="4883.169,-591.94916" />
+																				</Success>
+																				<Failure>
+																					<StatusEffectAction targettag="canteentable1" _npos="4960.7363,-294.79236">
+																						<StatusEffect _npos="4961.413,-193.60559">
+																							<Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_fishtailpour.ogg" range="500" _npos="4961.747,-91.940796" />
+																						</StatusEffect>
+																					</StatusEffectAction>
+																					<CheckDataAction identifier="canteen1op1" condition="eq 1" _npos="5401.7764,-1352.7748">
+																						<Success>
+																							<SpawnAction lootingisstealing="false" itemidentifier="ita_crawyum" targetinventory="canteentable1" ignorebyai="true" _npos="5401.936,-1159.4307" />
+																							<Label name="end" _npos="8682.424,-1345.6313" />
+																							<NPCWaitAction npctag="canteencook1" wait="true" _npos="9108.876,-1345.4263" />
+																							<ClearTagAction tag="customer" _npos="9736.438,-1345.706" />
+																							<SetDataAction operation="Set" value="0" identifier="canteen1op1" _npos="9733.509,-1233.824" />
+																							<SetDataAction operation="Set" value="0" identifier="canteen1op2" _npos="9732.665,-1062.5112" />
+																							<SetDataAction operation="Set" value="0" identifier="canteen1op3" _npos="9733.017,-891.14404" />
+																							<SetDataAction operation="Set" value="0" identifier="canteen1op4" _npos="9732.075,-726.4515" />
+																							<SetDataAction operation="Set" value="0" identifier="canteen1op5" _npos="9733.017,-563.22473" />
+																							<SetDataAction operation="Set" value="0" identifier="canteen1op6" _npos="9734.047,-399.19836" />
+																							<SetDataAction operation="Set" value="0" identifier="canteen1op7" _npos="9734.048,-237.09937" />
+																							<GoTo name="canteencook1" _npos="9733.56,-74.84155" />
+																						</Success>
+																						<Failure>
+																							<GoTo name="end" _npos="8254.137,-247.18066" />
+																						</Failure>
+																					</CheckDataAction>
+																				</Failure>
+																			</CheckDataAction>
+																		</Failure>
+																	</CheckDataAction>
+																</Failure>
+															</CheckDataAction>
+														</Failure>
+													</CheckDataAction>
+												</Failure>
+											</CheckDataAction>
+										</Failure>
+									</CheckDataAction>
+								</Success>
+								<Failure>
+									<CheckItemAction targettag="customer" itemidentifiers="ita_coin1" _npos="2386.0745,283.68066">
+										<Success>
+											<RemoveItemAction targettag="customer" itemidentifier="ita_coin1" amount="1" _npos="2387.397,442.73093" />
+											<SetDataAction operation="Add" value="1" identifier="depositcanteen1" _npos="2385.2683,604.46576" />
+											<GoTo name="depositcash" _npos="2385.3264,767.7281" />
+										</Success>
+										<Failure>
+											<CheckItemAction targettag="customer" itemidentifiers="ita_coin5" _npos="2800.5413,293.61014">
+												<Success>
+													<RemoveItemAction targettag="customer" itemidentifier="ita_coin5" amount="1" _npos="2800.543,455.56757" />
+													<SetDataAction operation="Add" value="5" identifier="depositcanteen1" _npos="2799.8826,618.0746" />
+													<GoTo name="depositcash" _npos="2800.585,779.6144" />
+												</Success>
+												<Failure>
+													<CheckItemAction targettag="customer" itemidentifiers="ita_bill50" _npos="3173.2302,285.41183">
+														<Success>
+															<RemoveItemAction targettag="customer" itemidentifier="ita_bill50" amount="1" _npos="3173.152,448.727" />
+															<SetDataAction operation="Add" value="50" identifier="depositcanteen1" _npos="3173.1096,610.42395" />
+															<GoTo name="depositcash" _npos="3173.0225,771.23944" />
+														</Success>
+														<Failure>
+															<CheckItemAction targettag="customer" itemidentifiers="ita_bill100" _npos="3543.9312,286.34448">
+																<Success>
+																	<RemoveItemAction targettag="customer" itemidentifier="ita_bill100" amount="1" _npos="3543.7131,448.28503" />
+																	<SetDataAction operation="Add" value="100" identifier="depositcanteen1" _npos="3542.1248,610.589" />
+																	<GoTo name="depositcash" _npos="3544.436,775.60364" />
+																</Success>
+																<Failure>
+																	<CheckItemAction targettag="customer" itemidentifiers="ita_bill200" _npos="3934.445,291.8911">
+																		<Success>
+																			<RemoveItemAction targettag="customer" itemidentifier="ita_bill200" amount="1" _npos="3937.5427,452.46378" />
+																			<SetDataAction operation="Add" value="200" identifier="depositcanteen1" _npos="3936.6948,615.07684" />
+																			<GoTo name="depositcash" _npos="3936.679,777.9497" />
+																		</Success>
+																		<Failure>
+																			<CheckDataAction identifier="depositcanteen1" condition="gt 0" _npos="4493.946,355.50256">
+																				<Success>
+																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<GoTo name="canteencook1" _npos="5281.707,387.06558" />
+																				</Success>
+																				<Failure>
+																					<SetDataAction operation="Set" value="1" identifier="nocashcanteen1" _npos="4493.303,552.628" />
+																					<CheckDataAction identifier="canteen1op1" condition="eq 1" _npos="4492.1553,748.407">
+																						<Success>
+																							<SetDataAction operation="Add" value="12" identifier="depositcanteen1" _npos="4908.7563,809.3996" />
+																							<GoTo name="return" _npos="5270.9043,818.4627" />
+																						</Success>
+																						<Failure>
+																							<CheckDataAction identifier="canteen1op2" condition="eq 1" _npos="4493.3545,965.6952">
+																								<Success>
+																									<SetDataAction operation="Add" value="80" identifier="depositcanteen1" _npos="4911.2646,991.7968" />
+																									<GoTo name="return" _npos="5286.4883,982.86914" />
+																								</Success>
+																								<Failure>
+																									<CheckDataAction identifier="canteen1op3" condition="eq 1" _npos="4493.1084,1168.2041">
+																										<Success>
+																											<SetDataAction operation="Add" value="145" identifier="depositcanteen1" _npos="4907.5312,1173.8647" />
+																											<GoTo name="return" _npos="5278.0054,1175.9164" />
+																										</Success>
+																										<Failure>
+																											<CheckDataAction identifier="canteen1op4" condition="eq 1" _npos="4492.044,1375.046">
+																												<Success>
+																													<SetDataAction operation="Add" value="65" identifier="depositcanteen1" _npos="4915.648,1374.3693" />
+																													<GoTo name="return" _npos="5275.584,1371.4365" />
+																												</Success>
+																												<Failure>
+																													<CheckDataAction identifier="canteen1op5" condition="eq 1" _npos="4491.2246,1576.6703">
+																														<Success>
+																															<SetDataAction operation="Add" value="34" identifier="depositcanteen1" _npos="4912.256,1579.9886" />
+																															<GoTo name="return" _npos="5275.584,1584.4843" />
+																														</Success>
+																														<Failure>
+																															<CheckDataAction identifier="canteen1op6" condition="eq 1" _npos="4491.2246,1783.2435">
+																																<Success>
+																																	<SetDataAction operation="Add" value="32" identifier="depositcanteen1" _npos="4911.8774,1779.2871" />
+																																	<GoTo name="return" _npos="5276.7944,1774.6345" />
+																																</Success>
+																																<Failure>
+																																	<CheckDataAction identifier="canteen1op7" condition="eq 1" _npos="4489.9062,1986.4714">
+																																		<Success>
+																																			<SetDataAction operation="Add" value="35" identifier="depositcanteen1" _npos="4914.444,1988.2087" />
+																																			<GoTo name="return" _npos="5274.374,1985.1292" />
+																																		</Success>
+																																		<Failure>
+																																			<CheckDataAction identifier="canteen1op7" condition="eq 1" _npos="4487.4224,2190.8037">
+																																				<Success>
+																																					<SetDataAction operation="Add" value="38" identifier="depositcanteen1" _npos="4914.416,2197.3416" />
+																																					<GoTo name="return" _npos="5274.005,2199.358" />
+																																				</Success>
+																																			</CheckDataAction>
+																																		</Failure>
+																																	</CheckDataAction>
+																																</Failure>
+																															</CheckDataAction>
+																														</Failure>
+																													</CheckDataAction>
+																												</Failure>
+																											</CheckDataAction>
+																										</Failure>
+																									</CheckDataAction>
+																								</Failure>
+																							</CheckDataAction>
+																						</Failure>
+																					</CheckDataAction>
+																				</Failure>
+																			</CheckDataAction>
+																		</Failure>
+																	</CheckItemAction>
+																</Failure>
+															</CheckItemAction>
+														</Failure>
+													</CheckItemAction>
+												</Failure>
+											</CheckItemAction>
+										</Failure>
+									</CheckItemAction>
+								</Failure>
+							</CheckDataAction>
+						</Option>
+						<Option text="&quot;No, thanks.&quot;" endconversation="true">
+							<GoTo name="canteencook1" _npos="435.41022,1395.0886" />
+						</Option>
+						<Option text="" endconversation="true">
+							<GoTo name="canteencook1" _npos="435.19702,1298.9341" />
+						</Option>
+					</ConversationAction>
+				</Success>
+				<Failure>
+					<ConversationAction text="&quot;You are nothing but trouble. Get out!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="canteencook1" dialogtype="Small" _npos="-1504.7175,281.90598" />
+				</Failure>
+			</CheckReputationAction>
+		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_bar">
 			<TagAction criteria="itemtag:ita_bartable" tag="bartable" _npos="-248.64667,8.299942" />
 			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_bartender" targettag="bar" spawnpointtag="bar" _npos="137.96439,8.042236" />
@@ -151,6 +379,234 @@
 					<GoTo name="drink" _npos="1677.9885,193.25157" />
 				</Failure>
 			</CheckDataAction>
+		</ScriptedEvent>
+		<ScriptedEvent identifier="ita_bar1">
+			<TagAction criteria="itemtag:bartable1" tag="bartable1" _npos="-3595.7273,65.36722" />
+			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_bartender" targettag="bartender1" spawnpointtag="bartender1" _npos="-2195.9033,56.7901" />
+			<Label name="bartender1" _npos="-1890.9636,55.244232" />
+			<CheckReputationAction targettype="Location" condition="gt 0" _npos="-1508.6138,56.08255">
+				<Success>
+					<NPCWaitAction npctag="bartender1" wait="true" _npos="-1116.9644,78.27637" />
+					<SetDataAction operation="Set" value="0" identifier="depositbar1" _npos="-753.1201,80.390884" />
+					<SetDataAction operation="Set" value="0" identifier="nocashbar1" _npos="-754.1396,243.10394" />
+					<ConversationAction text="&quot;Do you want a drink?&quot;" speakertag="bartender1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="Fishtail Cocktail [32 mk]" endconversation="true">
+							<SetDataAction operation="Set" value="1" identifier="bar1op1" _npos="437.0307,4.243805" />
+							<SetDataAction operation="Set" value="-32" identifier="depositbar1" _npos="819.2318,4.865814" />
+							<Label name="depositcash" _npos="1184.9144,4.7407684" />
+							<CheckDataAction identifier="depositbar1" condition="gte 0" _npos="1994.6403,-37.065002">
+								<Success>
+									<Label name="return" _npos="1994.763,-130.27496" />
+									<CheckDataAction identifier="depositbar1" condition="gte 200" _npos="2379.6885,-231.36981">
+										<Success>
+											<SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="2379.1628,-684.5402" />
+											<SetDataAction operation="Add" value="-200" identifier="depositbar1" _npos="2378.3276,-846.904" />
+											<GoTo name="return" _npos="2378.4004,-945.9211" />
+										</Success>
+										<Failure>
+											<CheckDataAction identifier="depositbar1" condition="gte 100" _npos="2798.9253,-230.95618">
+												<Success>
+													<SpawnAction itemidentifier="ita_bill100" targetinventory="customer" _npos="2800.9456,-686.4027" />
+													<SetDataAction operation="Add" value="-100" identifier="depositbar1" _npos="2800.6204,-848.9049" />
+													<GoTo name="return" _npos="2799.6467,-943.8685" />
+												</Success>
+												<Failure>
+													<CheckDataAction identifier="depositbar1" condition="gte 50" _npos="3175.9202,-227.88037">
+														<Success>
+															<SpawnAction itemidentifier="ita_bill50" targetinventory="customer" _npos="3174.8176,-674.10144" />
+															<SetDataAction operation="Add" value="-50" identifier="depositbar1" _npos="3173.973,-841.63306" />
+															<GoTo name="return" _npos="3173.889,-936.1621" />
+														</Success>
+														<Failure>
+															<CheckDataAction identifier="depositbar1" condition="gte 5" _npos="3562.474,-223.42236">
+																<Success>
+																	<SpawnAction itemidentifier="ita_coin5" targetinventory="customer" _npos="3563.9531,-675.24927" />
+																	<SetDataAction operation="Add" value="-5" identifier="depositbar1" _npos="3563.3877,-836.70825" />
+																	<GoTo name="return" _npos="3563.3613,-933.6582" />
+																</Success>
+																<Failure>
+																	<CheckDataAction identifier="depositbar1" condition="gte 1" _npos="3944.5488,-221.9187">
+																		<Success>
+																			<SpawnAction itemidentifier="ita_coin1" targetinventory="customer" _npos="3944.413,-675.11035" />
+																			<SetDataAction operation="Add" value="-1" identifier="depositbar1" _npos="3945.087,-836.7053" />
+																			<GoTo name="return" _npos="3944.3184,-933.30054" />
+																		</Success>
+																		<Failure>
+																			<CheckDataAction identifier="nocashbar1" condition="eq 1" _npos="4509.685,-157.76965">
+																				<Success>
+																					<ConversationAction text="&quot;Come back with more money.&quot;" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
+																					<GoTo name="end" _npos="4883.169,-591.94916" />
+																				</Success>
+																				<Failure>
+																					<StatusEffectAction targettag="bartable1" _npos="4960.7363,-294.79236">
+																						<StatusEffect _npos="4961.413,-193.60559">
+																							<Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_fishtailpour.ogg" range="500" _npos="4961.747,-91.940796" />
+																						</StatusEffect>
+																					</StatusEffectAction>
+																					<CheckDataAction identifier="bar1op1" condition="eq 1" _npos="5401.7764,-1352.7748">
+																						<Success>
+																							<SpawnAction lootingisstealing="false" itemidentifier="ita_drinkfishtail" targetinventory="bartable1" ignorebyai="true" _npos="5401.936,-1159.4307" />
+																							<Label name="end" _npos="8682.424,-1345.6313" />
+																							<NPCWaitAction npctag="bartender1" wait="true" _npos="9108.876,-1345.4263" />
+																							<ClearTagAction tag="customer" _npos="9736.438,-1345.706" />
+																							<SetDataAction operation="Set" value="0" identifier="bar1op1" _npos="9733.509,-1233.824" />
+																							<SetDataAction operation="Set" value="0" identifier="bar1op2" _npos="9732.665,-1062.5112" />
+																							<SetDataAction operation="Set" value="0" identifier="bar1op3" _npos="9733.017,-891.14404" />
+																							<SetDataAction operation="Set" value="0" identifier="bar1op4" _npos="9732.075,-726.4515" />
+																							<SetDataAction operation="Set" value="0" identifier="bar1op5" _npos="9733.017,-563.22473" />
+																							<SetDataAction operation="Set" value="0" identifier="bar1op6" _npos="9734.047,-399.19836" />
+																							<SetDataAction operation="Set" value="0" identifier="bar1op7" _npos="9734.048,-237.09937" />
+																							<GoTo name="bartender1" _npos="9733.56,-74.84155" />
+																						</Success>
+																						<Failure>
+																							<GoTo name="end" _npos="8254.137,-247.18066" />
+																						</Failure>
+																					</CheckDataAction>
+																				</Failure>
+																			</CheckDataAction>
+																		</Failure>
+																	</CheckDataAction>
+																</Failure>
+															</CheckDataAction>
+														</Failure>
+													</CheckDataAction>
+												</Failure>
+											</CheckDataAction>
+										</Failure>
+									</CheckDataAction>
+								</Success>
+								<Failure>
+									<CheckItemAction targettag="customer" itemidentifiers="ita_coin1" _npos="2386.0745,283.68066">
+										<Success>
+											<RemoveItemAction targettag="customer" itemidentifier="ita_coin1" amount="1" _npos="2387.397,442.73093" />
+											<SetDataAction operation="Add" value="1" identifier="depositbar1" _npos="2385.2683,604.46576" />
+											<GoTo name="depositcash" _npos="2385.3264,767.7281" />
+										</Success>
+										<Failure>
+											<CheckItemAction targettag="customer" itemidentifiers="ita_coin5" _npos="2800.5413,293.61014">
+												<Success>
+													<RemoveItemAction targettag="customer" itemidentifier="ita_coin5" amount="1" _npos="2800.543,455.56757" />
+													<SetDataAction operation="Add" value="5" identifier="depositbar1" _npos="2799.8826,618.0746" />
+													<GoTo name="depositcash" _npos="2800.585,779.6144" />
+												</Success>
+												<Failure>
+													<CheckItemAction targettag="customer" itemidentifiers="ita_bill50" _npos="3173.2302,285.41183">
+														<Success>
+															<RemoveItemAction targettag="customer" itemidentifier="ita_bill50" amount="1" _npos="3173.152,448.727" />
+															<SetDataAction operation="Add" value="50" identifier="depositbar1" _npos="3173.1096,610.42395" />
+															<GoTo name="depositcash" _npos="3173.0225,771.23944" />
+														</Success>
+														<Failure>
+															<CheckItemAction targettag="customer" itemidentifiers="ita_bill100" _npos="3543.9312,286.34448">
+																<Success>
+																	<RemoveItemAction targettag="customer" itemidentifier="ita_bill100" amount="1" _npos="3543.7131,448.28503" />
+																	<SetDataAction operation="Add" value="100" identifier="depositbar1" _npos="3542.1248,610.589" />
+																	<GoTo name="depositcash" _npos="3544.436,775.60364" />
+																</Success>
+																<Failure>
+																	<CheckItemAction targettag="customer" itemidentifiers="ita_bill200" _npos="3934.445,291.8911">
+																		<Success>
+																			<RemoveItemAction targettag="customer" itemidentifier="ita_bill200" amount="1" _npos="3937.5427,452.46378" />
+																			<SetDataAction operation="Add" value="200" identifier="depositbar1" _npos="3936.6948,615.07684" />
+																			<GoTo name="depositcash" _npos="3936.679,777.9497" />
+																		</Success>
+																		<Failure>
+																			<CheckDataAction identifier="depositbar1" condition="gt 0" _npos="4493.946,355.50256">
+																				<Success>
+																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<GoTo name="bartender1" _npos="5281.707,387.06558" />
+																				</Success>
+																				<Failure>
+																					<SetDataAction operation="Set" value="1" identifier="nocashbar1" _npos="4493.303,552.628" />
+																					<CheckDataAction identifier="bar1op1" condition="eq 1" _npos="4492.1553,748.407">
+																						<Success>
+																							<SetDataAction operation="Add" value="32" identifier="depositbar1" _npos="4908.7563,809.3996" />
+																							<GoTo name="return" _npos="5270.9043,818.4627" />
+																						</Success>
+																						<Failure>
+																							<CheckDataAction identifier="bar1op2" condition="eq 1" _npos="4493.3545,965.6952">
+																								<Success>
+																									<SetDataAction operation="Add" value="80" identifier="depositbar1" _npos="4911.2646,991.7968" />
+																									<GoTo name="return" _npos="5286.4883,982.86914" />
+																								</Success>
+																								<Failure>
+																									<CheckDataAction identifier="bar1op3" condition="eq 1" _npos="4493.1084,1168.2041">
+																										<Success>
+																											<SetDataAction operation="Add" value="145" identifier="depositbar1" _npos="4907.5312,1173.8647" />
+																											<GoTo name="return" _npos="5278.0054,1175.9164" />
+																										</Success>
+																										<Failure>
+																											<CheckDataAction identifier="bar1op4" condition="eq 1" _npos="4492.044,1375.046">
+																												<Success>
+																													<SetDataAction operation="Add" value="65" identifier="depositbar1" _npos="4915.648,1374.3693" />
+																													<GoTo name="return" _npos="5275.584,1371.4365" />
+																												</Success>
+																												<Failure>
+																													<CheckDataAction identifier="bar1op5" condition="eq 1" _npos="4491.2246,1576.6703">
+																														<Success>
+																															<SetDataAction operation="Add" value="34" identifier="depositbar1" _npos="4912.256,1579.9886" />
+																															<GoTo name="return" _npos="5275.584,1584.4843" />
+																														</Success>
+																														<Failure>
+																															<CheckDataAction identifier="bar1op6" condition="eq 1" _npos="4491.2246,1783.2435">
+																																<Success>
+																																	<SetDataAction operation="Add" value="32" identifier="depositbar1" _npos="4911.8774,1779.2871" />
+																																	<GoTo name="return" _npos="5276.7944,1774.6345" />
+																																</Success>
+																																<Failure>
+																																	<CheckDataAction identifier="bar1op7" condition="eq 1" _npos="4489.9062,1986.4714">
+																																		<Success>
+																																			<SetDataAction operation="Add" value="35" identifier="depositbar1" _npos="4914.444,1988.2087" />
+																																			<GoTo name="return" _npos="5274.374,1985.1292" />
+																																		</Success>
+																																		<Failure>
+																																			<CheckDataAction identifier="bar1op7" condition="eq 1" _npos="4487.4224,2190.8037">
+																																				<Success>
+																																					<SetDataAction operation="Add" value="38" identifier="depositbar1" _npos="4914.416,2197.3416" />
+																																					<GoTo name="return" _npos="5274.005,2199.358" />
+																																				</Success>
+																																			</CheckDataAction>
+																																		</Failure>
+																																	</CheckDataAction>
+																																</Failure>
+																															</CheckDataAction>
+																														</Failure>
+																													</CheckDataAction>
+																												</Failure>
+																											</CheckDataAction>
+																										</Failure>
+																									</CheckDataAction>
+																								</Failure>
+																							</CheckDataAction>
+																						</Failure>
+																					</CheckDataAction>
+																				</Failure>
+																			</CheckDataAction>
+																		</Failure>
+																	</CheckItemAction>
+																</Failure>
+															</CheckItemAction>
+														</Failure>
+													</CheckItemAction>
+												</Failure>
+											</CheckItemAction>
+										</Failure>
+									</CheckItemAction>
+								</Failure>
+							</CheckDataAction>
+						</Option>
+						<Option text="&quot;No, thanks.&quot;" endconversation="true">
+							<GoTo name="bartender1" _npos="435.41022,1395.0886" />
+						</Option>
+						<Option text="" endconversation="true">
+							<GoTo name="bartender1" _npos="435.19702,1298.9341" />
+						</Option>
+					</ConversationAction>
+				</Success>
+				<Failure>
+					<ConversationAction text="&quot;You are nothing but trouble. Get out!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="bartender1" dialogtype="Small" _npos="-1504.7175,281.90598" />
+				</Failure>
+			</CheckReputationAction>
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_clothier1">
 			<TagAction criteria="itemtag:ita_clothiertablec1" tag="clothiertablec1" _npos="-3595.7273,65.36722" />
@@ -1439,7 +1895,7 @@
 				</Failure>
 			</CheckDataAction>
 		</ScriptedEvent>
-		<ScriptedEvent identifier="ita_doc1">
+		<ScriptedEvent identifier="ita_doc">
 			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_doctor" targettag="doc" spawnpointtag="clinic" />
 			<Label name="doc" />
 			<NPCWaitAction npctag="doc" wait="true" />
@@ -1468,6 +1924,233 @@
 				</Success>
 				<Failure>
 					<ConversationAction text="&quot;You've done nothing to advance the research here. Out.&quot; [OUTPOST REP LOW]" speakertag="bar" dialogtype="Small" _npos="549.04346,437.54233" />
+				</Failure>
+			</CheckReputationAction>
+		</ScriptedEvent>				
+		<ScriptedEvent identifier="ita_doc1">
+			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_doctor" targettag="doc" spawnpointtag="clinic1" />
+			<Label name="doc" _npos="-1890.9636,55.244232" />
+			<CheckReputationAction targettype="Location" condition="gt 0" _npos="-1508.6138,56.08255">
+				<Success>
+					<NPCWaitAction npctag="doc" wait="true" />
+					<SetDataAction operation="Set" value="0" identifier="depositdoc1" _npos="-753.1201,80.390884" />
+					<SetDataAction operation="Set" value="0" identifier="nocashdoc1" _npos="-754.1396,243.10394" />
+					<ConversationAction text="&quot;I can heal your entire crew if you gather them here.&quot;" speakertag="doc" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="Heal nearby crew [200 mk]" endconversation="true">
+							<SetDataAction operation="Set" value="1" identifier="doc1op1" _npos="437.0307,4.243805" />
+							<SetDataAction operation="Set" value="-200" identifier="depositdoc1" _npos="819.2318,4.865814" />
+							<Label name="depositcash" _npos="1184.9144,4.7407684" />
+							<CheckDataAction identifier="depositdoc1" condition="gte 0" _npos="1994.6403,-37.065002">
+								<Success>
+									<Label name="return" _npos="1994.763,-130.27496" />
+									<CheckDataAction identifier="depositdoc1" condition="gte 200" _npos="2379.6885,-231.36981">
+										<Success>
+											<SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="2379.1628,-684.5402" />
+											<SetDataAction operation="Add" value="-200" identifier="depositdoc1" _npos="2378.3276,-846.904" />
+											<GoTo name="return" _npos="2378.4004,-945.9211" />
+										</Success>
+										<Failure>
+											<CheckDataAction identifier="depositdoc1" condition="gte 100" _npos="2798.9253,-230.95618">
+												<Success>
+													<SpawnAction itemidentifier="ita_bill100" targetinventory="customer" _npos="2800.9456,-686.4027" />
+													<SetDataAction operation="Add" value="-100" identifier="depositdoc1" _npos="2800.6204,-848.9049" />
+													<GoTo name="return" _npos="2799.6467,-943.8685" />
+												</Success>
+												<Failure>
+													<CheckDataAction identifier="depositdoc1" condition="gte 50" _npos="3175.9202,-227.88037">
+														<Success>
+															<SpawnAction itemidentifier="ita_bill50" targetinventory="customer" _npos="3174.8176,-674.10144" />
+															<SetDataAction operation="Add" value="-50" identifier="depositdoc1" _npos="3173.973,-841.63306" />
+															<GoTo name="return" _npos="3173.889,-936.1621" />
+														</Success>
+														<Failure>
+															<CheckDataAction identifier="depositdoc1" condition="gte 5" _npos="3562.474,-223.42236">
+																<Success>
+																	<SpawnAction itemidentifier="ita_coin5" targetinventory="customer" _npos="3563.9531,-675.24927" />
+																	<SetDataAction operation="Add" value="-5" identifier="depositdoc1" _npos="3563.3877,-836.70825" />
+																	<GoTo name="return" _npos="3563.3613,-933.6582" />
+																</Success>
+																<Failure>
+																	<CheckDataAction identifier="depositdoc1" condition="gte 1" _npos="3944.5488,-221.9187">
+																		<Success>
+																			<SpawnAction itemidentifier="ita_coin1" targetinventory="customer" _npos="3944.413,-675.11035" />
+																			<SetDataAction operation="Add" value="-1" identifier="depositdoc1" _npos="3945.087,-836.7053" />
+																			<GoTo name="return" _npos="3944.3184,-933.30054" />
+																		</Success>
+																		<Failure>
+																			<CheckDataAction identifier="nocashdoc1" condition="eq 1" _npos="4509.685,-157.76965">
+																				<Success>
+																					<ConversationAction text="&quot;Come back with more money.&quot;" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
+																					<GoTo name="end" _npos="4883.169,-591.94916" />
+																				</Success>
+																				<Failure>
+																					<CheckDataAction identifier="doc1op1" condition="eq 1" _npos="5401.7764,-1352.7748">
+																						<Success>
+																							<SpawnAction lootingisstealing="false" itemidentifier="healmist" targetinventory="doc" ignorebyai="true" />
+																							<StatusEffectAction targettag="doc" >
+																								<StatusEffect _npos="3088.7346,-977.94727">
+																									<Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_cashregister.ogg" range="500" />
+																								</StatusEffect>
+																							</StatusEffectAction>
+																							<Label name="end" _npos="8682.424,-1345.6313" />
+																							<NPCWaitAction npctag="doc" wait="true" _npos="9108.876,-1345.4263" />
+																							<ClearTagAction tag="customer" _npos="9736.438,-1345.706" />
+																							<SetDataAction operation="Set" value="0" identifier="doc1op1" _npos="9733.509,-1233.824" />
+																							<SetDataAction operation="Set" value="0" identifier="doc1op2" _npos="9732.665,-1062.5112" />
+																							<SetDataAction operation="Set" value="0" identifier="doc1op3" _npos="9733.017,-891.14404" />
+																							<SetDataAction operation="Set" value="0" identifier="doc1op4" _npos="9732.075,-726.4515" />
+																							<SetDataAction operation="Set" value="0" identifier="doc1op5" _npos="9733.017,-563.22473" />
+																							<SetDataAction operation="Set" value="0" identifier="doc1op6" _npos="9734.047,-399.19836" />
+																							<SetDataAction operation="Set" value="0" identifier="doc1op7" _npos="9734.048,-237.09937" />
+																							<GoTo name="doc" _npos="9733.56,-74.84155" />
+																						</Success>
+																						<Failure>
+																							<GoTo name="end" _npos="8254.137,-247.18066" />
+																						</Failure>
+																					</CheckDataAction>
+																				</Failure>
+																			</CheckDataAction>
+																		</Failure>
+																	</CheckDataAction>
+																</Failure>
+															</CheckDataAction>
+														</Failure>
+													</CheckDataAction>
+												</Failure>
+											</CheckDataAction>
+										</Failure>
+									</CheckDataAction>
+								</Success>
+								<Failure>
+									<CheckItemAction targettag="customer" itemidentifiers="ita_coin1" _npos="2386.0745,283.68066">
+										<Success>
+											<RemoveItemAction targettag="customer" itemidentifier="ita_coin1" amount="1" _npos="2387.397,442.73093" />
+											<SetDataAction operation="Add" value="1" identifier="depositdoc1" _npos="2385.2683,604.46576" />
+											<GoTo name="depositcash" _npos="2385.3264,767.7281" />
+										</Success>
+										<Failure>
+											<CheckItemAction targettag="customer" itemidentifiers="ita_coin5" _npos="2800.5413,293.61014">
+												<Success>
+													<RemoveItemAction targettag="customer" itemidentifier="ita_coin5" amount="1" _npos="2800.543,455.56757" />
+													<SetDataAction operation="Add" value="5" identifier="depositdoc1" _npos="2799.8826,618.0746" />
+													<GoTo name="depositcash" _npos="2800.585,779.6144" />
+												</Success>
+												<Failure>
+													<CheckItemAction targettag="customer" itemidentifiers="ita_bill50" _npos="3173.2302,285.41183">
+														<Success>
+															<RemoveItemAction targettag="customer" itemidentifier="ita_bill50" amount="1" _npos="3173.152,448.727" />
+															<SetDataAction operation="Add" value="50" identifier="depositdoc1" _npos="3173.1096,610.42395" />
+															<GoTo name="depositcash" _npos="3173.0225,771.23944" />
+														</Success>
+														<Failure>
+															<CheckItemAction targettag="customer" itemidentifiers="ita_bill100" _npos="3543.9312,286.34448">
+																<Success>
+																	<RemoveItemAction targettag="customer" itemidentifier="ita_bill100" amount="1" _npos="3543.7131,448.28503" />
+																	<SetDataAction operation="Add" value="100" identifier="depositdoc1" _npos="3542.1248,610.589" />
+																	<GoTo name="depositcash" _npos="3544.436,775.60364" />
+																</Success>
+																<Failure>
+																	<CheckItemAction targettag="customer" itemidentifiers="ita_bill200" _npos="3934.445,291.8911">
+																		<Success>
+																			<RemoveItemAction targettag="customer" itemidentifier="ita_bill200" amount="1" _npos="3937.5427,452.46378" />
+																			<SetDataAction operation="Add" value="200" identifier="depositdoc1" _npos="3936.6948,615.07684" />
+																			<GoTo name="depositcash" _npos="3936.679,777.9497" />
+																		</Success>
+																		<Failure>
+																			<CheckDataAction identifier="depositdoc1" condition="gt 0" _npos="4493.946,355.50256">
+																				<Success>
+																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<GoTo name="doc" _npos="5281.707,387.06558" />
+																				</Success>
+																				<Failure>
+																					<SetDataAction operation="Set" value="1" identifier="nocashdoc1" _npos="4493.303,552.628" />
+																					<CheckDataAction identifier="doc1op1" condition="eq 1" _npos="4492.1553,748.407">
+																						<Success>
+																							<SetDataAction operation="Add" value="200" identifier="depositdoc1" _npos="4908.7563,809.3996" />
+																							<GoTo name="return" _npos="5270.9043,818.4627" />
+																						</Success>
+																						<Failure>
+																							<CheckDataAction identifier="doc1op2" condition="eq 1" _npos="4493.3545,965.6952">
+																								<Success>
+																									<SetDataAction operation="Add" value="80" identifier="depositdoc1" _npos="4911.2646,991.7968" />
+																									<GoTo name="return" _npos="5286.4883,982.86914" />
+																								</Success>
+																								<Failure>
+																									<CheckDataAction identifier="doc1op3" condition="eq 1" _npos="4493.1084,1168.2041">
+																										<Success>
+																											<SetDataAction operation="Add" value="145" identifier="depositdoc1" _npos="4907.5312,1173.8647" />
+																											<GoTo name="return" _npos="5278.0054,1175.9164" />
+																										</Success>
+																										<Failure>
+																											<CheckDataAction identifier="doc1op4" condition="eq 1" _npos="4492.044,1375.046">
+																												<Success>
+																													<SetDataAction operation="Add" value="65" identifier="depositdoc1" _npos="4915.648,1374.3693" />
+																													<GoTo name="return" _npos="5275.584,1371.4365" />
+																												</Success>
+																												<Failure>
+																													<CheckDataAction identifier="doc1op5" condition="eq 1" _npos="4491.2246,1576.6703">
+																														<Success>
+																															<SetDataAction operation="Add" value="34" identifier="depositdoc1" _npos="4912.256,1579.9886" />
+																															<GoTo name="return" _npos="5275.584,1584.4843" />
+																														</Success>
+																														<Failure>
+																															<CheckDataAction identifier="doc1op6" condition="eq 1" _npos="4491.2246,1783.2435">
+																																<Success>
+																																	<SetDataAction operation="Add" value="32" identifier="depositdoc1" _npos="4911.8774,1779.2871" />
+																																	<GoTo name="return" _npos="5276.7944,1774.6345" />
+																																</Success>
+																																<Failure>
+																																	<CheckDataAction identifier="doc1op7" condition="eq 1" _npos="4489.9062,1986.4714">
+																																		<Success>
+																																			<SetDataAction operation="Add" value="35" identifier="depositdoc1" _npos="4914.444,1988.2087" />
+																																			<GoTo name="return" _npos="5274.374,1985.1292" />
+																																		</Success>
+																																		<Failure>
+																																			<CheckDataAction identifier="doc1op7" condition="eq 1" _npos="4487.4224,2190.8037">
+																																				<Success>
+																																					<SetDataAction operation="Add" value="38" identifier="depositdoc1" _npos="4914.416,2197.3416" />
+																																					<GoTo name="return" _npos="5274.005,2199.358" />
+																																				</Success>
+																																			</CheckDataAction>
+																																		</Failure>
+																																	</CheckDataAction>
+																																</Failure>
+																															</CheckDataAction>
+																														</Failure>
+																													</CheckDataAction>
+																												</Failure>
+																											</CheckDataAction>
+																										</Failure>
+																									</CheckDataAction>
+																								</Failure>
+																							</CheckDataAction>
+																						</Failure>
+																					</CheckDataAction>
+																				</Failure>
+																			</CheckDataAction>
+																		</Failure>
+																	</CheckItemAction>
+																</Failure>
+															</CheckItemAction>
+														</Failure>
+													</CheckItemAction>
+												</Failure>
+											</CheckItemAction>
+										</Failure>
+									</CheckItemAction>
+								</Failure>
+							</CheckDataAction>
+						</Option>
+						<Option text="&quot;No, thanks.&quot;" endconversation="true">
+							<GoTo name="doc" _npos="435.41022,1395.0886" />
+						</Option>
+						<Option text="" endconversation="true">
+							<GoTo name="doc" _npos="435.19702,1298.9341" />
+						</Option>
+					</ConversationAction>
+				</Success>
+				<Failure>
+					<ConversationAction text="&quot;You are nothing but trouble. Get out!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="doc" dialogtype="Small" _npos="-1504.7175,281.90598" />
 				</Failure>
 			</CheckReputationAction>
 		</ScriptedEvent>				

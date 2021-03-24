@@ -421,7 +421,7 @@
 			</ItemSet>
 		</npc>
 		
-		<!--QUEST NPCS-->crewchiefclothes
+		<!--QUEST NPCS-->
 		<npc identifier="ita_resguard" job="securityofficer" spawnpointtags="security" healthmultiplier="0.8" behavior="StayInHull">
 			<ItemSet>
 				<Item identifier="securitypatrolclothes" equip="true" />

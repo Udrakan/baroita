@@ -1,5 +1,15 @@
 <Override>
 <locationtypes>
+	<DryCave identifier="ita_drycave" namefile="Content/Map/locationNames.txt" commonness="3" commonnessperzone="1:10.0, 2: 3.0, 3: 2.0">
+		<Symbol texture="Content/Map/MapAtlas.png" sourcerect="256,640,128,128" color="176,133,113,255"/>
+		<Portrait texture="Content/Map/LocationPortraits/WorkCampMining1.png" premultiplyalpha="false"/>
+		<Portrait texture="Content/Map/LocationPortraits/WorkCampMining2.png" premultiplyalpha="false"/>
+		<Portrait texture="Content/Map/LocationPortraits/WorkCampMining3.png" premultiplyalpha="false"/>
+		<Portrait texture="Content/Map/LocationPortraits/WorkCampMining4.png" premultiplyalpha="false"/>
+		<Hireable identifier="engineer" commonness="5"/>
+		<Hireable identifier="mechanic" commonness="5"/>
+		<Hireable identifier="assistant" commonness="3"/>
+	</DryCave>
 	<Mine identifier="Mine" namefile="Content/Map/locationNames.txt" commonness="3" commonnessperzone="1:2.0, 2: 3.0, 3: 2.0">
 		<Symbol texture="Content/Map/MapAtlas.png" sourcerect="256,640,128,128" color="176,133,113,255"/>
 		<Portrait texture="Content/Map/LocationPortraits/WorkCampMining1.png" premultiplyalpha="false"/>
