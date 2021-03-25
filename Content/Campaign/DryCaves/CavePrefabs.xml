@@ -65,9 +65,11 @@
     <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative.png" sourcerect="695,1355,313,301" depth="0.865" />
   </SubDeco>
 
+<!--
   <SubDeco name="CaveDeco16" identifier="CaveDeco16" category="Decorative" allowattachitems="true" width="313" height="301" scale="0.5">
     <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative.png" sourcerect="695,1355,313,301" depth="0.865" />
   </SubDeco>
+-->
 
   <SubDeco name="CaveDeco17" identifier="CaveDeco17" category="Decorative" allowattachitems="true" width="316" height="301" scale="0.5">
     <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative.png" sourcerect="17,1696,316,301" depth="0.865" />
@@ -125,14 +127,15 @@
     <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative2.png" sourcerect="600,87,512,196" depth="0.865" />
   </SubDeco>
 
-  <SubDeco name="CaveDeco31" identifier="CaveDeco31" category="Decorative" allowattachitems="true" width="512" height="196" scale="0.5">
-    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative2.png" sourcerect="1127,21,374,291" depth="0.865" />
+  <SubDeco name="CaveDeco31" identifier="CaveDeco31" category="Decorative" allowattachitems="true" width="367" height="255" scale="0.5">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative2.png" sourcerect="1133,21,367,255" depth="0.865" />
   </SubDeco>
 
+<!--
   <SubDeco name="CaveDeco32" identifier="CaveDeco32" category="Decorative" allowattachitems="true" width="512" height="196" scale="0.5">
     <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative2.png" sourcerect="1127,21,374,291" depth="0.865" />
   </SubDeco>
-
+-->
   <SubDeco name="CaveDeco33" identifier="CaveDeco33" category="Decorative" allowattachitems="true" width="524" height="290" scale="0.5">
     <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative2.png" sourcerect="1510,15,524,290" depth="0.865" />
   </SubDeco>
@@ -145,12 +148,12 @@
     <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative2.png" sourcerect="583,283,546,319" depth="0.865" />
   </SubDeco>
 
-  <SubDeco name="CaveDeco36" identifier="CaveDeco36" category="Decorative" allowattachitems="true" width="402" height="254" scale="0.5">
-    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative2.png" sourcerect="1089,359,402,254" depth="0.865" />
+  <SubDeco name="CaveDeco36" identifier="CaveDeco36" category="Decorative" allowattachitems="true" width="361" height="257" scale="0.5">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative2.png" sourcerect="1131,366,361,257" depth="0.865" />
   </SubDeco>
 
-  <SubDeco name="CaveDeco37" identifier="CaveDeco37" category="Decorative" allowattachitems="true" width="614" height="320" scale="0.5">
-    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative2.png" sourcerect="1397,305,614,320" depth="0.865" />
+  <SubDeco name="CaveDeco37" identifier="CaveDeco37" category="Decorative" allowattachitems="true" width="517" height="315" scale="0.5">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative2.png" sourcerect="1494,309,517,315" depth="0.865" />
   </SubDeco>
 
   <SubDeco name="CaveDeco38" identifier="CaveDeco38" category="Decorative" allowattachitems="true" width="363" height="236" scale="0.5">
@@ -245,17 +248,30 @@
     <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative2.png" sourcerect="1550,643,228,442" depth="0.865" />
   </SubDeco>
 
-  <!-- CAVES TILED WALLS -->
-  <structure name="CaveWallT1" identifier="Cave_Wall_T1" description="" width="2048" height="195" resizehorizontal="true" body="true" castshadow="true" health="9000" scale="0.5" tags="inner">
+  <!-- CAVES TILED WALLS HORIZONTAL -->
+  <structure name="CaveWallT1" identifier="Cave_Wall_T1" description="" width="2048" height="195" resizehorizontal="true" body="true" castshadow="true" health="9000" bodyheight="155" scale="0.5" tags="inner">
     <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveTileWalls.png" depth="0.06" sourcerect="0,0,2048,195" origin="0.5,0.5" />
   </structure>
   
-  <structure name="CaveWallT2" identifier="Cave_Wall_T2" description="" width="2048" height="335" resizehorizontal="true" body="true" castshadow="true" health="9000" scale="0.5" tags="inner">
+  <structure name="CaveWallT2" identifier="Cave_Wall_T2" description="" width="2048" height="335" resizehorizontal="true" body="true" castshadow="true" health="9000" bodyheight="205" scale="0.5" tags="inner">
     <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveTileWalls.png" depth="0.06" sourcerect="0,208,2048,335" origin="0.5,0.5" />
   </structure>
-  
-  <structure name="CaveWallT3" identifier="Cave_Wall_T3" description="" width="2048" height="345" resizehorizontal="true" body="true" castshadow="true" health="9000" scale="0.5" tags="inner">
+
+  <structure name="CaveWallT3" identifier="Cave_Wall_T3" description="" width="2048" height="345" resizehorizontal="true" body="true" castshadow="true" health="9000" bodyheight="240" scale="0.5" tags="inner">
     <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveTileWalls.png" depth="0.06" sourcerect="0,547,2048,345" origin="0.5,0.5" />
+  </structure>
+
+  <!-- CAVES TILED WALLS VERTICAL -->
+  <structure name="CaveWallT4" identifier="Cave_Wall_T4" description="" width="128" height="780" resizevertical="true" body="true" bodywidth="80" castshadow="true" health="9000" scale="1.0" tags="inner">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" depth="0.06" sourcerect="0,0,128,780" origin="0.5,0.5" />
+  </structure>
+
+  <structure name="CaveWallT5" identifier="Cave_Wall_T5" description="" width="132" height="778" resizevertical="true" body="true" bodywidth="90" castshadow="true" health="9000" scale="1.0" tags="inner">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" depth="0.06" sourcerect="136,0,132,778" origin="0.5,0.5" />
+  </structure>
+
+  <structure name="CaveWallT6" identifier="Cave_Wall_T6" description="" width="98" height="778" resizevertical="true" body="true" bodywidth="75" castshadow="true" health="9000" scale="1.0" tags="inner">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" depth="0.06" sourcerect="273,0,98,778" origin="0.5,0.5" />
   </structure>
 
   <!-- CAVES BACK WALLS -->
@@ -276,9 +292,60 @@
   </Wall_B>
  
   <!-- CAVES SHELL WALLS -->
-  <shellA name="CaveShell90" identifier="CaveShell_90deg" description="" body="true" castshadow="true" health="9000" bodywidth="72" bodyoffset="12,0" resizevertical="true">
-    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" sourcerect="0,0,96,512" depth="0.1" origin="0.5,0.5" />
+  <shellA name="CaveShellA_6deg" identifier="CaveShellA_6deg" description="" body="true" castshadow="true" health="9000" bodywidth="760" bodyheight="80" bodyoffset="0,0" bodyrotation="6" >
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" sourcerect="381,368,785,207" depth="0.1" origin="0.5,0.5" />
   </shellA>
 
+  <shellA name="CaveShellB_6deg" identifier="CaveShellB_6deg" description="" body="true" castshadow="true" health="9000" bodywidth="760" bodyheight="88" bodyoffset="0,0" bodyrotation="6" >
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" sourcerect="376,172,781,195" depth="0.1" origin="0.5,0.5" />
+  </shellA>
+
+  <shellA name="CaveShellC_6deg" identifier="CaveShellC_6deg" description="" body="true" castshadow="true" health="9000" bodywidth="760" bodyheight="80" bodyoffset="0,0" bodyrotation="6" >
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" sourcerect="374,1,780,171" depth="0.1" origin="0.5,0.5" />
+  </shellA>
+
+  <shellA name="CaveShellC_27deg" identifier="CaveShellC_27deg" description="" body="true" castshadow="true" health="9000" bodywidth="760" bodyheight="68" bodyoffset="0,0" bodyrotation="27" >
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" sourcerect="750,1101,728,440" depth="0.1" origin="0.5,0.5" />
+  </shellA>
+
+  <shellA name="CaveShellB_27deg" identifier="CaveShellB_27deg" description="" body="true" castshadow="true" health="9000" bodywidth="760" bodyheight="80" bodyoffset="0,0" bodyrotation="-207" >
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" sourcerect="0,1057,737,459" depth="0.1" origin="0.5,0.5" />
+  </shellA>
+
+  <shellA name="CaveShellC_77deg" identifier="CaveShellC_77deg" description="" body="true" castshadow="true" health="9000" bodywidth="257" bodyheight="78" bodyoffset="0,0" bodyrotation="77" >
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" sourcerect="1330,815,149,274" depth="0.1" origin="0.5,0.5" />
+  </shellA>
+
+  <shellA name="CaveShellC_60deg" identifier="CaveShellC_60deg" description="" body="true" castshadow="true" health="9000" bodywidth="257" bodyheight="78" bodyoffset="0,0" bodyrotation="60" >
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" sourcerect="1120,819,207,270" depth="0.1" origin="0.5,0.5" />
+  </shellA>
+
+  <shellA name="CaveShellC_25deg" identifier="CaveShellC_25deg" description="" body="true" castshadow="true" health="9000" bodywidth="257" bodyheight="78" bodyoffset="0,0" bodyrotation="25" >
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" sourcerect="841,835,270,191" depth="0.1" origin="0.5,0.5" />
+  </shellA>
+  
+  <shellA name="CaveShellB_25deg" identifier="CaveShellB_25deg" description="" body="true" castshadow="true" health="9000" bodywidth="244" bodyheight="84" bodyoffset="0,0" bodyrotation="-25" >
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" sourcerect="403,807,263,220" depth="0.1" origin="0.5,0.5" />
+  </shellA>
+
+  <shellA name="CaveShellB_60deg" identifier="CaveShellB_60deg" description="" body="true" castshadow="true" health="9000" bodywidth="244" bodyheight="84" bodyoffset="0,0" bodyrotation="-60" >
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" sourcerect="178,785,223,265" depth="0.1" origin="0.5,0.5" />
+  </shellA>
+
+  <shellA name="CaveShellB_77deg" identifier="CaveShellB_77deg" description="" body="true" castshadow="true" health="9000" bodywidth="244" bodyheight="84" bodyoffset="0,0" bodyrotation="-77" >
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" sourcerect="0,780,178,269" depth="0.1" origin="0.5,0.5" />
+  </shellA>
+
+  <shellA name="CaveShellA_25deg" identifier="CaveShellA_25deg" description="" body="true" castshadow="true" health="9000" bodywidth="247" bodyheight="75" bodyoffset="0,0" bodyrotation="-25" >
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" sourcerect="1658,362,267,179" depth="0.1" origin="0.5,0.5" />
+  </shellA>
+
+  <shellA name="CaveShellA_60deg" identifier="CaveShellA_60deg" description="" body="true" castshadow="true" health="9000" bodywidth="247" bodyheight="75" bodyoffset="0,0" bodyrotation="-60" >
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" sourcerect="1813,65,211,248" depth="0.1" origin="0.5,0.5" />
+  </shellA>
+
+  <shellA name="CaveShellA_77deg" identifier="CaveShellA_77deg" description="" body="true" castshadow="true" health="9000" bodywidth="247" bodyheight="75" bodyoffset="0,0" bodyrotation="-77" >
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveShells.png" sourcerect="1626,60,167,259" depth="0.1" origin="0.5,0.5" />
+  </shellA>
 
 </prefabs>
