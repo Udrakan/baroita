@@ -247,6 +247,54 @@
   <SubDeco name="CaveDeco60" identifier="CaveDeco60" category="Decorative" allowattachitems="true" width="228" height="442" scale="0.5">
     <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative2.png" sourcerect="1550,643,228,442" depth="0.865" />
   </SubDeco>
+  
+  <SubDeco name="CaveDeco61" identifier="CaveDeco61" category="Decorative" allowattachitems="true" width="164" height="243" scale="0.5">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative3.png" sourcerect="0,7,164,243" depth="0.865" />
+  </SubDeco>
+
+  <SubDeco name="CaveDeco62" identifier="CaveDeco62" category="Decorative" allowattachitems="true" width="164" height="249" scale="0.5">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative3.png" sourcerect="171,1,164,249" depth="0.865" />
+  </SubDeco>
+
+  <SubDeco name="CaveDeco63" identifier="CaveDeco63" category="Decorative" allowattachitems="true" width="162" height="210" scale="0.5">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative3.png" sourcerect="343,21,162,210" depth="0.865" />
+  </SubDeco>
+
+  <SubDeco name="CaveDeco64" identifier="CaveDeco64" category="Decorative" allowattachitems="true" width="246" height="235" scale="0.5">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative3.png" sourcerect="0,258,246,235" depth="0.865" />
+  </SubDeco>
+
+  <SubDeco name="CaveDeco65" identifier="CaveDeco65" category="Decorative" allowattachitems="true" width="235" height="203" scale="0.5">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative3.png" sourcerect="263,264,235,203" depth="0.865" />
+  </SubDeco>
+
+  <SubDeco name="CaveDeco66" identifier="CaveDeco66" category="Decorative" allowattachitems="true" width="315" height="250" scale="0.5">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative3.png" sourcerect="0,515,315,250" depth="0.865" />
+  </SubDeco>
+
+  <SubDeco name="CaveDeco67" identifier="CaveDeco67" category="Decorative" allowattachitems="true" width="341" height="297" scale="0.5">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative3.png" sourcerect="408,489,341,297" depth="0.865" />
+  </SubDeco>
+
+  <SubDeco name="CaveDeco68" identifier="CaveDeco68" category="Decorative" allowattachitems="true" width="310" height="238" scale="0.5">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative3.png" sourcerect="0,786,310,238" depth="0.865" />
+  </SubDeco>
+
+  <SubDeco name="CaveDeco69" identifier="CaveDeco69" category="Decorative" allowattachitems="true" width="240" height="132" scale="0.5">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative3.png" sourcerect="524,295,240,132" depth="0.865" />
+  </SubDeco>
+
+  <SubDeco name="CaveDeco70" identifier="CaveDeco70" category="Decorative" allowattachitems="true" width="245" height="150" scale="0.5">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative3.png" sourcerect="771,287,245,150" depth="0.865" />
+  </SubDeco>
+
+  <SubDeco name="CaveDeco71" identifier="CaveDeco71" category="Decorative" allowattachitems="true" width="251" height="169" scale="0.5">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative3.png" sourcerect="520,29,251,169" depth="0.865" />
+  </SubDeco>
+
+  <SubDeco name="CaveDeco72" identifier="CaveDeco72" category="Decorative" allowattachitems="true" width="244" height="198" scale="0.5">
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative3.png" sourcerect="779,0,244,198" depth="0.865" />
+  </SubDeco>
 
   <!-- CAVES TILED WALLS HORIZONTAL -->
   <structure name="CaveWallT1" identifier="Cave_Wall_T1" description="" width="2048" height="195" resizehorizontal="true" body="true" castshadow="true" health="9000" bodyheight="155" scale="0.5" tags="inner">
@@ -288,7 +336,7 @@
   </Wall_B>
 
   <Wall_B name="CaveWallB4" identifier="Cave_Wall_B4" description="" allowattachitems="true" width="16" height="16" resizehorizontal="true" resizevertical="true" texturescale="0.5,0.5" category="Decorative" tags="backgroundwall">
-    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveBackWalls.png" sourcerect="1536,1536,512,512" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveBackWalls.png" sourcerect="1024,1024,1024,1024" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
   </Wall_B>
  
   <!-- CAVES SHELL WALLS -->
