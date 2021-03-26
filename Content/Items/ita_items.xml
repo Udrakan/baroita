@@ -2058,7 +2058,7 @@
         <ParticleEmitter particle="gib" particleamount="4" scalemin="0.25" scalemax="1" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
       </StatusEffect>
     </Rope>
-    <Projectile characterusable="false" launchimpulse="50.0" sticktostructures="false" stickpermanently="true" sticktocharacters="true">
+    <Projectile characterusable="false" launchimpulse="200.0" sticktostructures="true" stickpermanently="true" sticktocharacters="true">
       <Attack structuredamage="0" severlimbsprobability="0.5">
         <Affliction identifier="psychosis" strength="5" />
       </Attack>
