@@ -479,7 +479,15 @@
       <Containable items="planter,wateringcan,fertilizer,seed,seedbag" />
     </ItemContainer>
   </Item>
-  <Item name="Bar Stool" identifier="ita_outpostchair1" nameidentifier="ita_opdeco_officechair" tags="ita_outpostchair1" allowattachitems="true" texturescale="1.0,1.0" scale="0.5" category="Decorative" canflipy="false">
+  <Item name="Climber Table" identifier="ita_climbertable" tags="ita_climbertable" pickdistance="150" scale="0.5">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Outposts/ita_spritesoutpost.png" depth="0.84" sourcerect="3,289,141,159" canflipx="true" origin="0.5,0.5" />
+    <ItemContainer capacity="10" canbeselected="true" hideitems="false" itempos="84,16" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="ita_climber1,ita_climber2,ita_climber3,ita_lantern1,plasmacutter,flare,alienflare,flashlight,batterycell"/>
+    </ItemContainer>
+  </Item>
+ 
+ <Item name="Bar Stool" identifier="ita_outpostchair1" nameidentifier="ita_opdeco_officechair" tags="ita_outpostchair1" allowattachitems="true" texturescale="1.0,1.0" scale="0.5" category="Decorative" canflipy="false">
     <sprite texture="Mods/IntoTheAbyss/Content/Outposts/ita_spritesoutpost.png" sourcerect="1140,89,94,182" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
     <Controller UserPos="10,0" direction="Left" hidehud="false" canbeselected="true">
       <StatusEffect target="Character" disabledeltatime="true" stackable="false" delay="0.5">
@@ -651,6 +659,11 @@
 		<StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
           <TriggerEvent identifier="ita_race1bet" />
           <RequiredItem items="mudraptorshell" type="Contained" />
+          <Remove />
+        </StatusEffect>
+		<StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_climber1" />
+          <RequiredItem items="ita_climber3" type="Contained" />
           <Remove />
         </StatusEffect>
 		

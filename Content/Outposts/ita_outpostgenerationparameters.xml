@@ -83,14 +83,16 @@
 			<npc from="outpostnpcs1" identifier="miner"/>
 		</npcs>
 	</OutpostConfig>
-	<OutpostConfig identifier="city" totalmodulecount="10" minhallwaylength="0" allowedlocationtypes="City">
+	<OutpostConfig identifier="city" totalmodulecount="11" minhallwaylength="0" allowedlocationtypes="City">
 		<modulecount flag="ita_city_dock" count="1"/>
 		<modulecount flag="Ita_engineeringmodule" count="1"/>
 		<modulecount flag="Ita_lifesupportmodule" count="1"/>
 		<modulecount flag="Ita_fabricationmodule" count="1"/>
 		<modulecount flag="ita_city_atrium" count="1"/>
 		<modulecount flag="ita_city_bar" count="1"/>
-		<modulecount flag="ita_city_shop" count="2"/>
+		<modulecount flag="ita_city_shop" count="1"/>
+		<modulecount flag="ita_city_special" count="1"/>
+		<modulecount flag="ita_shipyard" count="1"/>
 		<modulecount flag="ita_shipyard" count="1"/>
 		<modulecount flag="AdminModule" count="1"/>
 		<npcs>

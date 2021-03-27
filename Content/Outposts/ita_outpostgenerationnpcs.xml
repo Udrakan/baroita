@@ -185,7 +185,7 @@
 				</Item>
 			</ItemSet>
 		</npc>
-		<npc identifier="ita_pettrader" job="mechanic" commonness="1" healthmultiplier="0.8" preferredoutpostmoduletypes="admin,adminmodule" behavior="Passive">
+		<npc identifier="ita_pettrader" job="mechanic" commonness="1" healthmultiplier="0.8" preferredoutpostmoduletypes="admin,adminmodule" behavior="StayInHull">
 			<ItemSet commonness="1">
 				<Item identifier="greenjumpsuit" equip="true"/>
 				<Item identifier="idcard" equip="true"/>
