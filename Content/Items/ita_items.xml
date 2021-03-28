@@ -2054,7 +2054,7 @@
         <ParticleEmitter particle="gib" particleamount="4" scalemin="0.25" scalemax="1" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
       </StatusEffect>
     </Rope>
-    <Projectile characterusable="false" launchimpulse="170.0" sticktostructures="true" stickpermanently="true" sticktocharacters="true">
+    <Projectile characterusable="false" launchimpulse="250.0" sticktostructures="true" stickpermanently="true" sticktocharacters="true">
       <StatusEffect type="OnImpact" target="Character">
         <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonHit1.ogg" range="1000" selectionmode="Random" />
         <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonHit2.ogg" range="1000" />
@@ -2090,7 +2090,7 @@
         <ParticleEmitter particle="gib" particleamount="4" scalemin="0.25" scalemax="1" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
       </StatusEffect>
     </Rope>
-    <Projectile characterusable="false" launchimpulse="170.0" sticktostructures="true" stickpermanently="true" sticktocharacters="true">
+    <Projectile characterusable="false" launchimpulse="250.0" sticktostructures="true" stickpermanently="true" sticktocharacters="true">
       <StatusEffect type="OnImpact" target="Character">
         <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonHit1.ogg" range="1000" selectionmode="Random" />
         <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonHit2.ogg" range="1000" />
