@@ -2030,7 +2030,7 @@
     <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
     <ContainedSprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
     <Body radius="10" density="10" />
-    <Rope targetpullforce="10" SourcePullForce="55" projectilepullforce="0" maxlength="3000" snaponcollision="true" spritewidth="7" tile="true">
+    <Rope targetpullforce="10" SourcePullForce="55" projectilepullforce="0" maxlength="3000" snaponcollision="true" spritewidth="6" tile="true">
       <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
       <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="0,143,250,13" depth="0.57" origin="0.5,0.5" />
       <EndSprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="366,10,136,103" depth="0.56" origin="0.5,0.5" />
@@ -2066,14 +2066,14 @@
     <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
     <ContainedSprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
     <Body radius="10" density="10" />
-    <Rope targetpullforce="5" SourcePullForce="25" projectilepullforce="0" maxlength="3000" snaponcollision="true" spritewidth="7" tile="true">
+    <Rope targetpullforce="5" SourcePullForce="25" projectilepullforce="0" maxlength="3000" snaponcollision="true" spritewidth="6" tile="true">
       <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
       <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="0,131,250,12" depth="0.57" origin="0.5,0.5" />
       <EndSprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="366,10,136,103" depth="0.56" origin="0.5,0.5" />
       <!-- Automatically snap after 300 seconds -->
       <!--<StatusEffect type="OnUse" target="This" Snapped="true" delay="1"/>-->
       <!-- Remove 1 second after snapping -->
-      <StatusEffect type="OnUse" target="This" Snapped="true" delay="5" condition="-29" />
+      <StatusEffect type="OnUse" target="This" Snapped="true" delay="6.5" condition="-29" />
       <StatusEffect type="Always" target="This" delay="1" checkconditionalalways="true">
         <Conditional Snapped="true" />
         <SpawnItem identifier="ita_climber5" />
