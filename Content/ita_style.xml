@@ -1240,22 +1240,22 @@
     <Sprite name="MissionFailedIcon" texture="Content/UI/UIAtlasGeneral.png" tile="false" sourcerect="862,34,140,163" maintainaspectratio="true" />
   </MissionFailedIcon>
   <CrushDepthWarningLowIcon color="255,201,14,255">
-    <Sprite name="CrushDepthWarningLowIcon" texture="Content/Map/MapAtlas.png" tile="false" sourcerect="286,932,71,62" maintainaspectratio="true" />
+    <Sprite name="CrushDepthWarningLowIcon" texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" tile="false" sourcerect="286,932,71,62" maintainaspectratio="true" />
   </CrushDepthWarningLowIcon>
   <CrushDepthWarningHighIcon color="207,48,48,255">
-    <Sprite name="CrushDepthWarningHighIcon" texture="Content/Map/MapAtlas.png" tile="false" sourcerect="286,804,71,62" maintainaspectratio="true" />
+    <Sprite name="CrushDepthWarningHighIcon" texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" tile="false" sourcerect="286,804,71,62" maintainaspectratio="true" />
   </CrushDepthWarningHighIcon>
   <BeaconStationActive color="250,215,107,255" hovercolor="255,231,178,255">
-    <Sprite name="BeaconStationActive" texture="Content/Map/MapAtlas.png" tile="false" sourcerect="923,663,72,75" maintainaspectratio="true" />
+    <Sprite name="BeaconStationActive" texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" tile="false" sourcerect="923,663,72,75" maintainaspectratio="true" />
   </BeaconStationActive>
   <BeaconStationInactive color="250,215,107,255" hovercolor="255,231,178,255">
-    <Sprite name="BeaconStationInactive" texture="Content/Map/MapAtlas.png" tile="false" sourcerect="411,793,72,75" maintainaspectratio="true" />
+    <Sprite name="BeaconStationInactive" texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" tile="false" sourcerect="411,793,72,75" maintainaspectratio="true" />
   </BeaconStationInactive>
   <HuntingGrounds color="255,106,106,255" hovercolor="255,156,156,255">
-    <Sprite name="HuntingGrounds" texture="Content/Map/MapAtlas.png" tile="false" sourcerect="799,657,67,90" maintainaspectratio="true" />
+    <Sprite name="HuntingGrounds" texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" tile="false" sourcerect="799,657,67,90" maintainaspectratio="true" />
   </HuntingGrounds>
   <LockedLocationConnection color="255,106,106,255" hovercolor="255,156,156,255">
-    <Sprite name="LockedLocationConnection" texture="Content/Map/MapAtlas.png" tile="false" sourcerect="413,921,62,74" maintainaspectratio="true" />
+    <Sprite name="LockedLocationConnection" texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" tile="false" sourcerect="413,921,62,74" maintainaspectratio="true" />
   </LockedLocationConnection>
   <LocationReputationIcon color="187,198,200,255">
     <Sprite name="LocationReputationIcon" texture="Content/UI/CampaignUIAtlas2.png" tile="false" sourcerect="533,517,87,106" maintainaspectratio="true" />
@@ -1315,7 +1315,7 @@
     <Sprite name="TabMenuButton_Pressed" texture="Content/UI/InventoryUIAtlas.png" state="Pressed" tile="false" sourcerect="123,565,111,66" maintainaspectratio="true" origin="0.5,0.5" />
   </TabMenuButton>
   <DifficultyIndicator>
-    <Sprite name="DifficultyIndicator" texture="Content/Map/MapAtlas.png" tile="false" sourcerect="68,802,24,21" origin="0.5,0.5" maintainaspectratio="true" />
+    <Sprite name="DifficultyIndicator" texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" tile="false" sourcerect="68,802,24,21" origin="0.5,0.5" maintainaspectratio="true" />
   </DifficultyIndicator>
 
   <InfoFrameTabButton.Crew color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">

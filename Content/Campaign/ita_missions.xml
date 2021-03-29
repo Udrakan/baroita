@@ -807,5 +807,46 @@
 		<LocationType from="Mining" to="Mine"/>
 		<LocationType from="Mining" to="Lair"/>
 	</NestMission>
+
+	<!--DryCaves-->
+	
+  <OutpostNestMission
+    name="Clear a Cave"
+    identifier="abandonedoutpostcrawler"
+    textidentifier="abandonedoutpostmonsters"
+    tags="abandonedoutpost"
+    type="OutpostDestroy"
+    reward="3000"
+    difficulty="4"
+    commonness="20"
+    allowretry="False"
+    sonarlabel="nest"
+    unhideentitysubcategories="abandonedmonster">
+
+    <Reputation identifier="location" amount="10" />
+    <Reputation identifier="coalition" amount="5" />
+
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48"/>
+
+    <LocationType identifier="Cave" />
+    <LocationTypeChange from="Cave" to="None" requireddurationrange="2,3" cooldownafterchange="5" />
+
+    <Characters>
+      <Character identifier="crawler" min="8" max="10" spawnpointtags="nest" />
+    </Characters>
+    <Items>
+      <Item identifier="crawleregg" spawnpointtags="nest">
+        <StatusEffectOnApproach target="This" Scale="1.0" setvalue="true"/>
+      </Item>
+      <Item identifier="crawleregg" spawnpointtags="nest">
+        <StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" delay="9" />
+      </Item>
+      <Item identifier="crawleregg" spawnpointtags="nest" />
+      <Item identifier="crawleregg" spawnpointtags="nest" />
+      <Item identifier="crawleregg" spawnpointtags="nest" />
+      <Item identifier="crawleregg" spawnpointtags="nest" />
+    </Items>
+  </OutpostNestMission>
+
 </Missions>
 </Override>
