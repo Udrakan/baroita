@@ -2025,12 +2025,12 @@
     </ConnectionPanel>
   </Item>
   <!--Caves-->
-  <Item name="Tensile Bungee Hook" identifier="ita_climber2" health="20" hideinmenus="false" maxstacksize="8" sonarsize="5" scale="0.50" tags="smallitem,climbingammo" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
+  <Item name="Tensile Bungee Hook" identifier="ita_climber2" description="This tensile elastic rope allows climbers to reach tall vertical spaces." health="20" hideinmenus="false" maxstacksize="8" sonarsize="5" scale="0.50" tags="smallitem,climbingammo" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
     <InventoryIcon texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="0,157,106,94" origin="0.5,0.5" />
     <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
     <ContainedSprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
-    <Body radius="10" density="10" />
-    <Rope targetpullforce="10" SourcePullForce="55" projectilepullforce="0" maxlength="3000" snaponcollision="true" spritewidth="6" tile="true">
+    <Body radius="30" density="5" friction="100000" />
+    <Rope targetpullforce="90000000" SourcePullForce="53" projectilepullforce="" maxlength="1900" snaponcollision="true" spritewidth="6" tile="true">
       <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
       <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="0,143,250,13" depth="0.57" origin="0.5,0.5" />
       <EndSprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="366,10,136,103" depth="0.56" origin="0.5,0.5" />
@@ -2044,7 +2044,7 @@
         <Remove />
       </StatusEffect>
       <!-- Snap after 5 seconds if not stuck to anything -->
-      <StatusEffect type="OnUse" target="This" Snapped="true" delay="5" checkconditionalalways="true">
+      <StatusEffect type="OnUse" target="This" Snapped="true" delay="6.5" checkconditionalalways="true">
         <Conditional targetitemcomponent="Projectile" IsStuckToTarget="false" />
       </StatusEffect>
       <StatusEffect type="OnDamaged" target="This">
@@ -2054,33 +2054,33 @@
         <ParticleEmitter particle="gib" particleamount="4" scalemin="0.25" scalemax="1" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
       </StatusEffect>
     </Rope>
-    <Projectile characterusable="false" launchimpulse="250.0" sticktostructures="true" stickpermanently="true" sticktocharacters="true">
+    <Projectile characterusable="false" launchimpulse="900.0" sticktostructures="true" stickpermanently="true" sticktocharacters="true" maxtargetstohit="1">
       <StatusEffect type="OnImpact" target="Character">
         <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonHit1.ogg" range="1000" selectionmode="Random" />
         <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonHit2.ogg" range="1000" />
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name="Loose Bungee Hook" identifier="ita_climber4" health="20" hideinmenus="false" maxstacksize="8" sonarsize="5" scale="0.50" tags="smallitem,climbingammo" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
+  <Item name="Loose Bungee Hook" identifier="ita_climber4" description="This soft elastic rope allows climbers to slowly descend vertical spaces." health="20" hideinmenus="false" maxstacksize="8" sonarsize="5" scale="0.50" tags="smallitem,climbingammo" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
     <InventoryIcon texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="155,53,91,78" origin="0.5,0.5" />
     <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
     <ContainedSprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
-    <Body radius="10" density="10" />
-    <Rope targetpullforce="5" SourcePullForce="25" projectilepullforce="0" maxlength="3000" snaponcollision="true" spritewidth="6" tile="true">
+    <Body radius="30" density="5" friction="1000000" />
+    <Rope targetpullforce="9000000" SourcePullForce="25" projectilepullforce="0" maxlength="1900" snaponcollision="true" spritewidth="6" tile="true">
       <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
       <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="0,131,250,12" depth="0.57" origin="0.5,0.5" />
       <EndSprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="366,10,136,103" depth="0.56" origin="0.5,0.5" />
       <!-- Automatically snap after 300 seconds -->
       <!--<StatusEffect type="OnUse" target="This" Snapped="true" delay="1"/>-->
       <!-- Remove 1 second after snapping -->
-      <StatusEffect type="OnUse" target="This" Snapped="true" delay="6.5" condition="-29" />
-      <StatusEffect type="Always" target="This" delay="1" checkconditionalalways="true">
+      <StatusEffect type="OnUse" target="This" Snapped="true" delay="8.5" condition="-29" />
+      <StatusEffect type="Always" target="This" delay="0.5" checkconditionalalways="true">
         <Conditional Snapped="true" />
         <SpawnItem identifier="ita_climber5" />
         <Remove />
       </StatusEffect>
       <!-- Snap after 5 seconds if not stuck to anything -->
-      <StatusEffect type="OnUse" target="This" Snapped="true" delay="5" checkconditionalalways="true">
+      <StatusEffect type="OnUse" target="This" Snapped="true" delay="6.5" checkconditionalalways="true">
         <Conditional targetitemcomponent="Projectile" IsStuckToTarget="false" />
       </StatusEffect>
       <StatusEffect type="OnDamaged" target="This">
@@ -2090,34 +2090,34 @@
         <ParticleEmitter particle="gib" particleamount="4" scalemin="0.25" scalemax="1" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
       </StatusEffect>
     </Rope>
-    <Projectile characterusable="false" launchimpulse="250.0" sticktostructures="true" stickpermanently="true" sticktocharacters="true">
+    <Projectile characterusable="false" launchimpulse="900.0" sticktostructures="true" stickpermanently="true" sticktocharacters="true" maxtargetstohit="1">
       <StatusEffect type="OnImpact" target="Character">
         <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonHit1.ogg" range="1000" selectionmode="Random" />
         <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonHit2.ogg" range="1000" />
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name="Strong Bungee Cord" identifier="ita_climber3" hideinmenus="false" maxstacksize="6" sonarsize="5" scale="0.45" tags="smallitem" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
+  <Item name="Strong Bungee Cord" description="When combined with metal, this rope can be fashioned into a Tensile Grappling Hook." identifier="ita_climber3" hideinmenus="false" maxstacksize="6" sonarsize="5" scale="0.45" tags="smallitem" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
     <InventoryIcon texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="168,197,82,53" origin="0.5,0.5" />
     <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="168,197,83,54" origin="0.5,0.5" />
     <ContainedSprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,2,71,51" origin="0.5,0.5" />
-    <Body radius="10" density="10" />
+    <Body radius="10" density="10" friction="0.95" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Deconstruct time="10">
       <Item identifier="organicfiber" />
     </Deconstruct>
   </Item>
-  <Item name="Loose Bungie Cord" identifier="ita_climber5" hideinmenus="false" maxstacksize="6" sonarsize="5" scale="0.45" tags="smallitem" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
+  <Item name="Loose Bungie Cord" description="When combined with metal, this rope can be fashioned into a Loose Grappling Hook." identifier="ita_climber5" hideinmenus="false" maxstacksize="6" sonarsize="5" scale="0.45" tags="smallitem" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
     <InventoryIcon texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="108,156,66,45" origin="0.5,0.5" />
     <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="108,156,66,45" origin="0.5,0.5" />
     <ContainedSprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
-    <Body radius="10" density="10" />
+    <Body radius="10" density="10" friction="0.95" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Deconstruct time="10">
       <Item identifier="elastin" />
     </Deconstruct>
   </Item>
-  <Item name="Climbing gun" identifier="ita_climber1" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.4" impactsoundtag="impact_metal_light">
+  <Item name="Grappling Gun" description="For use in the exploration of Europa's many dry-cave networks." identifier="ita_climber1" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.4" impactsoundtag="impact_metal_light">
     <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="1,0,157,95" depth="0.55" origin="0.5,0.5" />
     <Body width="180" height="30" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-5" aimpos="35,-10" handle1="-12,-6" handle2="30,15" holdangle="-40" msg="ItemMsgPickUpSelect" />
@@ -2128,7 +2128,7 @@
       <Sound file="Content/Items/Weapons/HarpoonGun2.ogg" type="OnUse" />
       <Sound file="Content/Items/Weapons/HarpoonGun3.ogg" type="OnUse" />
       <StatusEffect type="OnUse">
-        <Explosion range="150.0" force="8" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+        <Explosion range="150.0" force="28" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
       <RequiredItems items="climbingammo,ita_climber4,ita_climber5" type="Contained" msg="ItemMsgSpearRequired" />
       <RequiredSkill identifier="weapons" level="30" />

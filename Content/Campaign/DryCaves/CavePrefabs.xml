@@ -5,9 +5,9 @@
 
   <!-- CAVES - Cosmetic -->
 
-  <SubDeco name="CaveDeco1" identifier="CaveDeco1" category="Decorative" allowattachitems="true" width="490" height="508" scale="0.5">
+  <Item name="CaveDeco1" identifier="CaveDeco1" category="Decorative" allowattachitems="true" width="490" height="508" scale="0.5">
     <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative.png" sourcerect="14,0,490,508" depth="0.865" />
-  </SubDeco>
+  </Item>
 
   <SubDeco name="CaveDeco2" identifier="CaveDeco2" category="Decorative" allowattachitems="true" width="479" height="448" scale="0.5">
     <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveDecorative.png" sourcerect="513,70,490,448" depth="0.865" />
@@ -297,7 +297,7 @@
   </SubDeco>
 
   <!-- CAVES TILED WALLS HORIZONTAL -->
-  <structure name="CaveWallT1" identifier="Cave_Wall_T1" description="" width="2048" height="195" resizehorizontal="true" body="true" castshadow="true" health="9000" bodyheight="155" scale="0.5" tags="inner">
+  <structure name="CaveWallT1" identifier="Cave_Wall_T1" description="" width="2048" height="195" resizehorizontal="true" body="true" castshadow="true" health="9000" bodyheight="125" scale="0.5" tags="inner">
     <sprite texture="Mods\IntoTheAbyss\Content\Campaign\DryCaves\CaveTileWalls.png" depth="0.06" sourcerect="0,0,2048,195" origin="0.5,0.5" />
   </structure>
   
