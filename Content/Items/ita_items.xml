@@ -2055,9 +2055,9 @@
       </StatusEffect>
     </Rope>
     <Projectile characterusable="false" launchimpulse="50.0" sticktostructures="true" stickpermanently="true" sticktocharacters="true" maxtargetstohit="1">
-      <StatusEffect type="OnImpact" target="Character">
-        <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonHit1.ogg" range="1000" selectionmode="Random" />
-        <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonHit2.ogg" range="1000" />
+      <StatusEffect type="OnImpact" target="UseTarget">
+		<Sound file="Mods/IntoTheAbyss/Content/Items/ita_impacthook.ogg" range="2000" />
+		<ParticleEmitter particle="spark" anglemin="0" anglemax="359" particleamount="5" velocitymin="100" velocitymax="500" scalemin="0.5" scalemax="1" />
       </StatusEffect>
     </Projectile>
   </Item>
@@ -2091,9 +2091,9 @@
       </StatusEffect>
     </Rope>
     <Projectile characterusable="false" launchimpulse="50.0" sticktostructures="true" stickpermanently="true" sticktocharacters="true" maxtargetstohit="1">
-      <StatusEffect type="OnImpact" target="Character">
-        <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonHit1.ogg" range="1000" selectionmode="Random" />
-        <Sound file="Content/Map/Thalamus/Sounds/CARRIER_harpoonHit2.ogg" range="1000" />
+      <StatusEffect type="OnImpact" target="UseTarget">
+		<Sound file="Mods/IntoTheAbyss/Content/Items/ita_impacthook.ogg" range="2000" />
+		<ParticleEmitter particle="spark" anglemin="0" anglemax="359" particleamount="5" velocitymin="100" velocitymax="500" scalemin="0.5" scalemax="1" />
       </StatusEffect>
     </Projectile>
   </Item>
@@ -2124,9 +2124,7 @@
     <RangedWeapon barrelpos="49,10" spread="1" reload="2.0" unskilledspread="10" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="Content/Items/Weapons/HarpoonGun1.ogg" type="OnUse" />
-      <Sound file="Content/Items/Weapons/HarpoonGun2.ogg" type="OnUse" />
-      <Sound file="Content/Items/Weapons/HarpoonGun3.ogg" type="OnUse" />
+	  <Sound file="Mods/IntoTheAbyss/Content/Items/ita_shoothook.ogg" range="1000" type="OnUse" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="28" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
