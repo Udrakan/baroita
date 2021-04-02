@@ -65,6 +65,7 @@
   <RadiationAnimSpriteSheet columns="8" rows="2" texture="Content/Map/radiationborder.png"/>
   <UIGlowCircular texture="Content/UI/UIAtlasGeneral.png" sourcerect="177,637,170,170" origin="0.5,0.5" tile="false" compress="false" />
   <FocusIndicator texture="Content/UI/FocusIndicator.png" sourcerect="0,0,448,224" rows="2" columns="4" />
+  <SavingIndicator texture="Content/UI/saving.png" rows="4" columns="4"/>
   <!-- LEGACY
   <Font file="Content/Fonts/Exo2-Medium.otf" size="14"/>
   <SmallFont file="Content/Fonts/Exo2-Light.otf" size="12"/>
@@ -960,6 +961,14 @@
       <Sprite name="CharacterHealthBarSlider" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="288,434,107,68" slice="330,453,390,481"  origin="0.5,0.5" />
     </Slider>
   </CharacterHealthBar>
+  <CharacterHealthBarCentered color="255,255,255,255">
+    <GUIFrame color="255,255,255,255">
+      <Sprite name="CharacterHealthBarCenteredBG" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="288,687,145,67" slice="330,705,391,734" origin="0.5,0.5" />
+    </GUIFrame>
+    <Slider color="255,255,255,255">
+      <Sprite name="CharacterHealthBarCenteredSlider" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="288,434,147,68" slice="330,453,391,481"  origin="0.5,0.5" />
+    </Slider>
+  </CharacterHealthBarCentered>
   <EquipmentToggleButton color="255,255,255,255">
     <Sprite name="EquipmentToggleButton" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="492,140,25,95" origin="0.5,0.5" />
   </EquipmentToggleButton>
@@ -1240,22 +1249,22 @@
     <Sprite name="MissionFailedIcon" texture="Content/UI/UIAtlasGeneral.png" tile="false" sourcerect="862,34,140,163" maintainaspectratio="true" />
   </MissionFailedIcon>
   <CrushDepthWarningLowIcon color="255,201,14,255">
-    <Sprite name="CrushDepthWarningLowIcon" texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" tile="false" sourcerect="286,932,71,62" maintainaspectratio="true" />
+    <Sprite name="CrushDepthWarningLowIcon" texture="Content/Map/MapAtlas.png" tile="false" sourcerect="286,932,71,62" maintainaspectratio="true" />
   </CrushDepthWarningLowIcon>
   <CrushDepthWarningHighIcon color="207,48,48,255">
-    <Sprite name="CrushDepthWarningHighIcon" texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" tile="false" sourcerect="286,804,71,62" maintainaspectratio="true" />
+    <Sprite name="CrushDepthWarningHighIcon" texture="Content/Map/MapAtlas.png" tile="false" sourcerect="286,804,71,62" maintainaspectratio="true" />
   </CrushDepthWarningHighIcon>
   <BeaconStationActive color="250,215,107,255" hovercolor="255,231,178,255">
-    <Sprite name="BeaconStationActive" texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" tile="false" sourcerect="923,663,72,75" maintainaspectratio="true" />
+    <Sprite name="BeaconStationActive" texture="Content/Map/MapAtlas.png" tile="false" sourcerect="923,663,72,75" maintainaspectratio="true" />
   </BeaconStationActive>
   <BeaconStationInactive color="250,215,107,255" hovercolor="255,231,178,255">
-    <Sprite name="BeaconStationInactive" texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" tile="false" sourcerect="411,793,72,75" maintainaspectratio="true" />
+    <Sprite name="BeaconStationInactive" texture="Content/Map/MapAtlas.png" tile="false" sourcerect="411,793,72,75" maintainaspectratio="true" />
   </BeaconStationInactive>
   <HuntingGrounds color="255,106,106,255" hovercolor="255,156,156,255">
-    <Sprite name="HuntingGrounds" texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" tile="false" sourcerect="799,657,67,90" maintainaspectratio="true" />
+    <Sprite name="HuntingGrounds" texture="Content/Map/MapAtlas.png" tile="false" sourcerect="799,657,67,90" maintainaspectratio="true" />
   </HuntingGrounds>
   <LockedLocationConnection color="255,106,106,255" hovercolor="255,156,156,255">
-    <Sprite name="LockedLocationConnection" texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" tile="false" sourcerect="413,921,62,74" maintainaspectratio="true" />
+    <Sprite name="LockedLocationConnection" texture="Content/Map/MapAtlas.png" tile="false" sourcerect="413,921,62,74" maintainaspectratio="true" />
   </LockedLocationConnection>
   <LocationReputationIcon color="187,198,200,255">
     <Sprite name="LocationReputationIcon" texture="Content/UI/CampaignUIAtlas2.png" tile="false" sourcerect="533,517,87,106" maintainaspectratio="true" />
@@ -1318,24 +1327,24 @@
     <Sprite name="DifficultyIndicator" texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" tile="false" sourcerect="68,802,24,21" origin="0.5,0.5" maintainaspectratio="true" />
   </DifficultyIndicator>
 
+  <InfoFrameTabButton.MyCharacter color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
+    <Sprite name="MyCharacterTabButton" texture="Content/UI/InventoryUIAtlas.png" sourcerect="303,540,65,65" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+  </InfoFrameTabButton.MyCharacter>
   <InfoFrameTabButton.Crew color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
-    <Sprite name="CrewTabButton" texture="Content/UI/InventoryUIAtlas.png" sourcerect="367,540,65,65" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="CrewTabButton" texture="Content/UI/InventoryUIAtlas.png" sourcerect="369,540,65,65" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
   </InfoFrameTabButton.Crew>
   <InfoFrameTabButton.Mission color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
-    <Sprite name="MissionTabButton" texture="Content/UI/InventoryUIAtlas.png" sourcerect="432,540,64,65" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="MissionTabButton" texture="Content/UI/InventoryUIAtlas.png" sourcerect="435,540,65,65" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
   </InfoFrameTabButton.Mission>
   <InfoFrameTabButton.Reputation color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
-    <Sprite name="ReputationTabButton" texture="Content/UI/InventoryUIAtlas.png" sourcerect="496,540,65,65" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="ReputationTabButton" texture="Content/UI/InventoryUIAtlas.png" sourcerect="501,540,65,65" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
   </InfoFrameTabButton.Reputation>
-  <InfoFrameTabButton.MyCharacter color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
-    <Sprite name="MyCharacterTabButton" texture="Content/UI/InventoryUIAtlas.png" sourcerect="303,540,64,65" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
-  </InfoFrameTabButton.MyCharacter>
-  <InfoFrameTabButton.Traitor color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
-    <Sprite name="TraitorTabButton" texture="Content/UI/InventoryUIAtlas.png" sourcerect="367,605,65,64" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
-  </InfoFrameTabButton.Traitor>
   <InfoFrameTabButton.Submarine color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
-    <Sprite name="SubmarineTabButton" texture="Content/UI/InventoryUIAtlas.png" sourcerect="303,605,64,64" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+    <Sprite name="SubmarineTabButton" texture="Content/UI/InventoryUIAtlas.png" sourcerect="303,606,65,65" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
   </InfoFrameTabButton.Submarine>
+  <InfoFrameTabButton.Traitor color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
+    <Sprite name="TraitorTabButton" texture="Content/UI/InventoryUIAtlas.png" sourcerect="369,606,65,65" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+  </InfoFrameTabButton.Traitor>
   <ExpandButton>
     <Sprite name="ExpandButton.None" texture="Content/UI/InventoryUIAtlas.png" sourcerect="795,190,40,40" tile="false" maintainaspectratio="true" origin="0.5,0.5" state="None" />
     <Sprite name="ExpandButton.Hover" texture="Content/UI/InventoryUIAtlas.png" sourcerect="845,190,40,40" tile="false" maintainaspectratio="true" origin="0.5,0.5" state="Hover" />
