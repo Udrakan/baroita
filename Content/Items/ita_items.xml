@@ -1838,7 +1838,7 @@
       <Containable items="bill,ita_coin1,idcard,money" />
     </ItemContainer>
   </Item>
-  <Item name="Bill 50mk" identifier="ita_bill50" category="Material" Tags="smallitem,bill,money" maxstacksize="10" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.1" impactsoundtag="impact_soft">
+  <Item name="Bill 50mk" identifier="ita_bill50" category="Material" Tags="smallitem,bill,money,ita_bill50" maxstacksize="10" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.1" impactsoundtag="impact_soft">
     <PreferredContainer primary="crewcab" minamount="2" maxamount="3" spawnprobability="1" />
     <PreferredContainer secondary="outpostcrewcabinet" minamount="0" maxamount="2" spawnprobability="0.5" />
     <Price baseprice="55" soldeverywhere="true">
@@ -1852,7 +1852,7 @@
     <Body radius="40" width="20" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
   </Item>
-  <Item name="Bill 100mk" identifier="ita_bill100" category="Material" Tags="smallitem,bill,money,b100" maxstacksize="10" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.1" impactsoundtag="impact_soft">
+  <Item name="Bill 100mk" identifier="ita_bill100" category="Material" Tags="smallitem,bill,money,ita_bill100" maxstacksize="10" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.1" impactsoundtag="impact_soft">
     <Price baseprice="100">
       <Price locationtype="city" multiplier="1" sold="true" minavailable="20" maxavailable="20" />
       <Price locationtype="research" multiplier="1" sold="true" minavailable="20" maxavailable="20" />
@@ -1864,7 +1864,7 @@
     <Body radius="40" width="20" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
   </Item>
-  <Item name="Bill 200mk" identifier="ita_bill200" category="Material" Tags="smallitem,bill,money,b100" maxstacksize="10" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.1" impactsoundtag="impact_soft">
+  <Item name="Bill 200mk" identifier="ita_bill200" category="Material" Tags="smallitem,bill,money,ita_bill200" maxstacksize="10" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.1" impactsoundtag="impact_soft">
     <Price baseprice="200">
       <Price locationtype="city" multiplier="1" sold="true" minavailable="20" maxavailable="20" />
       <Price locationtype="research" multiplier="1" sold="true" minavailable="20" maxavailable="20" />
@@ -1876,7 +1876,7 @@
     <Body radius="40" width="20" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
   </Item>
-  <Item name="Coin 5mk" maxstacksize="10" identifier="ita_coin5" cargocontaineridentifier="metalcrate" tags="smallitem,coin,money" scale="0.5" linkable="true" pickdistance="150" impactsoundtag="impact_metal_heavy" hideinmenus="false">
+  <Item name="Coin 5mk" maxstacksize="10" identifier="ita_coin5" cargocontaineridentifier="metalcrate" tags="smallitem,coin,money,ita_coin5" scale="0.5" linkable="true" pickdistance="150" impactsoundtag="impact_metal_heavy" hideinmenus="false">
     <Price baseprice="5" soldeverywhere="false">
       <Price locationtype="city" multiplier="1" sold="true" minavailable="20" maxavailable="20" />
       <Price locationtype="research" multiplier="1" sold="true" minavailable="20" maxavailable="20" />
@@ -1891,7 +1891,7 @@
     <Body width="11" height="11" density="20" />
     <Holdable slots="Any" aimpos="5,0" handle1="-5,0" holdangle="220" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name="Coin 1mk" maxstacksize="10" identifier="ita_coin1" cargocontaineridentifier="metalcrate" tags="smallitem,coin,money" scale="0.5" linkable="true" pickdistance="150" impactsoundtag="impact_metal_heavy" hideinmenus="false">
+  <Item name="Coin 1mk" maxstacksize="10" identifier="ita_coin1" cargocontaineridentifier="metalcrate" tags="smallitem,coin,money,ita_coin1" scale="0.5" linkable="true" pickdistance="150" impactsoundtag="impact_metal_heavy" hideinmenus="false">
     <Price baseprice="1">
       <Price locationtype="city" multiplier="1" sold="true" minavailable="20" maxavailable="20" />
       <Price locationtype="research" multiplier="1" sold="true" minavailable="20" maxavailable="20" />

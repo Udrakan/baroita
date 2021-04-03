@@ -243,6 +243,23 @@
 				</Item>
 			</ItemSet>
 		</npc>		
+		<npc identifier="ita_banker" job="assistant" spawnpointtags="banker1" healthmultiplier="0.8" behavior="StayInHull">
+		<ItemSet commonness="1">
+			<Item identifier="watchmanclothes" equip="true"/>
+			<Item identifier="idcard" equip="true"/>
+			<Item identifier="revolver" equip="false">
+				<Item identifier="revolverround"/>
+				<Item identifier="revolverround"/>
+				<Item identifier="revolverround"/>
+				<Item identifier="revolverround"/>
+				<Item identifier="revolverround"/>
+				<Item identifier="revolverround"/>
+			</Item>
+			<Item identifier="divingmask">
+				<Item identifier="oxygentank" />
+			</Item>
+      </ItemSet>
+    </npc>
 		<!--GUARDS-->	
 		<npc identifier="ita_guard1" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol" aimspeed="0.65" aimaccuracy="0.55" >
 			<ItemSet>
@@ -358,7 +375,7 @@
 		</npc>
 		
 		<!--TRANSPORT NPCS-->
-		<npc identifier="ita_engineermecha" job="assistant" commonness="1" healthmultiplier="1" behavior="Active">
+		<npc identifier="ita_engineermecha" job="assistant" commonness="1" healthmultiplier="1" behavior="StayInHull">
 			<ItemSet commonness="1">
 				<Item identifier="baseballcap" equip="true"/>
 				<Item identifier="bluejumpsuit3" equip="true"/>
@@ -486,7 +503,17 @@
 				</Item> 
 			</ItemSet>
 		</npc>
-		<npc identifier="ita_taskmaster" job="assistant" commonness="1" spawnpointtags="bar" behavior="Passive" preferredoutpostmoduletypes="ita_city_atrium">
+		<npc identifier="ita_taskmaster" job="assistant" commonness="1" spawnpointtags="engineering" behavior="Passive" preferredoutpostmoduletypes="ita_city_atrium">
+			<ItemSet commonness="1">
+				<Item identifier="crewchiefclothes" equip="true" />
+				<Item identifier="idcard" equip="true" tags="ita_citymanager"/>
+				<Item identifier="divingmask" equip="true">
+					<Item identifier="oxygentank" />
+				</Item> 
+			</ItemSet>
+		</npc>
+		<!--TRAINERS-->
+		<npc identifier="ita_trainer1" job="mechanic" commonness="1" spawnpointtags="engineering" behavior="Passive" preferredoutpostmoduletypes="ita_fabricationmodule">
 			<ItemSet commonness="1">
 				<Item identifier="crewchiefclothes" equip="true" />
 				<Item identifier="idcard" equip="true" tags="ita_citymanager"/>
@@ -553,6 +580,33 @@
 			</ItemSet>
 		</npc>
 		
+		<!--BASIC EVENT NPCS-->
+			<npc identifier="ita_mechanic1" job="mechanic" commonness="1" healthmultiplier="1" preferredoutpostmoduletypes="admin,adminmodule" behavior="Passive">
+			<ItemSet commonness="1">
+				<Item identifier="baseballcap" equip="true"/>
+				<Item identifier="bluejumpsuit3" equip="true"/>
+				<Item identifier="idcard" equip="true"/>
+				<Item identifier="wrench" equip="false"/>
+				<Item identifier="screwdriver" equip="false"/>
+				<Item identifier="revolver" equip="false">
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+				</Item>
+				<Item identifier="divingmask">
+					<Item identifier="oxygentank" />
+				</Item> 
+				<Item identifier="toolbelt">
+					<Item identifier="weldingfueltank"/>
+					<Item identifier="weldingtool">
+						<Item identifier="weldingfueltank" />
+					</Item> 
+				</Item>
+			</ItemSet>
+		</npc>
 		<!--HABITATION NPCS-->
 		<npc identifier="ita_raceman" job="assistant" commonness="1" spawnpointtags="bar" behavior="StayInHull" >
 			<ItemSet commonness="1">

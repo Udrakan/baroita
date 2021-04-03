@@ -481,9 +481,9 @@
   </Item>
   <Item name="Climber Table" identifier="ita_climbertable" tags="ita_climbertable" pickdistance="150" scale="0.5">
     <Sprite texture="Mods/IntoTheAbyss/Content/Outposts/ita_spritesoutpost.png" depth="0.84" sourcerect="3,289,141,159" canflipx="true" origin="0.5,0.5" />
-    <ItemContainer capacity="10" canbeselected="true" hideitems="false" itempos="84,16" msg="ItemMsgInteractSelect">
+    <ItemContainer capacity="4" canbeselected="true" hideitems="false" itempos="84,16" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
-      <Containable items="ita_climber1,ita_climber2,ita_climber3,ita_lantern1,plasmacutter,flare,alienflare,flashlight,batterycell"/>
+      <Containable items="ita_climber1,ita_climber2,ita_climber3,ita_climber4,ita_lantern1,plasmacutter,flare,alienflare,flashlight,batterycell"/>
     </ItemContainer>
   </Item>
  
@@ -576,7 +576,7 @@
       <RequiredItem items="screwdriver" type="Equipped" />
       <input name="Trigger" displayname="Trigger">
         <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
-          <TriggerEvent identifier="ita_clothier" />
+          <TriggerEvent identifier="ita_clothier1" />
           <RequiredItem items="baseballcap" type="Contained" />
           <Remove />
         </StatusEffect>
@@ -642,11 +642,6 @@
           <Remove />
         </StatusEffect>
 		<StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
-          <TriggerEvent identifier="ita_clothier1" />
-          <RequiredItem items="ita_clothier1" type="Contained" />
-          <Remove />
-        </StatusEffect>
-		<StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
           <TriggerEvent identifier="ita_botanist1" />
           <RequiredItem items="ita_botanist1" type="Contained" />
           <Remove />
@@ -667,11 +662,10 @@
           <Remove />
         </StatusEffect>
 		<StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
-          <TriggerEvent identifier="ita_coin1" />
-          <RequiredItem items="ita_bank1" type="Contained" />
+          <TriggerEvent identifier="ita_bank1" />
+          <RequiredItem items="ita_coin1" type="Contained" />
           <Remove />
-        </StatusEffect>
-		
+        </StatusEffect>	
       </input>
     </ConnectionPanel>
     <ItemContainer canbeselected="true" capacity="1" itempos="0,0" hideitems="false" />
