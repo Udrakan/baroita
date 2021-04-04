@@ -779,7 +779,7 @@
 			<LocationType from="Mining" to="Lair"/>
 		</NestMission>
 		<!--DryCaves-->
-		<OutpostNestMission name="Clear a Cave" identifier="ita_drycave_clear1" textidentifier="abandonedoutpostmonsters" tags="abandonedoutpost,city1,ita_military1" type="OutpostDestroy" reward="3000" difficulty="4" commonness="1000" allowretry="False" sonarlabel="nest" unhideentitysubcategories="abandonedmonster">
+		<OutpostNestMission name="Clear a Cave" identifier="ita_drycave_clear1" description="Our custom description" tags="drycave1" type="OutpostDestroy" reward="3000" difficulty="4" commonness="1000" allowretry="False" sonarlabel="nest" unhideentitysubcategories="abandonedmonster">
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="5" />
 			<Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48"/>
@@ -902,6 +902,8 @@
 				<Character identifier="banditleader_heavy" from="abandonedoutpostnpcs" asfaraspossible="true" requirekill="true"/>
 			</Characters>
 		</OutpostDestroyMission>
+
+
 
 	</Missions>
 </Override>
