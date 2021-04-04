@@ -2022,7 +2022,7 @@
 					<ConversationAction text="Outpost speakers: &quot;Alert! Husks have breached containment! Whoever pushed that button, you'll pay for this!&quot; This will make the Cult happy... &#xD;&#xA;[Husk &#x9;&#x9;REP+50 ]&#xD;&#xA;[Coalition  REP-70 ]&#xD;&#xA;[Outpost &#x9;REP-200]" dialogtype="Small" _npos="-983.64923,-217.38885" />
 					<ReputationAction increase="50" identifier="huskcult" targettype="Faction" _npos="-601.83636,-217.22906" />
 					<ReputationAction increase="-70" identifier="coalition" targettype="Faction" _npos="-200.31625,-217.02103" />
-					<ReputationAction increase="-100" targettype="Location" _npos="200.57056,-217.02103" />
+					<ReputationAction increase="-200" targettype="Location" _npos="200.57056,-217.02103" />
 					<SetDataAction operation="Set" value="timeshuskreleased" identifier="1" _npos="608.7023,-217.0362" />
 				</Failure>
 			</CheckDataAction>
@@ -3287,7 +3287,7 @@
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missions_military1" commonness="125">
 			<NPCWaitAction npctag="ita_coalitionchief" wait="true" />
-			<ConversationAction text="We need you to exterminate a small swarm" speakertag="ita_coalitionchief" dialogtype="Small" />
+			<ConversationAction text="We need you to run some errands." speakertag="ita_coalitionchief" dialogtype="Small" />
 			<MissionAction missiontag="ita_military1" />
 			<NPCWaitAction npctag="ita_coalitionchief" wait="false" />
 		</ScriptedEvent>
@@ -3321,6 +3321,83 @@
 			<MissionAction missiontag="city1" />
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
+		<!--TAXI-->
+		<ScriptedEvent identifier="ita_taxi_mecha1a">
+  <CheckDataAction identifier="taxi1mecha" condition="eq 0" _npos="-1753.9036,-323.85974">
+    <Success>
+      <RNGAction chance="0.5" _npos="-1105.372,-291.807">
+        <Success>
+          <SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_taxi_mechanic1" targettag="transpnpc1" spawnpointtag="bar" _npos="252.38416,-260.49564" />
+          <WaitAction time="1" _npos="757.9575,-261.1023" />
+          <NPCWaitAction npctag="transpnpc1" wait="true" _npos="1161.6409,-282.27606" />
+          <ConversationAction text="Mechanic with prosthetic hands approaches you at the bar.&#xD;&#xA;&quot;Hey, you have a submarine, right? One with guns and shit? I need a ride. I'll pay you good.&quot;&#xD;&#xA;[MISSION: PASSENGER TRANSPORT, REWARD: 800mk]" speakertag="transpnpc1" dialogtype="Small" _npos="1541.937,-283.11996">
+            <Option text="[ACCEPT] &quot;Sure. Come on board.&quot;" endconversation="true">
+              <TagAction criteria="itemtag:citydockop" tag="citydockop" _npos="2079.27,-283.56985" />
+              <NPCWaitAction npctag="transpnpc1" wait="false" _npos="2462.3618,-277.53546" />
+              <NPCFollowAction npctag="transpnpc1" targettag="citydockop" follow="true" _npos="2861.9421,-283.15033" />
+              <SetDataAction operation="Set" value="1" identifier="taxi1mecha" _npos="3244.5796,-283.0054" />
+              <TriggerAction target1tag="transpnpc1" target2tag="citydockop" radius="300" _npos="3644.1218,-283.20898" />
+              <NPCWaitAction npctag="transpnpc1" wait="true" _npos="4154.283,228.18265" />
+              <AfflictionAction affliction="stun" strength="1" limbtype="Torso" targettag="transpnpc1" _npos="4603.027,229.42203" />
+            </Option>
+            <Option text="[DECLINE] &quot;No. Our air is thin enough already.&quot;" endconversation="true" />
+          </ConversationAction>
+        </Success>
+      </RNGAction>
+    </Success>
+    <Failure>
+      <CheckDataAction identifier="taxi1mecha" condition="eq 1" _npos="-1755.3369,-68.94739">
+        <Success>
+          <SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_taxi_mechanic1" targettag="transpnpc1" spawnpointtag="passenger" _npos="-1111.5758,-36.07727" />
+        </Success>
+        <Failure>
+          <CheckDataAction identifier="taxi1mecha" condition="eq 2" _npos="-1751.1306,505.5094">
+            <Success>
+              <SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_taxi_mechanic1" targettag="transpnpc1" spawnpointtag="passenger" _npos="-1110.653,537.7463" />
+              <NPCWaitAction npctag="transpnpc1" wait="true" _npos="-743.36865,537.17725" />
+              <ConversationAction text="&quot;Thanks for getting me out of there. This ought to be a better place to live than that shit-hole!&quot;&#xD;&#xA;&#xD;&#xA;It isn't. The only &quot;better place to live&quot; on Europa is on a free submarine with a decent crew. The rest is all the same... But that's a lesson for the mechanic to learn over time. He hands you the cash as promised and starts looking around.&#xD;&#xA;&#xD;&#xA;[REWARD: 800mk]" speakertag="transpnpc1" waitforinteraction="true" invokertag="rewarder" dialogtype="Small" _npos="-370.8136,537.2999" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="rewarder" _npos="100.238525,537.8662" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="rewarder" _npos="465.5912,537.8777" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="rewarder" _npos="100.220764,991.49536" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="rewarder" _npos="465.55957,991.4996" />
+              <ConversationAction text="The mechanic was safely transported and gave your crew 800mk, as promised." eventsprite="crowd" dialogtype="Small" _npos="1044.2997,554.3799" />
+            </Success>
+            <Failure>
+              <CheckDataAction identifier="taxi1mecha" condition="eq 3" _npos="-1743.3461,1076.7526">
+                <Success>
+                  <WaitAction time="5" _npos="-1124.3871,1108.0603" />
+                  <ConversationAction text="The mechanic didn't make it. It's common knowledge, that when people climb into submarines, they don't always come back. Luckily, nobody here was waiting for this person, which would have raised suspicion..." dialogtype="Small" _npos="-724.2471,1108.3569" />
+                </Success>
+              </CheckDataAction>
+            </Failure>
+          </CheckDataAction>
+        </Failure>
+      </CheckDataAction>
+    </Failure>
+  </CheckDataAction>
+</ScriptedEvent>
+		
+		<ScriptedEvent identifier="ita_taxi_mecha1b">
+  <CheckDataAction identifier="transpnpc1active" condition="eq 1" _npos="-858.1909,-115.73468">
+    <Success>
+      <SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_taxi_mechanic1" lootingisstealing="true" targettag="transpnpc1" spawnlocation="MainSub" _npos="87.6232,-84.207" />
+	  <Label name="complain" _npos="431.10864,152.76965" />
+      <RNGAction chance="0.5" _npos="587.1777,-24.023468">
+        <Success>
+          <ConversationAction text="&quot;How long is it going to take?&quot;" speakertag="transpnpc1" _npos="988.8368,-167.55511" />
+          <WaitAction time="120" _npos="1379.8193,-166.13737" />
+          <GoTo name="complain" _npos="1919.0369,-165.74747" />
+        </Success>
+        <Failure>
+          <ConversationAction text="&quot;Are we there yet?&quot;" speakertag="transpnpc1" _npos="980.3485,286.8304" />
+          <WaitAction time="120" _npos="1374.3383,292.9464" />
+          <GoTo name="complain" _npos="1944.5,328.5" />
+        </Failure>
+      </RNGAction>
+    </Success>
+  </CheckDataAction>
+</ScriptedEvent>
+		
 		<!--BOUNTIES-->
 		<ScriptedEvent identifier="rebelbase">
 			<TagAction criteria="crew" tag="crewmate"/>

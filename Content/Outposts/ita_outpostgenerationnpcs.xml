@@ -261,7 +261,7 @@
       </ItemSet>
     </npc>
 		<!--GUARDS-->	
-		<npc identifier="ita_guard1" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol" aimspeed="0.65" aimaccuracy="0.55" >
+		<npc identifier="ita_guard1" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol" aimspeed="0.85" aimaccuracy="0.55" >
 			<ItemSet>
 				<Item identifier="securitypatrolclothes" equip="true" />
 				<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
@@ -284,7 +284,7 @@
 				</Item> 
 			</ItemSet>
 		</npc>
-		<npc identifier="ita_guard2" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol" aimspeed="0.65" aimaccuracy="0.55" >
+		<npc identifier="ita_guard2" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol" aimspeed="0.85" aimaccuracy="0.55" >
 			<ItemSet>
 				<Item identifier="securitypatrolclothes" equip="true" />
 				<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
@@ -314,7 +314,7 @@
 				</Item> 
 			</ItemSet>
 		</npc>		
-		<npc identifier="ita_guard3" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol" aimspeed="0.65" aimaccuracy="0.55" >
+		<npc identifier="ita_guard3" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol" aimspeed="0.85" aimaccuracy="0.55" >
 			<ItemSet>
 				<Item identifier="securitypatrolclothes" equip="true" />
 				<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
@@ -382,6 +382,31 @@
 				<Item identifier="ita_npccard1" equip="true" tags="id_chiefmechanic"/>
 				<Item identifier="wrench" equip="false"/>
 				<Item identifier="idcard"/>
+				<Item identifier="screwdriver" equip="false"/>
+				<Item identifier="revolver" equip="false">
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+				</Item>
+				<Item identifier="divingmask">
+					<Item identifier="oxygentank" />
+				</Item> 
+				<Item identifier="toolbelt">
+					<Item identifier="weldingfueltank"/>
+					<Item identifier="weldingtool">
+						<Item identifier="weldingfueltank" />
+					</Item> 
+				</Item>
+			</ItemSet>
+		</npc>
+		<npc identifier="ita_taxi_mechanic1" job="assistant" commonness="1" healthmultiplier="1" behavior="Active">
+			<ItemSet commonness="1">
+				<Item identifier="baseballcap" equip="true"/>
+				<Item identifier="bluejumpsuit1" equip="true"/>
+				<Item identifier="wrench" equip="false"/>
 				<Item identifier="screwdriver" equip="false"/>
 				<Item identifier="revolver" equip="false">
 					<Item identifier="revolverround"/>
