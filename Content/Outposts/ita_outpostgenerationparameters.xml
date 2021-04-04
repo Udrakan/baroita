@@ -7,9 +7,10 @@
 		<modulecount flag="AdminModule" count="1"/>
 	</OutpostConfig>
 
-	<OutpostConfig identifier="cave" totalmodulecount="4" spawncrewinsideoutpost="false" minhallwaylength="0">
+	<OutpostConfig identifier="cave" totalmodulecount="3" spawncrewinsideoutpost="false" minhallwaylength="0">
 		<modulecount flag="airlock" count="1"/>
 		<modulecount flag="ita_cave" count="1"/>
+		<modulecount flag="ita_cavehall" count="1"/>
 	</OutpostConfig>
 
 	<OutpostConfig identifier="outpost" totalmodulecount="6" minhallwaylength="0" allowedlocationtypes="Outpost">
