@@ -21,6 +21,7 @@
   <LevelGenerationParameters file="Mods/IntoTheAbyss/Content/Campaign/Biomes/ita_coldcaverns.xml" />
   <LevelGenerationParameters file="Mods/IntoTheAbyss/Content/Campaign/Biomes/ita_europanridge.xml" />
   <NPCSets file="Mods/IntoTheAbyss/Content/Outposts/ita_outpostgenerationnpcs.xml" />
+  <Particles file="Mods/IntoTheAbyss/Content/ita_particles.xml" />
   <OutpostConfig file="Mods/IntoTheAbyss/Content/Outposts/ita_outpostgenerationparameters.xml" />
   <RuinConfig file="Mods/IntoTheAbyss/Content/Ruins/ita_ruinconfig1.xml" />
   <RuinConfig file="Mods/IntoTheAbyss/Content/Ruins/ita_ruinconfig2.xml" />
@@ -35,6 +36,10 @@
   <Character file="Mods/IntoTheAbyss/Content/Creatures/Hammerhead/Hammerhead.xml" />
   <Character file="Mods/IntoTheAbyss/Content/Creatures/Hammerheadmatriarch/Hammerheadmatriarch.xml" />
   <Character file="Mods/IntoTheAbyss/Content/Creatures/Hammerheadspawn/Hammerheadspawn.xml" />
+  <Character file="Mods/IntoTheAbyss/Content/Creatures/Mudraptor_racing/Mudraptorbase.xml" />
+  <Character file="Mods/IntoTheAbyss/Content/Creatures/Mudraptor_racing/Mudraptorred.xml" />
+  <Character file="Mods/IntoTheAbyss/Content/Creatures/Mudraptor_racing/Mudraptorgreen.xml" />
+  <Character file="Mods/IntoTheAbyss/Content/Creatures/Mudraptor_racing/Mudraptorblue.xml" />
   <Decals file="Mods/IntoTheAbyss/Content/ita_decalprefabs.xml" />
   <ItemAssembly file="Mods/IntoTheAbyss/Content/Ruins/Assemblies/ita_lights1.xml" />
   <ItemAssembly file="Mods/IntoTheAbyss/Content/Ruins/Assemblies/ita_lights2.xml" />

@@ -2304,7 +2304,7 @@
 		</ScriptedEvent>				
 		<ScriptedEvent identifier="ita_climber1">
 			<TagAction criteria="itemtag:ita_climbertable" tag="climbertablecl1" _npos="-3595.7273,65.36722" />
-			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_mechanic1" targettag="climbercl1" spawnpointtag="climbercl1" _npos="-2195.9033,56.7901" />
+			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_climber1" targettag="climbercl1" spawnpointtag="climbercl1" _npos="-2195.9033,56.7901" />
 			<Label name="clothesc1" _npos="-1890.9636,55.244232" />
 			<CheckReputationAction targettype="Location" condition="gt 0" _npos="-1508.6138,56.08255">
 				<Success>
@@ -2386,6 +2386,10 @@
 																									<SpawnAction lootingisstealing="false" itemidentifier="ita_climber2" targetinventory="climbertablecl1" ignorebyai="true" _npos="5845.3535,-1157.3354" />
 																									<SpawnAction lootingisstealing="false" itemidentifier="ita_climber2" targetinventory="climbertablecl1" ignorebyai="true" _npos="5845.3535,-1157.3354" />
 																									<SpawnAction lootingisstealing="false" itemidentifier="ita_climber2" targetinventory="climbertablecl1" ignorebyai="true" _npos="5845.3535,-1157.3354" />
+																									<SpawnAction lootingisstealing="false" itemidentifier="ita_climber2" targetinventory="climbertablecl1" ignorebyai="true" _npos="5845.3535,-1157.3354" />
+																									<SpawnAction lootingisstealing="false" itemidentifier="ita_climber2" targetinventory="climbertablecl1" ignorebyai="true" _npos="5845.3535,-1157.3354" />
+																									<SpawnAction lootingisstealing="false" itemidentifier="ita_climber2" targetinventory="climbertablecl1" ignorebyai="true" _npos="5845.3535,-1157.3354" />
+																									<SpawnAction lootingisstealing="false" itemidentifier="ita_climber2" targetinventory="climbertablecl1" ignorebyai="true" _npos="5845.3535,-1157.3354" />
 																									<GoTo name="end" _npos="5842.3677,-254.0733" />
 																								</Success>
 																								<Failure>
@@ -2428,6 +2432,10 @@
 																																				<Failure>
 																																					<CheckDataAction identifier="cl1op9" condition="eq 1" _npos="8253.816,-1339.4791">
 																																						<Success>
+																																							<SpawnAction lootingisstealing="false" itemidentifier="ita_climber4" targetinventory="climbertablecl1" ignorebyai="true" _npos="8254.13,-1146.5507" />
+																																							<SpawnAction lootingisstealing="false" itemidentifier="ita_climber4" targetinventory="climbertablecl1" ignorebyai="true" _npos="8254.13,-1146.5507" />
+																																							<SpawnAction lootingisstealing="false" itemidentifier="ita_climber4" targetinventory="climbertablecl1" ignorebyai="true" _npos="8254.13,-1146.5507" />
+																																							<SpawnAction lootingisstealing="false" itemidentifier="ita_climber4" targetinventory="climbertablecl1" ignorebyai="true" _npos="8254.13,-1146.5507" />
 																																							<SpawnAction lootingisstealing="false" itemidentifier="ita_climber4" targetinventory="climbertablecl1" ignorebyai="true" _npos="8254.13,-1146.5507" />
 																																							<SpawnAction lootingisstealing="false" itemidentifier="ita_climber4" targetinventory="climbertablecl1" ignorebyai="true" _npos="8254.13,-1146.5507" />
 																																							<SpawnAction lootingisstealing="false" itemidentifier="ita_climber4" targetinventory="climbertablecl1" ignorebyai="true" _npos="8254.13,-1146.5507" />
@@ -3322,82 +3330,72 @@
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
 		<!--TAXI-->
-		<ScriptedEvent identifier="ita_taxi_mecha1a">
-  <CheckDataAction identifier="taxi1mecha" condition="eq 0" _npos="-1753.9036,-323.85974">
+		<ScriptedEvent identifier="ita_taxi1mechanic">
+  <CheckDataAction identifier="taxi1mechakill" condition="eq 1" _npos="-1761.8502,-756.1485">
     <Success>
-      <RNGAction chance="0.5" _npos="-1105.372,-291.807">
-        <Success>
-          <SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_taxi_mechanic1" targettag="transpnpc1" spawnpointtag="bar" _npos="252.38416,-260.49564" />
-          <WaitAction time="1" _npos="757.9575,-261.1023" />
-          <NPCWaitAction npctag="transpnpc1" wait="true" _npos="1161.6409,-282.27606" />
-          <ConversationAction text="Mechanic with prosthetic hands approaches you at the bar.&#xD;&#xA;&quot;Hey, you have a submarine, right? One with guns and shit? I need a ride. I'll pay you good.&quot;&#xD;&#xA;[MISSION: PASSENGER TRANSPORT, REWARD: 800mk]" speakertag="transpnpc1" dialogtype="Small" _npos="1541.937,-283.11996">
-            <Option text="[ACCEPT] &quot;Sure. Come on board.&quot;" endconversation="true">
-              <TagAction criteria="itemtag:citydockop" tag="citydockop" _npos="2079.27,-283.56985" />
-              <NPCWaitAction npctag="transpnpc1" wait="false" _npos="2462.3618,-277.53546" />
-              <NPCFollowAction npctag="transpnpc1" targettag="citydockop" follow="true" _npos="2861.9421,-283.15033" />
-              <SetDataAction operation="Set" value="1" identifier="taxi1mecha" _npos="3244.5796,-283.0054" />
-              <TriggerAction target1tag="transpnpc1" target2tag="citydockop" radius="300" _npos="3644.1218,-283.20898" />
-              <NPCWaitAction npctag="transpnpc1" wait="true" _npos="4154.283,228.18265" />
-              <AfflictionAction affliction="stun" strength="1" limbtype="Torso" targettag="transpnpc1" _npos="4603.027,229.42203" />
-            </Option>
-            <Option text="[DECLINE] &quot;No. Our air is thin enough already.&quot;" endconversation="true" />
-          </ConversationAction>
-        </Success>
-      </RNGAction>
+      <SetDataAction operation="Set" value="0" identifier="taxi1mechakill" _npos="-1315.9049,-724.3248" />
+      <SetDataAction operation="Set" value="2" identifier="taxi1mecha" _npos="-926.9454,-724.9302" />
+      <WaitAction time="5" _npos="-540.7449,-725.7092" />
+      <ConversationAction text="The mechanic didn't make it. It's common knowledge, that people who climb into submarines, don't always come back. Luckily, nobody here was waiting for this person, which would have raised suspicion..." dialogtype="Small" _npos="-157.9956,-724.84467" />
     </Success>
     <Failure>
-      <CheckDataAction identifier="taxi1mecha" condition="eq 1" _npos="-1755.3369,-68.94739">
+      <CheckDataAction identifier="taxi1mecha" condition="eq 0" _npos="-1753.9036,-323.85974">
         <Success>
-          <SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_taxi_mechanic1" targettag="transpnpc1" spawnpointtag="passenger" _npos="-1111.5758,-36.07727" />
+          <RNGAction chance="0.5" _npos="-1105.372,-291.807">
+            <Success>
+              <SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_taxi_mechanic1" targettag="transpnpc1" spawnpointtag="bartender1" _npos="2195.0205,-260.86166" />
+              <WaitAction time="1" _npos="2554.3105,-257.573" />
+              <NPCWaitAction npctag="transpnpc1" wait="true" _npos="2957.9937,-278.74677" />
+              <TagAction criteria="itemtag:citydockop" tag="citydockop" _npos="3875.623,-280.04056" />
+              <ConversationAction text="Mechanic with prosthetic hands approaches you at the bar.&#xD;&#xA;&quot;Hey, you have a submarine, right? One with guns and shit? I need a ride. I'll pay you good.&quot;&#xD;&#xA;[MISSION: PASSENGER TRANSPORT, REWARD: 800mk]" speakertag="transpnpc1" dialogtype="Small" _npos="3338.29,-279.59067">
+                <Option text="[ACCEPT] &quot;Sure. Come on board.&quot;" endconversation="true">
+                  <NPCWaitAction npctag="transpnpc1" wait="false" _npos="4258.715,-274.00616" />
+                  <NPCFollowAction npctag="transpnpc1" targettag="citydockop" follow="true" _npos="4658.295,-279.62103" />
+                  <SetDataAction operation="Set" value="1" identifier="taxi1mecha" _npos="5041.8027,-281.21622" />
+                  <SetDataAction operation="Set" value="0" identifier="taxi1mechakill" _npos="5423.839,-278.25015" />
+                  <TriggerAction target1tag="transpnpc1" target2tag="citydockop" radius="300" _npos="5846.5273,-268.4003" />
+                  <NPCWaitAction npctag="transpnpc1" wait="true" _npos="6311.5728,-267.3952" />
+                  <AfflictionAction affliction="stun" strength="1" limbtype="Torso" targettag="transpnpc1" _npos="6733.528,-267.5656" />
+                </Option>
+                <Option text="[DECLINE] &quot;No. Our air is thin enough already.&quot;" endconversation="true">
+                  <SetDataAction operation="Set" value="2" identifier="taxi1mecha" _npos="3913.1191,13.479889" />
+                </Option>
+              </ConversationAction>
+            </Success>
+          </RNGAction>
         </Success>
         <Failure>
-          <CheckDataAction identifier="taxi1mecha" condition="eq 2" _npos="-1751.1306,505.5094">
+          <CheckDataAction identifier="taxi1mecha" condition="eq 1" _npos="-1779.7014,62.475677">
             <Success>
-              <SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_taxi_mechanic1" targettag="transpnpc1" spawnpointtag="passenger" _npos="-1110.653,537.7463" />
-              <NPCWaitAction npctag="transpnpc1" wait="true" _npos="-743.36865,537.17725" />
-              <ConversationAction text="&quot;Thanks for getting me out of there. This ought to be a better place to live than that shit-hole!&quot;&#xD;&#xA;&#xD;&#xA;It isn't. The only &quot;better place to live&quot; on Europa is on a free submarine with a decent crew. The rest is all the same... But that's a lesson for the mechanic to learn over time. He hands you the cash as promised and starts looking around.&#xD;&#xA;&#xD;&#xA;[REWARD: 800mk]" speakertag="transpnpc1" waitforinteraction="true" invokertag="rewarder" dialogtype="Small" _npos="-370.8136,537.2999" />
-              <SpawnAction itemidentifier="ita_bill200" targetinventory="rewarder" _npos="100.238525,537.8662" />
-              <SpawnAction itemidentifier="ita_bill200" targetinventory="rewarder" _npos="465.5912,537.8777" />
-              <SpawnAction itemidentifier="ita_bill200" targetinventory="rewarder" _npos="100.220764,991.49536" />
-              <SpawnAction itemidentifier="ita_bill200" targetinventory="rewarder" _npos="465.55957,991.4996" />
-              <ConversationAction text="The mechanic was safely transported and gave your crew 800mk, as promised." eventsprite="crowd" dialogtype="Small" _npos="1044.2997,554.3799" />
-            </Success>
-            <Failure>
-              <CheckDataAction identifier="taxi1mecha" condition="eq 3" _npos="-1743.3461,1076.7526">
+              <CheckDataAction identifier="traversed90" condition="eq 1" _npos="-1330.5614,111.48593">
                 <Success>
-                  <WaitAction time="5" _npos="-1124.3871,1108.0603" />
-                  <ConversationAction text="The mechanic didn't make it. It's common knowledge, that when people climb into submarines, they don't always come back. Luckily, nobody here was waiting for this person, which would have raised suspicion..." dialogtype="Small" _npos="-724.2471,1108.3569" />
+                  <SetDataAction operation="Set" value="2" identifier="taxi1mecha" _npos="-735.45123,504.96353" />
+                  <SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_taxi_mechanic1" targettag="transpnpc1" spawnpointtag="passenger" _npos="-306.02454,546.83844" />
+                  <NPCWaitAction npctag="transpnpc1" wait="true" _npos="61.259888,546.2694" />
+                  <ConversationAction text="&quot;Thanks for getting me out of there. This ought to be a better place to live than that shit-hole!&quot;&#xD;&#xA;&#xD;&#xA;It isn't. The only &quot;better place to live&quot; on Europa is on a free submarine with a decent crew. The rest is all the same... But that's a lesson for the mechanic to learn over time. He hands you the cash as promised and starts looking around.&#xD;&#xA;&#xD;&#xA;[REWARD: 800mk]" speakertag="transpnpc1" waitforinteraction="true" invokertag="rewarder" dialogtype="Small" _npos="433.81494,546.3921" />
+                  <SpawnAction lootingisstealing="false" itemidentifier="ita_bill200" targetinventory="rewarder" _npos="904.86707,546.9584" />
+                  <SpawnAction lootingisstealing="false" itemidentifier="ita_bill200" targetinventory="rewarder" _npos="1270.2197,546.96985" />
+                  <SpawnAction lootingisstealing="false" itemidentifier="ita_bill200" targetinventory="rewarder" _npos="904.84924,1000.5875" />
+                  <SpawnAction lootingisstealing="false" itemidentifier="ita_bill200" targetinventory="rewarder" _npos="1270.1881,1000.59174" />
+                  <ConversationAction text="The mechanic was safely transported and gave your crew 800mk, as promised." eventsprite="crowd" dialogtype="Small" _npos="1883.6959,557.5607" />
                 </Success>
+                <Failure>
+                  <SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_taxi_mechanic1" targettag="transpnpc1" spawnlocation="MainSub" _npos="-312.79724,-1.9115295" />
+                  <SpawnAction lootingisstealing="false" itemidentifier="ita_taxi_cardmecha1a" targetinventory="transpnpc1" _npos="68.000244,-2.494873" />
+                  <SpawnAction lootingisstealing="false" itemidentifier="ita_bill200" targetinventory="transpnpc1" _npos="456.1839,-4.197357" />
+                  <SpawnAction lootingisstealing="false" itemidentifier="ita_bill200" targetinventory="transpnpc1" _npos="911.4785,-4.118683" />
+                </Failure>
               </CheckDataAction>
-            </Failure>
+            </Success>
           </CheckDataAction>
         </Failure>
       </CheckDataAction>
     </Failure>
   </CheckDataAction>
 </ScriptedEvent>
-		
-		<ScriptedEvent identifier="ita_taxi_mecha1b">
-  <CheckDataAction identifier="transpnpc1active" condition="eq 1" _npos="-858.1909,-115.73468">
-    <Success>
-      <SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_taxi_mechanic1" lootingisstealing="true" targettag="transpnpc1" spawnlocation="MainSub" _npos="87.6232,-84.207" />
-	  <Label name="complain" _npos="431.10864,152.76965" />
-      <RNGAction chance="0.5" _npos="587.1777,-24.023468">
-        <Success>
-          <ConversationAction text="&quot;How long is it going to take?&quot;" speakertag="transpnpc1" _npos="988.8368,-167.55511" />
-          <WaitAction time="120" _npos="1379.8193,-166.13737" />
-          <GoTo name="complain" _npos="1919.0369,-165.74747" />
-        </Success>
-        <Failure>
-          <ConversationAction text="&quot;Are we there yet?&quot;" speakertag="transpnpc1" _npos="980.3485,286.8304" />
-          <WaitAction time="120" _npos="1374.3383,292.9464" />
-          <GoTo name="complain" _npos="1944.5,328.5" />
-        </Failure>
-      </RNGAction>
-    </Success>
-  </CheckDataAction>
-</ScriptedEvent>
-		
+		<ScriptedEvent identifier="ita_taxi1mechanickill">
+			<SetDataAction operation="Set" value="1" identifier="taxi1mechakill" _npos="-1272,259.5" />
+		</ScriptedEvent>
 		<!--BOUNTIES-->
 		<ScriptedEvent identifier="rebelbase">
 			<TagAction criteria="crew" tag="crewmate"/>
@@ -3632,7 +3630,6 @@
 						<Option text="&quot;How can we help?&quot;" endconversation="true">
 							<ConversationAction text="&quot;We need some supplies to stay here a bit longer. Our mechanic will have more details.&quot;" targettag="talker1" eventsprite="captain" dialogtype="Small" _npos="12270.369,745.0551" />
 							<TriggerEventAction identifier="ita_beacon_sep1.0b" _npos="12632.933,843.1345" />
-							<GoTo name="s1" _npos="12632.156,745.4965" />
 						</Option>
 						<Option text="&quot;You've made a serious mistake letting us in, *comrade*...&quot;" endconversation="true">
 							<ConversationAction text="&quot;Never should have come here!&quot;[COALITION REP +6]" targettag="talker1" eventsprite="captain" dialogtype="Regular" _npos="12271.611,1205.6558" />
@@ -3653,13 +3650,14 @@
 			<Label name="fpgacheck" _npos="8423.877,595.25226" />
 			<NPCWaitAction npctag="seprepair" wait="true" _npos="8826.206,595.34045" />
 			<ConversationAction text="You see a Mechanic looking through a hole in the wall, a screwdriver in hand. &quot;Oh, hello! Did you come by to help? We need somebody to repair this busted old piece of junk. The FPGA circuit broke.&quot;" speakertag="seprepair" invokertag="helper" eventsprite="ita_engi1" dialogtype="Small" _npos="9254.411,595.1901">
-				<Option text="[ENGI 50][FPGA CIRCUIT] &quot;Sure, I got one; let me help.&quot;">
+				<Option text="[ENGI 45][FPGA CIRCUIT] &quot;Sure, I got one; let me help.&quot;">
 					<CheckItemAction targettag="helper" itemidentifiers="fpgacircuit" _npos="10475.356,628.2399">
 						<Success>
-							<SkillCheckAction requiredskill="electrical" requiredlevel="50" probabilitybased="false" targettag="helper" _npos="10908.118,443.81055">
+							<SkillCheckAction requiredskill="electrical" requiredlevel="45" probabilitybased="false" targettag="helper" _npos="10908.118,443.81055">
 								<Success>
 									<RemoveItemAction targettag="helper" itemidentifier="fpgacircuit" amount="1" _npos="11484.874,26.477547" />
 									<ConversationAction text="You lean into the hole in the wall, finding a circuit board of rusted up electronics. You see an old, half burnt FPGA Circuit inside the innerlinings of the metal wall. You snap it out of its slot and replace it with a shiny new one." targettag="helper" _npos="11967.075,26.594467" />
+									<GiveSkillExpAction skill="electrical" amount="3" targettag="helper"/>
 									<ConversationAction text="&quot;Thanks! This place'll be running for a little while longer now. I don't have much, but you can take this here incendium shard. Snatched it from one of the Medical Officers while they were busy, heh! Probably worth something, so, don't spend it all in one place if you catch my drift.&quot;" eventsprite="ita_engi1" targettag="helper" _npos="12433.816,22.34967">
 										<Option text="&quot;Great! Good luck with your operations.&quot;&#xD;&#xA;[SEPARATIST REP +3]">
 											<SpawnAction itemidentifier="incendium" targetinventory="helper" _npos="12948.039,-582.26807" />
@@ -4393,7 +4391,7 @@
 		</ScriptedEvent>					
 		<!--TRAINERS-->
 		<ScriptedEvent identifier="ita_trainer1">
-	<CheckDataAction identifier="trainer1" condition="eq 0" _npos="-3032.3208,47.74701">
+			<CheckDataAction identifier="trainer1" condition="eq 0" _npos="-3032.3208,47.74701">
 		<Failure>
 		</Failure>
 		<Success>
@@ -4454,7 +4452,7 @@
 																					<GoTo name="start" _npos="4493.9253,-988.6662" />
 																				</Success>
 																				<Failure>
-																					<StatusEffectAction targettag="clothiertablec1" _npos="4960.7363,-294.79236">
+																					<StatusEffectAction targettag="trainer" _npos="4960.7363,-294.79236">
 																						<StatusEffect _npos="4961.413,-193.60559">
 																							<Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_cashregister.ogg" range="500" _npos="4961.747,-91.940796" />
 																						</StatusEffect>
@@ -4577,7 +4575,361 @@
 			</CheckReputationAction>
 		</Success>
 	</CheckDataAction>
-</ScriptedEvent>
+		</ScriptedEvent>
+		<ScriptedEvent identifier="ita_trainer2">
+			<CheckDataAction identifier="trainer2" condition="eq 0" _npos="-3032.3208,47.74701">
+		<Failure>
+		</Failure>
+		<Success>
+			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_trainer2" targettag="trainer" spawnpointtag="engineering" _npos="-2652.6162,111.74692" />
+			<Label name="Start" _npos="-2279.3843,110.62256" />
+			<CheckReputationAction targettype="Location" condition="gt 0" _npos="-1508.6138,56.08255">
+				<Success>
+					<SetDataAction operation="Set" value="0" identifier="deposittr2" _npos="-957.80896,80.390884" />
+					<SetDataAction operation="Set" value="0" identifier="nocashtr2" _npos="-952.3272,267.13666" />
+					<ConversationAction text="&quot;I've repaired more pumps than any other grease-finger here. I'll show you the best ways to fix them, if you pay me for my time.&quot;" speakertag="trainer" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="[360mk] &quot;Sure. I wanna know how to fix those faster.&quot; [+3 MECHANICAL]" endconversation="true">
+							<SetDataAction operation="Set" value="1" identifier="tr2op1" _npos="437.0307,4.243805" />
+							<SetDataAction operation="Set" value="-360" identifier="deposittr2" _npos="821.0993,4.865753" />
+							<Label name="depositcash" _npos="1184.9144,4.7407684" />
+							<CheckDataAction identifier="deposittr2" condition="gte 0" _npos="1653.5111,4.1247406">
+								<Success>
+									<Label name="return" _npos="2293.8618,36.61316" />
+									<CheckDataAction identifier="deposittr2" condition="gte 200" _npos="2379.6885,-231.36981">
+										<Success>
+											<SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="2379.1628,-684.5402" />
+											<SetDataAction operation="Add" value="-200" identifier="deposittr2" _npos="2378.3276,-846.904" />
+											<GoTo name="return" _npos="2378.4004,-945.9211" />
+										</Success>
+										<Failure>
+											<CheckDataAction identifier="deposittr2" condition="gte 100" _npos="2798.9253,-230.95618">
+												<Success>
+													<SpawnAction itemidentifier="ita_bill100" targetinventory="customer" _npos="2800.9456,-686.4027" />
+													<SetDataAction operation="Add" value="-100" identifier="deposittr2" _npos="2800.6204,-848.9049" />
+													<GoTo name="return" _npos="2799.6467,-943.8685" />
+												</Success>
+												<Failure>
+													<CheckDataAction identifier="deposittr2" condition="gte 50" _npos="3175.9202,-227.88037">
+														<Success>
+															<SpawnAction itemidentifier="ita_bill50" targetinventory="customer" _npos="3174.8176,-674.10144" />
+															<SetDataAction operation="Add" value="-50" identifier="deposittr2" _npos="3173.973,-841.63306" />
+															<GoTo name="return" _npos="3173.889,-936.1621" />
+														</Success>
+														<Failure>
+															<CheckDataAction identifier="deposittr2" condition="gte 5" _npos="3562.474,-223.42236">
+																<Success>
+																	<SpawnAction itemidentifier="ita_coin5" targetinventory="customer" _npos="3563.9531,-675.24927" />
+																	<SetDataAction operation="Add" value="-5" identifier="deposittr2" _npos="3563.3877,-836.70825" />
+																	<GoTo name="return" _npos="3563.3613,-933.6582" />
+																</Success>
+																<Failure>
+																	<CheckDataAction identifier="deposittr2" condition="gte 1" _npos="3944.5488,-221.9187">
+																		<Success>
+																			<SpawnAction itemidentifier="ita_coin1" targetinventory="customer" _npos="3944.413,-675.11035" />
+																			<SetDataAction operation="Add" value="-1" identifier="deposittr2" _npos="3945.087,-836.7053" />
+																			<GoTo name="return" _npos="3942.2773,-953.7044" />
+																		</Success>
+																		<Failure>
+																			<CheckDataAction identifier="nocashtr2" condition="eq 1" _npos="4509.6855,-157.76965">
+																				<Success>
+																					<ConversationAction text="&quot;My experience was paid for with years of suffering. I won't teach you unless you pay me properly.&quot;" targettag="customer" eventsprite="ita_engi1" dialogtype="Small" _npos="4502.527,-630.96295" />
+																					<SetDataAction operation="Set" value="0" identifier="tr2op1" _npos="4501.6943,-793.06036" />
+																					<ClearTagAction tag="customer" _npos="4500.0176,-887.4991" />
+																					<GoTo name="start" _npos="4493.9253,-988.6662" />
+																				</Success>
+																				<Failure>
+																					<StatusEffectAction targettag="trainer" _npos="4960.7363,-294.79236">
+																						<StatusEffect _npos="4961.413,-193.60559">
+																							<Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_cashregister.ogg" range="500" _npos="4961.747,-91.940796" />
+																						</StatusEffect>
+																					</StatusEffectAction>
+																					<CheckDataAction identifier="tr2op1" condition="eq 1" _npos="5401.7764,-1352.7748">
+																						<Success>
+																							<GiveSkillExpAction skill="mechanical" amount="3" targettag="customer" _npos="5402.7046,-1152.8772" />
+																							<Label name="end" _npos="6842.869,-786.3138" />
+																							<ClearTagAction tag="customer" _npos="7402.3916,-811.9004" />
+																							<SetDataAction operation="Set" value="0" identifier="tr2op1" _npos="7406.8657,-694.3031" />
+																							<SetDataAction operation="Set" value="1" identifier="trainer1" _npos="-957.80896,80.390884" />
+																						</Success>
+																					</CheckDataAction>
+																				</Failure>
+																			</CheckDataAction>
+																		</Failure>
+																	</CheckDataAction>
+																</Failure>
+															</CheckDataAction>
+														</Failure>
+													</CheckDataAction>
+												</Failure>
+											</CheckDataAction>
+										</Failure>
+									</CheckDataAction>
+								</Success>
+								<Failure>
+									<CheckItemAction targettag="customer" itemidentifiers="ita_coin1" _npos="2386.0745,283.68066">
+										<Success>
+											<RemoveItemAction targettag="customer" itemidentifier="ita_coin1" amount="1" _npos="2386.547,442.73083" />
+											<SetDataAction operation="Add" value="1" identifier="deposittr2" _npos="2386.1182,603.6158" />
+											<GoTo name="depositcash" _npos="2386.1765,764.3399" />
+										</Success>
+										<Failure>
+											<CheckItemAction targettag="customer" itemidentifiers="ita_coin5" _npos="2800.5413,293.61014">
+												<Success>
+													<RemoveItemAction targettag="customer" itemidentifier="ita_coin5" amount="1" _npos="2800.543,455.56757" />
+													<SetDataAction operation="Add" value="5" identifier="deposittr2" _npos="2799.8826,618.0746" />
+													<GoTo name="depositcash" _npos="2800.585,779.6144" />
+												</Success>
+												<Failure>
+													<CheckItemAction targettag="customer" itemidentifiers="ita_bill50" _npos="3173.2302,285.41183">
+														<Success>
+															<RemoveItemAction targettag="customer" itemidentifier="ita_bill50" amount="1" _npos="3173.152,448.727" />
+															<SetDataAction operation="Add" value="50" identifier="deposittr2" _npos="3173.1096,610.42395" />
+															<GoTo name="depositcash" _npos="3173.0225,771.23944" />
+														</Success>
+														<Failure>
+															<CheckItemAction targettag="customer" itemidentifiers="ita_bill100" _npos="3543.9312,286.34448">
+																<Success>
+																	<RemoveItemAction targettag="customer" itemidentifier="ita_bill100" amount="1" _npos="3543.7131,448.28503" />
+																	<SetDataAction operation="Add" value="100" identifier="deposittr2" _npos="3542.1248,610.589" />
+																	<GoTo name="depositcash" _npos="3544.436,775.60364" />
+																</Success>
+																<Failure>
+																	<CheckItemAction targettag="customer" itemidentifiers="ita_bill200" _npos="3934.445,291.8911">
+																		<Success>
+																			<RemoveItemAction targettag="customer" itemidentifier="ita_bill200" amount="1" _npos="3937.5427,452.46378" />
+																			<SetDataAction operation="Add" value="200" identifier="deposittr2" _npos="3936.6948,615.07684" />
+																			<GoTo name="depositcash" _npos="3936.679,777.9497" />
+																		</Success>
+																		<Failure>
+																			<CheckDataAction identifier="deposittr2" condition="gt 0" _npos="4493.946,355.50256">
+																				<Success>
+																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<GoTo name="start" _npos="5281.707,387.06558" />
+																				</Success>
+																				<Failure>
+																					<SetDataAction operation="Set" value="1" identifier="nocashtr2" _npos="4493.303,552.628" />
+																					<CheckDataAction identifier="tr2op" condition="eq 1" _npos="4492.1553,748.407">
+																						<Success>
+																							<SetDataAction operation="Add" value="360" identifier="deposittr2" _npos="4908.7563,809.3996" />
+																							<GoTo name="return" _npos="5270.9043,818.4627" />
+																						</Success>
+																						<Failure>
+																							<CheckDataAction identifier="tr2op" condition="eq 2" _npos="4493.3545,965.6952">
+																								<Success>
+																									<SetDataAction operation="Add" value="240" identifier="deposittr2" _npos="4911.2646,991.7968" />
+																									<GoTo name="return" _npos="5286.4883,982.86914" />
+																								</Success>
+																							</CheckDataAction>
+																						</Failure>
+																					</CheckDataAction>
+																				</Failure>
+																			</CheckDataAction>
+																		</Failure>
+																	</CheckItemAction>
+																</Failure>
+															</CheckItemAction>
+														</Failure>
+													</CheckItemAction>
+												</Failure>
+											</CheckItemAction>
+										</Failure>
+									</CheckItemAction>
+								</Failure>
+							</CheckDataAction>
+						</Option>
+						<Option text="&quot;I might ask you about pumps later.&quot;" endconversation="true" >
+						 <GoTo name="Start"/>
+						</Option>
+					</ConversationAction>
+				</Success>
+				<Failure>
+					<ConversationAction text="&quot;I don't want to be seen talking to scoundrels like you.&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="trainer" eventsprite="ita_engi1" dialogtype="Small" _npos="-1508.6749,281.90588" />
+				</Failure>
+			</CheckReputationAction>
+		</Success>
+	</CheckDataAction>
+		</ScriptedEvent>
+		<ScriptedEvent identifier="ita_trainer3">
+			<CheckDataAction identifier="trainer3" condition="eq 0" _npos="-3032.3208,47.74701">
+		<Failure>
+		</Failure>
+		<Success>
+			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_trainer3" targettag="trainer" spawnpointtag="engineering" _npos="-2652.6162,111.74692" />
+			<Label name="Start" _npos="-2279.3843,110.62256" />
+			<CheckReputationAction targettype="Location" condition="gt 0" _npos="-1508.6138,56.08255">
+				<Success>
+					<SetDataAction operation="Set" value="0" identifier="deposittr3" _npos="-957.80896,80.390884" />
+					<SetDataAction operation="Set" value="0" identifier="nocashtr3" _npos="-952.3272,267.13666" />
+					<ConversationAction text="&quot;Inhaling burnt plastic smoke from repairing junctions over the years has left only one of my lungs partly functional, which might make things complicated if I worked in a submarine, so instead I have to rot here with the outpost dwellers. I can pass on to you what I've learned for a couple marks...&quot;" speakertag="trainer" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="[360mk] &quot;Sounds useful. I wanna know how to deal with the junctions more efficiently.&quot; [+3 ELECTRICAL]" endconversation="true">
+							<SetDataAction operation="Set" value="1" identifier="tr3op1" _npos="437.0307,4.243805" />
+							<SetDataAction operation="Set" value="-360" identifier="deposittr3" _npos="821.0993,4.865753" />
+							<Label name="depositcash" _npos="1184.9144,4.7407684" />
+							<CheckDataAction identifier="deposittr3" condition="gte 0" _npos="1653.5111,4.1247406">
+								<Success>
+									<Label name="return" _npos="2293.8618,36.61316" />
+									<CheckDataAction identifier="deposittr3" condition="gte 200" _npos="2379.6885,-231.36981">
+										<Success>
+											<SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="2379.1628,-684.5402" />
+											<SetDataAction operation="Add" value="-200" identifier="deposittr3" _npos="2378.3276,-846.904" />
+											<GoTo name="return" _npos="2378.4004,-945.9211" />
+										</Success>
+										<Failure>
+											<CheckDataAction identifier="deposittr3" condition="gte 100" _npos="2798.9253,-230.95618">
+												<Success>
+													<SpawnAction itemidentifier="ita_bill100" targetinventory="customer" _npos="2800.9456,-686.4027" />
+													<SetDataAction operation="Add" value="-100" identifier="deposittr3" _npos="2800.6204,-848.9049" />
+													<GoTo name="return" _npos="2799.6467,-943.8685" />
+												</Success>
+												<Failure>
+													<CheckDataAction identifier="deposittr3" condition="gte 50" _npos="3175.9202,-227.88037">
+														<Success>
+															<SpawnAction itemidentifier="ita_bill50" targetinventory="customer" _npos="3174.8176,-674.10144" />
+															<SetDataAction operation="Add" value="-50" identifier="deposittr3" _npos="3173.973,-841.63306" />
+															<GoTo name="return" _npos="3173.889,-936.1621" />
+														</Success>
+														<Failure>
+															<CheckDataAction identifier="deposittr3" condition="gte 5" _npos="3562.474,-223.42236">
+																<Success>
+																	<SpawnAction itemidentifier="ita_coin5" targetinventory="customer" _npos="3563.9531,-675.24927" />
+																	<SetDataAction operation="Add" value="-5" identifier="deposittr3" _npos="3563.3877,-836.70825" />
+																	<GoTo name="return" _npos="3563.3613,-933.6582" />
+																</Success>
+																<Failure>
+																	<CheckDataAction identifier="deposittr3" condition="gte 1" _npos="3944.5488,-221.9187">
+																		<Success>
+																			<SpawnAction itemidentifier="ita_coin1" targetinventory="customer" _npos="3944.413,-675.11035" />
+																			<SetDataAction operation="Add" value="-1" identifier="deposittr3" _npos="3945.087,-836.7053" />
+																			<GoTo name="return" _npos="3942.2773,-953.7044" />
+																		</Success>
+																		<Failure>
+																			<CheckDataAction identifier="nocashtr3" condition="eq 1" _npos="4509.6855,-157.76965">
+																				<Success>
+																					<ConversationAction text="&quot;My experience was paid for with years of suffering. I won't teach you unless you pay me properly.&quot;" targettag="customer" eventsprite="ita_engi1" dialogtype="Small" _npos="4502.527,-630.96295" />
+																					<SetDataAction operation="Set" value="0" identifier="tr3op1" _npos="4501.6943,-793.06036" />
+																					<ClearTagAction tag="customer" _npos="4500.0176,-887.4991" />
+																					<GoTo name="start" _npos="4493.9253,-988.6662" />
+																				</Success>
+																				<Failure>
+																					<StatusEffectAction targettag="trainer" _npos="4960.7363,-294.79236">
+																						<StatusEffect _npos="4961.413,-193.60559">
+																							<Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_cashregister.ogg" range="500" _npos="4961.747,-91.940796" />
+																						</StatusEffect>
+																					</StatusEffectAction>
+																					<CheckDataAction identifier="tr3op1" condition="eq 1" _npos="5401.7764,-1352.7748">
+																						<Success>
+																							<GiveSkillExpAction skill="electrical" amount="3" targettag="customer" _npos="5402.7046,-1152.8772" />
+																							<Label name="end" _npos="6842.869,-786.3138" />
+																							<ClearTagAction tag="customer" _npos="7402.3916,-811.9004" />
+																							<SetDataAction operation="Set" value="0" identifier="tr3op1" _npos="7406.8657,-694.3031" />
+																							<SetDataAction operation="Set" value="1" identifier="trainer1" _npos="-957.80896,80.390884" />
+																						</Success>
+																					</CheckDataAction>
+																				</Failure>
+																			</CheckDataAction>
+																		</Failure>
+																	</CheckDataAction>
+																</Failure>
+															</CheckDataAction>
+														</Failure>
+													</CheckDataAction>
+												</Failure>
+											</CheckDataAction>
+										</Failure>
+									</CheckDataAction>
+								</Success>
+								<Failure>
+									<CheckItemAction targettag="customer" itemidentifiers="ita_coin1" _npos="2386.0745,283.68066">
+										<Success>
+											<RemoveItemAction targettag="customer" itemidentifier="ita_coin1" amount="1" _npos="2386.547,442.73083" />
+											<SetDataAction operation="Add" value="1" identifier="deposittr3" _npos="2386.1182,603.6158" />
+											<GoTo name="depositcash" _npos="2386.1765,764.3399" />
+										</Success>
+										<Failure>
+											<CheckItemAction targettag="customer" itemidentifiers="ita_coin5" _npos="2800.5413,293.61014">
+												<Success>
+													<RemoveItemAction targettag="customer" itemidentifier="ita_coin5" amount="1" _npos="2800.543,455.56757" />
+													<SetDataAction operation="Add" value="5" identifier="deposittr3" _npos="2799.8826,618.0746" />
+													<GoTo name="depositcash" _npos="2800.585,779.6144" />
+												</Success>
+												<Failure>
+													<CheckItemAction targettag="customer" itemidentifiers="ita_bill50" _npos="3173.2302,285.41183">
+														<Success>
+															<RemoveItemAction targettag="customer" itemidentifier="ita_bill50" amount="1" _npos="3173.152,448.727" />
+															<SetDataAction operation="Add" value="50" identifier="deposittr3" _npos="3173.1096,610.42395" />
+															<GoTo name="depositcash" _npos="3173.0225,771.23944" />
+														</Success>
+														<Failure>
+															<CheckItemAction targettag="customer" itemidentifiers="ita_bill100" _npos="3543.9312,286.34448">
+																<Success>
+																	<RemoveItemAction targettag="customer" itemidentifier="ita_bill100" amount="1" _npos="3543.7131,448.28503" />
+																	<SetDataAction operation="Add" value="100" identifier="deposittr3" _npos="3542.1248,610.589" />
+																	<GoTo name="depositcash" _npos="3544.436,775.60364" />
+																</Success>
+																<Failure>
+																	<CheckItemAction targettag="customer" itemidentifiers="ita_bill200" _npos="3934.445,291.8911">
+																		<Success>
+																			<RemoveItemAction targettag="customer" itemidentifier="ita_bill200" amount="1" _npos="3937.5427,452.46378" />
+																			<SetDataAction operation="Add" value="200" identifier="deposittr3" _npos="3936.6948,615.07684" />
+																			<GoTo name="depositcash" _npos="3936.679,777.9497" />
+																		</Success>
+																		<Failure>
+																			<CheckDataAction identifier="deposittr3" condition="gt 0" _npos="4493.946,355.50256">
+																				<Success>
+																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<GoTo name="start" _npos="5281.707,387.06558" />
+																				</Success>
+																				<Failure>
+																					<SetDataAction operation="Set" value="1" identifier="nocashtr3" _npos="4493.303,552.628" />
+																					<CheckDataAction identifier="tr3op" condition="eq 1" _npos="4492.1553,748.407">
+																						<Success>
+																							<SetDataAction operation="Add" value="360" identifier="deposittr3" _npos="4908.7563,809.3996" />
+																							<GoTo name="return" _npos="5270.9043,818.4627" />
+																						</Success>
+																						<Failure>
+																							<CheckDataAction identifier="tr3op" condition="eq 2" _npos="4493.3545,965.6952">
+																								<Success>
+																									<SetDataAction operation="Add" value="240" identifier="deposittr3" _npos="4911.2646,991.7968" />
+																									<GoTo name="return" _npos="5286.4883,982.86914" />
+																								</Success>
+																							</CheckDataAction>
+																						</Failure>
+																					</CheckDataAction>
+																				</Failure>
+																			</CheckDataAction>
+																		</Failure>
+																	</CheckItemAction>
+																</Failure>
+															</CheckItemAction>
+														</Failure>
+													</CheckItemAction>
+												</Failure>
+											</CheckItemAction>
+										</Failure>
+									</CheckItemAction>
+								</Failure>
+							</CheckDataAction>
+						</Option>
+						<Option text="&quot;Maybe one of us will ask you about your expertise later.&quot;" endconversation="true" >
+						 <GoTo name="Start"/>
+						</Option>
+					</ConversationAction>
+				</Success>
+				<Failure>
+					<ConversationAction text="&quot;I don't want to be seen talking to scoundrels like you.&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="trainer" dialogtype="Small" _npos="-1508.6749,281.90588" />
+				</Failure>
+			</CheckReputationAction>
+		</Success>
+	</CheckDataAction>
+		</ScriptedEvent>
+		<!--LEVEL% CLEARED-->
+		<ScriptedEvent identifier="ita_untraversed90">
+			<WaitAction time="10" _npos="-1733.155,259.72736" />
+			<SetDataAction operation="Set" value="0" identifier="traversed90" _npos="-1272,259.5" />
+		</ScriptedEvent>		
+		<ScriptedEvent identifier="ita_traversed90">
+			<SetDataAction operation="Set" value="1" identifier="traversed90" _npos="-1212,228" />
+		</ScriptedEvent>
 	</EventPrefabs>
 	<EventSet identifier="outpostevents" leveltype="outpost" locationtype="city" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
 		<Commonness commonness="1000">
@@ -4613,9 +4965,9 @@
 			<ScriptedEvent identifier="ita_missions_city1.3" commonness="125" />
 		</EventSet>
 		<EventSet identifier="ita_outpostevents_city1" allowatstart="true" chooserandom="false" eventcount="2">
-			<ScriptedEvent identifier="ita_transp1.0"/>
-			<ScriptedEvent identifier="ita_transp1.2"/>
-			<ScriptedEvent identifier="ita_trainer1"/>
+			<ScriptedEvent identifier="ita_untraversed90"/>
+			<ScriptedEvent identifier="ita_trainer3"/>
+			<ScriptedEvent identifier="ita_taxi1mechanic"/>
 		</EventSet>
 	</EventSet>
 	<EventSet identifier="outpostevents" leveltype="outpost" locationtype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
@@ -4650,6 +5002,9 @@
 			<ScriptedEvent identifier="ita_missions_city1.1" commonness="125" />
 			<ScriptedEvent identifier="ita_missions_city1.2" commonness="125" />
 		</EventSet>
+		<EventSet identifier="ita_outpostevents_mine1" allowatstart="true" chooserandom="false" eventcount="1">
+			<ScriptedEvent identifier="ita_untraversed90"/>
+		</EventSet>
 	</EventSet>
 	<EventSet identifier="outpostevents" leveltype="outpost" locationtype="mine" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
 		<Commonness commonness="1000">
@@ -4683,6 +5038,9 @@
 			<ScriptedEvent identifier="ita_missions_mining1" commonness="125" />
 			<ScriptedEvent identifier="ita_missions_mining2" commonness="125" />
 			<ScriptedEvent identifier="ita_missions_mining3" commonness="125" />
+		</EventSet>
+		<EventSet identifier="ita_outpostevents_mine1" allowatstart="true" chooserandom="false" eventcount="1">
+			<ScriptedEvent identifier="ita_untraversed90"/>
 		</EventSet>
 	</EventSet>
 	<EventSet identifier="outpostevents" leveltype="outpost" locationtype="military" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
@@ -4719,6 +5077,9 @@
 			<ScriptedEvent identifier="ita_missions_military2" commonness="125" />
 			<ScriptedEvent identifier="ita_missions_military3" commonness="125" />
 		</EventSet>
+		<EventSet identifier="ita_outpostevents_military1" allowatstart="true" chooserandom="false" eventcount="1">
+			<ScriptedEvent identifier="ita_untraversed90"/>
+		</EventSet>
 	</EventSet>
 	<EventSet identifier="outpostevents" leveltype="outpost" locationtype="research" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
 		<Commonness commonness="1000">
@@ -4751,6 +5112,9 @@
 			<ScriptedEvent identifier="ita_missions_research1" commonness="125" />
 			<ScriptedEvent identifier="ita_missions_research2" commonness="125" />
 			<ScriptedEvent identifier="ita_missions_research3" commonness="125" />
+		</EventSet>
+		<EventSet identifier="ita_outpostevents_research1" allowatstart="true" chooserandom="false" eventcount="1">
+			<ScriptedEvent identifier="ita_untraversed90"/>
 		</EventSet>
 	</EventSet>
 </Randomevents>	 

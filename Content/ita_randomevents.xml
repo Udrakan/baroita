@@ -11,8 +11,8 @@
       <Override leveltype="PlateauBasic" commonness="10" />
     </Commonness>
 	<!-- check for passanger missions -->
-	<EventSet chooserandom="false" allowatstart="true">
-		<ScriptedEvent identifier="ita_transp1.1"/>
+	<EventSet chooserandom="false" allowatstart="true" eventcount="1" ignorecooldown="true">
+		<ScriptedEvent identifier="ita_taxi1mechanic"/>
 	</EventSet>
 
     <EventSet chooserandom="true" allowatstart="true" percave="true">
@@ -68,12 +68,10 @@
     </EventSet>
 	
 	<!-- LEVELCHECKS -->
+
 	<EventSet chooserandom="false" mindistancetraveled="0.90" minmissiontime="10000" minintensity="0.0" maxintensity="1">
-		<EventSet chooserandom="false" allowatstart="true">
-			<ScriptedEvent identifier="ita_lvlcheck90"/>
-		</EventSet>
+      <ScriptedEvent identifier="ita_traversed90"/>
     </EventSet>
-	
     <!-- Timed events -->
     <!-- 1-3 crawlers after 390 seconds if intensity is under 0.2 -->
     <EventSet chooserandom="true" mindistancetraveled="0.99" minmissiontime="300" minintensity="0.0" maxintensity="1.0" allowatstart="false">
@@ -121,6 +119,10 @@
       <Override leveltype="PlateauBasic" commonness="10" />
     </Commonness>
 
+	<!-- check for passanger missions -->
+	<EventSet chooserandom="false" allowatstart="true" eventcount="1" ignorecooldown="true">
+		<ScriptedEvent identifier="ita_taxi1mechanic"/>
+	</EventSet>
     <!-- populate the caves -->
     <EventSet chooserandom="true" allowatstart="true" percave="true">
       <MonsterEvent characterfile="Crawler" minamount="4" maxamount="6" spawntype="cave" musictype="monster" />
@@ -178,7 +180,7 @@
 	<!-- LEVELCHECKS -->
 	<EventSet chooserandom="false" mindistancetraveled="0.90" minmissiontime="10000" minintensity="0.0" maxintensity="1">
 		<EventSet chooserandom="false" allowatstart="true">
-			<ScriptedEvent identifier="ita_lvlcheck90"/>
+			<ScriptedEvent identifier="ita_traversed90"/>
 		</EventSet>
     </EventSet>
 
@@ -214,7 +216,11 @@
       <Override leveltype="ColdCavernsBasic" commonness="10" />
       <Override leveltype="PlateauBasic" commonness="10" />
     </Commonness>
-    <!-- always spawn a couple of artifacts	 -->
+    <!-- check for passanger missions -->
+	<EventSet chooserandom="false" allowatstart="true" eventcount="1" ignorecooldown="true">
+		<ScriptedEvent identifier="ita_taxi1mechanic"/>
+	</EventSet>
+	<!-- always spawn a couple of artifacts	 -->
     <ArtifactEvent itemidentifier="thermalartifact" />
     <ArtifactEvent itemidentifier="skyholderartifact" />
     <ArtifactEvent itemidentifier="psychosisartifact" />
@@ -276,7 +282,7 @@
 	<!-- LEVELCHECKS -->
 	<EventSet chooserandom="false" mindistancetraveled="0.90" minmissiontime="10000" minintensity="0.0" maxintensity="1">
 		<EventSet chooserandom="false" allowatstart="true">
-			<ScriptedEvent identifier="ita_lvlcheck90"/>
+			<ScriptedEvent identifier="ita_traversed90"/>
 		</EventSet>
     </EventSet>
     <!-- Timed events -->
@@ -421,7 +427,7 @@
 	<!-- LEVELCHECKS -->
 	<EventSet chooserandom="false" mindistancetraveled="0.90" minmissiontime="10000" minintensity="0.0" maxintensity="1">
 		<EventSet chooserandom="false" allowatstart="true">
-			<ScriptedEvent identifier="ita_lvlcheck90"/>
+			<ScriptedEvent identifier="ita_traversed90"/>
 		</EventSet>
     </EventSet>
 
@@ -657,7 +663,7 @@
 	<!-- LEVELCHECKS -->
 	<EventSet chooserandom="false" mindistancetraveled="0.90" minmissiontime="10000" minintensity="0.0" maxintensity="1">
 		<EventSet chooserandom="false" allowatstart="true">
-			<ScriptedEvent identifier="ita_lvlcheck90"/>
+			<ScriptedEvent identifier="ita_traversed90"/>
 		</EventSet>
     </EventSet>
 

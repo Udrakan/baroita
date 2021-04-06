@@ -260,6 +260,32 @@
 			</Item>
       </ItemSet>
     </npc>
+		<npc identifier="ita_climber1" job="mechanic" commonness="1" healthmultiplier="0.8" preferredoutpostmoduletypes="admin,adminmodule" behavior="StayInHull">
+			<ItemSet commonness="1">
+				<Item identifier="baseballcap" equip="true"/>
+				<Item identifier="bluejumpsuit3" equip="true"/>
+				<Item identifier="idcard" equip="true"/>
+				<Item identifier="wrench" equip="false"/>
+				<Item identifier="screwdriver" equip="false"/>
+				<Item identifier="revolver" equip="false">
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+				</Item>
+				<Item identifier="divingmask">
+					<Item identifier="oxygentank" />
+				</Item> 
+				<Item identifier="toolbelt">
+					<Item identifier="weldingfueltank"/>
+					<Item identifier="weldingtool">
+						<Item identifier="weldingfueltank" />
+					</Item> 
+				</Item>
+			</ItemSet>
+		</npc>
 		<!--GUARDS-->	
 		<npc identifier="ita_guard1" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol" aimspeed="0.85" aimaccuracy="0.55" >
 			<ItemSet>
@@ -419,6 +445,7 @@
 				<Item identifier="divingmask">
 					<Item identifier="oxygentank" />
 				</Item> 
+				<Item identifier="idcard" equip="true" tags="smallitem,idcard,name:Brady Malone,job:Engineer,jobid:engineer,gender:male,race:White,headspriteid:6,hairindex:0,beardindex:0,moustacheindex:2,faceattachmentindex:0,sheetindex:0;2"/>
 				<Item identifier="toolbelt">
 					<Item identifier="weldingfueltank"/>
 					<Item identifier="weldingtool">
@@ -541,43 +568,31 @@
 		<npc identifier="ita_trainer1" job="mechanic" commonness="1" spawnpointtags="engineering" behavior="Passive" preferredoutpostmoduletypes="ita_fabricationmodule">
 			<ItemSet commonness="1">
 				<Item identifier="crewchiefclothes" equip="true" />
-				<Item identifier="idcard" equip="true" tags="ita_citymanager"/>
+				<Item identifier="idcard" equip="true" />
 				<Item identifier="divingmask" equip="true">
 					<Item identifier="oxygentank" />
 				</Item> 
 			</ItemSet>
 		</npc>
-		<npc identifier="ita_recruit" job="Assistant" spawnpointtags="hr" behavior="StayInHull" >
-			<ItemSet commonness="2">
-				<Item identifier="idcard" equip="true" showpreview="false"/>
-				<Item identifier="orangejumpsuit1" equip="true" outfit="true"/>
-			</ItemSet>
-			<ItemSet commonness="2">
-				<Item identifier="idcard" equip="true" showpreview="false"/>
-				<Item identifier="orangejumpsuit2" equip="true" outfit="true"/>
-			</ItemSet>
-			<ItemSet commonness="2">
-				<Item identifier="idcard" equip="true" showpreview="false"/>
-				<Item identifier="baseballcap" equip="true" />
-				<Item identifier="bluejumpsuit1" equip="true" outfit="true"/>
-			</ItemSet>
-			<ItemSet commonness="2">
-				<Item identifier="idcard" equip="true" showpreview="false"/>
-				<Item identifier="bluejumpsuit2" equip="true" outfit="true"/>
-			</ItemSet>
+		<npc identifier="ita_trainer2" job="mechanic" commonness="1" spawnpointtags="engineering" behavior="Passive" preferredoutpostmoduletypes="ita_fabricationmodule">
 			<ItemSet commonness="1">
-				<Item identifier="idcard" equip="true" showpreview="false"/>
-				<Item identifier="securityuniform1" equip="true" outfit="true"/>
-			</ItemSet>
-			<ItemSet commonness="1">
-				<Item identifier="idcard" equip="true" showpreview="false"/>
-				<Item identifier="securityuniform2" equip="true" outfit="true"/>
-			</ItemSet>
-			<ItemSet commonness="1">
-				<Item identifier="idcard" equip="true" showpreview="false"/>
-				<Item identifier="assistantclothes" equip="true" outfit="true"/>
+				<Item identifier="bluejumpsuit1" equip="true" />
+				<Item identifier="idcard" equip="true" />
+				<Item identifier="divingmask" equip="true">
+					<Item identifier="oxygentank" />
+				</Item> 
 			</ItemSet>
 		</npc>
+		<npc identifier="ita_trainer3" job="engineer" commonness="1" spawnpointtags="engineering" behavior="Passive" preferredoutpostmoduletypes="ita_fabricationmodule">
+			<ItemSet commonness="1">
+				<Item identifier="orangejumpsuit3" equip="true" />
+				<Item identifier="idcard" equip="true" />
+				<Item identifier="divingmask" equip="true">
+					<Item identifier="oxygentank" />
+				</Item> 
+			</ItemSet>
+		</npc>
+
 		<npc identifier="ita_mechanic1" job="mechanic" commonness="1" healthmultiplier="1" preferredoutpostmoduletypes="admin,adminmodule" behavior="Passive">
 			<ItemSet commonness="1">
 				<Item identifier="baseballcap" equip="true"/>
@@ -672,6 +687,37 @@
 				<Item identifier="shotgunshell" />
 				<Item identifier="shotgunshell" />
 				<Item identifier="shotgunshell" />
+			</ItemSet>
+		</npc>
+		<npc identifier="ita_recruit" job="Assistant" spawnpointtags="hr" behavior="StayInHull" >
+			<ItemSet commonness="2">
+				<Item identifier="idcard" equip="true" showpreview="false"/>
+				<Item identifier="orangejumpsuit1" equip="true" outfit="true"/>
+			</ItemSet>
+			<ItemSet commonness="2">
+				<Item identifier="idcard" equip="true" showpreview="false"/>
+				<Item identifier="orangejumpsuit2" equip="true" outfit="true"/>
+			</ItemSet>
+			<ItemSet commonness="2">
+				<Item identifier="idcard" equip="true" showpreview="false"/>
+				<Item identifier="baseballcap" equip="true" />
+				<Item identifier="bluejumpsuit1" equip="true" outfit="true"/>
+			</ItemSet>
+			<ItemSet commonness="2">
+				<Item identifier="idcard" equip="true" showpreview="false"/>
+				<Item identifier="bluejumpsuit2" equip="true" outfit="true"/>
+			</ItemSet>
+			<ItemSet commonness="1">
+				<Item identifier="idcard" equip="true" showpreview="false"/>
+				<Item identifier="securityuniform1" equip="true" outfit="true"/>
+			</ItemSet>
+			<ItemSet commonness="1">
+				<Item identifier="idcard" equip="true" showpreview="false"/>
+				<Item identifier="securityuniform2" equip="true" outfit="true"/>
+			</ItemSet>
+			<ItemSet commonness="1">
+				<Item identifier="idcard" equip="true" showpreview="false"/>
+				<Item identifier="assistantclothes" equip="true" outfit="true"/>
 			</ItemSet>
 		</npc>
 	</npcset>
