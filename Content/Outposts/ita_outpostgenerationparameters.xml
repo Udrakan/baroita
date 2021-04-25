@@ -62,25 +62,20 @@
 			<npc from="outpostnpcs1" identifier="outpostdoctor"/>
 		</npcs>
 	</OutpostConfig>
-	<OutpostConfig identifier="miningoutpost" totalmodulecount="14" minhallwaylength="0" allowedlocationtypes="Mine">
+	<OutpostConfig identifier="miningoutpost" replaceinradiation="abandonedoutpost" totalmodulecount="6" minhallwaylength="0" allowedlocationtypes="Mine">
 		<modulecount flag="Airlock" count="1"/>
 		<modulecount flag="ita_smallengineering" count="1"/>
 		<modulecount flag="AdminModule" count="1"/>
 		<modulecount flag="CrewModule" count="1"/>
-		<modulecount flag="MineAirlock" count="1"/>
-		<modulecount flag="MineTransition" count="1"/>
-		<modulecount flag="Mine" count="4"/>
-		<modulecount flag="MineChamber" count="2"/>
+		<modulecount flag="MineModule" count="1"/>
 		<npcs>
 			<npc from="outpostnpcs1" identifier="hrmanager"/>
 			<npc from="outpostnpcs1" identifier="repairnpc"/>
-			<npc from="ita_citynpcs1" identifier="ita_subupgradenpc"/>
-			<npc from="ita_citynpcs1" identifier="ita_subsalesnpc"/>
+			<npc from="outpostnpcs1" identifier="subupgradenpc"/>
+			<npc from="outpostnpcs1" identifier="subsalesnpc"/>
 			<npc from="outpostnpcs1" identifier="reactoroperator"/>
-			<npc from="ita_citynpcs1" identifier="ita_merchant"/>
-			<npc from="ita_citynpcs1" identifier="ita_guard2"/>
-			<npc from="ita_citynpcs1" identifier="ita_guard2"/>
-			<npc from="ita_citynpcs1" identifier="ita_guard2"/>
+			<npc from="outpostnpcs1" identifier="merchant"/>
+			<npc from="outpostnpcs1" identifier="securitynpc"/>
 			<npc from="outpostnpcs1" identifier="outpostmanager"/>
 			<npc from="outpostnpcs1" identifier="outpostdoctor"/>
 			<npc from="outpostnpcs1" identifier="miner"/>

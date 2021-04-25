@@ -574,28 +574,28 @@
 			<input name="signal_in1" displayname="connection.signalinx~[num]=1" />
 			<input name="signal_in2" displayname="connection.signalinx~[num]=2" />
 			<input name="toggle" displayname="connection.togglestate" >
-				<StatusEffect type="OnUse" target="This">
+				<StatusEffect type="OnUse" target="This"><!--alienblood-->
 					<SpawnCharacter speciesname="crawler" count="1"/>
 					<RequiredItem items="alienblood" type="Contained"/>
 					<ParticleEmitter particle="risingbubbles" anglemin="0" anglemax="360" particleamount="50" velocitymin="50" velocitymax="100" scalemin="1" scalemax="2" />
 					<Remove />
 				</StatusEffect>
 
-				<StatusEffect type="OnUse" target="This">
-					<SpawnCharacter speciesname="mudraptor" count="1"/>
+				<StatusEffect type="OnUse" target="This"><!--smallmudraptoregg-->
+					<SpawnCharacter speciesname="Mudraptorcave" count="1"/>
 					<RequiredItem items="smallmudraptoregg" type="Contained"/>
 					<ParticleEmitter particle="risingbubbles" anglemin="0" anglemax="360" particleamount="50" velocitymin="50" velocitymax="100" scalemin="1" scalemax="2" />
 					<Remove />
 				</StatusEffect>
 
-				<StatusEffect type="OnUse" target="This">
+				<StatusEffect type="OnUse" target="This"><!--adrenalinegland-->
 					<SpawnCharacter speciesname="tigerthresher" count="1"/>
 					<RequiredItem items="adrenalinegland" type="Contained"/>
 					<ParticleEmitter particle="risingbubbles" anglemin="0" anglemax="360" particleamount="50" velocitymin="50" velocitymax="100" scalemin="1" scalemax="2" />
 					<Remove />
 				</StatusEffect>
 
-				<StatusEffect type="OnUse" target="This">
+				<StatusEffect type="OnUse" target="This"><!--alienpowercell-->
 					<SpawnCharacter speciesname="Fractalguardian" count="1"/>
 					<RequiredItem items="alienpowercell" type="Contained"/>
 					<sound file="Mods/IntoTheAbyss/Content/Ruins/ita_sounds_fractalspawner.ogg" range="2000" />
@@ -603,21 +603,21 @@
 					<Remove />
 				</StatusEffect>
 
-				<StatusEffect type="OnUse" target="This">
+				<StatusEffect type="OnUse" target="This"><!--Hammerheadspawn-->
 					<SpawnCharacter speciesname="Hammerheadspawn" count="7"/>
 					<RequiredItem items="swimbladder" type="Contained"/>
 					<ParticleEmitter particle="risingbubbles" anglemin="0" anglemax="360" particleamount="50" velocitymin="50" velocitymax="100" scalemin="1" scalemax="2" />
 					<Remove />
 				</StatusEffect>
 
-				<StatusEffect type="OnUse" target="This">
+				<StatusEffect type="OnUse" target="This"><!--huskeggs-->
 					<SpawnCharacter speciesname="Crawlerhusk" count="1"/>
 					<RequiredItem items="huskeggs" type="Contained"/>
 					<ParticleEmitter particle="risingbubbles" anglemin="0" anglemax="360" particleamount="50" velocitymin="50" velocitymax="100" scalemin="1" scalemax="2" />
 					<Remove />
 				</StatusEffect>
 
-				<StatusEffect type="OnUse" target="This">
+				<StatusEffect type="OnUse" target="This"><!--huskstinger-->
 					<SpawnCharacter speciesname="husk" count="1"/>
 					<RequiredItem items="huskstinger" type="Contained"/>
 					<ParticleEmitter particle="risingbubbles" anglemin="0" anglemax="360" particleamount="50" velocitymin="50" velocitymax="100" scalemin="1" scalemax="2" />

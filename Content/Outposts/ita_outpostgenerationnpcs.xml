@@ -83,28 +83,43 @@
 				<Item identifier="idcard" equip="true"/>
 				<Item identifier="commonerclothes1" equip="true"/>
 				<Item identifier="screwdriver" equip="true"/>
+				<Item identifier="ita_wallet1">
+					<Item identifier="ita_bill50"/>
+				</Item>
 			</ItemSet>
 			<ItemSet commonness="1">
 				<Item identifier="commonerclothes1" equip="true"/>
 				<Item identifier="baseballcap" equip="true"/>
 				<Item identifier="idcard" equip="true"/>
 				<Item identifier="wrench" equip="true"/>
+				<Item identifier="ita_wallet1">
+					<Item identifier="ita_bill50"/>
+				</Item>
 			</ItemSet>
 			<ItemSet commonness="1">
 				<Item identifier="idcard" equip="true"/>
 				<Item identifier="commonerclothes2" equip="true"/>
 				<Item identifier="crowbar" equip="true"/>
+				<Item identifier="ita_wallet1">
+					<Item identifier="ita_bill50"/>
+				</Item>
 			</ItemSet>
 			<ItemSet commonness="1">
 				<Item identifier="idcard" equip="true"/>
 				<Item identifier="commonerclothes2" equip="true"/>
 				<Item identifier="divingknife" equip="false"/>
 				<Item identifier="wrench" equip="true"/>
+				<Item identifier="ita_wallet1">
+					<Item identifier="ita_bill50"/>
+				</Item>
 			</ItemSet>
 			<ItemSet commonness="1">
 				<Item identifier="idcard" equip="true"/>
 				<Item identifier="commonerclothes3" equip="true"/>
 				<Item identifier="crowbar" equip="true"/>
+				<Item identifier="ita_wallet1">
+					<Item identifier="ita_bill50"/>
+				</Item>
 			</ItemSet>
 			<ItemSet commonness="1">
 				<Item identifier="commonerclothes3" equip="true"/>
@@ -428,7 +443,7 @@
 				</Item>
 			</ItemSet>
 		</npc>
-		<npc identifier="ita_taxi_mechanic1" job="assistant" commonness="1" healthmultiplier="1" behavior="Active">
+		<npc identifier="ita_taxi_mechanic1" job="mechanic" commonness="1" healthmultiplier="1" behavior="Active">
 			<ItemSet commonness="1">
 				<Item identifier="baseballcap" equip="true"/>
 				<Item identifier="bluejumpsuit1" equip="true"/>
@@ -454,6 +469,15 @@
 				</Item>
 			</ItemSet>
 		</npc>
+		<npc identifier="ita_taxi_mechanic2" job="mechanic" commonness="1" behavior="Active" healthmultiplier="1" preferredoutpostmoduletypes="ita_city_bar">
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="commonerclothes2" equip="true"/>
+        <Item identifier="divingknife" equip="false"/>
+        <Item identifier="wrench" equip="true"/>
+      </ItemSet>
+    </npc>
+
 		<npc identifier="ita_prisoner" job="assistant" commonness="1" healthmultiplier="0.5" behavior="Active">
 			<ItemSet commonness="1">
 				<Item identifier="ita_npccard1" equip="true" tags="id_prisoner"/>

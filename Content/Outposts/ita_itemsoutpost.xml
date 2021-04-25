@@ -948,7 +948,7 @@
 			</StatusEffect>
 		</Holdable>
 	</Item>
-	<Item name="NPC Taxi Event Card" identifier="ita_taxi_cardmecha1b" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate">
+  <Item name="NPC Taxi Event Card" identifier="ita_taxi_cardmecha1b" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate">
 		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,64,64,64" origin="0.5,0.5" scale="0.001" />
 		<Sprite texture="Content/Items/idcard.png" depth="0.8" sourcerect="0,0,0,0" />
 		<Body width="16" height="12" density="20" />
@@ -961,6 +961,7 @@
 			</StatusEffect>
 		</Holdable>
 	</Item>
+
   <!-- Shops -->
   <Item name="Display Container" identifier="ita_display" tags="container,display" pickdistance="50" scale="0.5">
     <Sprite name="Diving Suit Locker Small" texture="Content/Items/Containers/containers.png" sourcerect="714,259,99,82" depth="0.84" origin="0.5,0.5" />
@@ -981,6 +982,15 @@
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="EventBugWorkaround" identifier="ita_eventbugworkaround" category="Material" noninteractable="true" Tags="smallitem,chem,medical" scale="0.25" impactsoundtag="impact_metal_light">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/ita_sprites_campaign.png" depth="0.54" sourcerect="0,0,4,4" origin="0.5,0.5" />
+    <Body width="1" height="1" density="9" />
+    <Holdable slots="RightHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="This" stackable="false" disabledeltatime="true" delay="1.6">
         <Remove />
       </StatusEffect>
     </Holdable>
