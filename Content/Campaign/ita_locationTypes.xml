@@ -1,5 +1,5 @@
 <Override>
-<locationtypes>
+  <locationtypes>
   <!--
   ChangeTo:
     requiredlocations                       = The change can only happen if there's at least one of the given types of locations near this one.
@@ -19,7 +19,7 @@
     locationtypechangecooldown              = The location can't change it's type for this many turns after this location type changes occurs.
   -->
     
-    <Cave identifier="Cave" namefile="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveNames.txt" commonnessperzone="2: 2, 3: 2" missiontags="drycave1">
+    <Cave identifier="Cave" namefile="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveNames.txt" commonnessperzone="1: 1, 2: 1, 5:1" missiontags="drycave1">
 		<Symbol texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" sourcerect="497,916,123,108" color="176,133,113,255"/>
 		<Portrait texture="Content/Map/LocationPortraits/WorkCampMining1.png" premultiplyalpha="false"/>
 		<Portrait texture="Content/Map/LocationPortraits/WorkCampMining2.png" premultiplyalpha="false"/>
@@ -28,6 +28,7 @@
 		<ChangeTo type="None" messagetag="locationchange.none.changeto.outpost" locationtypechangecooldown="0" requirediscovered="true">
     </ChangeTo>
 	</Cave>
+	
   <None
     identifier="None"
     namefile="Content/Map/locationNames.txt"    
@@ -106,7 +107,7 @@
   <Abandoned
     identifier="Abandoned"
     namefile="Content/Map/cityNames.txt"
-    commonnessperzone="1: 0, 2: 0.5, 3: 0.5, 4: 0.2, 5: 0, 6: 0"
+    commonnessperzone="1: 0, 2: 0.8, 3: 0.8, 4: 0.5, 5: 0.5, 6: 0"
     missiontags="abandonedoutpost"
     hideentitysubcategories="abandonedhuman,abandonedmonster"
     outpostteam="None">

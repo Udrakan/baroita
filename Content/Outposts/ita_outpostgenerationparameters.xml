@@ -13,12 +13,12 @@
 		<modulecount flag="ita_cavehall" count="1"/>
 	</OutpostConfig>
 
-	<OutpostConfig identifier="outpost" totalmodulecount="6" minhallwaylength="0" allowedlocationtypes="Outpost">
+	<OutpostConfig identifier="outpost" totalmodulecount="5" minhallwaylength="0" allowedlocationtypes="Outpost">
 		<modulecount flag="ita_hab_dock" count="1"/>
 		<modulecount flag="ita_smallengineering" count="1"/>
 		<modulecount flag="AdminModule" count="1"/>
 		<modulecount flag="CrewModule" count="1"/>
-		<modulecount flag="ita_city_special" count="1"/>
+		<modulecount flag="ita_hab_entertainment" count="1"/>
 		<npcs>
 			<npc from="outpostnpcs1" identifier="hrmanager"/>
 			<npc from="outpostnpcs1" identifier="repairnpc"/>
@@ -83,15 +83,17 @@
 			<npc from="outpostnpcs1" identifier="miner"/>
 		</npcs>
 	</OutpostConfig>
-	<OutpostConfig identifier="city" totalmodulecount="12" minhallwaylength="0" allowedlocationtypes="City">
+	<OutpostConfig identifier="city" totalmodulecount="13" minhallwaylength="0" allowedlocationtypes="City">
 		<modulecount flag="ita_city_dock" count="1"/>
 		<modulecount flag="Ita_engineeringmodule" count="1"/>
 		<modulecount flag="Ita_lifesupportmodule" count="1"/>
 		<modulecount flag="Ita_fabricationmodule" count="1"/>
 		<modulecount flag="ita_city_atrium" count="1"/>
 		<modulecount flag="ita_city_bar" count="1"/>
-		<modulecount flag="ita_city_shop" count="1"/>
-		<modulecount flag="ita_city_special" count="3"/>
+		<modulecount flag="ita_city_shop" count="2"/>
+		<modulecount flag="ita_city_clinic" count="1"/>
+		<modulecount flag="ita_city_bank" count="1"/>
+		<modulecount flag="ita_city_special" count="1"/>
 		<modulecount flag="ita_shipyard" count="1"/>
 		<modulecount flag="AdminModule" count="1"/>
 		<npcs>

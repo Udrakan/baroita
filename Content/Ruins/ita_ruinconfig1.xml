@@ -8,20 +8,20 @@
 			<item prefab="artifactholder" alignment="Center" type="Prop" minoffset="-0.25,-0.25" maxoffset="0.25,0.25" />
 			<!--2x Random Alien Mineral in Vault Room-->
 			<ChooseOne>
-				<itemassembly prefab="incendium90" alignment="Left" type="Prop" commonness="5"	  		/>
-				<itemassembly prefab="incendium270" alignment="Right" type="Prop" commonness="5"	  		/>
-				<itemassembly prefab="oxygeniteshard90" alignment="Left" type="Prop" commonness="5"	 		/>
-				<itemassembly prefab="oxygeniteshard270" alignment="Right" type="Prop" commonness="5"	  	/>
-				<itemassembly prefab="dementonite90" alignment="Left" type="Prop" commonness="5"	  	/>
-				<itemassembly prefab="dementonite270" alignment="Right" type="Prop" commonness="5"	  	/>
+				<itemassembly prefab="physicorium90" alignment="Left" type="Prop" commonness="5"	  		/>
+				<itemassembly prefab="physicorium270" alignment="Right" type="Prop" commonness="5"	  		/>
+				<itemassembly prefab="fulgurium90" alignment="Left" type="Prop" commonness="2"	  		/>
+				<itemassembly prefab="fulgurium270" alignment="Right" type="Prop" commonness="2"	  	/>
+				<itemassembly prefab="sulphuriteshard90" alignment="Left" type="Prop" commonness="5"	  	/>
+				<itemassembly prefab="sulphuriteshard270" alignment="Right" type="Prop" commonness="5"	  	/>
 			</ChooseOne>
 			<ChooseOne>
-				<itemassembly prefab="incendium0" minoffset="0.0,0" maxoffset="0.4,0" alignment="Bottom" type="Prop"  commonness="5" />
-				<itemassembly prefab="incendium180" minoffset="0.0,0" maxoffset="0.4,0" alignment="Top" type="Prop" commonness="5"	  />
-				<itemassembly prefab="oxygeniteshard0" minoffset="0.0,0" maxoffset="0.4,0" alignment="Bottom" type="Prop"  commonness="5" />
-				<itemassembly prefab="oxygeniteshard180" minoffset="0.0,0" maxoffset="0.4,0" alignment="Top" type="Prop" commonness="5"	  />
-				<itemassembly prefab="dementonite0" minoffset="0.0,0" maxoffset="0.4,0" alignment="Bottom" type="Prop"  commonness="5" />
-				<itemassembly prefab="dementonite180" minoffset="0.0,0" maxoffset="0.4,0" alignment="Top" type="Prop" commonness="5"	  />
+				<itemassembly prefab="physicorium90" alignment="Left" type="Prop" commonness="5"	  		/>
+				<itemassembly prefab="physicorium270" alignment="Right" type="Prop" commonness="5"	  		/>
+				<itemassembly prefab="fulgurium90" alignment="Left" type="Prop" commonness="2"	  		/>
+				<itemassembly prefab="fulgurium270" alignment="Right" type="Prop" commonness="2"	  	/>
+				<itemassembly prefab="sulphuriteshard90" alignment="Left" type="Prop" commonness="5"	  	/>
+				<itemassembly prefab="sulphuriteshard270" alignment="Right" type="Prop" commonness="5"	  	/>
 			</ChooseOne>
 			<!--Bossfight-->
 			<ChooseOne>
@@ -151,21 +151,25 @@
 				<item prefab="RuinDecal3" alignment="Center" minoffset="-0.4,-0.4" maxoffset="0.4,0.4" minroomsize="500,500" type="Prop" commonness="5" />
 				<item prefab="RuinDecal4" alignment="Center" minoffset="-0.4,-0.4" maxoffset="0.4,0.4" minroomsize="500,500" type="Prop" commonness="5" />
 				<ChooseOne>
-				<itemassembly prefab="ita_armory_blackchest1" alignment="Center" minroomsize="400,400" type="Prop"  commonness="1" >
+				<itemassembly prefab="ita_armory_blackchest1" alignment="Center" minroomsize="400,400" type="Prop"  commonness="2" >
 					<item prefab="alientrinket1" alignment="Center" type="Prop" minamount="1" maxamount="1" targetcontainer="container1" />
 					<item prefab="alientrinket2" alignment="Center" type="Prop" minamount="0" maxamount="1" targetcontainer="container1" />
 					<item prefab="alientrinket3" alignment="Center" type="Prop" minamount="0" maxamount="1" targetcontainer="container1" />
 				</itemassembly>
-				<itemassembly prefab="ita_armory_blackchest2" alignment="Center" minroomsize="500,350" type="Prop"  commonness="1" >
+				<itemassembly prefab="ita_armory_blackchest2" alignment="Center" minroomsize="500,350" type="Prop"  commonness="2" >
 					<item prefab="alientrinket1" alignment="Center" type="Prop" minamount="0" maxamount="1" targetcontainer="container1" />
 					<item prefab="alientrinket2" alignment="Center" type="Prop" minamount="-1" maxamount="1" targetcontainer="container1" />
 					<item prefab="alientrinket3" alignment="Center" type="Prop" minamount="-1" maxamount="2" targetcontainer="container1" />
 				</itemassembly>
-				<itemassembly prefab="ita_armory_blackchest3" alignment="Center" minroomsize="350,350" type="Prop"  commonness="1" >
+				<itemassembly prefab="ita_armory_blackchest3" alignment="Center" minroomsize="350,350" type="Prop"  commonness="2" >
 					<item prefab="alientrinket1" alignment="Center" type="Prop" minamount="0" maxamount="1" targetcontainer="container1" />
 					<item prefab="alientrinket2" alignment="Center" type="Prop" minamount="-1" maxamount="1" targetcontainer="container1" />
 					<item prefab="alientrinket3" alignment="Center" type="Prop" minamount="-1" maxamount="2" targetcontainer="container1" />
 				</itemassembly>
+				<itemassembly prefab="ita_armory_bluechest1" alignment="Center" maxoffset="0.0,0.0" minroomsize="400,800" type="Prop"  commonness="1" />
+				<itemassembly prefab="ita_armory_bluechest2" alignment="Center" maxoffset="0.0,0.0" minroomsize="400,800" type="Prop"  commonness="1" />
+				<itemassembly prefab="ita_armory_redchest1" alignment="Center" maxoffset="0.0,0.0" minroomsize="400,800" type="Prop"  commonness="1" />
+				<itemassembly prefab="ita_armory_redchest2" alignment="Center" maxoffset="0.0,0.0" minroomsize="400,800" type="Prop"  commonness="1" />
 				</ChooseOne>
 			</RoomType>
 		</Structures>

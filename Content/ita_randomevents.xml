@@ -21,14 +21,19 @@
     </EventSet>
 	<!-- Populate the wreck-->
     <EventSet identifier="wreck" chooserandom="false" allowatstart="true" perwreck="true">
-      <MonsterEvent characterfile="Crawlerhusk" minamount="4" maxamount="4" spawntype="wreck" musictype="monster" maxintensity="1.0" allowonlyonce="false"/>
-      <MonsterEvent characterfile="Crawlerhusk" minamount="4" maxamount="4" spawntype="wreck" musictype="monster" maxintensity="1.0" allowonlyonce="false"/>
+      <MonsterEvent characterfile="Crawlerhusk" minamount="2" maxamount="2" spawntype="wreck" musictype="monster" maxintensity="1.0" allowonlyonce="false"/>
+      <MonsterEvent characterfile="Crawlerhusk" minamount="2" maxamount="2" spawntype="wreck" musictype="monster" maxintensity="1.0" allowonlyonce="false"/>
     </EventSet>
     <EventSet identifier="wreck" chooserandom="false" allowatstart="true" perwreck="true">
-      <MonsterEvent characterfile="Husk" minamount="4" maxamount="6" spawntype="wreck" musictype="monster" maxintensity="1.0" allowonlyonce="false"/>
-      <MonsterEvent characterfile="Husk" minamount="4" maxamount="6" spawntype="wreck" musictype="monster" maxintensity="1.0" allowonlyonce="false"/>
+      <MonsterEvent characterfile="Husk" minamount="2" maxamount="3" spawntype="wreck" musictype="monster" maxintensity="1.0" allowonlyonce="false"/>
+      <MonsterEvent characterfile="Husk" minamount="2" maxamount="3" spawntype="wreck" musictype="monster" maxintensity="1.0" allowonlyonce="false"/>
     </EventSet>
 	
+	<!-- populate the abyss -->
+    <EventSet chooserandom="true" allowatstart="true" triggereventcooldown="false" disableinhuntinggrounds="true">
+      <MonsterEvent characterfile="Endworm" minamount="1" maxamount="1" maxamountperlevel="1" spawntype="abyss" />
+      <MonsterEvent characterfile="Charybdis" minamount="1" maxamount="1" maxamountperlevel="1" spawntype="abyss" />
+    </EventSet>
 	<!-- Distance events -->
 	<EventSet chooserandom="true" mindistancetraveled="0.07" minmissiontime="10000" minintensity="0.0" maxintensity="1.0">
       <MonsterEvent characterfile="Crawler" minamount="3" maxamount="4" spawntype="mainpath,sidepath" musictype="monster" />
@@ -130,14 +135,20 @@
     </EventSet>
     <!-- populate the wrecks -->
 	<EventSet identifier="wreck" chooserandom="false" allowatstart="true" perwreck="true">
-      <MonsterEvent characterfile="Mudraptor" minamount="3" maxamount="3" spawntype="wreck" musictype="monster" allowonlyonce="false"/>
-      <MonsterEvent characterfile="Mudraptor" minamount="3" maxamount="3" spawntype="wreck" musictype="monster" allowonlyonce="false"/>
+      <MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="2" spawntype="wreck" musictype="monster" allowonlyonce="false"/>
+      <MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="3" spawntype="wreck" musictype="monster" allowonlyonce="false"/>
     </EventSet>
     <EventSet identifier="wreck" chooserandom="false" allowatstart="true" perwreck="true">
-      <MonsterEvent characterfile="Husk" minamount="4" maxamount="4" spawntype="wreck" musictype="monster" allowonlyonce="false"/>
-      <MonsterEvent characterfile="Husk" minamount="4" maxamount="4" spawntype="wreck" musictype="monster"  allowonlyonce="false"/>
+      <MonsterEvent characterfile="Husk" minamount="2" maxamount="2" spawntype="wreck" musictype="monster" allowonlyonce="false"/>
+      <MonsterEvent characterfile="Husk" minamount="2" maxamount="2" spawntype="wreck" musictype="monster"  allowonlyonce="false"/>
     </EventSet>
-    <!-- Distance events -->
+    
+	<!-- populate the abyss -->
+    <EventSet chooserandom="true" allowatstart="true" triggereventcooldown="false" disableinhuntinggrounds="true">
+      <MonsterEvent characterfile="Endworm" minamount="1" maxamount="1" maxamountperlevel="1" spawntype="abyss" />
+      <MonsterEvent characterfile="Charybdis" minamount="1" maxamount="1" maxamountperlevel="1" spawntype="abyss" />
+    </EventSet>
+	<!-- Distance events -->
     <!-- 0-3 crawlers after passing 10% -->
    <EventSet chooserandom="true" mindistancetraveled="0.15" minmissiontime="10000" minintensity="0.0" maxintensity="1.0">
       <MonsterEvent characterfile="Crawler" minamount="5" maxamount="8" spawntype="mainpath,sidepath" musictype="monster" />
@@ -238,12 +249,17 @@
     <!-- Populate the wrecks. -->
     <EventSet identifier="wreck" chooserandom="false" allowatstart="true" perwreck="true">
       <MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="2" spawntype="wreck" musictype="monster" allowonlyonce="false"/>
-	  <MonsterEvent characterfile="Mudraptor" minamount="3" maxamount="3" spawntype="wreck" musictype="monster" allowonlyonce="false"/>
+	  <MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="3" spawntype="wreck" musictype="monster" allowonlyonce="false"/>
     </EventSet>
     <EventSet identifier="wreck" chooserandom="false" allowatstart="true" perwreck="true">
       <MonsterEvent characterfile="CrawlerHusk" minamount="4" maxamount="4" spawntype="wreck" musictype="monster" maxintensity="1.0" allowonlyonce="false"/>
     </EventSet>
-    <!-- Distance events -->
+   <!-- populate the abyss -->
+    <EventSet chooserandom="true" allowatstart="true" triggereventcooldown="false" disableinhuntinggrounds="true">
+      <MonsterEvent characterfile="Endworm" minamount="1" maxamount="1" maxamountperlevel="1" spawntype="abyss" />
+      <MonsterEvent characterfile="Charybdis" minamount="1" maxamount="1" maxamountperlevel="1" spawntype="abyss" />
+    </EventSet>
+   <!-- Distance events -->
     <!-- 3-6 crawlers after 180 seconds or passing 10% -->
     <EventSet chooserandom="true" mindistancetraveled="0.10" minmissiontime="10000" minintensity="0.0" maxintensity="1.0">
       <MonsterEvent characterfile="Crawler" minamount="2" maxamount="10" spawntype="mainpath,sidepath" musictype="monster" />
@@ -355,7 +371,6 @@
     </EventSet>
 
     <!-- Populate the wrecks. -->
-    <!-- Populate the wrecks. -->
     <EventSet identifier="wreck" chooserandom="false" allowatstart="true" perwreck="true">
       <MonsterEvent characterfile="Mudraptor" minamount="3" maxamount="3" spawntype="wreck" musictype="monster" allowonlyonce="false"/>
       <MonsterEvent characterfile="Mudraptor" minamount="3" maxamount="3" spawntype="wreck" musictype="monster" allowonlyonce="false"/>
@@ -363,7 +378,13 @@
     <EventSet identifier="wreck" chooserandom="false" allowatstart="true" perwreck="true">
       <MonsterEvent characterfile="CrawlerHusk" minamount="4" maxamount="4" spawntype="wreck" musictype="monster" maxintensity="1.0" allowonlyonce="false"/>
     </EventSet>
-    <!-- Distance events -->
+    <!-- populate the abyss -->
+    <EventSet chooserandom="true" allowatstart="true" triggereventcooldown="false" disableinhuntinggrounds="true">
+      <MonsterEvent characterfile="Endworm" minamount="1" maxamount="1" maxamountperlevel="1" spawntype="abyss" />
+      <MonsterEvent characterfile="Charybdis" minamount="1" maxamount="1" maxamountperlevel="1" spawntype="abyss" />
+    </EventSet>
+	
+	<!-- Distance events -->
     <!-- 6-8 crawlers or 1-3 hammerheads or a medium pack of threshers or a small swarm of moloch babies after passing 10% -->
     <EventSet chooserandom="true" mindistancetraveled="0.10" minmissiontime="10000" minintensity="0.0" maxintensity="1.0">
       <MonsterEvent characterfile="Crawler" minamount="6" maxamount="8" spawntype="mainpath,sidepath" musictype="monster" />
@@ -527,7 +548,7 @@
       <MonsterEvent characterfile="Crawlerhusk" minamount="0" maxamount="6" spawntype="ruin" musictype="monster" />
     </EventSet>
 
-    <!-- Populate the wrecks. -->
+
 <!-- Populate the wrecks. -->
     <EventSet identifier="wreck" chooserandom="false" allowatstart="true" perwreck="true">
       <MonsterEvent characterfile="Mudraptor" minamount="3" maxamount="3" spawntype="wreck" musictype="monster" maxintensity="1.0" allowonlyonce="false"/>
@@ -537,7 +558,12 @@
       <MonsterEvent characterfile="CrawlerHusk" minamount="4" maxamount="4" spawntype="wreck" musictype="monster" maxintensity="1.0" allowonlyonce="false"/>
       <MonsterEvent characterfile="CrawlerHusk" minamount="4" maxamount="4" spawntype="wreck" musictype="monster" maxintensity="1.0" allowonlyonce="false"/>
     </EventSet>
-    <!-- Distance events -->
+   <!-- populate the abyss -->
+    <EventSet chooserandom="true" allowatstart="true" triggereventcooldown="false" disableinhuntinggrounds="true">
+      <MonsterEvent characterfile="Endworm" minamount="1" maxamount="1" maxamountperlevel="1" spawntype="abyss" />
+      <MonsterEvent characterfile="Charybdis" minamount="1" maxamount="1" maxamountperlevel="1" spawntype="abyss" />
+    </EventSet>
+   <!-- Distance events -->
     <!-- 2-4 mudraptors and 1-3 hammerheads or a large pack of threshers or a large swarm of moloch babies or a black moloch after passing 10% -->
     <EventSet chooserandom="true" mindistancetraveled="0.10" minmissiontime="10000" minintensity="0.0" maxintensity="1.0">
       <EventSet chooserandom="false">

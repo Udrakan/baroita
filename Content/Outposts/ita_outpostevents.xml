@@ -3272,248 +3272,250 @@
 			</CheckReputationAction>
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_bank1">
-			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_banker" targettag="banker1" spawnpointtag="banker1" _npos="-3194.9563,-423.22144" />
-			<Label name="banker1" _npos="-2824.0894,-423.63867" />
-			<ClearTagAction tag="withdrawer" _npos="3315.5698,-1575.1859" />
-			<SpawnAction lootingisstealing="false" itemidentifier="ita_eventbugworkaround" ignorebyai="true" spawnlocation="MainPath"/>
-			<ConversationAction text="&quot;Would you like to withdraw or deposit cash?&quot;&#xD;&#xA;Because submarine crews often misbehave with their money, banks made it so that only captains are allowed to withdraw and distribute the cash between his crewmates." speakertag="banker1" invokertag="withdrawer" _npos="-2449.6855,-423.52817">
-				<Option text="Withdraw 100" endconversation="true">
-					<CheckItemAction targettag="withdrawer" itemtags="jobid:captain" _npos="-1669.3551,-1175.3494">
-						<Success>
-							<CheckMoneyAction amount="100" _npos="-855.53687,-1142.9672">
-								<Success>
-									<MoneyAction amount="-100" _npos="66.6947,-1110.895" />
-									<SpawnAction itemidentifier="ita_bill100" targetinventory="withdrawer" _npos="1172.7083,-2138.4583" />
-									<GoTo name="end" _npos="1177.1658,-2239.0532" />
-								</Success>
-								<Failure>
-									<Label name="nocash" _npos="-465.12897,-1079.9841" />
-									<ConversationAction text="&quot;You don't have enough money on your account.&quot;" targettag="withdrawer" _npos="-463.7223,-1521.4492" />
-									<GoTo name="end" _npos="-464.1349,-1625.8993" />
-								</Failure>
-							</CheckMoneyAction>
-						</Success>
-						<Failure>
-							<Label name="caponly" _npos="-1259.9684,-1111.7631" />
-							<ConversationAction text="&quot;Only captains can withdraw. You can deposit cash, if you want.&quot;" targettag="withdrawer" _npos="-1261.3726,-1541.353" />
-							<GoTo name="end" _npos="-1260.3705,-1644.46" />
-						</Failure>
-					</CheckItemAction>
-				</Option>
-				<Option text="Withdraw 400" endconversation="true">
-					<CheckItemAction targettag="withdrawer" itemtags="jobid:captain" _npos="-1669.8514,-1009.24384">
-						<Success>
-							<CheckMoneyAction amount="400" _npos="-858.9281,-973.6248">
-								<Success>
-									<MoneyAction amount="-400" _npos="62.459045,-934.8922" />
-									<SpawnAction itemidentifier="ita_bill200" targetinventory="withdrawer" _npos="1169.701,-1460.6562" />
-									<SpawnAction itemidentifier="ita_bill200" targetinventory="withdrawer" _npos="1594.2981,-1458.08" />
-									<GoTo name="end" _npos="2056.6526,-1448.8816" />
-								</Success>
-								<Failure>
-									<GoTo name="nocash" _npos="-461.958,-909.40753" />
-								</Failure>
-							</CheckMoneyAction>
-						</Success>
-						<Failure>
-							<GoTo name="caponly" _npos="-1271.0862,-944.9459" />
-						</Failure>
-					</CheckItemAction>
-				</Option>
-				<Option text="Withdraw 1000" endconversation="true">
-					<CheckItemAction targettag="withdrawer" itemtags="jobid:captain" _npos="-1669.3488,-844.7765">
-						<Success>
-							<CheckMoneyAction amount="1000" _npos="-860.15704,-807.2525">
-								<Success>
-									<MoneyAction amount="-1000" _npos="60.772705,-771.5382" />
-									<SpawnAction itemidentifier="ita_bill200" targetinventory="withdrawer" _npos="1210.4609,-852.689" />
-									<SpawnAction itemidentifier="ita_bill200" targetinventory="withdrawer" _npos="1618.9385,-838.1339" />
-									<SpawnAction itemidentifier="ita_bill200" targetinventory="withdrawer" _npos="2068.3184,-841.71704" />
-									<SpawnAction itemidentifier="ita_bill200" targetinventory="withdrawer" _npos="2480.6538,-832.3025" />
-									<SpawnAction itemidentifier="ita_bill200" targetinventory="withdrawer" _npos="2855.3552,-837.118" />
-									<GoTo name="end" _npos="3268.4517,-831.1397" />
-								</Success>
-								<Failure>
-									<GoTo name="nocash" _npos="-461.26465,-744.3913" />
-								</Failure>
-							</CheckMoneyAction>
-						</Success>
-						<Failure>
-							<GoTo name="caponly" _npos="-1271.4424,-780.99146" />
-						</Failure>
-					</CheckItemAction>
-				</Option>
-				<Option text="Deposit 100" endconversation="true">
-					<SetDataAction operation="Set" value="100" identifier="depamount" _npos="336.05823,-290.4804" />
-					<SetDataAction operation="Set" value="-100" identifier="depositb1" _npos="901.42413,-289.29242" />
-					<Label name="deposit" _npos="1316.9004,-297.69086" />
-					<CheckDataAction identifier="depositb1" condition="gte 0" _npos="1715.3757,-296.62766">
-						<Success>
-							<Label name="end" _npos="2905.4592,-1576.0847" />
-							<ClearTagAction tag="withdrawer" _npos="3315.5698,-1575.1859" />
-							<SpawnAction lootingisstealing="false" itemidentifier="ita_eventbugworkaround" ignorebyai="true" spawnlocation="MainPath"/>
-							<SetDataAction operation="Set" value="0" identifier="depositb1" _npos="3773.4731,-1577.1074" />
-							<SetDataAction operation="Set" value="0" identifier="depamount" _npos="4155.3584,-1577.5702" />
-							<GoTo name="banker1" _npos="4693.74,-1576.1235" />
-						</Success>
-						<Failure>
-							<CheckItemAction targettag="withdrawer" itemidentifiers="ita_coin1" _npos="2080.757,-130.29752">
-								<Success>
-									<SetDataAction operation="Add" value="1" identifier="depositb1" _npos="2080.2969,31.57399" />
-									<RemoveItemAction targettag="withdrawer" itemidentifier="ita_coin1" amount="1" _npos="2079.0444,194.60721" />
-									<MoneyAction amount="1" _npos="2078.1772,360.47464" />
-									<GoTo name="deposit" _npos="2077.4214,464.50443" />
-								</Success>
-								<Failure>
-									<CheckItemAction targettag="withdrawer" itemidentifiers="ita_coin5" _npos="2561,-115.5">
-										<Success>
-											<SetDataAction operation="Add" value="5" identifier="depositb1" _npos="2562.4092,48.053284" />
-											<RemoveItemAction targettag="withdrawer" itemidentifier="ita_coin5" amount="1" _npos="2561.8086,209.46045" />
-											<MoneyAction amount="5" _npos="2561.678,371.39453" />
-											<GoTo name="deposit" _npos="2561.303,473.5455" />
-										</Success>
-										<Failure>
-											<CheckItemAction targettag="withdrawer" itemidentifiers="ita_bill50" _npos="2998,-115.5">
-												<Success>
-													<SetDataAction operation="Add" value="50" identifier="depositb1" _npos="2999.9792,45.347534" />
-													<RemoveItemAction targettag="withdrawer" itemidentifier="ita_bill50" amount="1" _npos="2999.728,206.11884" />
-													<MoneyAction amount="50" _npos="2999.1646,369.91577" />
-													<GoTo name="deposit" _npos="3001.7976,481.6225" />
-												</Success>
-												<Failure>
-													<CheckItemAction targettag="withdrawer" itemidentifiers="ita_bill100" _npos="3417.1,-111.527985">
-														<Success>
-															<SetDataAction operation="Add" value="100" identifier="depositb1" _npos="3421.3237,49.856995" />
-															<RemoveItemAction targettag="withdrawer" itemidentifier="ita_bill100" amount="1" _npos="3418.6086,210.64856" />
-															<MoneyAction amount="100" _npos="3418.9297,374.352" />
-															<GoTo name="deposit" _npos="3420.185,489.67578" />
-														</Success>
-														<Failure>
-															<CheckItemAction targettag="withdrawer" itemidentifiers="ita_bill200" _npos="3830.3804,-109.40167">
-																<Success>
-																	<SetDataAction operation="Add" value="200" identifier="depositb1" _npos="3831.2798,53.428833" />
-																	<RemoveItemAction targettag="withdrawer" itemidentifier="ita_bill200" amount="1" _npos="3830.6458,212.46045" />
-																	<MoneyAction amount="200" _npos="3830.026,375.83075" />
-																	<GoTo name="deposit" _npos="3829.648,481.71216" />
-																</Success>
-																<Failure>
-																	<CheckDataAction identifier="depositb1" condition="gte 0" _npos="4247.8564,-144.59105">
-																		<Failure>
-																			<CheckDataAction identifier="depamount" condition="eq 1337" _npos="4245.3174,122.83441">
-																				<Success>
-																					<ConversationAction text="&quot;You've deposited all your cash into your crew's bank account.&quot;" targettag="withdrawer" _npos="4238.9307,319.21524" />
-																					<GoTo name="end" _npos="4236.3096,740.71094" />
-																				</Success>
-																				<Failure>
-																					<ConversationAction text="&quot;That's not enough cash, but I'll deposit what you have.&quot;" targettag="withdrawer" _npos="4727.883,-670.77936" />
-																					<CheckDataAction identifier="depamount" condition="eq 100" _npos="4908.8477,-53.329926">
-																						<Success>
-																							<SetDataAction operation="Add" value="100" identifier="depositb1" _npos="4907.5254,142.69766" />
-																							<Label name="returncash" _npos="4905.202,308.2016" />
-																							<CheckDataAction identifier="depositb1XXX" condition="" _npos="4842.524,609.97125">
-																								<Success>
-																									<CheckDataAction identifier="depositb1" condition="gte 200" _npos="4863.392,1060.183">
-																										<Success>
-																											<SetDataAction operation="Add" value="-200" identifier="depositb1" _npos="4864.371,1255.5955" />
-																											<SpawnAction itemidentifier="ita_bill200" targetinventory="withdrawer" _npos="4861.9395,1416.2717" />
-																											<GoTo name="returncash" _npos="4861.9854,1866.0228" />
-																										</Success>
-																										<Failure>
-																											<CheckDataAction identifier="depositb1" condition="gte 100" _npos="5314.158,1056.2438">
-																												<Success>
-																													<SetDataAction operation="Add" value="-100" identifier="depositb1" _npos="5314.625,1250.7765" />
-																													<SpawnAction itemidentifier="ita_bill100" targetinventory="withdrawer" _npos="5314.9565,1412.46" />
-																													<GoTo name="returncash" _npos="5314.9966,1862.0132" />
-																												</Success>
-																												<Failure>
-																													<CheckDataAction identifier="depositb1" condition="gte 50" _npos="5802.62,1057.113">
-																														<Success>
-																															<SetDataAction operation="Add" value="-50" identifier="depositb1" _npos="5802.65,1249.9941" />
-																															<SpawnAction itemidentifier="ita_bill50" targetinventory="withdrawer" _npos="5802.711,1410.3982" />
-																															<GoTo name="returncash" _npos="5803.0576,1861.0085" />
-																														</Success>
-																														<Failure>
-																															<CheckDataAction identifier="depositb1" condition="gte 5" _npos="6270.8247,1063.6833">
-																																<Success>
-																																	<SetDataAction operation="Add" value="-5" identifier="depositb1" _npos="6270.3643,1255.2479" />
-																																	<SpawnAction itemidentifier="ita_coin5" targetinventory="withdrawer" _npos="6270.115,1417.3718" />
-																																	<GoTo name="returncash" _npos="6270.701,1865.0089" />
-																																</Success>
-																																<Failure>
-																																	<CheckDataAction identifier="depositb1" condition="gte 1" _npos="6794.022,1056.9849">
-																																		<Success>
-																																			<SetDataAction operation="Add" value="-1" identifier="depositb1" _npos="6794.4,1247.9579" />
-																																			<SpawnAction itemidentifier="ita_coin1" targetinventory="withdrawer" _npos="6793.896,1409.2358" />
-																																			<GoTo name="returncash" _npos="6794.9893,1860.0084" />
-																																		</Success>
-																																	</CheckDataAction>
-																																</Failure>
-																															</CheckDataAction>
-																														</Failure>
-																													</CheckDataAction>
-																												</Failure>
-																											</CheckDataAction>
-																										</Failure>
-																									</CheckDataAction>
-																								</Success>
-																								<Failure>
-																									<GoTo name="end" _npos="5616.0635,670.58435" />
-																								</Failure>
-																							</CheckDataAction>
-																						</Success>
-																						<Failure>
-																							<CheckDataAction identifier="depamount" condition="eq 400" _npos="5408.6895,-53.35173">
-																								<Success>
-																									<SetDataAction operation="Add" value="400" identifier="depositb1" _npos="5406.4956,141.0394" />
-																									<GoTo name="returncash" _npos="5407.6636,302.8474" />
-																								</Success>
-																								<Failure>
-																									<CheckDataAction identifier="depamount" condition="eq 1000" _npos="5872.4453,-49.750122">
-																										<Success>
-																											<SetDataAction operation="Add" value="1000" identifier="depositb1" _npos="5872.3433,144.87769" />
-																											<GoTo name="returncash" _npos="5872.2983,306.6232" />
-																										</Success>
-																									</CheckDataAction>
-																								</Failure>
-																							</CheckDataAction>
-																						</Failure>
-																					</CheckDataAction>
-																				</Failure>
-																			</CheckDataAction>
-																		</Failure>
-																	</CheckDataAction>
-																</Failure>
-															</CheckItemAction>
-														</Failure>
-													</CheckItemAction>
-												</Failure>
-											</CheckItemAction>
-										</Failure>
-									</CheckItemAction>
-								</Failure>
-							</CheckItemAction>
-						</Failure>
-					</CheckDataAction>
-				</Option>
-				<Option text="Deposit 400" endconversation="true">
-					<SetDataAction operation="Set" value="400" identifier="depamount" _npos="317.24664,-124.79257" />
-					<SetDataAction operation="Set" value="-400" identifier="depositb1" _npos="905.5088,-129.84729" />
-					<GoTo name="deposit" _npos="1316.2311,-133.60165" />
-				</Option>
-				<Option text="Deposit 1000" endconversation="true">
-					<SetDataAction operation="Set" value="1000" identifier="depamount" _npos="316.77567,38.413086" />
-					<SetDataAction operation="Set" value="-1000" identifier="depositb1" _npos="904.25244,33.47931" />
-					<GoTo name="deposit" _npos="1336.9873,22.081726" />
-				</Option>
-				<Option text="Deposit all cash" endconversation="true">
-					<SetDataAction operation="Set" value="1337" identifier="depamount" _npos="317.909,201.59882" />
-					<SetDataAction operation="Set" value="-10000" identifier="depositb1" _npos="904.4518,196.9801" />
-					<GoTo name="deposit" _npos="1342.1672,198.02798" />
-				</Option>
-				<Option text="&quot;Another time, maybe.&quot;" endconversation="true" />
-				<Option text="" endconversation="true"/>
-			</ConversationAction>
-		</ScriptedEvent>
+  <SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_banker" targettag="banker1" spawnpointtag="banker1" _npos="-3194.9563,-423.22144" />
+  <Label name="banker1" _npos="-2824.0894,-423.63867" />
+  <ClearTagAction tag="withdrawer" _npos="-2832.0925,-310.77393" />
+  <SpawnAction lootingisstealing="false" itemidentifier="ita_eventbugworkaround" spawnlocation="MainPath" ignorebyai="true" _npos="-2832.2788,-205.67664" />
+  <ConversationAction text="&quot;Would you like to withdraw or deposit cash?&quot;&#xD;&#xA;Because submarine crews often misbehave with their money, banks made it so that only captains are allowed to withdraw and distribute the cash between his crewmates." speakertag="banker1" invokertag="withdrawer" _npos="-2449.6855,-423.52817">
+    <Option text="Withdraw 100" endconversation="true">
+      <CheckItemAction targettag="withdrawer" itemtags="jobid:captain" _npos="-1669.3551,-1175.3494">
+        <Success>
+          <CheckMoneyAction amount="100" _npos="-855.53687,-1142.9672">
+            <Success>
+              <MoneyAction amount="-100" _npos="66.6947,-1110.895" />
+              <SpawnAction itemidentifier="ita_bill100" targetinventory="withdrawer" _npos="1172.7083,-2138.4583" />
+              <GoTo name="end" _npos="1177.1658,-2239.0532" />
+            </Success>
+            <Failure>
+              <Label name="nocash" _npos="-465.12897,-1079.9841" />
+              <ConversationAction text="&quot;You don't have enough money on your account.&quot;" targettag="withdrawer" _npos="-463.7223,-1521.4492" />
+              <GoTo name="end" _npos="-464.1349,-1625.8993" />
+            </Failure>
+          </CheckMoneyAction>
+        </Success>
+        <Failure>
+          <Label name="caponly" _npos="-1259.9684,-1111.7631" />
+          <ConversationAction text="&quot;Only captains can withdraw. You can deposit cash, if you want.&quot;" targettag="withdrawer" _npos="-1261.3726,-1541.353" />
+          <GoTo name="end" _npos="-1260.3705,-1644.46" />
+        </Failure>
+      </CheckItemAction>
+    </Option>
+    <Option text="Withdraw 400" endconversation="true">
+      <CheckItemAction targettag="withdrawer" itemtags="jobid:captain" _npos="-1669.8514,-1009.24384">
+        <Success>
+          <CheckMoneyAction amount="400" _npos="-858.9281,-973.6248">
+            <Success>
+              <MoneyAction amount="-400" _npos="62.459045,-934.8922" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="withdrawer" _npos="1169.701,-1460.6562" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="withdrawer" _npos="1594.2981,-1458.08" />
+              <GoTo name="end" _npos="2056.6526,-1448.8816" />
+            </Success>
+            <Failure>
+              <GoTo name="nocash" _npos="-461.958,-909.40753" />
+            </Failure>
+          </CheckMoneyAction>
+        </Success>
+        <Failure>
+          <GoTo name="caponly" _npos="-1271.0862,-944.9459" />
+        </Failure>
+      </CheckItemAction>
+    </Option>
+    <Option text="Withdraw 1000" endconversation="true">
+      <CheckItemAction targettag="withdrawer" itemtags="jobid:captain" _npos="-1669.3488,-844.7765">
+        <Success>
+          <CheckMoneyAction amount="1000" _npos="-860.15704,-807.2525">
+            <Success>
+              <MoneyAction amount="-1000" _npos="60.772705,-771.5382" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="withdrawer" _npos="1210.4609,-852.689" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="withdrawer" _npos="1618.9385,-838.1339" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="withdrawer" _npos="2068.3184,-841.71704" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="withdrawer" _npos="2480.6538,-832.3025" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="withdrawer" _npos="2855.3552,-837.118" />
+              <GoTo name="end" _npos="3268.4517,-831.1397" />
+            </Success>
+            <Failure>
+              <GoTo name="nocash" _npos="-461.26465,-744.3913" />
+            </Failure>
+          </CheckMoneyAction>
+        </Success>
+        <Failure>
+          <GoTo name="caponly" _npos="-1271.4424,-780.99146" />
+        </Failure>
+      </CheckItemAction>
+    </Option>
+    <Option text="Deposit 100" endconversation="true">
+      <SetDataAction operation="Set" value="100" identifier="depamount" _npos="336.05823,-290.4804" />
+      <SetDataAction operation="Set" value="-100" identifier="depositb1" _npos="901.42413,-289.29242" />
+      <Label name="deposit" _npos="1316.9004,-297.69086" />
+      <CheckDataAction identifier="depositb1" condition="gte 0" _npos="1715.3757,-296.62766">
+        <Success>
+          <Label name="end" _npos="2905.4592,-1576.0847" />
+          <ClearTagAction tag="withdrawer" _npos="3335.985,-1928.5243" />
+          <SpawnAction lootingisstealing="false" itemidentifier="ita_eventbugworkaround" spawnlocation="MainPath" ignorebyai="true" _npos="6600,0" />
+          <SetDataAction operation="Set" value="0" identifier="depositb1" _npos="3773.4731,-1577.1074" />
+          <SetDataAction operation="Set" value="0" identifier="depamount" _npos="4155.3584,-1577.5702" />
+          <GoTo name="banker1" _npos="4693.74,-1576.1235" />
+        </Success>
+        <Failure>
+          <CheckItemAction targettag="withdrawer" itemidentifiers="ita_coin1" _npos="2080.757,-130.29752">
+            <Success>
+              <SetDataAction operation="Add" value="1" identifier="depositb1" _npos="2080.2969,31.57399" />
+              <RemoveItemAction targettag="withdrawer" itemidentifier="ita_coin1" amount="1" _npos="2079.0444,194.60721" />
+              <MoneyAction amount="1" _npos="2078.1772,360.47464" />
+              <GoTo name="deposit" _npos="2077.4214,464.50443" />
+            </Success>
+            <Failure>
+              <CheckItemAction targettag="withdrawer" itemidentifiers="ita_coin5" _npos="2561,-115.5">
+                <Success>
+                  <SetDataAction operation="Add" value="5" identifier="depositb1" _npos="2562.4092,48.053284" />
+                  <RemoveItemAction targettag="withdrawer" itemidentifier="ita_coin5" amount="1" _npos="2561.8086,209.46045" />
+                  <MoneyAction amount="5" _npos="2561.678,371.39453" />
+                  <GoTo name="deposit" _npos="2561.303,473.5455" />
+                </Success>
+                <Failure>
+                  <CheckItemAction targettag="withdrawer" itemidentifiers="ita_bill50" _npos="2998,-115.5">
+                    <Success>
+                      <SetDataAction operation="Add" value="50" identifier="depositb1" _npos="2999.9792,45.347534" />
+                      <RemoveItemAction targettag="withdrawer" itemidentifier="ita_bill50" amount="1" _npos="2999.728,206.11884" />
+                      <MoneyAction amount="50" _npos="2999.1646,369.91577" />
+                      <GoTo name="deposit" _npos="3001.7976,481.6225" />
+                    </Success>
+                    <Failure>
+                      <CheckItemAction targettag="withdrawer" itemidentifiers="ita_bill100" _npos="3417.1,-111.527985">
+                        <Success>
+                          <SetDataAction operation="Add" value="100" identifier="depositb1" _npos="3421.3237,49.856995" />
+                          <RemoveItemAction targettag="withdrawer" itemidentifier="ita_bill100" amount="1" _npos="3418.6086,210.64856" />
+                          <MoneyAction amount="100" _npos="3418.9297,374.352" />
+                          <GoTo name="deposit" _npos="3420.185,489.67578" />
+                        </Success>
+                        <Failure>
+                          <CheckItemAction targettag="withdrawer" itemidentifiers="ita_bill200" _npos="3830.3804,-109.40167">
+                            <Success>
+                              <SetDataAction operation="Add" value="200" identifier="depositb1" _npos="3831.2798,53.428833" />
+                              <RemoveItemAction targettag="withdrawer" itemidentifier="ita_bill200" amount="1" _npos="3830.6458,212.46045" />
+                              <MoneyAction amount="200" _npos="3830.026,375.83075" />
+                              <GoTo name="deposit" _npos="3829.648,481.71216" />
+                            </Success>
+                            <Failure>
+                              <CheckDataAction identifier="depositb1" condition="gte 0" _npos="4247.8564,-144.59105">
+                                <Failure>
+                                  <CheckDataAction identifier="depamount" condition="eq 1337" _npos="4245.3174,122.83441">
+                                    <Success>
+                                      <ConversationAction text="&quot;You've deposited all your cash into your crew's bank account.&quot;" targettag="withdrawer" _npos="4238.9307,319.21524" />
+                                      <GoTo name="end" _npos="4236.3096,740.71094" />
+                                    </Success>
+                                    <Failure>
+                                      <ConversationAction text="&quot;That's not enough cash, but I'll deposit what you have.&quot;" targettag="withdrawer" _npos="4727.883,-670.77936" />
+                                      <CheckDataAction identifier="depamount" condition="eq 100" _npos="4908.8477,-53.329926">
+                                        <Success>
+                                          <SetDataAction operation="Add" value="100" identifier="depositb1" _npos="4907.5254,142.69766" />
+                                          <Label name="returncash" _npos="4905.202,308.2016" />
+                                          <CheckDataAction identifier="depositb1XXX" condition="" _npos="4842.524,609.97125">
+                                            <Success>
+                                              <CheckDataAction identifier="depositb1" condition="gte 200" _npos="4863.392,1060.183">
+                                                <Success>
+                                                  <SetDataAction operation="Add" value="-200" identifier="depositb1" _npos="4864.371,1255.5955" />
+                                                  <SpawnAction itemidentifier="ita_bill200" targetinventory="withdrawer" _npos="4861.9395,1416.2717" />
+                                                  <GoTo name="returncash" _npos="4861.9854,1866.0228" />
+                                                </Success>
+                                                <Failure>
+                                                  <CheckDataAction identifier="depositb1" condition="gte 100" _npos="5314.158,1056.2438">
+                                                    <Success>
+                                                      <SetDataAction operation="Add" value="-100" identifier="depositb1" _npos="5314.625,1250.7765" />
+                                                      <SpawnAction itemidentifier="ita_bill100" targetinventory="withdrawer" _npos="5314.9565,1412.46" />
+                                                      <GoTo name="returncash" _npos="5314.9966,1862.0132" />
+                                                    </Success>
+                                                    <Failure>
+                                                      <CheckDataAction identifier="depositb1" condition="gte 50" _npos="5802.62,1057.113">
+                                                        <Success>
+                                                          <SetDataAction operation="Add" value="-50" identifier="depositb1" _npos="5802.65,1249.9941" />
+                                                          <SpawnAction itemidentifier="ita_bill50" targetinventory="withdrawer" _npos="5802.711,1410.3982" />
+                                                          <GoTo name="returncash" _npos="5803.0576,1861.0085" />
+                                                        </Success>
+                                                        <Failure>
+                                                          <CheckDataAction identifier="depositb1" condition="gte 5" _npos="6270.8247,1063.6833">
+                                                            <Success>
+                                                              <SetDataAction operation="Add" value="-5" identifier="depositb1" _npos="6270.3643,1255.2479" />
+                                                              <SpawnAction itemidentifier="ita_coin5" targetinventory="withdrawer" _npos="6270.115,1417.3718" />
+                                                              <GoTo name="returncash" _npos="6270.701,1865.0089" />
+                                                            </Success>
+                                                            <Failure>
+                                                              <CheckDataAction identifier="depositb1" condition="gte 1" _npos="6794.022,1056.9849">
+                                                                <Success>
+                                                                  <SetDataAction operation="Add" value="-1" identifier="depositb1" _npos="6794.4,1247.9579" />
+                                                                  <SpawnAction itemidentifier="ita_coin1" targetinventory="withdrawer" _npos="6793.896,1409.2358" />
+                                                                  <GoTo name="returncash" _npos="6794.9893,1860.0084" />
+                                                                </Success>
+                                                              </CheckDataAction>
+                                                            </Failure>
+                                                          </CheckDataAction>
+                                                        </Failure>
+                                                      </CheckDataAction>
+                                                    </Failure>
+                                                  </CheckDataAction>
+                                                </Failure>
+                                              </CheckDataAction>
+                                            </Success>
+                                            <Failure>
+                                              <GoTo name="end" _npos="5616.0635,670.58435" />
+                                            </Failure>
+                                          </CheckDataAction>
+                                        </Success>
+                                        <Failure>
+                                          <CheckDataAction identifier="depamount" condition="eq 400" _npos="5408.6895,-53.35173">
+                                            <Success>
+                                              <SetDataAction operation="Add" value="400" identifier="depositb1" _npos="5406.4956,141.0394" />
+                                              <GoTo name="returncash" _npos="5407.6636,302.8474" />
+                                            </Success>
+                                            <Failure>
+                                              <CheckDataAction identifier="depamount" condition="eq 1000" _npos="5872.4453,-49.750122">
+                                                <Success>
+                                                  <SetDataAction operation="Add" value="1000" identifier="depositb1" _npos="5872.3433,144.87769" />
+                                                  <GoTo name="returncash" _npos="5872.2983,306.6232" />
+                                                </Success>
+                                              </CheckDataAction>
+                                            </Failure>
+                                          </CheckDataAction>
+                                        </Failure>
+                                      </CheckDataAction>
+                                    </Failure>
+                                  </CheckDataAction>
+                                </Failure>
+                              </CheckDataAction>
+                            </Failure>
+                          </CheckItemAction>
+                        </Failure>
+                      </CheckItemAction>
+                    </Failure>
+                  </CheckItemAction>
+                </Failure>
+              </CheckItemAction>
+            </Failure>
+          </CheckItemAction>
+        </Failure>
+      </CheckDataAction>
+    </Option>
+    <Option text="Deposit 400" endconversation="true">
+      <SetDataAction operation="Set" value="400" identifier="depamount" _npos="317.24664,-124.79257" />
+      <SetDataAction operation="Set" value="-400" identifier="depositb1" _npos="905.5088,-129.84729" />
+      <GoTo name="deposit" _npos="1316.2311,-133.60165" />
+    </Option>
+    <Option text="Deposit 1000" endconversation="true">
+      <SetDataAction operation="Set" value="1000" identifier="depamount" _npos="316.77567,38.413086" />
+      <SetDataAction operation="Set" value="-1000" identifier="depositb1" _npos="908.6627,42.299683" />
+      <GoTo name="deposit" _npos="1336.9873,22.081726" />
+    </Option>
+    <Option text="Deposit all cash" endconversation="true">
+      <SetDataAction operation="Set" value="1337" identifier="depamount" _npos="317.909,201.59882" />
+      <SetDataAction operation="Set" value="-10000" identifier="depositb1" _npos="904.4518,196.9801" />
+      <GoTo name="deposit" _npos="1342.1672,198.02798" />
+    </Option>
+    <Option text="&quot;Another time, maybe.&quot;" endconversation="true">
+      <GoTo name="banker1" _npos="-1851.457,-114.04956" />
+    </Option>
+    <Option text="" endconversation="true" />
+  </ConversationAction>
+</ScriptedEvent>
 		
 		<ScriptedEvent identifier="ita_collectorsell1">
 			<TagAction criteria="itemidentifier:socket4ita" tag="socket4ita" />
@@ -4624,7 +4626,7 @@
         <Failure>
           <ConversationAction text="&quot;Wanna bet 100mk on one of the muddies in the next mudraptor race?&quot;" speakertag="raceman" invokertag="beter1" _npos="20.083832,23.967651">
             <Option text="Bet 100mk  on the Red mudraptor..." endconversation="true">
-              <SetDataAction operation="Set" value="1" identifier="r1bet" _npos="746.70416,54.49799" />
+              <SetDataAction operation="Set" value="1" identifier="r1bet" _npos="748.73346,55.5069" />
               <Label name="labop" _npos="365.5538,679.2201" />
               <SetDataAction operation="Set" value="-100" identifier="r1betsize" _npos="359.88055,786.698" />
               <Label name="lab2" _npos="359.21527,949.7349" />
@@ -4643,7 +4645,7 @@
                               <SetDataAction operation="Set" value="0" identifier="r1betsize" _npos="2599.7607,3043.5618" />
                               <SetDataAction operation="Set" value="0" identifier="r1nocash" _npos="2597.5337,3213.2417" />
                               <ClearTagAction tag="beter1" _npos="2597.188,3374.789" />
-                              <SpawnAction lootingisstealing="false" itemidentifier="ita_eventbugworkaround" spawnlocation="MainPath" ignorebyai="true" _npos="13200,0" />
+                              <SpawnAction lootingisstealing="false" itemidentifier="ita_eventbugworkaround" spawnlocation="MainPath" ignorebyai="true" _npos="2594.7314,3587.4468" />
                               <GoTo name="lab1" _npos="2594.454,3473.6274" />
                             </Success>
                             <Failure>
@@ -4651,7 +4653,7 @@
                               <CheckDataAction identifier="r1bet" condition="eq 1" _npos="3502.9702,3003.457">
                                 <Success>
                                   <StatusEffectAction targettag="raceman" _npos="4953.856,-297.2166">
-                                    <StatusEffect _npos="4954.5327,-196.02985">
+                                    <StatusEffect _npos="4993.5723,-60.892395">
                                       <Sound file="Mods/IntoTheAbyss/Content/Items/ita_sounds_ticketrip.ogg" range="500" _npos="4961.747,-91.940796" />
                                     </StatusEffect>
                                   </StatusEffectAction>
@@ -4664,7 +4666,7 @@
                                   <CheckDataAction identifier="r1bet" condition="eq 2" _npos="3975.343,3001.3804">
                                     <Success>
                                       <StatusEffectAction targettag="raceman" _npos="4960.7363,-294.79236">
-                                        <StatusEffect _npos="4961.413,-193.60559">
+                                        <StatusEffect _npos="4963.415,-149.56067">
                                           <Sound file="Mods/IntoTheAbyss/Content/Items/ita_sounds_ticketrip.ogg" range="500" _npos="4961.747,-91.940796" />
                                         </StatusEffect>
                                       </StatusEffectAction>
@@ -4677,7 +4679,7 @@
                                       <CheckDataAction identifier="r1bet" condition="eq 3" _npos="4418.702,3004.2568">
                                         <Success>
                                           <StatusEffectAction targettag="raceman" _npos="4960.7363,-294.79236">
-                                            <StatusEffect _npos="4961.413,-193.60559">
+                                            <StatusEffect _npos="4971.423,-145.55658">
                                               <Sound file="Mods/IntoTheAbyss/Content/Items/ita_sounds_ticketrip.ogg" range="500" _npos="4961.747,-91.940796" />
                                             </StatusEffect>
                                           </StatusEffectAction>
@@ -4846,31 +4848,36 @@
               <WaitAction time="3" _npos="2219.045,334.864" />
               <CheckDataAction identifier="race1done" condition="eq 1" _npos="2221.8438,431.0932">
                 <Success>
-                  <Label name="lab4" _npos="-464.3943,-1388.4352" />
-                  <CheckDataAction identifier="w1" condition="eq 1" _npos="51.61685,-1447.6533">
+                  <Label name="lab4" _npos="-1114.2743,-1223.3319" />
+                  <ClearTagAction tag="beterw1" _npos="-816.03326,-1102.6361" />
+                  <ClearTagAction tag="beterw2" _npos="-821.24976,-1007.7969" />
+                  <ClearTagAction tag="beterw3" _npos="-821.24976,-907.34406" />
+                  <SpawnAction itemidentifier="ita_eventbugworkaround" spawnlocation="MainPath" _npos="-823.26373,-809.9567" />
+                  <WaitAction time="1" _npos="-446.2019,-810.50073" />
+                  <CheckDataAction identifier="w1" condition="eq 1" _npos="47.246185,-1215.915">
                     <Success>
-                      <StatusEffectAction targettag="r1green" _npos="9000,0">
-                        <StatusEffect _npos="9600,0">
-                          <Remove _npos="10200,0" />
+                      <StatusEffectAction targettag="r1green" _npos="-554.27795,-1912.9579">
+                        <StatusEffect _npos="-549.40466,-1811.4128">
+                          <Remove _npos="-551.3428,-1711.1603" />
                         </StatusEffect>
                       </StatusEffectAction>
-                      <StatusEffectAction targettag="r1blue" _npos="9728,258">
-                        <StatusEffect _npos="10328,231">
-                          <Remove _npos="10800,0" />
+                      <StatusEffectAction targettag="r1blue" _npos="-63.57007,-1922.3722">
+                        <StatusEffect _npos="-62.47046,-1815.0702">
+                          <Remove _npos="-56.625366,-1715.7129" />
                         </StatusEffect>
                       </StatusEffectAction>
-                      <ConversationAction text="&quot;Red has won the race! Come redeem your tokens!&quot;" speakertag="raceman" invokertag="beterw1" _npos="480.4464,-1436.2913">
+                      <ConversationAction text="&quot;Red has won the race! Come redeem your tokens!&quot;" speakertag="raceman" invokertag="beterw1" _npos="561.3102,-1508.3163">
                         <Option text="Redeem your token..." endconversation="true">
-                          <CheckItemAction targettag="beterw1" itemidentifiers="ita_race_ticket1" _npos="1006.0007,-1396.5629">
+                          <CheckItemAction targettag="beterw1" itemidentifiers="ita_race_ticket1" _npos="1113.7853,-1365.5023">
                             <Success>
-                              <RemoveItemAction targettag="beterw1" itemidentifier="ita_race_ticket1" amount="1" _npos="1006.0676,-1233.0769" />
-                              <StatusEffectAction targettag="raceman" _npos="4960.7363,-294.79236">
-                                <StatusEffect _npos="4961.413,-193.60559">
-                                  <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_cashregister.ogg" range="500" _npos="4961.747,-91.940796" />
+                              <RemoveItemAction targettag="beterw1" itemidentifier="ita_race_ticket1" amount="1" _npos="1651.9489,-1482.5913" />
+                              <StatusEffectAction targettag="raceman" _npos="2268.3337,-1473.8374">
+                                <StatusEffect _npos="2265.0586,-1371.0797">
+                                  <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_cashregister.ogg" range="500" _npos="2266.0278,-1272.6305" />
                                 </StatusEffect>
                               </StatusEffectAction>
-                              <SpawnAction itemidentifier="ita_bill200" targetinventory="beterw1" _npos="1490.1248,-1415.4126" />
-                              <GoTo name="lab4" _npos="13328,632" />
+                              <SpawnAction itemidentifier="ita_bill200" targetinventory="beterw1" _npos="2756.1885,-1478.7001" />
+                              <GoTo name="lab4" _npos="3282.7498,-1473.1537" />
                             </Success>
                             <Failure>
                               <GoTo name="lab4" _npos="11400,0" />
@@ -4897,12 +4904,12 @@
                               <CheckItemAction targettag="beterw2" itemidentifiers="ita_race_ticket2" _npos="1004.9049,-980.6812">
                                 <Success>
                                   <RemoveItemAction targettag="beterw2" itemidentifier="ita_race_ticket2" amount="1" _npos="1004.87036,-820.3992" />
-                                  <StatusEffectAction targettag="raceman" _npos="4960.7363,-294.79236">
-                                    <StatusEffect _npos="4961.413,-193.60559">
-                                      <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_cashregister.ogg" range="500" _npos="4961.747,-91.940796" />
+                                  <StatusEffectAction targettag="raceman" _npos="4951.7275,-336.83514">
+                                    <StatusEffect _npos="5545.007,66.65747">
+                                      <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_cashregister.ogg" range="500" _npos="5246.0366,204.36029" />
                                     </StatusEffect>
                                   </StatusEffectAction>
-                                  <SpawnAction itemidentifier="ita_bill200" targetinventory="beterw1" _npos="1488.592,-962.6271" />
+                                  <SpawnAction itemidentifier="ita_bill200" targetinventory="beterw2" _npos="1488.592,-962.6271" />
                                   <GoTo name="lab4" _npos="13928,644" />
                                 </Success>
                                 <Failure>
@@ -4913,7 +4920,7 @@
                           </ConversationAction>
                         </Success>
                         <Failure>
-                          <CheckDataAction identifier="w3" condition="eq 3" _npos="48.694458,-779.717">
+                          <CheckDataAction identifier="w3" condition="eq 1" _npos="48.694458,-779.717">
                             <Success>
                               <StatusEffectAction targettag="r1red" _npos="10456,672">
                                 <StatusEffect _npos="11056,493">
@@ -4930,13 +4937,13 @@
                                   <CheckItemAction targettag="beterw3" itemidentifiers="ita_race_ticket3" _npos="999.6004,-562.7059">
                                     <Success>
                                       <RemoveItemAction targettag="beterw3" itemidentifier="ita_race_ticket3" amount="1" _npos="998.42126,-399.32703" />
-                                      <StatusEffectAction targettag="raceman" _npos="4960.7363,-294.79236">
-                                        <StatusEffect _npos="4961.413,-193.60559">
-                                          <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_cashregister.ogg" range="500" _npos="4947.3643,-94.36554" />
+                                      <StatusEffectAction targettag="raceman" _npos="4976.753,-318.81683">
+                                        <StatusEffect _npos="5571.034,54.63562">
+                                          <Sound file="Mods/IntoTheAbyss/Content/Outposts/ita_cashregister.ogg" range="500" _npos="5275.6997,198.93243" />
                                           <sound file="Content/Items/Weapons/Revolver2.ogg" range="1000.0" volume="1" _npos="15128,628" />
                                         </StatusEffect>
                                       </StatusEffectAction>
-                                      <SpawnAction itemidentifier="ita_bill200" targetinventory="beterw1" _npos="1486.4674,-506.3431" />
+                                      <SpawnAction itemidentifier="ita_bill200" targetinventory="beterw3" _npos="1486.4674,-506.3431" />
                                       <GoTo name="lab4" _npos="14528,585" />
                                     </Success>
                                     <Failure>
@@ -5030,54 +5037,54 @@
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_race1.1">
 			<SetDataAction operation="Set" value="0" identifier="w1" _npos="62.91452,-486.99072" />
-			<TagAction criteria="itemtag:racestart1" tag="racestart2" _npos="437.5692,-489.6132" />
-			<TagAction criteria="itemtag:raceend1" tag="raceend2" _npos="430.7741,-300.49716" />
-			<SpawnAction speciesname="mudraptor_red" targettag="red" spawnpointtag="racestart" _npos="894.2991,-487.4691" />
-			<TriggerAction target1tag="red" target2tag="raceend2" radius="300" _npos="1367.6598,-460.98938" />
-			<CheckDataAction identifier="w2" condition="eq 1" _npos="1835.6345,-454.31213">
-				<Failure>
-					<CheckDataAction identifier="w3" condition="eq 1" _npos="2267.3616,-390.04065">
-						<Failure>
-							<SetDataAction operation="Set" value="1" identifier="w1" _npos="2718.5479,-328.4523" />
-						</Failure>
-					</CheckDataAction>
-				</Failure>
-			</CheckDataAction>
-		</ScriptedEvent>
+  <TagAction criteria="itemtag:racestart1" tag="racestart2" _npos="437.5692,-489.6132" />
+  <TagAction criteria="itemtag:raceend1" tag="raceend2" _npos="430.7741,-300.49716" />
+  <SpawnAction speciesname="mudraptor_red" targettag="red" spawnpointtag="racestart" _npos="894.2991,-487.4691" />
+  <TriggerAction target1tag="red" target2tag="raceend2" radius="300" disableincombat="false" disableiftargetincapacitated="false" _npos="1367.6598,-460.98938" />
+  <CheckDataAction identifier="w2" condition="eq 1" _npos="1835.6345,-454.31213">
+    <Failure>
+      <CheckDataAction identifier="w3" condition="eq 1" _npos="2267.3616,-390.04065">
+        <Failure>
+          <SetDataAction operation="Set" value="1" identifier="w1" _npos="2718.5479,-328.4523" />
+        </Failure>
+      </CheckDataAction>
+    </Failure>
+  </CheckDataAction>
+</ScriptedEvent>
 		<ScriptedEvent identifier="ita_race1.2">
 			<SetDataAction operation="Set" value="0" identifier="w2" _npos="-103.82294,-420.8608" />
-			<TagAction criteria="itemtag:raceend1" tag="raceend2" _npos="272.4994,-420.84937" />
-			<TagAction criteria="itemtag:racestart1" tag="racestart" _npos="272.11383,-255.12164" />
-			<SpawnAction speciesname="mudraptor_green" targettag="green" spawnpointtag="racestart" _npos="650.5545,-256.58127" />
-			<TriggerAction target1tag="green" target2tag="raceend2" radius="300" _npos="1175.7659,-271.0426" />
-			<CheckDataAction identifier="w1" condition="eq 1" _npos="1702.1553,-278.68335">
-				<Failure>
-					<CheckDataAction identifier="w3" condition="eq 1" _npos="2268.8557,-224.1726">
-						<Failure>
-							<SetDataAction operation="Set" value="1" identifier="w2" _npos="2711.9363,-145.6735" />
-							<SetDataAction operation="Set" value="0" identifier="start" _npos="3149.2222,-134.40894" />
-						</Failure>
-					</CheckDataAction>
-				</Failure>
-			</CheckDataAction>
-		</ScriptedEvent>
+  <TagAction criteria="itemtag:raceend1" tag="raceend2" _npos="272.4994,-420.84937" />
+  <TagAction criteria="itemtag:racestart1" tag="racestart" _npos="272.11383,-255.12164" />
+  <SpawnAction speciesname="mudraptor_green" targettag="green" spawnpointtag="racestart" _npos="650.5545,-256.58127" />
+  <TriggerAction target1tag="green" target2tag="raceend2" radius="300" disableincombat="false" disableiftargetincapacitated="false" _npos="1175.7659,-271.0426" />
+  <CheckDataAction identifier="w1" condition="eq 1" _npos="1702.1553,-278.68335">
+    <Failure>
+      <CheckDataAction identifier="w3" condition="eq 1" _npos="2268.8557,-224.1726">
+        <Failure>
+          <SetDataAction operation="Set" value="1" identifier="w2" _npos="2711.9363,-145.6735" />
+          <SetDataAction operation="Set" value="0" identifier="start" _npos="3149.2222,-134.40894" />
+        </Failure>
+      </CheckDataAction>
+    </Failure>
+  </CheckDataAction>
+</ScriptedEvent>
 		<ScriptedEvent identifier="ita_race1.3">
 			<SetDataAction operation="Set" value="0" identifier="w3" _npos="526.77136,-355.11987" />
-			<TagAction criteria="itemtag:raceend1" tag="raceend2" _npos="934.87695,-355.5407" />
-			<TagAction criteria="itemtag:racestart1" tag="racestart2" _npos="934.5123,-191.42786" />
-			<SpawnAction speciesname="mudraptor_blue" targettag="blue" spawnpointtag="racestart" _npos="1305.0569,-191.71396" />
-			<TriggerAction target1tag="blue" target2tag="raceend2" radius="300" _npos="1684.6113,-191.00269" />
-			<CheckDataAction identifier="w1" condition="eq 1" _npos="2053.0217,-191.15247">
-				<Failure>
-					<CheckDataAction identifier="w2" condition="eq 1" _npos="2419.385,-127.39166">
-						<Failure>
-							<SetDataAction operation="Set" value="1" identifier="w3" _npos="2788.5056,-63.471832" />
-							<SetDataAction operation="Set" value="0" identifier="start" _npos="3158.2788,-63.60553" />
-						</Failure>
-					</CheckDataAction>
-				</Failure>
-			</CheckDataAction>
-		</ScriptedEvent>
+  <TagAction criteria="itemtag:raceend1" tag="raceend2" _npos="934.87695,-355.5407" />
+  <TagAction criteria="itemtag:racestart1" tag="racestart2" _npos="934.5123,-191.42786" />
+  <SpawnAction speciesname="mudraptor_blue" targettag="blue" spawnpointtag="racestart" _npos="1305.0569,-191.71396" />
+  <TriggerAction target1tag="blue" target2tag="raceend2" radius="300" _npos="1684.6113,-191.00269" />
+  <CheckDataAction identifier="w1" condition="eq 1" _npos="2053.0217,-191.15247">
+    <Failure>
+      <CheckDataAction identifier="w2" condition="eq 1" _npos="2419.385,-127.39166">
+        <Failure>
+          <SetDataAction operation="Set" value="1" identifier="w3" _npos="2788.5056,-63.471832" />
+          <SetDataAction operation="Set" value="0" identifier="start" _npos="3158.2788,-63.60553" />
+        </Failure>
+      </CheckDataAction>
+    </Failure>
+  </CheckDataAction>
+</ScriptedEvent>
 		<ScriptedEvent identifier="ita_race1start">
 			<TagAction criteria="itemtag:raceopen" tag="racedoor" _npos="-440.5974,0.6141815" />
 			<TagAction criteria="itemtag:att1" tag="att1"/>
@@ -5859,23 +5866,19 @@
 			<Override leveltype="outpostlevel" commonness="1000" />
 		</Commonness>
 		<EventSet identifier="outpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
-			<ScriptedEvent identifier="givingdirections" commonness="50" />
-			<ScriptedEvent identifier="soundinthevent" commonness="100" />
-			<ScriptedEvent identifier="clownrelations1" commonness="50" />
+			<ScriptedEvent identifier="v1_mechanicsarespecial" commonness="50" />
+			<ScriptedEvent identifier="v2_givingdirections" commonness="100" />
+			<ScriptedEvent identifier="v3_soundinthevent" commonness="50" />
 			<ScriptedEvent identifier="clownrelations2" commonness="100" />
-			<ScriptedEvent identifier="goodsamaritan" commonness="50" />
-			<ScriptedEvent identifier="propaganda" commonness="50" />
-			<ScriptedEvent identifier="goblincooking1" commonness="50" />
-			<ScriptedEvent identifier="outbreak" commonness="100" />
-			<ScriptedEvent identifier="miketheidiot1" commonness="12" />
-			<ScriptedEvent identifier="miketheidiot2" commonness="25" />
+			<ScriptedEvent identifier="v4_goodsamaritan" commonness="50" />
+			<ScriptedEvent identifier="v5_impromptuengineering" commonness="50" />
+			<ScriptedEvent identifier="v6_clownrelations1" commonness="50" />
+			<ScriptedEvent identifier="v7_clownrelations2" commonness="100" />
+			<ScriptedEvent identifier="v8_propaganda" commonness="12" />
 			<ScriptedEvent identifier="firefighting" commonness="100" />
-			<ScriptedEvent identifier="sleightofhand" commonness="100" />
-			<!--<ScriptedEvent identifier="foreshadowing" commonness="50" />-->
 			<ScriptedEvent identifier="clownbrutality" commonness="100" />
 			<ScriptedEvent identifier="separatistrelations" commonness="50" />
 			<ScriptedEvent identifier="huskcultrelations" commonness="100" />
-			<ScriptedEvent identifier="Engineers_are_special" commonness="50" />
 			<ScriptedEvent identifier="mediator" commonness="100" />
 			<ScriptedEvent identifier="blackmarket" commonness="100" />
 			<ScriptedEvent identifier="huskcultist" commonness="50" />
@@ -5899,7 +5902,6 @@
 		</EventSet>
 		<EventSet identifier="ita_taxievents_1" allowatstart="true" chooserandom="true" eventcount="1">
 			<ScriptedEvent identifier="ita_taxi1mechanic" commonness="50" />
-			<ScriptedEvent identifier="ita_taxi1mechanicb" commonness="50" />
 		</EventSet>
 	</EventSet>
 	<EventSet identifier="outpostevents" leveltype="outpost" locationtype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
@@ -5907,23 +5909,19 @@
 			<Override leveltype="outpostlevel" commonness="1000" />
 		</Commonness>
 		<EventSet identifier="outpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
-			<ScriptedEvent identifier="givingdirections" commonness="50" />
-			<ScriptedEvent identifier="soundinthevent" commonness="100" />
-			<ScriptedEvent identifier="clownrelations1" commonness="50" />
+			<ScriptedEvent identifier="v1_mechanicsarespecial" commonness="50" />
+			<ScriptedEvent identifier="v2_givingdirections" commonness="100" />
+			<ScriptedEvent identifier="v3_soundinthevent" commonness="50" />
 			<ScriptedEvent identifier="clownrelations2" commonness="100" />
-			<ScriptedEvent identifier="goodsamaritan" commonness="50" />
-			<ScriptedEvent identifier="propaganda" commonness="50" />
-			<ScriptedEvent identifier="goblincooking1" commonness="50" />
-			<ScriptedEvent identifier="outbreak" commonness="100" />
-			<ScriptedEvent identifier="miketheidiot1" commonness="12" />
-			<ScriptedEvent identifier="miketheidiot2" commonness="25" />
+			<ScriptedEvent identifier="v4_goodsamaritan" commonness="50" />
+			<ScriptedEvent identifier="v5_impromptuengineering" commonness="50" />
+			<ScriptedEvent identifier="v6_clownrelations1" commonness="50" />
+			<ScriptedEvent identifier="v7_clownrelations2" commonness="100" />
+			<ScriptedEvent identifier="v8_propaganda" commonness="12" />
 			<ScriptedEvent identifier="firefighting" commonness="100" />
-			<ScriptedEvent identifier="sleightofhand" commonness="100" />
-			<!--<ScriptedEvent identifier="foreshadowing" commonness="50" />-->
 			<ScriptedEvent identifier="clownbrutality" commonness="100" />
 			<ScriptedEvent identifier="separatistrelations" commonness="50" />
 			<ScriptedEvent identifier="huskcultrelations" commonness="100" />
-			<ScriptedEvent identifier="Engineers_are_special" commonness="50" />
 			<ScriptedEvent identifier="mediator" commonness="100" />
 			<ScriptedEvent identifier="blackmarket" commonness="100" />
 			<ScriptedEvent identifier="huskcultist" commonness="50" />
@@ -5933,14 +5931,11 @@
 		<EventSet identifier="outpostevents.missionevents" allowatstart="true" chooserandom="true" eventcount="3">
 			<ScriptedEvent identifier="ita_missions_city1.1" commonness="125" />
 			<ScriptedEvent identifier="ita_missions_city1.2" commonness="125" />
+			<ScriptedEvent identifier="ita_taxi1mechanicb" commonness="50" />
 		</EventSet>
 		<EventSet identifier="ita_outpostevents_hab1" allowatstart="true" chooserandom="false" eventcount="1">
 			<ScriptedEvent identifier="ita_untraversed90"/>
 			<ScriptedEvent identifier="ita_habcheck"/>
-		</EventSet>
-		<EventSet identifier="ita_taxievents_1" allowatstart="true" chooserandom="false">
-			<ScriptedEvent identifier="ita_taxi1mechanic"/>
-			<ScriptedEvent identifier="ita_taxi1mechanicb"/>
 		</EventSet>
 	</EventSet>
 	<EventSet identifier="outpostevents" leveltype="outpost" locationtype="mine" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
@@ -5948,23 +5943,19 @@
 			<Override leveltype="outpostlevel" commonness="1000" />
 		</Commonness>
 		<EventSet identifier="outpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
-			<ScriptedEvent identifier="givingdirections" commonness="50" />
-			<ScriptedEvent identifier="soundinthevent" commonness="100" />
-			<ScriptedEvent identifier="clownrelations1" commonness="50" />
+			<ScriptedEvent identifier="v1_mechanicsarespecial" commonness="50" />
+			<ScriptedEvent identifier="v2_givingdirections" commonness="100" />
+			<ScriptedEvent identifier="v3_soundinthevent" commonness="50" />
 			<ScriptedEvent identifier="clownrelations2" commonness="100" />
-			<ScriptedEvent identifier="goodsamaritan" commonness="50" />
-			<ScriptedEvent identifier="propaganda" commonness="50" />
-			<ScriptedEvent identifier="goblincooking1" commonness="50" />
-			<ScriptedEvent identifier="outbreak" commonness="100" />
-			<ScriptedEvent identifier="miketheidiot1" commonness="12" />
-			<ScriptedEvent identifier="miketheidiot2" commonness="25" />
+			<ScriptedEvent identifier="v4_goodsamaritan" commonness="50" />
+			<ScriptedEvent identifier="v5_impromptuengineering" commonness="50" />
+			<ScriptedEvent identifier="v6_clownrelations1" commonness="50" />
+			<ScriptedEvent identifier="v7_clownrelations2" commonness="100" />
+			<ScriptedEvent identifier="v8_propaganda" commonness="12" />
 			<ScriptedEvent identifier="firefighting" commonness="100" />
-			<ScriptedEvent identifier="sleightofhand" commonness="100" />
-			<!--<ScriptedEvent identifier="foreshadowing" commonness="50" />-->
 			<ScriptedEvent identifier="clownbrutality" commonness="100" />
 			<ScriptedEvent identifier="separatistrelations" commonness="50" />
 			<ScriptedEvent identifier="huskcultrelations" commonness="100" />
-			<ScriptedEvent identifier="Engineers_are_special" commonness="50" />
 			<ScriptedEvent identifier="mediator" commonness="100" />
 			<ScriptedEvent identifier="blackmarket" commonness="100" />
 			<ScriptedEvent identifier="huskcultist" commonness="50" />
@@ -5980,33 +5971,25 @@
 			<ScriptedEvent identifier="ita_untraversed90"/>
 			<ScriptedEvent identifier="ita_minecheck"/>
 		</EventSet>
-		<EventSet identifier="ita_taxievents_1" allowatstart="true" chooserandom="false">
-			<ScriptedEvent identifier="ita_taxi1mechanic"/>
-			<ScriptedEvent identifier="ita_taxi1mechanicb"/>
-		</EventSet>
 	</EventSet>
 	<EventSet identifier="outpostevents" leveltype="outpost" locationtype="military" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
 		<Commonness commonness="1000">
 			<Override leveltype="outpostlevel" commonness="1000" />
 		</Commonness>
 		<EventSet identifier="outpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
-			<ScriptedEvent identifier="givingdirections" commonness="50" />
-			<ScriptedEvent identifier="soundinthevent" commonness="100" />
-			<ScriptedEvent identifier="clownrelations1" commonness="50" />
+			<ScriptedEvent identifier="v1_mechanicsarespecial" commonness="50" />
+			<ScriptedEvent identifier="v2_givingdirections" commonness="100" />
+			<ScriptedEvent identifier="v3_soundinthevent" commonness="50" />
 			<ScriptedEvent identifier="clownrelations2" commonness="100" />
-			<ScriptedEvent identifier="goodsamaritan" commonness="50" />
-			<ScriptedEvent identifier="propaganda" commonness="50" />
-			<ScriptedEvent identifier="goblincooking1" commonness="50" />
-			<ScriptedEvent identifier="outbreak" commonness="100" />
-			<ScriptedEvent identifier="miketheidiot1" commonness="12" />
-			<ScriptedEvent identifier="miketheidiot2" commonness="25" />
+			<ScriptedEvent identifier="v4_goodsamaritan" commonness="50" />
+			<ScriptedEvent identifier="v5_impromptuengineering" commonness="50" />
+			<ScriptedEvent identifier="v6_clownrelations1" commonness="50" />
+			<ScriptedEvent identifier="v7_clownrelations2" commonness="100" />
+			<ScriptedEvent identifier="v8_propaganda" commonness="12" />
 			<ScriptedEvent identifier="firefighting" commonness="100" />
-			<ScriptedEvent identifier="sleightofhand" commonness="100" />
-			<!--<ScriptedEvent identifier="foreshadowing" commonness="50" />-->
 			<ScriptedEvent identifier="clownbrutality" commonness="100" />
 			<ScriptedEvent identifier="separatistrelations" commonness="50" />
 			<ScriptedEvent identifier="huskcultrelations" commonness="100" />
-			<ScriptedEvent identifier="Engineers_are_special" commonness="50" />
 			<ScriptedEvent identifier="mediator" commonness="100" />
 			<ScriptedEvent identifier="blackmarket" commonness="100" />
 			<ScriptedEvent identifier="huskcultist" commonness="50" />
@@ -6023,32 +6006,25 @@
 			<ScriptedEvent identifier="ita_untraversed90"/>
 			<ScriptedEvent identifier="ita_milcheck"/>
 		</EventSet>
-		<EventSet identifier="ita_taxievents_1" allowatstart="true" chooserandom="false">
-			<ScriptedEvent identifier="ita_taxi1mechanic"/>
-			<ScriptedEvent identifier="ita_taxi1mechanicb"/>
-		</EventSet>
 	</EventSet>
 	<EventSet identifier="outpostevents" leveltype="outpost" locationtype="research" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
 		<Commonness commonness="1000">
 			<Override leveltype="outpostlevel" commonness="1000" />
 		</Commonness>
 		<EventSet identifier="outpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
-			<ScriptedEvent identifier="givingdirections" commonness="50" />
-			<ScriptedEvent identifier="soundinthevent" commonness="100" />
-			<ScriptedEvent identifier="clownrelations1" commonness="50" />
+			<ScriptedEvent identifier="v1_mechanicsarespecial" commonness="50" />
+			<ScriptedEvent identifier="v2_givingdirections" commonness="100" />
+			<ScriptedEvent identifier="v3_soundinthevent" commonness="50" />
 			<ScriptedEvent identifier="clownrelations2" commonness="100" />
-			<ScriptedEvent identifier="goodsamaritan" commonness="50" />
-			<ScriptedEvent identifier="propaganda" commonness="50" />
-			<ScriptedEvent identifier="goblincooking1" commonness="50" />
-			<ScriptedEvent identifier="outbreak" commonness="100" />
-			<ScriptedEvent identifier="miketheidiot1" commonness="12" />
-			<ScriptedEvent identifier="miketheidiot2" commonness="25" />
+			<ScriptedEvent identifier="v4_goodsamaritan" commonness="50" />
+			<ScriptedEvent identifier="v5_impromptuengineering" commonness="50" />
+			<ScriptedEvent identifier="v6_clownrelations1" commonness="50" />
+			<ScriptedEvent identifier="v7_clownrelations2" commonness="100" />
+			<ScriptedEvent identifier="v8_propaganda" commonness="12" />
 			<ScriptedEvent identifier="firefighting" commonness="100" />
-			<ScriptedEvent identifier="sleightofhand" commonness="100" />
 			<ScriptedEvent identifier="clownbrutality" commonness="100" />
 			<ScriptedEvent identifier="separatistrelations" commonness="50" />
 			<ScriptedEvent identifier="huskcultrelations" commonness="100" />
-			<ScriptedEvent identifier="Engineers_are_special" commonness="50" />
 			<ScriptedEvent identifier="mediator" commonness="100" />
 			<ScriptedEvent identifier="blackmarket" commonness="100" />
 			<ScriptedEvent identifier="huskcultist" commonness="50" />
@@ -6063,10 +6039,6 @@
 		<EventSet identifier="ita_outpostevents_research1" allowatstart="true" chooserandom="false" eventcount="1">
 			<ScriptedEvent identifier="ita_untraversed90"/>
 			<ScriptedEvent identifier="ita_rescheck"/>
-		</EventSet>
-		<EventSet identifier="ita_taxievents_1" allowatstart="true" chooserandom="false">
-			<ScriptedEvent identifier="ita_taxi1mechanic"/>
-			<ScriptedEvent identifier="ita_taxi1mechanicb"/>
 		</EventSet>
 	</EventSet>
 	<EventSet identifier="outpostevents" leveltype="outpost" locationtype="cave" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
