@@ -105,7 +105,7 @@
 	</Item>
 	<Item name="Alien Power Cell Socket" identifier="socket4ita" category="Alien" Tags="socket4ita" scale="0.25" description="A socket with a hole of a shape of one of those alien power cells, purchased at research outposts or found in wrecks">
 		<Sprite texture="Mods/IntoTheAbyss/Content/Ruins/ita_sprites_alien.png" depth="0.8" sourcerect="770,300,251,239" />
-		<ItemContainer capacity="3" canbeselected="true" hideitems="false" itempos="125,-120">
+		<ItemContainer capacity="1" canbeselected="true" hideitems="false" itempos="125,-120">
 			<GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
 			<Containable items="alienpowercell">
 			</Containable>
@@ -397,6 +397,7 @@
 		<aitarget sightrange="500" soundrange="500" fadeouttime="1" />
 	</Item>
 	<Item name="Ancient Tech Bottom Part" identifier="ita_alienmace1" category="Equipment" Tags="smallitem,weapon" Scale="0.3" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+		<PreferredContainer primary="alired1" minamount="1" maxamount="1" spawnprobability="1"/>
 		<Price baseprice="980" soldeverywhere="false">
 			<Price locationtype="research" multiplier="1.2" sold="false"/>
 		</Price>
@@ -406,6 +407,7 @@
 		<Holdable slots="Any" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect"/>
 	</Item>
 	<Item name="Ancient Tech Top Part" identifier="ita_alienmace2" category="Equipment" Tags="smallitem,weapon" Scale="0.3" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+		<PreferredContainer primary="alired1" minamount="1" maxamount="1" spawnprobability="1"/>
 		<Price baseprice="1120" soldeverywhere="false">
 			<Price locationtype="research" multiplier="1.2" sold="false"/>
 		</Price>

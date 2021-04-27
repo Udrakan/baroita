@@ -12,7 +12,7 @@
     </Commonness>
 	<!-- check for passanger missions -->
 	<EventSet chooserandom="false" allowatstart="true" eventcount="1" ignorecooldown="true">
-		<ScriptedEvent identifier="ita_taxi1mechanic"/>
+		<!--<ScriptedEvent identifier="ita_taxi1mechanic"/>-->
 	</EventSet>
 
     <EventSet chooserandom="true" allowatstart="true" percave="true">
@@ -126,7 +126,7 @@
 
 	<!-- check for passanger missions -->
 	<EventSet chooserandom="false" allowatstart="true" eventcount="1" ignorecooldown="true">
-		<ScriptedEvent identifier="ita_taxi1mechanic"/>
+		<!--<ScriptedEvent identifier="ita_taxi1mechanic"/>-->
 	</EventSet>
     <!-- populate the caves -->
     <EventSet chooserandom="true" allowatstart="true" percave="true">
@@ -229,7 +229,7 @@
     </Commonness>
     <!-- check for passanger missions -->
 	<EventSet chooserandom="false" allowatstart="true" eventcount="1" ignorecooldown="true">
-		<ScriptedEvent identifier="ita_taxi1mechanic"/>
+		<!--<ScriptedEvent identifier="ita_taxi1mechanic"/>-->
 	</EventSet>
 	<!-- always spawn a couple of artifacts	 -->
     <ArtifactEvent itemidentifier="thermalartifact" />

@@ -117,12 +117,7 @@
 					<itemassembly prefab="ita_infight3" alignment="Center" minroomsize="550,550" type="Prop" commonness="5" />
 					<itemassembly prefab="itafractalspawner1a" alignment="Center" minoffset="-0.2,-0.2" maxoffset="0.2,0.2" minroomsize="550,550" type="Prop" commonness="5" />
 					<itemassembly prefab="itafractalspawner1a" alignment="Center" minoffset="-0.4,-0.4" maxoffset="0.4,0.4" minroomsize="750,750" type="Prop" commonness="5" />
-					<itemassembly prefab="ita_genericb_trap2a" alignment="Center" minoffset="-0.4,-0.4" maxoffset="0.4,0.4" minroomsize="750,750" type="Prop" commonness="1" >
-						<item prefab="alientrinket1" alignment="Center" type="Prop" minamount="0" maxamount="1" targetcontainer="container1" />
-						<item prefab="alientrinket2" alignment="Center" type="Prop" minamount="-1" maxamount="1" targetcontainer="container1" />
-						<item prefab="alientrinket3" alignment="Center" type="Prop" minamount="-1" maxamount="1" targetcontainer="container1" />
-						<item prefab="alienpowercell" alignment="Center" type="Prop" minamount="0" maxamount="1" targetcontainer="container1" />
-					</itemassembly>
+					<itemassembly prefab="ita_genericb_trap2a" alignment="Center" minoffset="-0.4,-0.4" maxoffset="0.4,0.4" minroomsize="750,750" type="Prop" commonness="1" />
 					<itemassembly prefab="ita_genericb_trap2b" alignment="Center" minoffset="-0.4,-0.4" maxoffset="0.4,0.4" minroomsize="750,750" type="Prop" commonness="1" />
 				</ChooseOne>
 				<ChooseOne>
