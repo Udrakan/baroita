@@ -779,7 +779,7 @@
 </ScriptedEvent>
 		<!--SHOPS-->
 		<ScriptedEvent identifier="ita_canteen1">
-			<TagAction criteria="itemtag:canteentable1" tag="canteentable1" _npos="-3595.7273,65.36722" />
+			<TagAction criteria="itemtag:ita_canteentable1" tag="ita_canteentable1" _npos="-3595.7273,65.36722" />
 			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_bartender" targettag="canteencook1" spawnpointtag="canteen1" _npos="-2195.9033,56.7901" />
 			<Label name="canteencook1" _npos="-1890.9636,55.244232" />
 			<ClearTagAction tag="customer" _npos="9736.438,-1345.706" />

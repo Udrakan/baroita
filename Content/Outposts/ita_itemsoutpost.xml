@@ -193,7 +193,7 @@
         <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="241,497,238,396" depth="0.1" origin="0.5,0.5" alpha="1.0" />
       </LightComponent>
       <ItemContainer hideitems="true" capacity="1" canbeselected="false" maxstacksize="1">
-        <sound file="Mods/IntoTheAbyss/Content/Outposts/ita_vending2.ogg" type="Always" loop="true" />
+        <sound file="Mods/IntoTheAbyss/Content/Outposts/ita_vending2.ogg" type="Always" loop="true" range="500"/>
         <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
         <Containable items="ita_coin1" />
         <StatusEffect type="Always" target="Contained" stackable="false" disabledeltatime="true">
@@ -215,7 +215,7 @@
         <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="721,497,238,396" depth="0.1" origin="0.5,0.5" alpha="1.0" />
       </LightComponent>
       <ItemContainer hideitems="true" capacity="1" canbeselected="false" maxstacksize="1">
-        <sound file="Mods/IntoTheAbyss/Content/Outposts/ita_vending2.ogg" type="Always" loop="true" />
+        <sound file="Mods/IntoTheAbyss/Content/Outposts/ita_vending2.ogg" type="Always" loop="true" range="500"/>
         <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
         <Containable items="ita_coin1" />
         <StatusEffect type="Always" target="Contained" stackable="false" disabledeltatime="true">
