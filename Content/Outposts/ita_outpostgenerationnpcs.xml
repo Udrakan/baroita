@@ -183,7 +183,7 @@
 				</Item> 
 			</ItemSet>
 		</npc>
-		<npc identifier="ita_botanist" job="mechanic" commonness="1" healthmultiplier="0.8" preferredoutpostmoduletypes="admin,adminmodule" behavior="StayInHull">
+		<npc identifier="ita_botanist" job="mechanic" commonness="1" healthmultiplier="0.8" behavior="StayInHull">
 			<ItemSet commonness="1">
 				<Item identifier="greenjumpsuit" equip="true"/>
 				<Item identifier="idcard" equip="true"/>
@@ -200,7 +200,7 @@
 				</Item>
 			</ItemSet>
 		</npc>
-		<npc identifier="ita_pettrader" job="mechanic" commonness="1" healthmultiplier="0.8" preferredoutpostmoduletypes="admin,adminmodule" behavior="StayInHull">
+		<npc identifier="ita_pettrader" job="mechanic" commonness="1" healthmultiplier="0.8" behavior="StayInHull">
 			<ItemSet commonness="1">
 				<Item identifier="greenjumpsuit" equip="true"/>
 				<Item identifier="idcard" equip="true"/>
@@ -275,7 +275,7 @@
 			</Item>
       </ItemSet>
     </npc>
-		<npc identifier="ita_climber1" job="mechanic" commonness="1" healthmultiplier="0.8" preferredoutpostmoduletypes="admin,adminmodule" behavior="StayInHull">
+		<npc identifier="ita_climber1" job="mechanic" commonness="1" healthmultiplier="0.8" behavior="StayInHull">
 			<ItemSet commonness="1">
 				<Item identifier="baseballcap" equip="true"/>
 				<Item identifier="bluejumpsuit3" equip="true"/>
@@ -301,7 +301,7 @@
 				</Item>
 			</ItemSet>
 		</npc>
-		<npc identifier="ita_electrician1" job="engineer" commonness="1" spawnpointtags="engineering" behavior="Passive" preferredoutpostmoduletypes="ita_fabricationmodule">
+		<npc identifier="ita_electrician1" job="engineer" commonness="1" spawnpointtags="engineering" behavior="StayInHull">
 			<ItemSet commonness="1">
 				<Item identifier="orangejumpsuit3" equip="true" />
 				<Item identifier="idcard" equip="true" />

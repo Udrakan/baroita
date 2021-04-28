@@ -783,8 +783,8 @@
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="5" />
 			<Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48"/>
-			<LocationType identifier="Cave" />
-			<LocationTypeChange from="Cave" to="None" requireddurationrange="0,1" cooldownafterchange="1" />
+			<LocationType identifier="cave" />
+			<LocationTypeChange from="cave" to="None" requireddurationrange="0,1" cooldownafterchange="1" />
 			<Characters>
 				<Character identifier="mudraptorcave" min="2" max="5" spawnpointtags="nest" />
 			</Characters>
