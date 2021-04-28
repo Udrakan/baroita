@@ -845,7 +845,7 @@
 																					</StatusEffectAction>
 																					<CheckDataAction identifier="canteen1op1" condition="eq 1" _npos="5401.7764,-1352.7748">
 																						<Success>
-																							<SpawnAction lootingisstealing="false" itemidentifier="ita_crawyum" targetinventory="canteentable1" ignorebyai="true" _npos="5401.936,-1159.4307" />
+																							<SpawnAction lootingisstealing="false" itemidentifier="ita_crawyum" targetinventory="ita_canteentable1" ignorebyai="true" _npos="5401.936,-1159.4307" />
 																							<Label name="end" _npos="8682.424,-1345.6313" />
 																							<NPCWaitAction npctag="canteencook1" wait="true" _npos="9108.876,-1345.4263" />
 																							<ClearTagAction tag="customer" _npos="9736.438,-1345.706" />
