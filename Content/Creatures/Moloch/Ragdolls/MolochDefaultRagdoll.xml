@@ -21,7 +21,7 @@
       <StatusEffect type="OnUse" target="NearbyCharacters" range="3000" stackable="false" disabledeltatime="true">
           <Affliction identifier="blunttrauma" strength="2" />
           <Affliction identifier="stun" strength="3" />
-        <sound file="Content/Characters/Moloch/MOLOCH_attack4.ogg" range="50000" volume="1" dontmuffle="true" />
+        <sound file="Content/Characters/Moloch/Moloch_bumpAttack.ogg" range="5000" volume="1" dontmuffle="true" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This">
 		<Explosion range="5000" stun="1" force="100" flames="false" shockwave="false" sparks="false" underwaterbubble="false"/>

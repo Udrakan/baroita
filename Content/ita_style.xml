@@ -204,6 +204,7 @@
   <MyItemUI2 color="255,255,255,242" textcolor="0,0,0,255">
     <Sprite name="ItemUIpaper" texture="Mods/IntoTheAbyss/Content/paper2.png" size="0.0, 0.0" sourcerect="263,0,511,774" origin="0.5,0.5" compress="false" />
   </MyItemUI2>
+
   <ItemUI color="255,255,255,242" textcolor="0,0,0,255">
     <Sprite name="ItemUI" texture="Content/UI/UIAtlasFrames.png" size="0.0, 0.0" sourcerect="7,7,360,361" slice="33,38,340,340" origin="0.5,0.5" compress="false" />
   </ItemUI>
@@ -963,7 +964,7 @@
   </CharacterHealthBar>
   <CharacterHealthBarCentered color="255,255,255,255">
     <GUIFrame color="255,255,255,255">
-      <Sprite name="CharacterHealthBarCenteredBG" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="288,687,145,67" slice="330,705,391,734" origin="0.5,0.5" />
+      <Sprite name="CharacterHealthBarCenteredBG" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="288,687,147,67" slice="331,705,391,734" origin="0.5,0.5" />
     </GUIFrame>
     <Slider color="255,255,255,255">
       <Sprite name="CharacterHealthBarCenteredSlider" texture="Content/UI/InventoryUIAtlas.png" tile="false" sourcerect="288,434,147,68" slice="330,453,391,481"  origin="0.5,0.5" />
@@ -1324,7 +1325,7 @@
     <Sprite name="TabMenuButton_Pressed" texture="Content/UI/InventoryUIAtlas.png" state="Pressed" tile="false" sourcerect="123,565,111,66" maintainaspectratio="true" origin="0.5,0.5" />
   </TabMenuButton>
   <DifficultyIndicator>
-    <Sprite name="DifficultyIndicator" texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" tile="false" sourcerect="68,802,24,21" origin="0.5,0.5" maintainaspectratio="true" />
+    <Sprite name="DifficultyIndicator" texture="Content/Map/MapAtlas.png" tile="false" sourcerect="68,802,24,21" origin="0.5,0.5" maintainaspectratio="true" />
   </DifficultyIndicator>
 
   <InfoFrameTabButton.MyCharacter color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">

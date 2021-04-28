@@ -479,6 +479,13 @@
       <Containable items="planter,wateringcan,fertilizer,seed,seedbag" />
     </ItemContainer>
   </Item>
+  <Item name="Electrician Table" identifier="ita_electriciantable" tags="ita_electiciantable" pickdistance="150" scale="0.5">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Outposts/ita_spritesoutpost.png" depth="0.84" sourcerect="3,289,141,159" canflipx="true" origin="0.5,0.5" />
+    <ItemContainer capacity="10" canbeselected="true" hideitems="false" itempos="84,16" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="smallitem" />
+    </ItemContainer>
+  </Item>
   <Item name="Climber Table" identifier="ita_climbertable" tags="ita_climbertable" pickdistance="150" scale="0.5">
     <Sprite texture="Mods/IntoTheAbyss/Content/Outposts/ita_spritesoutpost.png" depth="0.84" sourcerect="3,289,141,159" canflipx="true" origin="0.5,0.5" />
     <ItemContainer capacity="4" canbeselected="true" hideitems="false" itempos="84,16" msg="ItemMsgInteractSelect">
@@ -670,7 +677,12 @@
           <TriggerEvent identifier="ita_bank1" />
           <RequiredItem items="ita_coin1" type="Contained" />
           <Remove />
-        </StatusEffect>	
+        </StatusEffect>
+		<StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_electrician1" />
+          <RequiredItem items="redwire" type="Contained" />
+          <Remove />
+        </StatusEffect>			
       </input>
     </ConnectionPanel>
     <ItemContainer canbeselected="true" capacity="1" itempos="0,0" hideitems="false" />

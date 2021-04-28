@@ -17,6 +17,7 @@
   <music file="Content/Sounds/Music/Layer 4 - Arriving at Destination.ogg" type="endround"/>
   <music file="Content/Sounds/Music/Road to Hell.ogg" type="crewdead"/>
 
+<!--
   <music file="Content/Sounds/Music/Alien Syndicate.ogg" type="default" intensityrange="0,20"/>
   <music file="Content/Sounds/Music/Seafloor Cries.ogg" type="default" intensityrange="0,20"/>
   <music file="Content/Sounds/Music/Water Of The SSN Rusty Clown.ogg" type="default" intensityrange="0,20"/>
@@ -26,13 +27,13 @@
   <music file="Content/Sounds/Music/Fragile Waves.ogg" type="default" intensityrange="0,20"/>
   <music file="Content/Sounds/Music/Overclocked Weakness.ogg" type="default" intensityrange="0,20"/>
 
-   <music file="Content/Sounds/Music/Desperation.ogg" type="default" intensityrange="20,40"/>
-  <music file="Content/Sounds/Music/Engine room whales.ogg" type="default" intensityrange="20,50"/>
-  <music file="Content/Sounds/Music/Somethings outside.ogg" type="default" intensityrange="20,50"/>
+   <music file="Content/Sounds/Music/Desperation.ogg" type="default"/>
+  <music file="Content/Sounds/Music/Engine room whales.ogg" type="default" />
+  <music file="Content/Sounds/Music/Somethings outside.ogg" type="default" />
 
   <music file="Content/Sounds/Music/Intensity Layer 1.ogg" type="intensity" intensityrange="51,85"/>
   <music file="Content/Sounds/Music/Intensity Layer 4.ogg" type="intensity" intensityrange="85,100"/>
-
+-->
   <music file="Content/Sounds/Music/Layer 1 - Monsters Nearby.ogg" type="monster"/>
 
   <music file="Content/Sounds/Music/Wartrauma.ogg" type="military"/>
@@ -45,6 +46,8 @@
   <music file="Content/Sounds/Music/All But Systematic Chaos.ogg" type="ending"/>
   <music file="Content/Sounds/Music/Layer 2 - In The Ruins.ogg" type="cave" intensityrange="0,100" />
   <music file="Content/Sounds/Music/Desperation.ogg" type="cave" intensityrange="0,100" />
+  <music file="Content/Sounds/Music/Wondrous Places.ogg" type="cave"/>
+  <music file="Content/Sounds/Music/Layer 2 - In The Ruins.ogg" type="cave"/>
   
   <damagesound file="Content/Sounds/Damage/StructureBlunt1.ogg" damagerange="0.0,30.0" damagesoundtype="StructureBlunt"/>
   <damagesound file="Content/Sounds/Damage/StructureBlunt2.ogg" damagerange="10.0,50.0" damagesoundtype="StructureBlunt"/>

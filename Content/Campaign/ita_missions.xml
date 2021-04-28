@@ -810,12 +810,12 @@
 			<LocationType identifier="Abandoned" />
 			<LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
 			<Characters>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="crewmodule"/>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="researchmodule"/>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="securitymodule"/>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="seccrewmodule"/>
-				<Character identifier="banditleader" from="abandonedoutpostnpcs" spawnpointtags="banditleader"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="crewmodule"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="researchmodule"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="securitymodule"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="seccrewmodule"/>
+				<Character identifier="banditleader" from="ita_abandonedoutpostnpcs" spawnpointtags="banditleader"/>
 			</Characters>
 		</OutpostDestroyMission>
 		<OutpostDestroyMission name="Outpost Recovery" identifier="abandonedoutpostrescue" tags="abandonedoutpost" type="OutpostRescue" reward="3000" difficulty="4" commonness="20" allowretry="true" hostageskilledmessage="hostageskilled" unhideentitysubcategories="abandonedhuman">
@@ -825,17 +825,17 @@
 			<LocationType identifier="Abandoned" />
 			<LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
 			<Characters>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="crewmodule"/>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="researchmodule"/>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="securitymodule"/>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="securitymodule" multiplayeronly="true"/>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="seccrewmodule"/>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="seccrewmodule" multiplayeronly="true"/>
-				<Character identifier="banditleader" from="abandonedoutpostnpcs" spawnpointtags="banditleader"/>
-				<Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
-				<Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
-				<Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="crewmodule"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="researchmodule"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="securitymodule"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="securitymodule" multiplayeronly="true"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="seccrewmodule"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="seccrewmodule" multiplayeronly="true"/>
+				<Character identifier="banditleader" from="ita_abandonedoutpostnpcs" spawnpointtags="banditleader"/>
+				<Character identifier="hostage" from="ita_abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+				<Character identifier="hostage" from="ita_abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+				<Character identifier="hostage" from="ita_abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true"/>
 			</Characters>
 		</OutpostDestroyMission>
 		<OutpostNestMission name="Outpost Recovery" identifier="abandonedoutpostmudraptor" textidentifier="abandonedoutpostmonsters" tags="abandonedoutpost" type="OutpostDestroy" reward="3000" difficulty="4" commonness="20" allowretry="true" sonarlabel="nest" unhideentitysubcategories="abandonedmonster">
@@ -885,21 +885,21 @@
 				<Item identifier="crawleregg" spawnpointtags="nest" />
 			</Items>
 		</OutpostNestMission>
-		<OutpostDestroyMission name="Outpost assassination" identifier="abandonedoutpostassassinate" tags="abandonedoutpost" type="OutpostDestroy" reward="3000" difficulty="4" commonness="20" allowretry="true" sonarlabel="target" unhideentitysubcategories="abandonedhuman">
+		<OutpostDestroyMission name="Outpost assassination" identifier="abandonedoutpostassassinate" tags="abandonedoutpost" type="OutpostDestroy" reward="3000" difficulty="5" commonness="20" allowretry="true" sonarlabel="target" unhideentitysubcategories="abandonedhuman">
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="5" />
 			<Icon texture="Content/UI/MissionIcons.png" sourcerect="0,512,256,256" color="214,50,48"/>
 			<LocationType identifier="Abandoned" />
 			<LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
 			<Characters>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="crewmodule"/>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="researchmodule"/>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="securitymodule"/>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="securitymodule" multiplayeronly="true"/>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="seccrewmodule"/>
-				<Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="seccrewmodule" multiplayeronly="true"/>
-				<Character identifier="banditleader_heavy" from="abandonedoutpostnpcs" asfaraspossible="true" requirekill="true"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="crewmodule"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="researchmodule"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="securitymodule"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="securitymodule" multiplayeronly="true"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="seccrewmodule"/>
+				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="seccrewmodule" multiplayeronly="true"/>
+				<Character identifier="banditleader_heavy" from="ita_abandonedoutpostnpcs" asfaraspossible="true" requirekill="true"/>
 			</Characters>
 		</OutpostDestroyMission>
 

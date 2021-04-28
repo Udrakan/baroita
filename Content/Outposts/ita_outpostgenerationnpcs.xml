@@ -301,6 +301,16 @@
 				</Item>
 			</ItemSet>
 		</npc>
+		<npc identifier="ita_electrician1" job="engineer" commonness="1" spawnpointtags="engineering" behavior="Passive" preferredoutpostmoduletypes="ita_fabricationmodule">
+			<ItemSet commonness="1">
+				<Item identifier="orangejumpsuit3" equip="true" />
+				<Item identifier="idcard" equip="true" />
+				<Item identifier="divingmask" equip="true">
+					<Item identifier="oxygentank" />
+				</Item> 
+				<Item identifier="baseballcap" equip="true"/>
+			</ItemSet>
+		</npc>
 		<!--GUARDS-->	
 		<npc identifier="ita_guard1" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol" aimspeed="0.85" aimaccuracy="0.55" >
 			<ItemSet>
@@ -882,5 +892,225 @@
 
 	</npcset>
 	
-
+	<npcset identifier="ita_abandonedoutpostnpcs">
+	<npc identifier="bandit" commonness="0" moduleflags="crewmodule,engineeringmodule" job="securityofficer" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1.5" aimspeed="0.65" aimaccuracy="0.65" reportrange="800">
+      <ItemSet commonness="1">
+        <Item identifier="idcard"/>
+		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+        <Item identifier="banditclothes1" equip="true"/>
+		<Item identifier="opium" equip="false"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="screwdriver" equip="true"/>
+        <Item identifier="divingknife" equip="false"/>
+        <Item identifier="toolbelt" equip="true"/>
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard"/>
+		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+        <Item identifier="banditclothes2" equip="true"/>
+		<Item identifier="opium" equip="false"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="baseballcap" equip="true"/>
+        <Item identifier="divingknife" equip="false"/>
+        <Item identifier="wrench" equip="false"/>
+        <Item identifier="revolver">
+          <Item identifier="revolverround"/>
+          <Item identifier="revolverround"/>
+          <Item identifier="revolverround"/>
+          <Item identifier="revolverround"/>
+          <Item identifier="revolverround"/>
+          <Item identifier="revolverround"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard"/>
+		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+        <Item identifier="banditclothes1" equip="true"/>
+		<Item identifier="opium" equip="false"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="crowbar" equip="true"/>
+        <Item identifier="divingknife" equip="false"/>
+        <Item identifier="toolbelt" equip="true"/>
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard"/>
+		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+        <Item identifier="banditclothes2" equip="true"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+		<Item identifier="opium" equip="false"/>
+        <Item identifier="crowbar" equip="true"/>
+        <Item identifier="divingknife" equip="false"/>
+        <Item identifier="wrench" equip="false"/>
+        <Item identifier="toolbelt" equip="true"/>
+        <Item identifier="revolver">
+          <Item identifier="revolverround"/>
+          <Item identifier="revolverround"/>
+          <Item identifier="revolverround"/>
+          <Item identifier="revolverround"/>
+          <Item identifier="revolverround"/>
+          <Item identifier="revolverround"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard"/>
+		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+        <Item identifier="banditclothes1" equip="true"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+		<Item identifier="opium" equip="false"/>
+        <Item identifier="divingknife" equip="false"/>
+        <Item identifier="crowbar" equip="false"/>
+        <Item identifier="toolbelt" equip="true"/>
+      </ItemSet>
+    </npc>
+    <npc identifier="banditleader" commonness="0" moduleflags="crewmodule,engineeringmodule" job="securityofficer" behavior="Passive" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.5" aimspeed="1" aimaccuracy="1" reportrange="900">
+      <ItemSet commonness="1">
+        <Item identifier="idcard"/>
+		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+        <Item identifier="divingknife" equip="false"/>
+		<Item identifier="antidama1" equip="false"/>
+        <Item identifier="captainscap2" equip="true"/>
+        <Item identifier="captainsuniform2" equip="true"/>
+        <Item identifier="bodyarmor" equip="true"/>
+        <Item identifier="steroids"/>
+        <Item identifier="steroids"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="shotgun">
+          <Item identifier="shotgunshell"/>
+          <Item identifier="shotgunshell"/>
+          <Item identifier="shotgunshell"/>
+          <Item identifier="shotgunshell"/>
+          <Item identifier="shotgunshell"/>
+          <Item identifier="shotgunshell"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard"/>
+		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+        <Item identifier="divingknife" equip="false"/>
+        <Item identifier="wrench" equip="true"/>
+        <Item identifier="captainscap2" equip="true"/>
+        <Item identifier="captainsuniform2" equip="true"/>
+        <Item identifier="bodyarmor" equip="true"/>
+		<Item identifier="antidama1" equip="false"/>
+        <Item identifier="steroids"/>
+        <Item identifier="steroids"/>
+        <Item identifier="toolbelt" equip="true"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="smg">
+          <Item identifier="smgmagazine"/>
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="banditleader_heavy" commonness="0" moduleflags="crewmodule,engineeringmodule" job="securityofficer" behavior="Passive" healthmultiplier="2" healthmultiplierinmultiplayer="2.5" aimspeed="1" aimaccuracy="0.85" reportrange="900">
+      <ItemSet commonness="0.8">
+        <Item identifier="idcard"/>
+		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+        <Item identifier="divingknife" equip="false"/>
+        <Item identifier="captainsuniform3" equip="true"/>
+        <Item identifier="bodyarmor" equip="true"/>
+		<Item identifier="antidama1" equip="false"/>
+        <Item identifier="steroids"/>
+        <Item identifier="steroids"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="shotgun">
+          <Item identifier="shotgunshell"/>
+          <Item identifier="shotgunshell"/>
+          <Item identifier="shotgunshell"/>
+          <Item identifier="shotgunshell"/>
+          <Item identifier="shotgunshell"/>
+          <Item identifier="shotgunshell"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard"/>
+		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+        <Item identifier="divingknife" equip="false"/>
+        <Item identifier="wrench" equip="true"/>
+        <Item identifier="captainsuniform3" equip="true"/>
+        <Item identifier="bodyarmor" equip="true"/>
+		<Item identifier="antidama1" equip="false"/>
+        <Item identifier="steroids"/>
+        <Item identifier="steroids"/>
+		<Item identifier="smgmagazine"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="smg">
+          <Item identifier="smgmagazine"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.2">
+        <Item identifier="idcard"/>
+		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+        <Item identifier="divingknife" equip="false"/>
+        <Item identifier="captainsuniform3" equip="true"/>
+        <Item identifier="bodyarmor" equip="true"/>
+		<Item identifier="antidama1" equip="false"/>
+        <Item identifier="steroids"/>
+        <Item identifier="steroids"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="shotgununique">
+          <Item identifier="shotgunshell"/>
+          <Item identifier="shotgunshell"/>
+        </Item>
+        <Item identifier="shotgunshell"/>
+        <Item identifier="shotgunshell"/>
+        <Item identifier="shotgunshell"/>
+        <Item identifier="shotgunshell"/>
+      </ItemSet>
+      <ItemSet commonness="0.2">
+        <Item identifier="idcard"/>
+		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+        <Item identifier="divingknife" equip="false"/>
+        <Item identifier="captainsuniform3" equip="true"/>
+        <Item identifier="bodyarmor" equip="true"/>
+        <Item identifier="steroids"/>
+        <Item identifier="steroids"/>
+		<Item identifier="antidama1" equip="false"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="smgunique">
+          <Item identifier="smgmagazine"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard"/>
+		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+        <Item identifier="divingknife" equip="false"/>
+        <Item identifier="orangejumpsuit2" equip="true"/>
+		<Item identifier="captainscap2" equip="true"/>
+		<Item identifier="captainscap2" equip="true"/>
+        <Item identifier="bodyarmor" equip="true"/>
+        <Item identifier="antibleeding2"/>
+		<Item identifier="antibleeding2"/>
+        <Item identifier="steroids"/>
+		<Item identifier="weldingfueltank"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="flamer">
+          <Item identifier="weldingfueltank"/>
+        </Item>
+      </ItemSet>
+    </npc>
+	</npcset>
 </npcsets>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.12.0.3" steamworkshopid="2005463692" installtime="1616593492">
+<contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.13.3.11" steamworkshopid="2005463692" installtime="1619635427">
   <BeaconStation file="Mods/IntoTheAbyss/Content/Beacons/ita_beacon_1a.sub" />
   <None file="Mods/IntoTheAbyss/Content/icons_ita.png" />
   <None file="Mods/IntoTheAbyss/Content/bubbleloop.ogg" />
@@ -24,7 +24,6 @@
   <Particles file="Mods/IntoTheAbyss/Content/ita_particles.xml" />
   <OutpostConfig file="Mods/IntoTheAbyss/Content/Outposts/ita_outpostgenerationparameters.xml" />
   <RuinConfig file="Mods/IntoTheAbyss/Content/Ruins/ita_ruinconfig1.xml" />
-  <!--<RuinConfig file="Mods/IntoTheAbyss/Content/Ruins/ita_ruinconfig2.xml" />-->
   <Structure file="Mods/IntoTheAbyss/Content/ita_structureprefabs.xml" />
   <Structure file="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CavePrefabs.xml" />
   <Item file="Mods/IntoTheAbyss/Content/Wrecks/Thalamus/thalamusitems.xml" />
@@ -270,4 +269,5 @@
   <Text file="Mods/IntoTheAbyss/Content/Texts/ita_English.xml" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_cave3.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_city_shop_bar1R.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_city_shop_electrician1.sub" />
 </contentpackage>
