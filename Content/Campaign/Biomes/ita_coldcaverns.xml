@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <LevelGenerationParameters>
-  <Override>
+
+<Override>
   <ColdCavernsBasic
     identifier="coldcavernsbasic"
     type="LocationConnection"
@@ -82,6 +83,8 @@
       texture="Content/Map/Biomes/DestroyedWall.png"
       premultiplyalpha="false" />
   </ColdCavernsBasic>
+</Override>
+<Override>
   <ColdCavernsMaze
     identifier="coldcavernsmaze"
     type="LocationConnection"
@@ -162,5 +165,7 @@
       texture="Content/Map/Biomes/DestroyedWall.png"
       premultiplyalpha="false" />
   </ColdCavernsMaze>
-  </Override>
+</Override>
+
 </LevelGenerationParameters>
+
