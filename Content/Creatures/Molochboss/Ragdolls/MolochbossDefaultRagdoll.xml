@@ -12,9 +12,10 @@
       <deformablesprite sourcerect="864,1216,864,832" depth="0.19" origin="0.48274615,0.40562853" subdivisions="15,15" texture="" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
     </conditionalsprite>
     <damagemodifier armorsector="0,360" afflictiontypes="bleeding,damage" damagemultiplier="2" deflectprojectiles="False" damagesound="" afflictionidentifiers="" probabilitymultiplier="1" />
-    <attack cooldown="14" range="600" damagerange="500" duration="0.25" force="15" targetforce="0" structuresoundtype="StructureBlunt" context="Any" targettype="Any" hitdetectiontype="Distance" afterattack="FollowThrough" secondarycooldown="5" structuredamage="40" itemdamage="25" stun="0" onlyhumans="False" applyforceonlimbs="" torque="0" applyforcesonlyonce="False" targetimpulse="500" targetimpulseworld="0,0" targetforceworld="0,0" severlimbsprobability="0" stickchance="0" priority="0" cooldownrandomfactor="0.1" targetlimbtype="None" reverse="False" retreat="False" targetdistance="0" afterattackdelay="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear">
+    <attack cooldown="14" range="700" damagerange="500" duration="0.25" force="15" targetforce="0" structuresoundtype="" context="Any" targettype="Any" hitdetectiontype="Distance" afterattack="FollowThrough" secondarycooldown="5" structuredamage="40" itemdamage="25" stun="0" onlyhumans="False" applyforceonlimbs="" torque="0" applyforcesonlyonce="False" targetimpulse="500" targetimpulseworld="0,0" targetforceworld="0,0" severlimbsprobability="0" stickchance="0" priority="0" cooldownrandomfactor="0.1" targetlimbtype="None" reverse="False" retreat="False" targetdistance="0" afterattackdelay="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear">
       <Affliction identifier="bitewounds" strength="50" probability="1" />
       <Affliction identifier="stun" strength="2.5" probability="1" />
+	  <sound file="Content/Characters/Moloch/Moloch_bumpAttack.ogg" range="5000" volume="1" dontmuffle="true" />
 	  <StatusEffect type="OnUse" target="NearbyCharacters" range="3000" stackable="false" disabledeltatime="true">
           <Affliction identifier="blunttrauma" strength="4" />
           <Affliction identifier="stun" strength="3" />

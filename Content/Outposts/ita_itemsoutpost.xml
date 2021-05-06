@@ -432,7 +432,7 @@
       <StatusEffect tags="medical" type="OnContained" target="Character" stackable="false" disabledeltatime="true" delay="1.5">
         <Affliction identifier="heal2" amount="15" />
       </StatusEffect>
-      <StatusEffect type="Always" target="This" stackable="false" disabledeltatime="false" condition="-10">
+      <StatusEffect type="Always" target="This" stackable="false" disabledeltatime="false" condition="-5">
         <ParticleEmitter particle="steamspray" particlespersecond="10" anglemin="-95" anglemax="-85" velocitymin="30" velocitymax="50" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This" stackable="false" disabledeltatime="false" condition="-1">

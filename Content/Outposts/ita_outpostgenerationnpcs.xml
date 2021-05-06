@@ -668,6 +668,17 @@
 			</ItemSet>
 		</npc>
 		
+		<!--BASE BOT NPCs-->
+		<npc identifier="ita_doc" commonness="0" moduleflags="none" job="medicaldoctor" behavior="Passive" healthmultiplier="0.75" preferredoutpostmoduletypes="researchmodule,crewmodule">
+			<ItemSet commonness="1">
+				<Item identifier="idcard" equip="true"/>
+				<Item identifier="doctorsuniform1" equip="true"/>
+			</ItemSet>
+			<ItemSet commonness="1">
+				<Item identifier="idcard" equip="true"/>
+				<Item identifier="doctorsuniform2" equip="true"/>
+			</ItemSet>
+		</npc>
 		<!--BASIC EVENT NPCS-->
 			<npc identifier="ita_mechanic1" job="mechanic" commonness="1" healthmultiplier="1" preferredoutpostmoduletypes="admin,adminmodule" behavior="Passive">
 			<ItemSet commonness="1">

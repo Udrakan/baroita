@@ -19,7 +19,7 @@
     locationtypechangecooldown              = The location can't change it's type for this many turns after this location type changes occurs.
   -->
     
-    <Cave identifier="Cave" namefile="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveNames.txt" commonnessperzone="1: 1, 2: 1, 5:1" missiontags="drycave1">
+    <Cave identifier="Cave" namefile="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveNames.txt" commonnessperzone="1: 0.6, 2: 0.6, 5:0.6" missiontags="drycave1">
 		<Symbol texture="Mods/IntoTheAbyss/Content/Campaign/MapAtlas.png" sourcerect="497,916,123,108" color="176,133,113,255"/>
 		<Portrait texture="Content/Map/LocationPortraits/WorkCampMining1.png" premultiplyalpha="false"/>
 		<Portrait texture="Content/Map/LocationPortraits/WorkCampMining2.png" premultiplyalpha="false"/>
@@ -135,12 +135,6 @@
     <Hireable identifier="medicaldoctor" commonness="2"/>
     
     <!-- can become a city if there are no adjacent lairs -->
-    <ChangeTo type="City" 
-              requireddurationrange="2,4"
-              probability="0.3"
-              requiredlocations="City" requiredproximity="3" requiredproximityforprobabilityincrease="2" proximityprobabilityincrease="0.1"
-              disallowedadjacentlocations="Lair" 
-              messagetag="locationchange.military.changeto.city"/>
 
     <ChangeTo type="Abandoned" requireddurationrange="1,1" messagetag="locationchange.outpost.changeto.abandoned">
       <Requirement requirehuntinggrounds="true" probability="0.5" requiredproximity="1" />  
@@ -167,12 +161,7 @@
     <Hireable identifier="captain" commonness="1"/>
 
     <!-- can become a city if there are no adjacent lairs -->
-    <ChangeTo type="City"
-          requireddurationrange="2,4"
-          probability="0.3"
-          requiredlocations="City" requiredproximity="3" requiredproximityforprobabilityincrease="2" proximityprobabilityincrease="0.1"
-          disallowedadjacentlocations="Lair"
-          messagetag="locationchange.research.changeto.city"/>
+
 
     <ChangeTo type="Abandoned" requireddurationrange="1,1" messagetag="locationchange.outpost.changeto.abandoned">
       <Requirement requirehuntinggrounds="true" probability="0.5" requiredproximity="1" />  
@@ -197,12 +186,7 @@
     <Hireable identifier="assistant" commonness="3"/>
 
     <!-- can become a city if there are no adjacent lairs -->
-    <ChangeTo type="City"
-          requireddurationrange="2,4"
-          probability="0.3"
-          requiredlocations="City" requiredproximity="3" requiredproximityforprobabilityincrease="2" proximityprobabilityincrease="0.1"
-          disallowedadjacentlocations="Lair"
-          messagetag="locationchange.mine.changeto.city"/>
+
 
     <ChangeTo type="Abandoned" requireddurationrange="1,1" messagetag="locationchange.outpost.changeto.abandoned">
       <Requirement requirehuntinggrounds="true" probability="0.5" requiredproximity="1" />  

@@ -81,14 +81,14 @@
     <!-- 1-3 crawlers after 390 seconds if intensity is under 0.2 -->
     <EventSet chooserandom="true" mindistancetraveled="0.99" minmissiontime="300" minintensity="0.0" maxintensity="1.0" allowatstart="false">
       <MonsterEvent characterfile="Crawler" minamount="3" maxamount="5" spawntype="mainpath,sidepath"  />
-      <MonsterEvent characterfile="Spineling" minamount="2" maxamount="3" spawntype="mainpath,sidepath"  />
+      <MonsterEvent characterfile="husk" minamount="2" maxamount="3" spawntype="mainpath,sidepath"  />
 	  <MonsterEvent characterfile="mudraptor" minamount="2" maxamount="3" spawntype="mainpath,sidepath"  />
     </EventSet>
 
     <!-- 1-3 crawlers after 1110 seconds if intensity is under 0.2 -->
     <EventSet chooserandom="true" mindistancetraveled="0.99" minmissiontime="600" minintensity="0.0" maxintensity="1.0" allowatstart="false">
       <MonsterEvent characterfile="Crawler" minamount="3" maxamount="5" spawntype="mainpath,sidepath"  />
-      <MonsterEvent characterfile="Spineling" minamount="2" maxamount="3" spawntype="mainpath,sidepath"  />
+      <MonsterEvent characterfile="husk" minamount="2" maxamount="3" spawntype="mainpath,sidepath"  />
 	  <MonsterEvent characterfile="mudraptor" minamount="2" maxamount="3" spawntype="mainpath,sidepath"  />
     </EventSet>
 
@@ -96,20 +96,24 @@
     <EventSet chooserandom="true" mindistancetraveled="0.99" minmissiontime="900" minintensity="0.0" maxintensity="1.0" allowatstart="false">
       <MonsterEvent characterfile="Crawler" minamount="1" maxamount="3" spawntype="mainpath,sidepath"  />
       <MonsterEvent characterfile="mudraptor" minamount="2" maxamount="3" spawntype="mainpath,sidepath"  />
+	  <MonsterEvent characterfile="husk" minamount="2" maxamount="3" spawntype="mainpath,sidepath"  />
     </EventSet>
 
     <!-- 1-3 crawlers after 2550 seconds if intensity is under 0.2 -->
     <EventSet chooserandom="true" mindistancetraveled="0.99" minmissiontime="1200" minintensity="0.0" maxintensity="1" allowatstart="false">
       <MonsterEvent characterfile="Mudraptor_unarmored" minamount="5" maxamount="8" spawntype="mainpath,sidepath"  />
       <MonsterEvent characterfile="Crawler" minamount="8" maxamount="12" spawntype="mainpath,sidepath"  />
+	  <MonsterEvent characterfile="husk" minamount="3" maxamount="4" spawntype="mainpath,sidepath"  />
     </EventSet>
 	
 	<EventSet chooserandom="true" mindistancetraveled="0.99" minmissiontime="1500" minintensity="0.0" maxintensity="1" allowatstart="false">
+		<MonsterEvent characterfile="husk" minamount="3" maxamount="4" spawntype="mainpath,sidepath"  />
       <MonsterEvent characterfile="Mudraptor_unarmored" minamount="6" maxamount="6" spawntype="mainpath,sidepath"  />
       <MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="2" spawntype="mainpath,sidepath"  />
     </EventSet>
 	
 	<EventSet chooserandom="true" mindistancetraveled="0.99" minmissiontime="1800" minintensity="0.0" maxintensity="1" allowatstart="false">
+		<MonsterEvent characterfile="husk" minamount="3" maxamount="4" spawntype="mainpath,sidepath"  />
       <MonsterEvent characterfile="Mudraptor_unarmored" minamount="8" maxamount="8" spawntype="mainpath,sidepath"  />
       <MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="2" spawntype="mainpath,sidepath"  />
     </EventSet>
@@ -142,7 +146,14 @@
       <MonsterEvent characterfile="Husk" minamount="2" maxamount="2" spawntype="wreck"  allowonlyonce="false"/>
       <MonsterEvent characterfile="Husk" minamount="2" maxamount="2" spawntype="wreck"   allowonlyonce="false"/>
     </EventSet>
-    
+    <!-- populate the ruins -->
+    <EventSet chooserandom="false" allowatstart="true" perruin="true">
+      <MonsterEvent characterfile="Fractalguardian" minamount="4" maxamount="8" spawntype="ruin"  />
+      <MonsterEvent characterfile="Husk" minamount="4" maxamount="8" spawntype="ruin"  />
+    </EventSet>
+	<!-- always spawn a couple of artifacts	 -->
+    <ArtifactEvent itemidentifier="skyholderartifact" triggereventcooldown="false" />
+    <ArtifactEvent itemidentifier="thermalartifact" triggereventcooldown="false" />
 	<!-- populate the abyss -->
     <EventSet chooserandom="true" allowatstart="true" triggereventcooldown="false" disableinhuntinggrounds="true">
       <MonsterEvent characterfile="Endworm" minamount="1" maxamount="1" maxamountperlevel="1" spawntype="abyss" />

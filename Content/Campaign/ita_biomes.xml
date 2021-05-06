@@ -1,101 +1,100 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <LevelGenerationParameters>
-<Override>
-  <Biomes>
-    <Biome
-      identifier="coldcaverns"
-      name="Cold Caverns"
-      description=""
-      AllowedZones="1" />
-    <Biome
-      identifier="europanridge"
-      name="Europan Ridge"
-      description=""
-      AllowedZones="2" />
-    <Biome
-      identifier="theaphoticplateau"
-      name="The Aphotic Plateau"
-      description=""
-      AllowedZones="3" />
-    <Biome
-      identifier="thegreatsea"
-      oldidentifier="thegreatvoid"
-      name="The Great Sea"
-      description=""
-      AllowedZones="4" />
-    <Biome
-      identifier="hydrothermalwastes"
-      name="Hydrothermal Wastes"
-      description=""
-      AllowedZones="5" />
-    <Biome
-      identifier="endzone"
-      name="???"
-      description=""
-      AllowedZones="6"
-      endbiome="true" />
-  </Biomes>
-  <EndLocationBasic
-    identifier="endlocationbasic"
-    type="LocationConnection"
-    biomes="endzone"
-    height="120000"
-    initialdepthmin="500000"
-    initialdepthmax="500000"
-    levelobjectamount="1"
-    ambientlightcolor="4,6,8,255"
-    backgroundtexturecolor="8,16,20,255"
-    backgroundcolor="2,4,5,255"
-    wallcolor="255,255,255,255"
-    minwidth="120000"
-    maxwidth="120000"
-    voronoisiteinterval="2000,5000"
-    voronoisitevariance="1000,1000"
-    cellsubdivisionlength="1500"
-    cellroundingamount="0"
-    cellirregularity="0.1"
-    mainpathnodeintervalrange="50000,50000"
-    cavecount="0"
-    itemcount="0"
-    floatingicechunkcount="20"
-    seafloordepth="0"
-    seafloorvariance="1000"
-    mountaincountmin="0"
-    mountaincountmax="0"
-    mountainheightmin="1000"
-    mountainheightmax="5000"
-    ruincount="0"
-    wreckcount="0"
-    thalamusprobability="0.3"
-    bottomholeprobability="0"
-    waterparticlescale="1"
-    startposition="0.1,0.1"
-    endposition="0.9,0.9"
-    createholenexttoend="False"
-    mintunnelradius="15000"
-    mincorpsecount="0"
-    maxcorpsecount="5"
-    wreckhullfloodingchance="0.5"
-    wreckfloodinghullminwaterpercentage="0.1"
-    wreckfloodinghullmaxwaterpercentage="1"
-    sidetunnelcount="0,1"
-    minsidetunnelradius="2000,6000"
-    backgroundcreatureamount="0"
-    icespirecount="0"
-    walltexturesize="256"
-    walledgetexturewidth="1024"
-    walledgeexpandoutwardsamount="128"
-    walledgeexpandinwardsamount="128"
-    sidetunnelvariance="0.5"
-    mainpathvariance="0.5"
-    resourceintervalrange="19200,38400"
-    caveresourceintervalrange="9600,19200"
-    resourceclustersizerange="2,8"
-    resourcespawnchance="0.3"
-    caveresourcespawnchance="0.6"
-    islandcount="0">
-    <!--
+  <Override>
+    <Biomes>
+      <Biome
+        identifier="coldcaverns"
+        name="Cold Caverns"
+        description=""
+        AllowedZones="1" />
+      <Biome
+        identifier="europanridge"
+        name="Europan Ridge"
+        description=""
+        AllowedZones="2" />
+      <Biome
+        identifier="theaphoticplateau"
+        name="The Aphotic Plateau"
+        description=""
+        AllowedZones="3" />
+      <Biome
+        identifier="thegreatsea"
+        oldidentifier="thegreatvoid"
+        name="The Great Sea"
+        description=""
+        AllowedZones="4" />
+      <Biome
+        identifier="hydrothermalwastes"
+        name="Hydrothermal Wastes"
+        description=""
+        AllowedZones="5" />
+      <Biome
+        identifier="endzone"
+        name="???"
+        description=""
+        AllowedZones="6"
+        endbiome="true" />
+    </Biomes>
+    <EndLocationBasic
+      identifier="endlocationbasic"
+      type="LocationConnection"
+      biomes="endzone"
+      height="120000"
+      initialdepthmin="500000"
+      initialdepthmax="500000"
+      levelobjectamount="1"
+      ambientlightcolor="4,6,8,255"
+      backgroundtexturecolor="8,16,20,255"
+      backgroundcolor="2,4,5,255"
+      wallcolor="255,255,255,255"
+      minwidth="120000"
+      maxwidth="120000"
+      voronoisiteinterval="2000,5000"
+      voronoisitevariance="1000,1000"
+      cellsubdivisionlength="1500"
+      cellroundingamount="0"
+      cellirregularity="0.1"
+      mainpathnodeintervalrange="50000,50000"
+      cavecount="0"
+      itemcount="0"
+      floatingicechunkcount="20"
+      seafloordepth="0"
+      seafloorvariance="1000"
+      mountaincountmin="0"
+      mountaincountmax="0"
+      mountainheightmin="1000"
+      mountainheightmax="5000"
+      ruincount="0"
+      wreckcount="0"
+      thalamusprobability="0.3"
+      bottomholeprobability="0"
+      waterparticlescale="1"
+      startposition="0.1,0.1"
+      endposition="0.9,0.9"
+      createholenexttoend="False"
+      mintunnelradius="15000"
+      mincorpsecount="0"
+      maxcorpsecount="5"
+      wreckhullfloodingchance="0.5"
+      wreckfloodinghullminwaterpercentage="0.1"
+      wreckfloodinghullmaxwaterpercentage="1"
+      sidetunnelcount="0,1"
+      minsidetunnelradius="2000,6000"
+      backgroundcreatureamount="0"
+      icespirecount="0"
+      walltexturesize="256"
+      walledgetexturewidth="1024"
+      walledgeexpandoutwardsamount="128"
+      walledgeexpandinwardsamount="128"
+      sidetunnelvariance="0.5"
+      mainpathvariance="0.5"
+      resourceintervalrange="19200,38400"
+      caveresourceintervalrange="9600,19200"
+      resourceclustersizerange="2,8"
+      resourcespawnchance="0.3"
+      caveresourcespawnchance="0.6"
+      islandcount="0">
+      <!--
     <Background
       texture="Content/Map/iceBackgroundFade.png" />
     <BackgroundTop

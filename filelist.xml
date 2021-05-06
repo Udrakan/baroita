@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.13.0.11" steamworkshopid="2005463692" installtime="1619650540">
+<contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.13.3.11" steamworkshopid="2005463692" installtime="1620174791">
   <BeaconStation file="Mods/IntoTheAbyss/Content/Beacons/ita_beacon_1a.sub" />
   <None file="Mods/IntoTheAbyss/Content/icons_ita.png" />
   <None file="Mods/IntoTheAbyss/Content/bubbleloop.ogg" />
@@ -8,6 +8,7 @@
   <RandomEvents file="Mods/IntoTheAbyss/Content/Outposts/ita_outpostevents.xml" />
   <RandomEvents file="Mods/IntoTheAbyss/Content/ita_randomevents.xml" />
   <Item file="Mods/IntoTheAbyss/Content/Items/ita_items.xml" />
+  <Text file="Mods/IntoTheAbyss/Content/Texts/ita_English.xml" />
   <Sounds file="Mods/IntoTheAbyss/Content/ita_sounds.xml" />
   <Item file="Mods/IntoTheAbyss/Content/Ruins/ita_itemsalien.xml" />
   <Jobs file="Mods/IntoTheAbyss/Content/ita_jobs.xml" />
@@ -270,4 +271,5 @@
   <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_cave3.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_city_shop_bar1R.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_city_shop_electrician1.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Outposts/ita_module_fabrication2.sub" />
 </contentpackage>

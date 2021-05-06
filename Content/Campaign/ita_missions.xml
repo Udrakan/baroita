@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 	<Override>
 	<Missions>
-		<BeaconMission name="Repair Beacon" identifier="beacontest" textidentifier="beaconmission" tags="beacon,hab1,city1,ita_military1" type="Beacon" description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." commonness="200" reward="3000">
+		<BeaconMission name="Repair Beacon" identifier="beacontest" textidentifier="beaconmission" tags="beacon,hab1,city1,ita_military1" type="Beacon" description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." commonness="60" reward="3500">
 			<monster character="crawler" min="5" max="7"/>
 			<Icon texture="Content/UI/MissionIcons.png" sourcerect="0,256,256,256" color="243,146,55"/>
 			<LocationType from="Any" to="None"/>
 			<message header="Beacon reactivated" text="The beacon station is back online. Make sure it stays transmitting, and navigate the submarine to [location2] to claim your reward." />
 		</BeaconMission>
-		<SalvageMission name="Wreck salvage" identifier="salvagewreck1" tags="salvage,salvagewreck,ita_wreck1,city1" type="Salvage" description="Wreck salvage mission description goes here" commonness="125" reward="2800" achievementidentifier="salvagewreckmission" sonarlabel="Wreck" failuremessage="Salvaging the wreck failed" successmessage="Mission successful" spawntype="wreck" showmessagewhenpickedup="true" itemidentifier="handheldterminal" containertag="locker">
+		<SalvageMission name="Wreck salvage" identifier="salvagewreck1" tags="salvage,salvagewreck,ita_wreck1,city1" type="Salvage" description="Wreck salvage mission description goes here" commonness="20" reward="2800" achievementidentifier="salvagewreckmission" sonarlabel="Wreck" failuremessage="Salvaging the wreck failed" successmessage="Mission successful" spawntype="wreck" showmessagewhenpickedup="true" itemidentifier="handheldterminal" containertag="locker">
 			<Reputation identifier="location" amount="5" />
 			<Reputation identifier="coalition" amount="10" />
 			<chooserandom>
@@ -65,7 +65,7 @@
 			<LocationType from="Military" to="Research"/>
 			<LocationType from="Military" to="Mine"/>
 		</CargoMission>
-		<CargoMission name="Prisoner Transport" identifier="cargoprisoner1" tags="ita_prisonertransport,ita_military1,city1" type="Cargo" description="5 prisoners need to be transported to [location2] alive." commonness="10" reward="1900" achievementidentifier="cargomission" successmessage="Prisoners survived the journey.">
+		<CargoMission name="Prisoner Transport" identifier="cargoprisoner1" tags="ita_prisonertransport,ita_military1,city1" type="Cargo" description="5 prisoners need to be transported to [location2] alive." commonness="40" reward="1900" achievementidentifier="cargomission" successmessage="Prisoners survived the journey.">
 			<Items>
 				<Item identifier="ita_taxicheck2" />
 			</Items>
@@ -79,7 +79,7 @@
 			<LocationType from="City" to="Research"/>
 			<LocationType from="City" to="Mine"/>
 		</CargoMission>
-		<CargoMission name="Prisoner Transport" identifier="cargoprisoner2" tags="ita_prisonertransport,ita_military1,city1" type="Cargo" description="A band of clowns are annoying residents at [location1]. A reward of [reward] marks is promised to a crew who will transport them alive to [location2] so they can enjoy the fun too." commonness="10" reward="1600" achievementidentifier="cargomission" successmessage="Please, don't send in the clowns.">
+		<CargoMission name="Prisoner Transport" identifier="cargoprisoner2" tags="ita_prisonertransport,ita_military1,city1" type="Cargo" description="A band of clowns are annoying residents at [location1]. A reward of [reward] marks is promised to a crew who will transport them alive to [location2] so they can enjoy the fun too." commonness="40" reward="1600" achievementidentifier="cargomission" successmessage="Please, don't send in the clowns.">
 			<Items>
 				<Item identifier="ita_taxicheck3" />
 			</Items>
@@ -93,7 +93,7 @@
 			<LocationType from="City" to="Research"/>
 			<LocationType from="City" to="Mine"/>
 		</CargoMission>
-		<CargoMission name="Prisoner Transport" identifier="cargoprisoner3" tags="ita_prisonertransport,ita_military1,city1" type="Cargo" description="A band of crazed cultists have been arrested at [location1] for their involvement in suspicious activities. To receive your reward of [reward]mk, transport all three of them unharmed to a psychiatrist in [location2]." commonness="10" reward="1600" achievementidentifier="cargomission" successmessage="The psychiatrist greeted the cultists as his brothers and paid you the promised reward.">
+		<CargoMission name="Prisoner Transport" identifier="cargoprisoner3" tags="ita_prisonertransport,ita_military1,city1" type="Cargo" description="A band of crazed cultists have been arrested at [location1] for their involvement in suspicious activities. To receive your reward of [reward]mk, transport all three of them unharmed to a psychiatrist in [location2]." commonness="40" reward="1600" achievementidentifier="cargomission" successmessage="The psychiatrist greeted the cultists as his brothers and paid you the promised reward.">
 			<Items>
 				<Item identifier="ita_taxicheck4" />
 			</Items>
@@ -126,7 +126,7 @@
 			<LocationType from="Outpost" to="Outpost"/>
 			<LocationType from="Outpost" to="City"/>
 		</CargoMission>
-		<CargoMission name="Transporting Water Sensitive Goods" identifier="cargowater1" tags="cargo,cargosensitive,city1,ita_cargo" type="Cargo" description="Box of crispy pastry needs to be transported to [location2]. Don't ruin it by getting it wet!" commonness="10" reward="1700" achievementidentifier="cargomission" successmessage="Goods were delivered dry and crispy!">
+		<CargoMission name="Transporting Water Sensitive Goods" identifier="cargowater1" tags="cargo,cargosensitive,city1,ita_cargo" type="Cargo" description="Box of crispy pastry needs to be transported to [location2]. Don't ruin it by getting it wet!" commonness="50" reward="1700" achievementidentifier="cargomission" successmessage="Goods were delivered dry and crispy!">
 			<Items>
 				<Item identifier="ita_watercrate" />
 			</Items>
@@ -144,7 +144,7 @@
 			<LocationType from="Outpost" to="Outpost"/>
 			<LocationType from="Outpost" to="City"/>
 		</CargoMission>
-		<CargoMission name="Egg Transport" identifier="cargoeggs" tags="cargo,cargomonster2,city1,ita_cargo" type="Cargo" description="Crate of 2 mudraptor eggs have to be transported to [location2]'s freezer. After taken from the refrigerator here, eggs will hatch in about 11 minutes. Deliver them in time!" commonness="10" reward="3100" achievementidentifier="cargomission" successmessage="Eggs were delivered to [location2] research freezer before they hatched.">
+		<CargoMission name="Egg Transport" identifier="cargoeggs" tags="cargo,cargomonster2,city1,ita_cargo" type="Cargo" description="Crate of 2 mudraptor eggs have to be transported to [location2]'s freezer. After taken from the refrigerator here, eggs will hatch in about 11 minutes. Deliver them in time!" commonness="50" reward="3100" achievementidentifier="cargomission" successmessage="Eggs were delivered to [location2] research freezer before they hatched.">
 			<Items>
 				<Item identifier="ita_eggcrate" />
 			</Items>
@@ -162,7 +162,7 @@
 			<LocationType from="Outpost" to="Outpost"/>
 			<LocationType from="Outpost" to="City"/>
 		</CargoMission>
-		<CargoMission name="Fragile Transport" identifier="cargofragile1" tags="cargo,cargoexplosive,cargosensitive,city1,ita_cargo" type="Cargo" description="Fragile goods are needed at [location2]. Make sure the cargo doesn't hit the floor hard! If you need to carry it, crouch before dropping the crate." commonness="10" reward="2500" achievementidentifier="cargomission" successmessage="Fragile goods were delivered intact.">
+		<CargoMission name="Fragile Transport" identifier="cargofragile1" tags="cargo,cargoexplosive,cargosensitive,city1,ita_cargo" type="Cargo" description="Fragile goods are needed at [location2]. Make sure the cargo doesn't hit the floor hard! If you need to carry it, crouch before dropping the crate." commonness="50" reward="2500" achievementidentifier="cargomission" successmessage="Fragile goods were delivered intact.">
 			<Items>
 				<Item identifier="ita_impactcrate" />
 			</Items>
@@ -180,7 +180,7 @@
 			<LocationType from="Outpost" to="Outpost"/>
 			<LocationType from="Outpost" to="City"/>
 		</CargoMission>
-		<CargoMission name="Dangerous Egg Transport" identifier="cargoeggs2" tags="cargo,cargomonster1,city1,ita_cargo" type="Cargo" description="Two refrigerated crates of mudraptor eggs need to be delivered to a scientist at [location2]. Crate needs battery cells to keep the eggs frozen, so it's in your best interest to replace them often!" commonness="10" reward="1800" achievementidentifier="cargomission" successmessage="Raptor eggs were delivered to the researcher before hatching.">
+		<CargoMission name="Dangerous Egg Transport" identifier="cargoeggs2" tags="cargo,cargomonster1,city1,ita_cargo" type="Cargo" description="Two refrigerated crates of mudraptor eggs need to be delivered to a scientist at [location2]. Crate needs battery cells to keep the eggs frozen, so it's in your best interest to replace them often!" commonness="50" reward="1800" achievementidentifier="cargomission" successmessage="Raptor eggs were delivered to the researcher before hatching.">
 			<Items>
 				<Item identifier="ita_eggcrate2" />
 				<Item identifier="ita_eggcrate2" />
@@ -199,7 +199,7 @@
 			<LocationType from="Outpost" to="Outpost"/>
 			<LocationType from="Outpost" to="City"/>
 		</CargoMission>
-		<CargoMission name="Live Specimen Transport" identifier="cargoeggs3" tags="cargo,cargomonster1,city1,ita_cargo" type="Cargo" description="Security at [location1] has caught and chained a mudraptor, which now needs to be transported to [location2] to be trained for the mudraptor races. It requires to be sedated with opium to stay calm." commonness="10" reward="1900" achievementidentifier="cargomission" successmessage="Poor mudraptor survived the journey with humans.">
+		<CargoMission name="Live Specimen Transport" identifier="cargoeggs3" tags="cargo,cargomonster1,city1,ita_cargo" type="Cargo" description="Security at [location1] has caught and chained a mudraptor, which now needs to be transported to [location2] to be trained for the mudraptor races. It requires to be sedated with opium to stay calm." commonness="50" reward="1900" achievementidentifier="cargomission" successmessage="Poor mudraptor survived the journey with humans.">
 			<Items>
 				<Item identifier="ita_raptorcrate" />
 			</Items>

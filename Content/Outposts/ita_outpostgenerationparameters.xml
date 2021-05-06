@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Override>
 	<OutpostConfig identifier="fallback" totalmodulecount="6" minhallwaylength="0">
 		<modulecount flag="Airlock" count="1"/>
@@ -13,12 +12,13 @@
 		<modulecount flag="ita_cavehall" count="1"/>
 	</OutpostConfig>
 
-	<OutpostConfig identifier="outpost" totalmodulecount="5" minhallwaylength="0" allowedlocationtypes="Outpost">
+	<OutpostConfig identifier="outpost" totalmodulecount="6" minhallwaylength="0" allowedlocationtypes="Outpost">
 		<modulecount flag="ita_hab_dock" count="1"/>
 		<modulecount flag="ita_smallengineering" count="1"/>
 		<modulecount flag="AdminModule" count="1"/>
 		<modulecount flag="CrewModule" count="1"/>
 		<modulecount flag="ita_hab_entertainment" count="1"/>
+		<modulecount flag="ita_city_clinic" count="1"/>
 		<npcs>
 			<npc from="outpostnpcs1" identifier="hrmanager"/>
 			<npc from="outpostnpcs1" identifier="repairnpc"/>
@@ -36,13 +36,14 @@
 			<npc from="outpostnpcs1" identifier="commoner"/>
 		</npcs>
 	</OutpostConfig>
-	<OutpostConfig identifier="militaryoutpost" totalmodulecount="6" minhallwaylength="0" allowedlocationtypes="Military">
+	<OutpostConfig identifier="militaryoutpost" totalmodulecount="7" minhallwaylength="0" allowedlocationtypes="Military">
 		<modulecount flag="ita_military_dock" count="1"/>
 		<modulecount flag="Ita_engineeringmodule" count="1"/>
 		<modulecount flag="ita_military_admin" count="1"/>
 		<modulecount flag="ita_military_crew" count="1"/>
 		<modulecount flag="ita_military_prison" count="1"/>
 		<modulecount flag="Ita_lifesupportmodule" count="1"/>
+		<modulecount flag="ita_city_clinic" count="1"/>
 		<npcs>
 			<npc from="outpostnpcs1" identifier="hrmanager"/>
 			<npc from="outpostnpcs1" identifier="repairnpc"/>
@@ -68,6 +69,7 @@
 		<modulecount flag="AdminModule" count="1"/>
 		<modulecount flag="CrewModule" count="1"/>
 		<modulecount flag="MineModule" count="1"/>
+		<modulecount flag="ita_city_clinic" count="1"/>
 		<npcs>
 			<npc from="outpostnpcs1" identifier="hrmanager"/>
 			<npc from="outpostnpcs1" identifier="repairnpc"/>
