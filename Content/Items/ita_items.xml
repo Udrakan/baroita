@@ -2386,4 +2386,16 @@
     </ConnectionPanel>
     <ItemContainer canbeselected="true" capacity="1" itempos="0,0" hideitems="false" />
   </Item>
+  <!--Purchasable furniture-->
+  <Item name="Depth Charge Holder" identifier="ita_container_depthholder1" tags="depthchargeammosource,mediumitem" category="Machine" linkable="false" scale="0.5">
+    <Sprite texture="Mods/IntoTheAbyss/Content/Items/ita_weapons.png" depth="0.8" sourcerect="0,88,148,102" origin="0.5,0.5" />
+	<Body radius="148" width="102" density="50" />
+    <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="ItemMsgDetach" PickingTime="3.0" aimpos="85,-10" handle1="0,0" holdangle="-90" attachable="true" requiredItems="wrench"/>
+	<ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" itempos="75,-51" itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect" AutoInteractWithContained="True">
+      <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="depthchargeammo" />
+    </ItemContainer>
+</Item>
+
+
 </Items>

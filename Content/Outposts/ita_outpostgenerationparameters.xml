@@ -36,14 +36,15 @@
 			<npc from="outpostnpcs1" identifier="commoner"/>
 		</npcs>
 	</OutpostConfig>
-	<OutpostConfig identifier="militaryoutpost" totalmodulecount="7" minhallwaylength="0" allowedlocationtypes="Military">
+	<OutpostConfig identifier="militaryoutpost" totalmodulecount="8" minhallwaylength="0" allowedlocationtypes="Military">
 		<modulecount flag="ita_military_dock" count="1"/>
-		<modulecount flag="Ita_engineeringmodule" count="1"/>
+		<modulecount flag="ita_military_engineering" count="1"/>
 		<modulecount flag="ita_military_admin" count="1"/>
 		<modulecount flag="ita_military_crew" count="1"/>
 		<modulecount flag="ita_military_prison" count="1"/>
-		<modulecount flag="Ita_lifesupportmodule" count="1"/>
+		<modulecount flag="Ita_military_var1" count="1"/>
 		<modulecount flag="ita_city_clinic" count="1"/>
+		<modulecount flag="ita_city_shop" count="1"/>
 		<npcs>
 			<npc from="outpostnpcs1" identifier="hrmanager"/>
 			<npc from="outpostnpcs1" identifier="repairnpc"/>

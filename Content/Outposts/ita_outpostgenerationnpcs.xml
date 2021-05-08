@@ -311,6 +311,40 @@
 				<Item identifier="baseballcap" equip="true"/>
 			</ItemSet>
 		</npc>
+		<npc identifier="ita_gunsmith1" job="engineer" commonness="1" spawnpointtags="engineering" behavior="StayInHull">
+			<ItemSet commonness="1">
+				<Item identifier="quartermasterclothes" equip="true"/>
+				<Item identifier="idcard" equip="true" tags="safecard1a"/>
+				<Item identifier="divingmask" equip="true">
+					<Item identifier="oxygentank" />
+				</Item> 
+				<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+				<Item identifier="grenadelauncher">
+					<Item identifier="40mmgrenade" />
+				</Item>
+				<Item identifier="revolver">
+					<Item identifier="revolverround" />
+					<Item identifier="revolverround" />
+					<Item identifier="revolverround" />
+					<Item identifier="revolverround" />
+					<Item identifier="revolverround" />
+					<Item identifier="revolverround" />
+				</Item>
+				<Item identifier="40mmgrenade" />
+				<Item identifier="40mmgrenade" />
+				<Item identifier="baseballcap" equip="true"/>
+			</ItemSet>
+		</npc>
+		<npc identifier="ita_electrician1" job="engineer" commonness="1" spawnpointtags="engineering" behavior="StayInHull">
+			<ItemSet commonness="1">
+				<Item identifier="orangejumpsuit3" equip="true" />
+				<Item identifier="idcard" equip="true" />
+				<Item identifier="divingmask" equip="true">
+					<Item identifier="oxygentank" />
+				</Item> 
+				<Item identifier="baseballcap" equip="true"/>
+			</ItemSet>
+		</npc>
 		<!--GUARDS-->	
 		<npc identifier="ita_guard1" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol" aimspeed="0.85" aimaccuracy="0.55" >
 			<ItemSet>
