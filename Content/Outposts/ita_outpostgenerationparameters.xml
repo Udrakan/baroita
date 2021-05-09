@@ -6,10 +6,16 @@
 		<modulecount flag="AdminModule" count="1"/>
 	</OutpostConfig>
 
-	<OutpostConfig identifier="cave" totalmodulecount="3" spawncrewinsideoutpost="false" minhallwaylength="0">
-		<modulecount flag="ita_cavedock" count="1"/>
-		<modulecount flag="ita_cave" count="1"/>
-		<modulecount flag="ita_cavehall" count="1"/>
+	<OutpostConfig identifier="cave" totalmodulecount="16" spawncrewinsideoutpost="false" minhallwaylength="350">
+		<modulecount flag="ita_cave_entrance" count="1"/>
+		<modulecount flag="ita_cave_junction" count="1"/>
+		<modulecount flag="ita_cave_raiser" count="1"/>
+		<modulecount flag="ita_cave_horiz" count="3"/>
+		<modulecount flag="ita_cave_vertic" count="3"/>
+		<modulecount flag="ita_cave_hall" count="2"/>
+		<modulecount flag="ita_cave_special1" count="1"/>
+		<modulecount flag="ita_cave_ice1generic" count="30"/>
+		
 	</OutpostConfig>
 
 	<OutpostConfig identifier="outpost" totalmodulecount="6" minhallwaylength="0" allowedlocationtypes="Outpost">
