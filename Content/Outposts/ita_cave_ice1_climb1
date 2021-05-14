@@ -1,0 +1,60 @@
+﻿<Submarine description="" checkval="1520777220" price="58729" initialsuppliesspawned="false" type="OutpostModule" tags="HideInMenus" gameversion="0.13.3.11" dimensions="400,512" recommendedcrewsizemin="1" recommendedcrewsizemax="2" recommendedcrewexperience="Unknown" requiredcontentpackages="" maxcount="100" commonness="95" gappositions="Top, Bottom" flags="ita_cave_horiz,ita_cave_ice1generic" allowattachto="ita_cave_entrance,ita_cave_horiz,ita_cave_vertic,ita_cave_ice1generic,hallwayvertical,hallwayhorizontal" allowedlocationtypes="cave" name="ita_cave_ice1_climb1">
+  <Item name="" identifier="lazulite" ID="1" rect="-144,-160,59,61" noninteractable="False" nonplayerteaminteractable="False" rotation="0" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" invulnerabletodamage="False" tags="smallitem,ore,light" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.55" hiddeningame="False">
+    <LightComponent range="100" castshadows="True" drawbehindsubs="False" ison="True" flicker="0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" blinkfrequency="0" lightcolor="88,121,142,225" isactive="True" minvoltage="0" powerconsumption="0" vulnerabletoemp="True" pickingtime="0" canbepicked="False" allowingameediting="True" msg="" />
+
+    <Holdable attached="True" holdpos="0,0" holdangle="0" swingamount="0,0" swingspeed="0" swingwhenholding="False" swingwhenaiming="False" swingwhenusing="False" pickingtime="5" canbepicked="True" allowingameediting="True" msg="[Use] Crowbar" />
+  </Item>
+  <WayPoint ID="2" x="-147" y="-260" spawn="Path" gap="15" linkedto0="3" />
+  <WayPoint ID="3" x="25" y="75" spawn="Path" linkedto0="2" linkedto1="4" />
+  <WayPoint ID="4" x="125" y="252" spawn="Path" gap="22" linkedto0="3" />
+  <Item name="" identifier="ilmenite" ID="5" rotation="180" rect="49,207,56,60" noninteractable="False" nonplayerteaminteractable="False" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" invulnerabletodamage="False" tags="smallitem,ore,light" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.55" hiddeningame="False">
+    <LightComponent range="100" castshadows="False" drawbehindsubs="False" ison="True" flicker="0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" blinkfrequency="0" lightcolor="117,143,123,225" isactive="True" minvoltage="0" powerconsumption="0" vulnerabletoemp="True" pickingtime="0" canbepicked="False" allowingameediting="True" msg="" />
+
+    <Holdable attached="True" holdpos="0,0" holdangle="0" swingamount="0,0" swingspeed="0" swingwhenholding="False" swingwhenaiming="False" swingwhenusing="False" pickingtime="5" canbepicked="True" allowingameediting="True" msg="[Use] Crowbar" />
+  </Item>
+  <WayPoint ID="6" x="-688" y="1528" spawn="Human" tags="unlockpath" />
+  <Hull ID="7" rect="-208,248,400,512" water="0" backgroundsections="" roomname="RoomName.SubCenter" ambientlight="0,0,0,0" oxygen="204800" disallowedupgrades="" spritedepth="0.001" scale="0" hiddeningame="False" />
+  <Structure name="CaveShellA_60deg" identifier="CaveShellA_60deg" ID="8" rect="-96,-136,211,248" maxhealth="9000" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.4999999" texturescale="1,1" textureoffset="0,0" noaitarget="True" disallowedupgrades="" spritedepth="0.1" hiddeningame="False" />
+  <Structure name="CaveShellA_60deg" identifier="CaveShellA_60deg" ID="9" rect="-240,-120,211,248" maxhealth="9000" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.4999999" texturescale="1,1" textureoffset="0,0" noaitarget="True" disallowedupgrades="" spritedepth="0.1" hiddeningame="False" />
+  <Structure name="CaveShellA_60deg" identifier="CaveShellA_60deg" ID="10" rect="-192,-56,211,248" maxhealth="9000" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.4999999" texturescale="1,1" textureoffset="0,0" noaitarget="True" disallowedupgrades="" spritedepth="0.1" hiddeningame="False" />
+  <Structure name="CaveShellA_60deg" identifier="CaveShellA_60deg" ID="11" rect="-32,-40,211,248" maxhealth="9000" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.4999999" texturescale="1,1" textureoffset="0,0" noaitarget="True" disallowedupgrades="" spritedepth="0.1" hiddeningame="False" />
+  <Structure name="CaveShellA_60deg" identifier="CaveShellA_60deg" ID="12" rect="-32,264,211,248" maxhealth="9000" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.4999999" texturescale="1,1" textureoffset="0,0" noaitarget="True" disallowedupgrades="" spritedepth="0.1" hiddeningame="False" />
+  <Structure name="CaveShellA_60deg" identifier="CaveShellA_60deg" ID="13" rect="96,248,211,248" maxhealth="9000" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.4999999" texturescale="1,1" textureoffset="0,0" noaitarget="True" disallowedupgrades="" spritedepth="0.1" hiddeningame="False" />
+  <Item name="" identifier="hatch" ID="14" rect="-208,-225,128,49" linked="15,16,1" noninteractable="True" nonplayerteaminteractable="False" rotation="0" scale="0.5" spritecolor="255,255,255,0" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" invulnerabletodamage="False" tags="door" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.7" hiddeningame="False">
+    <Door openingspeed="3" closingspeed="3" togglecooldown="1" isopen="True" usebetweenoutpostmodules="True" pickingtime="10" canbepicked="True" allowingameediting="True" msg="ItemMsgForceOpenCrowbar">
+      <requireditem items="crowbar" type="Equipped" optional="false" ignoreineditor="false" excludebroken="true" />
+    </Door>
+    <Repairable deteriorationspeed="0" mindeteriorationdelay="0" maxdeteriorationdelay="0" mindeteriorationcondition="50" repairthreshold="80" fixdurationlowskill="25" fixdurationhighskill="10" pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgRepairWrench">
+      <requireditem items="wrench" type="Equipped" optional="false" ignoreineditor="false" excludebroken="true" />
+    </Repairable>
+    <ConnectionPanel locked="False" pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgRewireScrewdriver">
+      <requireditem items="screwdriver" type="Equipped" optional="false" ignoreineditor="false" excludebroken="true" />
+      <input name="toggle" />
+      <input name="set_state" />
+      <output name="state_out" />
+    </ConnectionPanel>
+  </Item>
+  <Gap ID="15" horizontal="false" rect="-208,-220,128,59" />
+  <Structure name="CaveWallT2" identifier="Cave_Wall_T2" ID="16" rect="-208,-218,128,167" maxhealth="9000" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.20000002" texturescale="1,1" textureoffset="0,0" noaitarget="True" disallowedupgrades="" spritedepth="0.06" hiddeningame="False" />
+  <Structure name="CaveShellA_77deg" identifier="CaveShellA_77deg" ID="17" rect="-128,56,167,259" maxhealth="9000" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.4999999" texturescale="1,1" textureoffset="0,0" noaitarget="True" disallowedupgrades="" spritedepth="0.1" hiddeningame="False" />
+  <Structure name="CaveShellA_77deg" identifier="CaveShellA_77deg" ID="18" rect="16,56,167,259" maxhealth="9000" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.4999999" texturescale="1,1" textureoffset="0,0" noaitarget="True" disallowedupgrades="" spritedepth="0.1" hiddeningame="False" />
+  <Structure name="CaveShellA_77deg" identifier="CaveShellA_77deg" ID="19" rect="64,168,167,259" maxhealth="9000" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.4999999" texturescale="1,1" textureoffset="0,0" noaitarget="True" disallowedupgrades="" spritedepth="0.1" hiddeningame="False" />
+  <Structure name="CaveShellA_77deg" identifier="CaveShellA_77deg" ID="20" rect="-80,168,167,259" maxhealth="9000" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.4999999" texturescale="1,1" textureoffset="0,0" noaitarget="True" disallowedupgrades="" spritedepth="0.1" hiddeningame="False" />
+  <Item name="" identifier="hatch" ID="21" rect="48,255,128,49" linked="22,23,5" noninteractable="True" nonplayerteaminteractable="False" rotation="0" scale="0.5" spritecolor="255,255,255,0" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" invulnerabletodamage="False" tags="door" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.7" hiddeningame="False">
+    <Door openingspeed="3" closingspeed="3" togglecooldown="1" isopen="True" usebetweenoutpostmodules="True" pickingtime="10" canbepicked="True" allowingameediting="True" msg="ItemMsgForceOpenCrowbar">
+      <requireditem items="crowbar" type="Equipped" optional="false" ignoreineditor="false" excludebroken="true" />
+    </Door>
+    <Repairable deteriorationspeed="0" mindeteriorationdelay="0" maxdeteriorationdelay="0" mindeteriorationcondition="50" repairthreshold="80" fixdurationlowskill="25" fixdurationhighskill="10" pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgRepairWrench">
+      <requireditem items="wrench" type="Equipped" optional="false" ignoreineditor="false" excludebroken="true" />
+    </Repairable>
+    <ConnectionPanel locked="False" pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgRewireScrewdriver">
+      <requireditem items="screwdriver" type="Equipped" optional="false" ignoreineditor="false" excludebroken="true" />
+      <input name="toggle" />
+      <input name="set_state" />
+      <output name="state_out" />
+    </ConnectionPanel>
+  </Item>
+  <Gap ID="22" horizontal="false" rect="48,260,128,59" />
+  <Structure name="CaveWallT2" identifier="Cave_Wall_T2" ID="23" rect="48,262,128,167" maxhealth="9000" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.20000002" texturescale="1,1" textureoffset="0,0" noaitarget="True" disallowedupgrades="" spritedepth="0.06" hiddeningame="False" />
+  <Structure name="CaveWallB2" identifier="Cave_Wall_B2" ID="24" rect="-224,264,400,512" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="1" texturescale="0.5,0.5" textureoffset="0,0" noaitarget="False" disallowedupgrades="" spritedepth="0.98" hiddeningame="False" />
+</Submarine>

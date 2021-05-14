@@ -2093,7 +2093,7 @@
     </ConnectionPanel>
   </Item>
   <!--Caves-->
-  <Item name="Tensile Bungee Hook" identifier="ita_climber2" description="This tensile elastic rope allows climbers to reach tall vertical spaces." health="20" hideinmenus="false" maxstacksize="8" sonarsize="5" scale="0.50" tags="smallitem,climbingammo" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
+  <Item name="Tensile Bungee Cord" identifier="ita_climber2" description="This tensile elastic rope allows climbers to reach tall vertical spaces." hideinmenus="false" maxstacksize="8" sonarsize="5" scale="0.50" tags="smallitem,climbingammo" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
     <InventoryIcon texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="0,157,106,94" origin="0.5,0.5" />
     <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
     <ContainedSprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
@@ -2101,11 +2101,51 @@
       <RequiredSkill identifier="mechanical" level="20" />
       <RequiredItem identifier="organicfiber" />
       <RequiredItem identifier="organicfiber" />
-      <RequiredItem identifier="organicfiber" />
-      <RequiredItem identifier="organicfiber" />
+	   <RequiredItem identifier="elastin" />
       <RequiredItem identifier="steel" />
     </Fabricate>
-    <Body radius="60" density="12" friction="100000" />
+    <Body radius="10" density="12" friction="100000" />
+	<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
+	<StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+        <Remove />
+    </StatusEffect>
+	</Holdable>
+	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="ita_climber2hook" removecontaineditemsondeconstruct="true">
+      <Containable items="ita_climber2hook" />
+	  <StatusEffect type="OnUse" target="This" condition="-26.0" disabledeltatime="true">
+        <SpawnItem identifiers="ita_climber2hook" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+	</Item>
+  <Item name="Loose Bungee Cord" identifier="ita_climber4" description="This soft elastic rope allows climbers to slowly descend." hideinmenus="false" maxstacksize="8" sonarsize="5" scale="0.50" tags="smallitem,climbingammo" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
+    <InventoryIcon texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="155,53,91,78" origin="0.5,0.5" />
+    <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
+    <ContainedSprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="2" amount="8">
+      <RequiredSkill identifier="mechanical" level="20" />
+      <RequiredItem identifier="organicfiber" />
+      <RequiredItem identifier="organicfiber" />
+	  <RequiredItem identifier="elastin" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <Body radius="10" density="12" friction="100000" />
+	<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
+	<StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+        <Remove />
+    </StatusEffect>
+	</Holdable>
+	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="ita_climber4hook" removecontaineditemsondeconstruct="true">
+      <Containable items="ita_climber4hook" />
+	  <StatusEffect type="OnUse" target="This" condition="-26.0" disabledeltatime="true">
+        <SpawnItem identifiers="ita_climber4hook" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+	</Item>
+  <Item name="Tensile Bungee Hook" identifier="ita_climber2hook" description="This tensile elastic rope allows climbers to reach tall vertical spaces." hideinmenus="true" maxstacksize="8" sonarsize="5" scale="0.50" tags="smallitem,climbingammo" damagedbyexplosions="false" damagedbyprojectiles="false" damagedbyrepairtools="false" damagedbymeleeweapons="true" impactsoundtag="impact_soft" noninteractable="true">
+    <InventoryIcon texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="0,157,106,94" origin="0.5,0.5" />
+    <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
+    <ContainedSprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
+    <Body radius="40" density="0" friction="100000" />
     <Rope targetpullforce="10" SourcePullForce="53" projectilepullforce="" maxlength="2000" snaponcollision="false" spritewidth="6" tile="true">
       <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
       <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="0,143,250,13" depth="0.57" origin="0.5,0.5" />
@@ -2124,26 +2164,22 @@
         <ParticleEmitter particle="waterblood" particleamount="1" anglemin="0" anglemax="360" scalemin="2" scalemax="4" />
         <ParticleEmitter particle="gib" particleamount="4" scalemin="0.25" scalemax="1" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
       </StatusEffect>
+	  <StatusEffect type="Always" target="This" delay="1" checkconditionalalways="true">
+        <Conditional Snapped="true" />
+        <Remove />
+      </StatusEffect>
     </Rope>
-    <Projectile characterusable="false" launchimpulse="45.0" sticktostructures="true" sticktocharacters="true" stickpermanently="true" maxtargetstohit="1">
+    <Projectile characterusable="false" launchimpulse="25.0" sticktostructures="true" sticktocharacters="false" stickpermanently="true" >
       <StatusEffect type="OnImpact" target="UseTarget">
         <Sound file="Mods/IntoTheAbyss/Content/Items/ita_impacthook.ogg" range="2000" />
         <ParticleEmitter particle="spark" anglemin="0" anglemax="359" particleamount="5" velocitymin="100" velocitymax="500" scalemin="0.5" scalemax="1" />
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name="Loose Bungee Hook" identifier="ita_climber4" description="This soft elastic rope allows climbers to slowly descend vertical spaces." health="20" hideinmenus="false" maxstacksize="8" sonarsize="5" scale="0.50" tags="smallitem,climbingammo" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
+  <Item name="Loose Bungee Hook" identifier="ita_climber4hook" description="This soft elastic rope allows climbers to slowly descend vertical spaces." health="20" hideinmenus="false" maxstacksize="8" sonarsize="5" scale="0.50" tags="smallitem,climbingammo" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft" noninteractable="true">
     <InventoryIcon texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="155,53,91,78" origin="0.5,0.5" />
     <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
     <ContainedSprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
-    <Fabricate suitablefabricators="fabricator" requiredtime="2" amount="4">
-      <RequiredSkill identifier="mechanical" level="20" />
-      <RequiredItem identifier="organicfiber" />
-      <RequiredItem identifier="organicfiber" />
-      <RequiredItem identifier="organicfiber" />
-      <RequiredItem identifier="organicfiber" />
-      <RequiredItem identifier="steel" />
-    </Fabricate>
     <Body radius="60" density="12" friction="100000" />
     <Rope targetpullforce="10" SourcePullForce="25" projectilepullforce="0" maxlength="2000" snaponcollision="false" spritewidth="6" tile="true">
       <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -2167,15 +2203,19 @@
         <ParticleEmitter particle="waterblood" particleamount="1" anglemin="0" anglemax="360" scalemin="2" scalemax="4" />
         <ParticleEmitter particle="gib" particleamount="4" scalemin="0.25" scalemax="1" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
       </StatusEffect>
+	  <StatusEffect type="Always" target="This" delay="1" checkconditionalalways="true">
+        <Conditional Snapped="true" />
+        <Remove />
+      </StatusEffect>
     </Rope>
-    <Projectile characterusable="false" launchimpulse="45.0" sticktostructures="true" sticktocharacters="true" stickpermanently="true" maxtargetstohit="1">
+    <Projectile characterusable="false" launchimpulse="25.0" sticktostructures="true" sticktocharacters="false" stickpermanently="true" >
       <StatusEffect type="OnImpact" target="UseTarget">
         <Sound file="Mods/IntoTheAbyss/Content/Items/ita_impacthook.ogg" range="2000" />
         <ParticleEmitter particle="spark" anglemin="0" anglemax="359" particleamount="5" velocitymin="100" velocitymax="500" scalemin="0.5" scalemax="1" />
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name="Strong Bungee Cord" description="When combined with metal, this rope can be fashioned into a Tensile Grappling Hook." identifier="ita_climber3" hideinmenus="false" maxstacksize="6" sonarsize="5" scale="0.45" tags="smallitem" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
+  <!--<Item name="Strong Bungee Cord" description="When combined with metal, this rope can be fashioned into a Tensile Grappling Hook." identifier="ita_climber3" hideinmenus="false" maxstacksize="6" sonarsize="5" scale="0.45" tags="smallitem" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
     <InventoryIcon texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="168,197,82,53" origin="0.5,0.5" />
     <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="168,197,83,54" origin="0.5,0.5" />
     <ContainedSprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,2,71,51" origin="0.5,0.5" />
@@ -2184,8 +2224,8 @@
     <Deconstruct time="10">
       <Item identifier="organicfiber" />
     </Deconstruct>
-  </Item>
-  <Item name="Loose Bungie Cord" description="When combined with metal, this rope can be fashioned into a Loose Grappling Hook." identifier="ita_climber5" hideinmenus="false" maxstacksize="6" sonarsize="5" scale="0.45" tags="smallitem" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
+  </Item>-->
+  <!--<Item name="Loose Bungie Cord" description="When combined with metal, this rope can be fashioned into a Loose Grappling Hook." identifier="ita_climber5" hideinmenus="false" maxstacksize="6" sonarsize="5" scale="0.45" tags="smallitem" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" impactsoundtag="impact_soft">
     <InventoryIcon texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="108,156,66,45" origin="0.5,0.5" />
     <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="108,156,66,45" origin="0.5,0.5" />
     <ContainedSprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
@@ -2194,18 +2234,24 @@
     <Deconstruct time="10">
       <Item identifier="elastin" />
     </Deconstruct>
-  </Item>
+  </Item>-->
   <Item name="Grappling Gun" description="For use in the exploration of Europa's many dry-cave networks." identifier="ita_climber1" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.4" impactsoundtag="impact_metal_light">
     <Sprite texture="Mods/IntoTheAbyss/Content/Campaign/DryCaves/CaveItems.png" sourcerect="1,0,157,95" depth="0.55" origin="0.5,0.5" />
     <Body width="180" height="30" density="50" />
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-5" aimpos="35,-10" handle1="-12,-6" handle2="30,15" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,15" aimpos="35,-10" handle1="-12,-6" handle2="30,15" holdangle="40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon barrelpos="49,10" spread="1" reload="2.0" unskilledspread="10" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <Sound file="Mods/IntoTheAbyss/Content/Items/ita_shoothook.ogg" range="1000" type="OnUse" />
-      <RequiredItems items="climbingammo" type="Contained" msg="ItemMsgSpearRequired" />
+      <RequiredItems items="climbingammo" type="Contained" msg="Out of Ropes" />
+	  <StatusEffect ignorecover="true" onlyinside="true" type="OnUse" target="This" setvalue="true" stackable="false" delay="2">
+		<Explosion range="30.0" structuredamage="0" empstrength="0" camerashake="0" stun="0.15" force="-10" flames="false" smoke="false" shockwave="false" sparks="false" underwaterbubble="false"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
     </RangedWeapon>
-    <ItemContainer itempos="76,20" iteminterval="0,0" hideitems="false" capacity="1" maxstacksize="4" containedstateindicatorstyle="spear">
+    <ItemContainer itempos="76,20" iteminterval="0,0" hideitems="false" capacity="1" maxstacksize="1" containedstateindicatorstyle="spear">
       <Containable items="climbingammo" />
     </ItemContainer>
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -2385,6 +2431,165 @@
       </input>
     </ConnectionPanel>
     <ItemContainer canbeselected="true" capacity="1" itempos="0,0" hideitems="false" />
+  </Item>
+  <!--Ores bug workaround-->
+  <Item name="Ilmenite" identifier="ita_ilmenite" category="Material" Tags="smallitem,ore" maxstacksize="8" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+	<Price baseprice="100" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.1" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="0.75" sold="false" />
+    </Price>
+	<Deconstruct time="5">
+      <Item identifier="titanium" />
+    </Deconstruct>
+    <!-- TODO: sprite and inventory icon -->
+    <LightComponent lightcolor="117,143,123,225" range="150" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="false" castshadows="False">
+      <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+	  <IsActive targetitemcomponent="Holdable" attached="True" />
+    </LightComponent>
+    <ContainedSprite texture="Content/Items/Materials/MineralEnvironment.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible"  depth="0.55" sourcerect="597,292,84,147" origin="0.5,0.5" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.49" sourcerect="512,292,86,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.48" sourcerect="681,292,87,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.51" sourcerect="512,292,86,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.52" sourcerect="681,292,87,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.491" sourcerect="512,292,86,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.53" sourcerect="681,292,87,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/Minerals.png" depth="0.4" sourcerect="810,893,173,131" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.3" sourcerect="272,132,113,121" origin="0.5,0.5" />
+    <Body radius="40" width="20" density="50" />
+	<Pickable canbepicked="true" pickingtime="5.0" msg="[LMB] Crowbar" slots="Any,RightHand,LeftHand" handle1="0,0">
+		<RequiredItem items="crowbar" type="Equipped" />
+	</Pickable>
+    <Holdable slots="Any,RightHand,LeftHand" msg="[LMB] Crowbar" handle1="0,0" attachable="true" reattachable="false"/>
+  </Item>
+  <Item name="Chalcopyrite" identifier="ita_chalcopyrite" category="Material" Tags="smallitem,ore" maxstacksize="8" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Price baseprice="60" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.1" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="0.75" sold="false" />
+    </Price>
+	<Deconstruct time="5">
+      <Item identifier="copper" />
+      <Item identifier="copper" />
+    </Deconstruct>
+    <!-- TODO: sprite and inventory icon -->
+    <LightComponent lightcolor="162,135,83,225" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="false" castshadows="False">
+      <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+	  <IsActive targetitemcomponent="Holdable" attached="True" />
+    </LightComponent>
+    <ContainedSprite texture="Content/Items/Materials/MineralEnvironment.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible"  depth="0.55" sourcerect="512,438,86,148" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.3" sourcerect="781,133,101,113" origin="0.5,0.5" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.49" sourcerect="681,438,87,148" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.48" sourcerect="597,438,84,148" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.51" sourcerect="681,438,87,148" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.52" sourcerect="597,438,84,148" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.491" sourcerect="681,438,87,148" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.53" sourcerect="597,438,84,148" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/Minerals.png" depth="0.4" sourcerect="810,893,173,131" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
+    <Body radius="40" width="20" density="50" />
+	<Pickable canbepicked="true" pickingtime="5.0" msg="[LMB] Crowbar" slots="Any,RightHand,LeftHand" handle1="0,0">
+		<RequiredItem items="crowbar" type="Equipped" />
+	</Pickable>
+    <Holdable slots="Any,RightHand,LeftHand" msg="[LMB] Crowbar" handle1="0,0" attachable="true" reattachable="false"/>
+  </Item>
+  <Item name="Brockite" identifier="ita_brockite" category="Material" Tags="smallitem,ore" maxstacksize="8" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Price baseprice="30" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.1" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="0.75" sold="false" />
+    </Price>
+	<Deconstruct time="5">
+      <Item identifier="phosphorus" />
+      <Item identifier="thorium" />
+    </Deconstruct>
+    <!-- TODO: sprite and inventory icon -->
+    <LightComponent lightcolor="178,108,109,225" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="false" castshadows="False">
+      <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+	  <IsActive targetitemcomponent="Holdable" attached="True" />
+    </LightComponent>
+    <ContainedSprite texture="Content/Items/Materials/MineralEnvironment.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible"  depth="0.55" sourcerect="0,731,86,147" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.3" sourcerect="524,262,109,117" origin="0.5,0.5" />
+    <Body radius="40" width="20" density="50" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.49" sourcerect="85,731,85,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.48" sourcerect="172,731,84,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.51" sourcerect="85,731,85,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.52" sourcerect="172,731,84,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.491" sourcerect="85,731,85,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.53" sourcerect="172,731,84,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/Minerals.png" depth="0.4" sourcerect="810,893,173,131" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
+    <Pickable canbepicked="true" pickingtime="5.0" msg="[LMB] Crowbar" slots="Any,RightHand,LeftHand" handle1="0,0">
+		<RequiredItem items="crowbar" type="Equipped" />
+	</Pickable>
+    <Holdable slots="Any,RightHand,LeftHand" msg="[LMB] Crowbar" handle1="0,0" attachable="true" reattachable="false"/>
+  </Item>
+  <Item name="Diamond" identifier="ita_diamond" category="Material" Tags="smallitem,ore" maxstacksize="8" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Price baseprice="50" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.1" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="0.75" sold="false" />
+    </Price>
+	<Deconstruct time="5">
+      <Item identifier="carbon" />
+      <Item identifier="carbon" />
+      <Item identifier="carbon" />
+    </Deconstruct>
+    <LightComponent lightcolor="160,175,187,225" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="false" castshadows="False">
+      <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+	  <IsActive targetitemcomponent="Holdable" attached="True" />
+    </LightComponent>
+    <ContainedSprite texture="Content/Items/Materials/MineralEnvironment.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible"  depth="0.55" sourcerect="938,0,86,147" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.3" sourcerect="386,6,123,122" origin="0.5,0.5" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.49" sourcerect="768,0,86,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.48" sourcerect="853,0,86,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.51" sourcerect="768,0,86,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.52" sourcerect="853,0,86,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.491" sourcerect="768,0,86,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.53" sourcerect="853,0,86,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/Minerals.png" depth="0.4" sourcerect="810,893,173,131" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
+    <Body radius="40" width="20" density="50" />
+    <Pickable canbepicked="true" pickingtime="5.0" msg="[LMB] Crowbar" slots="Any,RightHand,LeftHand" handle1="0,0">
+		<RequiredItem items="crowbar" type="Equipped" />
+	</Pickable>
+    <Holdable slots="Any,RightHand,LeftHand" msg="[LMB] Crowbar" handle1="0,0" attachable="true" reattachable="false"/>
+  </Item>
+  <Item name="Pyromorphite" identifier="ita_pyromorphite" category="Material" Tags="smallitem,ore" maxstacksize="8" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Price baseprice="30" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.1" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="0.75" sold="false" />
+    </Price>
+	<Deconstruct time="5">
+      <Item identifier="chlorine" />
+      <Item identifier="chlorine" />
+    </Deconstruct>
+    <!-- TODO: sprite and inventory icon -->
+    <LightComponent lightcolor="115,154,127,225" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
+      <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+    </LightComponent>
+    <ContainedSprite texture="Content/Items/Materials/MineralEnvironment.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible"  depth="0.55" sourcerect="853,292,86,147" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.3" sourcerect="772,258,119,123" origin="0.5,0.5" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.49" sourcerect="768,292,86,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.48" sourcerect="938,292,86,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.51" sourcerect="768,292,86,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.52" sourcerect="938,292,86,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.491" sourcerect="768,292,86,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.53" sourcerect="938,292,86,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/Minerals.png" depth="0.4" sourcerect="810,893,173,131" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
+    <Body radius="40" width="20" density="50" />
+    <Pickable canbepicked="true" pickingtime="5.0" msg="[LMB] Crowbar" slots="Any,RightHand,LeftHand" handle1="0,0">
+		<RequiredItem items="crowbar" type="Equipped" />
+	</Pickable>
+    <Holdable slots="Any,RightHand,LeftHand" msg="[LMB] Crowbar" handle1="0,0" attachable="true" reattachable="false"/>
   </Item>
   <!--Purchasable furniture-->
   <Item name="Depth Charge Holder" identifier="ita_container_depthholder1" tags="depthchargeammosource,mediumitem" category="Machine" linkable="false" scale="0.5">
