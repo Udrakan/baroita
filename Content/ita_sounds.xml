@@ -17,12 +17,13 @@
   <music file="Content/Sounds/Music/Layer 4 - Arriving at Destination.ogg" type="endround"/>
   <music file="Content/Sounds/Music/Road to Hell.ogg" type="crewdead"/>
 
+
   <music file="Content/Sounds/Music/Alien Syndicate.ogg" type="default" intensityrange="0,100" loop="false"/>
   <music file="Content/Sounds/Music/Seafloor Cries.ogg" type="default" intensityrange="0,100" loop="false"/>
   <music file="Content/Sounds/Music/Water Of The SSN Rusty Clown.ogg" type="default" intensityrange="0,100" loop="false"/>
   <music file="Content/Sounds/Music/Wondrous Places.ogg" type="default" intensityrange="0,100" loop="false"/>
   <music file="Content/Sounds/Music/Moribund In An Underwater Coffin.ogg" type="default" intensityrange="0,100" loop="false"/>
-  <music file="Content/Sounds/Music/Zack The Rabid Ripper.ogg" type="monster" intensityrange="0,100" loop="false"/>
+  <!--<music file="Content/Sounds/Music/Zack The Rabid Ripper.ogg" type="monster" intensityrange="0,100" loop="false"/>-->
   <music file="Content/Sounds/Music/Fragile Waves.ogg" type="default" intensityrange="0,100" loop="false"/>
   <music file="Content/Sounds/Music/Marching Upstream Part 1.ogg" type="default" intensityrange="0,100" loop="false"/>
 	
@@ -50,6 +51,8 @@
   <music file="Content/Sounds/Music/Layer 12 - Objective Complete.ogg" type="levelend"/>
   <music file="Content/Sounds/Music/Look Behind The Watery Shadows.ogg" type="wreck"/>
   <music file="Content/Sounds/Music/All But Systematic Chaos.ogg" type="ending"/>
+  
+  <music file="Content/Sounds/Music/The Eerie And The Unknown.ogg" type="cave"/>
   
   <damagesound file="Content/Sounds/Damage/StructureBlunt1.ogg" damagerange="0.0,30.0" damagesoundtype="StructureBlunt"/>
   <damagesound file="Content/Sounds/Damage/StructureBlunt2.ogg" damagerange="10.0,50.0" damagesoundtype="StructureBlunt"/>
@@ -124,7 +127,7 @@
   <damagesound file="Content/Sounds/Damage/ArmorBreak3.ogg" damagesoundtype="ArmorBreak" />
   <damagesound file="Content/Sounds/Damage/ArmorBreak4.ogg" damagesoundtype="ArmorBreak" />
 
-  <tinnitus file="Mods/IntoTheAbyss/Content/TinnitusBeQuiet.ogg" />
+  <tinnitus file="Mods/IntoTheAbyss/Content/Sounds/TinnitusBeQuiet.ogg" />
 
   <heartbeatdiastole file="Content/Sounds/HeartbeatDiastole1.ogg" />
   <heartbeatdiastole file="Content/Sounds/HeartbeatDiastole2.ogg" />

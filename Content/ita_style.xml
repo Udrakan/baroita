@@ -195,15 +195,9 @@
   <GUIFrameLarge color="255,255,255,242" textcolor="0,0,0,255">
     <Sprite name="GUIFrameLarge" texture="Content/UI/UIAtlasFrames.png" size="0.0, 0.0" sourcerect="380,5,363,363" slice="402,32,722,349" origin="0.5,0.5" compress="false" />
   </GUIFrameLarge>
-  <MyItemUI color="255,255,255,242" textcolor="0,0,0,255">
-    <Sprite name="ItemUIpaper" texture="Mods/IntoTheAbyss/Content/paper.png" size="0.0, 0.0" sourcerect="0,0,370,370" origin="0.5,0.5" compress="false" />
-  </MyItemUI>
   <ita_document1 color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="ita_document1" texture="Mods/IntoTheAbyss/Content/Items/ita_document_s-3.2a.png" size="0.0, 0.0" sourcerect="0,0,576,600" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="ita_document1" texture="Mods/IntoTheAbyss/Content/Sprites/ita_document_s-3.2a.png" size="0.0, 0.0" sourcerect="0,0,576,600" origin="0.5,0.5" compress="false" tile="false"/>
   </ita_document1>
-  <MyItemUI2 color="255,255,255,242" textcolor="0,0,0,255">
-    <Sprite name="ItemUIpaper" texture="Mods/IntoTheAbyss/Content/paper2.png" size="0.0, 0.0" sourcerect="263,0,511,774" origin="0.5,0.5" compress="false" />
-  </MyItemUI2>
 
   <ItemUI color="255,255,255,242" textcolor="0,0,0,255">
     <Sprite name="ItemUI" texture="Content/UI/UIAtlasFrames.png" size="0.0, 0.0" sourcerect="7,7,360,361" slice="33,38,340,340" origin="0.5,0.5" compress="false" />
