@@ -2761,7 +2761,7 @@
         <ReduceAffliction identifier="damage" amount="0.25" />
       </StatusEffect>
 	  <StatusEffect tags="medical" type="OnContained" target="Character" stackable="false" disabledeltatime="true" delay="1.7" duration="1">
-        <Affliction identifier="hyperactivity" amount="150" />
+        <Affliction identifier="haste" amount="150" />
       </StatusEffect>
       <StatusEffect type="OnContained" target="This" stackable="false" disabledeltatime="true" delay="1.6">
         <sound file="Mods/IntoTheAbyss/Content/Sounds/ita_sodapop1.ogg" range="500" />

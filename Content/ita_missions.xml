@@ -104,7 +104,7 @@
 		<!--TRANSPORT CARGO -->
 		<CargoMission name="" identifier="cargotime1" tags="cargo,cargotime,city1,ita_cargo" type="Cargo" description="" commonness="10" reward="2800" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_timecrate" />
+				<Item identifier="ita_mcrate_time1" />
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="3" />
@@ -122,7 +122,7 @@
 		</CargoMission>
 		<CargoMission name="" identifier="cargowater1" tags="cargo,cargosensitive,city1,ita_cargo" type="Cargo" description="" commonness="50" reward="1700" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_watercrate" />
+				<Item identifier="ita_mcrate_water1" />
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="5" />
@@ -140,7 +140,7 @@
 		</CargoMission>
 		<CargoMission name="" identifier="cargoeggs" tags="cargo,cargomonster2,city1,ita_cargo" type="Cargo" description="" commonness="50" reward="3100" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_eggcrate" />
+				<Item identifier="ita_mcrate_egg1" />
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="3" />
@@ -158,7 +158,7 @@
 		</CargoMission>
 		<CargoMission name="" identifier="cargofragile1" tags="cargo,cargoexplosive,cargosensitive,city1,ita_cargo" type="Cargo" description="" commonness="50" reward="2500" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_impactcrate" />
+				<Item identifier="ita_mcrate_impact1" />
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="3" />
@@ -176,8 +176,8 @@
 		</CargoMission>
 		<CargoMission name="" identifier="cargoeggs2" tags="cargo,cargomonster1,city1,ita_cargo" type="Cargo" description="" commonness="50" reward="1800" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_eggcrate2" />
-				<Item identifier="ita_eggcrate2" />
+				<Item identifier="ita_mcrate_egg2" />
+				<Item identifier="ita_mcrate_egg2" />
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="3" />
@@ -195,7 +195,7 @@
 		</CargoMission>
 		<CargoMission name="" identifier="cargoeggs3" tags="cargo,cargomonster1,city1,ita_cargo" type="Cargo" description="" commonness="50" reward="1900" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_raptorcrate" />
+				<Item identifier="ita_mcrate_raptor1" />
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="3" />

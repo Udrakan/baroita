@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.13.3.11" steamworkshopid="2005463692" installtime="1621196334">
+<contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.13.3.11" steamworkshopid="2005463692" installtime="1621268707">
   <Text file="Mods/IntoTheAbyss/Content/Texts/ita_English.xml" />
   <UIStyle file="Mods/IntoTheAbyss/Content/ita_style.xml" />
   <EventManagerSettings file="Mods/IntoTheAbyss/Content/ita_eventmanagersettings.xml" />
@@ -174,4 +174,5 @@
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave2.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cavehall_horizontal.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_barmodule1L.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_milengineering.sub" />
 </contentpackage>
