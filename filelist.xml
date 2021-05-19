@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.13.3.11" steamworkshopid="2005463692" installtime="1621268707">
+<contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.13.3.11" steamworkshopid="2005463692" installtime="1621460218">
   <Text file="Mods/IntoTheAbyss/Content/Texts/ita_English.xml" />
   <UIStyle file="Mods/IntoTheAbyss/Content/ita_style.xml" />
   <EventManagerSettings file="Mods/IntoTheAbyss/Content/ita_eventmanagersettings.xml" />
@@ -7,6 +7,7 @@
   <RandomEvents file="Mods/IntoTheAbyss/Content/ita_randomevents.xml" />
   <Item file="Mods/IntoTheAbyss/Content/ita_items.xml" />
   <Text file="Mods/IntoTheAbyss/Content/Texts/ita_English.xml" />
+  <Text file="Mods/IntoTheAbyss/Content/Texts/ita_CastillianSpanish.xml" />
   <Sounds file="Mods/IntoTheAbyss/Content/ita_sounds.xml" />
   <Jobs file="Mods/IntoTheAbyss/Content/ita_jobs.xml" />
   <LocationTypes file="Mods/IntoTheAbyss/Content/Map/ita_locationtypes.xml" />
@@ -164,15 +165,11 @@
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave_ice1_junction1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave_ice1_horiza2.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave_ice1_hall2.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave_ice1_horiza3.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave_ice1_special1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave_ice1_horiza4.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave_ice1_entrance2.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shop_climber1R.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shop_bank1R.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave_airlock1.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave2.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cavehall_horizontal.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_barmodule1L.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_milengineering.sub" />
+  <Submarine file="Mods/IntoTheAbyss/Content/Subs/BeaconStation1amodded.sub" />
 </contentpackage>

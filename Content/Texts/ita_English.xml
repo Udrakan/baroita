@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <infotexts language="English" nowhitespace="false" translatedname="English">
---------------------
+
+<!-- When adding new text, do it so at the bottom under the 'New additions' & 'Changed values' respectively. If it's a new tag entirely, put it under the new additions one; If it's an update to an existing value, put it under the changed values one. -->
+<!-- DO NOT EDIT EXISTING TAGS FOR ALREADY TRANSLATED LINES -> if you need a new tag for something, add it under the 'New values' header and comment if there's some other tag that should be replaced -->
+
+	
 	<!--Afflictions-->
---------------------
+	
 	<afflictionname.exposure>Nuclear Waste Exposure</afflictionname.exposure>
 	<afflictiondescription.exposure>Caused by handling hot fuel rods. Severe localised radiation-related burns and blisters.</afflictiondescription.exposure>
 	<afflictioncauseofdeath.exposure>Died of exposure to hot nuclear waste</afflictioncauseofdeath.exposure>
@@ -12,8 +16,6 @@
 	<afflictiondescription.ancientburn>Burns, dark blue blisters and rotten skin, caused by Europan ancient alien technology.</afflictiondescription.ancientburn>
 	<afflictioncauseofdeath.ancientburn>Burned to death</afflictioncauseofdeath.ancientburn>
 	<afflictioncauseofdeathself.ancientburn>You have burned to death.</afflictioncauseofdeathself.ancientburn>
-
-
 
 	<afflictionname.heal1>Treatment</afflictionname.heal1>
 	<afflictiondescription.heal1>Good quality treatment at outpost</afflictiondescription.heal1>
@@ -26,14 +28,14 @@
 
 	<afflictionname.heal4>Well relaxed</afflictionname.heal4>
 	<afflictiondescription.heal4>Drinking in company of relatively sane people at the outpost makes you forget about the horrors of the Sea a little.[PSYCH RESISTANCE UP][PSYCH REGEN UP]</afflictiondescription.heal4>
---------------------
+ 
 	<!--Characters-->
---------------------
+
 	<character.Molochboss>Ancient Moloch</character.Molochboss>
 	<character.OutpostOrangeboy>Domesticated Orange Boy</character.OutpostOrangeboy>
---------------------
+
 	<!--Mission texts-->
---------------------
+
 	<missionname.cargopassanger1>Passenger Transport</missionname.cargopassanger1>
 	<missiondescription.cargopassanger1>Get me to [location2] safely and I'll pay you [reward] marks. </missiondescription.cargopassanger1>
 	<missionsuccess.cargopassanger1>Thanks for the ride.</missionsuccess.cargopassanger1>
@@ -150,195 +152,229 @@
 	<missionheader0.ita_drycave_clear1>Nest Cleared</missionheader0.ita_drycave_clear1>
 	<missionsuccess.ita_drycave_clear1>You've cleared the nest, preventing future growth of monster activity in this area.</missionsuccess.ita_drycave_clear1>
 
---------------------
+
 	<!--Event Texts-->
---------------------
-	<eventtext.ita_missionevent_cargosensitive>"Sensitive cargo needs to be safely delivered! Don't break it."</eventtext.ita_missionevent_cargosensitive>
-	<eventtext.ita_missionevent_cargomonster>"Live creatures need to be delivered. Be careful, or be eaten..."</eventtext.ita_missionevent_cargomonster>
 
-	<eventtext.ita_missionevent_cargobulk>"Large amount of cargo needs to be delivered. You better have a spacious cargo submarine with a lot of crate shelves!"</eventtext.ita_missionevent_cargobulk>
+	<eventtext.itamissioneventcargosensitive>"Sensitive cargo needs to be safely delivered! Don't break it."</eventtext.itamissioneventcargosensitive>
+	<eventtext.itamissioneventcargomonster>"Live creatures need to be delivered. Be careful, or be eaten..."</eventtext.itamissioneventcargomonster>
+	<eventtext.itamissioneventeggtime>"Live creatures need to be delivered. Be careful, or be eaten..."</eventtext.itamissioneventeggtime>
+	<eventtext.itamissioneventeggfridge>"Live creatures need to be delivered. Be careful, or be eaten..."</eventtext.itamissioneventeggfridge>
+	<eventtext.itamissioneventlivemudraptor>"Live creatures need to be delivered. Be careful, or be eaten..."</eventtext.itamissioneventlivemudraptor>
+	<eventtext.itamissioneventcargobulk>"Large amount of cargo needs to be delivered. You better have a spacious cargo submarine with a lot of crate shelves!"</eventtext.itamissioneventcargobulk>
 
-	<eventtext.ita_husk1.p1>Outpost speakers: &quot;Alert! Husks have breached containment! Whoever pushed that button, you'll pay for this!&quot;&#xD;&#xA;[Outpost &#x9;REP-200]</eventtext.ita_husk1.p1>
-	<eventtext.ita_husk1.p2>Outpost speakers: &quot;Alert! Husks have breached containment! Whoever pushed that button, you'll pay for this!&quot; This will make the Cult happy... &#xD;&#xA;[Husk &#x9;&#x9;REP+50 ]&#xD;&#xA;[Coalition  REP-70 ]&#xD;&#xA;[Outpost &#x9;REP-200]</eventtext.ita_husk1.p2>
+	<eventtext.itahusk1.p1>Outpost speakers: &quot;Alert! Husks have breached containment! Whoever pushed that button, you'll pay for this!&quot;&#xD;&#xA;[Outpost &#x9;REP-200]</eventtext.itahusk1.p1>
+	<eventtext.itahusk1.p2>Outpost speakers: &quot;Alert! Husks have breached containment! Whoever pushed that button, you'll pay for this!&quot; This will make the Cult happy... &#xD;&#xA;[Husk &#x9;&#x9;REP+50 ]&#xD;&#xA;[Coalition  REP-70 ]&#xD;&#xA;[Outpost &#x9;REP-200]</eventtext.itahusk1.p2>
 
-	<eventtext.ita_crawler1.p1>Outpost speakers: &quot;Crawlers have breached containment! Whoever pushed that button, you'll pay for this!&quot;&#xD;&#xA;[OUTPOST &#x9;  REP-200]&#xD;&#xA;[COALITION    REP-30 ]</eventtext.ita_crawler1.p1>
-	<eventtext.ita_crawler1.p2>Outpost speakers: &quot;Crawlers have breached containment! Whoever pushed that button, you'll pay for this!&quot;&#xD;&#xA;[OUTPOST &#x9;  REP-200]&#xD;&#xA;[SEPARATISTS  REP+20 ]&#xD;&#xA;[COALITION    REP-30 ]</eventtext.ita_crawler1.p2>
+	<eventtext.itacrawler1.p1>Outpost speakers: &quot;Crawlers have breached containment! Whoever pushed that button, you'll pay for this!&quot;&#xD;&#xA;[OUTPOST &#x9;  REP-200]&#xD;&#xA;[COALITION    REP-30 ]</eventtext.itacrawler1.p1>
+	<eventtext.itacrawler1.p2>Outpost speakers: &quot;Crawlers have breached containment! Whoever pushed that button, you'll pay for this!&quot;&#xD;&#xA;[OUTPOST &#x9;  REP-200]&#xD;&#xA;[SEPARATISTS  REP+20 ]&#xD;&#xA;[COALITION    REP-30 ]</eventtext.itacrawler1.p2>
 
-	<eventtext.v1_mechanicsarespecial1>The mechanical maintenance crew chief working on a beaten-up old shuttle engine scowls at you for a moment, as if sizing you up.</eventtext.v1_mechanicsarespecial1>
-	<eventtext.v1_mechanicsarespecial.cl1>Engineering bay is full of serious, tired workers. It would be quite a feat to make people like those happier."</eventtext.v1_mechanicsarespecial.cl1>
-	<eventtext.v1_mechanicsarespecial.cl2>[BIKE HORN] Improvise a short act with your trusty red bike horn."</eventtext.v1_mechanicsarespecial.cl2>
-	<eventtext.v1_mechanicsarespecial.cl3>&quot;You make a very sad face, pointing at the engine and pulling your clown hair down. You move the bikehorn behind the exhaust, slap the engine and honk weakly. Seriousness of the room drops as they burst out in laughter. The mechanic allows a tiny smile to appear on his face and  hands you a 50mk bill.&quot;&#xD;&#xA;&#xD;&#xA;[CLOWNS REP +10]&#xD;&#xA;[LOCATION REP +10]</eventtext.v1_mechanicsarespecial.cl3>
-	<eventtext.v1_mechanicsarespecial.cl4>"[GUITAR] Try to touch worker's hearts with a lovely tune."</eventtext.v1_mechanicsarespecial.cl4>
-	<eventtext.v1_mechanicsarespecial.cl5>Theres too much noise and work here drowning your guitar's sound and the few notes that reach the workers have no effect on them. A sad day...</eventtext.v1_mechanicsarespecial.cl5>
-	<eventtext.v1_mechanicsarespecial.cl6>Take a wrench from the shelf and bonk your self on the head."</eventtext.v1_mechanicsarespecial.cl6>
-	<eventtext.v1_mechanicsarespecial.cl7>The mechanic frowns.&#xD;&#xA;&quot;Get out of here, clown, before we beat you up.&quot;&#xD;&#xA;&#xD;&#xA;[CLOWNS REP -5]&#xD;&#xA;[LOCATION REP -5]</eventtext.v1_mechanicsarespecial.cl7>
-	<eventtext.v1_mechanicsarespecial.2>[HELM 70] You remember this engine's model code from an old invoice paper.</eventtext.v1_mechanicsarespecial.2>
-	<eventtext.v1_mechanicsarespecial.3>&quot;I recognise this engine. They purchase those for Venture shuttles.&quot;</eventtext.v1_mechanicsarespecial.3>
-	<eventtext.v1_mechanicsarespecial.4>&quot;Smart-ass.&quot;&#xD;&#xA;&#xD;&#xA;He clearly doesn’t care much for what he sees and returns to his work. Apparently you’ve somehow not passed muster.</eventtext.v1_mechanicsarespecial.4>
-	<eventtext.v1_mechanicsarespecial.5>Keep your mouth shut.</eventtext.v1_mechanicsarespecial.5>
-	<eventtext.v1_mechanicsarespecial.6>&quot;You there, you look halfway competent. Give me a hand with this engine.&quot;</eventtext.v1_mechanicsarespecial.6>
-	<eventtext.v1_mechanicsarespecial.7>&quot;Fuck off, greasy.&quot;"</eventtext.v1_mechanicsarespecial.7>
-	<eventtext.v1_mechanicsarespecial.8>The mechanic shakes his head in disbelief and continues working on the engine.&#xD;&#xA;[LOCATION REP -10]</eventtext.v1_mechanicsarespecial.8>
-	<eventtext.v1_mechanicsarespecial.9>Roll up your sleeves and help them with the engine."</eventtext.v1_mechanicsarespecial.9>
-	<eventtext.v1_mechanicsarespecial.10>You roll up your sleeves and get to work refitting the engine with him. After a few minutes of work you both manage to get it running. “Thanks. I’m sure I’d have got it going on my own eventually but you’ve saved me some time. Let me know if you want any work done on your sub and I’ll see about giving you a little discount for your trouble.”&#xD;&#xA;[MECHANICAL +5]&#xD;&#xA;[LOCATION REP +20]&#xD;&#xA;[UPGRADE SALE 15%]</eventtext.v1_mechanicsarespecial.10>
-	<eventtext.v1_mechanicsarespecial.11>You roll up your sleeves and get to work refitting the engine with him. In spite of your best efforts though, the engine refuses to start. He slams shut the access panel. “Well I guess this is one for the scrappers. Thanks for the help anyhow.”&#xD;&#xA;[MECHANICAL +1]&#xD;&#xA;[LOCATION REP +5]</eventtext.v1_mechanicsarespecial.11>
-	<eventtext.v1_mechanicsarespecial.12>He clearly doesn’t care much for what he sees and returns to his work. Apparently you’ve somehow not passed muster.&#xD;&#xA;&#xD;&#xA;&quot;If you have someone who knows his way around engines in your crew, send them here.&quot;</eventtext.v1_mechanicsarespecial.12>
-	<eventtext.v1_mechanicsarespecial.13>[MECHANICAL 90] You easily recognise the engine.</eventtext.v1_mechanicsarespecial.13>
-	<eventtext.v1_mechanicsarespecial.14>&quot;That's a Venture shuttle engine. These tend to break down all the time, keeping people like you and me in bussiness.&quot;</eventtext.v1_mechanicsarespecial.14>
+	<eventtext.v1mechanicsarespecial1>The mechanical maintenance crew chief working on a beaten-up old shuttle engine scowls at you for a moment, as if sizing you up.</eventtext.v1mechanicsarespecial1>
+	<eventtext.v1mechanicsarespecial.cl1>Engineering bay is full of serious, tired workers. It would be quite a feat to make people like those happier."</eventtext.v1mechanicsarespecial.cl1>
+	<eventtext.v1mechanicsarespecial.cl2>[BIKE HORN] Improvise a short act with your trusty red bike horn."</eventtext.v1mechanicsarespecial.cl2>
+	<eventtext.v1mechanicsarespecial.cl3>&quot;You make a very sad face, pointing at the engine and pulling your clown hair down. You move the bikehorn behind the exhaust, slap the engine and honk weakly. Seriousness of the room drops as they burst out in laughter. The mechanic allows a tiny smile to appear on his face and  hands you a 50mk bill.&quot;&#xD;&#xA;&#xD;&#xA;[CLOWNS REP +10]&#xD;&#xA;[LOCATION REP +10]</eventtext.v1mechanicsarespecial.cl3>
+	<eventtext.v1mechanicsarespecial.cl4>"[GUITAR] Try to touch worker's hearts with a lovely tune."</eventtext.v1mechanicsarespecial.cl4>
+	<eventtext.v1mechanicsarespecial.cl5>Theres too much noise and work here drowning your guitar's sound and the few notes that reach the workers have no effect on them. A sad day...</eventtext.v1mechanicsarespecial.cl5>
+	<eventtext.v1mechanicsarespecial.cl6>Take a wrench from the shelf and bonk your self on the head."</eventtext.v1mechanicsarespecial.cl6>
+	<eventtext.v1mechanicsarespecial.cl7>The mechanic frowns.&#xD;&#xA;&quot;Get out of here, clown, before we beat you up.&quot;&#xD;&#xA;&#xD;&#xA;[CLOWNS REP -5]&#xD;&#xA;[LOCATION REP -5]</eventtext.v1mechanicsarespecial.cl7>
+	<eventtext.v1mechanicsarespecial.2>[HELM 70] You remember this engine's model code from an old invoice paper.</eventtext.v1mechanicsarespecial.2>
+	<eventtext.v1mechanicsarespecial.3>&quot;I recognise this engine. They purchase those for Venture shuttles.&quot;</eventtext.v1mechanicsarespecial.3>
+	<eventtext.v1mechanicsarespecial.4>&quot;Smart-ass.&quot;&#xD;&#xA;&#xD;&#xA;He clearly doesn’t care much for what he sees and returns to his work. Apparently you’ve somehow not passed muster.</eventtext.v1mechanicsarespecial.4>
+	<eventtext.v1mechanicsarespecial.5>Keep your mouth shut.</eventtext.v1mechanicsarespecial.5>
+	<eventtext.v1mechanicsarespecial.6>&quot;You there, you look halfway competent. Give me a hand with this engine.&quot;</eventtext.v1mechanicsarespecial.6>
+	<eventtext.v1mechanicsarespecial.7>&quot;Fuck off, greasy.&quot;"</eventtext.v1mechanicsarespecial.7>
+	<eventtext.v1mechanicsarespecial.8>The mechanic shakes his head in disbelief and continues working on the engine.&#xD;&#xA;[LOCATION REP -10]</eventtext.v1mechanicsarespecial.8>
+	<eventtext.v1mechanicsarespecial.9>Roll up your sleeves and help them with the engine."</eventtext.v1mechanicsarespecial.9>
+	<eventtext.v1mechanicsarespecial.10>You roll up your sleeves and get to work refitting the engine with him. After a few minutes of work you both manage to get it running. “Thanks. I’m sure I’d have got it going on my own eventually but you’ve saved me some time. Let me know if you want any work done on your sub and I’ll see about giving you a little discount for your trouble.”&#xD;&#xA;[MECHANICAL +5]&#xD;&#xA;[LOCATION REP +20]&#xD;&#xA;[UPGRADE SALE 15%]</eventtext.v1mechanicsarespecial.10>
+	<eventtext.v1mechanicsarespecial.11>You roll up your sleeves and get to work refitting the engine with him. In spite of your best efforts though, the engine refuses to start. He slams shut the access panel. “Well I guess this is one for the scrappers. Thanks for the help anyhow.”&#xD;&#xA;[MECHANICAL +1]&#xD;&#xA;[LOCATION REP +5]</eventtext.v1mechanicsarespecial.11>
+	<eventtext.v1mechanicsarespecial.12>He clearly doesn’t care much for what he sees and returns to his work. Apparently you’ve somehow not passed muster.&#xD;&#xA;&#xD;&#xA;&quot;If you have someone who knows his way around engines in your crew, send them here.&quot;</eventtext.v1mechanicsarespecial.12>
+	<eventtext.v1mechanicsarespecial.13>[MECHANICAL 90] You easily recognise the engine.</eventtext.v1mechanicsarespecial.13>
+	<eventtext.v1mechanicsarespecial.14>&quot;That's a Venture shuttle engine. These tend to break down all the time, keeping people like you and me in bussiness.&quot;</eventtext.v1mechanicsarespecial.14>
 
-	<eventtext.v2_givingdirections.1>&quot;I see you're lost. I'll ask my crewmate if he can show you a way out.&quot;</eventtext.v2_givingdirections.1>
-	<eventtext.v2_givingdirections.2>&quot;I'd appreciate that, thanks.&quot;</eventtext.v2_givingdirections.2>
-	<eventtext.v2_givingdirections.3>[LUCK% OR WEAPONS 60] Attempt to grab their revolver, when their back is turned...</eventtext.v2_givingdirections.3>
-	<eventtext.v2_givingdirections.4>[HELM 50] “Hey, can I see that map? What’s the fastest route out of this shithole?”</eventtext.v2_givingdirections.4>
-	<eventtext.v2_givingdirections.5>Let somebody else deal with the captain's problem.</eventtext.v2_givingdirections.5>
+	<eventtext.v2givingdirections.1>&quot;I see you're lost. I'll ask my crewmate if he can show you a way out.&quot;</eventtext.v2givingdirections.1>
+	<eventtext.v2givingdirections.2>&quot;I'd appreciate that, thanks.&quot;</eventtext.v2givingdirections.2>
+	<eventtext.v2givingdirections.3>[LUCK% OR WEAPONS 60] Attempt to grab their revolver, when their back is turned...</eventtext.v2givingdirections.3>
+	<eventtext.v2givingdirections.4>[HELM 50] “Hey, can I see that map? What’s the fastest route out of this shithole?”</eventtext.v2givingdirections.4>
+	<eventtext.v2givingdirections.5>Let somebody else deal with the captain's problem.</eventtext.v2givingdirections.5>
 
-	<eventtext.v3_soundinthevent1>[SCREWDRIVER][%LUCK OR MECHANICAL 60] Unscrew the vent to take a better look inside.</eventtext.v3_soundinthevent1>
-	<eventtext.v3_soundinthevent2>You manage to get the vent off easily enough and spot the source of the noise right away: The fan blade is brushing against a small metal box. Carefully retrieving it, you open it and find 1,000 marks! You still hear the sound further back in the vent though, but who cares.&#xD;&#xA;[1000mk]&#xD;&#xA;[MECHANICAL +3]</eventtext.v3_soundinthevent2>
-	<eventtext.v3_soundinthevent3>You fumble the vent cover as you’re removing it and brush against the spinning blade. It slices into your hand before you can pull away, nicking an artery and getting stuck.&#xD;&#xA;&#xD;&#xA;[WEAPONS 30] SUCCESS&#xD;&#xA;&#xD;&#xA;Grinning with pain, you managed to nudge the box from behind the vent blades. You open it and find 1000mk inside! You still hear the sound further back in the vent, but who cares anymore.&#xD;&#xA;&#xD;&#xA;[1000mk]&#xD;&#xA;[WEAPONS +3]&#xD;&#xA;</eventtext.v3_soundinthevent3>
-	<eventtext.v3_soundinthevent4>You fumble the vent cover as you’re removing it and brush against the spinning blade. It slices into your hand before you can pull away, nicking an artery and getting stuck.</eventtext.v3_soundinthevent4>
-	<eventtext.v3_soundinthevent5>You can't unscrew the vent with bare hands!</eventtext.v3_soundinthevent5>
-	<eventtext.v3_soundinthevent6>[FLASHLIGHT] Shine flashlight through the vent and look for anything unusual.</eventtext.v3_soundinthevent6>
-	<eventtext.v3_soundinthevent7>You see a small metal box brushing against the vent blades! You'd have to unscrew the vent to get it though...</eventtext.v3_soundinthevent7>
-	<eventtext.v3_soundinthevent8>You search your pockets for flashlight, but you don't have any. Maybe one of your crewmates has one...</eventtext.v3_soundinthevent8>
-	<eventtext.v3_soundinthevent9>Ignore it for now. Maybe one of your crewmates will want to deal with this...</eventtext.v3_soundinthevent9>
+	<eventtext.v3soundinthevent1>[SCREWDRIVER][%LUCK OR MECHANICAL 60] Unscrew the vent to take a better look inside.</eventtext.v3soundinthevent1>
+	<eventtext.v3soundinthevent2>You manage to get the vent off easily enough and spot the source of the noise right away: The fan blade is brushing against a small metal box. Carefully retrieving it, you open it and find 1,000 marks! You still hear the sound further back in the vent though, but who cares.&#xD;&#xA;[1000mk]&#xD;&#xA;[MECHANICAL +3]</eventtext.v3soundinthevent2>
+	<eventtext.v3soundinthevent3>You fumble the vent cover as you’re removing it and brush against the spinning blade. It slices into your hand before you can pull away, nicking an artery and getting stuck.&#xD;&#xA;&#xD;&#xA;[WEAPONS 30] SUCCESS&#xD;&#xA;&#xD;&#xA;Grinning with pain, you managed to nudge the box from behind the vent blades. You open it and find 1000mk inside! You still hear the sound further back in the vent, but who cares anymore.&#xD;&#xA;&#xD;&#xA;[1000mk]&#xD;&#xA;[WEAPONS +3]&#xD;&#xA;</eventtext.v3soundinthevent3>
+	<eventtext.v3soundinthevent4>You fumble the vent cover as you’re removing it and brush against the spinning blade. It slices into your hand before you can pull away, nicking an artery and getting stuck.</eventtext.v3soundinthevent4>
+	<eventtext.v3soundinthevent5>You can't unscrew the vent with bare hands!</eventtext.v3soundinthevent5>
+	<eventtext.v3soundinthevent6>[FLASHLIGHT] Shine flashlight through the vent and look for anything unusual.</eventtext.v3soundinthevent6>
+	<eventtext.v3soundinthevent7>You see a small metal box brushing against the vent blades! You'd have to unscrew the vent to get it though...</eventtext.v3soundinthevent7>
+	<eventtext.v3soundinthevent8>You search your pockets for flashlight, but you don't have any. Maybe one of your crewmates has one...</eventtext.v3soundinthevent8>
+	<eventtext.v3soundinthevent9>Ignore it for now. Maybe one of your crewmates will want to deal with this...</eventtext.v3soundinthevent9>
 
-	<eventtext.v4_goodsamaritan.1>You come across an unconscious worker. There are no signs of violence and nobody else is around. Healing a local might cost you, but it will be beneficial on your relationships with people here.</eventtext.v4_goodsamaritan.1>
-	<eventtext.v4_goodsamaritan.2>After skillfully injecting just a little bit of Naloxone, you discover that the patient has paraben hypersensitivity. Left with no other options, you administer the naloxone in small doses over longer period of time and carefully observe patient's reaction. They seem to be getting better.&#xD;&#xA;&#xD;&#xA;[MEDICAL 60 or LUCK% SUCCESS]&#xD;&#xA;[+5 MEDICAL]</eventtext.v4_goodsamaritan.2>
-	<eventtext.v4_goodsamaritan.3>&quot;Hey. Thanks for getting me back on my feet. I tried some opiates to heal the pain of loosing my Orangeboy to a bunch of vent mudraptors, but it didn't work for me. I don't have much to give you, but I'll tell my friend at the shop that you helped me. They'll give you a discount.&quot;&#xD;&#xA;&#xD;&#xA;[REWARD 50mk]&#xD;&#xA;[10% SHOP SALE]&#xD;&#xA;[LOCATION REP +10]</eventtext.v4_goodsamaritan.3>
-	<eventtext.v4_goodsamaritan.4>&quot;Hey. Thanks for getting me back on my feet. I tried some opiates to heal the pain of loosing my Orangeboy to a bunch of vent mudraptors, but it didn't work for me. I'd give you some cash, but some bastard had to steal it after I blacked out. I'll tell my friend at the shop that you helped me. They'll give you a discount.&quot;&#xD;&#xA;&#xD;&#xA;[10% SHOP SALE]&#xD;&#xA;[LOCATION REP +10]</eventtext.v4_goodsamaritan.4>
-	<eventtext.v4_goodsamaritan.5>The worker had a bad reaction to your medicine. Area around the injection is swelling quickly and their breathing is irregular. People start being curious - It's time to leave.&#xD;&#xA;&#xD;&#xA;[MEDICAL 60 or LUCK% FAIL]</eventtext.v4_goodsamaritan.5>
+	<eventtext.v4goodsamaritan.1>You come across an unconscious worker. There are no signs of violence and nobody else is around. Healing a local might cost you, but it will be beneficial on your relationships with people here.</eventtext.v4goodsamaritan.1>
+	<eventtext.v4goodsamaritan.2>After skillfully injecting just a little bit of Naloxone, you discover that the patient has paraben hypersensitivity. Left with no other options, you administer the naloxone in small doses over longer period of time and carefully observe patient's reaction. They seem to be getting better.&#xD;&#xA;&#xD;&#xA;[MEDICAL 60 or LUCK% SUCCESS]&#xD;&#xA;[+5 MEDICAL]</eventtext.v4goodsamaritan.2>
+	<eventtext.v4goodsamaritan.3>&quot;Hey. Thanks for getting me back on my feet. I tried some opiates to heal the pain of loosing my Orangeboy to a bunch of vent mudraptors, but it didn't work for me. I don't have much to give you, but I'll tell my friend at the shop that you helped me. They'll give you a discount.&quot;&#xD;&#xA;&#xD;&#xA;[REWARD 50mk]&#xD;&#xA;[10% SHOP SALE]&#xD;&#xA;[LOCATION REP +10]</eventtext.v4goodsamaritan.3>
+	<eventtext.v4goodsamaritan.4>&quot;Hey. Thanks for getting me back on my feet. I tried some opiates to heal the pain of loosing my Orangeboy to a bunch of vent mudraptors, but it didn't work for me. I'd give you some cash, but some bastard had to steal it after I blacked out. I'll tell my friend at the shop that you helped me. They'll give you a discount.&quot;&#xD;&#xA;&#xD;&#xA;[10% SHOP SALE]&#xD;&#xA;[LOCATION REP +10]</eventtext.v4goodsamaritan.4>
+	<eventtext.v4goodsamaritan.5>The worker had a bad reaction to your medicine. Area around the injection is swelling quickly and their breathing is irregular. People start being curious - It's time to leave.&#xD;&#xA;&#xD;&#xA;[MEDICAL 60 or LUCK% FAIL]</eventtext.v4goodsamaritan.5>
 
-	<eventtext.v5_impromptuengineering.1>A nearby research terminal draws your attention. It flickers on and off rapidly for a while, then goes dark.</eventtext.v5_impromptuengineering.1>
-	<eventtext.v5_impromptuengineering.2>[SCREWDRIVER] Investigate</eventtext.v5_impromptuengineering.2>
-	<eventtext.v5_impromptuengineering.3>You try pressing a couple buttons. No response. Opening a side panel reveals a tangle of wires and a couple of FPGA circuits seemingly in perfect condition.</eventtext.v5_impromptuengineering.3>
-	<eventtext.v5_impromptuengineering.4>[ELECTRICAL 50] Scavenge for parts</eventtext.v5_impromptuengineering.4>
-	<eventtext.v5_impromptuengineering.5>[LUCK% OR ELECTRICAL 60] Attempt to repair the terminal</eventtext.v5_impromptuengineering.5>
-	<eventtext.v5_impromptuengineering.6>You reconnect the display power cables and the terminal comes back to life. Poking around the system reveals some opportunities. Looks like it’s connected to the outpost’s outfitting service. What do you want to do?</eventtext.v5_impromptuengineering.6>
-	<eventtext.v5_impromptuengineering.7>Request experimental coilgun ammunition</eventtext.v5_impromptuengineering.7>
-	<eventtext.v5_impromptuengineering.8>After clicking around a bit, you successfully order two boxes of physicorium coilgun ammunition for your vessel, free of charge.</eventtext.v5_impromptuengineering.8>
-	<eventtext.v5_impromptuengineering.9>Install an old-school first person shooter game on the terminal&#xD;&#xA;[ELECTRICAL +5]</eventtext.v5_impromptuengineering.9>
-	<eventtext.v5_impromptuengineering.10>Poke around the files for latest medical research&#xD;&#xA;[MEDICAL +5]</eventtext.v5_impromptuengineering.10>
-	<eventtext.v5_impromptuengineering.11>You find medical fabricator interface that controls production of Compound N very efficiently. Seems this outpost is supplying the Coalition with explosives.</eventtext.v5_impromptuengineering.11>
-	<eventtext.v5_impromptuengineering.12>[SEPARATISTS REP 30] Switch the recipe to Volatile Compound N... [SEPARATISTS REP +10]</eventtext.v5_impromptuengineering.12>
-	<eventtext.v5_impromptuengineering.13>You find an interesting medical fabricator interface that controls production of Compound N very efficiently. You study the procedures and gain some understanding from it.</eventtext.v5_impromptuengineering.13>
-	<eventtext.v5_impromptuengineering.14>Search for information about alien creature anatomy&#xD;&#xA;[WEAPONS +5]</eventtext.v5_impromptuengineering.14>
-	<eventtext.v5_impromptuengineering.15>There is a detailed cross-section picture of a mudraptor. It seems like crouching and shooting it in the underbelly might be the best way to deal with the armored ones. Pointblank headshots with shotgun into jaw might decapitate them.</eventtext.v5_impromptuengineering.15>
-	<eventtext.v5_impromptuengineering.16>Leave this to the electrician</eventtext.v5_impromptuengineering.16>
+	<eventtext.v5impromptuengineering.1>A nearby research terminal draws your attention. It flickers on and off rapidly for a while, then goes dark.</eventtext.v5impromptuengineering.1>
+	<eventtext.v5impromptuengineering.2>[SCREWDRIVER] Investigate</eventtext.v5impromptuengineering.2>
+	<eventtext.v5impromptuengineering.3>You try pressing a couple buttons. No response. Opening a side panel reveals a tangle of wires and a couple of FPGA circuits seemingly in perfect condition.</eventtext.v5impromptuengineering.3>
+	<eventtext.v5impromptuengineering.4>[ELECTRICAL 50] Scavenge for parts</eventtext.v5impromptuengineering.4>
+	<eventtext.v5impromptuengineering.5>[LUCK% OR ELECTRICAL 60] Attempt to repair the terminal</eventtext.v5impromptuengineering.5>
+	<eventtext.v5impromptuengineering.6>You reconnect the display power cables and the terminal comes back to life. Poking around the system reveals some opportunities. Looks like it’s connected to the outpost’s outfitting service. What do you want to do?</eventtext.v5impromptuengineering.6>
+	<eventtext.v5impromptuengineering.7>Request experimental coilgun ammunition</eventtext.v5impromptuengineering.7>
+	<eventtext.v5impromptuengineering.8>After clicking around a bit, you successfully order two boxes of physicorium coilgun ammunition for your vessel, free of charge.</eventtext.v5impromptuengineering.8>
+	<eventtext.v5impromptuengineering.9>Install an old-school first person shooter game on the terminal&#xD;&#xA;[ELECTRICAL +5]</eventtext.v5impromptuengineering.9>
+	<eventtext.v5impromptuengineering.9.1>A job well done.</eventtext.v5impromptuengineering.9.1>
+	<eventtext.v5impromptuengineering.10>Poke around the files for latest medical research&#xD;&#xA;[MEDICAL +5]</eventtext.v5impromptuengineering.10>
+	<eventtext.v5impromptuengineering.11>You find medical fabricator interface that controls production of Compound N very efficiently. Seems this outpost is supplying the Coalition with explosives.</eventtext.v5impromptuengineering.11>
+	<eventtext.v5impromptuengineering.11.1>Study the production [MEDICAL +5]"</eventtext.v5impromptuengineering.11.1>
+	<eventtext.v5impromptuengineering.12>[SEPARATISTS REP 30] Switch the recipe to Volatile Compound N... [SEPARATISTS REP +10]</eventtext.v5impromptuengineering.12>
+	<eventtext.v5impromptuengineering.13>You find an interesting medical fabricator interface that controls production of Compound N very efficiently. You study the procedures and gain some understanding from it.</eventtext.v5impromptuengineering.13>
+	<eventtext.v5impromptuengineering.13.1>A job well done.</eventtext.v5impromptuengineering.13.1>
+	<eventtext.v5impromptuengineering.14>Search for information about alien creature anatomy&#xD;&#xA;[WEAPONS +5]</eventtext.v5impromptuengineering.14>
+	<eventtext.v5impromptuengineering.15>There is a detailed cross-section picture of a mudraptor. It seems like crouching and shooting it in the underbelly might be the best way to deal with the armored ones. Pointblank headshots with shotgun into jaw might decapitate them.</eventtext.v5impromptuengineering.15>
+	<eventtext.v5impromptuengineering.15.1>A job well done.</eventtext.v5impromptuengineering.15.1>
+	<eventtext.v5impromptuengineering.16>Leave this to the electrician</eventtext.v5impromptuengineering.16>
 
-	<eventtext.v8_propaganda.1>[SPRAYER+ETHANOL] Show locals a good example of an upstanding citizen by getting rid of the vandalism.</eventtext.v8_propaganda.1>
-	<eventtext.v8_propaganda.2>[PAINT CAN] Add some of your own flair too.</eventtext.v8_propaganda.2>
-	<eventtext.v8_propaganda.3>Keep walking.</eventtext.v8_propaganda.3>
-	<eventtext.v8_propaganda.4>People look at you cleaning the mess. They start whispering among each other, speculating whether you are a Coalition higher up. Some of them give you a sharp look and walk away together...&#xD;&#xA;[LOCATION REP +15]&#xD;&#xA;[COALITION REP +10]&#xD;&#xA;[SEPARATIST REP -10]</eventtext.v8_propaganda.4>
-	<eventtext.v8_propaganda.5>You draw some vulgar art of your own, which is enough to rile up the people to start arguing even more and a fight breaks out!&#xD;&#xA;[LOCATION REP -15]&#xD;&#xA;[COALITION REP -30]&#xD;&#xA;[SEPARATIST REP +10]</eventtext.v8_propaganda.5>
-	<eventtext.v8_propaganda.6>A little bit of chaos will make people think twice about Coalition's so called &quot;Order and Safety&quot;.</eventtext.v8_propaganda.6>
-	<eventtext.v8_propaganda.7>Damn, no paint can on you? What kind of rebel are you? Go grab some.</eventtext.v8_propaganda.7>
+	<eventtext.v8propaganda.1>[SPRAYER+ETHANOL] Show locals a good example of an upstanding citizen by getting rid of the vandalism.</eventtext.v8propaganda.1>
+	<eventtext.v8propaganda.2>[PAINT CAN] Add some of your own flair too.</eventtext.v8propaganda.2>
+	<eventtext.v8propaganda.3>Keep walking.</eventtext.v8propaganda.3>
+	<eventtext.v8propaganda.4>People look at you cleaning the mess. They start whispering among each other, speculating whether you are a Coalition higher up. Some of them give you a sharp look and walk away together...&#xD;&#xA;[LOCATION REP +15]&#xD;&#xA;[COALITION REP +10]&#xD;&#xA;[SEPARATIST REP -10]</eventtext.v8propaganda.4>
+	<eventtext.v8propaganda.5>You draw some vulgar art of your own, which is enough to rile up the people to start arguing even more and a fight breaks out!&#xD;&#xA;[LOCATION REP -15]&#xD;&#xA;[COALITION REP -30]&#xD;&#xA;[SEPARATIST REP +10]</eventtext.v8propaganda.5>
+	<eventtext.v8propaganda.6>A little bit of chaos will make people think twice about Coalition's so called &quot;Order and Safety&quot;.</eventtext.v8propaganda.6>
+	<eventtext.v8propaganda.7>Damn, no paint can on you? What kind of rebel are you? Go grab some.</eventtext.v8propaganda.7>
 
-	<eventtext.ita_collectorsell1>&quot;Artifact sold.&quot;[+1400mk][+7 OUTPOST REP]</eventtext.ita_collectorsell1>
+	<eventtext.itacollectorsell1>&quot;Artifact sold.&quot;[+1400mk][+7 OUTPOST REP]</eventtext.itacollectorsell1>
 
-	<eventtext.ita_prisonbreak1.1>Outpost speaker: &quot;The terrorist was released from his cell without authorisation! Kill him and his associates!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]</eventtext.ita_prisonbreak1.1>
-	<eventtext.ita_prisonbreak1.2>Outpost speaker: &quot;The terrorist was released from his cell without authorisation! Kill him and his associates!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]&#xD;&#xA;[COALITION   REP-45]&#xD;&#xA;[SEPARATISTS REP+20]</eventtext.ita_prisonbreak1.2>
+	<eventtext.itaprisonbreak1.1>Outpost speaker: &quot;The terrorist was released from his cell without authorisation! Kill him and his associates!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]</eventtext.itaprisonbreak1.1>
+	<eventtext.itaprisonbreak1.2>Outpost speaker: &quot;The terrorist was released from his cell without authorisation! Kill him and his associates!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]&#xD;&#xA;[COALITION   REP-45]&#xD;&#xA;[SEPARATISTS REP+20]</eventtext.itaprisonbreak1.2>
 
-	<eventtext.ita_prisonbreak2.1>Outpost speaker: &quot;The saboteur was released from his cell without authorisation! Kill him and his associates!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]</eventtext.ita_prisonbreak2.1>
-	<eventtext.ita_prisonbreak2.2>Outpost speaker: &quot;The saboteur was released from his cell without authorisation! Kill him and his associates!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]&#xD;&#xA;[COALITION   REP-45]&#xD;&#xA;[CLOWNS REP+20]</eventtext.ita_prisonbreak2.2>
+	<eventtext.itaprisonbreak2.1>Outpost speaker: &quot;The saboteur was released from his cell without authorisation! Kill him and his associates!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]</eventtext.itaprisonbreak2.1>
+	<eventtext.itaprisonbreak2.2>Outpost speaker: &quot;The saboteur was released from his cell without authorisation! Kill him and his associates!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]&#xD;&#xA;[COALITION   REP-45]&#xD;&#xA;[CLOWNS REP+20]</eventtext.itaprisonbreak2.2>
 
-	<eventtext.ita_prisonescape1.0.1>Outpost speaker: &quot;The prisoners were released by the submarine crew! Kill them!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]</eventtext.ita_prisonescape1.0.1>
-	<eventtext.ita_prisonescape1.0.2>Outpost speaker: &quot;The prisoners were released by the submarine crew! Kill them!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]&#xD;&#xA;[COALITION   REP-50]&#xD;&#xA;[SEPARATISTS REP+10]</eventtext.ita_prisonescape1.0.2>
+	<eventtext.itaprisonescape1.0.1>Outpost speaker: &quot;The prisoners were released by the submarine crew! Kill them!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]</eventtext.itaprisonescape1.0.1>
+	<eventtext.itaprisonescape1.0.2>Outpost speaker: &quot;The prisoners were released by the submarine crew! Kill them!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]&#xD;&#xA;[COALITION   REP-50]&#xD;&#xA;[SEPARATISTS REP+10]</eventtext.itaprisonescape1.0.2>
 
-	<eventtext.ita_prisonescape2.0.1>Outpost speaker: &quot;The prisoners were released by the submarine crew! Kill them!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]</eventtext.ita_prisonescape2.0.1>
-	<eventtext.ita_prisonescape2.0.2>Outpost speaker: &quot;The prisoners were released by the submarine crew! Kill them!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]&#xD;&#xA;[COALITION   REP-50]&#xD;&#xA;[SEPARATISTS REP+10]</eventtext.ita_prisonescape2.0.2>
+	<eventtext.itaprisonescape2.0.1>Outpost speaker: &quot;The prisoners were released by the submarine crew! Kill them!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]</eventtext.itaprisonescape2.0.1>
+	<eventtext.itaprisonescape2.0.2>Outpost speaker: &quot;The prisoners were released by the submarine crew! Kill them!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]&#xD;&#xA;[COALITION   REP-50]&#xD;&#xA;[SEPARATISTS REP+10]</eventtext.itaprisonescape2.0.2>
 
-	<eventtext.ita_prisonescape2.1.1>This prisoner wasn't treated nicely. Coalition is brutal to Separatists.&#xD;&#xA;&quot;Thank you for rescuing me! I'll spread the word with our captains about what you've done.&quot;</eventtext.ita_prisonescape2.1.1>
-	<eventtext.ita_prisonescape2.1.2>This prisoner wasn't treated nicely. Coalition is brutal to Separatists.&#xD;&#xA;&quot;Thank you for rescuing me! I'll spread the word with our captains about what you've done.&quot;&#xD;&#xA;[SEPARATISTS REP+10]</eventtext.ita_prisonescape2.1.2>
+	<eventtext.itaprisonescape2.1.1>This prisoner wasn't treated nicely. Coalition is brutal to Separatists.&#xD;&#xA;&quot;Thank you for rescuing me! I'll spread the word with our captains about what you've done.&quot;</eventtext.itaprisonescape2.1.1>
+	<eventtext.itaprisonescape2.1.2>This prisoner wasn't treated nicely. Coalition is brutal to Separatists.&#xD;&#xA;&quot;Thank you for rescuing me! I'll spread the word with our captains about what you've done.&quot;&#xD;&#xA;[SEPARATISTS REP+10]</eventtext.itaprisonescape2.1.2>
 
-	<eventtext.ita_prisonescape2.2.1>Poor clown thought that Coalition guards have sense of humour.&#xD;&#xA;&quot;Thanks to you, I can spread joy elsewhere. My music is not yet silenced! Blessings of the Honk Mother upon thee.&quot;&#xD;&#xA;</eventtext.ita_prisonescape2.2.1>
-	<eventtext.ita_prisonescape2.2.2>Poor clown thought that Coalition guards have sense of humour.&#xD;&#xA;&quot;Thanks to you, I can spread joy elsewhere. My music is not yet silenced! Blessings of the Honk Mother upon thee.&quot;&#xD;&#xA;[CLOWN REP+10]</eventtext.ita_prisonescape2.2.2>
+	<eventtext.itaprisonescape2.2.1>Poor clown thought that Coalition guards have sense of humour.&#xD;&#xA;&quot;Thanks to you, I can spread joy elsewhere. My music is not yet silenced! Blessings of the Honk Mother upon thee.&quot;&#xD;&#xA;</eventtext.itaprisonescape2.2.1>
+	<eventtext.itaprisonescape2.2.2>Poor clown thought that Coalition guards have sense of humour.&#xD;&#xA;&quot;Thanks to you, I can spread joy elsewhere. My music is not yet silenced! Blessings of the Honk Mother upon thee.&quot;&#xD;&#xA;[CLOWN REP+10]</eventtext.itaprisonescape2.2.2>
+
+	<eventtext.itaprisonescape2.1>Coalition is so paranoid about separatist spies, they often imprison ordinary outpost dwellers and submariners and gives them the same treatment as they would give to an enemy...&#xD;&#xA;&quot;Thanks for getting me out of there! I was mopping a floor in the dock when I was arrested and accused of listening in on the conversations in the command room! I see it clearly now. Coalition are the real terrorists!&quot;&#xD;&#xA;</eventtext.itaprisonescape2.1>
+	<eventtext.itaprisonescape2.2>Coalition is so paranoid about separatist spies, they often imprison ordinary outpost dwellers and submariners and gives them the same treatment as they would give to an enemy...&#xD;&#xA;&quot;Thanks for getting me out of there! I was mopping a floor in the dock when I was arrested and accused of listening in on the conversations in the command room! I see it clearly now. Coalition are the real terrorists!&quot;&#xD;&#xA;[SEPARATISTS REP+10]</eventtext.itaprisonescape2.2>
+
+	<eventtext.itamissionscity1.1.1>There is plenty of work to be done. These are the most needed tasks.</eventtext.itamissionscity1.1.1>
+	<eventtext.itamissionscity1.2.2>There is always more to be done. You can take on this contract.</eventtext.itamissionscity1.2.2>
+	<eventtext.itamissionscity1.3.3>This task requires a well organised crew!</eventtext.itamissionscity1.3.3>
+	
+	<eventtext.itamissionsmining1.4>We need to see what types of minerals exist in this location before we start large scale mining operation. See what you can find.</eventtext.itamissionsmining1.4>
+	<eventtext.itamissionsmining2.5>We need you to clear out nests so we can keep digging in the caves.</eventtext.itamissionsmining2.5>
+	<eventtext.itamissionsmining3.6>Various other tasks are needed too.</eventtext.itamissionsmining3.6>
+	
+	<eventtext.itamissionsmilitary1.7>We need you to run some errands.</eventtext.itamissionsmilitary1.7>
+	<eventtext.itamissionsmilitary2.8>We need you to exterminate a large swarm. I hope you are ready for it...</eventtext.itamissionsmilitary2.8>
+	<eventtext.itamissionsmilitary3.9>We need you to get rid of massive threats to human settlements in the area. You'd better pack some serious firepower.</eventtext.itamissionsmilitary3.9>
+
+	<eventtext.itamissiontrusted>&quot;You've proven yourself to be an experienced sailor, so I trust you with these missions.&quot;</eventtext.itamissiontrusted>
+	<eventtext.itamissionscargowater>[MISSION] Dry supplies transport [+10REP][2000mk]</eventtext.itamissionscargowater>
+	<eventtext.itamissionscargowater2>[MISSION] Dry supplies crate [+10REP][+2000mk]</eventtext.itamissionscargowater2>
+	<eventtext.itamissionscargofragile>[MISSION] Fragile goods transport [+10REP][2300mk]</eventtext.itamissionscargofragile>
+	<eventtext.itamissionscargofragileask>&quot;There are some sensitive cargo crates that nobody wants to deliver, so naturally, we are asking you to do it.&quot;</eventtext.itamissionscargofragileask>
+	<eventtext.itamissionscargoegg>[MISSION] Nearly hatched eggs transport [+10REP][2000mk]</eventtext.itamissionscargoegg>
+	<eventtext.itamissionactivatebeacon>[MISSION] Activating a beacon [2800mk]</eventtext.itamissionactivatebeacon>
+	<eventtext.itamissionkillhammerhead>[MISSION] Killing hammerhead [+10REP][3000mk]</eventtext.itamissionkillhammerhead>
+	<eventtext.itamissionmineralresearch>[MISSION] Cave mineral research [+10REP][1500-1800mk]</eventtext.itamissionmineralresearch>
+	<eventtext.itamissionscargotime>[MISSION] Rapidly deteriorating crate. [+10REP][2000mk]</eventtext.itamissionscargotime>
+	<eventtext.itamissionscargocreature>[MISSION] Creature cargo. [+10REP][3000mk]</eventtext.itamissionscargocreature>
+	
+	<eventtext.itamissionsresearch1.11>We need you to bring us a particular artifact that shows strange behaviour.</eventtext.itamissionsresearch1.11>
+	<eventtext.itamissionsresearch2.12>We need you to bring us a particular artifact that shows strange behaviour.</eventtext.itamissionsresearch2.12>
+	<eventtext.itamissionsresearch3.13>There are non-research related tasks too.</eventtext.itamissionsresearch3.13>
+	<eventtext.itaresearchartifact1.14>We've noticed unusual artifact signature in our measurments. Help us with the research by collecting it. If you find more normal artifacts, deposit them in the airlock dispenser for a reward.</eventtext.itaresearchartifact1.14>
+
+	<eventtext.itarebelbase1>&quot;Wha... who are you! What are you doing here!?&quot;</eventtext.itarebelbase1>
+	<eventtext.itarebelbase2>&quot;We came here to kill you, obviously.&quot;</eventtext.itarebelbase2>
+	<eventtext.itarebelbase3>&quot;What are *you* doing here?&quot;</eventtext.itarebelbase3>
+	<eventtext.itarebelbase4>[DELIVERY] &quot;I've been looking for you. Got something I'm supposed to deliver - your hands only&quot;</eventtext.itarebelbase4>
+	<eventtext.itarebelbase5>[OUTPOST REP 90]&quot;We work for the station. We are not looking for trouble.&quot;</eventtext.itarebelbase5>
+	<eventtext.itarebelbase6>[SEPARATIST REP 50] &quot;Sic semper tyrannis. We're here to help.&quot;</eventtext.itarebelbase6>
+	
+	<eventtext.itabounty1.1>A WANTED poster from a noticeboard...</eventtext.itabounty1.1>
+	<eventtext.itabounty1.2>Bounty target eliminated&#xD;&#xA;[750mk]&#xD;&#xA;[COALITION REP +6]</eventtext.itabounty1.2>
+
+	<eventtext.itabeacontest1>&quot;Are you the ressuply crew? What's the password!?&quot;</eventtext.itabeacontest1>
+	<eventtext.itabeacontest2>&quot;Sic semper tyrranis.&quot; [SEPARATIST REP+5]</eventtext.itabeacontest2>
+	<eventtext.itabeacontest3>&quot;Sick pimper dracaris? [CLOWN REP +5]</eventtext.itabeacontest3>
+	<eventtext.itabeacontest4>&quot;Sectumsempra. [CLOWN REP +5]</eventtext.itabeacontest4>
+	<eventtext.itabeacontest5>[LOCATION REP 50]&quot;We work for the station and this beacon needs fixing.</eventtext.itabeacontest5>
+	<eventtext.itabeacontest6>*raise middle finger &quot;Is this the password?&quot;</eventtext.itabeacontest6>
+
+	<eventtext.itabeaconsep1.0kill.1>You cleared out a separatist hideout...&#xD;&#xA;[Reward 800mk]&#xD;&#xA;[COALITION REP +8]&#xD;&#xA;[SEPARATIST REP -15]</eventtext.itabeaconsep1.0kill.1>
+	<eventtext.itabeaconsep1.0.2>[COALITION REP 40] &#xD;&#xA;&quot;This is Coalition Officer speaking. I'm ordering you to clear out a separatist hideout in a nearby beacon!&quot;</eventtext.itabeaconsep1.0.2>
+
+	<eventtext.itabeaconsep1.0a.1>Radio transmission: &quot;Hello, travelers! We could use your help here in the beacon station.&quot;</eventtext.itabeaconsep1.0a.1>
+	<eventtext.itabeaconsep1.0a.2>A young captain dressed up in a separatist's uniform welcomes you with his hands behind his back, seemingly proud of their operations here. &quot;Welcome to our station, Comrades.&quot;</eventtext.itabeaconsep1.0a.2>
+	<eventtext.itabeaconsep1.0a.3>[SEPARATIST REP 30] &quot;What are you doing out here?&quot;</eventtext.itabeaconsep1.0a.3>
+	<eventtext.itabeaconsep1.0a.4>&quot;We've repurposed this beacon into a broadcasting station to spread the truth to nearby outposts to fight the propaganda. People need to realize that the Coalition is manipulating them into submission.&quot;</eventtext.itabeaconsep1.0a.4>
+	<eventtext.itabeaconsep1.0a.5>[HELM 70]&quot;Listen here, &quot;comrade&quot;. Coalition vessels are making rounds through these tunnels,  nuking hideouts like this without warning. Some day, they will pay you a visit and the blood of this crew is on your hands. Cut off the broadcast, close this operation and save your people before it's too late.&quot;</eventtext.itabeaconsep1.0a.5>
+	<eventtext.itabeaconsep1.0a.6>&quot;Silence us? Is that what you want? Do you seriously think you can scare us?&quot;</eventtext.itabeaconsep1.0a.6>
+	<eventtext.itabeaconsep1.0a.7>[SEPARATIST REP 50] &quot;I'm on your side and I don't want to risk lives of these people just for some stupid broadcast that nobody listens to anyways.&quot;</eventtext.itabeaconsep1.0a.7>
+	<eventtext.itabeaconsep1.0a.8>The beacon's commander smiles, as if preparing for a perfect comeback, to which his expression shifts to a more serious, defeated look. &quot;Fuck, you're right. I shouldn't have risked our lives for this.&quot; He orders his people to start packing. [SEPARATISTS +10][COALITION +5]</eventtext.itabeaconsep1.0a.8>
+	<eventtext.itabeaconsep1.0a.9>The beacon crew has been convinced to abandon their posts and cease all operations. Preperations to abandon station have been put into place.&#xD;&#xA;[SEPARATIST REP +10][COALITION REP+5]</eventtext.itabeaconsep1.0a.9>
+	<eventtext.itabeaconsep1.0a.10>&quot;That's defeatist speech. Go polish coalition officer's shoes, you coward.&quot;</eventtext.itabeaconsep1.0a.10>
+	<eventtext.itabeaconsep1.0a.11>&quot;Have it your way! Even if you survive, don't think that we'll offer you refuge on our submarine when the Coalition starts hunting you down!&quot; [SEPARATIST REP -3]</eventtext.itabeaconsep1.0a.11>
+	<eventtext.itabeaconsep1.0a.12>&quot;You have no clue what you're talking about.&quot;</eventtext.itabeaconsep1.0a.12>
+	<eventtext.itabeaconsep1.0a.13>&quot;Good. Challenge people's views, make them think. That's exactly what will bring down the Coalition in the long run.</eventtext.itabeaconsep1.0a.13>
+	<eventtext.itabeaconsep1.0a.14>Count the personnel, inspect their equipment, and look at the crew registry - have Coalition deal with them later. Thanks to this information, these people will get arrested at the first station they visit and not even their relatives will escape the punishment. You won't have to witness any of it.&#xD;&#xA;[COALITION REP +8][SEPARATIST REP -10]</eventtext.itabeaconsep1.0a.14>
+	<eventtext.itabeaconsep1.0a.15>&quot;Cool.&quot;</eventtext.itabeaconsep1.0a.15>
+	<eventtext.itabeaconsep1.0a.16>&quot;Sorry, I can't disclose any details; orders.&quot;</eventtext.itabeaconsep1.0a.16>
+	<eventtext.itabeaconsep1.0a.17>&quot;How can we help?&quot;</eventtext.itabeaconsep1.0a.17>
+	<eventtext.itabeaconsep1.0a.18>&quot;We need some supplies to stay here a bit longer. Our mechanic will have more details.&quot;</eventtext.itabeaconsep1.0a.18>
+	<eventtext.itabeaconsep1.0a.19>&quot;You've made a serious mistake letting us in, *comrade*...&quot;</eventtext.itabeaconsep1.0a.19>
+	<eventtext.itabeaconsep1.0a.20>&quot;Never should have come here!&quot;[COALITION REP +6]</eventtext.itabeaconsep1.0a.20>
 
 
-	<eventtext.ita_prisonescape2.1>Coalition is so paranoid about separatist spies, they often imprison ordinary outpost dwellers and submariners and gives them the same treatment as they would give to an enemy...&#xD;&#xA;&quot;Thanks for getting me out of there! I was mopping a floor in the dock when I was arrested and accused of listening in on the conversations in the command room! I see it clearly now. Coalition are the real terrorists!&quot;&#xD;&#xA;</eventtext.ita_prisonescape2.1>
-	<eventtext.ita_prisonescape2.2>Coalition is so paranoid about separatist spies, they often imprison ordinary outpost dwellers and submariners and gives them the same treatment as they would give to an enemy...&#xD;&#xA;&quot;Thanks for getting me out of there! I was mopping a floor in the dock when I was arrested and accused of listening in on the conversations in the command room! I see it clearly now. Coalition are the real terrorists!&quot;&#xD;&#xA;[SEPARATISTS REP+10]</eventtext.ita_prisonescape2.2>
+	<eventtext.itabeaconsep1.0b.1>You see a Mechanic looking through a hole in the wall, a screwdriver in hand. &quot;Oh, hello! Did you come by to help? We need somebody to repair this busted old piece of junk. The FPGA circuit broke.&quot;</eventtext.itabeaconsep1.0b.1>
+	<eventtext.itabeaconsep1.0b.2>[ENGI 45][FPGA CIRCUIT] &quot;Sure, I got one; let me help.&quot;</eventtext.itabeaconsep1.0b.2>
+	<eventtext.itabeaconsep1.0b.3>You lean into the hole in the wall, finding a circuit board of rusted up electronics. You see an old, half burnt FPGA Circuit inside the innerlinings of the metal wall. You snap it out of its slot and replace it with a shiny new one.</eventtext.itabeaconsep1.0b.3>
+	<eventtext.itabeaconsep1.0b.4>&quot;Thanks! This place'll be running for a little while longer now. I don't have much, but you can take this here incendium shard. Snatched it from one of the Medical Officers while they were busy, heh! Probably worth something, so, don't spend it all in one place if you catch my drift.&quot;</eventtext.itabeaconsep1.0b.4>
+	<eventtext.itabeaconsep1.0b.5>&quot;Great! Good luck with your operations.&quot;&#xD;&#xA;[SEPARATIST REP +3]</eventtext.itabeaconsep1.0b.5>
+	<eventtext.itabeaconsep1.0b.6>&quot;I don't need anything, thanks. It was just a cheap circuit. Good luck with your operations!&quot;&#xD;&#xA;[SEPARATIST REP +7]</eventtext.itabeaconsep1.0b.6>
+	<eventtext.itabeaconsep1.0b.7>[WEAPONS 20] &quot;I've spent time, expertise, and material to help you. Surely you can reward me properly.&quot;</eventtext.itabeaconsep1.0b.7>
+	<eventtext.itabeaconsep1.0b.8>&quot;Hey, hey! You're pushing your luck 'ere, stranger.. This Crystal has its values, but.. Eh, whatever, here - take it. Probably not worth anything anyways..quot;&#xD;&#xA;[SEPARATIST REP +3]</eventtext.itabeaconsep1.0b.8>
+	<eventtext.itabeaconsep1.0b.9>[WEAPON 20 FAILED] &quot;Sorry, but that's all I've got. Take it or leave it.&quot;&#xD;&#xA;[SEPARATIST REP -2]</eventtext.itabeaconsep1.0b.9>
+	<eventtext.itabeaconsep1.0b.10>[ENGI 60 FAILED] &quot;You seem to be as clueless as I am!&quot;</eventtext.itabeaconsep1.0b.10>
+	<eventtext.itabeaconsep1.0b.11>&quot;Even I know that that's not an FPGA circuit, kid.&quot;</eventtext.itabeaconsep1.0b.11>
+	<eventtext.itabeaconsep1.0b.12>&quot;Nope, sorry. Just looking around.&quot;</eventtext.itabeaconsep1.0b.12>
+	<eventtext.itabeaconsep1.0b.13>&quot;'You a clown? The real kind?&quot;</eventtext.itabeaconsep1.0b.13>
+	<eventtext.itabeaconsep1.0b.14>&quot;I am.&quot;</eventtext.itabeaconsep1.0b.14>
+	<eventtext.itabeaconsep1.0b.15>&quot;Hm... Ya don't seem like it... Nevermind.&quot; [CLOWNS -5]</eventtext.itabeaconsep1.0b.15>
+	<eventtext.itabeaconsep1.0b.16>[BIKE HORN] Honk the bike horn.</eventtext.itabeaconsep1.0b.16>
+	<eventtext.itabeaconsep1.0b.17>Mechanic chuckles, but quickly returns to his work.&#xD;&#xA;[CLOWN REP +5]</eventtext.itabeaconsep1.0b.17>
+	<eventtext.itabeaconsep1.0b.18>Looks like you've forgotten your bike horn at home. Sad.&#xD;&#xA;[CLOWN REP -5]</eventtext.itabeaconsep1.0b.18>
+	<eventtext.itabeaconsep1.0b.19>[GUITAR] Play a happy song.</eventtext.itabeaconsep1.0b.19>
+	<eventtext.itabeaconsep1.0b.20>It's immediately obvious that these people haven't heard music or smiled in a long time. Your song touches the souls of those in the beacon, and leaves everyone in a good mood.&#xD;&#xA;[CLOWN REP +10][SEPARATISTS REP +3]</eventtext.itabeaconsep1.0b.20>
+	<eventtext.v2givingdirections.21>Playing on an imaginary air guitar doesn't entertain the mechanic whatsoever.&#xD;&#xA;[CLOWN REP -5]</eventtext.v2givingdirections.21>
 
+	<eventtext.itatransport3.0.1>&quot;We'll see who will have the last laugh! The Honkmother watches over me.&quot;</eventtext.itatransport3.0.1>
+	<eventtext.itatransport4.0.1>&quot;You need me! If you kill us, they will not pay you! You'll all become ones with the ocean eventually. There is no point in delaying the inevitable...&quot;</eventtext.itatransport4.0.1>
 
-	<eventtext.ita_missions_city1.1.1>There is plenty of work to be done. These are the most needed tasks.</eventtext.ita_missions_city1.1.1>
-	<eventtext.ita_missions_city1.2.2>There is always more to be done. You can take on this contract.</eventtext.ita_missions_city1.2.2>
-	<eventtext.ita_missions_city1.3.3>This task requires a well organised crew!</eventtext.ita_missions_city1.3.3>
-	<eventtext.ita_missions_mining1.4>We need to see what types of minerals exist in this location before we start large scale mining operation. See what you can find.</eventtext.ita_missions_mining1.4>
-	<eventtext.ita_missions_mining2.5>We need you to clear out nests so we can keep digging in the caves.</eventtext.ita_missions_mining2.5>
-	<eventtext.ita_missions_mining3.6>Various other tasks are needed too.</eventtext.ita_missions_mining3.6>
-	<eventtext.ita_missions_military1.7>We need you to run some errands.</eventtext.ita_missions_military1.7>
-	<eventtext.ita_missions_military2.8>We need you to exterminate a large swarm. I hope you are ready for it...</eventtext.ita_missions_military2.8>
-	<eventtext.ita_missions_military3.9>We need you to get rid of massive threats to human settlements in the area. You'd better pack some serious firepower.</eventtext.ita_missions_military3.9>
+	<eventtext.itarace1bet.1>&quot;Wanna bet 100mk on one of the muddies in the next mudraptor race?&quot;</eventtext.itarace1bet.1>
+	<eventtext.itarace1bet.2>Bet 100mk  on the Red mudraptor...</eventtext.itarace1bet.2>
+	<eventtext.itarace1bet.3>Not enough cash...</eventtext.itarace1bet.3>
+	<eventtext.itarace1bet.4>Bet 100mk  on the Green mudraptor...</eventtext.itarace1bet.4>
+	<eventtext.itarace1bet.5>Bet 100mk  on the Blue mudraptor...</eventtext.itarace1bet.5>
+	<eventtext.itarace1bet.6>&quot;Not this time.&quot;</eventtext.itarace1bet.6>
+	<eventtext.itarace1bet.7>&quot;Start the race!&quot;</eventtext.itarace1bet.7>
+	<eventtext.itarace1bet.8>&quot;Red has won the race! Come redeem your tokens!&quot;</eventtext.itarace1bet.8>
+	<eventtext.itarace1bet.9>Redeem your token...</eventtext.itarace1bet.9>
+	<eventtext.itarace1bet.10>&quot;Green has won the race! Come redeem your tokens!&quot;</eventtext.itarace1bet.10>
+	<eventtext.itarace1bet.11>&quot;Blue has won the race! Come redeem your tokens!&quot;</eventtext.itarace1bet.11>
 
-	<eventtext.ita_missions_research1.11>We need you to bring us a particular artifact that shows strange behaviour.</eventtext.ita_missions_research1.11>
-	<eventtext.ita_missions_research2.12>We need you to bring us a particular artifact that shows strange behaviour.</eventtext.ita_missions_research2.12>
-	<eventtext.ita_missions_research3.13>There are non-research related tasks too.</eventtext.ita_missions_research3.13>
-	<eventtext.ita_research_artifact1.14>We've noticed unusual artifact signature in our measurments. Help us with the research by collecting it. If you find more normal artifacts, deposit them in the airlock dispenser for a reward.</eventtext.ita_research_artifact1.14>
-
-	<eventtext.ita_beacon_sep1.0_kill.1>You cleared out a separatist hideout...&#xD;&#xA;[Reward 800mk]&#xD;&#xA;[COALITION REP +8]&#xD;&#xA;[SEPARATIST REP -15]</eventtext.ita_beacon_sep1.0_kill.1>
-	<eventtext.ita_beacon_sep1.0.2>[COALITION REP 40] &#xD;&#xA;&quot;This is Coalition Officer speaking. I'm ordering you to clear out a separatist hideout in a nearby beacon!&quot;</eventtext.ita_beacon_sep1.0.2>
-
-
-	<eventtext.ita_beacon_sep1.0a.1>Radio transmission: &quot;Hello, travelers! We could use your help here in the beacon station.&quot;</eventtext.ita_beacon_sep1.0a.1>
-	<eventtext.ita_beacon_sep1.0a.2>A young captain dressed up in a separatist's uniform welcomes you with his hands behind his back, seemingly proud of their operations here. &quot;Welcome to our station, Comrades.&quot;</eventtext.ita_beacon_sep1.0a.2>
-	<eventtext.ita_beacon_sep1.0a.3>[SEPARATIST REP 30] &quot;What are you doing out here?&quot;</eventtext.ita_beacon_sep1.0a.3>
-	<eventtext.ita_beacon_sep1.0a.4>&quot;We've repurposed this beacon into a broadcasting station to spread the truth to nearby outposts to fight the propaganda. People need to realize that the Coalition is manipulating them into submission.&quot;</eventtext.ita_beacon_sep1.0a.4>
-	<eventtext.ita_beacon_sep1.0a.5>[HELM 70]&quot;Listen here, &quot;comrade&quot;. Coalition vessels are making rounds through these tunnels,  nuking hideouts like this without warning. Some day, they will pay you a visit and the blood of this crew is on your hands. Cut off the broadcast, close this operation and save your people before it's too late.&quot;</eventtext.ita_beacon_sep1.0a.5>
-	<eventtext.ita_beacon_sep1.0a.6>&quot;Silence us? Is that what you want? Do you seriously think you can scare us?&quot;</eventtext.ita_beacon_sep1.0a.6>
-	<eventtext.ita_beacon_sep1.0a.7>[SEPARATIST REP 50] &quot;I'm on your side and I don't want to risk lives of these people just for some stupid broadcast that nobody listens to anyways.&quot;</eventtext.ita_beacon_sep1.0a.7>
-	<eventtext.ita_beacon_sep1.0a.8>The beacon's commander smiles, as if preparing for a perfect comeback, to which his expression shifts to a more serious, defeated look. &quot;Fuck, you're right. I shouldn't have risked our lives for this.&quot; He orders his people to start packing. [SEPARATISTS +10][COALITION +5]</eventtext.ita_beacon_sep1.0a.8>
-	<eventtext.ita_beacon_sep1.0a.9>The beacon crew has been convinced to abandon their posts and cease all operations. Preperations to abandon station have been put into place.&#xD;&#xA;[SEPARATIST REP +10][COALITION REP+5]</eventtext.ita_beacon_sep1.0a.9>
-	<eventtext.ita_beacon_sep1.0a.10>&quot;That's defeatist speech. Go polish coalition officer's shoes, you coward.&quot;</eventtext.ita_beacon_sep1.0a.10>
-	<eventtext.ita_beacon_sep1.0a.11>&quot;Have it your way! Even if you survive, don't think that we'll offer you refuge on our submarine when the Coalition starts hunting you down!&quot; [SEPARATIST REP -3]</eventtext.ita_beacon_sep1.0a.11>
-	<eventtext.ita_beacon_sep1.0a.12>&quot;You have no clue what you're talking about.&quot;</eventtext.ita_beacon_sep1.0a.12>
-	<eventtext.ita_beacon_sep1.0a.13>&quot;Good. Challenge people's views, make them think. That's exactly what will bring down the Coalition in the long run.</eventtext.ita_beacon_sep1.0a.13>
-	<eventtext.ita_beacon_sep1.0a.14>Count the personnel, inspect their equipment, and look at the crew registry - have Coalition deal with them later. Thanks to this information, these people will get arrested at the first station they visit and not even their relatives will escape the punishment. You won't have to witness any of it.&#xD;&#xA;[COALITION REP +8][SEPARATIST REP -10]</eventtext.ita_beacon_sep1.0a.14>
-	<eventtext.ita_beacon_sep1.0a.15>&quot;Cool.&quot;</eventtext.ita_beacon_sep1.0a.15>
-	<eventtext.ita_beacon_sep1.0a.16>&quot;Sorry, I can't disclose any details; orders.&quot;</eventtext.ita_beacon_sep1.0a.16>
-	<eventtext.ita_beacon_sep1.0a.17>&quot;How can we help?&quot;</eventtext.ita_beacon_sep1.0a.17>
-	<eventtext.ita_beacon_sep1.0a.18>&quot;We need some supplies to stay here a bit longer. Our mechanic will have more details.&quot;</eventtext.ita_beacon_sep1.0a.18>
-	<eventtext.ita_beacon_sep1.0a.19>&quot;You've made a serious mistake letting us in, *comrade*...&quot;</eventtext.ita_beacon_sep1.0a.19>
-	<eventtext.ita_beacon_sep1.0a.20>&quot;Never should have come here!&quot;[COALITION REP +6]</eventtext.ita_beacon_sep1.0a.20>
-
-
-	<eventtext.ita_beacon_sep1.0b.1>You see a Mechanic looking through a hole in the wall, a screwdriver in hand. &quot;Oh, hello! Did you come by to help? We need somebody to repair this busted old piece of junk. The FPGA circuit broke.&quot;</eventtext.ita_beacon_sep1.0b.1>
-	<eventtext.ita_beacon_sep1.0b.2>[ENGI 45][FPGA CIRCUIT] &quot;Sure, I got one; let me help.&quot;</eventtext.ita_beacon_sep1.0b.2>
-	<eventtext.ita_beacon_sep1.0b.3>You lean into the hole in the wall, finding a circuit board of rusted up electronics. You see an old, half burnt FPGA Circuit inside the innerlinings of the metal wall. You snap it out of its slot and replace it with a shiny new one.</eventtext.ita_beacon_sep1.0b.3>
-	<eventtext.ita_beacon_sep1.0b.4>&quot;Thanks! This place'll be running for a little while longer now. I don't have much, but you can take this here incendium shard. Snatched it from one of the Medical Officers while they were busy, heh! Probably worth something, so, don't spend it all in one place if you catch my drift.&quot;</eventtext.ita_beacon_sep1.0b.4>
-	<eventtext.ita_beacon_sep1.0b.5>&quot;Great! Good luck with your operations.&quot;&#xD;&#xA;[SEPARATIST REP +3]</eventtext.ita_beacon_sep1.0b.5>
-	<eventtext.ita_beacon_sep1.0b.6>&quot;I don't need anything, thanks. It was just a cheap circuit. Good luck with your operations!&quot;&#xD;&#xA;[SEPARATIST REP +7]</eventtext.ita_beacon_sep1.0b.6>
-	<eventtext.ita_beacon_sep1.0b.7>[WEAPONS 20] &quot;I've spent time, expertise, and material to help you. Surely you can reward me properly.&quot;</eventtext.ita_beacon_sep1.0b.7>
-	<eventtext.ita_beacon_sep1.0b.8>&quot;Hey, hey! You're pushing your luck 'ere, stranger.. This Crystal has its values, but.. Eh, whatever, here - take it. Probably not worth anything anyways..quot;&#xD;&#xA;[SEPARATIST REP +3]</eventtext.ita_beacon_sep1.0b.8>
-	<eventtext.ita_beacon_sep1.0b.9>[WEAPON 20 FAILED] &quot;Sorry, but that's all I've got. Take it or leave it.&quot;&#xD;&#xA;[SEPARATIST REP -2]</eventtext.ita_beacon_sep1.0b.9>
-	<eventtext.ita_beacon_sep1.0b.10>[ENGI 60 FAILED] &quot;You seem to be as clueless as I am!&quot;</eventtext.ita_beacon_sep1.0b.10>
-	<eventtext.ita_beacon_sep1.0b.11>&quot;Even I know that that's not an FPGA circuit, kid.&quot;</eventtext.ita_beacon_sep1.0b.11>
-	<eventtext.ita_beacon_sep1.0b.12>&quot;Nope, sorry. Just looking around.&quot;</eventtext.ita_beacon_sep1.0b.12>
-	<eventtext.ita_beacon_sep1.0b.13>&quot;'You a clown? The real kind?&quot;</eventtext.ita_beacon_sep1.0b.13>
-	<eventtext.ita_beacon_sep1.0b.14>&quot;I am.&quot;</eventtext.ita_beacon_sep1.0b.14>
-	<eventtext.ita_beacon_sep1.0b.15>&quot;Hm... Ya don't seem like it... Nevermind.&quot; [CLOWNS -5]</eventtext.ita_beacon_sep1.0b.15>
-	<eventtext.ita_beacon_sep1.0b.16>[BIKE HORN] Honk the bike horn.</eventtext.ita_beacon_sep1.0b.16>
-	<eventtext.ita_beacon_sep1.0b.17>Mechanic chuckles, but quickly returns to his work.&#xD;&#xA;[CLOWN REP +5]</eventtext.ita_beacon_sep1.0b.17>
-	<eventtext.ita_beacon_sep1.0b.18>Looks like you've forgotten your bike horn at home. Sad.&#xD;&#xA;[CLOWN REP -5]</eventtext.ita_beacon_sep1.0b.18>
-	<eventtext.ita_beacon_sep1.0b.19>[GUITAR] Play a happy song.</eventtext.ita_beacon_sep1.0b.19>
-	<eventtext.ita_beacon_sep1.0b.20>It's immediately obvious that these people haven't heard music or smiled in a long time. Your song touches the souls of those in the beacon, and leaves everyone in a good mood.&#xD;&#xA;[CLOWN REP +10][SEPARATISTS REP +3]</eventtext.ita_beacon_sep1.0b.20>
-	<eventtext.v2_givingdirections.21>Playing on an imaginary air guitar doesn't entertain the mechanic whatsoever.&#xD;&#xA;[CLOWN REP -5]</eventtext.v2_givingdirections.21>
-
-	<eventtext.ita_transport_3.0.1>&quot;We'll see who will have the last laugh! The Honkmother watches over me.&quot;</eventtext.ita_transport_3.0.1>
-	<eventtext.ita_transport_4.0.1>&quot;You need me! If you kill us, they will not pay you! You'll all become ones with the ocean eventually. There is no point in delaying the inevitable...&quot;</eventtext.ita_transport_4.0.1>
-
-	<eventtext.ita_race1bet.1>&quot;Wanna bet 100mk on one of the muddies in the next mudraptor race?&quot;</eventtext.ita_race1bet.1>
-	<eventtext.ita_race1bet.2>Bet 100mk  on the Red mudraptor...</eventtext.ita_race1bet.2>
-	<eventtext.ita_race1bet.3>Not enough cash...</eventtext.ita_race1bet.3>
-	<eventtext.ita_race1bet.4>Bet 100mk  on the Green mudraptor...</eventtext.ita_race1bet.4>
-	<eventtext.ita_race1bet.5>Bet 100mk  on the Blue mudraptor...</eventtext.ita_race1bet.5>
-	<eventtext.ita_race1bet.6>&quot;Not this time.&quot;</eventtext.ita_race1bet.6>
-	<eventtext.ita_race1bet.7>&quot;Start the race!&quot;</eventtext.ita_race1bet.7>
-	<eventtext.ita_race1bet.8>&quot;Red has won the race! Come redeem your tokens!&quot;</eventtext.ita_race1bet.8>
-	<eventtext.ita_race1bet.9>Redeem your token...</eventtext.ita_race1bet.9>
-	<eventtext.ita_race1bet.10>&quot;Green has won the race! Come redeem your tokens!&quot;</eventtext.ita_race1bet.10>
-	<eventtext.ita_race1bet.11>&quot;Blue has won the race! Come redeem your tokens!&quot;</eventtext.ita_race1bet.11>
-
-	<eventtext.ita_race1.0.1>Red has won the race!</eventtext.ita_race1.0.1>
-	<eventtext.ita_race1.0.2>Green has won the race!</eventtext.ita_race1.0.2>
-	<eventtext.ita_race1.0.3>Blue has won the race!</eventtext.ita_race1.0.3>
+	<eventtext.itarace1.0.1>Red has won the race!</eventtext.itarace1.0.1>
+	<eventtext.itarace1.0.2>Green has won the race!</eventtext.itarace1.0.2>
+	<eventtext.itarace1.0.3>Blue has won the race!</eventtext.itarace1.0.3>
 
 	<eventtext.trainer.1>&quot;I used to work on R-29, keeping that hunk of metal afloat. I had to scrape off crawlers off the bow with a harpoon gun half of the time. The other half, I had to weld the cargo room walls 'till I went almost blind. Which brings me to this shit-hole of a town. I'll share my expertise with you for cash.&quot;</eventtext.trainer.1>
 	<eventtext.trainer.2>[360mk] &quot;Tell me in detail how you kept a submarine that large afloat.&quot; [+3 MECHANICAL]</eventtext.trainer.2>
@@ -357,11 +393,14 @@
 	<eventtext.trainer.15>&quot;My former crew were complete neanderthals! They arrested me for trying to poison the engineering crew, but I was carrying the poisons to the deconstructor! The authorities here had me immediately released and I'm not climbing into a submarine again. I'm not for hire, but for a couple marks, I can teach you medical skill.&quot;</eventtext.trainer.15>
 	<eventtext.trainer.16>[360mk] &quot;Sure, just keep your hands where I can see them, okay?&quot; [+3 MEDICAL]</eventtext.trainer.16>
 
+	<eventtext.shop.notreally>Not really.</eventtext.shop.notreally>
+	<eventtext.somthingborke>somthing borke</eventtext.somthingborke>
 	<eventtext.shop.nocash>&quot;Come back with more money.&quot;</eventtext.shop.nocash>
 	<eventtext.shop.nothanks>&quot;No, thanks.&quot;</eventtext.shop.nothanks>
 	<eventtext.shop.maybelater>&quot;Maybe later.&quot;</eventtext.shop.maybelater>
 	<eventtext.shop.lowshoprep>&quot;You are nothing but trouble. Get out!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]</eventtext.shop.lowshoprep>
-
+	<eventtext.shop.getout>&quot;Get out of here, troublemakers!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]</eventtext.shop.getout>
+	
 	<eventtext.shop.1>&quot;Something warm to eat?&quot;</eventtext.shop.1>
 	<eventtext.shop.2>Warm Craw-Yum! soup [12 mk]</eventtext.shop.2>
 	<eventtext.shop.3>&quot;Do you want a drink?&quot;</eventtext.shop.3>
@@ -441,17 +480,37 @@
 	<eventtext.shop.70>Revolver round 6x [180mk]</eventtext.shop.70>
 	<eventtext.shop.71>Depth Charge - Decoy [250mk]</eventtext.shop.71>
 	<eventtext.shop.72>Depth Charge Wall Mount [200mk]</eventtext.shop.72>
+	<eventtext.shop.73>&quot;Get out of my store you vandals!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]</eventtext.shop.73>
+	<eventtext.shop.74>&quot;Another time, maybe.&quot;</eventtext.shop.74>
+
+	<eventtext.itaoplockcity1>&quot;Go away, you vandals.&quot;&#xD;&#xA;---REQUIREMENTS---&#xD;&#xA;[OUTPOST   REP-10]</eventtext.itaoplockcity1>
+	<eventtext.itaoplockcity2>&quot;Trespassers in the docking port!&quot;</eventtext.itaoplockcity2>
+	<eventtext.itaoplockcity3>&quot;Trespassers in the docking port!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST    REP-200]&#xD;&#xA;[COALITION  REP-15 ]&#xD;&#xA;[SEPARATIST REP+15 ]</eventtext.itaoplockcity3>
+	<eventtext.itaoplockcity4>&quot;Only coalition affiliates may enter. Do not try to trespass, or you will be blacklisted.&quot;&#xD;&#xA;&#xD;&#xA;---REQUIREMENTS---&#xD;&#xA;[COALITION REP+35]</eventtext.itaoplockcity4>
+	<eventtext.itaoplockcity5>&quot;Blacklisted trespassers in the docking port!&quot;</eventtext.itaoplockcity5>
+	<eventtext.itaoplockcity6>&quot;Trespassers in the docking port!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]&#xD;&#xA;[COALITION   REP-45 ]&#xD;&#xA;[SEPARATISTS REP+15 ]</eventtext.itaoplockcity6>
+	
+	<eventtext.itaresearchlock1.1>&quot;Only researchers can enter this laboratory.&quot;</eventtext.itaresearchlock1.1>
+	<eventtext.itaresearchlock1.2>[OUTPOST REP 100] &quot;I'm working for the research team. Here's my ID.&quot;</eventtext.itaresearchlock1.2>
+	<eventtext.itaresearchlock1.3>Keep walking.</eventtext.itaresearchlock1.3>
+
+	<eventtext.itatransp1.0.1>[ACCEPT] &quot;Sure. Come on board.&quot;</eventtext.itatransp1.0.1>
+	<eventtext.itatransp1.0.2>Mechanic with prosthetic hands approaches you at the bar.&#xD;&#xA;&quot;Hey, you have a submarine, right? One with guns and shit? I need a ride. I'll pay you good.&quot;&#xD;&#xA;[MISSION: PASSENGER TRANSPORT, REWARD: 800mk]</eventtext.itatransp1.0.2>
+	<eventtext.itatransp1.0.3>[DECLINE] &quot;Nope. Our air is thin enough already.&quot;</eventtext.itatransp1.0.3>
+	
+	<eventtext.itatransp1.1.1>&quot;Thanks for the ride. I'll see you around.&quot;&#xD;&#xA;[MISSION COMPLETE 800mk OUTPOST REP+5]</eventtext.itatransp1.1.1>
+	<eventtext.itatransp1.1.2>&quot;How long is it going to take?&quot;</eventtext.itatransp1.1.2>
+
+	<eventtext.itatransp1.2.1>&quot;Thanks for getting me out of that shithole.&quot;</eventtext.itatransp1.2.1>
+	<eventtext.itatransp1.2.2>[PASSENGER MISSION COMPLETE 800mk OUTPOST REP+5]</eventtext.itatransp1.2.2>
 
 
---------------------
 	<!--Items-->
---------------------
 
-	<eventtext.ita_missionevent_cargosensitive>"Sensitive cargo needs to be safely delivered! Don't break it.</eventtext.ita_missionevent_cargosensitive>
 	<!--Mission Crates-->
 	<entityname.ita_mcrate_time1>Time Sensitive Crate</entityname.ita_mcrate_time1>
 	<entitydescription.ita_mcrate_time1>You hear fizzing noises from inside the crate...</entitydescription.ita_mcrate_time1>
-	<entityname.ita_mcrate_water1>Water Sensitive Crate</entityname.ita_mcrate_water1>
+	<entityname.ita_mcrate_water1>Water Sensitive Crate</entityname.ita_mcrate_water1> 
 	<entitydescription.ita_mcrate_water1>Blue label on this crate tells you not to submerge this crate.</entitydescription.ita_mcrate_water1>
 	<entityname.ita_mcrate_egg1>Egg Crate</entityname.ita_mcrate_egg1>
 	<entitydescription.ita_mcrate_egg1>Something slimy is moving around in this crate.</entitydescription.ita_mcrate_egg1>
@@ -540,11 +599,7 @@
 	<entityname.ita_display>Display Case</entityname.ita_display>
 	<entityname.ita_outpostchair2>Office Client Chair</entityname.ita_outpostchair2>
 	
-	
-	
 	<!--Clothing-->
-	<entityname.ita_hazmat1>Anti-Rad Suit</entityname.ita_hazmat1>
-	<entityname.ita_prisoneruniform>Prisoner's Uniform</entityname.ita_prisoneruniform>
 	<entityname.ita_engineersuitmecha1>NPC MechaSuit</entityname.ita_engineersuitmecha1>
 	<entityname.bluejumpsuit3>Expert Mechanic Outfit</entityname.bluejumpsuit3>
 	<entityname.orangejumpsuit3>Expert Engineer Outfit</entityname.orangejumpsuit3>
@@ -556,7 +611,6 @@
 	<entityname.ita_crispychitin>Crispy Chitin Bits</entityname.ita_crispychitin>
 	<entityname.ita_drinkfishtail>Fishtail Cocktail</entityname.ita_drinkfishtail>
 	<entityname.ita_crawyum>ita_crawyum</entityname.ita_crawyum>
-	
 	
 	<!--Contests-->
 	<entityname.ita_race_ticket1>Red ticket</entityname.ita_race_ticket1>
@@ -609,17 +663,12 @@
 	<entityname.ita_alienhatch_blue>Alien Blue Hatch</entityname.ita_alienhatch_blue>
 	<entityname.ita_alienhatch_red>Alien Red Hatch</entityname.ita_alienhatch_red>
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 	<locationchange.cave.changeto.mine>Settlers at [previousname] have established a mining outpost in the cleared cave.</locationchange.cave.changeto.mine>
+	
+	<!-- When adding new text, do it so at the bottom under the 'New additions' & 'Changed values' respectively. If it's a new tag entirely, put it under the new additions one; If it's an update to an existing value, put it under the changed values one. -->
+	<!-- DO NOT EDIT EXISTING TAGS FOR ALREADY TRANSLATED LINES -> if you need a new tag for something, add it under the 'New values' header and comment if there's some other tag that should be replaced -->
+	
+	<!--LINES MODIFIED-->	
+
+	<!--NEW LINES ADDED-->
 </infotexts>

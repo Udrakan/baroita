@@ -28,48 +28,48 @@
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missionevent_cargosensitive" commonness="100">
 			<NPCWaitAction npctag="outpostmanager" wait="true" />
-			<ConversationAction text="EventText.ita_missionevent_cargosensitive" speakertag="outpostmanager" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissioneventcargosensitive" speakertag="outpostmanager" dialogtype="Small" />
 			<MissionAction missiontag="cargosensitive" />
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missionevent_cargomonster" commonness="100">
 			<NPCWaitAction npctag="outpostmanager" wait="true" />
-			<ConversationAction text="Live creatures need to be delivered. Be careful, or be eaten..." speakertag="outpostmanager" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissioneventcargomonster" speakertag="outpostmanager" dialogtype="Small" />
 			<MissionAction missionidentifier="cargoeggs" />
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missionevent_eggtime" commonness="100">
 			<NPCWaitAction npctag="outpostmanager" wait="true" />
-			<ConversationAction text="Live creatures need to be delivered. Be careful, or be eaten..." speakertag="outpostmanager" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissioneventeggtime" speakertag="outpostmanager" dialogtype="Small" />
 			<MissionAction missionidentifier="cargoeggs" />
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missionevent_eggfridge" commonness="100">
 			<NPCWaitAction npctag="outpostmanager" wait="true" />
-			<ConversationAction text="Live creatures need to be delivered. Be careful, or be eaten..." speakertag="outpostmanager" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissioneventeggfridge" speakertag="outpostmanager" dialogtype="Small" />
 			<MissionAction missionidentifier="cargoeggs2" />
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missionevent_livemudraptor" commonness="100">
 			<NPCWaitAction npctag="outpostmanager" wait="true" />
-			<ConversationAction text="Live creatures need to be delivered. Be careful, or be eaten..." speakertag="outpostmanager" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissioneventlivemudraptor" speakertag="outpostmanager" dialogtype="Small" />
 			<MissionAction missionidentifier="cargoeggs3" />
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missionevent_cargobulk" commonness="100">
 			<NPCWaitAction npctag="outpostmanager" wait="true" />
-			<ConversationAction text="Large amount of cargo needs to be delivered. You better have a spacious cargo submarine with a lot of crate shelves!" speakertag="outpostmanager" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissioneventcargobulk" speakertag="outpostmanager" dialogtype="Small" />
 			<MissionAction missiontag="cargobulk" />
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_husk1">
 			<CheckDataAction identifier="timeshuskreleased" condition="eq 1" _npos="-1609.9916,-296.50354">
 				<Success>
-					<ConversationAction text="Outpost speakers: &quot;Alert! Husks have breached containment! Whoever pushed that button, you'll pay for this!&quot;&#xD;&#xA;[Outpost &#x9;REP-200]" dialogtype="Small" _npos="-982.25684,-574.3317" />
+					<ConversationAction text="EventText.itahusk1.p1" dialogtype="Small" _npos="-982.25684,-574.3317" />
 					<ReputationAction increase="-200" targettype="Location" _npos="-576.2875,-585.24023" />
 				</Success>
 				<Failure>
-					<ConversationAction text="Outpost speakers: &quot;Alert! Husks have breached containment! Whoever pushed that button, you'll pay for this!&quot; This will make the Cult happy... &#xD;&#xA;[Husk &#x9;&#x9;REP+50 ]&#xD;&#xA;[Coalition  REP-70 ]&#xD;&#xA;[Outpost &#x9;REP-200]" dialogtype="Small" _npos="-983.64923,-217.38885" />
+					<ConversationAction text="EventText.itahusk1.p2" dialogtype="Small" _npos="-983.64923,-217.38885" />
 					<ReputationAction increase="50" identifier="huskcult" targettype="Faction" _npos="-601.83636,-217.22906" />
 					<ReputationAction increase="-70" identifier="coalition" targettype="Faction" _npos="-200.31625,-217.02103" />
 					<ReputationAction increase="-200" targettype="Location" _npos="200.57056,-217.02103" />
@@ -80,12 +80,12 @@
 		<ScriptedEvent identifier="ita_crawler1">
 			<CheckDataAction identifier="timesreleasedc" condition="eq 1" _npos="-1580.37,-281.8967">
 				<Success>
-					<ConversationAction text="Outpost speakers: &quot;Crawlers have breached containment! Whoever pushed that button, you'll pay for this!&quot;&#xD;&#xA;[OUTPOST &#x9;  REP-200]&#xD;&#xA;[COALITION    REP-30 ]" _npos="-977.855,-595.4829" />
+					<ConversationAction text="EventText.itacrawler1.p1" _npos="-977.855,-595.4829" />
 					<ReputationAction increase="-200" targettype="Location" _npos="-546.93,-595.97675" />
 					<ReputationAction increase="-30" identifier="coalition" targettype="Faction" _npos="-143.79028,-595.9767" />
 				</Success>
 				<Failure>
-					<ConversationAction text="Outpost speakers: &quot;Crawlers have breached containment! Whoever pushed that button, you'll pay for this!&quot;&#xD;&#xA;[OUTPOST &#x9;  REP-200]&#xD;&#xA;[SEPARATISTS  REP+20 ]&#xD;&#xA;[COALITION    REP-30 ]" dialogtype="Small" _npos="-975.634,-217.38885" />
+					<ConversationAction text="EventText.itacrawler1.p2" dialogtype="Small" _npos="-975.634,-217.38885" />
 					<ReputationAction increase="20" identifier="separatists" targettype="Faction" _npos="-601.83636,-217.22906" />
 					<ReputationAction increase="-30" identifier="coalition" targettype="Faction" _npos="-200.31625,-217.02103" />
 					<ReputationAction increase="-200" targettype="Location" _npos="177.5816,-217.02158" />
@@ -111,7 +111,7 @@
       <WaitAction time="5" _npos="-226.23846,-736.3262" />
       <TagAction criteria="crew" tag="player" _npos="279.41528,-735.73083" />
       <TriggerAction target1tag="repairnpc1" target2tag="player" applytotarget2="triggerer_player" radius="250" _npos="781.1395,-735.21423" />
-      <ConversationAction text="eventtext.v1_mechanicsarespecial1" targettag="triggerer_player" eventsprite="ita_engi1" continueconversation="true" _npos="1778.056,-734.621" />
+      <ConversationAction text="eventtext.v1mechanicsarespecial1" targettag="triggerer_player" eventsprite="ita_engi1" continueconversation="true" _npos="1778.056,-734.621" />
       <CheckDataAction identifier="v1_clowndone" condition="eq 1" _npos="1053.8425,1236.4136">
         <Success>
           <GoTo name="noclown" _npos="1544.0562,1255.0804" />
@@ -121,11 +121,11 @@
             <Success>
               <CheckItemAction targettag="triggerer_player" itemidentifiers="clowncostume" _npos="1539.6516,1445.0122">
                 <Success>
-                  <ConversationAction text="EventText.v1_mechanicsarespecial.cl1" targettag="triggerer_player" eventsprite="clown" _npos="2010.6323,1477.1975">
-                    <Option text="EventText.v1_mechanicsarespecial.cl2">
+                  <ConversationAction text="EventText.v1mechanicsarespecial.cl1" targettag="triggerer_player" eventsprite="clown" _npos="2010.6323,1477.1975">
+                    <Option text="EventText.v1mechanicsarespecial.cl2">
                       <CheckItemAction targettag="triggerer_player" itemidentifiers="bikehorn" _npos="2595.9368,884.2871">
                         <Success>
-                          <ConversationAction text="EventText.v1_mechanicsarespecial.cl3" targettag="triggerer_player" eventsprite="ita_engi1" _npos="3212.1604,555.18713" />
+                          <ConversationAction text="EventText.v1mechanicsarespecial.cl3" targettag="triggerer_player" eventsprite="ita_engi1" _npos="3212.1604,555.18713" />
                           <ReputationAction increase="10" targettype="Location" _npos="3644.8828,556.58215" />
                           <ReputationAction increase="10" identifier="clowns" targettype="Faction" _npos="4024.6174,560.1039" />
                           <SpawnAction itemidentifier="ita_bill50" targetinventory="triggerer_player" _npos="4401.2705,560.80835" />
@@ -137,10 +137,10 @@
                         </Failure>
                       </CheckItemAction>
                     </Option>
-                    <Option text="EventText.v1_mechanicsarespecial.cl4">
+                    <Option text="EventText.v1mechanicsarespecial.cl4">
                       <CheckItemAction targettag="triggerer_player" itemidentifiers="guitar" _npos="2656.234,1328.307">
                         <Success>
-                          <ConversationAction text="EventText.v1_mechanicsarespecial.cl5" targettag="triggerer_player" _npos="3194.447,1359.3032" />
+                          <ConversationAction text="EventText.v1mechanicsarespecial.cl5" targettag="triggerer_player" _npos="3194.447,1359.3032" />
                           <SetDataAction operation="Set" value="1" identifier="v1_clowndone" _npos="3624.731,1358.3256" />
                           <GoTo name="start" _npos="4000.465,1358.2007" />
                         </Success>
@@ -149,11 +149,11 @@
                         </Failure>
                       </CheckItemAction>
                     </Option>
-                    <Option text="EventText.v1_mechanicsarespecial.cl6">
+                    <Option text="EventText.v1mechanicsarespecial.cl6">
                       <SpawnAction itemidentifier="wrench" targetinventory="triggerer_player" _npos="2656.658,2111.7224" />
                       <AfflictionAction affliction="blunttrauma" strength="10" limbtype="Head" targettag="triggerer_player" _npos="3175.8528,2111.9456" />
                       <Label name="badclown" _npos="3570.1326,2111.195" />
-                      <ConversationAction text="EventText.v1_mechanicsarespecial.cl7" targettag="triggerer_player" eventsprite="ita_engi1" _npos="3983.2642,2111.6897" />
+                      <ConversationAction text="EventText.v1mechanicsarespecial.cl7" targettag="triggerer_player" eventsprite="ita_engi1" _npos="3983.2642,2111.6897" />
                       <ReputationAction increase="-5" identifier="clowns" targettype="Faction" _npos="4544.4985,2111.82" />
                       <ReputationAction increase="-5" targettype="Location" _npos="4958.2695,2111.9268" />
                       <SetDataAction operation="Set" value="1" identifier="v1_clowndone" _npos="5371.0127,2111.7446" />
@@ -170,19 +170,19 @@
               <Label name="noclown" _npos="968.54236,3259.2507" />
               <SkillCheckAction requiredskill="helm" requiredlevel="70" probabilitybased="false" targettag="triggerer_player" _npos="976.4324,3424.8137">
                 <Success>
-                  <ConversationAction text="EventText.v1_mechanicsarespecial.2" targettag="triggerer_player" continueconversation="true" _npos="1466.3015,3458.239">
-                    <Option text="EventText.v1_mechanicsarespecial.3">
-                      <ConversationAction text="EventText.v1_mechanicsarespecial.4" targettag="triggerer_player" eventsprite="ita_engi1" _npos="2112.9802,3416.2668" />
+                  <ConversationAction text="EventText.v1mechanicsarespecial.2" targettag="triggerer_player" continueconversation="true" _npos="1466.3015,3458.239">
+                    <Option text="EventText.v1mechanicsarespecial.3">
+                      <ConversationAction text="EventText.v1mechanicsarespecial.4" targettag="triggerer_player" eventsprite="ita_engi1" _npos="2112.9802,3416.2668" />
                     </Option>
-                    <Option text="EventText.v1_mechanicsarespecial.5">
+                    <Option text="EventText.v1mechanicsarespecial.5">
                       <Label name="continue" _npos="2110.6191,3855.6204" />
                       <SkillCheckAction requiredskill="mechanical" requiredlevel="50" targettag="triggerer_player" _npos="2981.3635,-773.544">
                         <Success>
-                          <ConversationAction text="EventText.v1_mechanicsarespecial.6" targettag="triggerer_player" continueconversation="true" _npos="3459.323,-741.8374">
-                            <Option text="EventText.v1_mechanicsarespecial.7">
-                              <ConversationAction text="EventText.v1_mechanicsarespecial.8" targettag="triggerer_player" eventsprite="ita_engi1" _npos="3933.1462,-1311.4194" />
+                          <ConversationAction text="EventText.v1mechanicsarespecial.6" targettag="triggerer_player" continueconversation="true" _npos="3459.323,-741.8374">
+                            <Option text="EventText.v1mechanicsarespecial.7">
+                              <ConversationAction text="EventText.v1mechanicsarespecial.8" targettag="triggerer_player" eventsprite="ita_engi1" _npos="3933.1462,-1311.4194" />
                             </Option>
-                            <Option text="EventText.v1_mechanicsarespecial.9">
+                            <Option text="EventText.v1mechanicsarespecial.9">
                               <SkillCheckAction requiredskill="mechanical" requiredlevel="75" probabilitybased="false" targettag="triggerer_player" _npos="3990.103,-674.72394">
                                 <Success>
                                   <GoTo name="end" _npos="4479.325,-642.5033" />
@@ -191,7 +191,7 @@
                                   <RNGAction chance="0.75" _npos="4424.925,-462.6549">
                                     <Success>
                                       <Label name="end" _npos="4924.717,-24.50354" />
-                                      <ConversationAction text="EventText.v1_mechanicsarespecial.10" targettag="triggerer_player" _npos="5324.627,-23.290283" />
+                                      <ConversationAction text="EventText.v1mechanicsarespecial.10" targettag="triggerer_player" _npos="5324.627,-23.290283" />
                                       <ReputationAction increase="20" targettype="Location" _npos="5779.6426,-19.732666" />
                                       <GiveSkillEXPAction skill="mechanical" amount="5" targettag="triggerer_player" _npos="6184.8604,-20.017944" />
                                       <SetPriceMultiplierAction multiplier="0.85" operation="Multiply" targetmultiplier="Mechanical" _npos="6586.7236,-20.017944" />
@@ -200,7 +200,7 @@
                                       <SetDataAction operation="Add" value="1" identifier="eventsdone" _npos="7780.385,-20.80223" />
                                     </Success>
                                     <Failure>
-                                      <ConversationAction text="EventText.v1_mechanicsarespecial.11" targettag="triggerer_player" _npos="5811.2485,396.94336" />
+                                      <ConversationAction text="EventText.v1mechanicsarespecial.11" targettag="triggerer_player" _npos="5811.2485,396.94336" />
                                       <ReputationAction increase="5" targettype="Location" _npos="6178.4463,397.85492" />
                                       <GiveSkillExpAction skill="mechanical" amount="1" targettag="triggerer_player" _npos="6543.714,397.79773" />
                                     </Failure>
@@ -212,7 +212,7 @@
                           </ConversationAction>
                         </Success>
                         <Failure>
-                          <ConversationAction text="EventText.v1_mechanicsarespecial.12" targettag="triggerer_player" eventsprite="ita_engi1" _npos="3448.126,-183.6543" />
+                          <ConversationAction text="EventText.v1mechanicsarespecial.12" targettag="triggerer_player" eventsprite="ita_engi1" _npos="3448.126,-183.6543" />
                           <GoTo name="start" _npos="3818.4746,-183.6311" />
                         </Failure>
                       </SkillCheckAction>
@@ -222,11 +222,11 @@
                 <Failure>
                   <SkillCheckAction requiredskill="mechanical 90" requiredlevel="90" probabilitybased="false" targettag="triggerer_player" _npos="956.8318,4128.494">
                     <Success>
-                      <ConversationAction text="EventText.v1_mechanicsarespecial.13" targettag="triggerer_player" continueconversation="true" _npos="1451.6433,4160.9795">
-                        <Option text="EventText.v1_mechanicsarespecial.14">
-                          <ConversationAction text="EventText.v1_mechanicsarespecial.4" targettag="triggerer_player" eventsprite="ita_engi1" _npos="2371.9546,4192.8047" />
+                      <ConversationAction text="EventText.v1mechanicsarespecial.13" targettag="triggerer_player" continueconversation="true" _npos="1451.6433,4160.9795">
+                        <Option text="EventText.v1mechanicsarespecial.14">
+                          <ConversationAction text="EventText.v1mechanicsarespecial.4" targettag="triggerer_player" eventsprite="ita_engi1" _npos="2371.9546,4192.8047" />
                         </Option>
-                        <Option text="EventText.v1_mechanicsarespecial.5">
+                        <Option text="EventText.v1mechanicsarespecial.5">
                           <GoTo name="continue" _npos="1972.1674,4287.0234" />
                         </Option>
                       </ConversationAction>
@@ -262,7 +262,7 @@
       <ConversationAction text="EventText.givingdirections.c1" targettag="triggerer_player" eventsprite="captain" _npos="2400,0">
         <Option text="EventText.givingdirections.o1">
           <ConversationAction text="EventText.givingdirections.o1.c1" targettag="triggerer_player" _npos="2991.5012,33.99469">
-            <Option text="[HELM 50] “Hey, can I see that map? What’s the fastest route out of this shithole?”">
+            <Option text="EventText.v2givingdirections.4">
               <SkillCheckAction requiredskill="Helm" requiredlevel="50" probabilitybased="false" targettag="triggerer_player" _npos="3942.393,-267.9598">
                 <Success>
                   <GiveSkillEXPAction skill="helm" amount="5" targettag="triggerer_player" _npos="4200,0" />
@@ -279,14 +279,14 @@
                 </Failure>
               </SkillCheckAction>
             </Option>
-            <Option text="&quot;I see you're lost. I'll ask my crewmate if he can show you a way out.&quot;">
-              <ConversationAction text="&quot;I'd appreciate that, thanks.&quot;" targettag="triggerer_player" _npos="3518.631,-536.91174" />
+            <Option text="EventText.v2givingdirections.1">
+              <ConversationAction text="EventText.v2givingdirections.2" targettag="triggerer_player" _npos="3518.631,-536.91174" />
               <GoTo name="start" _npos="3882.2776,-535.29504" />
             </Option>
             <Option text="EventText.givingdirections.o1.o2" />
           </ConversationAction>
         </Option>
-        <Option text="[LUCK% OR WEAPONS 60] Attempt to grab their revolver, when their back is turned...">
+        <Option text="EventText.v2givingdirections.3">
           <SkillCheckAction requiredskill="weapons" requiredlevel="60" probabilitybased="true" targettag="triggerer_player" _npos="3204.279,579.5769">
             <Success>
               <ConversationAction text="EventText.givingdirections.o2.c1" targettag="triggerer_player" _npos="3814.2146,444.5477">
@@ -308,7 +308,7 @@
             </Failure>
           </SkillCheckAction>
         </Option>
-        <Option text="Let somebody else deal with the captain's problem." endconversation="true">
+        <Option text="EventText.v2givingdirections.5" endconversation="true">
           <GoTo name="start" _npos="2490.5554,457.33676" />
         </Option>
       </ConversationAction>
@@ -337,13 +337,13 @@
         </StatusEffect>
       </StatusEffectAction>
       <ConversationAction text="EventText.soundinthevent.c1" targettag="triggerer_player" eventsprite="vent" _npos="673.32935,1176.114">
-        <Option text="[SCREWDRIVER][%LUCK OR MECHANICAL 60] Unscrew the vent to take a better look inside.">
+        <Option text="EventText.v3soundinthevent1">
           <CheckItemAction targettag="triggerer_player" itemidentifiers="screwdriver" _npos="1646.3458,546.9296">
             <Success>
               <SkillCheckAction requiredskill="Mechanical" requiredlevel="60" targettag="triggerer_player" _npos="2174.1003,123.79242">
                 <Success>
                   <GiveSkillEXPAction skill="mechanical" amount="3" targettag="triggerer_player" _npos="3331.1355,-509.23538" />
-                  <ConversationAction text="You manage to get the vent off easily enough and spot the source of the noise right away: The fan blade is brushing against a small metal box. Carefully retrieving it, you open it and find 1,000 marks! You still hear the sound further back in the vent though, but who cares.&#xD;&#xA;[1000mk]&#xD;&#xA;[MECHANICAL +3]" targettag="triggerer_player" _npos="3973.5923,-508.70868" />
+                  <ConversationAction text="EventText.v3soundinthevent2" targettag="triggerer_player" _npos="3973.5923,-508.70868" />
                   <Label name="rewardx" _npos="4381.3867,-500.84174" />
                   <SpawnAction itemidentifier="ita_bill200" targetinventory="triggerer_player" _npos="4774.1885,-509.20828" />
                   <SpawnAction itemidentifier="ita_bill200" targetinventory="triggerer_player" _npos="5142.6597,-508.45093" />
@@ -364,11 +364,11 @@
                   </StatusEffectAction>
                   <SkillCheckAction requiredskill="weapons" requiredlevel="30" probabilitybased="false" targettag="triggerer_player" _npos="5049.3774,585.03687">
                     <Success>
-                      <ConversationAction text="You fumble the vent cover as you’re removing it and brush against the spinning blade. It slices into your hand before you can pull away, nicking an artery and getting stuck.&#xD;&#xA;&#xD;&#xA;[WEAPONS 30] SUCCESS&#xD;&#xA;&#xD;&#xA;Grinning with pain, you managed to nudge the box from behind the vent blades. You open it and find 1000mk inside! You still hear the sound further back in the vent, but who cares anymore.&#xD;&#xA;&#xD;&#xA;[1000mk]&#xD;&#xA;[WEAPONS +3]&#xD;&#xA;" targettag="triggerer_player" _npos="5767.5723,516.99115" />
+                      <ConversationAction text="EventText.v3soundinthevent3" targettag="triggerer_player" _npos="5767.5723,516.99115" />
                       <GoTo name="rewardx" _npos="6216.7974,513.67487" />
                     </Success>
                     <Failure>
-                      <ConversationAction text="You fumble the vent cover as you’re removing it and brush against the spinning blade. It slices into your hand before you can pull away, nicking an artery and getting stuck." targettag="triggerer_player" _npos="5782.6377,961.9897" />
+                      <ConversationAction text="EventText.v3soundinthevent4" targettag="triggerer_player" _npos="5782.6377,961.9897" />
                       <GoTo name="end" _npos="6166.988,964.7968" />
                     </Failure>
                   </SkillCheckAction>
@@ -376,17 +376,17 @@
               </SkillCheckAction>
             </Success>
             <Failure>
-              <ConversationAction text="You can't unscrew the vent with bare hands!" targettag="triggerer_player" eventsprite="vent" _npos="2188.1768,815.1262" />
+              <ConversationAction text="EventText.v3soundinthevent5" targettag="triggerer_player" eventsprite="vent" _npos="2188.1768,815.1262" />
               <GoTo name="start" _npos="2581.1575,815.3694" />
             </Failure>
           </CheckItemAction>
         </Option>
-        <Option text="[FLASHLIGHT] Shine flashlight through the vent and look for anything unusual." endconversation="true">
+        <Option text="EventText.v3soundinthevent6" endconversation="true">
           <CheckItemAction targettag="triggerer_player" itemidentifiers="flashlight" _npos="1648.0658,1948.5294">
             <Success>
               <RNGAction chance="0.5" _npos="2109.008,1674.2876">
                 <Success>
-                  <ConversationAction text="You see a small metal box brushing against the vent blades! You'd have to unscrew the vent to get it though..." targettag="triggerer_player" eventsprite="vent" _npos="2985.4167,1326.3164" />
+                  <ConversationAction text="EventText.v3soundinthevent7" targettag="triggerer_player" eventsprite="vent" _npos="2985.4167,1326.3164" />
                   <GoTo name="start" _npos="3365.5635,1327.9249" />
                 </Success>
                 <Failure>
@@ -413,12 +413,12 @@
               </RNGAction>
             </Success>
             <Failure>
-              <ConversationAction text="You search your pockets for flashlight, but you don't have any. Maybe one of your crewmates has one..." targettag="triggerer_player" eventsprite="vent" _npos="2092.628,2461.2834" />
+              <ConversationAction text="EventText.v3soundinthevent8" targettag="triggerer_player" eventsprite="vent" _npos="2092.628,2461.2834" />
               <GoTo name="start" _npos="2489.178,2461.4697" />
             </Failure>
           </CheckItemAction>
         </Option>
-        <Option text="Ignore it for now. Maybe one of your crewmates will want to deal with this..." endconversation="true">
+        <Option text="EventText.v3soundinthevent9" endconversation="true">
           <GoTo name="start" _npos="671.69775,1601.8116" />
         </Option>
       </ConversationAction>
@@ -435,7 +435,7 @@
       <AfflictionAction affliction="paralysis" strength="100" targettag="patient" _npos="-4117.0786,-0.14880371" />
       <Label name="start" _npos="-3673.4832,-7.2577515" />
       <TriggerAction target1tag="patient" target2tag="player" applytotarget2="triggerer_player" radius="150" disableincombat="false" disableiftargetincapacitated="false" _npos="-3196.3997,-2.822174" />
-      <ConversationAction text="You come across an unconscious worker. There are no signs of violence and nobody else is around. Healing a local might cost you, but it will be beneficial on your relationships with people here." targettag="triggerer_player" eventsprite="unconscious" _npos="-2808.7795,-2.7611084" />
+      <ConversationAction text="EventText.v4goodsamaritan.1" targettag="triggerer_player" eventsprite="unconscious" _npos="-2808.7795,-2.7611084" />
       <SetDataAction operation="Set" value="1" identifier="v4done" _npos="-3383.2192,-474.0031" />
       <Label name="healcheck" _npos="-2946.4734,-653.058" />
       <CheckAfflictionAction identifier="opiateoverdose" targettag="patient" _npos="-2552.493,-653.7312">
@@ -447,13 +447,13 @@
           <TriggerAction target1tag="patient" target2tag="player" applytotarget2="healer" radius="200" disableiftargetincapacitated="false" _npos="-2100.0264,-589.1046" />
           <SkillCheckAction requiredskill="medical" requiredlevel="60" probabilitybased="true" targettag="healer" _npos="-1506.7234,-581.83276">
             <Success>
-              <ConversationAction text="After skillfully injecting just a little bit of Naloxone, you discover that the patient has paraben hypersensitivity. Left with no other options, you administer the naloxone in small doses over longer period of time and carefully observe patient's reaction. They seem to be getting better.&#xD;&#xA;&#xD;&#xA;[MEDICAL 60 or LUCK% SUCCESS]&#xD;&#xA;[+5 MEDICAL]" targettag="healer" eventsprite="unconscious" _npos="-941.5709,-958.59595" />
+              <ConversationAction text="EventText.v4goodsamaritan.2" targettag="healer" eventsprite="unconscious" _npos="-941.5709,-958.59595" />
               <AfflictionAction affliction="stun" strength="-1000" targettag="patient" _npos="-544.43463,-913.96747" />
               <AfflictionAction affliction="paralysis" strength="-1000" targettag="patient" _npos="-547.8421,-716.8437" />
               <GiveSkillExpAction skill="medical" amount="5" targettag="healer" _npos="-547.6629,-1098.8577" />
               <CheckItemAction targettag="patient" itemidentifiers="ita_bill50" _npos="-340.3955,-1346.7427">
                 <Success>
-                  <ConversationAction text="&quot;Hey. Thanks for getting me back on my feet. I tried some opiates to heal the pain of loosing my Orangeboy to a bunch of vent mudraptors, but it didn't work for me. I don't have much to give you, but I'll tell my friend at the shop that you helped me. They'll give you a discount.&quot;&#xD;&#xA;&#xD;&#xA;[REWARD 50mk]&#xD;&#xA;[10% SHOP SALE]&#xD;&#xA;[LOCATION REP +10]" speakertag="patient" invokertag="healreward" _npos="-7.5151596,-965.2131" />
+                  <ConversationAction text="EventText.v4goodsamaritan.3" speakertag="patient" invokertag="healreward" _npos="-7.5151596,-965.2131" />
                   <SpawnAction itemidentifier="ita_bill50" targetinventory="healreward" _npos="395.42984,-965.96423" />
                   <Label name="rew" _npos="692.5479,-1071.4188" />
                   <ReputationAction increase="10" targettype="Location" _npos="1001.2194,-1002.95703" />
@@ -462,7 +462,7 @@
                   <SetDataAction operation="Set" value="1" identifier="v4done" _npos="1786.553,-868.70764" />
                 </Success>
                 <Failure>
-                  <ConversationAction text="&quot;Hey. Thanks for getting me back on my feet. I tried some opiates to heal the pain of loosing my Orangeboy to a bunch of vent mudraptors, but it didn't work for me. I'd give you some cash, but some bastard had to steal it after I blacked out. I'll tell my friend at the shop that you helped me. They'll give you a discount.&quot;&#xD;&#xA;&#xD;&#xA;[10% SHOP SALE]&#xD;&#xA;[LOCATION REP +10]" speakertag="patient" invokertag="healreward" _npos="207.71222,-1518.2726" />
+                  <ConversationAction text="EventText.v4goodsamaritan.4" speakertag="patient" invokertag="healreward" _npos="207.71222,-1518.2726" />
                   <GoTo name="rew" _npos="626.496,-1512.1696" />
                 </Failure>
               </CheckItemAction>
@@ -470,7 +470,7 @@
             <Failure>
               <AfflictionAction affliction="organdamage" strength="50" targettag="patient" _npos="-938.6234,-430.48956" />
               <AfflictionAction affliction="stun" strength="100" targettag="patient" _npos="-569.2152,-430.36002" />
-              <ConversationAction text="The worker had a bad reaction to your medicine. Area around the injection is swelling quickly and their breathing is irregular. People start being curious - It's time to leave.&#xD;&#xA;&#xD;&#xA;[MEDICAL 60 or LUCK% FAIL]" targettag="healer" eventsprite="unconscious" _npos="-189.18024,-430.82266" />
+              <ConversationAction text="EventText.v4goodsamaritan.5" targettag="healer" eventsprite="unconscious" _npos="-189.18024,-430.82266" />
               <GoTo name="end" _npos="194.15735,-430.31567" />
             </Failure>
           </SkillCheckAction>
@@ -503,12 +503,12 @@
       <StatusEffectAction targettag="selectedresearchterminal" _npos="3600,0">
         <StatusEffect indestructible="false" condition="0" setvalue="true" _npos="4200,0" />
       </StatusEffectAction>
-      <ConversationAction text="A nearby research terminal draws your attention. It flickers on and off rapidly for a while, then goes dark." targettag="triggerer_player" eventsprite="brokenterminal" _npos="4040.0835,366.98135">
-        <Option text="[SCREWDRIVER] Investigate" endconversation="true">
+      <ConversationAction text="EventText.v5impromptuengineering.1" targettag="triggerer_player" eventsprite="brokenterminal" _npos="4040.0835,366.98135">
+        <Option text="EventText.v5impromptuengineering.2" endconversation="true">
           <CheckItemAction targettag="triggerer_player" itemidentifiers="screwdriver" _npos="4525.9976,462.55853">
             <Success>
-              <ConversationAction text="You try pressing a couple buttons. No response. Opening a side panel reveals a tangle of wires and a couple of FPGA circuits seemingly in perfect condition." targettag="triggerer_player" _npos="4800,0">
-                <Option text="[ELECTRICAL 50] Scavenge for parts">
+              <ConversationAction text="EventText.v5impromptuengineering.3" targettag="triggerer_player" _npos="4800,0">
+                <Option text="EventText.v5impromptuengineering.4">
                   <SkillCheckAction requiredskill="Electrical" requiredlevel="50" probabilitybased="false" targettag="triggerer_player" _npos="5400,0">
                     <Success>
                       <GiveSkillEXPAction skill="electrical" amount="5" targettag="triggerer_player" _npos="6000,0" />
@@ -535,36 +535,36 @@
                     </Failure>
                   </SkillCheckAction>
                 </Option>
-                <Option text="[LUCK% OR ELECTRICAL 60] Attempt to repair the terminal">
+                <Option text="EventText.v5impromptuengineering.5">
                   <SkillCheckAction requiredskill="electrical" requiredlevel="60" targettag="triggerer_player" _npos="5399.1113,427.90106">
                     <Success>
                       <StatusEffectAction targettag="selectedresearchterminal" _npos="5395.976,761.53174">
                         <StatusEffect condition="100" indestructible="true" setvalue="true" _npos="5394.3574,858.03595" />
                       </StatusEffectAction>
-                      <ConversationAction text="You reconnect the display power cables and the terminal comes back to life. Poking around the system reveals some opportunities. Looks like it’s connected to the outpost’s outfitting service. What do you want to do?" targettag="triggerer_player" _npos="5944.9185,1161.8551">
-                        <Option text="Request experimental coilgun ammunition">
+                      <ConversationAction text="EventText.v5impromptuengineering.6" targettag="triggerer_player" _npos="5944.9185,1161.8551">
+                        <Option text="EventText.v5impromptuengineering.7">
                           <SpawnAction itemidentifier="physicoriumammobox" spawnlocation="MainSub" _npos="7213.93,640.7167" />
                           <SpawnAction itemidentifier="physicoriumammobox" spawnlocation="MainSub" _npos="7928,640" />
-                          <ConversationAction text="After clicking around a bit, you successfully order two boxes of physicorium coilgun ammunition for your vessel, free of charge." targettag="triggerer_player" _npos="8528,694">
+                          <ConversationAction text="EventText.v5impromptuengineering.8" targettag="triggerer_player" _npos="8528,694">
                             <Option text="EventText.impromptuengineering.o1.o2.o1.o1" endconversation="true">
                               <GoTo name="end" _npos="9077.5,741.5" />
                             </Option>
                           </ConversationAction>
                         </Option>
-                        <Option text="Install an old-school first person shooter game on the terminal&#xD;&#xA;[ELECTRICAL +5]">
+                        <Option text="EventText.v5impromptuengineering.9">
                           <ConversationAction text="EventText.impromptuengineering.o1.o2.o2.c1" targettag="triggerer_player" _npos="7493.2383,1106.0947">
-                            <Option text="A job well done." endconversation="true" />
+                            <Option text="EventText.v5impromptuengineering.9.1" endconversation="true" />
                           </ConversationAction>
                         </Option>
-                        <Option text="Poke around the files for latest medical research&#xD;&#xA;[MEDICAL +5]">
+                        <Option text="EventText.v5impromptuengineering.10">
                           <CheckReputationAction targettype="Faction" identifier="separatists" condition="gte 30" _npos="7611.9155,1670.404">
                             <Success>
-                              <ConversationAction text="You find medical fabricator interface that controls production of Compound N very efficiently. Seems this outpost is supplying the Coalition with explosives." targettag="triggerer_player" _npos="8076.817,1836.6901">
-                                <Option text="Study the production [MEDICAL +5]" endconversation="true">
+                              <ConversationAction text="EventText.v5impromptuengineering.11" targettag="triggerer_player" _npos="8076.817,1836.6901">
+                                <Option text="EventText.v5impromptuengineering.11.1" endconversation="true">
                                   <GiveSkillExpAction skill="medical" amount="5" targettag="triggerer_player" _npos="8522.274,1691.0706" />
                                   <GoTo name="end" _npos="8978.653,1673.3073" />
                                 </Option>
-                                <Option text="[SEPARATISTS REP 30] Switch the recipe to Volatile Compound N... [SEPARATISTS REP +10]" endconversation="true">
+                                <Option text="EventText.v5impromptuengineering.12" endconversation="true">
                                   <ReputationAction increase="10" identifier="separatists" targettype="Faction" _npos="8530.812,1956.4315" />
                                   <SetDataAction operation="Set" value="1" identifier="sepsab_v5" _npos="8958.138,1956.1691" />
                                   <SetDataAction operation="Add" value="1" identifier="sepsab_total" _npos="9331.387,1956.6255" />
@@ -573,8 +573,8 @@
                               </ConversationAction>
                             </Success>
                             <Failure>
-                              <ConversationAction text="You find an interesting medical fabricator interface that controls production of Compound N very efficiently. You study the procedures and gain some understanding from it." targettag="triggerer_player" _npos="8069.0483,1384.6802">
-                                <Option text="A job well done." endconversation="true">
+                              <ConversationAction text="EventText.v5impromptuengineering.13" targettag="triggerer_player" _npos="8069.0483,1384.6802">
+                                <Option text="EventText.v5impromptuengineering.13.1" endconversation="true">
                                   <GiveSkillExpAction skill="medical" amount="5" targettag="triggerer_player" _npos="8554.694,1423.1345" />
                                   <GoTo name="end" _npos="8959.776,1423.1174" />
                                 </Option>
@@ -582,9 +582,9 @@
                             </Failure>
                           </CheckReputationAction>
                         </Option>
-                        <Option text="Search for information about alien creature anatomy&#xD;&#xA;[WEAPONS +5]">
-                          <ConversationAction text="There is a detailed cross-section picture of a mudraptor. It seems like crouching and shooting it in the underbelly might be the best way to deal with the armored ones. Pointblank headshots with shotgun into jaw might decapitate them." targettag="triggerer_player" _npos="7524.794,2326.451">
-                            <Option text="A job well done." endconversation="true">
+                        <Option text="EventText.v5impromptuengineering.14">
+                          <ConversationAction text="EventText.v5impromptuengineering.15" targettag="triggerer_player" _npos="7524.794,2326.451">
+                            <Option text="EventText.v5impromptuengineering.15.1" endconversation="true">
                               <GiveSkillExpAction skill="weapons" amount="5" targettag="triggerer_player" _npos="8034.1187,2357.8794" />
                               <GoTo name="end" _npos="8947.612,2339.1582" />
                             </Option>
@@ -613,7 +613,7 @@
             </Failure>
           </CheckItemAction>
         </Option>
-        <Option text="Leave this to the electrician" endconversation="true">
+        <Option text="EventText.v5impromptuengineering.16" endconversation="true">
           <GoTo name="start" _npos="4527.6353,687.0188" />
         </Option>
       </ConversationAction>
@@ -722,20 +722,28 @@
       <NPCFollowAction npctag="c4" targettag="triggerer_player" follow="true" _npos="5229.803,759.3109" />
       <SetDataAction operation="Set" value="1" identifier="v8done" _npos="5562.316,-323.72092" />
       <ConversationAction text="EventText.propaganda.c1" targettag="triggerer_player" eventsprite="noticeboard" _npos="5929.476,-323.41934">
-        <Option text="EventText.propaganda.o1">
-          <ConversationAction text="EventText.propaganda.o1.c1" targettag="triggerer_player" continueconversation="true" _npos="6408.6245,-113.295166">
-            <Option text="[SPRAYER+ETHANOL] Show locals a good example of an upstanding citizen by getting rid of the vandalism." endconversation="true">
+        <Option text="EventText.propaganda.c1.o1">
+          <ConversationAction text="EventText.propaganda.c1.o1.c1" targettag="triggerer_player" continueconversation="true" _npos="6408.6245,-113.295166">
+            <Option text="EventText.v8propaganda.1" endconversation="true">
               <CheckItemAction targettag="triggerer_player" itemidentifiers="sprayer" _npos="6955.8867,37.534332">
                 <Success>
                   <CheckItemAction targettag="triggerer_player" itemidentifiers="ethanol" _npos="7386.7256,39.007767">
                     <Success>
-                      <ConversationAction text="People look at you cleaning the mess. They start whispering among each other, speculating whether you are a Coalition higher up. Some of them give you a sharp look and walk away together...&#xD;&#xA;[LOCATION REP +15]&#xD;&#xA;[COALITION REP +10]&#xD;&#xA;[SEPARATIST REP -10]" targettag="triggerer_player" _npos="7630.4756,340.88916" />
+                      <ConversationAction text="EventText.v8propaganda.4" targettag="triggerer_player" _npos="7630.4756,340.88916" />
                       <ReputationAction increase="15" targettype="Location" _npos="8024.04,340.7349" />
                       <ReputationAction increase="10" identifier="coalition" targettype="Faction" _npos="8024.6484,501.88116" />
                       <ReputationAction increase="-10" identifier="separatists" targettype="Faction" _npos="8024.62,662.48175" />
+					  <NPCFollowAction npctag="c1" targettag="triggerer_player" follow="false" />
+					  <NPCFollowAction npctag="c2" targettag="triggerer_player" follow="false" />
+					  <NPCFollowAction npctag="c3" targettag="triggerer_player" follow="false" />
+					  <NPCFollowAction npctag="c4" targettag="triggerer_player" follow="false" />
                     </Success>
                     <Failure>
                       <GoTo name="start" _npos="7385.309,203.7391" />
+					  <NPCFollowAction npctag="c1" targettag="triggerer_player" follow="false" />
+					  <NPCFollowAction npctag="c2" targettag="triggerer_player" follow="false" />
+					  <NPCFollowAction npctag="c3" targettag="triggerer_player" follow="false" />
+					  <NPCFollowAction npctag="c4" targettag="triggerer_player" follow="false" />
                     </Failure>
                   </CheckItemAction>
                 </Success>
@@ -744,14 +752,14 @@
                 </Failure>
               </CheckItemAction>
             </Option>
-            <Option text="[PAINT CAN] Add some of your own flair too." endconversation="true">
+            <Option text="EventText.v8propaganda.2" endconversation="true">
               <CheckItemAction targettag="triggerer_player" itemtags="paint" _npos="6954.0806,-216.54984">
                 <Success>
                   <ReputationAction increase="-15" targettype="Location" _npos="7353.98,-184.18964" />
                   <ReputationAction increase="10" identifier="separatists" targettype="Faction" _npos="7742.136,-184.10553" />
                   <ReputationAction increase="-30" identifier="coalition" targettype="Faction" _npos="8113.5317,-184.37677" />
-                  <ConversationAction text="You draw some vulgar art of your own, which is enough to rile up the people to start arguing even more and a fight breaks out!&#xD;&#xA;[LOCATION REP -15]&#xD;&#xA;[COALITION REP -30]&#xD;&#xA;[SEPARATIST REP +10]" targettag="triggerer_player" eventsprite="mediator" _npos="8483.713,-184.21393">
-                    <Option text="A little bit of chaos will make people think twice about Coalition's so called &quot;Order and Safety&quot;." endconversation="true">
+                  <ConversationAction text="EventText.v8propaganda.5" targettag="triggerer_player" eventsprite="mediator" _npos="8483.713,-184.21393">
+                    <Option text="EventText.v8propaganda.6" endconversation="true">
                       <CombatAction combatmode="Offensive" isinstigator="true" guardreaction="Arrest" witnessreaction="Retreat" npctag="c1" enemytag="c2" _npos="8996.241,-152.08496" />
                       <CombatAction combatmode="Offensive" isinstigator="true" guardreaction="Arrest" witnessreaction="Retreat" npctag="c2" enemytag="c1" _npos="9417.998,-153.51736" />
                       <CombatAction combatmode="Offensive" isinstigator="true" guardreaction="Arrest" witnessreaction="Retreat" npctag="c3" enemytag="c4" _npos="9810.5625,-153.36993" />
@@ -760,12 +768,20 @@
                   </ConversationAction>
                 </Success>
                 <Failure>
-                  <ConversationAction text="Damn, no paint can on you? What kind of rebel are you? Go grab some." targettag="triggerer_player" dialogtype="Small" _npos="7390.1577,-632.927" />
+                  <ConversationAction text="EventText.v8propaganda.7" targettag="triggerer_player" dialogtype="Small" _npos="7390.1577,-632.927" />
+				  <NPCFollowAction npctag="c1" targettag="triggerer_player" follow="false" />
+					  <NPCFollowAction npctag="c2" targettag="triggerer_player" follow="false" />
+					  <NPCFollowAction npctag="c3" targettag="triggerer_player" follow="false" />
+					  <NPCFollowAction npctag="c4" targettag="triggerer_player" follow="false" />
                   <GoTo name="start" _npos="7758.9287,-632.59515" />
                 </Failure>
               </CheckItemAction>
             </Option>
-            <Option text="Keep walking." endconversation="true">
+            <Option text="EventText.v8propaganda.3" endconversation="true">
+			<NPCFollowAction npctag="c1" targettag="triggerer_player" follow="false" />
+					  <NPCFollowAction npctag="c2" targettag="triggerer_player" follow="false" />
+					  <NPCFollowAction npctag="c3" targettag="triggerer_player" follow="false" />
+					  <NPCFollowAction npctag="c4" targettag="triggerer_player" follow="false" />
               <GoTo name="start" _npos="6821.94,403.4666" />
             </Option>
           </ConversationAction>
@@ -789,8 +805,8 @@
 					<NPCWaitAction npctag="canteencook1" wait="true" _npos="-1116.9644,78.27637" />
 					<SetDataAction operation="Set" value="0" identifier="depositcanteen1" _npos="-753.1201,80.390884" />
 					<SetDataAction operation="Set" value="0" identifier="nocashcanteen1" _npos="-754.1396,243.10394" />
-					<ConversationAction text="&quot;Something warm to eat?&quot;" speakertag="canteencook1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
-						<Option text="Warm Craw-Yum! soup [12 mk]" endconversation="true">
+					<ConversationAction text="EventText.shop.1" speakertag="canteencook1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="EventText.shop.2" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="canteen1op1" _npos="437.0307,4.243805" />
 							<SetDataAction operation="Set" value="-12" identifier="depositcanteen1" _npos="819.2318,4.865814" />
 							<Label name="depositcash" _npos="1184.9144,4.7407684" />
@@ -834,7 +850,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="nocashcanteen1" condition="eq 1" _npos="4509.685,-157.76965">
 																				<Success>
-																					<ConversationAction text="&quot;Come back with more money.&quot;" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
+																					<ConversationAction text="EventText.shop.nocash" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
 																					<GoTo name="end" _npos="4883.169,-591.94916" />
 																				</Success>
 																				<Failure>
@@ -914,7 +930,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="depositcanteen1" condition="gt 0" _npos="4493.946,355.50256">
 																				<Success>
-																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<ConversationAction text="EventText.somthingborke" _npos="4911.356,387.87268" />
 																					<GoTo name="canteencook1" _npos="5281.707,387.06558" />
 																				</Success>
 																				<Failure>
@@ -996,7 +1012,7 @@
 								</Failure>
 							</CheckDataAction>
 						</Option>
-						<Option text="&quot;No, thanks.&quot;" endconversation="true">
+						<Option text="EventText.shop.nothanks" endconversation="true">
 							
 							<GoTo name="canteencook1" _npos="435.41022,1395.0886" />
 						</Option>
@@ -1006,7 +1022,7 @@
 					</ConversationAction>
 				</Success>
 				<Failure>
-					<ConversationAction text="&quot;You are nothing but trouble. Get out!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="canteencook1" dialogtype="Small" _npos="-1504.7175,281.90598" />
+					<ConversationAction text="EventText.shop.lowshoprep" speakertag="canteencook1" dialogtype="Small" _npos="-1504.7175,281.90598" />
 				</Failure>
 			</CheckReputationAction>
 		</ScriptedEvent>
@@ -1019,8 +1035,8 @@
 					<NPCWaitAction npctag="bartender1" wait="true" _npos="-1116.9644,78.27637" />
 					<SetDataAction operation="Set" value="0" identifier="depositbar1" _npos="-753.1201,80.390884" />
 					<SetDataAction operation="Set" value="0" identifier="nocashbar1" _npos="-754.1396,243.10394" />
-					<ConversationAction text="&quot;Do you want a drink?&quot;" speakertag="bartender1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
-						<Option text="Fishtail Cocktail [32 mk]" endconversation="true">
+					<ConversationAction text="EventText.shop.3" speakertag="bartender1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="EventText.shop.4" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="bar1op1" _npos="437.0307,4.243805" />
 							<SetDataAction operation="Set" value="-32" identifier="depositbar1" _npos="819.2318,4.865814" />
 							<Label name="depositcash" _npos="1184.9144,4.7407684" />
@@ -1064,7 +1080,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="nocashbar1" condition="eq 1" _npos="4509.685,-157.76965">
 																				<Success>
-																					<ConversationAction text="&quot;Come back with more money.&quot;" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
+																					<ConversationAction text="EventText.shop.nocash" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
 																					<GoTo name="end" _npos="4883.169,-591.94916" />
 																				</Success>
 																				<Failure>
@@ -1144,7 +1160,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="depositbar1" condition="gt 0" _npos="4493.946,355.50256">
 																				<Success>
-																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<ConversationAction text="EventText.somthingborke" _npos="4911.356,387.87268" />
 																					<GoTo name="bartender1" _npos="5281.707,387.06558" />
 																				</Success>
 																				<Failure>
@@ -1226,7 +1242,7 @@
 								</Failure>
 							</CheckDataAction>
 						</Option>
-						<Option text="&quot;No, thanks.&quot;" endconversation="true">
+						<Option text="EventText.shop.nothanks" endconversation="true">
 							<GoTo name="bartender1" _npos="435.41022,1395.0886" />
 						</Option>
 						<Option text="" endconversation="true">
@@ -1235,7 +1251,7 @@
 					</ConversationAction>
 				</Success>
 				<Failure>
-					<ConversationAction text="&quot;You are nothing but trouble. Get out!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="bartender1" dialogtype="Small" _npos="-1504.7175,281.90598" />
+					<ConversationAction text="EventText.shop.lowshoprep" speakertag="bartender1" dialogtype="Small" _npos="-1504.7175,281.90598" />
 				</Failure>
 			</CheckReputationAction>
 		</ScriptedEvent>
@@ -1250,8 +1266,8 @@
 					<NPCWaitAction npctag="bartender2" wait="true" _npos="-1116.9644,78.27637" />
 					<SetDataAction operation="Set" value="0" identifier="depositbar2" _npos="-753.1201,80.390884" />
 					<SetDataAction operation="Set" value="0" identifier="nocashbar2" _npos="-754.1396,243.10394" />
-					<ConversationAction text="&quot;Do you want a drink?&quot;" speakertag="bartender2" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
-						<Option text="Fishtail Cocktail [32 mk]" endconversation="true">
+					<ConversationAction text="EventText.shop.3" speakertag="bartender2" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="EventText.shop.4" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="bar2op1" _npos="437.0307,4.243805" />
 							<SetDataAction operation="Set" value="-32" identifier="depositbar2" _npos="819.2318,4.865814" />
 							<Label name="depositcash" _npos="1184.9144,4.7407684" />
@@ -1295,7 +1311,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="nocashbar2" condition="eq 1" _npos="4509.685,-157.76965">
 																				<Success>
-																					<ConversationAction text="&quot;Come back with more money.&quot;" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
+																					<ConversationAction text="EventText.shop.nocash" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
 																					<GoTo name="end" _npos="4883.169,-591.94916" />
 																				</Success>
 																				<Failure>
@@ -1375,7 +1391,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="depositbar2" condition="gt 0" _npos="4493.946,355.50256">
 																				<Success>
-																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<ConversationAction text="EventText.somthingborke" _npos="4911.356,387.87268" />
 																					<GoTo name="bartender2" _npos="5281.707,387.06558" />
 																				</Success>
 																				<Failure>
@@ -1457,7 +1473,7 @@
 								</Failure>
 							</CheckDataAction>
 						</Option>
-						<Option text="&quot;No, thanks.&quot;" endconversation="true">
+						<Option text="EventText.shop.nothanks" endconversation="true">
 							<GoTo name="bartender2" _npos="435.41022,1395.0886" />
 						</Option>
 						<Option text="" endconversation="true">
@@ -1466,7 +1482,7 @@
 					</ConversationAction>
 				</Success>
 				<Failure>
-					<ConversationAction text="&quot;You are nothing but trouble. Get out!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="bartender2" dialogtype="Small" _npos="-1504.7175,281.90598" />
+					<ConversationAction text="EventText.shop.lowshoprep" speakertag="bartender2" dialogtype="Small" _npos="-1504.7175,281.90598" />
 				</Failure>
 			</CheckReputationAction>
 		</ScriptedEvent>
@@ -1501,8 +1517,8 @@
 					<NPCWaitAction npctag="clothierc1" wait="true" _npos="-1116.9644,78.27637" />
 					<SetDataAction operation="Set" value="0" identifier="depositc1" _npos="-753.1201,80.390884" />
 					<SetDataAction operation="Set" value="0" identifier="nocashc1" _npos="-754.1396,243.10394" />
-					<ConversationAction text="&quot;Would you like to purchase some clothes?&quot;" speakertag="clothierc1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
-						<Option text="Shirt with ripped jeans [32 mk]" endconversation="true">
+					<ConversationAction text="EventText.shop.5" speakertag="clothierc1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="EventText.shop.6" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="c1op1" _npos="437.0307,4.243805" />
 							<SetDataAction operation="Set" value="-32" identifier="depositc1" _npos="819.2318,4.865814" />
 							<Label name="depositcash" _npos="1184.9144,4.7407684" />
@@ -1546,7 +1562,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="nocashc1" condition="eq 1" _npos="4509.685,-157.76965">
 																				<Success>
-																					<ConversationAction text="&quot;Come back with more money.&quot;" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
+																					<ConversationAction text="EventText.shop.nocash" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
 																					<GoTo name="end" _npos="4883.169,-591.94916" />
 																				</Success>
 																				<Failure>
@@ -1687,7 +1703,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="depositc1" condition="gt 0" _npos="4493.946,355.50256">
 																				<Success>
-																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<ConversationAction text="EventText.somthingborke" _npos="4911.356,387.87268" />
 																					<GoTo name="clothesc1" _npos="5281.707,387.06558" />
 																				</Success>
 																				<Failure>
@@ -1769,42 +1785,42 @@
 								</Failure>
 							</CheckDataAction>
 						</Option>
-						<Option text="Beige sweater [40mk]" endconversation="true">
+						<Option text="EventText.shop.7" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="c1op2" _npos="436.5796,167.86679" />
 							<SetDataAction operation="Set" value="-40" identifier="depositc1" _npos="821.1559,166.73837" />
 							<GoTo name="depositcash" _npos="1188.6864,166.40704" />
 						</Option>
-						<Option text="Purple sweatshirt with vest [34mk]" endconversation="true">
+						<Option text="EventText.shop.8" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="c1op3" _npos="435.36377,327.9984" />
 							<SetDataAction operation="Set" value="-34" identifier="depositc1" _npos="821.1559,326.7578" />
 							<GoTo name="depositcash" _npos="1198.4235,325.81714" />
 						</Option>
-						<Option text="Green sweatshirt with vest [37mk]" endconversation="true">
+						<Option text="EventText.shop.9" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="c1op4" _npos="435.81055,489.13885" />
 							<SetDataAction operation="Set" value="-37" identifier="depositc1" _npos="820.07465,487.85803" />
 							<GoTo name="depositcash" _npos="1201.9347,487.31696" />
 						</Option>
-						<Option text="Administrator's clothes [70mk]" endconversation="true">
+						<Option text="EventText.shop.10" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="c1op5" _npos="434.9533,651.6224" />
 							<SetDataAction operation="Set" value="-70" identifier="depositc1" _npos="820.07495,650.03955" />
 							<GoTo name="depositcash" _npos="1207.2013,650.939" />
 						</Option>
-						<Option text="Crew chief's clothes [70mk]" endconversation="true">
+						<Option text="EventText.shop.11" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="c1op6" _npos="434.9425,812.7061" />
 							<SetDataAction operation="Set" value="-70" identifier="depositc1" _npos="820.0747,812.23755" />
 							<GoTo name="depositcash" _npos="1203.6902,812.3082" />
 						</Option>
-						<Option text="Buoyant Duffelbag [230mk]" endconversation="true">
+						<Option text="EventText.shop.12" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="c1op7" _npos="433.758,974.14844" />
 							<SetDataAction operation="Set" value="-230" identifier="depositc1" _npos="820.0746,975.01807" />
 							<GoTo name="depositcash" _npos="1203.6902,975.7151" />
 						</Option>
-						<Option text="Toolbelt [35mk]" endconversation="true">
+						<Option text="EventText.shop.13" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="c1op8" _npos="434.12024,1136.6068" />
 							<SetDataAction operation="Set" value="-35" identifier="depositc1" _npos="822.24164,1138.8525" />
 							<GoTo name="depositcash" _npos="1204.758,1138.3022" />
 						</Option>
-						<Option text="Not really." endconversation="true">
+						<Option text="EventText.shop.notreally" endconversation="true">
 							<GoTo name="clothesc1" _npos="435.41022,1395.0886" />
 						</Option>
 						<Option text="" endconversation="true">
@@ -1813,7 +1829,7 @@
 					</ConversationAction>
 				</Success>
 				<Failure>
-					<ConversationAction text="&quot;Get out of my store you vandals!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="clothierc1" dialogtype="Small" _npos="-1504.7175,281.90598" />
+					<ConversationAction text="EventText.shop.73" speakertag="clothierc1" dialogtype="Small" _npos="-1504.7175,281.90598" />
 				</Failure>
 			</CheckReputationAction>
 		</ScriptedEvent>
@@ -1828,8 +1844,8 @@
 					<NPCWaitAction npctag="botanistb1" wait="true" _npos="-1116.9644,78.27637" />
 					<SetDataAction operation="Set" value="0" identifier="depositb1" _npos="-753.1201,80.390884" />
 					<SetDataAction operation="Set" value="0" identifier="nocashb1" _npos="-754.1396,243.10394" />
-					<ConversationAction text="&quot;Would you like to buy some gardening equipment?&quot;" speakertag="botanistb1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
-						<Option text="Planter [120 mk]" endconversation="true">
+					<ConversationAction text="EventText.shop.14" speakertag="botanistb1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="EventText.shop.15" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="b1op1" _npos="437.0307,4.243805" />
 							<SetDataAction operation="Set" value="-120" identifier="depositb1" _npos="819.2318,4.865814" />
 							<Label name="depositcash" _npos="1184.9144,4.7407684" />
@@ -1873,7 +1889,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="nocashb1" condition="eq 1" _npos="4509.685,-157.76965">
 																				<Success>
-																					<ConversationAction text="&quot;Come back with more money.&quot;" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
+																					<ConversationAction text="EventText.shop.nocash" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
 																					<GoTo name="end" _npos="4883.169,-591.94916" />
 																				</Success>
 																				<Failure>
@@ -2006,7 +2022,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="depositb1" condition="gt 0" _npos="4493.946,355.50256">
 																				<Success>
-																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<ConversationAction text="EventText.somthingborke" _npos="4911.356,387.87268" />
 																					<GoTo name="botanyb1" _npos="5281.707,387.06558" />
 																				</Success>
 																				<Failure>
@@ -2088,42 +2104,42 @@
 								</Failure>
 							</CheckDataAction>
 						</Option>
-						<Option text="Watering Can [80mk]" endconversation="true">
+						<Option text="EventText.shop.16" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="b1op2" _npos="436.5796,167.86679" />
 							<SetDataAction operation="Set" value="-80" identifier="depositb1" _npos="821.1559,166.73837" />
 							<GoTo name="depositcash" _npos="1188.6864,166.40704" />
 						</Option>
-						<Option text="Fertilizer [145mk]" endconversation="true">
+						<Option text="EventText.shop.17" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="b1op3" _npos="435.36377,327.9984" />
 							<SetDataAction operation="Set" value="-145" identifier="depositb1" _npos="821.1559,326.7578" />
 							<GoTo name="depositcash" _npos="1198.4235,325.81714" />
 						</Option>
-						<Option text="Seed Bag [65mk]" endconversation="true">
+						<Option text="EventText.shop.18" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="b1op4" _npos="435.81055,489.13885" />
 							<SetDataAction operation="Set" value="-65" identifier="depositb1" _npos="820.07465,487.85803" />
 							<GoTo name="depositcash" _npos="1201.9347,487.31696" />
 						</Option>
-						<Option text="Seed - Pomegrenade [34mk]" endconversation="true">
+						<Option text="EventText.shop.19" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="b1op5" _npos="434.9533,651.6224" />
 							<SetDataAction operation="Set" value="-34" identifier="depositb1" _npos="820.07495,650.03955" />
 							<GoTo name="depositcash" _npos="1207.2013,650.939" />
 						</Option>
-						<Option text="Seed - Tobacco Vine [32mk]" endconversation="true">
+						<Option text="EventText.shop.20" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="b1op6" _npos="434.9425,812.7061" />
 							<SetDataAction operation="Set" value="-32" identifier="depositb1" _npos="820.0747,812.23755" />
 							<GoTo name="depositcash" _npos="1203.6902,812.3082" />
 						</Option>
-						<Option text="Seed - Salt Vine [35mk]" endconversation="true">
+						<Option text="EventText.shop.21" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="b1op7" _npos="433.758,974.14844" />
 							<SetDataAction operation="Set" value="-35" identifier="depositb1" _npos="820.0746,975.01807" />
 							<GoTo name="depositcash" _npos="1203.6902,975.7151" />
 						</Option>
-						<Option text="Seed - Raptorbane [38mk]" endconversation="true">
+						<Option text="EventText.shop.22" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="b1op8" _npos="434.12024,1136.6068" />
 							<SetDataAction operation="Set" value="-38" identifier="depositb1" _npos="822.24164,1138.8525" />
 							<GoTo name="depositcash" _npos="1204.758,1138.3022" />
 						</Option>
-						<Option text="&quot;No, thanks.&quot;" endconversation="true">
+						<Option text="EventText.shop.nothanks" endconversation="true">
 							<GoTo name="botanyb1" _npos="435.41022,1395.0886" />
 						</Option>
 						<Option text="" endconversation="true">
@@ -2132,7 +2148,7 @@
 					</ConversationAction>
 				</Success>
 				<Failure>
-					<ConversationAction text="&quot;You are nothing but trouble. Get out!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="botanistb1" dialogtype="Small" _npos="-1504.7175,281.90598" />
+					<ConversationAction text="EventText.shop.lowshoprep" speakertag="botanistb1" dialogtype="Small" _npos="-1504.7175,281.90598" />
 				</Failure>
 			</CheckReputationAction>
 		</ScriptedEvent>
@@ -2151,8 +2167,8 @@
       <NPCWaitAction npctag="botanistb2" wait="true" _npos="-1116.9644,78.27637" />-->
 					<SetDataAction operation="Set" value="0" identifier="depositb2" _npos="-753.1201,80.390884" />
 					<SetDataAction operation="Set" value="0" identifier="nocashb2" _npos="-754.1396,243.10394" />
-					<ConversationAction text="&quot;Would you like to buy some gardening equipment?&quot;" speakertag="botanistb2" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
-						<Option text="Planter [120 mk]" endconversation="true">
+					<ConversationAction text="EventText.shop.14" speakertag="botanistb2" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="EventText.shop.15" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="b2op1" _npos="437.0307,4.243805" />
 							<SetDataAction operation="Set" value="-120" identifier="depositb2" _npos="819.2318,4.865814" />
 							<Label name="depositcash" _npos="1184.9144,4.7407684" />
@@ -2196,7 +2212,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="nocashb2" condition="eq 1" _npos="4509.685,-157.76965">
 																				<Success>
-																					<ConversationAction text="&quot;Come back with more money.&quot;" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
+																					<ConversationAction text="EventText.shop.nocash" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
 																					<GoTo name="end" _npos="4883.169,-591.94916" />
 																				</Success>
 																				<Failure>
@@ -2329,7 +2345,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="depositb2" condition="gt 0" _npos="4493.946,355.50256">
 																				<Success>
-																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<ConversationAction text="EventText.somthingborke" _npos="4911.356,387.87268" />
 																					<GoTo name="botanyb2" _npos="5281.707,387.06558" />
 																				</Success>
 																				<Failure>
@@ -2411,42 +2427,42 @@
 								</Failure>
 							</CheckDataAction>
 						</Option>
-						<Option text="Watering Can [80mk]" endconversation="true">
+						<Option text="EventText.shop.16" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="b2op2" _npos="436.5796,167.86679" />
 							<SetDataAction operation="Set" value="-80" identifier="depositb2" _npos="821.1559,166.73837" />
 							<GoTo name="depositcash" _npos="1188.6864,166.40704" />
 						</Option>
-						<Option text="Fertilizer [145mk]" endconversation="true">
+						<Option text="EventText.shop.17" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="b2op3" _npos="435.36377,327.9984" />
 							<SetDataAction operation="Set" value="-145" identifier="depositb2" _npos="821.1559,326.7578" />
 							<GoTo name="depositcash" _npos="1198.4235,325.81714" />
 						</Option>
-						<Option text="Seed Bag [65mk]" endconversation="true">
+						<Option text="EventText.shop.18" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="b2op4" _npos="435.81055,489.13885" />
 							<SetDataAction operation="Set" value="-65" identifier="depositb2" _npos="820.07465,487.85803" />
 							<GoTo name="depositcash" _npos="1201.9347,487.31696" />
 						</Option>
-						<Option text="Seed - Pomegrenade [34mk]" endconversation="true">
+						<Option text="EventText.shop.19" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="b2op5" _npos="434.9533,651.6224" />
 							<SetDataAction operation="Set" value="-34" identifier="depositb2" _npos="820.07495,650.03955" />
 							<GoTo name="depositcash" _npos="1207.2013,650.939" />
 						</Option>
-						<Option text="Seed - Tobacco Vine [32mk]" endconversation="true">
+						<Option text="EventText.shop.20" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="b2op6" _npos="434.9425,812.7061" />
 							<SetDataAction operation="Set" value="-32" identifier="depositb2" _npos="820.0747,812.23755" />
 							<GoTo name="depositcash" _npos="1203.6902,812.3082" />
 						</Option>
-						<Option text="Seed - Salt Vine [35mk]" endconversation="true">
+						<Option text="EventText.shop.21" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="b2op7" _npos="433.758,974.14844" />
 							<SetDataAction operation="Set" value="-35" identifier="depositb2" _npos="820.0746,975.01807" />
 							<GoTo name="depositcash" _npos="1203.6902,975.7151" />
 						</Option>
-						<Option text="Seed - Raptorbane [38mk]" endconversation="true">
+						<Option text="EventText.shop.22" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="b2op8" _npos="434.12024,1136.6068" />
 							<SetDataAction operation="Set" value="-38" identifier="depositb2" _npos="822.24164,1138.8525" />
 							<GoTo name="depositcash" _npos="1204.758,1138.3022" />
 						</Option>
-						<Option text="&quot;No, thanks.&quot;" endconversation="true">
+						<Option text="EventText.shop.nothanks" endconversation="true">
 							<GoTo name="botanyb2" _npos="435.41022,1395.0886" />
 						</Option>
 						<Option text="" endconversation="true">
@@ -2455,7 +2471,7 @@
 					</ConversationAction>
 				</Success>
 				<Failure>
-					<ConversationAction text="&quot;Get out of here, troublemakers!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="botanistb2" dialogtype="Small" _npos="-1504.7175,281.90598" />
+					<ConversationAction text="EventText.shop.getout" speakertag="botanistb2" dialogtype="Small" _npos="-1504.7175,281.90598" />
 				</Failure>
 			</CheckReputationAction>
 		</ScriptedEvent>
@@ -2469,8 +2485,8 @@
 				<Success>
 					<SetDataAction operation="Set" value="0" identifier="depositp1" _npos="-753.1201,80.390884" />
 					<SetDataAction operation="Set" value="0" identifier="nocashp1" _npos="-754.1396,243.10394" />
-					<ConversationAction text="&quot;Do you want one of the special eggs or pet food?&quot;" speakertag="pettraderp1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-339.8646,-26.390137">
-						<Option text="Pet food [120 mk]" endconversation="true">
+					<ConversationAction text="EventText.shop.23" speakertag="pettraderp1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-339.8646,-26.390137">
+						<Option text="EventText.shop.24" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="p1op1" _npos="437.0307,4.243805" />
 							<SetDataAction operation="Set" value="-120" identifier="depositp1" _npos="819.2318,4.865814" />
 							<Label name="depositcash" _npos="1184.9144,4.7407684" />
@@ -2514,7 +2530,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="nocashp1" condition="eq 1" _npos="4509.685,-157.76965">
 																				<Success>
-																					<ConversationAction text="&quot;Come back with more money.&quot;" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
+																					<ConversationAction text="EventText.shop.nocash" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
 																					<GoTo name="end" _npos="4883.169,-591.94916" />
 																				</Success>
 																				<Failure>
@@ -2631,7 +2647,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="depositp1" condition="gt 0" _npos="4493.946,355.50256">
 																				<Success>
-																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<ConversationAction text="EventText.somthingborke" _npos="4911.356,387.87268" />
 																					<GoTo name="pettradep1" _npos="5281.707,387.06558" />
 																				</Success>
 																				<Failure>
@@ -2697,32 +2713,32 @@
 								</Failure>
 							</CheckDataAction>
 						</Option>
-						<Option text="Pet name tag [10mk]" endconversation="true">
+						<Option text="EventText.shop.25" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="p1op2" _npos="436.5796,167.86679" />
 							<SetDataAction operation="Set" value="-10" identifier="depositp1" _npos="821.1559,166.73837" />
 							<GoTo name="depositcash" _npos="1188.6864,166.40704" />
 						</Option>
-						<Option text="Saline [50mk]" endconversation="true">
+						<Option text="EventText.shop.26" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="p1op3" _npos="435.36377,327.9984" />
 							<SetDataAction operation="Set" value="-50" identifier="depositp1" _npos="821.1559,326.7578" />
 							<GoTo name="depositcash" _npos="1198.4235,325.81714" />
 						</Option>
-						<Option text="Egg - Peanut [500mk]" endconversation="true">
+						<Option text="EventText.shop.27" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="p1op4" _npos="435.81055,489.13885" />
 							<SetDataAction operation="Set" value="-500" identifier="depositp1" _npos="820.07465,487.85803" />
 							<GoTo name="depositcash" _npos="1201.9347,487.31696" />
 						</Option>
-						<Option text="Egg - Psilotoad [500mk]" endconversation="true">
+						<Option text="EventText.shop.28" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="p1op5" _npos="434.9533,651.6224" />
 							<SetDataAction operation="Set" value="-500" identifier="depositp1" _npos="820.07495,650.03955" />
 							<GoTo name="depositcash" _npos="1207.2013,650.939" />
 						</Option>
-						<Option text="Egg - Orange boy [500mk]" endconversation="true">
+						<Option text="EventText.shop.29" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="p1op6" _npos="434.9425,812.7061" />
 							<SetDataAction operation="Set" value="-500" identifier="depositp1" _npos="820.0747,812.23755" />
 							<GoTo name="depositcash" _npos="1203.6902,812.3082" />
 						</Option>
-						<Option text="&quot;No, thanks.&quot;" endconversation="true">
+						<Option text="EventText.shop.nothanks" endconversation="true">
 							<GoTo name="pettradep1" _npos="435.41022,1395.0886" />
 						</Option>
 						<Option text="" endconversation="true">
@@ -2731,7 +2747,7 @@
 					</ConversationAction>
 				</Success>
 				<Failure>
-					<ConversationAction text="&quot;Get out of here, troublemakers!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="pettraderp1" dialogtype="Small" _npos="-1504.7175,281.90598" />
+					<ConversationAction text="EventText.shop.getout" speakertag="pettraderp1" dialogtype="Small" _npos="-1504.7175,281.90598" />
 				</Failure>
 			</CheckReputationAction>
 		</ScriptedEvent>		
@@ -2743,8 +2759,8 @@
   <NPCWaitAction npctag="doc" wait="true" _npos="-1350.7588,7.539795" />
   <SetDataAction operation="Set" value="0" identifier="depositdoc1" _npos="-753.1201,80.390884" />
   <SetDataAction operation="Set" value="0" identifier="nocashdoc1" _npos="-754.1396,243.10394" />
-  <ConversationAction text="&quot;I can heal your entire crew if you gather them here or get that Reaper's Tax fixed for you.&quot;" speakertag="doc" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-136.55945,450.2308">
-    <Option text="Heal nearby crew [200 mk]" endconversation="true">
+  <ConversationAction text="EventText.shop.30" speakertag="doc" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-136.55945,450.2308">
+    <Option text="EventText.shop.31" endconversation="true">
       <SetDataAction operation="Set" value="1" identifier="doc1op" _npos="437.05243,248.87692" />
       <SetDataAction operation="Set" value="-200" identifier="depositdoc1" _npos="849.8109,247.7001" />
       <Label name="depositcash" _npos="1256.8832,252.97142" />
@@ -2788,7 +2804,7 @@
                             <Failure>
                               <CheckDataAction identifier="nocashdoc1" condition="eq 1" _npos="4509.685,-157.76965">
                                 <Success>
-                                  <ConversationAction text="&quot;I don't care if you bleed out, if you don't pay me enough money!&quot;" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
+                                  <ConversationAction text="EventText.shop.32" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
                                   <GoTo name="end" _npos="4513.7925,-698.3027" />
                                 </Success>
                                 <Failure>
@@ -2870,7 +2886,7 @@
                             <Failure>
                               <CheckDataAction identifier="depositdoc1" condition="gt 0" _npos="4493.946,355.50256">
                                 <Success>
-                                  <ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+                                  <ConversationAction text="EventText.somthingborke" _npos="4911.356,387.87268" />
                                   <GoTo name="doc" _npos="5281.707,387.06558" />
                                 </Success>
                                 <Failure>
@@ -2904,12 +2920,12 @@
         </Failure>
       </CheckDataAction>
     </Option>
-    <Option text="Heal Reaper's Tax [1000mk]" endconversation="true">
+    <Option text="EventText.shop.33" endconversation="true">
       <SetDataAction operation="Set" value="2" identifier="doc1op" _npos="448.68262,470.77194" />
       <SetDataAction operation="Set" value="-1000" identifier="depositdoc1" _npos="847.93445,470.25827" />
       <GoTo name="depositcash" _npos="1260.6526,466.23105" />
     </Option>
-    <Option text="&quot;Maybe later.&quot;" endconversation="true">
+    <Option text="EventText.shop.maybelater" endconversation="true">
       <GoTo name="doc" _npos="453.88434,711.1827" />
     </Option>
     <Option text="" endconversation="true">
@@ -2927,8 +2943,8 @@
 				<Success>
 					<SetDataAction operation="Set" value="0" identifier="depositcl1" _npos="-753.1201,80.390884" />
 					<SetDataAction operation="Set" value="0" identifier="nocashcl1" _npos="-754.1396,243.10394" />
-					<ConversationAction text="&quot;Would you like to purchase some climbing equipment?&quot;" speakertag="climbercl1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
-						<Option text="Rope gun [230 mk]" endconversation="true">
+					<ConversationAction text="EventText.shop.34" speakertag="climbercl1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="EventText.shop.35" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="cl1op1" _npos="437.0307,4.243805" />
 							<SetDataAction operation="Set" value="-230" identifier="depositcl1" _npos="819.2318,4.865814" />
 							<Label name="depositcash" _npos="1184.9144,4.7407684" />
@@ -2972,7 +2988,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="nocashcl1" condition="eq 1" _npos="4509.685,-157.76965">
 																				<Success>
-																					<ConversationAction text="&quot;Come back with more money.&quot;" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
+																					<ConversationAction text="EventText.shop.nocash" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
 																					<GoTo name="end" _npos="4883.169,-591.94916" />
 																				</Success>
 																				<Failure>
@@ -3128,7 +3144,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="depositcl1" condition="gt 0" _npos="4493.946,355.50256">
 																				<Success>
-																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<ConversationAction text="EventText.somthingborke" _npos="4911.356,387.87268" />
 																					<GoTo name="clothesc1" _npos="5281.707,387.06558" />
 																				</Success>
 																				<Failure>
@@ -3218,47 +3234,47 @@
 								</Failure>
 							</CheckDataAction>
 						</Option>
-						<Option text="Tensile bungee rope 8x[24mk]" endconversation="true">
+						<Option text="EventText.shop.36" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="cl1op2" _npos="436.5796,167.86679" />
 							<SetDataAction operation="Set" value="-24" identifier="depositcl1" _npos="821.1559,166.73837" />ita_climber4
 							<GoTo name="depositcash" _npos="1188.6864,166.40704" />
 						</Option>
-						<Option text="Loose bungee rope 8x[24mk]" endconversation="true">
+						<Option text="EventText.shop.37" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="cl1op9" _npos="436.5796,167.86679" />
 							<SetDataAction operation="Set" value="-24" identifier="depositcl1" _npos="821.1559,166.73837" />ita_climber4
 							<GoTo name="depositcash" _npos="1188.6864,166.40704" />
 						</Option>
-						<Option text="Plasma cutter [72mk]" endconversation="true">
+						<Option text="EventText.shop.38" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="cl1op3" _npos="435.36377,327.9984" />
 							<SetDataAction operation="Set" value="-72" identifier="depositcl1" _npos="821.1559,326.7578" />
 							<GoTo name="depositcash" _npos="1198.4235,325.81714" />
 						</Option>
-						<Option text="Flashlight [160mk]" endconversation="true">
+						<Option text="EventText.shop.39" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="cl1op4" _npos="435.81055,489.13885" />
 							<SetDataAction operation="Set" value="-160" identifier="depositcl1" _npos="820.07465,487.85803" />
 							<GoTo name="depositcash" _npos="1201.9347,487.31696" />
 						</Option>
-						<Option text="Red flare [30mk]" endconversation="true">
+						<Option text="EventText.shop.40" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="cl1op5" _npos="434.9533,651.6224" />
 							<SetDataAction operation="Set" value="-30" identifier="depositcl1" _npos="820.07495,650.03955" />
 							<GoTo name="depositcash" _npos="1207.2013,650.939" />
 						</Option>
-						<Option text="Alien flare [90mk]" endconversation="true">
+						<Option text="EventText.shop.41" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="cl1op6" _npos="434.9425,812.7061" />
 							<SetDataAction operation="Set" value="-90" identifier="depositcl1" _npos="820.0747,812.23755" />
 							<GoTo name="depositcash" _npos="1203.6902,812.3082" />
 						</Option>
-						<Option text="Lantern [210mk]" endconversation="true">
+						<Option text="EventText.shop.42" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="cl1op7" _npos="433.758,974.14844" />
 							<SetDataAction operation="Set" value="-210" identifier="depositcl1" _npos="820.0746,975.01807" />
 							<GoTo name="depositcash" _npos="1203.6902,975.7151" />
 						</Option>
-						<Option text="Battery cell [115mk]" endconversation="true">
+						<Option text="EventText.shop.43" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="cl1op8" _npos="434.12024,1136.6068" />
 							<SetDataAction operation="Set" value="-115" identifier="depositcl1" _npos="822.24164,1138.8525" />
 							<GoTo name="depositcash" _npos="1204.758,1138.3022" />
 						</Option>
-						<Option text="Not really." endconversation="true">
+						<Option text="EventText.shop.notreally" endconversation="true">
 							<GoTo name="clothesc1" _npos="435.41022,1395.0886" />
 						</Option>
 						<Option text="" endconversation="true">
@@ -3267,7 +3283,7 @@
 					</ConversationAction>
 				</Success>
 				<Failure>
-					<ConversationAction text="&quot;Get out of my store you vandals!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="climbercl1" dialogtype="Small" _npos="-1504.7175,281.90598" />
+					<ConversationAction text="EventText.shop.73" speakertag="climbercl1" dialogtype="Small" _npos="-1504.7175,281.90598" />
 				</Failure>
 			</CheckReputationAction>
 		</ScriptedEvent>
@@ -3276,8 +3292,8 @@
   <Label name="banker1" _npos="-2824.0894,-423.63867" />
   <ClearTagAction tag="withdrawer" _npos="-2832.0925,-310.77393" />
   
-  <ConversationAction text="&quot;Would you like to withdraw or deposit cash?&quot;&#xD;&#xA;Because submarine crews often misbehave with their money, banks made it so that only captains are allowed to withdraw and distribute the cash between his crewmates." speakertag="banker1" invokertag="withdrawer" _npos="-2449.6855,-423.52817">
-    <Option text="Withdraw 100" endconversation="true">
+  <ConversationAction text="EventText.shop.44" speakertag="banker1" invokertag="withdrawer" _npos="-2449.6855,-423.52817">
+    <Option text="EventText.shop.45" endconversation="true">
       <CheckItemAction targettag="withdrawer" itemtags="jobid:captain" _npos="-1669.3551,-1175.3494">
         <Success>
           <CheckMoneyAction amount="100" _npos="-855.53687,-1142.9672">
@@ -3288,19 +3304,19 @@
             </Success>
             <Failure>
               <Label name="nocash" _npos="-465.12897,-1079.9841" />
-              <ConversationAction text="&quot;You don't have enough money on your account.&quot;" targettag="withdrawer" _npos="-463.7223,-1521.4492" />
+              <ConversationAction text="EventText.shop.46" targettag="withdrawer" _npos="-463.7223,-1521.4492" />
               <GoTo name="end" _npos="-464.1349,-1625.8993" />
             </Failure>
           </CheckMoneyAction>
         </Success>
         <Failure>
           <Label name="caponly" _npos="-1259.9684,-1111.7631" />
-          <ConversationAction text="&quot;Only captains can withdraw. You can deposit cash, if you want.&quot;" targettag="withdrawer" _npos="-1261.3726,-1541.353" />
+          <ConversationAction text="EventText.shop.47" targettag="withdrawer" _npos="-1261.3726,-1541.353" />
           <GoTo name="end" _npos="-1260.3705,-1644.46" />
         </Failure>
       </CheckItemAction>
     </Option>
-    <Option text="Withdraw 400" endconversation="true">
+    <Option text="EventText.shop.48" endconversation="true">
       <CheckItemAction targettag="withdrawer" itemtags="jobid:captain" _npos="-1669.8514,-1009.24384">
         <Success>
           <CheckMoneyAction amount="400" _npos="-858.9281,-973.6248">
@@ -3320,7 +3336,7 @@
         </Failure>
       </CheckItemAction>
     </Option>
-    <Option text="Withdraw 1000" endconversation="true">
+    <Option text="EventText.shop.49" endconversation="true">
       <CheckItemAction targettag="withdrawer" itemtags="jobid:captain" _npos="-1669.3488,-844.7765">
         <Success>
           <CheckMoneyAction amount="1000" _npos="-860.15704,-807.2525">
@@ -3343,7 +3359,7 @@
         </Failure>
       </CheckItemAction>
     </Option>
-    <Option text="Deposit 100" endconversation="true">
+    <Option text="EventText.shop.50" endconversation="true">
       <SetDataAction operation="Set" value="100" identifier="depamount" _npos="336.05823,-290.4804" />
       <SetDataAction operation="Set" value="-100" identifier="depositb1" _npos="901.42413,-289.29242" />
       <Label name="deposit" _npos="1316.9004,-297.69086" />
@@ -3401,11 +3417,11 @@
                                 <Failure>
                                   <CheckDataAction identifier="depamount" condition="eq 1337" _npos="4245.3174,122.83441">
                                     <Success>
-                                      <ConversationAction text="&quot;You've deposited all your cash into your crew's bank account.&quot;" targettag="withdrawer" _npos="4238.9307,319.21524" />
+                                      <ConversationAction text="EventText.shop.51" targettag="withdrawer" _npos="4238.9307,319.21524" />
                                       <GoTo name="end" _npos="4236.3096,740.71094" />
                                     </Success>
                                     <Failure>
-                                      <ConversationAction text="&quot;That's not enough cash, but I'll deposit what you have.&quot;" targettag="withdrawer" _npos="4727.883,-670.77936" />
+                                      <ConversationAction text="EventText.shop.52" targettag="withdrawer" _npos="4727.883,-670.77936" />
                                       <CheckDataAction identifier="depamount" condition="eq 100" _npos="4908.8477,-53.329926">
                                         <Success>
                                           <SetDataAction operation="Add" value="100" identifier="depositb1" _npos="4907.5254,142.69766" />
@@ -3495,22 +3511,22 @@
         </Failure>
       </CheckDataAction>
     </Option>
-    <Option text="Deposit 400" endconversation="true">
+    <Option text="EventText.shop.53" endconversation="true">
       <SetDataAction operation="Set" value="400" identifier="depamount" _npos="317.24664,-124.79257" />
       <SetDataAction operation="Set" value="-400" identifier="depositb1" _npos="905.5088,-129.84729" />
       <GoTo name="deposit" _npos="1316.2311,-133.60165" />
     </Option>
-    <Option text="Deposit 1000" endconversation="true">
+    <Option text="EventText.shop.54" endconversation="true">
       <SetDataAction operation="Set" value="1000" identifier="depamount" _npos="316.77567,38.413086" />
       <SetDataAction operation="Set" value="-1000" identifier="depositb1" _npos="908.6627,42.299683" />
       <GoTo name="deposit" _npos="1336.9873,22.081726" />
     </Option>
-    <Option text="Deposit all cash" endconversation="true">
+    <Option text="EventText.shop.55" endconversation="true">
       <SetDataAction operation="Set" value="1337" identifier="depamount" _npos="317.909,201.59882" />
       <SetDataAction operation="Set" value="-10000" identifier="depositb1" _npos="904.4518,196.9801" />
       <GoTo name="deposit" _npos="1342.1672,198.02798" />
     </Option>
-    <Option text="&quot;Another time, maybe.&quot;" endconversation="true">
+    <Option text="EventText.shop.74" endconversation="true">
       <GoTo name="banker1" _npos="-1851.457,-114.04956" />
     </Option>
     <Option text="" endconversation="true" />
@@ -3526,8 +3542,8 @@
 					<NPCWaitAction npctag="electrician1" wait="true" _npos="-1116.9644,78.27637" />
 					<SetDataAction operation="Set" value="0" identifier="depositel1" _npos="-753.1201,80.390884" />
 					<SetDataAction operation="Set" value="0" identifier="nocashel1" _npos="-754.1396,243.10394" />
-					<ConversationAction text="&quot;Welcome to Joe's. Do you want to buy some electrical components?&quot;" speakertag="electrician1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
-						<Option text="Signal Check [95 mk]" endconversation="true">
+					<ConversationAction text="EventText.shop.56" speakertag="electrician1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="EventText.shop.57" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="el1op1" _npos="437.0307,4.243805" />
 							<SetDataAction operation="Set" value="-95" identifier="depositel1" _npos="819.2318,4.865814" />
 							<Label name="depositcash" _npos="1184.9144,4.7407684" />
@@ -3571,7 +3587,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="nocashel1" condition="eq 1" _npos="4509.685,-157.76965">
 																				<Success>
-																					<ConversationAction text="&quot;Come back with more money.&quot;" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
+																					<ConversationAction text="EventText.shop.nocash" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
 																					<GoTo name="end" _npos="4883.169,-591.94916" />
 																				</Success>
 																				<Failure>
@@ -3707,7 +3723,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="depositel1" condition="gt 0" _npos="4493.946,355.50256">
 																				<Success>
-																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<ConversationAction text="EventText.somthingborke" _npos="4911.356,387.87268" />
 																					<GoTo name="electrical1" _npos="5281.707,387.06558" />
 																				</Success>
 																				<Failure>
@@ -3789,42 +3805,42 @@
 								</Failure>
 							</CheckDataAction>
 						</Option>
-						<Option text="Relay [95mk]" endconversation="true">
+						<Option text="EventText.shop.58" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="el1op2" _npos="436.5796,167.86679" />
 							<SetDataAction operation="Set" value="-95" identifier="depositel1" _npos="821.1559,166.73837" />
 							<GoTo name="depositcash" _npos="1188.6864,166.40704" />
 						</Option>
-						<Option text="Memory component [95mk]" endconversation="true">
+						<Option text="EventText.shop.59" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="el1op3" _npos="435.36377,327.9984" />
 							<SetDataAction operation="Set" value="-95" identifier="depositel1" _npos="821.1559,326.7578" />
 							<GoTo name="depositcash" _npos="1198.4235,325.81714" />
 						</Option>
-						<Option text="Wire 4x[40mk]" endconversation="true">
+						<Option text="EventText.shop.60" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="el1op4" _npos="435.81055,489.13885" />
 							<SetDataAction operation="Set" value="-40" identifier="depositel1" _npos="820.07465,487.85803" />
 							<GoTo name="depositcash" _npos="1201.9347,487.31696" />
 						</Option>
-						<Option text="Adder [95mk]" endconversation="true">
+						<Option text="EventText.shop.61" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="el1op5" _npos="434.9533,651.6224" />
 							<SetDataAction operation="Set" value="-95" identifier="depositel1" _npos="820.07495,650.03955" />
 							<GoTo name="depositcash" _npos="1207.2013,650.939" />
 						</Option>
-						<Option text="Multiply component [95mk]" endconversation="true">
+						<Option text="EventText.shop.62" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="el1op6" _npos="434.9425,812.7061" />
 							<SetDataAction operation="Set" value="-95" identifier="depositel1" _npos="820.0747,812.23755" />
 							<GoTo name="depositcash" _npos="1203.6902,812.3082" />
 						</Option>
-						<Option text="Divide component[95mk]" endconversation="true">
+						<Option text="EventText.shop.63" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="el1op7" _npos="433.758,974.14844" />
 							<SetDataAction operation="Set" value="-95" identifier="depositel1" _npos="820.0746,975.01807" />
 							<GoTo name="depositcash" _npos="1203.6902,975.7151" />
 						</Option>
-						<Option text="Delay component [95mk]" endconversation="true">
+						<Option text="EventText.shop.64" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="el1op8" _npos="434.12024,1136.6068" />
 							<SetDataAction operation="Set" value="-95" identifier="depositel1" _npos="822.24164,1138.8525" />
 							<GoTo name="depositcash" _npos="1204.758,1138.3022" />
 						</Option>
-						<Option text="&quot;Maybe later.&quot;" endconversation="true">
+						<Option text="EventText.shop.maybelater" endconversation="true">
 							<GoTo name="electrical1" _npos="435.41022,1395.0886" />
 						</Option>
 						<Option text="" endconversation="true">
@@ -3833,7 +3849,7 @@
 					</ConversationAction>
 				</Success>
 				<Failure>
-					<ConversationAction text="&quot;You are nothing but trouble. Get out!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="electrician1" dialogtype="Small" _npos="-1504.7175,281.90598" />
+					<ConversationAction text="EventText.shop.lowshoprep" speakertag="electrician1" dialogtype="Small" _npos="-1504.7175,281.90598" />
 				</Failure>
 			</CheckReputationAction>
 		</ScriptedEvent>
@@ -3847,8 +3863,8 @@
 					<NPCWaitAction npctag="gunsmith1" wait="true" _npos="-1116.9644,78.27637" />
 					<SetDataAction operation="Set" value="0" identifier="depositgs1" _npos="-753.1201,80.390884" />
 					<SetDataAction operation="Set" value="0" identifier="nocashgs1" _npos="-754.1396,243.10394" />
-					<ConversationAction text="&quot;Need ammo?&quot;" speakertag="gunsmith1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
-						<Option text="SMG magazine [100 mk]" endconversation="true">
+					<ConversationAction text="EventText.shop.65" speakertag="gunsmith1" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="EventText.shop.66" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="gs1op1" _npos="437.0307,4.243805" />
 							<SetDataAction operation="Set" value="-100" identifier="depositgs1" _npos="819.2318,4.865814" />
 							<Label name="depositcash" _npos="1184.9144,4.7407684" />
@@ -3892,7 +3908,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="nocashgs1" condition="eq 1" _npos="4509.685,-157.76965">
 																				<Success>
-																					<ConversationAction text="&quot;Come back with more money.&quot;" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
+																					<ConversationAction text="EventText.shop.nocash" targettag="customer" dialogtype="Small" _npos="4512.1367,-591.337" />
 																					<GoTo name="end" _npos="4883.169,-591.94916" />
 																				</Success>
 																				<Failure>
@@ -4037,7 +4053,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="depositgs1" condition="gt 0" _npos="4493.946,355.50256">
 																				<Success>
-																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<ConversationAction text="EventText.somthingborke" _npos="4911.356,387.87268" />
 																					<GoTo name="gunsmith1" _npos="5281.707,387.06558" />
 																				</Success>
 																				<Failure>
@@ -4119,37 +4135,37 @@
 								</Failure>
 							</CheckDataAction>
 						</Option>
-						<Option text="Shotgun shell 8x[320mk]" endconversation="true">
+						<Option text="EventText.shop.67" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="gs1op2" _npos="436.5796,167.86679" />
 							<SetDataAction operation="Set" value="-320" identifier="depositgs1" _npos="821.1559,166.73837" />
 							<GoTo name="depositcash" _npos="1188.6864,166.40704" />
 						</Option>
-						<Option text="40mm grenade [100mk]" endconversation="true">
+						<Option text="EventText.shop.68" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="gs1op3" _npos="435.36377,327.9984" />
 							<SetDataAction operation="Set" value="-100" identifier="depositgs1" _npos="821.1559,326.7578" />
 							<GoTo name="depositcash" _npos="1198.4235,325.81714" />
 						</Option>
-						<Option text="40mm stun grenade[120mk]" endconversation="true">
+						<Option text="EventText.shop.69" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="gs1op4" _npos="435.81055,489.13885" />
 							<SetDataAction operation="Set" value="-120" identifier="depositgs1" _npos="820.07465,487.85803" />
 							<GoTo name="depositcash" _npos="1201.9347,487.31696" />
 						</Option>
-						<Option text="Revolver round 6x [180mk]" endconversation="true">
+						<Option text="EventText.shop.70" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="gs1op5" _npos="434.9533,651.6224" />
 							<SetDataAction operation="Set" value="-180" identifier="depositgs1" _npos="820.07495,650.03955" />
 							<GoTo name="depositcash" _npos="1207.2013,650.939" />
 						</Option>
-						<Option text="Depth Charge - Decoy [250mk]" endconversation="true">
+						<Option text="EventText.shop.71" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="gs1op6" _npos="434.9425,812.7061" />
 							<SetDataAction operation="Set" value="-250" identifier="depositgs1" _npos="820.0747,812.23755" />
 							<GoTo name="depositcash" _npos="1203.6902,812.3082" />
 						</Option>
-						<Option text="Depth Charge Wall Mount [200mk]" endconversation="true">
+						<Option text="EventText.shop.72" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="gs1op7" _npos="434.9425,812.7061" />
 							<SetDataAction operation="Set" value="-200" identifier="depositgs1" _npos="820.0747,812.23755" />
 							<GoTo name="depositcash" _npos="1203.6902,812.3082" />
 						</Option>
-						<Option text="&quot;Maybe later.&quot;" endconversation="true">
+						<Option text="EventText.shop.maybelater" endconversation="true">
 							<GoTo name="gunsmith1" _npos="435.41022,1395.0886" />
 						</Option>
 						<Option text="" endconversation="true">
@@ -4158,7 +4174,7 @@
 					</ConversationAction>
 				</Success>
 				<Failure>
-					<ConversationAction text="&quot;You are nothing but trouble. Get out!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="gunsmith1" dialogtype="Small" _npos="-1504.7175,281.90598" />
+					<ConversationAction text="EventText.shop.lowshoprep" speakertag="gunsmith1" dialogtype="Small" _npos="-1504.7175,281.90598" />
 				</Failure>
 			</CheckReputationAction>
 		</ScriptedEvent>
@@ -4175,7 +4191,7 @@
 			<ReputationAction increase="7" targettype="Location"/>
 			<MoneyAction amount="1400"/>
 			<WaitAction time="0.5" />
-			<ConversationAction text="&quot;Artifact sold.&quot;[+1400mk][+7 OUTPOST REP]" dialogtype="Small"/>
+			<ConversationAction text="EventText.itacollectorsell1" dialogtype="Small"/>
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_collectorsell2">
 			<TagAction criteria="itemidentifier:socket4ita" tag="socket4ita" />
@@ -4188,7 +4204,7 @@
 			<ReputationAction increase="7" targettype="Location"/>
 			<MoneyAction amount="1400" _npos="66.6947,-1110.895" />
 			<WaitAction time="0.5" />
-			<ConversationAction text="&quot;Artifact sold.&quot;[+1400mk][+7 OUTPOST REP]" dialogtype="Small"/>
+			<ConversationAction text="EventText.itacollectorsell1" dialogtype="Small"/>
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_collectorsell3">
 			<TagAction criteria="itemidentifier:socket4ita" tag="socket4ita" />
@@ -4201,7 +4217,7 @@
 			<ReputationAction increase="7" targettype="Location"/>
 			<MoneyAction amount="1400" />
 			<WaitAction time="0.5" />
-			<ConversationAction text="&quot;Artifact sold.&quot;[+1400mk][+7 OUTPOST REP]" dialogtype="Small"/>
+			<ConversationAction text="EventText.itacollectorsell1" dialogtype="Small"/>
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_molochambience1">
 			<TagAction criteria="itemtag:primarynavterminal" tag="nav"/>
@@ -4232,11 +4248,11 @@
 			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_prisonersep1" targettag="prisonersep1" spawnpointtag="prisonersep1" _npos="-1118.0693,-192.24988" />
 			<CheckDataAction identifier="timesreleasedsep1" condition="eq 1" _npos="-746.115,-192.45532">
 				<Success>
-					<ConversationAction text="Outpost speaker: &quot;The terrorist was released from his cell without authorisation! Kill him and his associates!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]" eventsprite="security" dialogtype="Small" _npos="-125.28284,-506.8084" />
+					<ConversationAction text="EventText.itaprisonbreak1.1" eventsprite="security" dialogtype="Small" _npos="-125.28284,-506.8084" />
 					<ReputationAction increase="-200" targettype="Location" _npos="280.39703,-506.8948" />
 				</Success>
 				<Failure>
-					<ConversationAction text="Outpost speaker: &quot;The terrorist was released from his cell without authorisation! Kill him and his associates!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]&#xD;&#xA;[COALITION   REP-45]&#xD;&#xA;[SEPARATISTS REP+20]" eventsprite="security" dialogtype="Small" _npos="-128,-128" />
+					<ConversationAction text="EventText.itaprisonbreak1.2" eventsprite="security" dialogtype="Small" _npos="-128,-128" />
 					<ReputationAction increase="-200" targettype="Location" _npos="721.0772,20" />
 					<ReputationAction increase="-45" identifier="coalition" targettype="Faction" _npos="1095.0908,20" />
 					<ReputationAction increase="20" identifier="separatists" targettype="Faction" _npos="1463,20" />
@@ -4252,11 +4268,11 @@
 			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_prisonerclown1" targettag="prisonerclown1" spawnpointtag="prisonerclown1" _npos="-1118.0693,-192.24988" />
 			<CheckDataAction identifier="timesreleasedclown1" condition="eq 1" _npos="-746.115,-192.45532">
 				<Success>
-					<ConversationAction text="Outpost speaker: &quot;The saboteur was released from his cell without authorisation! Kill him and his associates!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]" eventsprite="security" dialogtype="Small" _npos="-125.28284,-506.8084" />
+					<ConversationAction text="EventText.itaprisonbreak2.1" eventsprite="security" dialogtype="Small" _npos="-125.28284,-506.8084" />
 					<ReputationAction increase="-200" targettype="Location" _npos="280.39703,-506.8948" />
 				</Success>
 				<Failure>
-					<ConversationAction text="Outpost speaker: &quot;The saboteur was released from his cell without authorisation! Kill him and his associates!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]&#xD;&#xA;[COALITION   REP-45]&#xD;&#xA;[CLOWNS REP+20]" eventsprite="security" dialogtype="Small" _npos="-128,-128" />
+					<ConversationAction text="EventText.itaprisonbreak2.2" eventsprite="security" dialogtype="Small" _npos="-128,-128" />
 					<ReputationAction increase="-200" targettype="Location" _npos="721.0772,20" />
 					<ReputationAction increase="-45" identifier="coalition" targettype="Faction" _npos="1095.0908,20" />
 					<ReputationAction increase="20" identifier="clowns" targettype="Faction" _npos="1463,20" />
@@ -4272,13 +4288,13 @@
 			<CheckDataAction identifier="timesprison1escaped" condition="eq 1" _npos="-1548.2142,-206.3667">
 				<Success>
 					<ReputationAction increase="-200" targettype="Location" _npos="-1047.7319,-328.32925" />
-					<ConversationAction text="Outpost speaker: &quot;The prisoners were released by the submarine crew! Kill them!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]" eventsprite="security" dialogtype="Small" _npos="-603.3217,-576.4299" />
+					<ConversationAction text="EventText.itaprisonescape1.0.1" eventsprite="security" dialogtype="Small" _npos="-603.3217,-576.4299" />
 				</Success>
 				<Failure>
 					<ReputationAction increase="-200" targettype="Location" _npos="-1052.9778,-142.63992" />
 					<ReputationAction increase="-50" identifier="coalition" targettype="Faction" _npos="-652.85583,-142.65442" />
 					<ReputationAction increase="10" identifier="separatists" targettype="Faction" _npos="-246.67023,-142.65442" />
-					<ConversationAction text="Outpost speaker: &quot;The prisoners were released by the submarine crew! Kill them!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]&#xD;&#xA;[COALITION   REP-50]&#xD;&#xA;[SEPARATISTS REP+10]" eventsprite="security" dialogtype="Small" _npos="162.8711,-143.82257" />
+					<ConversationAction text="EventText.itaprisonescape1.0.2" eventsprite="security" dialogtype="Small" _npos="162.8711,-143.82257" />
 					<SetDataAction operation="Set" value="1" identifier="timesprison1escaped" _npos="555.64557,-143.47037" />
 				</Failure>
 			</CheckDataAction>
@@ -4288,13 +4304,13 @@
 			<CheckDataAction identifier="timesprison2escaped" condition="eq 1" _npos="-1548.2142,-206.3667">
 				<Success>
 					<ReputationAction increase="-200" targettype="Location" _npos="-1047.7319,-328.32925" />
-					<ConversationAction text="Outpost speaker: &quot;The prisoners were released by the submarine crew! Kill them!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]" eventsprite="security" dialogtype="Small" _npos="-603.3217,-576.4299" />
+					<ConversationAction text="EventText.itaprisonescape2.0.1" eventsprite="security" dialogtype="Small" _npos="-603.3217,-576.4299" />
 				</Success>
 				<Failure>
 					<ReputationAction increase="-200" targettype="Location" _npos="-1052.9778,-142.63992" />
 					<ReputationAction increase="-50" identifier="coalition" targettype="Faction" _npos="-652.85583,-142.65442" />
 					<ReputationAction increase="10" identifier="separatists" targettype="Faction" _npos="-246.67023,-142.65442" />
-					<ConversationAction text="Outpost speaker: &quot;The prisoners were released by the submarine crew! Kill them!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]&#xD;&#xA;[COALITION   REP-50]&#xD;&#xA;[SEPARATISTS REP+10]" eventsprite="security" dialogtype="Small" _npos="162.8711,-143.82257" />
+					<ConversationAction text="EventText.itaprisonescape2.0.2" eventsprite="security" dialogtype="Small" _npos="162.8711,-143.82257" />
 					<SetDataAction operation="Set" value="1" identifier="timesprison2escaped" _npos="555.64557,-143.47037" />
 				</Failure>
 			</CheckDataAction>
@@ -4312,10 +4328,10 @@
 			<NPCWaitAction npctag="escapee2.1" wait="true" />
 			<CheckDataAction identifier="timesprisoner1escaped" condition="eq 1" _npos="523.6947,-67.694275">
 				<Success>
-					<ConversationAction text="This prisoner wasn't treated nicely. Coalition is brutal to Separatists.&#xD;&#xA;&quot;Thank you for rescuing me! I'll spread the word with our captains about what you've done.&quot;" speakertag="escapee2.1" _npos="906.4743,-396.82318" />
+					<ConversationAction text="EventText.itaprisonescape2.1.1" speakertag="escapee2.1" _npos="906.4743,-396.82318" />
 				</Success>
 				<Failure>
-					<ConversationAction text="This prisoner wasn't treated nicely. Coalition is brutal to Separatists.&#xD;&#xA;&quot;Thank you for rescuing me! I'll spread the word with our captains about what you've done.&quot;&#xD;&#xA;[SEPARATISTS REP+10]" speakertag="escapee2.1" dialogtype="Small" _npos="904.7022,-3.5776978" />
+					<ConversationAction text="EventText.itaprisonescape2.1.2" speakertag="escapee2.1" dialogtype="Small" _npos="904.7022,-3.5776978" />
 					<SetDataAction operation="Set" value="1" identifier="timesprisoner1escaped" _npos="1381.483,-3.1996155" />
 				</Failure>
 			</CheckDataAction>
@@ -4333,10 +4349,10 @@
 			<NPCWaitAction npctag="escapee2.1" wait="true" />
 			<CheckDataAction identifier="timesprisoner2escaped" condition="eq 1" _npos="523.6947,-67.694275">
 				<Success>
-					<ConversationAction text="Poor clown thought that Coalition guards have sense of humour.&#xD;&#xA;&quot;Thanks to you, I can spread joy elsewhere. My music is not yet silenced! Blessings of the Honk Mother upon thee.&quot;&#xD;&#xA;" speakertag="escapee2.2" _npos="906.4743,-396.82318" />
+					<ConversationAction text="EventText.itaprisonescape2.2.1" speakertag="escapee2.2" _npos="906.4743,-396.82318" />
 				</Success>
 				<Failure>
-					<ConversationAction text="Poor clown thought that Coalition guards have sense of humour.&#xD;&#xA;&quot;Thanks to you, I can spread joy elsewhere. My music is not yet silenced! Blessings of the Honk Mother upon thee.&quot;&#xD;&#xA;[CLOWN REP+10]" speakertag="escapee2.2" dialogtype="Small" _npos="904.7022,-3.5776978" />
+					<ConversationAction text="EventText.itaprisonescape2.2.2" speakertag="escapee2.2" dialogtype="Small" _npos="904.7022,-3.5776978" />
 					<SetDataAction operation="Set" value="1" identifier="timesprisoner2escaped" _npos="1381.483,-3.1996155" />
 				</Failure>
 			</CheckDataAction>
@@ -4354,10 +4370,10 @@
 			<NPCWaitAction npctag="escapee2.1" wait="true" />
 			<CheckDataAction identifier="timesprisoner3escaped" condition="eq 1" _npos="523.6947,-67.694275">
 				<Success>
-					<ConversationAction text="Coalition is so paranoid about separatist spies, they often imprison ordinary outpost dwellers and submariners and gives them the same treatment as they would give to an enemy...&#xD;&#xA;&quot;Thanks for getting me out of there! I was mopping a floor in the dock when I was arrested and accused of listening in on the conversations in the command room! I see it clearly now. Coalition are the real terrorists!&quot;&#xD;&#xA;" speakertag="escapee2.3" _npos="906.4743,-396.82318" />
+					<ConversationAction text="EventText.itaprisonescape2.1" speakertag="escapee2.3" _npos="906.4743,-396.82318" />
 				</Success>
 				<Failure>
-					<ConversationAction text="Coalition is so paranoid about separatist spies, they often imprison ordinary outpost dwellers and submariners and gives them the same treatment as they would give to an enemy...&#xD;&#xA;&quot;Thanks for getting me out of there! I was mopping a floor in the dock when I was arrested and accused of listening in on the conversations in the command room! I see it clearly now. Coalition are the real terrorists!&quot;&#xD;&#xA;[SEPARATISTS REP+10]" speakertag="escapee2.3" dialogtype="Small" _npos="904.7022,-3.5776978" />
+					<ConversationAction text="EventText.itaprisonescape2.2" speakertag="escapee2.3" dialogtype="Small" _npos="904.7022,-3.5776978" />
 					<SetDataAction operation="Set" value="1" identifier="timesprisoner3escaped" _npos="1381.483,-3.1996155" />
 					<ReputationAction increase="10" identifier="separatists" targettype="Faction" _npos="-143.79028,-595.9767" />
 				</Failure>
@@ -4372,15 +4388,15 @@
 					<SpawnAction itemidentifier="alienpowercell" targetinventory="oplock" _npos="-1914.4948,-1476.631" />
 				</Success>
 				<Failure>
-					<ConversationAction text="&quot;Go away, you vandals.&quot;&#xD;&#xA;---REQUIREMENTS---&#xD;&#xA;[OUTPOST   REP-10]" eventsprite="security" _npos="-2742.2764,-874.2019" />
+					<ConversationAction text="EventText.itaoplockcity1" eventsprite="security" _npos="-2742.2764,-874.2019" />
 					<Label name="trigger" _npos="-2350.0046,-840.9372" />
 					<TriggerAction target1tag="oplock" target2tag="visitor" _npos="-1933.5808,-840.96204" />
 					<CheckDataAction identifier="citytimesbreached" condition="eq 1" _npos="-1468.8918,-840.698">
 						<Success>
-							<ConversationAction text="&quot;Trespassers in the docking port!&quot;" eventsprite="Security" _npos="-1038.4513,-1055.2432" />
+							<ConversationAction text="EventText.itaoplockcity2" eventsprite="Security" _npos="-1038.4513,-1055.2432" />
 						</Success>
 						<Failure>
-							<ConversationAction text="&quot;Trespassers in the docking port!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST    REP-200]&#xD;&#xA;[COALITION  REP-15 ]&#xD;&#xA;[SEPARATIST REP+15 ]" eventsprite="security" _npos="-1039.227,-675.6523" />
+							<ConversationAction text="EventText.itaoplockcity3" eventsprite="security" _npos="-1039.227,-675.6523" />
 							<ReputationAction increase="-200" targettype="Location" _npos="-631.26495,-675.0278" />
 							<ReputationAction increase="-20" identifier="coalition" targettype="Faction" _npos="-265.8557,-675.9027" />
 							<ReputationAction increase="20" identifier="separatists" targettype="Faction" _npos="105.431335,-675.0275" />
@@ -4402,16 +4418,16 @@
 					<SpawnAction itemidentifier="alienpowercell" targetinventory="oplock" _npos="-2399.1255,-1493.5328" />
 				</Success>
 				<Failure>
-					<ConversationAction text="&quot;Only coalition affiliates may enter. Do not try to trespass, or you will be blacklisted.&quot;&#xD;&#xA;&#xD;&#xA;---REQUIREMENTS---&#xD;&#xA;[COALITION REP+35]" eventsprite="security" dialogtype="Small" _npos="-2443.3997,-839.7222" />
+					<ConversationAction text="EventText.itaoplockcity4" eventsprite="security" dialogtype="Small" _npos="-2443.3997,-839.7222" />
 					<TriggerAction target1tag="oplock" target2tag="visitor" radius="100" _npos="-1938.4873,-840.7155" />
 					<CheckDataAction identifier="miltimesbreached" condition="eq 1" _npos="-1481.3395,-840.92285">
 						<Success>
-							<ConversationAction text="&quot;Blacklisted trespassers in the docking port!&quot;" eventsprite="security" _npos="-1088.0312,-1080.3048" />
+							<ConversationAction text="EventText.itaoplockcity5" eventsprite="security" _npos="-1088.0312,-1080.3048" />
 							<GoTo name="trespass" _npos="-704.69574,-1080.7456" />
 							<ReputationAction identifier="-200" targettype="Location" _npos="-338.68604,-1080.0023" />
 						</Success>
 						<Failure>
-							<ConversationAction text="&quot;Trespassers in the docking port!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]&#xD;&#xA;[COALITION   REP-45 ]&#xD;&#xA;[SEPARATISTS REP+15 ]" eventsprite="security" _npos="-1092.7714,-678.54956" />
+							<ConversationAction text="EventText.itaoplockcity6" eventsprite="security" _npos="-1092.7714,-678.54956" />
 							<ReputationAction increase="-45" identifier="coalition" targettype="Faction" _npos="-308.89526,-677.52527" />
 							<ReputationAction increase="15" identifier="separatists" targettype="Faction" _npos="74.64014,-677.1854" />
 							<Label name="trespass" _npos="448.6186,-677.1202" />
@@ -4451,8 +4467,8 @@
 			<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="securitynpc" targettag="fabguard1" spawnpointtag="resguard" _npos="-350.21844,-171.24316" />
 			<Label name="lock" _npos="-1227.7952,-173.46582" />
 			<NPCWaitAction npctag="fabguard1" wait="true" />
-			<ConversationAction text="&quot;Only researchers can enter this laboratory.&quot;" speakertag="fabguard1" eventsprite="security" dialogtype="Regular" _npos="92.68585,-171.20895">
-				<Option text="[OUTPOST REP 100] &quot;I'm working for the research team. Here's my ID.&quot;" endconversation="true">
+			<ConversationAction text="EventText.itaresearchlock1.1" speakertag="fabguard1" eventsprite="security" dialogtype="Regular" _npos="92.68585,-171.20895">
+				<Option text="EventText.itaresearchlock1.2" endconversation="true">
 					<CheckReputationAction targettype="Location" condition="eq 100">
 						<Success>
 							<SpawnAction itemidentifier="alienpowercell" targetinventory="resdoor" _npos="1253.2352,-543.71954" />
@@ -4462,7 +4478,7 @@
 						</Failure>
 					</CheckReputationAction>
 				</Option>
-				<Option text="Keep walking." endconversation="true">
+				<Option text="EventText.itaresearchlock1.3" endconversation="true">
 					<GoTo name="lock" _npos="464.33087,59.713898" />
 				</Option>
 			</ConversationAction>
@@ -4472,14 +4488,14 @@
 			<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="outpostmanager" targettag="outpostmanager" spawnpointtag="admin" />
 			<CheckReputationAction targettype="Location" condition="gt 20" _npos="-847.026,-822.6769">
 				<Success>
-					<ConversationAction text="&quot;You've proven yourself to be an experienced sailor, so I trust you with these missions.&quot;" speakertag="outpostmanager" dialogtype="Small" _npos="254.41376,-1679.6974">
-						<Option text="[MISSION] Activating a beacon [2800mk]" endconversation="true">
+					<ConversationAction text="EventText.itamissiontrusted" speakertag="outpostmanager" dialogtype="Small" _npos="254.41376,-1679.6974">
+						<Option text="EventText.itamissionactivatebeacon" endconversation="true">
 							<MissionAction missionidentifier="beacontest" _npos="825.9133,-1784.6556" />
 						</Option>
-						<Option text="[MISSION] Killing hammerhead [+10REP][3000mk]" endconversation="true">
+						<Option text="EventText.itamissionkillhammerhead" endconversation="true">
 							<MissionAction missionidentifier="killhammerhead" _npos="822.635,-1615.2164" />
 						</Option>
-						<Option text="[MISSION] Cave mineral research [+10REP][1500-1800mk]" endconversation="true">
+						<Option text="EventText.itamissionmineralresearch" endconversation="true">
 							<MissionAction missiontag="collectmineralscommon" _npos="822.2362,-1430.2937" />
 						</Option>
 					</ConversationAction>
@@ -4487,27 +4503,27 @@
 				<Failure>
 					<RNGAction chance="0.5" _npos="-344.352,-790.0364">
 						<Success>
-							<ConversationAction text="&quot;There are some sensitive cargo crates that nobody wants to deliver, so naturally, we are asking you to do it.&quot;" speakertag="taskmaster" targettag="taskmaster" dialogtype="Small" _npos="252.26245,-1231.9866">
-								<Option text="[MISSION] Nearly hatched eggs transport [+10REP][2000mk]" endconversation="true">
+							<ConversationAction text="EventText.itamissionscargofragileask" speakertag="taskmaster" targettag="taskmaster" dialogtype="Small" _npos="252.26245,-1231.9866">
+								<Option text="EventText.itamissionscargoegg" endconversation="true">
 									<MissionAction missionidentifier="ita_eggcrate" _npos="826.53436,-1260.1266" />
 								</Option>
-								<Option text="[MISSION] Fragile goods transport [+10REP][2300mk]" endconversation="true">
+								<Option text="EventText.itamissionscargofragile" endconversation="true">
 									<MissionAction missionidentifier="ita_impactcrate" _npos="836.2141,-1116.1206" />
 								</Option>
-								<Option text="[MISSION] Dry supplies transport [+10REP][2000mk]" endconversation="true">
+								<Option text="EventText.itamissionscargowater" endconversation="true">
 									<MissionAction missionidentifier="cargowater1" _npos="834.6151,-983.47406" />
 								</Option>
 							</ConversationAction>
 						</Success>
 						<Failure>
-							<ConversationAction text="&quot;There are some sensitive cargo crates that nobody wants to deliver, so naturally, we are asking you to do it.&quot;" speakertag="taskmaster" dialogtype="Small" _npos="250.73175,-726.92126">
-								<Option text="[MISSION] Rapidly deteriorating crate. [+10REP][2000mk]" endconversation="true">
+							<ConversationAction text="EventText.itamissionscargofragileask" speakertag="taskmaster" dialogtype="Small" _npos="250.73175,-726.92126">
+								<Option text="EventText.itamissionscargotime" endconversation="true">
 									<MissionAction missionidentifier="cargotime1" _npos="787.86475,-806.6306" />
 								</Option>
-								<Option text="[MISSION] Dry supplies crate [+10REP][+2000mk]" endconversation="true">
+								<Option text="EventText.itamissionscargowater2" endconversation="true">
 									<MissionAction missionidentifier="cargowater1" _npos="787.3021,-662.9771" />
 								</Option>
-								<Option text="[MISSION] Creature cargo. [+10REP][3000mk]" endconversation="true">
+								<Option text="EventText.itamissionscargocreature" endconversation="true">
 									<MissionAction missiontag="cargomonster1" _npos="786.45087,-518.0582" />
 								</Option>
 							</ConversationAction>
@@ -4530,19 +4546,19 @@
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missions_city1.1" commonness="125">
 			<NPCWaitAction npctag="outpostmanager" wait="true" />
-			<ConversationAction text="There is plenty of work to be done. These are the most needed tasks." speakertag="outpostmanager" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissionscity1.1.1" speakertag="outpostmanager" dialogtype="Small" />
 			<MissionAction missiontag="city1" />
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missions_city1.2" commonness="125">
 			<NPCWaitAction npctag="outpostmanager" wait="true" />
-			<ConversationAction text="There is always more to be done. You can take on this contract." speakertag="outpostmanager" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissionscity1.2.2" speakertag="outpostmanager" dialogtype="Small" />
 			<MissionAction missiontag="city1" />
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missions_city1.3" commonness="125">
 			<NPCWaitAction npctag="outpostmanager" wait="true" />
-			<ConversationAction text="This task requires a well organised crew!" speakertag="outpostmanager" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissionscity1.3.3" speakertag="outpostmanager" dialogtype="Small" />
 			<MissionAction missiontag="city1" />
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
@@ -4551,61 +4567,61 @@
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missions_mining1" commonness="125">
 			<NPCWaitAction npctag="outpostmanager" wait="true" />
-			<ConversationAction text="We need to see what types of minerals exist in this location before we start large scale mining operation. See what you can find." speakertag="outpostmanager" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissionsmining1.4" speakertag="outpostmanager" dialogtype="Small" />
 			<MissionAction missiontag="collectmineralscommon" />
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missions_mining2" commonness="125">
 			<NPCWaitAction npctag="outpostmanager" wait="true" />
-			<ConversationAction text="We need you to clear out nests so we can keep digging in the caves." speakertag="outpostmanager" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissionsmining2.5" speakertag="outpostmanager" dialogtype="Small" />
 			<MissionAction missiontag="nest" />
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missions_mining3" commonness="125">
 			<NPCWaitAction npctag="outpostmanager" wait="true" />
-			<ConversationAction text="Various other tasks are needed too." speakertag="outpostmanager" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissionsmining3.6" speakertag="outpostmanager" dialogtype="Small" />
 			<MissionAction missiontag="city1" />
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missions_military1" commonness="125">
 			<NPCWaitAction npctag="ita_coalitionchief" wait="true" />
-			<ConversationAction text="We need you to run some errands." speakertag="ita_coalitionchief" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissionsmilitary1.7" speakertag="ita_coalitionchief" dialogtype="Small" />
 			<MissionAction missiontag="ita_military1" />
 			<NPCWaitAction npctag="ita_coalitionchief" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missions_military2" commonness="125">
 			<NPCWaitAction npctag="ita_coalitionchief" wait="true" />
-			<ConversationAction text="We need you to exterminate a large swarm. I hope you are ready for it..." speakertag="ita_coalitionchief" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissionsmilitary2.8" speakertag="ita_coalitionchief" dialogtype="Small" />
 			<MissionAction missiontag="ita_swarmlarge" />
 			<NPCWaitAction npctag="ita_coalitionchief" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missions_military3" commonness="125">
 			<NPCWaitAction npctag="ita_coalitionchief" wait="true" />
-			<ConversationAction text="We need you to get rid of massive threats to human settlements in the area. You'd better pack some serious firepower." speakertag="ita_coalitionchief" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissionsmilitary3.9" speakertag="ita_coalitionchief" dialogtype="Small" />
 			<MissionAction missiontag="ita_monsterlarge" />
 			<NPCWaitAction npctag="ita_coalitionchief" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missions_research1" commonness="125">
 			<NPCWaitAction npctag="outpostmanager" wait="true" />
-			<ConversationAction text="We need you to bring us a particular artifact that shows strange behaviour." speakertag="outpostmanager" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissionsresearch1.11" speakertag="outpostmanager" dialogtype="Small" />
 			<MissionAction missiontag="ita_salvageruin" />
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missions_research2" commonness="125">
 			<NPCWaitAction npctag="outpostmanager" wait="true" />
-			<ConversationAction text="We need you to bring us a particular artifact that shows strange behaviour." speakertag="outpostmanager" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissionsresearch2.12" speakertag="outpostmanager" dialogtype="Small" />
 			<MissionAction missiontag="ita_salvageruin" />
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_missions_research3" commonness="125">
 			<NPCWaitAction npctag="outpostmanager" wait="true" />
-			<ConversationAction text="There are non-research related tasks too." speakertag="outpostmanager" dialogtype="Small" />
+			<ConversationAction text="EventText.itamissionsresearch3.13" speakertag="outpostmanager" dialogtype="Small" />
 			<MissionAction missiontag="city1" />
 			<NPCWaitAction npctag="outpostmanager" wait="false" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_research_artifact1" commonness="100">
 			<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="researcher" targettag="missionnpc" spawnpointtag="research" />
-			<ConversationAction text="We've noticed unusual artifact signature in our measurments. Help us with the research by collecting it. If you find more normal artifacts, deposit them in the airlock dispenser for a reward." speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"/>
+			<ConversationAction text="EventText.itaresearchartifact1.14" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"/>
 			<MissionAction missiontag="salvageartifact" />
 		</ScriptedEvent>
 		<!--TAXI
@@ -4758,26 +4774,26 @@
 			<TriggerAction target1tag="entrance" target2tag="crewmate" radius="50" />
 			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_guard1" targettag="separatist" spawnpointtag="rebel" />
 			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_guard1" targettag="separatist2" spawnpointtag="rebel" />
-			<ConversationAction text="&quot;Wha... who are you! What are you doing here!?&quot;" eventsprite="security" >
-				<Option text="&quot;We came here to kill you, obviously.&quot;" endconversation="true" >
+			<ConversationAction text="EventText.itarebelbase1" eventsprite="security" >
+				<Option text="EventText.itarebelbase2" endconversation="true" >
 					<CombatAction combatmode="Offensive" npctag="separatist" enemytag="crewmate" isinstigator="false" guardreaction="offensive" witnessreaction="offensive"/>
 				</Option>
-				<Option text="&quot;What are *you* doing here?&quot;" />
-				<Option text="[DELIVERY] &quot;I've been looking for you. Got something I'm supposed to deliver - your hands only&quot;" />
-				<Option text="[OUTPOST REP 90]&quot;We work for the station. We are not looking for trouble.&quot;" />
-				<Option text="[SEPARATIST REP 50] &quot;Sic semper tyrannis. We're here to help.&quot;" />
+				<Option text="EventText.itarebelbase3" />
+				<Option text="EventText.itarebelbase4" />
+				<Option text="EventText.itarebelbase5" />
+				<Option text="EventText.itarebelbase6" />
 			</ConversationAction>
 
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_bounty_1">
-			<ConversationAction text="A WANTED poster from a noticeboard..." eventsprite="noticeboard" dialogtype="Small" _npos="-128,-128" />
+			<ConversationAction text="EventText.itabounty1.1" eventsprite="noticeboard" dialogtype="Small" _npos="-128,-128" />
 			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_bounty_miner1" lootingisstealing="false" targettag="bountytarget1" spawnpointtag="canteen" _npos="405,-128.99994" />
 			<CombatAction combatmode="Defensive" guardreaction="None" witnessreaction="Retreat" npctag="bountytarget1" _npos="1029.699,-127.645935" />
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_bounty_1win1">
 			<MoneyAction amount="750" _npos="-711.8619,-110.71277" />
 			<ReputationAction increase="6" identifier="coalition" targettype="Faction" _npos="-327.00604,-110.22009" />
-			<ConversationAction text="Bounty target eliminated&#xD;&#xA;[750mk]&#xD;&#xA;[COALITION REP +6]" eventsprite="cleaner" dialogtype="Small" _npos="40.396484,-110.50006" />
+			<ConversationAction text="EventText.itabounty1.2" eventsprite="cleaner" dialogtype="Small" _npos="40.396484,-110.50006" />
 		</ScriptedEvent>
 		<!--BEACONS-->
 		<ScriptedEvent identifier="BEACONTEST">
@@ -4785,12 +4801,12 @@
 			<WaitAction time="5" _npos="-719.10815,-129.10101" />
 			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_guard1" targettag="guard1" spawnpointtag="guard1" _npos="-310.91656,-129.21936" />
 			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_guard1" targettag="guard2" spawnpointtag="guard2" _npos="160.5173,-128.44084" />
-			<ConversationAction text="&quot;Are you the ressuply crew? What's the password!?&quot;" eventsprite="security" dialogtype="Small" _npos="765.50586,-128.68567">
-				<Option text="&quot;Sic semper tyrranis.&quot; [SEPARATIST REP+5]" endconversation="true" />
-				<Option text="&quot;Sick pimper dracaris? [CLOWN REP +5]" endconversation="true" />
-				<Option text="&quot;Sectumsempra. [CLOWN REP +5]" endconversation="true" />
-				<Option text="[LOCATION REP 50]&quot;We work for the station and this beacon needs fixing." endconversation="true" />
-				<Option text="*raise middle finger &quot;Is this the password?&quot;" endconversation="true" />
+			<ConversationAction text="EventText.itabeacontest1" eventsprite="security" dialogtype="Small" _npos="765.50586,-128.68567">
+				<Option text="EventText.itabeacontest2" endconversation="true" />
+				<Option text="EventText.itabeacontest3" endconversation="true" />
+				<Option text="EventText.itabeacontest4" endconversation="true" />
+				<Option text="EventText.itabeacontest5" endconversation="true" />
+				<Option text="EventText.itabeacontest6" endconversation="true" />
 			</ConversationAction>
 			<CombatAction combatmode="offensive" guardreaction="arrest" witnessreaction="arrest" npctag="guard1" enemytag="player" isinstigator="false" _npos="1029.699,-127.645935" />
 		</ScriptedEvent>
@@ -4798,7 +4814,7 @@
 			<SetDataAction operation="Add" value="1" identifier="sepkilled1a" _npos="-1131.7861,77.20468" />
 			<CheckDataAction identifier="sepkilled1a" condition="eq 5" _npos="-763.0397,77.70526">
 				<Success>
-					<ConversationAction text="You cleared out a separatist hideout...&#xD;&#xA;[Reward 800mk]&#xD;&#xA;[COALITION REP +8]&#xD;&#xA;[SEPARATIST REP -15]" eventsprite="ita_coa1" dialogtype="Small" _npos="-317.86426,109.29859" />
+					<ConversationAction text="EventText.itabeaconsep1.0kill.1" eventsprite="ita_coa1" dialogtype="Small" _npos="-317.86426,109.29859" />
 					<MoneyAction amount="800" _npos="48.96234,109.99008" />
 					<ReputationAction increase="8" identifier="coalition" targettype="Faction" _npos="419.87213,109.0827" />
 					<ReputationAction increase="-25" identifier="separatists" targettype="Faction" _npos="783.25806,109.08273" />
@@ -4850,7 +4866,7 @@
 									<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_sound_radioevent1.ogg" range="3000" />
 								</StatusEffect>
 							</StatusEffectAction>
-							<ConversationAction text="[COALITION REP 40] &#xD;&#xA;&quot;This is Coalition Officer speaking. I'm ordering you to clear out a separatist hideout in a nearby beacon!&quot;" eventsprite="ita_radio1" dialogtype="Small" _npos="11611.608,-0.05960083" />
+							<ConversationAction text="EventText.itabeaconsep1.0.2" eventsprite="ita_radio1" dialogtype="Small" _npos="11611.608,-0.05960083" />
 							<StatusEffectAction targettag="batfill">
 								<StatusEffect type="Always" target="This" IsOn="true"/>
 							</StatusEffectAction>
@@ -4926,68 +4942,68 @@
 							<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_sound_radioevent1.ogg" range="3000" />
 						</StatusEffect>
 					</StatusEffectAction>
-					<ConversationAction text="Radio transmission: &quot;Hello, travelers! We could use your help here in the beacon station.&quot;" eventsprite="ita_radio1" dialogtype="Small" _npos="10393.181,662.05383" />
+					<ConversationAction text="EventText.itabeaconsep1.0a.1" eventsprite="ita_radio1" dialogtype="Small" _npos="10393.181,662.05383" />
 					<SpawnAction npcsetidentifier="ita_separatists" npcidentifier="ita_guard1" targettag="guard1" spawnpointtag="sepguard1" _npos="12709.841,0" />
 					<SpawnAction npcsetidentifier="ita_separatists" npcidentifier="ita_guard1" targettag="guard2" spawnpointtag="sepguard2" _npos="13200,0" />
 					<SpawnAction npcsetidentifier="ita_separatists" npcidentifier="ita_guard1" targettag="guard3" spawnpointtag="sepguard3" _npos="13800,0" />
 					<SpawnAction npcsetidentifier="ita_separatists" npcidentifier="ita_guard1" targettag="guard4" spawnpointtag="sepguard4" _npos="14400,0" />
 					<Label name="s0" _npos="10853.873,662.4377" />
 					<Label name="s1" _npos="11284.272,662.9405" />
-					<ConversationAction text="A young captain dressed up in a separatist's uniform welcomes you with his hands behind his back, seemingly proud of their operations here. &quot;Welcome to our station, Comrades.&quot;" speakertag="sepcap" invokertag="talker1" eventsprite="captain" dialogtype="Regular" _npos="11692.549,662.6438">
-						<Option text="[SEPARATIST REP 30] &quot;What are you doing out here?&quot;" endconversation="true">
+					<ConversationAction text="EventText.itabeaconsep1.0a.2" speakertag="sepcap" invokertag="talker1" eventsprite="captain" dialogtype="Regular" _npos="11692.549,662.6438">
+						<Option text="EventText.itabeaconsep1.0a.3" endconversation="true">
 							<CheckReputationAction targettype="Faction" identifier="separatists" condition="gt 30" _npos="12272.272,490.35458">
 								<Success>
-									<ConversationAction text="&quot;We've repurposed this beacon into a broadcasting station to spread the truth to nearby outposts to fight the propaganda. People need to realize that the Coalition is manipulating them into submission.&quot;" targettag="talker1" eventsprite="captain" dialogtype="Regular" _npos="12567.177,-28.080177">
-										<Option text="[HELM 70]&quot;Listen here, &quot;comrade&quot;. Coalition vessels are making rounds through these tunnels,  nuking hideouts like this without warning. Some day, they will pay you a visit and the blood of this crew is on your hands. Cut off the broadcast, close this operation and save your people before it's too late.&quot;" endconversation="true">
+									<ConversationAction text="EventText.itabeaconsep1.0a.4" targettag="talker1" eventsprite="captain" dialogtype="Regular" _npos="12567.177,-28.080177">
+										<Option text="EventText.itabeaconsep1.0a.5" endconversation="true">
 											<SkillCheckAction requiredskill="helm" requiredlevel="70" probabilitybased="false" targettag="talker1" _npos="13371.006,-269.9811">
 												<Success>
-													<ConversationAction text="&quot;Silence us? Is that what you want? Do you seriously think you can scare us?&quot;" targettag="talker1" eventsprite="captain" dialogtype="Regular" _npos="13794.284,-237.77197">
-														<Option text="[SEPARATIST REP 50] &quot;I'm on your side and I don't want to risk lives of these people just for some stupid broadcast that nobody listens to anyways.&quot;" endconversation="true">
+													<ConversationAction text="EventText.itabeaconsep1.0a.6" targettag="talker1" eventsprite="captain" dialogtype="Regular" _npos="13794.284,-237.77197">
+														<Option text="EventText.itabeaconsep1.0a.7" endconversation="true">
 															<CheckReputationAction targettype="Faction" identifier="separatists" condition="gt 50" _npos="14268.252,-205.81">
 																<Success>
-																	<ConversationAction text="The beacon's commander smiles, as if preparing for a perfect comeback, to which his expression shifts to a more serious, defeated look. &quot;Fuck, you're right. I shouldn't have risked our lives for this.&quot; He orders his people to start packing. [SEPARATISTS +10][COALITION +5]" targettag="talker1" eventsprite="captain" dialogtype="Regular" _npos="14727.944,-173.69464" />
+																	<ConversationAction text="EventText.itabeaconsep1.0a.8" targettag="talker1" eventsprite="captain" dialogtype="Regular" _npos="14727.944,-173.69464" />
 																	<ReputationAction increase="10" identifier="separatists" targettype="Faction" _npos="15158.087,-173.48532" />
 																	<ReputationAction increase="5" identifier="coalition" targettype="Faction" _npos="15531.702,-173.15527" />
-																	<ConversationAction text="The beacon crew has been convinced to abandon their posts and cease all operations. Preperations to abandon station have been put into place.&#xD;&#xA;[SEPARATIST REP +10][COALITION REP+5]" eventsprite="officeinside" dialogtype="Small" _npos="15961.538,-169.56235" />
+																	<ConversationAction text="EventText.itabeaconsep1.0a.9" eventsprite="officeinside" dialogtype="Small" _npos="15961.538,-169.56235" />
 																</Success>
 																<Failure>
-																	<ConversationAction text="&quot;That's defeatist speech. Go polish coalition officer's shoes, you coward.&quot;" targettag="talker1" _npos="14730.567,-652.36743" />
+																	<ConversationAction text="EventText.itabeaconsep1.0a.10" targettag="talker1" _npos="14730.567,-652.36743" />
 																</Failure>
 															</CheckReputationAction>
 														</Option>
-														<Option text="&quot;Have it your way! Even if you survive, don't think that we'll offer you refuge on our submarine when the Coalition starts hunting you down!&quot; [SEPARATIST REP -3]" endconversation="true" />
+														<Option text="EventText.itabeaconsep1.0a.11" endconversation="true" />
 													</ConversationAction>
 												</Success>
 												<Failure>
-													<ConversationAction text="&quot;You have no clue what you're talking about.&quot;" targettag="talker1" dialogtype="Small" _npos="13963.15,228.03137" />
+													<ConversationAction text="EventText.itabeaconsep1.0a.12" targettag="talker1" dialogtype="Small" _npos="13963.15,228.03137" />
 													<GoTo name="s1" _npos="14395.076,229.78735" />
 												</Failure>
 											</SkillCheckAction>
 										</Option>
-										<Option text="&quot;Good. Challenge people's views, make them think. That's exactly what will bring down the Coalition in the long run." endconversation="true">
+										<Option text="EventText.itabeaconsep1.0a.13" endconversation="true">
 											<GoTo name="s1" _npos="13272.519,34.143555" />
 										</Option>
-										<Option text="Count the personnel, inspect their equipment, and look at the crew registry - have Coalition deal with them later. Thanks to this information, these people will get arrested at the first station they visit and not even their relatives will escape the punishment. You won't have to witness any of it.&#xD;&#xA;[COALITION REP +8][SEPARATIST REP -10]" endconversation="true">
+										<Option text="EventText.itabeaconsep1.0a.14" endconversation="true">
 											<ReputationAction increase="8" identifier="coalition" targettype="Faction" _npos="13378.152,220.9017" />
 											<ReputationAction increase="-10" identifier="separatists" targettype="Faction" _npos="13371.9795,373.91956" />
 										</Option>
-										<Option text="&quot;Cool.&quot;" endconversation="true">
+										<Option text="EventText.itabeaconsep1.0a.15" endconversation="true">
 											<GoTo name="s1" _npos="12963.564,316.771" />
 										</Option>
 									</ConversationAction>
 								</Success>
 								<Failure>
-									<ConversationAction text="&quot;Sorry, I can't disclose any details; orders.&quot;" targettag="talker1" eventsprite="captain" dialogtype="Small" _npos="13376.94,553.15686" />
+									<ConversationAction text="EventText.itabeaconsep1.0a.16" targettag="talker1" eventsprite="captain" dialogtype="Small" _npos="13376.94,553.15686" />
 									<GoTo name="s1" _npos="13377" />
 								</Failure>
 							</CheckReputationAction>
 						</Option>
-						<Option text="&quot;How can we help?&quot;" endconversation="true">
-							<ConversationAction text="&quot;We need some supplies to stay here a bit longer. Our mechanic will have more details.&quot;" targettag="talker1" eventsprite="captain" dialogtype="Small" _npos="12270.369,745.0551" />
+						<Option text="EventText.itabeaconsep1.0a.17" endconversation="true">
+							<ConversationAction text="EventText.itabeaconsep1.0a.18" targettag="talker1" eventsprite="captain" dialogtype="Small" _npos="12270.369,745.0551" />
 							<TriggerEventAction identifier="ita_beacon_sep1.0b" _npos="12632.933,843.1345" />
 						</Option>
-						<Option text="&quot;You've made a serious mistake letting us in, *comrade*...&quot;" endconversation="true">
-							<ConversationAction text="&quot;Never should have come here!&quot;[COALITION REP +6]" targettag="talker1" eventsprite="captain" dialogtype="Regular" _npos="12271.611,1205.6558" />
+						<Option text="EventText.itabeaconsep1.0a.19" endconversation="true">
+							<ConversationAction text="EventText.itabeaconsep1.0a.20" targettag="talker1" eventsprite="captain" dialogtype="Regular" _npos="12271.611,1205.6558" />
 							<ReputationAction increase="6" identifier="coalition" targettype="Faction" _npos="12640.694,1205.3043" />
 							<CombatAction combatmode="Offensive" isinstigator="false" guardreaction="Offensive" npctag="guard1" enemytag="talker1" _npos="18009.912,0.0030517578" />
 							<CombatAction combatmode="Offensive" isinstigator="false" guardreaction="Offensive" npctag="guard2" enemytag="talker1" _npos="18407.057,0.0020751953" />
@@ -5004,17 +5020,17 @@
 			<SpawnAction npcsetidentifier="ita_separatists" npcidentifier="ita_repairnpc1" targettag="seprepair" spawnpointtag="sepguard4" _npos="7999.285,595.52625" />
 			<Label name="fpgacheck" _npos="8423.877,595.25226" />
 			<NPCWaitAction npctag="seprepair" wait="true" _npos="8826.206,595.34045" />
-			<ConversationAction text="You see a Mechanic looking through a hole in the wall, a screwdriver in hand. &quot;Oh, hello! Did you come by to help? We need somebody to repair this busted old piece of junk. The FPGA circuit broke.&quot;" speakertag="seprepair" invokertag="helper" eventsprite="ita_engi1" dialogtype="Small" _npos="9254.411,595.1901">
-				<Option text="[ENGI 45][FPGA CIRCUIT] &quot;Sure, I got one; let me help.&quot;">
+			<ConversationAction text="EventText.itabeaconsep1.0b.1" speakertag="seprepair" invokertag="helper" eventsprite="ita_engi1" dialogtype="Small" _npos="9254.411,595.1901">
+				<Option text="EventText.itabeaconsep1.0b.2">
 					<CheckItemAction targettag="helper" itemidentifiers="fpgacircuit" _npos="10475.356,628.2399">
 						<Success>
 							<SkillCheckAction requiredskill="electrical" requiredlevel="45" probabilitybased="false" targettag="helper" _npos="10908.118,443.81055">
 								<Success>
 									<RemoveItemAction targettag="helper" itemidentifier="fpgacircuit" amount="1" _npos="11484.874,26.477547" />
-									<ConversationAction text="You lean into the hole in the wall, finding a circuit board of rusted up electronics. You see an old, half burnt FPGA Circuit inside the innerlinings of the metal wall. You snap it out of its slot and replace it with a shiny new one." targettag="helper" _npos="11967.075,26.594467" />
+									<ConversationAction text="EventText.itabeaconsep1.0b.3" targettag="helper" _npos="11967.075,26.594467" />
 									<GiveSkillExpAction skill="electrical" amount="3" targettag="helper"/>
-									<ConversationAction text="&quot;Thanks! This place'll be running for a little while longer now. I don't have much, but you can take this here incendium shard. Snatched it from one of the Medical Officers while they were busy, heh! Probably worth something, so, don't spend it all in one place if you catch my drift.&quot;" eventsprite="ita_engi1" targettag="helper" _npos="12433.816,22.34967">
-										<Option text="&quot;Great! Good luck with your operations.&quot;&#xD;&#xA;[SEPARATIST REP +3]">
+									<ConversationAction text="EventText.itabeaconsep1.0b.4" eventsprite="ita_engi1" targettag="helper" _npos="12433.816,22.34967">
+										<Option text="EventText.itabeaconsep1.0b.5">
 											<SpawnAction itemidentifier="incendium" targetinventory="helper" _npos="12948.039,-582.26807" />
 											<Label name="pay" _npos="13315.114,-582.305" />
 											<SpawnAction itemidentifier="ita_coin1" targetinventory="helper" _npos="13776.012,-731.53406" />
@@ -5024,17 +5040,17 @@
 											<SpawnAction itemidentifier="ita_coin1" targetinventory="helper" _npos="15450.825,-742.38196" />
 											<ReputationAction increase="3" identifier="separatists" targettype="Faction" _npos="15818.224,-742.3294" />
 										</Option>
-										<Option text="&quot;I don't need anything, thanks. It was just a cheap circuit. Good luck with your operations!&quot;&#xD;&#xA;[SEPARATIST REP +7]" endconversation="true" />
-										<Option text="[WEAPONS 20] &quot;I've spent time, expertise, and material to help you. Surely you can reward me properly.&quot;">
+										<Option text="EventText.itabeaconsep1.0b.6" endconversation="true" />
+										<Option text="EventText.itabeaconsep1.0b.7">
 											<SkillCheckAction requiredskill="weapons" requiredlevel="20" probabilitybased="false" targettag="helper" _npos="12908.543,118.11171">
 												<Success>
-													<ConversationAction text="&quot;Hey, hey! You're pushing your luck 'ere, stranger.. This Crystal has its values, but.. Eh, whatever, here - take it. Probably not worth anything anyways..quot;&#xD;&#xA;[SEPARATIST REP +3]" eventsprite="ita_engi1" _npos="13403.5,93.5" />
+													<ConversationAction text="EventText.itabeaconsep1.0b.8" eventsprite="ita_engi1" _npos="13403.5,93.5" />
 													<SpawnAction itemidentifier="incendium" targetinventory="helper" _npos="13774.68,93.5" />
 													<ReputationAction increase="3" identifier="separatists" targettype="Faction" _npos="14139.544,93.9431" />
 													<GoTo name="pay" _npos="14506.178,93.734634" />
 												</Success>
 												<Failure>
-													<ConversationAction text="[WEAPON 20 FAILED] &quot;Sorry, but that's all I've got. Take it or leave it.&quot;&#xD;&#xA;[SEPARATIST REP -2]" eventsprite="ita_engi1" _npos="13403.462,551.82404" />
+													<ConversationAction text="EventText.itabeaconsep1.0b.9" eventsprite="ita_engi1" _npos="13403.462,551.82404" />
 													<ReputationAction increase="-2" identifier="separatists" targettype="Faction" _npos="13775.3,551.47546" />
 													<GoTo name="pay" _npos="14167.558,547.2057" />
 												</Failure>
@@ -5043,7 +5059,7 @@
 									</ConversationAction>
 								</Success>
 								<Failure>
-									<ConversationAction text="[ENGI 60 FAILED] &quot;You seem to be as clueless as I am!&quot;" eventsprite="ita_engi1" targettag="helper" _npos="11369.747,534.5658" />
+									<ConversationAction text="EventText.itabeaconsep1.0b.10" eventsprite="ita_engi1" targettag="helper" _npos="11369.747,534.5658" />
 									<ClearTagAction tag="helper" _npos="11868.902,673.0112" />
 									
 									
@@ -5052,14 +5068,14 @@
 							</SkillCheckAction>
 						</Success>
 						<Failure>
-							<ConversationAction text="&quot;Even I know that that's not an FPGA circuit, kid.&quot;" eventsprite="ita_engi1" targettag="helper" _npos="10908.098,791.43933" />
+							<ConversationAction text="EventText.itabeaconsep1.0b.11" eventsprite="ita_engi1" targettag="helper" _npos="10908.098,791.43933" />
 							<ClearTagAction tag="helper" _npos="11283.317,994.6698" />
 							
 							<GoTo name="fpgacheck" _npos="11283.618,1113.0835" />
 						</Failure>
 					</CheckItemAction>
 				</Option>
-				<Option text="&quot;Nope, sorry. Just looking around.&quot;" endconversation="true">
+				<Option text="EventText.itabeaconsep1.0b.12" endconversation="true">
 					<CheckDataAction identifier="clowned" condition="eq 1" _npos="9661.82,718.4165">
 						<Success>
 							<GoTo name="fpgacheck" _npos="10133.574,755.5236" />
@@ -5069,39 +5085,39 @@
 								<Success>
 									<CheckItemAction targettag="helper" itemidentifiers="clowncostume" _npos="10107.692,1108.957">
 										<Success>
-											<ConversationAction text="&quot;'You a clown? The real kind?&quot;" targettag="helper" eventsprite="ita_engi1" _npos="10603.367,1383.7397">
-												<Option text="&quot;I am.&quot;">
-													<ConversationAction text="&quot;Hm... Ya don't seem like it... Nevermind.&quot; [CLOWNS -5]" targettag="helper" eventsprite="ita_engi1" _npos="11457.013,1241.694" />
+											<ConversationAction text="EventText.itabeaconsep1.0b.13" targettag="helper" eventsprite="ita_engi1" _npos="10603.367,1383.7397">
+												<Option text="EventText.itabeaconsep1.0b.14">
+													<ConversationAction text="EventText.itabeaconsep1.0b.15" targettag="helper" eventsprite="ita_engi1" _npos="11457.013,1241.694" />
 													<ReputationAction increase="-5" identifier="clowns" _npos="11901.026,1241.7412" />
 													<Label name="clownend" _npos="12275.027,1241.0604" />
 													<SetDataAction operation="Set" value="1" identifier="clowned" _npos="12697.748,1241.1815" />
 													<GoTo name="fpgacheck" _npos="13065.174,1241.5361" />
 												</Option>
-												<Option text="[BIKE HORN] Honk the bike horn.">
+												<Option text="EventText.itabeaconsep1.0b.16">
 													<CheckItemAction targettag="helper" itemidentifiers="bikehorn" _npos="10569.938,1916.3099">
 														<Success>
-															<ConversationAction text="Mechanic chuckles, but quickly returns to his work.&#xD;&#xA;[CLOWN REP +5]" targettag="helper" eventsprite="clown" _npos="11454.927,1667.9" />
+															<ConversationAction text="EventText.itabeaconsep1.0b.17" targettag="helper" eventsprite="clown" _npos="11454.927,1667.9" />
 															<ReputationAction increase="5" identifier="clowns" targettype="Faction" _npos="11869.352,1665.6335" />
 															<GoTo name="clownend" _npos="12307.703,1672.1299" />
 														</Success>
 														<Failure>
-															<ConversationAction text="Looks like you've forgotten your bike horn at home. Sad.&#xD;&#xA;[CLOWN REP -5]" targettag="helper" eventsprite="clown" _npos="9938.453,2601.2708" />
+															<ConversationAction text="EventText.itabeaconsep1.0b.18" targettag="helper" eventsprite="clown" _npos="9938.453,2601.2708" />
 															<ReputationAction increase="-5" identifier="clowns" targettype="Faction" _npos="9937.882,3025.2244" />
 															<GoTo name="clownend" _npos="9939.711,3194.1143" />
 														</Failure>
 													</CheckItemAction>
 												</Option>
-												<Option text="[GUITAR] Play a happy song.">
+												<Option text="EventText.itabeaconsep1.0b.19">
 													<CheckItemAction targettag="helper" itemidentifiers="guitar" _npos="10991.578,1916.1569">
 														<Success>
-															<ConversationAction text="It's immediately obvious that these people haven't heard music or smiled in a long time. Your song touches the souls of those in the beacon, and leaves everyone in a good mood.&#xD;&#xA;[CLOWN REP +10][SEPARATISTS REP +3]" eventsprite="clown" _npos="11454.949,2106.3486" />
+															<ConversationAction text="EventText.itabeaconsep1.0b.20" eventsprite="clown" _npos="11454.949,2106.3486" />
 															<ReputationAction increase="10" identifier="clowns" targettype="Faction" _npos="11869.796,2107.357" />
 															<ReputationAction increase="3" identifier="separatists" targettype="Faction" _npos="12241.492,2107.65" />
 															<SpawnAction itemidentifier="ita_coin1" targetinventory="helper" _npos="12614.493,2107.3425" />
 															<GoTo name="clownend" _npos="12984.116,2104.7024" />
 														</Success>
 														<Failure>
-															<ConversationAction text="Playing on an imaginary air guitar doesn't entertain the mechanic whatsoever.&#xD;&#xA;[CLOWN REP -5]" targettag="helper" _npos="10483.223,2594.3884" />
+															<ConversationAction text="EventText.v2givingdirections.21" targettag="helper" _npos="10483.223,2594.3884" />
 															<ReputationAction increase="-5" identifier="clowns" targettype="Faction" _npos="10487.628,3020.4167" />
 															<GoTo name="clownend" _npos="10485.499,3189.706" />
 														</Failure>
@@ -5134,8 +5150,8 @@
 					<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_engineermecha" targettag="transpnpc1" spawnpointtag="bar" _npos="428.15094,-251.44803" />
 					<WaitAction time="1" _npos="757.9575,-261.1023" />
 					<NPCWaitAction npctag="transpnpc1" wait="true" _npos="1161.6409,-282.27606" />
-					<ConversationAction text="Mechanic with prosthetic hands approaches you at the bar.&#xD;&#xA;&quot;Hey, you have a submarine, right? One with guns and shit? I need a ride. I'll pay you good.&quot;&#xD;&#xA;[MISSION: PASSENGER TRANSPORT, REWARD: 800mk]" speakertag="transpnpc1" dialogtype="Small" _npos="1541.937,-283.11996">
-						<Option text="[ACCEPT] &quot;Sure. Come on board.&quot;" endconversation="true">
+					<ConversationAction text="EventText.itatransp1.0.2" speakertag="transpnpc1" dialogtype="Small" _npos="1541.937,-283.11996">
+						<Option text="EventText.itatransp1.0.1" endconversation="true">
 							<TagAction criteria="itemtag:citydockop" tag="citydockop" _npos="2079.27,-283.56985" />
 							<NPCWaitAction npctag="transpnpc1" wait="false" _npos="2462.3618,-277.53546" />
 							<NPCFollowAction npctag="transpnpc1" targettag="citydockop" follow="true" _npos="2861.9421,-283.15033" />
@@ -5146,7 +5162,7 @@
 							<AfflictionAction affliction="stun" strength="1" limbtype="Torso" targettag="transpnpc1" _npos="4837.13,-292.65826" />
 							<!--<ConversationAction text="&quot;Cool sub. I like it.&quot;" speakertag="transpnpc1" dialogtype="Small" _npos="5222.506,-295.81293" />-->
 						</Option>
-						<Option text="[DECLINE] &quot;Nope. Our air is thin enough already.&quot;" endconversation="true" />
+						<Option text="EventText.itatransp1.0.3" endconversation="true" />
 					</ConversationAction>
 				</Success>
 			</CheckDataAction>
@@ -5158,11 +5174,11 @@
 					<Label name="endcheck" _npos="457.23468,-76.322205" />
 					<CheckDataAction identifier="lvlcheck90" condition="eq 1" _npos="838.19055,-76.37933">
 						<Success>
-							<ConversationAction text="&quot;Thanks for the ride. I'll see you around.&quot;&#xD;&#xA;[MISSION COMPLETE 800mk OUTPOST REP+5]" speakertag="transpnpc1" _npos="1270.4789,-364.2835" />
+							<ConversationAction text="EventText.itatransp1.1.1" speakertag="transpnpc1" _npos="1270.4789,-364.2835" />
 							<SetDataAction operation="Set" value="0" identifier="transpnpc1active" _npos="1638.1205,-365.7482" />
 						</Success>
 						<Failure>
-							<ConversationAction text="&quot;How long is it going to take?&quot;" speakertag="transpnpc1" _npos="1267.2886,76.70465" />
+							<ConversationAction text="EventText.itatransp1.1.2" speakertag="transpnpc1" _npos="1267.2886,76.70465" />
 							<GoTo name="endcheck" _npos="1637.717,74.27887" />
 						</Failure>
 					</CheckDataAction>
@@ -5176,8 +5192,8 @@
 						<Success>
 							<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_engineermecha" targettag="transpnpc1" spawnpointtag="passenger" _npos="-81.507935,-154.9714" />
 							<NPCWaitAction npctag="transpnpc1" wait="true" _npos="359.15317,-154.07043" />
-							<ConversationAction text="&quot;Thanks for getting me out of that shithole.&quot;" speakertag="transpnpc1" _npos="862.48834,-154.6912" />
-							<ConversationAction text="[PASSENGER MISSION COMPLETE 800mk OUTPOST REP+5]" dialogtype="Mission" _npos="1261.447,-154.77216" />
+							<ConversationAction text="EventText.itatransp1.2.1" speakertag="transpnpc1" _npos="862.48834,-154.6912" />
+							<ConversationAction text="EventText.itatransp1.2.2" dialogtype="Mission" _npos="1261.447,-154.77216" />
 							<MoneyAction amount="800"/>
 							<ReputationAction increase="5" targettype="Location"/>
 							<NPCWaitAction npctag="transpnpc1" wait="false" _npos="1672.425,-154.39386" />
@@ -5283,7 +5299,7 @@
 					<RemoveItemAction targettag="prisoner1" itemidentifier="handcuffs" amount="1" />
 					<SpawnAction lootingisstealing="false" itemidentifier="toyhammer" targetinventory="prisoner1" />
 					<CombatAction combatmode="Offensive" npctag="prisoner1" enemytag="crewmate"/>
-					<ConversationAction text="&quot;We'll see who will have the last laugh! The Honkmother watches over me.&quot;" speakertag="prisoner1" />
+					<ConversationAction text="EventText.itatransp3.0.1" speakertag="prisoner1" />
 				</Success>
 			</RNGAction>
 		</ScriptedEvent>
@@ -5298,7 +5314,7 @@
 					<RemoveItemAction targettag="prisoner1" itemidentifier="handcuffs" amount="1" _npos="2339.2673,-16.276367" />
 					<SpawnAction lootingisstealing="false" itemidentifier="huskstinger" targetinventory="prisoner1" _npos="2761.895,-18.369492" />
 					<CombatAction combatmode="Offensive" npctag="prisoner1" enemytag="crewmate" _npos="3159.7288,-18.416046" />
-					<ConversationAction text="&quot;You need me! If you kill us, they will not pay you! You'll all become ones with the ocean eventually. There is no point in delaying the inevitable...&quot;" speakertag="prisoner1" _npos="3664.8367,-12.739075" />
+					<ConversationAction text="EventText.itatransp4.0.1" speakertag="prisoner1" _npos="3664.8367,-12.739075" />
 				</Success>
 			</RNGAction>
 		</ScriptedEvent>
@@ -5313,8 +5329,8 @@
       
       <CheckDataAction identifier="race1done" condition="eq 1" _npos="-459.76404,-26.55832">
         <Failure>
-          <ConversationAction text="&quot;Wanna bet 100mk on one of the muddies in the next mudraptor race?&quot;" speakertag="raceman" invokertag="beter1" _npos="20.083832,23.967651">
-            <Option text="Bet 100mk  on the Red mudraptor..." endconversation="true">
+          <ConversationAction text="EventText.itarace1bet.1" speakertag="raceman" invokertag="beter1" _npos="20.083832,23.967651">
+            <Option text="EventText.itarace1bet.2" endconversation="true">
               <SetDataAction operation="Set" value="1" identifier="r1bet" _npos="748.73346,55.5069" />
               <Label name="labop" _npos="365.5538,679.2201" />
               <SetDataAction operation="Set" value="-100" identifier="r1betsize" _npos="359.88055,786.698" />
@@ -5330,7 +5346,7 @@
                         <Success>
                           <CheckDataAction identifier="r1nocash" condition="eq 1" _npos="2591.8008,2364.153">
                             <Success>
-                              <ConversationAction text="Not enough cash..." targettag="beter1" _npos="2599.3228,2616.227" />
+                              <ConversationAction text="EventText.itarace1bet.3" targettag="beter1" _npos="2599.3228,2616.227" />
                               <SetDataAction operation="Set" value="0" identifier="r1betsize" _npos="2599.7607,3043.5618" />
                               <SetDataAction operation="Set" value="0" identifier="r1nocash" _npos="2597.5337,3213.2417" />
                               <ClearTagAction tag="beter1" _npos="2597.188,3374.789" />
@@ -5518,18 +5534,18 @@
                 </Failure>
               </CheckItemAction>
             </Option>
-            <Option text="Bet 100mk  on the Green mudraptor..." endconversation="true">
+            <Option text="EventText.itarace1bet.4" endconversation="true">
               <SetDataAction operation="Set" value="2" identifier="r1bet" _npos="747.1982,218.36432" />
               <GoTo name="labop" _npos="1122.3107,222.90619" />
             </Option>
-            <Option text="Bet 100mk  on the Blue mudraptor..." endconversation="true">
+            <Option text="EventText.itarace1bet.5" endconversation="true">
               <SetDataAction operation="Set" value="3" identifier="r1bet" _npos="747.68463,381.83112" />
               <GoTo name="labop" _npos="1112.4536,381.48737" />
             </Option>
-            <Option text="&quot;Not this time.&quot;" endconversation="true">
+            <Option text="EventText.itarace1bet.6" endconversation="true">
               <GoTo name="lab1" _npos="-64.478,575.7368" />
             </Option>
-            <Option text="&quot;Start the race!&quot;" endconversation="true">
+            <Option text="EventText.itarace1bet.7" endconversation="true">
               <TriggerEventAction identifier="ita_race1.0" _npos="1773.1602,195.59229" />
               <WaitAction time="3" _npos="1783.9044,305.96875" />
               <TriggerEventAction identifier="ita_race1start" _npos="1785.291,408.09158" />
@@ -5555,8 +5571,8 @@
                           <Remove _npos="-56.625366,-1715.7129" />
                         </StatusEffect>
                       </StatusEffectAction>
-                      <ConversationAction text="&quot;Red has won the race! Come redeem your tokens!&quot;" speakertag="raceman" invokertag="beterw1" _npos="561.3102,-1508.3163">
-                        <Option text="Redeem your token..." endconversation="true">
+                      <ConversationAction text="EventText.itarace1bet.8" speakertag="raceman" invokertag="beterw1" _npos="561.3102,-1508.3163">
+                        <Option text="EventText.itarace1bet.9" endconversation="true">
                           <CheckItemAction targettag="beterw1" itemidentifiers="ita_race_ticket1" _npos="1113.7853,-1365.5023">
                             <Success>
                               <RemoveItemAction targettag="beterw1" itemidentifier="ita_race_ticket1" amount="1" _npos="1651.9489,-1482.5913" />
@@ -5588,8 +5604,8 @@
                               <Remove _npos="11528,346" />
                             </StatusEffect>
                           </StatusEffectAction>
-                          <ConversationAction text="&quot;Green has won the race! Come redeem your tokens!&quot;" speakertag="raceman" invokertag="beterw2" _npos="480.55533,-1012.8739">
-                            <Option text="Redeem your token..." endconversation="true">
+                          <ConversationAction text="EventText.itarace1bet.10" speakertag="raceman" invokertag="beterw2" _npos="480.55533,-1012.8739">
+                            <Option text="EventText.itarace1bet.9" endconversation="true">
                               <CheckItemAction targettag="beterw2" itemidentifiers="ita_race_ticket2" _npos="1004.9049,-980.6812">
                                 <Success>
                                   <RemoveItemAction targettag="beterw2" itemidentifier="ita_race_ticket2" amount="1" _npos="1004.87036,-820.3992" />
@@ -5621,8 +5637,8 @@
                                   <Remove _npos="12128,262" />
                                 </StatusEffect>
                               </StatusEffectAction>
-                              <ConversationAction text="&quot;Blue has won the race! Come redeem your tokens!&quot;" speakertag="raceman" invokertag="beterw3" _npos="486.07443,-596.3571">
-                                <Option text="Redeem your token..." endconversation="true">
+                              <ConversationAction text="EventText.itarace1bet.11" speakertag="raceman" invokertag="beterw3" _npos="486.07443,-596.3571">
+                                <Option text="EventText.itarace1bet.9" endconversation="true">
                                   <CheckItemAction targettag="beterw3" itemidentifiers="ita_race_ticket3" _npos="999.6004,-562.7059">
                                     <Success>
                                       <RemoveItemAction targettag="beterw3" itemidentifier="ita_race_ticket3" amount="1" _npos="998.42126,-399.32703" />
@@ -5681,7 +5697,7 @@
 					<SpawnAction itemidentifier="ita_effects_smoker1" spawnpointtag="smoker2" _npos="481.80457,-1428.1719"/>
 					<SpawnAction itemidentifier="ita_effects_smoker1" spawnpointtag="smoker3" _npos="481.80457,-1428.1719"/>
 					<SpawnAction itemidentifier="ita_effects_smoker1" spawnpointtag="smoker4" _npos="481.80457,-1428.1719"/>
-					<ConversationAction text="Red has won the race!" eventsprite="mediator" _npos="1432.308,-262.8426" dialogtype="Small"/>
+					<ConversationAction text="EventText.itarace1.0.1" eventsprite="mediator" _npos="1432.308,-262.8426" dialogtype="Small"/>
 					<SetDataAction operation="Set" value="1" identifier="race1done"/>
 				</Success>
 				<Failure>
@@ -5696,7 +5712,7 @@
 							<SpawnAction itemidentifier="ita_effects_smoker2" spawnpointtag="smoker2" _npos="480.55533,-1012.8739"/>
 							<SpawnAction itemidentifier="ita_effects_smoker2" spawnpointtag="smoker3" _npos="480.55533,-1012.8739"/>
 							<SpawnAction itemidentifier="ita_effects_smoker2" spawnpointtag="smoker4" _npos="480.55533,-1012.8739"/>
-							<ConversationAction text="Green has won the race!" eventsprite="mediator" _npos="1841.3053,-267.22757" dialogtype="Small"/>
+							<ConversationAction text="EventText.itarace1.0.2" eventsprite="mediator" _npos="1841.3053,-267.22757" dialogtype="Small"/>
 							<SetDataAction operation="Set" value="1" identifier="race1done"/>
 						</Success>
 						<Failure>
@@ -5711,7 +5727,7 @@
 											<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_sounds_cheering1.ogg" range="1000" _npos="4961.747,-91.940796" />
 										</StatusEffect>
 									</StatusEffectAction>
-									<ConversationAction text="Blue has won the race!" eventsprite="mediator" _npos="2264.5444,-271.3252" dialogtype="Small"/>
+									<ConversationAction text="EventText.itarace1.0.3" eventsprite="mediator" _npos="2264.5444,-271.3252" dialogtype="Small"/>
 									<SetDataAction operation="Set" value="1" identifier="race1done"/>
 								</Success>
 								<Failure>
@@ -5803,8 +5819,8 @@
       <SetDataAction operation="Set" value="0" identifier="tr1op0" _npos="-2841.831,402.89383" />
       <SetDataAction operation="Set" value="0" identifier="deposittr1" _npos="-2470.0317,-242.10283" />
       <SetDataAction operation="Set" value="0" identifier="nocashtr1" _npos="-2101.0066,-243.38757" />
-      <ConversationAction text="&quot;I used to work on R-29, keeping that hunk of metal afloat. I had to scrape off crawlers off the bow with a harpoon gun half of the time. The other half, I had to weld the cargo room walls 'till I went almost blind. Which brings me to this shit-hole of a town. I'll share my expertise with you for cash.&quot;" speakertag="trainer" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-1243.6636,-327.7747">
-        <Option text="[360mk] &quot;Tell me in detail how you kept a submarine that large afloat.&quot; [+3 MECHANICAL]" endconversation="true">
+      <ConversationAction text="EventText.trainer.1" speakertag="trainer" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-1243.6636,-327.7747">
+        <Option text="EventText.trainer.2" endconversation="true">
           <SetDataAction operation="Set" value="1" identifier="tr1op" _npos="-1257.5247,-574.51953" />
           <SetDataAction operation="Set" value="-360" identifier="deposittr1" _npos="-887.63385,-573.58154" />
           <Label name="depositcash" _npos="-521.5156,-573.8812" />
@@ -5848,7 +5864,7 @@
                                 <Failure>
                                   <CheckDataAction identifier="nocashtr1" condition="eq 1" _npos="4486.139,-173.4674">
                                     <Success>
-                                      <ConversationAction text="&quot;My experience was paid for with years of suffering. I won't teach you unless you pay me properly.&quot;" targettag="customer" eventsprite="ita_engi1" dialogtype="Small" _npos="4488.8433,-596.75604" />
+                                      <ConversationAction text="EventText.trainer.6" targettag="customer" eventsprite="ita_engi1" dialogtype="Small" _npos="4488.8433,-596.75604" />
                                       <GoTo name="start" _npos="4487.7534,-697.37915" />
                                     </Success>
                                     <Failure>
@@ -5916,7 +5932,7 @@
                                 <Failure>
                                   <CheckDataAction identifier="deposittr1" condition="gt 0" _npos="4493.946,355.50256">
                                     <Success>
-                                      <ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+                                      <ConversationAction text="EventText.somthingborke" _npos="4911.356,387.87268" />
                                       <GoTo name="start" _npos="5281.707,387.06558" />
                                     </Success>
                                     <Failure>
@@ -5942,7 +5958,7 @@
             </Failure>
           </CheckDataAction>
         </Option>
-        <Option text="&quot;I might ask you about your adventures later.&quot;" endconversation="true">
+        <Option text="EventText.trainer.3" endconversation="true">
           <GoTo name="Start" _npos="-1731.3303,177.51263" />
         </Option>
       </ConversationAction>
@@ -5962,8 +5978,8 @@
       <SetDataAction operation="Set" value="0" identifier="tr2op0" _npos="-2841.831,402.89383" />
       <SetDataAction operation="Set" value="0" identifier="deposittr2" _npos="-2470.0317,-242.10283" />
       <SetDataAction operation="Set" value="0" identifier="nocashtr2" _npos="-2101.0066,-243.38757" />
-      <ConversationAction text="&quot;I've repaired more pumps than any other grease-finger here. I'll show you the best ways to fix them, if you pay me for my time.&quot;" speakertag="trainer" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-1729.2852,-245.986">
-        <Option text="[360mk] &quot;Sure. I wanna know how to fix those faster.&quot; [+3 MECHANICAL]" endconversation="true">
+      <ConversationAction text="EventText.trainer.4" speakertag="trainer" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-1729.2852,-245.986">
+        <Option text="EventText.trainer.5" endconversation="true">
           <SetDataAction operation="Set" value="1" identifier="tr2op" _npos="-1257.5247,-574.51953" />
           <SetDataAction operation="Set" value="-360" identifier="deposittr2" _npos="-887.63385,-573.58154" />
           <Label name="depositcash" _npos="-521.5156,-573.8812" />
@@ -6007,7 +6023,7 @@
                                 <Failure>
                                   <CheckDataAction identifier="nocashtr2" condition="eq 1" _npos="4486.139,-173.4674">
                                     <Success>
-                                      <ConversationAction text="&quot;My experience was paid for with years of suffering. I won't teach you unless you pay me properly.&quot;" targettag="customer" eventsprite="ita_engi1" dialogtype="Small" _npos="4488.8433,-596.75604" />
+                                      <ConversationAction text="EventText.trainer.6" targettag="customer" eventsprite="ita_engi1" dialogtype="Small" _npos="4488.8433,-596.75604" />
                                       <GoTo name="start" _npos="4487.7534,-697.37915" />
                                     </Success>
                                     <Failure>
@@ -6075,7 +6091,7 @@
                                 <Failure>
                                   <CheckDataAction identifier="deposittr2" condition="gt 0" _npos="4493.946,355.50256">
                                     <Success>
-                                      <ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+                                      <ConversationAction text="EventText.somthingborke" _npos="4911.356,387.87268" />
                                       <GoTo name="start" _npos="5281.707,387.06558" />
                                     </Success>
                                     <Failure>
@@ -6101,7 +6117,7 @@
             </Failure>
           </CheckDataAction>
         </Option>
-        <Option text="&quot;I might ask you about pumps later.&quot;" endconversation="true">
+        <Option text="EventText.trainer.7" endconversation="true">
           <GoTo name="Start" _npos="-1731.3303,177.51263" />
         </Option>
       </ConversationAction>
@@ -6123,8 +6139,8 @@
 				<Success>
 					<SetDataAction operation="Set" value="0" identifier="deposittr3" _npos="-957.80896,80.390884" />
 					<SetDataAction operation="Set" value="0" identifier="nocashtr3" _npos="-952.3272,267.13666" />
-					<ConversationAction text="&quot;Inhaling burnt plastic smoke from repairing junctions over the years has left only one of my lungs partly functional, which might make things complicated if I worked in a submarine, so instead I have to rot here with the outpost dwellers. I can pass on to you what I've learned for a couple marks...&quot;" speakertag="trainer" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
-						<Option text="[360mk] &quot;Sounds useful. I wanna know how to deal with the junctions more efficiently.&quot; [+3 ELECTRICAL]" endconversation="true">
+					<ConversationAction text="EventText.trainer.8" speakertag="trainer" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="EventText.trainer.9" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="tr3op1" _npos="437.0307,4.243805" />
 							<SetDataAction operation="Set" value="-360" identifier="deposittr3" _npos="821.0993,4.865753" />
 							<Label name="depositcash" _npos="1184.9144,4.7407684" />
@@ -6168,7 +6184,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="nocashtr3" condition="eq 1" _npos="4509.6855,-157.76965">
 																				<Success>
-																					<ConversationAction text="&quot;My experience was paid for with years of suffering. I won't teach you unless you pay me properly.&quot;" targettag="customer" eventsprite="ita_engi1" dialogtype="Small" _npos="4502.527,-630.96295" />
+																					<ConversationAction text="EventText.trainer.6" targettag="customer" eventsprite="ita_engi1" dialogtype="Small" _npos="4502.527,-630.96295" />
 																					<SetDataAction operation="Set" value="0" identifier="tr3op1" _npos="4501.6943,-793.06036" />
 																					<ClearTagAction tag="customer" _npos="4500.0176,-887.4991" />
 
@@ -6241,7 +6257,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="deposittr3" condition="gt 0" _npos="4493.946,355.50256">
 																				<Success>
-																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<ConversationAction text="EventText.somthingborke" _npos="4911.356,387.87268" />
 																					<GoTo name="start" _npos="5281.707,387.06558" />
 																				</Success>
 																				<Failure>
@@ -6275,13 +6291,13 @@
 								</Failure>
 							</CheckDataAction>
 						</Option>
-						<Option text="&quot;Maybe one of us will ask you about your expertise later.&quot;" endconversation="true" >
+						<Option text="EventText.trainer.10" endconversation="true" >
 						 <GoTo name="Start"/>
 						</Option>
 					</ConversationAction>
 				</Success>
 				<Failure>
-					<ConversationAction text="&quot;I don't want to be seen talking to scoundrels like you.&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="trainer" dialogtype="Small" _npos="-1508.6749,281.90588" />
+					<ConversationAction text="EventText.trainer.11" speakertag="trainer" dialogtype="Small" _npos="-1508.6749,281.90588" />
 				</Failure>
 			</CheckReputationAction>
 		</Success>
@@ -6303,8 +6319,8 @@
 				<Success>
 					<SetDataAction operation="Set" value="0" identifier="deposittr4" _npos="-957.80896,80.390884" />
 					<SetDataAction operation="Set" value="0" identifier="nocashtr4" _npos="-952.3272,267.13666" />
-					<ConversationAction text="&quot;I've been kicked out of my own submarine! They said I sabotaged them but all I've done were improvements with a bit of rewiring, until some idiot opened the door at a wrong moment and messed up my entire signal setup, resulting in a bit of flooding through a forcibly opened airlock... Anyways, I can show you some tips and tricks, if you've got the cash.&quot;" speakertag="trainer" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
-						<Option text="[360mk] &quot;As long as it simple and safe, sure.&quot; [+3 ELECTRICAL]" endconversation="true">
+					<ConversationAction text="EventText.trainer.12" speakertag="trainer" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="EventText.trainer.13" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="tr4op" _npos="437.0307,4.243805" />
 							<SetDataAction operation="Set" value="-360" identifier="deposittr4" _npos="821.0993,4.865753" />
 							<Label name="depositcash" _npos="1184.9144,4.7407684" />
@@ -6348,7 +6364,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="nocashtr4" condition="eq 1" _npos="4509.6855,-157.76965">
 																				<Success>
-																					<ConversationAction text="&quot;My experience was paid for with years of suffering. I won't teach you unless you pay me properly.&quot;" targettag="customer" eventsprite="ita_engi1" dialogtype="Small" _npos="4502.527,-630.96295" />
+																					<ConversationAction text="EventText.trainer.6" targettag="customer" eventsprite="ita_engi1" dialogtype="Small" _npos="4502.527,-630.96295" />
 																					<SetDataAction operation="Set" value="0" identifier="tr4op" _npos="4501.6943,-793.06036" />
 																					<ClearTagAction tag="customer" _npos="4500.0176,-887.4991" />
 
@@ -6421,7 +6437,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="deposittr4" condition="gt 0" _npos="4493.946,355.50256">
 																				<Success>
-																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<ConversationAction text="EventText.somthingborke" _npos="4911.356,387.87268" />
 																					<GoTo name="start" _npos="5281.707,387.06558" />
 																				</Success>
 																				<Failure>
@@ -6455,13 +6471,13 @@
 								</Failure>
 							</CheckDataAction>
 						</Option>
-						<Option text="&quot;Maybe one of us will talk to you later about training, as long as you don't come anywhere close to our docking port.quot;" endconversation="true" >
+						<Option text="EventText.trainer.14" endconversation="true" >
 						 <GoTo name="Start"/>
 						</Option>
 					</ConversationAction>
 				</Success>
 				<Failure>
-					<ConversationAction text="&quot;I don't want to be seen talking to scoundrels like you.&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="trainer" dialogtype="Small" _npos="-1508.6749,281.90588" />
+					<ConversationAction text="EventText.trainer.11" speakertag="trainer" dialogtype="Small" _npos="-1508.6749,281.90588" />
 				</Failure>
 			</CheckReputationAction>
 		</Success>
@@ -6481,8 +6497,8 @@
 				<Success>
 					<SetDataAction operation="Set" value="0" identifier="deposittr5" _npos="-957.80896,80.390884" />
 					<SetDataAction operation="Set" value="0" identifier="nocashtr5" _npos="-952.3272,267.13666" />
-					<ConversationAction text="&quot;My old crew were complete neanderthals! They arrested me for trying to poison the engineering crew, but I was carrying the poisons to the deconstructor! The authorities here had me immediately released and I'm not climbing into a submarine again. I'm not for hire, but for a couple marks, I can teach you medical skill.&quot;" speakertag="trainer" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
-						<Option text="[360mk] &quot;Sure, just keep your hands where I can see them, okay?&quot; [+3 MEDICAL]" endconversation="true">
+					<ConversationAction text="EventText.trainer.15" speakertag="trainer" waitforinteraction="true" invokertag="customer" dialogtype="Regular" _npos="-329.5384,66.71988">
+						<Option text="EventText.trainer.16" endconversation="true">
 							<SetDataAction operation="Set" value="1" identifier="tr5op" _npos="437.0307,4.243805" />
 							<SetDataAction operation="Set" value="-360" identifier="deposittr5" _npos="821.0993,4.865753" />
 							<Label name="depositcash" _npos="1184.9144,4.7407684" />
@@ -6526,7 +6542,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="nocashtr5" condition="eq 1" _npos="4509.6855,-157.76965">
 																				<Success>
-																					<ConversationAction text="&quot;My experience was paid for with years of suffering. I won't teach you unless you pay me properly.&quot;" targettag="customer" eventsprite="ita_engi1" dialogtype="Small" _npos="4502.527,-630.96295" />
+																					<ConversationAction text="EventText.trainer.6" targettag="customer" eventsprite="ita_engi1" dialogtype="Small" _npos="4502.527,-630.96295" />
 																					<SetDataAction operation="Set" value="0" identifier="tr5op" _npos="4501.6943,-793.06036" />
 																					<ClearTagAction tag="customer" _npos="4500.0176,-887.4991" />
 
@@ -6599,7 +6615,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="deposittr5" condition="gt 0" _npos="4493.946,355.50256">
 																				<Success>
-																					<ConversationAction text="somthing borke" _npos="4911.356,387.87268" />
+																					<ConversationAction text="EventText.somthingborke" _npos="4911.356,387.87268" />
 																					<GoTo name="start" _npos="5281.707,387.06558" />
 																				</Success>
 																				<Failure>
@@ -6633,13 +6649,13 @@
 								</Failure>
 							</CheckDataAction>
 						</Option>
-						<Option text="&quot;Maybe one of us will talk to you later about training, as long as you don't come anywhere close to our docking port.quot;" endconversation="true" >
+						<Option text="EventText.trainer.14" endconversation="true" >
 						 <GoTo name="Start"/>
 						</Option>
 					</ConversationAction>
 				</Success>
 				<Failure>
-					<ConversationAction text="&quot;I don't want to be seen talking to scoundrels like you.&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]" speakertag="trainer" dialogtype="Small" _npos="-1508.6749,281.90588" />
+					<ConversationAction text="EventText.trainer.11" speakertag="trainer" dialogtype="Small" _npos="-1508.6749,281.90588" />
 				</Failure>
 			</CheckReputationAction>
 		</Success>

@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Castilian Spanish" nowhitespace="false" translatedname="Castellano">
+
+<!-- When adding new text, do it so at the bottom under the 'New additions' & 'Changed values' respectively. If it's a new tag entirely, put it under the new additions one; If it's an update to an existing value, put it under the changed values one. -->
+<!-- DO NOT EDIT EXISTING TAGS FOR ALREADY TRANSLATED LINES -> if you need a new tag for something, add it under the 'New values' header and comment if there's some other tag that should be replaced -->
+
+  <!--Afflictions-->
+  <afflictionname.exposure>Exposición a residuos nucleares</afflictionname.exposure>
+  <afflictiondescription.exposure>Causadas por la manipulación de barras de combustible calientes. Quemaduras y ampollas graves localizadas relacionadas con la radiación.</afflictiondescription.exposure>
+  <afflictioncauseofdeath.exposure>Murió por exposición a residuos nucleares calientes</afflictioncauseofdeath.exposure>
+  <afflictioncauseofdeathself.exposure>Has sido víctima de los residuos radiactivos calientes.</afflictioncauseofdeathself.exposure>
+
+  <afflictionname.ancientburn>Quemaduras azuladas</afflictionname.ancientburn>
+  <afflictiondescription.ancientburn>Quemaduras, ampollas azul oscuro y piel putrefacta, causadas por la antigua tecnología alienígena de Europa.</afflictiondescription.ancientburn>
+  <afflictioncauseofdeath.ancientburn>Murió quemado</afflictioncauseofdeath.ancientburn>
+  <afflictioncauseofdeathself.ancientburn>Te has quemado hasta morir.</afflictioncauseofdeathself.ancientburn>
+
+  <afflictionname.heal1>Tratamiento</afflictionname.heal1>
+  <afflictiondescription.heal1>Tratamiento de gran calidad en el puesto de avanzada</afflictiondescription.heal1>
+
+  <afflictionname.heal2>Bien alimentado</afflictionname.heal2>
+  <afflictiondescription.heal2>La buena comida te calienta hasta las entrañas.[DAMAGE REGEN UP]</afflictiondescription.heal2>
+
+  <afflictionname.heal3>Bien descansado</afflictionname.heal3>
+  <afflictiondescription.heal3>Una cama caliente en un puesto de avanzada bien ventilado hace maravillas en tu cuerpo.[PHYS REGEN UP]</afflictiondescription.heal3>
+
+  <afflictionname.heal4>Bien relajado</afflictionname.heal4>
+  <afflictiondescription.heal4>Beber en compañía de gente relativamente cuerda en el puesto de avanzada te hace olvidar un poco los horrores del mar.[PSYCH RESISTANCE UP][PSYCH REGEN UP]</afflictiondescription.heal4>
+  <!--Characters-->
+  <character.Molochboss>Moloch Antiguo</character.Molochboss>
+  <character.OutpostOrangeboy>Chico Naranja doméstico</character.OutpostOrangeboy>
+  <!--Mission texts-->
+  <missionname.cargopassanger1>Transporte de pasajeros</missionname.cargopassanger1>
+  <missiondescription.cargopassanger1>Llévame a [location2] sano y salvo y te pagaré [reward] marcos.</missiondescription.cargopassanger1>
+  <missionsuccess.cargopassanger1>Gracias por el paseo.</missionsuccess.cargopassanger1>
+
+  <missionname.cargoprisoner1>Transporte de prisioneros</missionname.cargoprisoner1>
+  <missiondescription.cargoprisoner1>5 prisioneros necesitan ser transportados a [location2] con vida.</missiondescription.cargoprisoner1>
+  <missionsuccess.cargoprisoner1>Los prisioneros sobrevivieron al viaje.</missionsuccess.cargoprisoner1>
+
+  <missionname.cargoprisoner2>Transporte de prisioneros</missionname.cargoprisoner2>
+  <missiondescription.cargoprisoner2>Una banda de payasos está molestando a los residentes de [location1]. Se promete una recompensa de [reward] marcos a la tripulación que los transporte con vida a [location2] para que allí les aguanten sus payasadas.</missiondescription.cargoprisoner2>
+  <missionsuccess.cargoprisoner2>Han llegado los payasos...</missionsuccess.cargoprisoner2>
+
+  <missionname.cargoprisoner3>Transporte de prisioneros</missionname.cargoprisoner3>
+  <missiondescription.cargoprisoner3>Una banda de sectarios enloquecidos han sido detenidos en [location1] por su participación en actividades sospechosas. Para recibir una recompensa de [reward] marcos, transporta a los tres ilesos a un psiquiatra en [location2].</missiondescription.cargoprisoner3>
+  <missionsuccess.cargoprisoner3>El psiquiatra recibió a los sectarios como si fueran sus hermanos y te pagó la recompensa prometida.</missionsuccess.cargoprisoner3>
+
+  <missionname.cargotime1>Transporte de emergencia</missionname.cargotime1>
+  <missiondescription.cargotime1>Hay que entregar una caja de material que se deteriora rápidamente a un investigador en un puesto de avanzada cercano. Se predice que después de sacarlo de la cámara de microondas, tiene 10 minutos de vida. ¡Buena suerte!</missiondescription.cargotime1>
+  <missionsuccess.cargotime1>El material inestable fue entregado antes de que se descompusiera.</missionsuccess.cargotime1>
+
+  <missionname.cargowater1>Transporte de mercancías vulnerables al agua</missionname.cargowater1>
+  <missiondescription.cargowater1>Hay que transportar una caja de pasteles crujientes a [location2]. ¡No la deteriores mojándola!</missiondescription.cargowater1>
+  <missionsuccess.cargowater1>Los productos se entregaron secos y crujientes.</missionsuccess.cargowater1>
+
+  <missionname.cargoeggs>Transporte de huevos</missionname.cargoeggs>
+  <missiondescription.cargoeggs>Hay que transportar una caja con 2 huevos de fangoraptor al congelador de [location2]. Una vez sacados de la nevera de aquí, los huevos eclosionarán en unos 11 minutos. ¡Entrégalos a tiempo!</missiondescription.cargoeggs>
+  <missionsuccess.cargoeggs>Los huevos se entregaron en el congelador de  investigación de [location2] antes de que eclosionaran.</missionsuccess.cargoeggs>
+
+  <missionname.cargofragile1>Transporte delicado</missionname.cargofragile1>
+  <missiondescription.cargofragile1>Se necesitan mercancías frágiles en [location2]. Asegúrate de que la carga no se golpea con fuerza contra el suelo. Si tienes que llevarlo, agáchate bien antes de soltar  la caja.</missiondescription.cargofragile1>
+  <missionsuccess.cargofragile1>Las mercancías frágiles se entregaron intactas.</missionsuccess.cargofragile1>
+
+  <missionname.cargoeggs2>Transporte peligroso de huevos</missionname.cargoeggs2>
+  <missiondescription.cargoeggs2>Hay que entregar dos cajas refrigeradas de huevos de fangoraptor a un científico en [location2]. La caja necesita baterías para mantener los huevos congelados, ¡así que te conviene reemplazarlas a menudo!</missiondescription.cargoeggs2>
+  <missionsuccess.cargoeggs2>Los huevos de fangoraptor se entregaron al investigador antes de la eclosión.</missionsuccess.cargoeggs2>
+
+  <missionname.cargoeggs3>Transporte de muestras vivas</missionname.cargoeggs3>
+  <missiondescription.cargoeggs3>La seguridad de [location1] ha capturado y encadenado a un fangoraptor, que ahora necesita ser transportado a [location2] para ser entrenado para las carreras de fangoraptor. Requiere ser sedado con opiáceos para mantenelo tranquilo.</missiondescription.cargoeggs3>
+  <missionsuccess.cargoeggs3>El pobre fangoraptor sobrevivió al viaje con los humanos.</missionsuccess.cargoeggs3>
+
+  <missionname.killwatcher>Matar a un centinela</missionname.killwatcher>
+  <missiondescription.killwatcher>Elimina al centinela y a sus esbirros.</missiondescription.killwatcher>
+  <missionsonarlabel.killwatcher>Objetivo</missionsonarlabel.killwatcher>
+  <missionsuccess.killwatcher>El centinela y sus esbirros  han sido eliminados.</missionsuccess.killwatcher>
+  <missionheader0.killwatcher>Objetivo eliminado</missionheader0.killwatcher>
+  <missionmessage0.killwatcher>El centinela y sus esbirros  han sido eliminados. Navega con el submarino fuera de la caverna para reclamar la recompensa.</missionmessage0.killwatcher>
+
+  <missionname.killmolochboss>Matar al Moloch antiguo</missionname.killmolochboss>
+  <missiondescription.killmolochboss>Este moloch antiguo es lo suficientemente peligroso como para causar problemas logísticos masivos e incluso derribó un par de submarinos de ataque. Se promete una recompensa de [reward] a cualquier tripulación profesional que pueda derribarlo.</missiondescription.killmolochboss>
+  <missionsonarlabel.killmolochboss>Moloch antiguo</missionsonarlabel.killmolochboss>
+  <missionsuccess.killmolochboss>El Moloch antiguo ha sido eliminado.</missionsuccess.killmolochboss>
+  <missionheader0.killmolochboss>Objetivo eliminado</missionheader0.killmolochboss>
+  <missionmessage0.killmolochboss>Tu tripulación es legendaria. El moloch antiguo ha muerto. Navega con el submarino fuera de la caverna para reclamar la recompensa.</missionmessage0.killmolochboss>
+
+  <missionname.ita_swarmsmall_crawler>Elimina una pequeña horda</missionname.ita_swarmsmall_crawler>
+  <missiondescription.ita_swarmsmall_crawler>Una pequeña horda de reptadores ha estado aterrorizando a las naves que viajan entre [location1] y [location2]. Han prometido una recompensa de [reward] marcos a la tripulación que consiga deshacerse de ellos.</missiondescription.ita_swarmsmall_crawler>
+  <missionsonarlabel.ita_swarmsmall_crawler>Horda</missionsonarlabel.ita_swarmsmall_crawler>
+  <missionsuccess.ita_swarmsmall_crawler>La horda ha sido eliminada.</missionsuccess.ita_swarmsmall_crawler>
+  <missionheader0.ita_swarmsmall_crawler>Objetivos eliminados</missionheader0.ita_swarmsmall_crawler>
+  <missionmessage0.ita_swarmsmall_crawler>Se ha eliminado la horda de reptadores. Pilota el submarino hasta el exterior de la caverna para cobrar la recompensa</missionmessage0.ita_swarmsmall_crawler>
+
+  <missionname.ita_swarmsmall_thresher>Elimina una pequeña horda</missionname.ita_swarmsmall_thresher>
+  <missiondescription.ita_swarmsmall_thresher>Una pequeña horda de azotadores ha estado aterrorizando a las naves que viajan entre [location1] y [location2]. Han prometido una recompensa de [reward] marcos a la tripulación que consiga deshacerse de ellos.</missiondescription.ita_swarmsmall_thresher>
+  <missionsonarlabel.ita_swarmsmall_thresher>Horda</missionsonarlabel.ita_swarmsmall_thresher>
+  <missionsuccess.ita_swarmsmall_thresher>La horda ha sido eliminada.</missionsuccess.ita_swarmsmall_thresher>
+  <missionheader0.ita_swarmsmall_thresher>Objetivos eliminados</missionheader0.ita_swarmsmall_thresher>
+  <missionmessage0.ita_swarmsmall_thresher>Se ha eliminado la horda de azotadores. Pilota el submarino hasta el exterior de la caverna para cobrar la recompensa</missionmessage0.ita_swarmsmall_thresher>
+
+  <missionname.ita_swarmsmall_mudraptor1>Elimina una pequeña horda</missionname.ita_swarmsmall_mudraptor1>
+  <missiondescription.ita_swarmsmall_mudraptor1>Un pequeño banco de fangoraptores jóvenes está vagando entre [location1] y [location2]. [reward] marcos son tuyos si matas no solo a los machos, sino también a las hembras y a las crías.</missiondescription.ita_swarmsmall_mudraptor1>
+  <missionsonarlabel.ita_swarmsmall_mudraptor1>Banco</missionsonarlabel.ita_swarmsmall_mudraptor1>
+  <missionsuccess.ita_swarmsmall_mudraptor1>El banco ha sido eliminado.</missionsuccess.ita_swarmsmall_mudraptor1>
+  <missionheader0.ita_swarmsmall_mudraptor1>Objetivos eliminados</missionheader0.ita_swarmsmall_mudraptor1>
+  <missionmessage0.ita_swarmsmall_mudraptor1>Se ha eliminado el  banco de fangoraptores. Pilota el submarino hasta el exterior de la caverna para cobrar la recompensa</missionmessage0.ita_swarmsmall_mudraptor1>
+
+  <missionname.ita_swarmsmall_mudraptor2>Elimina una pequeña horda</missionname.ita_swarmsmall_mudraptor2>
+  <missiondescription.ita_swarmsmall_mudraptor2>Un pequeño banco de fangoraptores adultos deambula entre [location1] y [location2]. Elimínalos y [reward] marcos  serán tuyos.</missiondescription.ita_swarmsmall_mudraptor2>
+  <missionsonarlabel.ita_swarmsmall_mudraptor2>Banco</missionsonarlabel.ita_swarmsmall_mudraptor2>
+  <missionsuccess.ita_swarmsmall_mudraptor2>El banco ha sido eliminado.</missionsuccess.ita_swarmsmall_mudraptor2>
+  <missionheader0.ita_swarmsmall_mudraptor2>Objetivos eliminados</missionheader0.ita_swarmsmall_mudraptor2>
+  <missionmessage0.ita_swarmsmall_mudraptor2>Se ha eliminado el  pequeño banco de fangoraptores. Pilota el submarino hasta el exterior de la caverna para cobrar la recompensa</missionmessage0.ita_swarmsmall_mudraptor2>
+
+  <missionname.ita_swarmlarge_crawler>Acabar con una horda gigantesca</missionname.ita_swarmlarge_crawler>
+  <missiondescription.ita_swarmlarge_crawler>Una inmensa horda de reptadores ha estado aterrorizando a las naves que viajan entre [location1] y [location2]. Han prometido una recompensa de [reward] marcos a la tripulación que consiga deshacerse de ellos.</missiondescription.ita_swarmlarge_crawler>
+  <missionsonarlabel.ita_swarmlarge_crawler>Horda</missionsonarlabel.ita_swarmlarge_crawler>
+  <missionsuccess.ita_swarmlarge_crawler>La horda ha sido eliminada.</missionsuccess.ita_swarmlarge_crawler>
+  <missionheader0.ita_swarmlarge_crawler>Objetivos eliminados</missionheader0.ita_swarmlarge_crawler>
+  <missionmessage0.ita_swarmlarge_crawler>Se ha eliminado la inmensa horda de reptadores. Pilota el submarino hasta el exterior de la caverna para cobrar la recompensa</missionmessage0.ita_swarmlarge_crawler>
+
+  <missionname.ita_swarmlarge_thresher>Acabar con una horda gigantesca</missionname.ita_swarmlarge_thresher>
+  <missiondescription.ita_swarmlarge_thresher>Una inmensa horda de azotadores ha estado aterrorizando a las naves que viajan entre [location1] y [location2]. Han prometido una recompensa de [reward] marcos a la tripulación que consiga deshacerse de ellos.</missiondescription.ita_swarmlarge_thresher>
+  <missionsonarlabel.ita_swarmlarge_thresher>Horda</missionsonarlabel.ita_swarmlarge_thresher>
+  <missionsuccess.ita_swarmlarge_thresher>La horda ha sido eliminada.</missionsuccess.ita_swarmlarge_thresher>
+  <missionheader0.ita_swarmlarge_thresher>Objetivos eliminados</missionheader0.ita_swarmlarge_thresher>
+  <missionmessage0.ita_swarmlarge_thresher>Se ha eliminado la inmensa horda de azotadores. Pilota el submarino hasta el exterior de la caverna para cobrar la recompensa</missionmessage0.ita_swarmlarge_thresher>
+
+  <missionname.ita_swarmlarge_mudraptor1>Acabar con una horda gigantesca</missionname.ita_swarmlarge_mudraptor1>
+  <missiondescription.ita_swarmlarge_mudraptor1>Un inmenso banco de  fangoraptores jóvenes está vagando entre [location1] y [location2]. [reward] marcos son tuyos si matas no solo a los machos, sino también a las hembras y a las crías.</missiondescription.ita_swarmlarge_mudraptor1>
+  <missionsonarlabel.ita_swarmlarge_mudraptor1>Banco</missionsonarlabel.ita_swarmlarge_mudraptor1>
+  <missionsuccess.ita_swarmlarge_mudraptor1>El banco ha sido eliminado.</missionsuccess.ita_swarmlarge_mudraptor1>
+  <missionheader0.ita_swarmlarge_mudraptor1>Objetivos eliminados</missionheader0.ita_swarmlarge_mudraptor1>
+  <missionmessage0.ita_swarmlarge_mudraptor1>Se ha eliminado el inmenso banco de fangoraptores. Pilota el submarino hasta el exterior de la caverna para cobrar la recompensa</missionmessage0.ita_swarmlarge_mudraptor1>
+
+  <missionname.ita_swarmlarge_mudraptor2>Acabar con una horda gigantesca</missionname.ita_swarmlarge_mudraptor2>
+  <missiondescription.ita_swarmlarge_mudraptor2>Un inmenso banco de fangoraptores está merodeando entre [location1] y [location2], matando todo lo que encuentra a su paso, incluidos los submarinos militares. Se prometen más de 9000 marcos a cualquier tripulación loca se enfrente a ellos.</missiondescription.ita_swarmlarge_mudraptor2>
+  <missionsonarlabel.ita_swarmlarge_mudraptor2>Banco</missionsonarlabel.ita_swarmlarge_mudraptor2>
+  <missionsuccess.ita_swarmlarge_mudraptor2>El banco ha sido eliminado.</missionsuccess.ita_swarmlarge_mudraptor2>
+  <missionheader0.ita_swarmlarge_mudraptor2>Objetivos eliminados</missionheader0.ita_swarmlarge_mudraptor2>
+  <missionmessage0.ita_swarmlarge_mudraptor2>Se ha eliminado el inmenso banco de fangoraptores. Pilota el submarino hasta el exterior de la caverna para cobrar la recompensa</missionmessage0.ita_swarmlarge_mudraptor2>
+
+  <missionname.ita_drycave_clear1>Despejar una cueva</missionname.ita_drycave_clear1>
+  <missiondescription.ita_drycave_clear1>Esta cueva está plagada de criaturas que impiden el progreso futuro de la humanidad. Utiliza el sonar para encontrar y destruir a los criaturas y sus huevos.</missiondescription.ita_drycave_clear1>
+  <missionsonarlabel.ita_drycave_clear1>O</missionsonarlabel.ita_drycave_clear1>
+  <missionheader0.ita_drycave_clear1>Nido despejado</missionheader0.ita_drycave_clear1>
+  <missionsuccess.ita_drycave_clear1>Has despejado el nido, impidiendo el aumento posterior de la actividad de los monstruos en esta zona.</missionsuccess.ita_drycave_clear1>
+
+  <!--Event Texts-->
+  <eventtext.itamissioneventcargosensitive>"¡La mercancía vulnerable tiene que ser entregada de forma segura! No la rompas".</eventtext.itamissioneventcargosensitive>
+  <eventtext.itamissioneventcargomonster>"Hay que entregar criaturas vivas. Tengan cuidado, o serán comidos..."</eventtext.itamissioneventcargomonster>
+  <eventtext.itamissioneventeggtime>"Hay que entregar criaturas vivas. Ten cuidado, o serás comido..."</eventtext.itamissioneventeggtime>
+  <eventtext.itamissioneventeggfridge>"Hay que entregar criaturas vivas. Ten cuidado, o serás comido..."</eventtext.itamissioneventeggfridge>
+  <eventtext.itamissioneventlivemudraptor>"Hay que entregar criaturas vivas. Ten cuidado, o serás comido..."</eventtext.itamissioneventlivemudraptor>
+  <eventtext.itamissioneventcargobulk>"Hay que entregar una gran cantidad de carga. Más vale que tenga un submarino de carga amplio con muchos estantes para cajas".</eventtext.itamissioneventcargobulk>
+
+  <eventtext.itahusk1.p1>Altavoces del puesto de avanzada: "¡Alerta! ¡Parásitos vaina han traspasado el aislamiento! ¡Quienquiera que haya pulsado ese botón, pagará por esto!"&#xD;&#xA;[P. AVANZADA &#x9;REP-200]</eventtext.itahusk1.p1>
+  <eventtext.itahusk1.p2>Altavoces del puesto de avanzada: "¡Alerta! ¡Parásitos vaina han traspasado el aislamiento! ¡Quienquiera que haya pulsado ese botón, pagará por esto!" Esto hará feliz a la Iglesia de la vaina... &#xD;&#xA;[Vaina &#x9;&#x9;REP+50 ]&#xD;&#xA;[COALICIÓN  REP-70 ]&#xD;&#xA;[P. AVANZADA &#x9;REP-200]</eventtext.itahusk1.p2>
+
+  <eventtext.itacrawler1.p1>Altavoces del puesto de avanzada: "¡Alerta! ¡Reptadores han traspasado el aislamiento! ¡Quienquiera que haya pulsado ese botón, pagará por esto!"&#xD;&#xA;[P. AVANZADA  &#x9;  REP-200]&#xD;&#xA;[COALICIÓN    REP-30 ]</eventtext.itacrawler1.p1>
+  <eventtext.itacrawler1.p2>Altavoces del puesto de avanzada: "¡Alerta! ¡Reptadores han traspasado el aislamiento! ¡Quienquiera que haya pulsado ese botón, pagará por esto!"&#xD;&#xA;[P. AVANZADA &#x9;  REP-200]&#xD;&#xA;[SEPARATISTAS  REP+20 ]&#xD;&#xA;[COALICIÓN    REP-30 ]</eventtext.itacrawler1.p2>
+
+  <eventtext.v1mechanicsarespecial1>El jefe de la tripulación de mantenimiento mecánico que trabaja en un viejo y maltrecho motor del transbordador te mira por un momento con el ceño fruncido, como si te estuviera evaluando.</eventtext.v1mechanicsarespecial1>
+  <eventtext.v1mechanicsarespecial.cl1>La bahía de ingeniería está llena de trabajadores cansados y duros. Sería toda una hazaña hacer más feliz a gente como ésa".</eventtext.v1mechanicsarespecial.cl1>
+  <eventtext.v1mechanicsarespecial.cl2>[BOCINA MOTO] Improvisa un breve espectáculo con tu fiel bocina de moto roja."</eventtext.v1mechanicsarespecial.cl2>
+  <eventtext.v1mechanicsarespecial.cl3>"Pones una cara muy triste, señalando al motor y tirando de tu pelo de payaso hacia abajo. Pones la bocina de moto detrás del tubo de escape, das una palmada al motor y tocas el claxon débilmente. La seriedad de la sala disminuye al estallar en carcajadas. El mecánico deja escapar una pequeña sonrisa y te entrega un billete de 50mk."&#xD;&#xA;&#xD;&#xA;[PAYASOS REP +10]&#xD;&#xA;[REP LOCAL +10]</eventtext.v1mechanicsarespecial.cl3>
+  <eventtext.v1mechanicsarespecial.cl4>"[GUITARRA] Intenta conmover los corazones de los trabajadores con una bonita melodía."</eventtext.v1mechanicsarespecial.cl4>
+  <eventtext.v1mechanicsarespecial.cl5>Aquí hay demasiado ruido y trabajo que ahoga el sonido de tu guitarra y las pocas notas que llegan a los trabajadores no tienen ningún efecto. Un día triste...</eventtext.v1mechanicsarespecial.cl5>
+  <eventtext.v1mechanicsarespecial.cl6>Coge una llave inglesa de la estantería y date un golpe en la cabeza".</eventtext.v1mechanicsarespecial.cl6>
+  <eventtext.v1mechanicsarespecial.cl7>El mecánico frunce el ceño.&#xD;&#xA;"Sal de aquí, payaso, antes de que te demos una paliza".&#xD;&#xA;&#xD;&#xA;[PAYASOS REP -5]&#xD;&#xA;[REP LOCAL -5]</eventtext.v1mechanicsarespecial.cl7>
+  <eventtext.v1mechanicsarespecial.2>[TIMÓN 70]  Recuerdas el código del modelo de este motor de un viejo papel de factura.</eventtext.v1mechanicsarespecial.2>
+  <eventtext.v1mechanicsarespecial.3>"Reconozco este motor. Los compran para las lanzaderas Venture".</eventtext.v1mechanicsarespecial.3>
+  <eventtext.v1mechanicsarespecial.4>"Listillo."&#xD;&#xA;&#xD;&#xA;Está claro que no le importa mucho lo que ve y vuelve a su trabajo. Aparentemente no ha pasado el corte.</eventtext.v1mechanicsarespecial.4>
+  <eventtext.v1mechanicsarespecial.5>Mantén la boca cerrada.</eventtext.v1mechanicsarespecial.5>
+  <eventtext.v1mechanicsarespecial.6>"Eh tú, pareces medio competente. Échame una mano con este motor".</eventtext.v1mechanicsarespecial.6>
+  <eventtext.v1mechanicsarespecial.7>"Vete a la mierda, grasiento".</eventtext.v1mechanicsarespecial.7>
+  <eventtext.v1mechanicsarespecial.8>El mecánico sacude la cabeza con incredulidad y continúa trabajando en el motor.&#xD;&#xA;REP LOCAL -10]</eventtext.v1mechanicsarespecial.8>
+  <eventtext.v1mechanicsarespecial.9>Remángate y ayúdales con el motor".</eventtext.v1mechanicsarespecial.9>
+  <eventtext.v1mechanicsarespecial.10>Te remangas y te pones a trabajar con él en la reparación del motor. Tras unos minutos de trabajo, ambos conseguís ponerlo en marcha. "Gracias. Estoy seguro de que lo habría puesto en marcha yo solo, pero me has ahorrado tiempo. Avísame si quieres que te hagan algún trabajo en tu submarino y veré si puedo hacerte un pequeño descuento por las molestias."&#xD;&#xA;[MECÁNICA +5]&#xD;&#xA;[REP LOCAL +20]&#xD;&#xA;[DESCUENTO MEJORAS 15%]</eventtext.v1mechanicsarespecial.10>
+  <eventtext.v1mechanicsarespecial.11>Te remangas y te pones a trabajar con él en la reparación del motor. A pesar de tus esfuerzos, el motor se niega a arrancar. Cierra de golpe el panel de acceso. "Bueno, supongo que esto es para el desguace. Gracias por la ayuda, de todos modos".&#xD;&#xA;[MECÁNICA +1]&#xD;&#xA;[REP LOCAL +5]</eventtext.v1mechanicsarespecial.11>
+  <eventtext.v1mechanicsarespecial.12>Está claro que no le importa mucho lo que está viendo y vuelve a su trabajo. Aparentemente no ha pasado el corte.&#xD;&#xA;&#xD;&#xA;"Si tienes a alguien que sepa de motores en tu tripulación, envíalo aquí".</eventtext.v1mechanicsarespecial.12>
+  <eventtext.v1mechanicsarespecial.13>[MECÁNICA 90] Reconoces fácilmente el motor.</eventtext.v1mechanicsarespecial.13>
+  <eventtext.v1mechanicsarespecial.14>"Eso es un motor de una lanzadera Venture. Tienden a romperse todo el tiempo, haciendo que gente como tú y yo sigamos en el negocio".</eventtext.v1mechanicsarespecial.14>
+
+  <eventtext.v2givingdirections.1>"Veo que estás perdido. Le preguntaré a mi compañero de tripulación si puede darte una solución".</eventtext.v2givingdirections.1>
+  <eventtext.v2givingdirections.2>"Te lo agradecería, gracias".</eventtext.v2givingdirections.2>
+  <eventtext.v2givingdirections.3>[SUERTE % O ARMAS 60] Intenta agarrar el revólver cuando esté de espaldas...</eventtext.v2givingdirections.3>
+  <eventtext.v2givingdirections.4>[TIMÓN 50] "Oye, ¿me dejas ver ese mapa? ¿Cuál es la ruta más rápida para escapar de este agujero de mierda?"</eventtext.v2givingdirections.4>
+  <eventtext.v2givingdirections.5>Que se ocupe otro del problema del capitán.</eventtext.v2givingdirections.5>
+
+  <eventtext.v3soundinthevent1>[DESTORNILLADOR][%SUERTE O MECÁNICA 60] Desenrosca el panel de ventilación para ver mejor el interior.</eventtext.v3soundinthevent1>
+  <eventtext.v3soundinthevent2>Consigues quitar el panel de ventilación con bastante facilidad y descubres enseguida el origen del ruido: El aspa del ventilador está rozando una pequeña caja metálica. La retiras con cuidado, la abres y encuentras 1.000 marcos. Sin embargo, sigues escuchando el sonido más atrás en la ventilación, pero a quién le importa.&#xD;&#xA;&#xD;&#xA;[1000mk]&#xD;&#xA;[MECÁNICA +3]</eventtext.v3soundinthevent2>
+  <eventtext.v3soundinthevent3>Al quitar la tapa de la ventilación, rozas la hoja giratoria. Te rebana la mano antes de que puedas quitarla, seccionando una arteria y dejándote atascado.&#xD;&#xA;&#xD;&#xA;[ARMAS 30] ÉXITO&#xD;&#xA;&#xD;&#xA;Con una mueca de dolor, consigues sacar la caja de detrás de las rejillas de ventilación. ¡La abres y encuentras 1000mk dentro! Sigues oyendo el sonido al fondo del respiradero, pero a quién le importa ya.&#xD;&#xA;&#xD;&#xA;[1000mk]&#xD;&#xA;[ARMAS +3]&#xD;&#xA;</eventtext.v3soundinthevent3>
+  <eventtext.v3soundinthevent4>Al quitar la tapa de la ventilación, rozas la hoja giratoria. Te rebana la mano antes de que puedas quitarla, seccionando una arteria y dejándote atascado.</eventtext.v3soundinthevent4>
+  <eventtext.v3soundinthevent5>¡No puedes desatornillar el panel de ventilación con las manos desnudas!</eventtext.v3soundinthevent5>
+  <eventtext.v3soundinthevent6>[LINTERNA] Alumbra con la linterna a través de la rejilla de ventilación y busca algo inusual.</eventtext.v3soundinthevent6>
+  <eventtext.v3soundinthevent7>Ves una pequeña caja metálica que roza las aspas de la ventilación. Aunque tendrías que desatornillar la rejilla de ventilación para conseguirlo...</eventtext.v3soundinthevent7>
+  <eventtext.v3soundinthevent8>Buscas en tus bolsillos una linterna, pero no tienes ninguna. Quizás alguno de tus compañeros tenga una...</eventtext.v3soundinthevent8>
+  <eventtext.v3soundinthevent9>Ignóralo por ahora. Tal vez uno de tus compañeros de tripulación quiera ocuparse de esto...</eventtext.v3soundinthevent9>
+
+  <eventtext.v4goodsamaritan.1>Te encuentras con un trabajador inconsciente. No hay signos de violencia y no hay nadie más alrededor. Curar a un habitante del lugar puede costarte, pero será beneficioso para tus relaciones con la gente de aquí.</eventtext.v4goodsamaritan.1>
+  <eventtext.v4goodsamaritan.2>Tras inyectar hábilmente un poco de naloxona, descubres que el paciente tiene hipersensibilidad al parabeno. Al no tener más opciones, administras la naloxona en pequeñas dosis durante un periodo de tiempo más largo y observas cuidadosamente la reacción del paciente. Parece que mejora.&#xD;&#xA;&#xD;&#xA;[MEDICINA 60 o SUERTE% ÉXITO]&#xD;&#xA;[+5 MEDICINA]</eventtext.v4goodsamaritan.2>
+  <eventtext.v4goodsamaritan.3>"¡Eh! Gracias por devolverme la vida. Había tomado algunos opiáceos para calmar el dolor de haber perdido a mi chico naranja a manos de un grupo de fangoraptores de la ventilación, pero no me funcionó. No tengo mucho que darte, pero le diré a mi amigo de la tienda que me has ayudado. Te harán un descuento"&#xD;&#xA;&#xD;&#xA;[RECOMPENSA 50mk]&#xD;&#xA;[10% DESCUENTO TIENDA]&#xD;&#xA;[REP LOCAL +10]</eventtext.v4goodsamaritan.3>
+  <eventtext.v4goodsamaritan.4>"¡Eh! Gracias por devolverme la vida. Había tomado algunos opiáceos para calmar el dolor de haber perdido a mi chico naranja a manos de un grupo de fangoraptores de la ventilación, pero no me funcionó. Te daría algo de dinero, pero algún bastardo debió robarlo después de desmayarme. Le diré a mi amigo de la tienda que me has ayudado. Te harán un descuento."&#xD;&#xA;&#xD;&#xA;[10% DESCUENTO TIENDA]&#xD;&#xA;[REP LOCAL +10]</eventtext.v4goodsamaritan.4>
+  <eventtext.v4goodsamaritan.5>El trabajador ha tenido una mala reacción a tu medicina. La zona alrededor de la inyección se está hinchando rápidamente y su respiración es irregular. La gente empieza a curiosear - Es hora de irse.&#xD;&#xA;&#xD;&#xA;[MEDICINA 60 o SUERTE% FALLIDO]</eventtext.v4goodsamaritan.5>
+
+  <eventtext.v5impromptuengineering.1>Un terminal de investigación cercano llama tu atención. Se enciende y se apaga rápidamente durante un rato, y luego se apaga.</eventtext.v5impromptuengineering.1>
+  <eventtext.v5impromptuengineering.2>[DESTORNILLADOR] Investigar</eventtext.v5impromptuengineering.2>
+  <eventtext.v5impromptuengineering.3>Intentas pulsar un par de botones. No hay respuesta. Al abrir un panel lateral se ve una maraña de cables y un par de circuitos FPGA aparentemente en perfecto estado.</eventtext.v5impromptuengineering.3>
+  <eventtext.v5impromptuengineering.4>[ELECTRICIDAD 50] Rebuscas piezas útiles</eventtext.v5impromptuengineering.4>
+  <eventtext.v5impromptuengineering.5>[SUERTE% O ELECTRICIDAD 60] Intenta reparar el terminal</eventtext.v5impromptuengineering.5>
+  <eventtext.v5impromptuengineering.6>Vuelves a conectar los cables de alimentación de la pantalla y el terminal vuelve a la vida. Revisando el sistema se desvela alguna oportunidad. Parece que está conectado al servicio de abastecimiento del puesto de avanzada. ¿Qué quieres hacer?</eventtext.v5impromptuengineering.6>
+  <eventtext.v5impromptuengineering.7>Solicitud de munición experimental para cañón de Gauss</eventtext.v5impromptuengineering.7>
+  <eventtext.v5impromptuengineering.8>Después de toquetear un poco, pides con éxito dos cajas de munición de fisicorio para el cañón Gauss de tu nave, sin coste alguno.</eventtext.v5impromptuengineering.8>
+  <eventtext.v5impromptuengineering.9>Instala un juego de disparos en primera persona de la vieja escuela en el terminal&#xD;&#xA;[ELECTRICIDAD +5]</eventtext.v5impromptuengineering.9>
+  <eventtext.v5impromptuengineering.9.1>Un trabajo bien hecho.</eventtext.v5impromptuengineering.9.1>
+  <eventtext.v5impromptuengineering.10>Busca en los archivos las últimas investigaciones médicas&#xD;&#xA;[MEDICINA +5]</eventtext.v5impromptuengineering.10>
+  <eventtext.v5impromptuengineering.11>Encuentras la interfaz del fabricador médico que controla la producción del Compuesto N de forma muy eficiente. Parece que este puesto de avanzada suministra explosivos a la Coalición.</eventtext.v5impromptuengineering.11>
+  <eventtext.v5impromptuengineering.11.1>Estudiar la fabricacion [MEDICINA +5]"</eventtext.v5impromptuengineering.11.1>
+  <eventtext.v5impromptuengineering.12>[SEPARATISTAS REP 30] Cambia la receta a Compuesto N volátil... [SEPARATISTAS REP +10]</eventtext.v5impromptuengineering.12>
+  <eventtext.v5impromptuengineering.13>Encuentras una interesante interfaz del fabricador médico que controla la producción del Compuesto N de forma muy eficiente. Estudias los procedimientos y obtienes cierta comprensión de los mismos.</eventtext.v5impromptuengineering.13>
+  <eventtext.v5impromptuengineering.13.1>Un trabajo bien hecho.</eventtext.v5impromptuengineering.13.1>
+  <eventtext.v5impromptuengineering.14>Busca información sobre la anatomía de las criaturas alienígenas&#xD;&#xA;[ARMAS +5]</eventtext.v5impromptuengineering.14>
+  <eventtext.v5impromptuengineering.15>Hay una imagen de corte transversal detallada de un fangoraptor. Parece que agacharse y disparar en la parte inferior podría ser la mejor manera de lidiar con los que están blindados. Los disparos a bocajarro con la escopeta en la mandíbula podrían decapitarlos.</eventtext.v5impromptuengineering.15>
+  <eventtext.v5impromptuengineering.15.1>Un trabajo bien hecho.</eventtext.v5impromptuengineering.15.1>
+  <eventtext.v5impromptuengineering.16>Deja esto para el electricista</eventtext.v5impromptuengineering.16>
+
+  <eventtext.v8propaganda.1>[PULVERIZADOR+ETANOL] Muestre a los locales un buen ejemplo de ciudadano honrado deshaciéndose del vandalismo.</eventtext.v8propaganda.1>
+  <eventtext.v8propaganda.2>[BOTE PINTURA] Añade además algo de tu propio estilo.</eventtext.v8propaganda.2>
+  <eventtext.v8propaganda.3>Sigue caminando.</eventtext.v8propaganda.3>
+  <eventtext.v8propaganda.4>La gente te mira limpiando el estropicio. Empiezan a cuchichear entre ellos, especulando si eres un superior de la Coalición. Algunos de ellos te miran mal y se alejan juntos...&#xD;&#xA;[REP LOCAL +15]&#xD;&#xA;[COALICIÓN REP +10]&#xD;&#xA;[SEPARATISTAS REP -10]</eventtext.v8propaganda.4>
+  <eventtext.v8propaganda.5>Dibujas unos trazos groseros, lo cual es suficiente para que la gente empiece a discutir aún más y se produzca una pelea.&#xD;&#xA;[REP LOCAL -15]&#xD;&#xA;[COALICIÓN REP -30]&#xD;&#xA;[SEPARATISTAS REP +10]</eventtext.v8propaganda.5>
+  <eventtext.v8propaganda.6>Un poco de caos hará que la gente se piense dos veces el llamado "Orden y Seguridad" de la Coalición.</eventtext.v8propaganda.6>
+  <eventtext.v8propaganda.7>Maldita sea, ¿no tienes una lata de pintura? ¿Qué clase de rebelde eres? Ve a buscar un poco.</eventtext.v8propaganda.7>
+
+  <eventtext.itacollectorsell1>"Artefacto vendido."[+1400mk][+7 P. AVANZADA REP]</eventtext.itacollectorsell1>
+
+  <eventtext.itaprisonbreak1.1>Altavoces del puesto de avanzada: "¡El terrorista salio de su celda sin autorización! ¡Mátenlo a él y a sus socios!"&#xD;&#xA;&#xD;&#xA;[P. AVANZADA     REP-200]</eventtext.itaprisonbreak1.1>
+  <eventtext.itaprisonbreak1.2>Altavoces del puesto de avanzada: "¡El terrorista salio de su celda sin autorización! ¡Mátenlo a él y a sus socios!"&#xD;&#xA;&#xD;&#xA;[P. AVANZADA     REP-200]&#xD;&#xA;[COALICIÓN   REP-45]&#xD;&#xA;[SEPARATISTAS REP+20]</eventtext.itaprisonbreak1.2>
+
+  <eventtext.itaprisonbreak2.1>Altavoces del puesto de avanzada: "¡El saboteador salio de su celda sin autorización! ¡Mátenlo a él y a sus socios!"&#xD;&#xA;&#xD;&#xA;[P. AVANZADA     REP-200]</eventtext.itaprisonbreak2.1>
+  <eventtext.itaprisonbreak2.2>Altavoces del puesto de avanzada: "¡El saboteador salio de su celda sin autorización! ¡Mátenlo a él y a sus socios!"&#xD;&#xA;&#xD;&#xA;[P. AVANZADA     REP-200]&#xD;&#xA;[COALICIÓN   REP-45]&#xD;&#xA;[PAYASOS REP+20]</eventtext.itaprisonbreak2.2>
+
+  <eventtext.itaprisonescape1.0.1>Altavoces del puesto de avanzada: "¡Los prisioneros fueron liberados por la tripulación del submarino! ¡Mátenlos!"&#xD;&#xA;&#xD;&#xA;[P. AVANZADA     REP-200]</eventtext.itaprisonescape1.0.1>
+  <eventtext.itaprisonescape1.0.2>Altavoces del puesto de avanzada: "¡Los prisioneros fueron liberados por la tripulación del submarino! ¡Mátenlos!"&#xD;&#xA;&#xD;&#xA;[P. AVANZADA     REP-200]&#xD;&#xA;[COALICIÓN   REP-50]&#xD;&#xA;[SEPARATISTAS REP+10]</eventtext.itaprisonescape1.0.2>
+
+  <eventtext.itaprisonescape2.0.1>Altavoces del puesto de avanzada: "¡Los prisioneros fueron liberados por la tripulación del submarino! ¡Mátenlos!"&#xD;&#xA;&#xD;&#xA;[P. AVANZADA     REP-200]</eventtext.itaprisonescape2.0.1>
+  <eventtext.itaprisonescape2.0.2>Altavoces del puesto de avanzada: "¡Los prisioneros fueron liberados por la tripulación del submarino! ¡Mátenlos!"&#xD;&#xA;&#xD;&#xA;[P. AVANZADA     REP-200]&#xD;&#xA;[COALICIÓN   REP-50]&#xD;&#xA;[SEPARATISTAS REP+10]</eventtext.itaprisonescape2.0.2>
+
+  <eventtext.itaprisonescape2.1.1>Este prisionero no fue tratado amablemente. La Coalición es brutal con los separatistas.&#xD;&#xA;"¡Gracias por rescatarme! Correré la voz con nuestros capitanes sobre lo que has hecho."</eventtext.itaprisonescape2.1.1>
+  <eventtext.itaprisonescape2.1.2>Este prisionero no fue tratado amablemente. La Coalición es brutal con los separatistas.&#xD;&#xA;"¡Gracias por rescatarme! Correré la voz con nuestros capitanes sobre lo que has hecho."&#xD;&#xA;[SEPARATISTAS REP+10]</eventtext.itaprisonescape2.1.2>
+
+  <eventtext.itaprisonescape2.2.1>El pobre payaso pensó que los guardias de la Coalición tenían sentido del humor.&#xD;&#xA;"Gracias a vosotros, puedo repartir alegría en otros lugares. ¡Mi música aún no ha sido silenciada! Que las bendiciones de la Madre Mec Mec recaigan sobre ti."&#xD;&#xA;</eventtext.itaprisonescape2.2.1>
+  <eventtext.itaprisonescape2.2.2>El pobre payaso pensó que los guardias de la Coalición tenían sentido del humor.&#xD;&#xA;"Gracias a vosotros, puedo repartir alegría en otros lugares. ¡Mi música aún no ha sido silenciada! Que las bendiciones de la Madre Mec Mec recaigan sobre ti."&#xD;&#xA;[PAYASOS REP+10]</eventtext.itaprisonescape2.2.2>
+
+  <eventtext.itaprisonescape2.1>La Coalición está tan paranoica con los espías separatistas que a menudo encarcela a los habitantes de los puestos de avanzada y a los tripulantes de los submarinos y les da el mismo trato que daría a un enemigo...&#xD;&#xA;"¡Gracias por sacarme de ahí! ¡Estaba fregando el suelo de la cubierta cuando me detuvieron y me acusaron de escuchar las conversaciones en la sala de mando! Ahora lo veo claro. La coalición son los verdaderos terroristas."&#xD;&#xA;</eventtext.itaprisonescape2.1>
+  <eventtext.itaprisonescape2.2>La Coalición está tan paranoica con los espías separatistas que a menudo encarcela a los habitantes de los puestos de avanzada y a los tripulantes de los submarinos y les da el mismo trato que daría a un enemigo...&#xD;&#xA;"¡Gracias por sacarme de ahí! ¡Estaba fregando el suelo de la cubierta cuando me detuvieron y me acusaron de escuchar las conversaciones en la sala de mando! Ahora lo veo claro. La coalición son los verdaderos terroristas."&#xD;&#xA;[SEPARATISTAS REP+10]</eventtext.itaprisonescape2.2>
+
+  <eventtext.itamissionscity1.1.1>Hay mucho trabajo por hacer. Estas son las tareas más necesarias.</eventtext.itamissionscity1.1.1>
+  <eventtext.itamissionscity1.2.2>Siempre hay algo más que hacer. Puedes aceptar este contrato.</eventtext.itamissionscity1.2.2>
+  <eventtext.itamissionscity1.3.3>¡Esta misión requiere un equipo bien organizado!</eventtext.itamissionscity1.3.3>
+
+  <eventtext.itamissionsmining1.4>Tenemos que ver qué tipos de minerales existen en este lugar antes de iniciar una operación minera a gran escala. Busca lo que puedas averiguar.</eventtext.itamissionsmining1.4>
+  <eventtext.itamissionsmining2.5>Necesitamos que despejen los nidos para poder seguir excavando en las cuevas.</eventtext.itamissionsmining2.5>
+  <eventtext.itamissionsmining3.6>También se necesitan otras tareas.</eventtext.itamissionsmining3.6>
+
+  <eventtext.itamissionsmilitary1.7>Necesitamos que hagas algunos recados.</eventtext.itamissionsmilitary1.7>
+  <eventtext.itamissionsmilitary2.8>Te necesitamos para exterminar una gran horda. Espero que estés preparado para ello...</eventtext.itamissionsmilitary2.8>
+  <eventtext.itamissionsmilitary3.9>Necesitamos que te deshagas de las inmensas amenazas a los asentamientos humanos de la zona. Será mejor que lleves una gran potencia de fuego.</eventtext.itamissionsmilitary3.9>
+
+  <eventtext.itamissiontrusted>"Has demostrado ser un marinero experimentado, así que te confiaré estas misiones."</eventtext.itamissiontrusted>
+  <eventtext.itamissionscargowater>[MISIÓN] Transporte de suministros secos [+10REP][2000mk]</eventtext.itamissionscargowater>
+  <eventtext.itamissionscargowater2>[MISIÓN] Caja de suministros seca [+10REP][+2000mk]</eventtext.itamissionscargowater2>
+  <eventtext.itamissionscargofragile>[MISIÓN] Transporte de mercancías frágiles [+10REP][2300mk]</eventtext.itamissionscargofragile>
+  <eventtext.itamissionscargofragileask>"Hay algunas cajas de mercancía delicada que nadie quiere entregar, así que, lógicamente, te solicitamos que lo hagas".</eventtext.itamissionscargofragileask>
+  <eventtext.itamissionscargoegg>[MISIÓN] Transporte de huevos casi eclosionados [+10REP][2000mk]</eventtext.itamissionscargoegg>
+  <eventtext.itamissionactivatebeacon>[MISIÓN] Activar una baliza [2800mk]</eventtext.itamissionactivatebeacon>
+  <eventtext.itamissionkillhammerhead>[MISIÓN] Matar un pez ariete [+10REP] [3000mk]</eventtext.itamissionkillhammerhead>
+  <eventtext.itamissionmineralresearch>MISIÓN] Investigación de minerales en cuevas [+10REP][1500-1800mk]</eventtext.itamissionmineralresearch>
+  <eventtext.itamissionscargotime>[MISIÓN] Caja que se deteriora rápidamente. [+10REP][2000mk]</eventtext.itamissionscargotime>
+  <eventtext.itamissionscargocreature>[MISIÓN] Transporte de criaturas. [+10REP][3000mk]</eventtext.itamissionscargocreature>
+
+  <eventtext.itamissionsresearch1.11>Necesitamos que nos traigas un artefacto en particular que muestra un comportamiento extraño.</eventtext.itamissionsresearch1.11>
+  <eventtext.itamissionsresearch2.12>Necesitamos que nos traigas un artefacto en particular que muestra un comportamiento extraño.</eventtext.itamissionsresearch2.12>
+  <eventtext.itamissionsresearch3.13>También hay tareas no relacionadas con la investigación.</eventtext.itamissionsresearch3.13>
+  <eventtext.itaresearchartifact1.14>Hemos observado una firma de artefacto inusual en nuestras mediciones. Ayúdanos en la investigación recogiéndolo. Si encuentras más artefactos normales, deposítalos en el dispensador del compartimento estanco para obtener una recompensa.</eventtext.itaresearchartifact1.14>
+
+  <eventtext.itarebelbase1>"¿Qué... quiénes son ustedes? ¿Qué estás haciendo aquí?"</eventtext.itarebelbase1>
+  <eventtext.itarebelbase2>"Hemos venido a matarte, obviamente."</eventtext.itarebelbase2>
+  <eventtext.itarebelbase3>"¿Qué estás haciendo *tú* aquí?"</eventtext.itarebelbase3>
+  <eventtext.itarebelbase4>[ENTREGA] "Te he estado buscando. Tengo algo que debo entregar, es sólo en persona"</eventtext.itarebelbase4>
+  <eventtext.itarebelbase5>[P. AVANZADA REP 90]"Trabajamos para la estación. No buscamos problemas".</eventtext.itarebelbase5>
+  <eventtext.itarebelbase6>[SEPARATISTAS REP 50] "Sic semper tyrannis. Estamos aquí para ayudar."</eventtext.itarebelbase6>
+  
+  <eventtext.itabounty1.1>Un cartel de SE BUSCA de un tablón de anuncios...</eventtext.itabounty1.1>
+  <eventtext.itabounty1.2>Objetivo de recompensa eliminado&#xD;&#xA;[750mk]&#xD;&#xA;[COALICIÓN REP +6]</eventtext.itabounty1.2>
+
+  <eventtext.itabeacontest1>"¿Eres del equipo de reaprovisionamiento? ¡¿Cuál es la contraseña?!"</eventtext.itabeacontest1>
+  <eventtext.itabeacontest2>"Sic semper tyrranis." [SEPARATISTAS REP+5]</eventtext.itabeacontest2>
+  <eventtext.itabeacontest3>"¿Ni diente ninani? [PAYASOS REP +5]</eventtext.itabeacontest3>
+  <eventtext.itabeacontest4>"Sectumsempra. [PAYASOS REP +5]</eventtext.itabeacontest4>
+  <eventtext.itabeacontest5>[REP LUGAR 50]"Trabajamos para la estación y esta baliza necesita un arreglo."</eventtext.itabeacontest5>
+  <eventtext.itabeacontest6>*Levantar el dedo corazón "¿Esta es la contraseña?"</eventtext.itabeacontest6>
+
+  <eventtext.itabeaconsep1.0kill.1>Has despejado un escondite separatista...&#xD;&#xA;[RECOMPENSA 800mk]&#xD;&#xA;[COALICIÓN REP +8]&#xD;&#xA;[SEPARATISTAS REP -15]</eventtext.itabeaconsep1.0kill.1>
+  <eventtext.itabeaconsep1.0.2>[COALICIÓN REP 40] &#xD;&#xA;"Habla el Oficial de la Coalición. ¡Le ordeno que despeje un escondite separatista en una baliza cercana!"</eventtext.itabeaconsep1.0.2>
+
+  <eventtext.itabeaconsep1.0a.1>Transmisión de radio: "¡Hola, viajeros! Nos vendría bien vuestra ayuda en la estación de balizamiento".</eventtext.itabeaconsep1.0a.1>
+  <eventtext.itabeaconsep1.0a.2>Un joven capitán vestido con el uniforme de los separatistas les da la bienvenida con las manos en la espalda, aparentemente orgulloso de sus operaciones aquí. "Bienvenidos a nuestra estación, camaradas".</eventtext.itabeaconsep1.0a.2>
+  <eventtext.itabeaconsep1.0a.3>[SEPARATISTAS REP 30] "¿Qué estás haciendo aquí?"</eventtext.itabeaconsep1.0a.3>
+  <eventtext.itabeaconsep1.0a.4>"Hemos reconvertido esta baliza en una estación de transmisión para difundir la verdad a los puestos de avanzada cercanos para combatir la propaganda. La gente tiene que darse cuenta de que la Coalición los está manipulando para que se sometan".</eventtext.itabeaconsep1.0a.4>
+  <eventtext.itabeaconsep1.0a.5>[HELM 70]"Escucha, "camarada". Las naves de la coalición están haciendo rondas por estos túneles, bombardeando escondites como este sin previo aviso. Algún día, te harán una visita y la sangre de esta tripulación estará en tus manos. Corta la transmisión, termina esta operación y salva a tu gente antes de que sea demasiado tarde".</eventtext.itabeaconsep1.0a.5>
+  <eventtext.itabeaconsep1.0a.6>"¿Silenciarnos? ¿Es eso lo que quieres? ¿De verdad crees que puedes asustarnos?"</eventtext.itabeaconsep1.0a.6>
+  <eventtext.itabeaconsep1.0a.7>[SEPARATISTAS REP 50] "Estoy de tu lado y no quiero arriesgar la vida de estas personas sólo por una estúpida transmisión que nadie escucha de todos modos".</eventtext.itabeaconsep1.0a.7>
+  <eventtext.itabeaconsep1.0a.8>El comandante de la baliza sonríe, como si se preparara para una réplica perfecta, ante lo cual su expresión cambia a un tono más serio y abatido. "Joder, tienes razón. No debería haber arriesgado nuestras vidas por esto". Ordena a su gente que empiece a hacer las maletas.&#xD;&#xA;[SEPARATISTAS +10]&#xD;&#xA;[COALICIÓN +5]</eventtext.itabeaconsep1.0a.8>
+  <eventtext.itabeaconsep1.0a.9>Se ha convencido a la tripulación de la baliza para que abandone sus puestos y cese todas las operaciones. Se han puesto en marcha los preparativos para abandonar la estación.&#xD;&#xA;[SEPARATISTAS REP +10]&#xD;&#xA;[COALICIÓN REP+5]</eventtext.itabeaconsep1.0a.9>
+  <eventtext.itabeaconsep1.0a.10>"Ese es un discurso derrotista. Ve a abrillantar los zapatos de un oficial de la coalición, cobarde".</eventtext.itabeaconsep1.0a.10>
+  <eventtext.itabeaconsep1.0a.11>"¡Conseguidlo a vuestra manera! Aunque sobreviváis, no penséis que os vamos a ofrecer refugio en nuestro submarino cuando la Coalición empiece a daros caza!" &#xD;&#xA;[SEPARATISTAS REP -3]</eventtext.itabeaconsep1.0a.11>
+  <eventtext.itabeaconsep1.0a.12>"No tienes ni idea de lo que estás hablando".</eventtext.itabeaconsep1.0a.12>
+  <eventtext.itabeaconsep1.0a.13>"Bien. Desafía los puntos de vista de la gente, hazlos pensar. Eso es exactamente lo que hará caer a la Coalición a largo plazo.</eventtext.itabeaconsep1.0a.13>
+  <eventtext.itabeaconsep1.0a.14>Cuente el personal, inspeccione su equipo y mire el registro de la tripulación: que la Coalición se ocupe de ellos más tarde. Gracias a esta información, estas personas serán arrestadas en la primera estación que visiten y ni siquiera sus familiares se librarán del castigo. No tendrás que presenciar nada de eso.&#xD;&#xA;[COALICIÓN REP +8]&#xD;&#xA;[SEPARATISTAS REP -10]</eventtext.itabeaconsep1.0a.14>
+  <eventtext.itabeaconsep1.0a.15>"Genial".</eventtext.itabeaconsep1.0a.15>
+  <eventtext.itabeaconsep1.0a.16>"Lo siento, no puedo revelar ningún detalle; órdenes".</eventtext.itabeaconsep1.0a.16>
+  <eventtext.itabeaconsep1.0a.17>"¿Cómo podemos ayudar?"</eventtext.itabeaconsep1.0a.17>
+  <eventtext.itabeaconsep1.0a.18>"Necesitamos algunos suministros para quedarnos aquí un poco más. Nuestro mecánico tendrá más detalles".</eventtext.itabeaconsep1.0a.18>
+  <eventtext.itabeaconsep1.0a.19>"Has cometido un grave error al dejarnos entrar, *camarada*..."</eventtext.itabeaconsep1.0a.19>
+  <eventtext.itabeaconsep1.0a.20>"¡Nunca debería haber venido aquí!"&#xD;&#xA;[COALICIÓN REP +6]</eventtext.itabeaconsep1.0a.20>
+
+  <eventtext.itabeaconsep1.0b.1>Ves a un mecánico que mira a través de un agujero en la pared, con un destornillador en la mano. "¡Oh, hola! ¿Has venido a ayudar? Necesitamos que alguien repare esta vieja chatarra estropeada. El circuito FPGA se ha roto".</eventtext.itabeaconsep1.0b.1>
+  <eventtext.itabeaconsep1.0b.2>[ELECTRICIDAD 45][CIRCUITO FPGA] "Claro, tengo uno; déjame ayudar".</eventtext.itabeaconsep1.0b.2>
+  <eventtext.itabeaconsep1.0b.3>Te asomas al agujero de la pared y encuentras una placa de circuitos electrónicos oxidados. Ves un viejo circuito FPGA medio quemado dentro del revestimiento interior de la pared metálica. Lo sacas de su ranura y lo sustituyes por uno nuevo y reluciente.</eventtext.itabeaconsep1.0b.3>
+  <eventtext.itabeaconsep1.0b.4>"¡Gracias! Este lugar seguirá funcionando por un tiempo más. No tengo mucho, pero puedes llevarte este fragmento de incendio. Se lo arrebaté a uno de los oficiales médicos mientras estaban ocupados, ¡eh! Probablemente valga algo, así que no lo gastes todo en un solo lugar, ya me entiendes".</eventtext.itabeaconsep1.0b.4>
+  <eventtext.itabeaconsep1.0b.5>"¡Genial! Buena suerte con tus operaciones".&#xD;&#xA;[SEPARATISTAS REP +3]</eventtext.itabeaconsep1.0b.5>
+  <eventtext.itabeaconsep1.0b.6>"No necesito nada, gracias. Sólo era un circuito barato. Buena suerte con tus operaciones".&#xD;&#xA;[SEPARATISTAS REP +7]</eventtext.itabeaconsep1.0b.6>
+  <eventtext.itabeaconsep1.0b.7>[ARMAS 20] "He gastado tiempo, experiencia y material para ayudarte. Seguro que puedes recompensarme adecuadamente".</eventtext.itabeaconsep1.0b.7>
+  <eventtext.itabeaconsep1.0b.8>"¡Oye, oye! Estás tentando a la suerte, extraño... Este cristal tiene sus cualidades, pero... Eh, lo que sea, tómalo. Probablemente no valga nada de todos modos..."&#xD;&#xA;[SEPARATISTAS REP +3]</eventtext.itabeaconsep1.0b.8>
+  <eventtext.itabeaconsep1.0b.9>[ARMAS 20 FALLIDO] "Lo siento, pero es todo lo que tengo. Tómalo o déjalo."&#xD;&#xA;[SEPARATISTAS REP -2]</eventtext.itabeaconsep1.0b.9>
+  <eventtext.itabeaconsep1.0b.10>[ELECTRICIDAD 60 FALLIDO] "¡Parece que estás tan perdido como yo!"</eventtext.itabeaconsep1.0b.10>
+  <eventtext.itabeaconsep1.0b.11>"Hasta yo sé que eso no es un circuito FPGA, chico."</eventtext.itabeaconsep1.0b.11>
+  <eventtext.itabeaconsep1.0b.12>"No, lo siento. Sólo estoy mirando alrededor".</eventtext.itabeaconsep1.0b.12>
+  <eventtext.itabeaconsep1.0b.13>"'¿Eres un payaso? ¿De los de verdad?"</eventtext.itabeaconsep1.0b.13>
+  <eventtext.itabeaconsep1.0b.14>"Lo soy".</eventtext.itabeaconsep1.0b.14>
+  <eventtext.itabeaconsep1.0b.15>"Hm... No lo pareces... No importa." [PAYASOS -5]</eventtext.itabeaconsep1.0b.15>
+  <eventtext.itabeaconsep1.0b.16>[BOCINA MOTO] Toca la bocina de moto.</eventtext.itabeaconsep1.0b.16>
+  <eventtext.itabeaconsep1.0b.17>El mecánico se ríe, pero rápidamente vuelve a su trabajo.&#xD;&#xA;[PAYASOS REP +5]</eventtext.itabeaconsep1.0b.17>
+  <eventtext.itabeaconsep1.0b.18>Parece que te has olvidado la bocina de moto en casa. Triste.&#xD;&#xA;[PAYASOS REP -5]</eventtext.itabeaconsep1.0b.18>
+  <eventtext.itabeaconsep1.0b.19>[GUITARRA] Toca una canción alegre.</eventtext.itabeaconsep1.0b.19>
+  <eventtext.itabeaconsep1.0b.20>Enseguida se nota que esta gente no ha escuchado música ni ha sonreído en mucho tiempo. Tu canción conmueve el alma de los que están en la baliza y les deja a todos de buen humor.&#xD;&#xA;[PAYASOS REP +10][SEPARATISTAS REP +3]</eventtext.itabeaconsep1.0b.20>
+
+  <eventtext.v2givingdirections.21>Tocar en una guitarra de aire imaginaria no entretiene en absoluto al mecánico.&#xD;&#xA;[PAYASOS REP -5]</eventtext.v2givingdirections.21>
+
+  <eventtext.itatransport3.0.1>"¡Ya veremos quién ríe el último! La Madre Mec Mec me vigila".</eventtext.itatransport3.0.1>
+  <eventtext.itatransport4.0.1>"¡Me necesitas! ¡Si nos matas, no te pagarán! Todos ustedes se unirán al océano en algún momento. No tiene sentido retrasar lo inevitable..."</eventtext.itatransport4.0.1>
+
+  <eventtext.itarace1bet.1>"¿Quieres apostar 100mk a uno de los fanguitos en la próxima carrera de fangoraptor?"</eventtext.itarace1bet.1>
+  <eventtext.itarace1bet.2>Apuesta 100mk al fangoraptor rojo...</eventtext.itarace1bet.2>
+  <eventtext.itarace1bet.3>No tienes suficiente dinero...</eventtext.itarace1bet.3>
+  <eventtext.itarace1bet.4>Apuesta 100mk al fangoraptor verde...</eventtext.itarace1bet.4>
+  <eventtext.itarace1bet.5>Apuesta 100mk al fangoraptor azul...</eventtext.itarace1bet.5>
+  <eventtext.itarace1bet.6>"Esta vez no".</eventtext.itarace1bet.6>
+  <eventtext.itarace1bet.7>"¡Comienza la carrera!"</eventtext.itarace1bet.7>
+  <eventtext.itarace1bet.8>"¡El rojo ha ganado la carrera! Vengan a canjear sus fichas".</eventtext.itarace1bet.8>
+  <eventtext.itarace1bet.9>Canjea tu ficha...</eventtext.itarace1bet.9>
+  <eventtext.itarace1bet.10>"¡El verde ha ganado la carrera! ¡Vengan a canjear sus fichas!"</eventtext.itarace1bet.10>
+  <eventtext.itarace1bet.11>"¡El azul ha ganado la carrera! ¡Vengan a canjear sus fichas!"</eventtext.itarace1bet.11>
+
+  <eventtext.itarace1.0.1>¡El rojo ha ganado la carrera!</eventtext.itarace1.0.1>
+  <eventtext.itarace1.0.2>¡El verde ha ganado la carrera!</eventtext.itarace1.0.2>
+  <eventtext.itarace1.0.3>¡El azul ha ganado la carrera!</eventtext.itarace1.0.3>
+
+  <eventtext.trainer.1>"Solía trabajar en el R-29, manteniendo ese cacharro metálico a flote. La mitad del tiempo tenía que raspar los reptadores de la proa con un cañón de arpones. La parte restante, tenía que soldar las paredes de la sala de carga hasta quedar casi ciego. Lo que me lleva a esta mierda de ciudad. Compartiré mi experiencia contigo a cambio de dinero".</eventtext.trainer.1>
+  <eventtext.trainer.2>[360mk] "Dime con detalle cómo mantuviste a flote un submarino tan grande". [+3 MECÁNICA]</eventtext.trainer.2>
+  <eventtext.trainer.3>"Podría preguntarte por tus aventuras más tarde."</eventtext.trainer.3>
+  <eventtext.trainer.4>"He reparado más bombas que cualquier otro aprieta tuercas de aquí. Te enseñaré las mejores maneras de arreglarlas, si me pagas por mi tiempo."</eventtext.trainer.4>
+  <eventtext.trainer.5>[360mk] "Claro. Quiero saber cómo arreglarlas más rápido". [+3 MECÁNICA]</eventtext.trainer.5>
+  <eventtext.trainer.6>"Mi experiencia fue pagada con años de sufrimiento. No te enseñaré a menos que me pagues adecuadamente".</eventtext.trainer.6>
+  <eventtext.trainer.7>"Podría preguntarte por las bombas más tarde".</eventtext.trainer.7>
+  <eventtext.trainer.8>"Inhalar humo de plástico quemado reparando empalmes a través de los años ha dejado sólo uno de mis pulmones parcialmente funcional, lo que podría complicar las cosas si trabajara en un submarino, así que en lugar de eso tengo que pudrirme aquí con los habitantes del puesto de avanzada. Puedo compartir con vosotros lo que he aprendido por un puñado de marcos..."</eventtext.trainer.8>
+  <eventtext.trainer.9>[360mk] "Suena útil. Quiero saber cómo lidiar con los empalmes de manera más eficiente". [+3 ING. EL.]</eventtext.trainer.9>
+  <eventtext.trainer.10>"Tal vez uno de nosotros te pregunte por tu experiencia más tarde".</eventtext.trainer.10>
+  <eventtext.trainer.11>"No quiero que me vean hablando con sinvergüenzas como tú".&#xD;&#xA;[REPUTACIÓN UBICACIÓN &lt;0]</eventtext.trainer.11>
+  <eventtext.trainer.12>"¡Me han echado de mi propio submarino! Dicen que los he saboteado, pero todo lo que he hecho han sido mejoras con un poco de recableado, hasta que algún idiota abrió la puerta en un momento inoportuno y me estropeó toda la configuración de la señal, lo que provocó una pequeña inundación a través de una esclusa forzada para estar abierta... De todos modos, puedo mostrarte algunos consejos y trucos, si tienes el dinero."</eventtext.trainer.12>
+  <eventtext.trainer.13>[360mk] "Mientras sea sencillo y seguro, claro". [+3 NG. EL.]</eventtext.trainer.13>
+  <eventtext.trainer.14>"Tal vez uno de nosotros hable contigo más tarde sobre el adiestramiento, siempre y cuando no te acerques a nuestro puerto de atraque".</eventtext.trainer.14>
+  <eventtext.trainer.15>"¡Mi antigua tripulación eran unos completos neandertales! Me arrestaron por intentar envenenar a la cuadrilla de ingenieros, ¡pero yo llevaba los venenos al deconstructor! Las autoridades de aquí me liberaron inmediatamente y no volveré a subir a un submarino. No estoy dispuesto a ser contratado, pero por un par de marcos, puedo enseñarte habilidades médicas".</eventtext.trainer.15>
+  <eventtext.trainer.16>[360mk] "Claro, sólo mantén tus manos donde pueda verlas, ¿de acuerdo?" [+3 MEDICINA]</eventtext.trainer.16>
+
+  <eventtext.shop.notreally>La verdad es que no.</eventtext.shop.notreally>
+  <eventtext.somthingborke>algo aburrido</eventtext.somthingborke>
+  <eventtext.shop.nocash>"Vuelve con más dinero".</eventtext.shop.nocash>
+  <eventtext.shop.nothanks>"No, gracias."</eventtext.shop.nothanks>
+  <eventtext.shop.maybelater>"Tal vez más tarde."</eventtext.shop.maybelater>
+  <eventtext.shop.lowshoprep>"No eres más que un problema. ¡Sal de aquí!"&#xD;&#xA;[REPUTACIÓN LOCAL &lt;0]</eventtext.shop.lowshoprep>
+  <eventtext.shop.getout>"¡Largo de aquí, alborotadores!"&#xD;&#xA;[REPUTACIÓN LUGAR &lt;0]</eventtext.shop.getout>
+
+  <eventtext.shop.1>"¿Algo caliente para comer?"</eventtext.shop.1>
+  <eventtext.shop.2>Sopa caliente Craw-Yum! [12 mk]</eventtext.shop.2>
+  <eventtext.shop.3>"¿Quieres un trago?"</eventtext.shop.3>
+  <eventtext.shop.4>Cóctel de cola de pescado [32 mk]</eventtext.shop.4>
+
+  <eventtext.shop.5>"¿Quieres comprar algo de ropa?"</eventtext.shop.5>
+  <eventtext.shop.6>Camisa con vaqueros destrozados [32 mk]</eventtext.shop.6>
+  <eventtext.shop.7>Jersey beige [40mk]</eventtext.shop.7>
+  <eventtext.shop.8>Sudadera púrpura con chaleco [34mk]</eventtext.shop.8>
+  <eventtext.shop.9>Sudadera verde con chaleco [37mk]</eventtext.shop.9>
+  <eventtext.shop.10>Ropa de administrador [70mk]</eventtext.shop.10>
+  <eventtext.shop.11>Ropa de jefe de equipo [70mk]</eventtext.shop.11>
+  <eventtext.shop.12>Bolsa de viaje flotante [230mk]</eventtext.shop.12>
+  <eventtext.shop.13>Cinturón de herramientas [35mk]</eventtext.shop.13>
+
+  <eventtext.shop.14>"¿Le gustaría comprar algún equipo de jardinería?"</eventtext.shop.14>
+  <eventtext.shop.15>Maceta [120 mk]</eventtext.shop.15>
+  <eventtext.shop.16>Regadera [80mk]</eventtext.shop.16>
+  <eventtext.shop.17>Fertilizante [145mk]</eventtext.shop.17>
+  <eventtext.shop.18>Bolsa de semillas [65mk]</eventtext.shop.18>
+  <eventtext.shop.19>Semilla - Granada [34mk]</eventtext.shop.19>
+  <eventtext.shop.20>Semilla - Planta de tabaco [32mk]</eventtext.shop.20>
+  <eventtext.shop.21>Semilla - Planta de sal [35mk]</eventtext.shop.21>
+  <eventtext.shop.22>Semilla - Matarraptores [38mk]</eventtext.shop.22>
+
+  <eventtext.shop.23>"¿Quieres uno de los huevos especiales o comida para mascotas?"</eventtext.shop.23>
+  <eventtext.shop.24>Comida para mascotas [120 mk]</eventtext.shop.24>
+  <eventtext.shop.25>Placa con el nombre de la mascota [10mk]</eventtext.shop.25>
+  <eventtext.shop.26>Solución salina [50mk]</eventtext.shop.26>
+  <eventtext.shop.27>Huevo - Cacahuete [500mk]</eventtext.shop.27>
+  <eventtext.shop.28>Huevo - Psilosapo [500mk]</eventtext.shop.28>
+  <eventtext.shop.29>Huevo - Chico naranja [500mk]</eventtext.shop.29>
+
+  <eventtext.shop.30>"Puedo curar a toda tu tripulación si los reúnes aquí o hacer que te caiga el tributo a  la Parca."</eventtext.shop.30>
+  <eventtext.shop.31>Curar a la tripulación cercana [200 mk]</eventtext.shop.31>
+  <eventtext.shop.32>"¡No me importa si te desangras, si no me pagas suficiente dinero!"</eventtext.shop.32>
+  <eventtext.shop.33>Curar el tributo a la Parca [1000mk]</eventtext.shop.33>
+
+  <eventtext.shop.34>"¿Le gustaría comprar algún equipo de escalada?"</eventtext.shop.34>
+  <eventtext.shop.35>Cañón de cuerdas [230 mk]</eventtext.shop.35>
+  <eventtext.shop.36>Cuerda elástica extensible 8x [24mk]</eventtext.shop.36>
+  <eventtext.shop.37>Cuerda elástica holgada 8x [24mk]</eventtext.shop.37>
+  <eventtext.shop.38>Cortador de plasma [72mk]</eventtext.shop.38>
+  <eventtext.shop.39>Linterna [160mk]</eventtext.shop.39>
+  <eventtext.shop.40>Bengala roja [30mk]</eventtext.shop.40>
+  <eventtext.shop.41>Bengala alienígena [90mk]</eventtext.shop.41>
+  <eventtext.shop.42>Farol [210mk]</eventtext.shop.42>
+  <eventtext.shop.43>Pila [115mk]</eventtext.shop.43>
+
+  <eventtext.shop.44>"¿Quiere retirar o depositar dinero en efectivo?"&#xD;&#xA;Como las tripulaciones de los submarinos suelen portarse mal con su dinero, los bancos hicieron que sólo los capitanes pudieran retirar y distribuir el efectivo entre sus compañeros.</eventtext.shop.44>
+  <eventtext.shop.45>Retirar 100</eventtext.shop.45>
+  <eventtext.shop.46>"No tienes suficiente dinero en tu cuenta."</eventtext.shop.46>
+  <eventtext.shop.47>"Sólo los capitanes pueden sacar dinero. Puedes depositar dinero en efectivo, si quieres."</eventtext.shop.47>
+  <eventtext.shop.48>Retirar 400</eventtext.shop.48>
+  <eventtext.shop.49>Retirar 1000</eventtext.shop.49>
+  <eventtext.shop.50>Ingresar 100</eventtext.shop.50>
+  <eventtext.shop.51>"Has ingresado todo tu efectivo en la cuenta bancaria de tu tripulación".</eventtext.shop.51>
+  <eventtext.shop.52>"No es suficiente efectivo, pero ingresaré lo que tienes."</eventtext.shop.52>
+  <eventtext.shop.53>Ingresar 400</eventtext.shop.53>
+  <eventtext.shop.54>Ingresar 1000</eventtext.shop.54>
+  <eventtext.shop.55>Ingresar todo el dinero en efectivo</eventtext.shop.55>
+
+  <eventtext.shop.56>"Bienvenido a Joe's. ¿Quieres comprar algunos componentes eléctricos?"</eventtext.shop.56>
+  <eventtext.shop.57>Control de señal [95 mk]</eventtext.shop.57>
+  <eventtext.shop.58>Componente Transmisión [95mk]</eventtext.shop.58>
+  <eventtext.shop.59>Componente de Memoria [95mk]</eventtext.shop.59>
+  <eventtext.shop.60>Cable 4x[40mk]</eventtext.shop.60>
+  <eventtext.shop.61>Componente Sumador [95mk]</eventtext.shop.61>
+  <eventtext.shop.62>Componente Multiplicador [95mk]</eventtext.shop.62>
+  <eventtext.shop.63>Componente Divisor [95mk]</eventtext.shop.63>
+  <eventtext.shop.64>Componente retraso [95mk]</eventtext.shop.64>
+  <eventtext.shop.65>"¿Necesitas munición?"</eventtext.shop.65>
+  <eventtext.shop.66>Cargador de subfusil [100 mk]</eventtext.shop.66>
+  <eventtext.shop.67>Cartucho de escopeta 8x[320mk]</eventtext.shop.67>
+  <eventtext.shop.68>Granada de 40 mm [100mk]</eventtext.shop.68>
+  <eventtext.shop.69>Granada aturdidora de 40 mm [120mk]</eventtext.shop.69>
+  <eventtext.shop.70>Munición de revólver 6x [180mk]</eventtext.shop.70>
+  <eventtext.shop.71>Cartucho de señuelo de profundidad [250mk]</eventtext.shop.71>
+  <eventtext.shop.72>Estantería para cartuchos de profundidadt [200mk]</eventtext.shop.72>
+  <eventtext.shop.73>"¡Fuera de mi tienda, vándalos!"&#xD;&#xA;[REPUTACIÓN LOCAL &lt;0]</eventtext.shop.73>
+  <eventtext.shop.74>"En otro momento, tal vez."</eventtext.shop.74>
+  
+  <eventtext.itaoplockcity1>"Vete, inútil."&#xD;&#xA;---REQUISITOS---&#xD;&#xA;[P. AVANZADA   REP-10]</eventtext.itaoplockcity1>
+  <eventtext.itaoplockcity2>"¡Intrusos en el puerto de atraque!"</eventtext.itaoplockcity2>
+  <eventtext.itaoplockcity3>"¡Intrusos en el puerto de atraque!"&#xD;&#xA;&#xD;&#xA;[P. AVANZADA    REP-200]&#xD;&#xA;[COALICIÓN  REP-15 ]&#xD;&#xA;[SEPARATISTAS REP+15 ]</eventtext.itaoplockcity3>
+  <eventtext.itaoplockcity4>"Sólo pueden entrar los socios de la coalición. No intentes entrar sin autorización, o serás incluido en la lista negra."&#xD;&#xA;&#xD;&#xA;---REQUISITOS---&#xD;&#xA;[COALICIÓN REP+35]</eventtext.itaoplockcity4>
+  <eventtext.itaoplockcity5>"¡Intrusos vetados en el puerto de atraque!"</eventtext.itaoplockcity5>
+  <eventtext.itaoplockcity6>"¡Intrusos en el puerto de atraque!"&#xD;&#xA;&#xD;&#xA;[P. AVANZADA     REP-200]&#xD;&#xA;[COALICIÓN   REP-45 ]&#xD;&#xA;[SEPARATISTAS REP+15 ]</eventtext.itaoplockcity6>
+
+  <eventtext.itaresearchlock1.1>"Sólo los investigadores pueden entrar en este laboratorio."</eventtext.itaresearchlock1.1>
+  <eventtext.itaresearchlock1.2>[P. AVANZADA REP 100] "Estoy trabajando para el equipo de investigación. Aquí está mi identificación."</eventtext.itaresearchlock1.2>
+  <eventtext.itaresearchlock1.3>Sigue caminando.</eventtext.itaresearchlock1.3>
+
+  <eventtext.itatransp1.0.1>[ACEPTAR] "Claro. Sube a bordo."</eventtext.itatransp1.0.1>
+  <eventtext.itatransp1.0.2>Un mecánico con manos protésicas se acerca a ti en el bar.&#xD;&#xA;"Oye, tienes un submarino, ¿verdad? ¿Uno con pistolitas y demás mierdas? Necesito que me lleves. Te pagaré bien."&#xD;&#xA;[MISIÓN: TRANSPORTE PASAJERO, RECOMPENSA: 800mk]</eventtext.itatransp1.0.2>
+  <eventtext.itatransp1.0.3>[RECHAZAR] "Nope. Our air is thin enough already."</eventtext.itatransp1.0.3>
+
+  <eventtext.itatransp1.1.1>"Gracias por el viaje. Nos vemos por ahí."&#xD;&#xA;[MISIÓN COMPLETADA 800mk P. AVANZADA REP+5]</eventtext.itatransp1.1.1>
+  <eventtext.itatransp1.1.2>"¿Cuánto tiempo va a llevar?"</eventtext.itatransp1.1.2>
+
+  <eventtext.itatransp1.2.1>"Gracias por sacarme de ese agujero de mierda."</eventtext.itatransp1.2.1>
+  <eventtext.itatransp1.2.2>[MISIÓN PASAJERO COMPLETADA 800mk P. AVANZADA REP+5]</eventtext.itatransp1.2.2>
+
+  <!--Items-->
+  <!--Mission Crates-->
+  <entityname.ita_mcrate_time1>Caja con límite de tiempo</entityname.ita_mcrate_time1>
+  <entitydescription.ita_mcrate_time1>Se escuchan zumbidos en el interior de la caja...</entitydescription.ita_mcrate_time1>
+  <entityname.ita_mcrate_water1>Caja sensible al agua</entityname.ita_mcrate_water1>
+  <entitydescription.ita_mcrate_water1>La etiqueta azul de esta caja le indica que no debe sumergirla.</entitydescription.ita_mcrate_water1>
+  <entityname.ita_mcrate_egg1>Caja de huevos</entityname.ita_mcrate_egg1>
+  <entitydescription.ita_mcrate_egg1>Algo viscoso se está moviendo en esta caja.</entitydescription.ita_mcrate_egg1>
+  <entityname.ita_mcrate_impact1>Caja sensible a los golpes</entityname.ita_mcrate_impact1>
+  <entitydescription.ita_mcrate_impact1>La etiqueta roja de esta caja te advierte de que no la debes dejear caer con demasiada fuerza.</entitydescription.ita_mcrate_impact1>
+  <entityname.ita_mcrate_egg2>Caja de huevos refrigerada</entityname.ita_mcrate_egg2>
+  <entitydescription.ita_mcrate_egg2>Esta caja tiene instalada una unidad de refrigeración que mantiene los huevos aletargados a punto de eclosionar. ¡No dejes que se agoten las pilas!</entitydescription.ita_mcrate_egg2>
+  <entityname.ita_mcrate_raptor1>Fangoraptor acorazado cautivo</entityname.ita_mcrate_raptor1>
+  <entitydescription.ita_mcrate_raptor1>Todo un fangoraptor encadenado. Tiene un pequeño frasco de opio en el pico y chupa el líquido lentamente, lo que lo mantiene tranquilo. Es extrañamente adorable. ¡No dejes que se acabe el opio!</entitydescription.ita_mcrate_raptor1>
+
+  <!--Trading crates-->
+  <entityname.ita_tcrate_mil1>Caja de suministros militares sellada</entityname.ita_tcrate_mil1>
+  <entitydescription.ita_tcrate_mil1>Compra barato, vende caro. Entrega estas cajas sensibles al agua en el puesto militar para obtener un beneficio neto de unos 400mk por caja, ¡pero ten cuidado! Hay que almacenarlas en estanterías de cajas o se deteriorarán cada minuto.</entitydescription.ita_tcrate_mil1>
+  <entityname.ita_tcrate_res1>Caja de suministros de investigación sellada</entityname.ita_tcrate_res1>
+  <entitydescription.ita_tcrate_res1>Compra barato, vende caro. Entrega estas cajas sensibles al agua al puesto de investigación para obtener un beneficio neto de unos 400mk por caja, ¡pero ten cuidado! Hay que almacenarlas en estanterías de cajas o se deteriorarán cada minuto.</entitydescription.ita_tcrate_res1>
+  <entityname.ita_tcrate_city1>Caja de suministros de la colonia sellada</entityname.ita_tcrate_city1>
+  <entitydescription.ita_tcrate_city1>Compra barato, vende caro. Entrega estas cajas en la colonia para obtener un beneficio neto de unos 150mk por caja, ¡pero ten cuidado! Hay que almacenarlas en estanterías de cajas o se deteriorarán cada minuto.</entitydescription.ita_tcrate_city1>
+  <entityname.ita_tcrate_hab1>Caja de suministros de asentamiento sellada</entityname.ita_tcrate_hab1>
+  <entitydescription.ita_tcrate_hab1>Compra barato, vende caro. Entrega estas cajas en el asentamiento para obtener un beneficio neto de unos 100mk por caja, ¡pero ten cuidado! Hay que almacenarlas en estanterías de cajas o se deteriorarán cada minuto.</entitydescription.ita_tcrate_hab1>
+  <entityname.ita_tcrate_mine1>Caja de suministros mineros sellada</entityname.ita_tcrate_mine1>
+  <entitydescription.ita_tcrate_mine1>Compra barato, vende caro. Entrega estas cajas en el Puesto minero para obtener un beneficio neto de unos 100mk por caja, ¡pero ten cuidado! Hay que almacenarlas en estanterías de cajas o se deteriorarán cada minuto.</entitydescription.ita_tcrate_mine1>
+
+  <!--Cash-->
+  <entityname.ita_wallet1>Cartera</entityname.ita_wallet1>
+  <entitydescription.ita_wallet1>Perfecto para guardar dinero en efectivo o tarjetas en su interior.</entitydescription.ita_wallet1>
+  <entityname.ita_bill50>Billete 50mk</entityname.ita_bill50>
+  <entitydescription.ita_bill50>Dinero en metálico.</entitydescription.ita_bill50>
+  <entityname.ita_bill100>Billete 100mk</entityname.ita_bill100>
+  <entitydescription.ita_bill100>Dinero en metálico.</entitydescription.ita_bill100>
+  <entityname.ita_bill200>Billete 200mk</entityname.ita_bill200>
+  <entitydescription.ita_bill200>Dinero en metálico.</entitydescription.ita_bill200>
+  <entityname.ita_coin5>Moneda 5mk</entityname.ita_coin5>
+  <entitydescription.ita_coin5>Dinero en metálico.</entitydescription.ita_coin5>
+  <entityname.ita_coin1>Moneda 1mk</entityname.ita_coin1>
+  <entitydescription.ita_coin1>Dinero en metálico.</entitydescription.ita_coin1>
+
+  <!--Minerals (temporary, until mining bug is fixed)-->
+  <entityname.ita_ilmenite>Ilmenita</entityname.ita_ilmenite>
+  <entitydescription.ita_ilmenite>Mineral que contiene titanio.</entitydescription.ita_ilmenite>
+  <entityname.ita_chalcopyrite>Calcopirita</entityname.ita_chalcopyrite>
+  <entitydescription.ita_chalcopyrite>Mineral que contiene cobre.</entitydescription.ita_chalcopyrite>
+  <entityname.ita_brockite>Brockita</entityname.ita_brockite>
+  <entitydescription.ita_brockite>Mineral que contiene torio y fósforo.</entitydescription.ita_brockite>
+  <entityname.ita_diamond>Diamante</entityname.ita_diamond>
+  <entitydescription.ita_diamond>Un cristal compuesto de carbono sólido.</entitydescription.ita_diamond>
+  <entityname.ita_pyromorphite>Piromorfita</entityname.ita_pyromorphite>
+  <entitydescription.ita_pyromorphite>Mineral secundario que contiene plomo</entitydescription.ita_pyromorphite>
+
+  <!--Caves-->
+  <entityname.ita_climber2>Cuerda elástica extensible</entityname.ita_climber2>
+  <entitydescription.ita_climber2>Esta cuerda elástica extensible permite a los escaladores alcanzar espacios verticales a gran altura.</entitydescription.ita_climber2>
+  <entityname.ita_climber4>Cuerda elástica holgada</entityname.ita_climber4>
+  <entitydescription.ita_climber4>Esta cuerda elástica y ligera permite a los escaladores descender lentamente.</entitydescription.ita_climber4>
+  <entityname.ita_climber2hook>Gancho elástico extensible</entityname.ita_climber2hook>
+  <entitydescription.ita_climber2hook>Esta cuerda elástica extensible permite a los escaladores alcanzar espacios verticales a gran altura.</entitydescription.ita_climber2hook>
+  <entityname.ita_climber4hook>Gancho elástico holgado</entityname.ita_climber4hook>
+  <entitydescription.ita_climber4hook>Esta cuerda elástica y ligera permite a los escaladores descender lentamente por espacios verticales.</entitydescription.ita_climber4hook>
+  <entityname.ita_climber1>Pistola de ganchos</entityname.ita_climber1>
+  <entitydescription.ita_climber1>Para la exploración de las numerosas redes de cuevas secas y ruinas de Europa.</entitydescription.ita_climber1>
+  <entityname.ita_CaveLamp1>LamparaCueva1</entityname.ita_CaveLamp1>
+  <entityname.ita_CaveLamp2>LamparaCueva2</entityname.ita_CaveLamp2>
+  <entityname.ita_lantern1>Farol</entityname.ita_lantern1>
+  <entityname.ita_door1>Puerta reforzada</entityname.ita_door1>
+  <entityname.ita_bridge1>Puente extensible</entityname.ita_bridge1>
+
+  <!--Store Items-->
+  <entityname.ita_container_depthholder1>Estante para carga de profundidad</entityname.ita_container_depthholder1>
+  <entitydescription.ita_container_depthholder1>Soporte de pared ajustable para guardar las cargas de profundidad de forma segura. Presione E para colocar o retirar con la llave inglesa.</entitydescription.ita_container_depthholder1>
+  <entityname.ita_duffelbag1>Bolsa de transporte flotante</entityname.ita_duffelbag1>
+  <entitydescription.ita_duffelbag1>Bolsa de viaje con una cámara que ajusta su flotabilidad.</entitydescription.ita_duffelbag1>
+
+  <entityname.ita_bartable>Mesa de venta - Bar</entityname.ita_bartable>
+  <entityname.ita_canteentable>Mesa de venta - Cantina</entityname.ita_canteentable>
+  <entityname.ita_clothiertable>Mesa de venta - Vestuario</entityname.ita_clothiertable>
+  <entityname.ita_pettradertable>Mesa de venta - Vendedor de mascotas</entityname.ita_pettradertable>
+  <entityname.ita_botanisttable>Mesa de venta - Botánico</entityname.ita_botanisttable>
+  <entityname.ita_electriciantable>Mesa de venta - Electricista</entityname.ita_electriciantable>
+  <entityname.ita_climbertable>Mesa de venta - Escalador</entityname.ita_climbertable>
+  <entityname.ita_gunsmithtable1>Mesa de venta - Armero</entityname.ita_gunsmithtable1>
+
+  <!--Furniture-->
+  <entityname.ita_bed>Cama de puesto de avanzada</entityname.ita_bed>
+  <entityname.ita_outpostchair1>Taburete de bar</entityname.ita_outpostchair1>
+  <entityname.ita_terminal>Terminal de puesto de avanzada</entityname.ita_terminal>
+  <entityname.ita_board1>Tablón de anuncios</entityname.ita_board1>
+  <entityname.ita_display>Armario expositor</entityname.ita_display>
+  <entityname.ita_outpostchair2>Silla de oficina para clientes</entityname.ita_outpostchair2>
+
+  <!--Clothing-->
+  <entityname.ita_engineersuitmecha1>TrajeMecha PNJ</entityname.ita_engineersuitmecha1>
+  <entityname.bluejumpsuit3>Traje de mecánico experto</entityname.bluejumpsuit3>
+  <entityname.orangejumpsuit3>Traje de Ingeniero Experto</entityname.orangejumpsuit3>
+  <entityname.doctorsuniform3>Traje de médico experto</entityname.doctorsuniform3>
+  <entityname.greenjumpsuit>Traje de botánico</entityname.greenjumpsuit>
+
+  <!--Clothing-->
+  <entityname.ita_bloodpunch>Bebida patada en los cojones</entityname.ita_bloodpunch>
+  <entityname.ita_crispychitin>Trozos de quitina crujientes</entityname.ita_crispychitin>
+  <entityname.ita_drinkfishtail>Cóctel de cola de pescado</entityname.ita_drinkfishtail>
+  <entityname.ita_crawyum>Craw-Yum!</entityname.ita_crawyum>
+ 
+ <!--Contests-->
+  <entityname.ita_race_ticket1>Billete rojo</entityname.ita_race_ticket1>
+  <entityname.ita_race_ticket2>Billete verde</entityname.ita_race_ticket2>
+  <entityname.ita_race_ticket3>Billete azul</entityname.ita_race_ticket3>
+
+  <!--Clothes-->
+  <entityname.ita_hazmat1>Traje antirradiación</entityname.ita_hazmat1>
+  <entitydescription.ita_hazmat1>Este traje para protección ante riesgos le ofrece una fuerte protección contra la radiación, la contaminación y el fuego. Tiene una ranura para un tanque de O2 en la espalda.</entitydescription.ita_hazmat1>
+
+  <entityname.ita_prisoneruniform>Uniforme de prisionero</entityname.ita_prisoneruniform>
+  <entitydescription.ita_prisoneruniform>Uniforme de prisionero desgastado y mugroso</entitydescription.ita_prisoneruniform>
+ 
+ <entityname.tongs>Tenazas</entityname.tongs>
+  <entitydescription.tongs>Utilízalas para sacar las barras de combustible calientes fuera del submarino. Si la varilla está en el suelo, recógela con la mano y colócala rápidamente en las tenazas.</entitydescription.tongs>
+
+  <!--Misc -->
+  <entityname.guide1>Guía - Barras de combustible</entityname.guide1>
+  <locationname.Cave>Formación de Cuevas Secas</locationname.Cave>
+
+  <!--Jobs-->
+  <jobname.gunner>ita_gunner_npc</jobname.gunner>
+  <jobdescription.gunner>NPCjob</jobdescription.gunner>
+  <jobname.soldier>ita_soldier_npc</jobname.soldier>
+  <SkillName.tough>Duro</SkillName.tough>
+  <SkillName.lepi>LePiromano</SkillName.lepi>
+  <jobdescription.soldier>NPCjob</jobdescription.soldier>
+
+  <!--Alien-->
+  <entityname.itasocket>Buzón para artefactos</entityname.itasocket>
+  <entitydescription.itasocket>Coloca aquí artefactos que no sean de la misión y tira de la palanca para contribuir a la investigación de Europa y obtener una recompensa.</entitydescription.itasocket>
+
+  <entityname.ita_alienchestwhite>Cofre alienígena blanco</entityname.ita_alienchestwhite>
+  <entityname.ita_alienchestblue>Cofre alienígena azul</entityname.ita_alienchestblue>
+  <entityname.ita_alienchestred>Cofre alienígena rojo</entityname.ita_alienchestred>
+  <entityname.ita_divingsuit>Armadura de buceo joviana</entityname.ita_divingsuit>
+  <entityname.ita_alienmace>Maza antigua</entityname.ita_alienmace>
+  <entityname.ita_alienmace1>Tecnología antigua - Parte inferior</entityname.ita_alienmace1>
+  <entityname.ita_alienmace2>Tecnología antigua - Parte superior</entityname.ita_alienmace2>
+  <entityname.ita_ancientpiece>Icono antiguo</entityname.ita_ancientpiece>
+
+  <entityname.spawnerfractal>Punto de aparición de guardianes fractales</entityname.spawnerfractal>
+  <entityname.ita_fabricator1>Fabricador ancestral</entityname.ita_fabricator1>
+  <entityname.socket1ita>Ranura cuadrada</entityname.socket1ita>
+  <entityname.socket2ita>Ranura hexagonal</entityname.socket2ita>
+  <entityname.socket3ita>Ranura en forma de T</entityname.socket3ita>
+  <entityname.socket4ita>Ranura para pila alienígena</entityname.socket4ita>
+  <entityname.ita_aliendoor_blue>Puerta azul alienígena</entityname.ita_aliendoor_blue>
+  <entityname.ita_aliendoor_red>Puerta roja alienígena</entityname.ita_aliendoor_red>
+  <entityname.ita_alienhatch_blue>Escotilla azul alienígena</entityname.ita_alienhatch_blue>
+  <entityname.ita_alienhatch_red>Escotilla roja alienígena</entityname.ita_alienhatch_red>
+
+  <locationchange.cave.changeto.mine>Los colonos de [previousname] han establecido un puesto minero en la cueva despejada.</locationchange.cave.changeto.mine>
+
+  <!-- When adding new text, do it so at the bottom under the 'New additions' & 'Changed values' respectively. If it's a new tag entirely, put it under the new additions one; If it's an update to an existing value, put it under the changed values one. -->
+  <!-- DO NOT EDIT EXISTING TAGS FOR ALREADY TRANSLATED LINES -> if you need a new tag for something, add it under the 'New values' header and comment if there's some other tag that should be replaced -->
+
+  <!--LINES MODIFIED-->
+  
+  <!--NEW LINES ADDED-->
+</infotexts>
