@@ -5,7 +5,7 @@
 		<modulecount flag="ita_engineeringmodule" count="1"/>
 		<modulecount flag="AdminModule" count="1"/>
 	</OutpostConfig>
-	<OutpostConfig identifier="cave" totalmodulecount="16" spawncrewinsideoutpost="false" minhallwaylength="600" allowstealing="true">
+	<OutpostConfig identifier="cave" totalmodulecount="16" allowedlocationtypes="Cave" spawncrewinsideoutpost="false" minhallwaylength="600" allowstealing="true">
 		<modulecount flag="ita_cave_entrance" count="1"/>
 		<modulecount flag="ita_cave_junction" count="1"/>
 		<modulecount flag="ita_cave_raiser" count="1"/>
