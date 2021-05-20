@@ -12,29 +12,37 @@
 
   <music file="Content/Sounds/Music/Subaquatic Symphony for Hammer And Metal.ogg" type="editor" continuefromprevioustime="true"/>
   
-  <music file="Content/Sounds/Music/Layer 3 - Leaving Start Location.ogg" type="start"/>
+  <music file="Content/Sounds/Music/Somethings outside.ogg" type="start" intensityrange="0,100" loop="false" />
 
   <music file="Content/Sounds/Music/Layer 4 - Arriving at Destination.ogg" type="endround"/>
   <music file="Content/Sounds/Music/Road to Hell.ogg" type="crewdead"/>
 
-  <music file="Content/Sounds/Music/Alien Syndicate.ogg" type="default" intensityrange="0,20"/>
-  <music file="Content/Sounds/Music/Seafloor Cries.ogg" type="default" intensityrange="0,20"/>
-  <music file="Content/Sounds/Music/Water Of The SSN Rusty Clown.ogg" type="default" intensityrange="0,20"/>
-  <music file="Content/Sounds/Music/Wondrous Places.ogg" type="default" intensityrange="0,20"/>
-  <music file="Content/Sounds/Music/Zack The Rabid Ripper.ogg" type="default" intensityrange="0,20"/>
-  <music file="Content/Sounds/Music/Moribund In An Underwater Coffin.ogg" type="default" intensityrange="0,20"/>
-  <music file="Content/Sounds/Music/Fragile Waves.ogg" type="default" intensityrange="0,20"/>
-  <music file="Content/Sounds/Music/Overclocked Weakness.ogg" type="default" intensityrange="0,20"/>
 
-   <music file="Content/Sounds/Music/Desperation.ogg" type="default" intensityrange="20,40"/>
-  <music file="Content/Sounds/Music/Engine room whales.ogg" type="default" intensityrange="20,50"/>
-  <music file="Content/Sounds/Music/Somethings outside.ogg" type="default" intensityrange="20,50"/>
+  <music file="Content/Sounds/Music/Alien Syndicate.ogg" type="default" intensityrange="0,100" loop="false"/>
+  <music file="Content/Sounds/Music/Seafloor Cries.ogg" type="default" intensityrange="0,100" loop="false"/>
+  <music file="Content/Sounds/Music/Water Of The SSN Rusty Clown.ogg" type="default" intensityrange="0,100" loop="false"/>
+  <music file="Content/Sounds/Music/Wondrous Places.ogg" type="default" intensityrange="0,100" loop="false"/>
+  <music file="Content/Sounds/Music/Moribund In An Underwater Coffin.ogg" type="default" intensityrange="0,100" loop="false"/>
+  <!--<music file="Content/Sounds/Music/Zack The Rabid Ripper.ogg" type="monster" intensityrange="0,100" loop="false"/>-->
+  <music file="Content/Sounds/Music/Fragile Waves.ogg" type="default" intensityrange="0,100" loop="false"/>
+  <music file="Content/Sounds/Music/Marching Upstream Part 1.ogg" type="default" intensityrange="0,100" loop="false"/>
+	
 
-  <music file="Content/Sounds/Music/Intensity Layer 1.ogg" type="intensity" intensityrange="51,80"/>
-  <music file="Content/Sounds/Music/Intensity Layer 4.ogg" type="intensity" intensityrange="80,100"/>
+  <music file="Content/Sounds/Music/Desperation.ogg" type="default" intensityrange="0,100" loop="false" />
+  <music file="Content/Sounds/Music/Engine room whales.ogg" type="default" intensityrange="0,100" loop="false" />
+  <music file="Content/Sounds/Music/Somethings outside.ogg" type="default" intensityrange="0,100" loop="false" />
+  <music file="Content/Sounds/Music/Extraterrestrial Broadcast.ogg" type="default" intensityrange="0,100" loop="false" />
+
+	<!--
+  <music file="Content/Sounds/Music/Layer 0 - Basic.ogg" type="intensity" duckvolume="true" intensityrange="0,100"/>
+  <music file="Content/Sounds/Music/Intensity Layer 1.ogg" type="intensity" intensityrange="95,96"/>
+  <music file="Content/Sounds/Music/Intensity Layer 2.ogg" type="intensity" intensityrange="97,98"/>
+  <music file="Content/Sounds/Music/Intensity Layer 3.ogg" type="intensity" intensityrange="93,94"/>
+  <music file="Content/Sounds/Music/Intensity Layer 4.ogg" type="intensity" intensityrange="91,92"/>-->
 
   <music file="Content/Sounds/Music/Layer 1 - Monsters Nearby.ogg" type="monster"/>
 
+  <music file="Content/Sounds/Music/Overclocked Weakness.ogg" type="city" intensityrange="0,100"/>
   <music file="Content/Sounds/Music/Wartrauma.ogg" type="military"/>
   <music file="Content/Sounds/Music/The Eerie And The Unknown.ogg" type="research"/>
   <music file="Content/Sounds/Music/Layer 2 - In The Ruins.ogg" type="ruins"/>
@@ -43,6 +51,8 @@
   <music file="Content/Sounds/Music/Layer 12 - Objective Complete.ogg" type="levelend"/>
   <music file="Content/Sounds/Music/Look Behind The Watery Shadows.ogg" type="wreck"/>
   <music file="Content/Sounds/Music/All But Systematic Chaos.ogg" type="ending"/>
+  
+  <music file="Content/Sounds/Music/The Eerie And The Unknown.ogg" type="cave"/>
   
   <damagesound file="Content/Sounds/Damage/StructureBlunt1.ogg" damagerange="0.0,30.0" damagesoundtype="StructureBlunt"/>
   <damagesound file="Content/Sounds/Damage/StructureBlunt2.ogg" damagerange="10.0,50.0" damagesoundtype="StructureBlunt"/>
@@ -106,18 +116,18 @@
   <damagesound file="Content/Sounds/Damage/HitClown1.ogg" damagerange="0.0,75.0" damagesoundtype="LimbClown"/>
   <damagesound file="Content/Sounds/Damage/HitClown2.ogg" damagerange="25.0,100.0" damagesoundtype="LimbClown"/>
 
-  <damagesound file="Content/Sounds/Damage/Creak1.ogg" damagesoundtype="Pressure"/>
-  <damagesound file="Content/Sounds/Damage/Creak2.ogg" damagesoundtype="Pressure"/>
-  <damagesound file="Content/Sounds/Damage/Creak3.ogg" damagesoundtype="Pressure"/>
-  <damagesound file="Content/Sounds/Damage/Creak4.ogg" damagesoundtype="Pressure"/>
-  <damagesound file="Content/Sounds/Damage/Creak5.ogg" damagesoundtype="Pressure"/>
+  <damagesound file="Content/Sounds/Damage/Creak1.ogg" damagesoundtype="Pressure" ignoremuffling="true"/>
+  <damagesound file="Content/Sounds/Damage/Creak2.ogg" damagesoundtype="Pressure" ignoremuffling="true"/>
+  <damagesound file="Content/Sounds/Damage/Creak3.ogg" damagesoundtype="Pressure" ignoremuffling="true"/>
+  <damagesound file="Content/Sounds/Damage/Creak4.ogg" damagesoundtype="Pressure" ignoremuffling="true"/>
+  <damagesound file="Content/Sounds/Damage/Creak5.ogg" damagesoundtype="Pressure" ignoremuffling="true"/>
 
   <damagesound file="Content/Sounds/Damage/ArmorBreak1.ogg" damagesoundtype="ArmorBreak" />
   <damagesound file="Content/Sounds/Damage/ArmorBreak2.ogg" damagesoundtype="ArmorBreak" />
   <damagesound file="Content/Sounds/Damage/ArmorBreak3.ogg" damagesoundtype="ArmorBreak" />
   <damagesound file="Content/Sounds/Damage/ArmorBreak4.ogg" damagesoundtype="ArmorBreak" />
 
-  <tinnitus file="Mods/IntoTheAbyss/Content/TinnitusBeQuiet.ogg" />
+  <tinnitus file="Mods/IntoTheAbyss/Content/Sounds/TinnitusBeQuiet.ogg" />
 
   <heartbeatdiastole file="Content/Sounds/HeartbeatDiastole1.ogg" />
   <heartbeatdiastole file="Content/Sounds/HeartbeatDiastole2.ogg" />
@@ -164,9 +174,9 @@
   <firemedium file="Content/Sounds/FireMedium.ogg"/>
   <firelarge file="Content/Sounds/FireLarge.ogg"/>
 
-  <waterambiencein file="Content/Sounds/Water/WaterAmbienceIn.ogg" volume="0.1"/>
-  <waterambienceout file="Content/Sounds/Water/WaterAmbienceOut.ogg" volume="0.6"/>
-  <waterambiencemoving file="Content/Sounds/Water/WaterAmbienceMoving.ogg" volume="0.2"/>
+  <waterambiencein file="Content/Sounds/Water/WaterAmbienceIn.ogg" volume="0.2"/>
+  <waterambienceout file="Content/Sounds/Water/WaterAmbienceOut.ogg" volume="0.3"/>
+  <waterambiencemoving file="Content/Sounds/Water/WaterAmbienceMoving.ogg" volume="0.3"/>
 
   <impact_soft file="Content/Sounds/Impact/SoftImpact1.ogg" range="500"/>
   <impact_soft file="Content/Sounds/Impact/SoftImpact2.ogg" range="600"/>
