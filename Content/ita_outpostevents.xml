@@ -6662,6 +6662,89 @@
 	</CheckDataAction>
 		</ScriptedEvent>
 		
+		<!--CAVES-->
+		<ScriptedEvent identifier="ita_cave1_sep1">
+			<CheckDataAction identifier="hideout1" condition="eq 0" _npos="-641.64575,-129.31702">
+    <Success>
+      <SetDataAction operation="Set" value="11" identifier="hideout1" _npos="-125.11047,-97.88422" />
+      <SpawnAction npcsetidentifier="ita_separatists" npcidentifier="ita_hideout_guard1" targettag="sep1" spawnlocation="Outpost" _npos="338.36572,-97.90085" />
+      <SpawnAction npcsetidentifier="ita_separatists" npcidentifier="ita_hideout_repairnpc1" targettag="sep2" spawnpointtag="hideout2" _npos="768.4713,-97.54642" />
+      <SpawnAction npcsetidentifier="ita_separatists" npcidentifier="ita_hideout_repairnpc2" targettag="sep3" spawnpointtag="hideout3" _npos="1164.249,-98.85809" />
+      <TagAction criteria="player" tag="crew" _npos="1611.5082,-98.11124" />
+      <Label name="start" _npos="2045.3918,-98.388275" />
+      <ClearTagAction tag="talker" _npos="2044.7686,-1.0087891" />
+      <WaitAction time="1" _npos="2044.7644,95.744354" />
+      <TriggerAction target1tag="sep1" target2tag="crew" applytotarget2="invoker" radius="250" _npos="2571.7412,-106.23636" />
+      <NPCFollowAction npctag="sep1" targettag="invoker" follow="true" _npos="2569.3042,228.67429" />
+      <ConversationAction text="eventtext.hideout1.1.1" invokertag="invoker" _npos="3049.0562,-106.87152">
+        <Option text="eventtext.hideout1.1.2" endconversation="true">
+          <Label name="combat" _npos="3293.441,-473.05527" />
+          <CombatAction combatmode="Offensive" npctag="sep1" enemytag="invoker" _npos="3750.0286,-481.06165" />
+          <CombatAction combatmode="Offensive" npctag="sep2" enemytag="invoker" _npos="4125.77,-481.7128" />
+          <CombatAction combatmode="Offensive" npctag="sep3" enemytag="invoker" _npos="4505.1733,-481.87082" />
+          <ReputationAction increase="-200" targettype="Location" _npos="4951.5566,-481.52573" />
+        </Option>
+        <Option text="eventtext.hideout1.1.3">
+          <Label name="talk" _npos="3685.892,-43.61508" />
+          <NPCWaitAction npctag="sep1" wait="true" _npos="3675.9688,86.27222" />
+          <ConversationAction text="eventtext.hideout1.1.5" targettag="invoker" _npos="4136.6646,-107.80484">
+            <Option text="eventtext.hideout1.1.6" endconversation="true">
+              <CheckItemAction targettag="invoker" itemidentifiers="ethanol" _npos="4758.142,-176.36731">
+                <Success>
+                  <GoTo name="end" _npos="5192.2583,-186.85992" />
+                </Success>
+                <Failure>
+                  <GoTo name="givethanol" _npos="5192.029,-66.99655" />
+                </Failure>
+              </CheckItemAction>
+            </Option>
+            <Option text="eventtext.hideout1.1.7" endconversation="true">
+              <Label name="givethanol" _npos="4985.2266,22.962418" />
+              <NPCWaitAction npctag="sep1" wait="false" _npos="4989.8677,136.19809" />
+              <ClearTagAction tag="asker" _npos="4983.7783,275.26175" />
+              <WaitAction time="2" _npos="4986.44,383.3333" />
+              <ConversationAction text="eventtext.hideout1.1.10" speakertag="sep1" invokertag="asker" _npos="5722.23,168.52463">
+                <Option text="eventtext.hideout1.1.11">
+                  <CheckItemAction targettag="invoker" itemidentifiers="ethanol" _npos="6371.6504,113.509674">
+                    <Success>
+                      <Label name="end" _npos="6834.1147,65.896545" />
+                      <NPCWaitAction npctag="sep1" wait="false" _npos="6833.4106,179.58743" />
+                      <ConversationAction text="eventtext.hideout1.1.13" targettag="invoker" _npos="7356.179,-117.59326">
+                        <Option text="&quot;A pleasure.&quot;" endconversation="true">
+                          <ReputationAction increase="5" identifier="separatists" targettype="Faction" _npos="7833.8438,-85.21536" />
+                          <RemoveItemAction targettag="invoker" itemidentifier="ethanol" amount="1" _npos="8235.55,-85.73685" />
+                          <SetDataAction operation="Set" value="1" identifier="hideout1" _npos="8611.086,-84.96402" />
+                        </Option>
+                      </ConversationAction>
+                    </Success>
+                  </CheckItemAction>
+                </Option>
+                <Option text="eventtext.hideout1.1.12" endconversation="true">
+                  <GoTo name="givethanol" _npos="6378.93,341.27985" />
+                </Option>
+              </ConversationAction>
+            </Option>
+            <Option text="eventtext.hideout1.1.8" endconversation="true" />
+            <Option text="eventtext.hideout1.1.9" endconversation="true">
+              <GoTo name="combat" _npos="4556.072,137.6633" />
+            </Option>
+          </ConversationAction>
+        </Option>
+        <Option text="eventtext.hideout1.1.4" endconversation="true">
+          <SkillCheckAction requiredskill="helm" requiredlevel="70" probabilitybased="false" targettag="invoker" _npos="3651.4329,551.46967">
+            <Success>
+              <GiveSkillExpAction skill="helm" amount="3" targettag="invoker" _npos="4133.0674,355.6734" />
+              <GoTo name="talk" _npos="4500.6367,355.67334" />
+            </Success>
+            <Failure>
+              <GoTo name="combat" _npos="4085.2583,735.1677" />
+            </Failure>
+          </SkillCheckAction>
+        </Option>
+      </ConversationAction>
+    </Success>
+  </CheckDataAction>
+		</ScriptedEvent>
 		
 		<!--OUTPOST TYPE CHECK-->
 		<ScriptedEvent identifier="ita_habcheck">

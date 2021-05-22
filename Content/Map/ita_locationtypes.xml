@@ -125,6 +125,7 @@
 		<Portrait texture="Content/Map/LocationPortraits/WorkCampMining1.png" premultiplyalpha="false"/>
 		<Portrait texture="Content/Map/LocationPortraits/WorkCampMining2.png" premultiplyalpha="false"/>
 		<Portrait texture="Content/Map/LocationPortraits/WorkCampMining3.png" premultiplyalpha="false"/>
+		
 		<Portrait texture="Content/Map/LocationPortraits/WorkCampMining4.png" premultiplyalpha="false"/>
 		<ChangeTo type="Mine" messagetag="locationchange.cave.changeto.mine" locationtypechangecooldown="0" requirediscovered="true">
 			<Requirement requiredlocations="Outpost,City,Military,Research,Mine" requiredproximity="1"/>
