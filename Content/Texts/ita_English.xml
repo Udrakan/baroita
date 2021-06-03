@@ -181,7 +181,7 @@
 	<eventtext.v1mechanicsarespecial.4>&quot;Smart-ass.&quot;&#xD;&#xA;&#xD;&#xA;He clearly doesn’t care much for what he sees and returns to his work. Apparently you’ve somehow not passed muster.</eventtext.v1mechanicsarespecial.4>
 	<eventtext.v1mechanicsarespecial.5>Keep your mouth shut.</eventtext.v1mechanicsarespecial.5>
 	<eventtext.v1mechanicsarespecial.6>&quot;You there, you look halfway competent. Give me a hand with this engine.&quot;</eventtext.v1mechanicsarespecial.6>
-	<eventtext.v1mechanicsarespecial.7>&quot;Fuck off, greasy.&quot;"</eventtext.v1mechanicsarespecial.7>
+	<eventtext.v1mechanicsarespecial.7>&quot;Fuck off, greasy.&quot;</eventtext.v1mechanicsarespecial.7>
 	<eventtext.v1mechanicsarespecial.8>The mechanic shakes his head in disbelief and continues working on the engine.&#xD;&#xA;[LOCATION REP -10]</eventtext.v1mechanicsarespecial.8>
 	<eventtext.v1mechanicsarespecial.9>Roll up your sleeves and help them with the engine."</eventtext.v1mechanicsarespecial.9>
 	<eventtext.v1mechanicsarespecial.10>You roll up your sleeves and get to work refitting the engine with him. After a few minutes of work you both manage to get it running. “Thanks. I’m sure I’d have got it going on my own eventually but you’ve saved me some time. Let me know if you want any work done on your sub and I’ll see about giving you a little discount for your trouble.”&#xD;&#xA;[MECHANICAL +5]&#xD;&#xA;[LOCATION REP +20]&#xD;&#xA;[UPGRADE SALE 15%]</eventtext.v1mechanicsarespecial.10>
@@ -342,9 +342,9 @@
 	<eventtext.itabeaconsep1.0b.5>&quot;Great! Good luck with your operations.&quot;&#xD;&#xA;[SEPARATIST REP +3]</eventtext.itabeaconsep1.0b.5>
 	<eventtext.itabeaconsep1.0b.6>&quot;I don't need anything, thanks. It was just a cheap circuit. Good luck with your operations!&quot;&#xD;&#xA;[SEPARATIST REP +7]</eventtext.itabeaconsep1.0b.6>
 	<eventtext.itabeaconsep1.0b.7>[WEAPONS 20] &quot;I've spent time, expertise, and material to help you. Surely you can reward me properly.&quot;</eventtext.itabeaconsep1.0b.7>
-	<eventtext.itabeaconsep1.0b.8>&quot;Hey, hey! You're pushing your luck 'ere, stranger.. This Crystal has its values, but.. Eh, whatever, here - take it. Probably not worth anything anyways..quot;&#xD;&#xA;[SEPARATIST REP +3]</eventtext.itabeaconsep1.0b.8>
-	<eventtext.itabeaconsep1.0b.9>[WEAPON 20 FAILED] &quot;Sorry, but that's all I've got. Take it or leave it.&quot;&#xD;&#xA;[SEPARATIST REP -2]</eventtext.itabeaconsep1.0b.9>
-	<eventtext.itabeaconsep1.0b.10>[ENGI 60 FAILED] &quot;You seem to be as clueless as I am!&quot;</eventtext.itabeaconsep1.0b.10>
+	
+	<eventtext.itabeaconsep1.0b.9>[WEAPON 20 FAILED] &quot;Sorry, but that's all I've got. Take it or leave it.&quot;&#xD;&#xA;[SEPARATIST REP -3]</eventtext.itabeaconsep1.0b.9>
+	
 	<eventtext.itabeaconsep1.0b.11>&quot;Even I know that that's not an FPGA circuit, kid.&quot;</eventtext.itabeaconsep1.0b.11>
 	<eventtext.itabeaconsep1.0b.12>&quot;Nope, sorry. Just looking around.&quot;</eventtext.itabeaconsep1.0b.12>
 	<eventtext.itabeaconsep1.0b.13>&quot;'You a clown? The real kind?&quot;</eventtext.itabeaconsep1.0b.13>
@@ -389,7 +389,6 @@
 	<eventtext.trainer.11>&quot;I don't want to be seen talking to scoundrels like you.&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]</eventtext.trainer.11>
 	<eventtext.trainer.12>&quot;I've been kicked out of my own submarine! They said I sabotaged them but all I've done were improvements with a bit of rewiring, until some idiot opened the door at a wrong moment and messed up my entire signal setup, resulting in a bit of flooding through a forcibly opened airlock... Anyways, I can show you some tips and tricks, if you've got the cash.&quot;</eventtext.trainer.12>
 	<eventtext.trainer.13>[360mk] &quot;As long as it simple and safe, sure.&quot; [+3 ELECTRICAL]</eventtext.trainer.13>
-	<eventtext.trainer.14>&quot;Maybe one of us will talk to you later about training, as long as you don't come anywhere close to our docking port.quot;</eventtext.trainer.14>
 	<eventtext.trainer.15>&quot;My former crew were complete neanderthals! They arrested me for trying to poison the engineering crew, but I was carrying the poisons to the deconstructor! The authorities here had me immediately released and I'm not climbing into a submarine again. I'm not for hire, but for a couple marks, I can teach you medical skill.&quot;</eventtext.trainer.15>
 	<eventtext.trainer.16>[360mk] &quot;Sure, just keep your hands where I can see them, okay?&quot; [+3 MEDICAL]</eventtext.trainer.16>
 
@@ -610,7 +609,7 @@
 	<entityname.ita_bloodpunch>Blood Punch Drink</entityname.ita_bloodpunch>
 	<entityname.ita_crispychitin>Crispy Chitin Bits</entityname.ita_crispychitin>
 	<entityname.ita_drinkfishtail>Fishtail Cocktail</entityname.ita_drinkfishtail>
-	<entityname.ita_crawyum>ita_crawyum</entityname.ita_crawyum>
+	
 	
 	<!--Contests-->
 	<entityname.ita_race_ticket1>Red ticket</entityname.ita_race_ticket1>
@@ -669,6 +668,10 @@
 	<!-- DO NOT EDIT EXISTING TAGS FOR ALREADY TRANSLATED LINES -> if you need a new tag for something, add it under the 'New values' header and comment if there's some other tag that should be replaced -->
 	
 	<!--LINES MODIFIED-->	
-
+	<eventtext.itabeaconsep1.0b.8>"Hey, hey! You're pushing your luck 'ere, stranger.. This Crystal has its values, but.. Eh, whatever, here - take it. Probably not worth anything anyways.."&#xD;&#xA;</eventtext.itabeaconsep1.0b.8>
+	<eventtext.itabeaconsep1.0b.10>[ENGI 45 FAILED] &quot;You seem to be as clueless as I am!&quot;</eventtext.itabeaconsep1.0b.10>
+	<eventtext.trainer.14>"Maybe one of us will talk to you later about training, as long as you don't come anywhere close to our docking port."</eventtext.trainer.14>
+    <entityname.ita_crawyum>Craw-Yum! Soup</entityname.ita_crawyum>
 	<!--NEW LINES ADDED-->
+	<entitydescription.ita_crawyum>Pinch your nose and swallow quickly.</entitydescription.ita_crawyum>
 </infotexts>

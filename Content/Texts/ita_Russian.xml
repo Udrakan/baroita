@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Russian" nowhitespace="false" translatedname="Русский">
+
+<!-- When adding new text, do it so at the bottom under the 'New additions' & 'Changed values' respectively. If it's a new tag entirely, put it under the new additions one; If it's an update to an existing value, put it under the changed values one. -->
+<!-- DO NOT EDIT EXISTING TAGS FOR ALREADY TRANSLATED LINES -> if you need a new tag for something, add it under the 'New values' header and comment if there's some other tag that should be replaced -->
+
+	
+	<!--Afflictions-->
+	
+	<afflictionname.exposure>Лучевые Ожоги</afflictionname.exposure>
+	<afflictiondescription.exposure>Прикосновение к раскаленным топливным стержням вызвало тяжелые локализованные радиационные ожоги и волдыри.</afflictiondescription.exposure>
+	<afflictioncauseofdeath.exposure>Погибает от облучения и ожогов</afflictioncauseofdeath.exposure>
+	<afflictioncauseofdeathself.exposure>Вы погибаете от облучения и ожогов.</afflictioncauseofdeathself.exposure>
+
+	<afflictionname.ancientburn>Синие Ожоги</afflictionname.ancientburn>
+	<afflictiondescription.ancientburn>Посиневшие ожоги и волдыри, оплавленная плоть, результат применения древних инопланетных технологий с Европы.</afflictiondescription.ancientburn>
+	<afflictioncauseofdeath.ancientburn>Сожжен до тла</afflictioncauseofdeath.ancientburn>
+	<afflictioncauseofdeathself.ancientburn>Вы были испепелены.</afflictioncauseofdeathself.ancientburn>
+
+	<afflictionname.heal1>Терапия</afflictionname.heal1>
+	<afflictiondescription.heal1>Качественное лечение в стационаре</afflictiondescription.heal1>
+
+	<afflictionname.heal2>Сытость</afflictionname.heal2>
+	<afflictiondescription.heal2>Вкусная пища согревает тело и душу.[Исцеление Травм]</afflictiondescription.heal2>
+
+	<afflictionname.heal3>Крепкий Сон</afflictionname.heal3>
+	<afflictiondescription.heal3>Теплая постель, вне душной бочки, творит чудеса.[Исцеление Травм]</afflictiondescription.heal3>
+
+	<afflictionname.heal4>Хорошо погуляли!</afflictionname.heal4>
+	<afflictiondescription.heal4>Выпивка на заставе, в компании относительно вменяемых людей, заставляет забыть об ужасах Океана, хоть и не на долго.[Психоз - Отступает][Крепость Духа - Повышена]</afflictiondescription.heal4>
+ 
+	<!--Characters-->
+
+	<character.Molochboss>Древних Молох</character.Molochboss>
+	<character.OutpostOrangeboy>Одомашненный Оранжевый Парень</character.OutpostOrangeboy>
+
+	<!--Mission texts-->
+
+	<missionname.cargopassanger1>Пассажирский Транспорт</missionname.cargopassanger1>
+	<missiondescription.cargopassanger1>Доставьте меня до [location2] в сохранности, и я заплачу вам [reward] кредитов.</missiondescription.cargopassanger1>
+	<missionsuccess.cargopassanger1>Спасибо что подбросили.</missionsuccess.cargopassanger1>
+
+	<missionname.cargoprisoner1>Транспортировка Заключенных</missionname.cargoprisoner1>
+	<missiondescription.cargoprisoner1>5 заключенных должны быть доставлены в [location2], живыми.</missiondescription.cargoprisoner1>
+	<missionsuccess.cargoprisoner1>Заключенные уцелели</missionsuccess.cargoprisoner1>
+
+	<missionname.cargoprisoner2>Транспортировка Заключенных</missionname.cargoprisoner2>
+	<missiondescription.cargoprisoner2>Группа клоунов уже достала жильцов [location1]. Награда в размере [reward] кредитов обещана экипажу судна, которое доставит этих клоунов в [location2]. Пускай тоже повеселятся.</missiondescription.cargoprisoner2>
+	<missionsuccess.cargoprisoner2>Клоуны прибыли...</missionsuccess.cargoprisoner2>
+
+	<missionname.cargoprisoner3>Транспортировка Заключенных</missionname.cargoprisoner3>
+	<missiondescription.cargoprisoner3>Банда сошедших с ума культистов арестована на станции [location1] за их подозрительную деятельность. Ваше вознаграждение - [reward]кр, вы получите после того, как доставите всех троих невредимыми к психиатру в [location2].</missiondescription.cargoprisoner3>
+	<missionsuccess.cargoprisoner3>Психиатр встречает культистов как родных братьев, и заплатил вам обещанную сумму.</missionsuccess.cargoprisoner3>
+
+	<missionname.cargotime1>Срочный Груз</missionname.cargotime1>
+	<missiondescription.cargotime1>Груз скоропортящихся материалов необходимо доставить исследователю на ближайшем аванпосте. По нашим подсчетам у вас есть 10 минут на его доставку после извлечния из микроволновой камеры. Удачи!</missiondescription.cargotime1>
+	<missionsuccess.cargotime1>Неустойчивый материал был доставлен вовремя.</missionsuccess.cargotime1>
+
+	<missionname.cargowater1>Водобоязненный Товар</missionname.cargowater1>
+	<missiondescription.cargowater1>Ящик свежей выпечки необходимо перевезти в [location2]. Не дайте ей промокнуть!</missiondescription.cargowater1>
+	<missionsuccess.cargowater1>Товар был доставлен сухим и еще теплым!</missionsuccess.cargowater1>
+
+	<missionname.cargoeggs>Транспортировка Яиц</missionname.cargoeggs>
+	<missiondescription.cargoeggs>Два контейнера с яйцами грязевых рапторов должны быть доставлены в рефрижераторные камеры [location2]. До того как они начнут вылупляться осталось где-то 11 минут. Лучше вам доставить их вовремя!</missiondescription.cargoeggs>
+	<missionsuccess.cargoeggs>Яица были доставлены в холодильники исследователей на станции [location2].</missionsuccess.cargoeggs>
+
+	<missionname.cargofragile1>Хрупкий Груз</missionname.cargofragile1>
+	<missiondescription.cargofragile1>Необходимо доставить хрупкий груз в локацию [location2]. Убедитесь, что груз в надежном месте и не разобьется в пути! Ставьте его на пол из положения приседа, если груз потребовалось переместить.</missiondescription.cargofragile1>
+	<missionsuccess.cargofragile1>Груз был доставлен в целости и сохранности.</missionsuccess.cargofragile1>
+
+	<missionname.cargoeggs2>Транспортировка Опасных Яиц</missionname.cargoeggs2>
+	<missiondescription.cargoeggs2>Ученому, с аванпоста [location2], необходимо доставить 2 мобильных рефрижератора с яицами грязевых рапторов. Батарейки служат источником питания для рефрижераторов, так что не забывайте менять их вовремя!</missiondescription.cargoeggs2>
+	<missionsuccess.cargoeggs2>Отлично, яйца не успели вылупиться, а доставка завершена.</missionsuccess.cargoeggs2>
+
+	<missionname.cargoeggs3>Живые Образцы</missionname.cargoeggs3>
+	<missiondescription.cargoeggs3>Служба безопасности [location1] поймала и заковала грязевого раптора, которого теперь необходимо перевезти на аванпост [location2], для подготовки его к забегам рапторов. Чтобы раптор не очнулся раньше времени, необходимо поддерживать дозу опиума.</missiondescription.cargoeggs3>
+	<missionsuccess.cargoeggs3>Транспортировка прошла успешно, к несчастью для раптора.</missionsuccess.cargoeggs3>
+
+	<missionname.killwatcher>Уничтожение Смотрителя</missionname.killwatcher>
+	<missiondescription.killwatcher>Избавьтесь от Смотрителя и его прислужников.</missiondescription.killwatcher>
+	<missionsonarlabel.killwatcher>Цель</missionsonarlabel.killwatcher>
+	<missionsuccess.killwatcher>Смотритель и его прислужники были уничтожены.</missionsuccess.killwatcher>
+	<missionheader0.killwatcher>Цели уничтожены</missionheader0.killwatcher>
+	<missionmessage0.killwatcher>Смотритель и его прислужники были уничтожены. На аванпосте вас ожидает вознаграждение.</missionmessage0.killwatcher>
+
+	<missionname.killmolochboss>Уничтожение Древнего Молоха</missionname.killmolochboss>
+	<missiondescription.killmolochboss>Этот древний молох вызывает серьезные проблемы с логистикой и достаточно опасен, что даже потопил пару ударных подводных лодок. Награда в размере [reward]кр. обещана тем профессионалам, что смогут избавиться от него.</missiondescription.killmolochboss>
+	<missionsonarlabel.killmolochboss>Цель</missionsonarlabel.killmolochboss>
+	<missionsuccess.killmolochboss>Древний Молох был уничтожен.</missionsuccess.killmolochboss>
+	<missionheader0.killmolochboss>Цель уничтожена</missionheader0.killmolochboss>
+	<missionmessage0.killmolochboss>Древний Молох повержен, ваш экипаж станет легендой. На аванпосте вас ожидает вознаграждение.</missionmessage0.killmolochboss>
+
+	<missionname.ita_swarmsmall_crawler>Уничтожение малого Роя</missionname.ita_swarmsmall_crawler>
+	<missiondescription.ita_swarmsmall_crawler>Замечена небольшая стая ползунов, они досаждают судам, следующим по маршруту [location1] - [location2]. Экипаж, устранивший угрозу, получит вознаграждение - [reward] кредитов.</missiondescription.ita_swarmsmall_crawler>
+	<missionsonarlabel.ita_swarmsmall_crawler>Рой</missionsonarlabel.ita_swarmsmall_crawler>
+	<missionsuccess.ita_swarmsmall_crawler>Рой истреблен.</missionsuccess.ita_swarmsmall_crawler>
+	<missionheader0.ita_swarmsmall_crawler>Цели уничтожены</missionheader0.ita_swarmsmall_crawler>
+	<missionmessage0.ita_swarmsmall_crawler>Стая ползунов истреблена. На аванпосте вас ожидает вознаграждение.</missionmessage0.ita_swarmsmall_crawler>
+
+	<missionname.ita_swarmsmall_thresher>Уничтожение малого Роя</missionname.ita_swarmsmall_thresher>
+	<missiondescription.ita_swarmsmall_thresher>Замечена небольшая стая акульих тигров, они досаждают судам, следующим по маршруту [location1] - [location2]. Экипаж, устранивший угрозу, получит вознаграждение - [reward] кредитов.</missiondescription.ita_swarmsmall_thresher>
+	<missionsonarlabel.ita_swarmsmall_thresher>Рой</missionsonarlabel.ita_swarmsmall_thresher>
+	<missionsuccess.ita_swarmsmall_thresher>Рой истреблен.</missionsuccess.ita_swarmsmall_thresher>
+	<missionheader0.ita_swarmsmall_thresher>Цели уничтожены</missionheader0.ita_swarmsmall_thresher>
+	<missionmessage0.ita_swarmsmall_thresher>Стая акульих тигров истреблена. На аванпосте вас ожидает вознаграждение.</missionmessage0.ita_swarmsmall_thresher>
+
+	<missionname.ita_swarmsmall_mudraptor1>Уничтожение малого Роя</missionname.ita_swarmsmall_mudraptor1>
+	<missiondescription.ita_swarmsmall_mudraptor1>Поступили сообщения о стае молодняка рапторов, ареал их обитания находится между [location1] и [location2]. [reward] кредитов достанутся вашему экипажу, если вы перебьете весь выводок.</missiondescription.ita_swarmsmall_mudraptor1>
+	<missionsonarlabel.ita_swarmsmall_mudraptor1>Стая</missionsonarlabel.ita_swarmsmall_mudraptor1>
+	<missionsuccess.ita_swarmsmall_mudraptor1>Cтая истреблена.</missionsuccess.ita_swarmsmall_mudraptor1>
+	<missionheader0.ita_swarmsmall_mudraptor1>Цели уничтожены</missionheader0.ita_swarmsmall_mudraptor1>
+	<missionmessage0.ita_swarmsmall_mudraptor1>Стая грязевых рапторов истреблена. На аванпосте вас ожидает вознаграждение.</missionmessage0.ita_swarmsmall_mudraptor1>
+
+	<missionname.ita_swarmsmall_mudraptor2>Уничтожение малого Роя</missionname.ita_swarmsmall_mudraptor2>
+	<missiondescription.ita_swarmsmall_mudraptor2>Небольшая стая взрослых рапторов бороздит воды между [location1] и [location2]. Разберитесь с ними, и награда в [reward] ваша.</missiondescription.ita_swarmsmall_mudraptor2>
+	<missionsonarlabel.ita_swarmsmall_mudraptor2>Стая</missionsonarlabel.ita_swarmsmall_mudraptor2>
+	<missionsuccess.ita_swarmsmall_mudraptor2>Cтая истреблена.</missionsuccess.ita_swarmsmall_mudraptor2>
+	<missionheader0.ita_swarmsmall_mudraptor2>Цели уничтожены</missionheader0.ita_swarmsmall_mudraptor2>
+	<missionmessage0.ita_swarmsmall_mudraptor2>Стая грязевых рапторов истреблена. На аванпосте вас ожидает вознаграждение.</missionmessage0.ita_swarmsmall_mudraptor2>
+
+	<missionname.ita_swarmlarge_crawler>Уничтожение крупного Роя</missionname.ita_swarmlarge_crawler>
+	<missiondescription.ita_swarmlarge_crawler>Большая группа ползунов терроризирует суда на маршруте [location1] - [location2]. Награда в [reward] кредитов будет выплачена тому экипажу, который разберется с угрозой.</missiondescription.ita_swarmlarge_crawler>
+	<missionsonarlabel.ita_swarmlarge_crawler>Рой</missionsonarlabel.ita_swarmlarge_crawler>
+	<missionsuccess.ita_swarmlarge_crawler>Рой истреблен.</missionsuccess.ita_swarmlarge_crawler>
+	<missionheader0.ita_swarmlarge_crawler>Цели уничтожены</missionheader0.ita_swarmlarge_crawler>
+	<missionmessage0.ita_swarmlarge_crawler>Рой ползунов уничтожен. На аванпосте вас ожидает вознаграждение.</missionmessage0.ita_swarmlarge_crawler>
+
+	<missionname.ita_swarmlarge_thresher>Уничтожение крупного Роя</missionname.ita_swarmlarge_thresher>
+	<missiondescription.ita_swarmlarge_thresher>Большая группа акульих тигров терроризирует суда на маршруте [location1] - [location2]. За нейтрализацию угрозы назначено [reward] кредитов.</missiondescription.ita_swarmlarge_thresher>
+	<missionsonarlabel.ita_swarmlarge_thresher>Рой</missionsonarlabel.ita_swarmlarge_thresher>
+	<missionsuccess.ita_swarmlarge_thresher>Рой истреблен.</missionsuccess.ita_swarmlarge_thresher>
+	<missionheader0.ita_swarmlarge_thresher>Цели уничтожены</missionheader0.ita_swarmlarge_thresher>
+	<missionmessage0.ita_swarmlarge_thresher>Рой акульих тигров уничтожен. На аванпосте вас ожидает вознаграждение.</missionmessage0.ita_swarmlarge_thresher>
+
+	<missionname.ita_swarmlarge_mudraptor1>Уничтожение крупного Роя</missionname.ita_swarmlarge_mudraptor1>
+	<missiondescription.ita_swarmlarge_mudraptor1>Большая группа молодых рапторов появилась на пути из [location1] в [location2]. [reward] кредитов достанутся вашему экипажу, если перебьете их всех.</missiondescription.ita_swarmlarge_mudraptor1>
+	<missionsonarlabel.ita_swarmlarge_mudraptor1>Стая</missionsonarlabel.ita_swarmlarge_mudraptor1>
+	<missionsuccess.ita_swarmlarge_mudraptor1>Cтая истреблена.</missionsuccess.ita_swarmlarge_mudraptor1>
+	<missionheader0.ita_swarmlarge_mudraptor1>Цели уничтожены</missionheader0.ita_swarmlarge_mudraptor1>
+	<missionmessage0.ita_swarmlarge_mudraptor1>Рой грязевых рапторов уничтожен. На аванпосте вас ожидает вознаграждение.</missionmessage0.ita_swarmlarge_mudraptor1>
+
+	<missionname.ita_swarmlarge_mudraptor2>Уничтожение крупного Роя</missionname.ita_swarmlarge_mudraptor2>
+	<missiondescription.ita_swarmlarge_mudraptor2>Особо крупная стая грязевых рапторов заняла маршрут между станциями [location1] и [location2], и уничтожает все, что им попадается, включая боевые подлодки. Over9000 кредитов обещано тем безумцам, что отважатся разобраться с ними.</missiondescription.ita_swarmlarge_mudraptor2>
+	<missionsonarlabel.ita_swarmlarge_mudraptor2>Стая</missionsonarlabel.ita_swarmlarge_mudraptor2>
+	<missionsuccess.ita_swarmlarge_mudraptor2>Рой истреблен.</missionsuccess.ita_swarmlarge_mudraptor2>
+	<missionheader0.ita_swarmlarge_mudraptor2>Цели уничтожены</missionheader0.ita_swarmlarge_mudraptor2>
+	<missionmessage0.ita_swarmlarge_mudraptor2>Рой грязевых рапторов уничтожен. На аванпосте вас ожидает вознаграждение.</missionmessage0.ita_swarmlarge_mudraptor2>
+
+	<missionname.ita_drycave_clear1>Зачистка Пещеры</missionname.ita_drycave_clear1>
+	<missiondescription.ita_drycave_clear1>В этой пещере полно агрессивных созданий, которые мешают людям вести здесь разработки. Используйте сонар, чтоб найти и уничтожить всех тварей и кладки их яиц.</missiondescription.ita_drycave_clear1>
+	<missionsonarlabel.ita_drycave_clear1>O</missionsonarlabel.ita_drycave_clear1>
+	<missionheader0.ita_drycave_clear1>Гнездо Зачищено</missionheader0.ita_drycave_clear1>
+	<missionsuccess.ita_drycave_clear1>Вы уничтожили гнездо, помешав тварям развитить здесь их род.</missionsuccess.ita_drycave_clear1>
+
+
+	<!--Event Texts-->
+
+	<eventtext.itamissioneventcargosensitive>"Необходимо аккуратно доставить хрупкий груз. Не повредите его!"</eventtext.itamissioneventcargosensitive>
+	<eventtext.itamissioneventcargomonster>"Перевозка живых существ. Будь осторожен, или будешь съеден..."</eventtext.itamissioneventcargomonster>
+	<eventtext.itamissioneventeggtime>"Перевозка живых существ. Будь осторожен, или будешь съеден..."</eventtext.itamissioneventeggtime>
+	<eventtext.itamissioneventeggfridge>"Перевозка живых существ. Будь осторожен, или будешь съеден..."</eventtext.itamissioneventeggfridge>
+	<eventtext.itamissioneventlivemudraptor>"Перевозка живых существ. Будь осторожен, или будешь съеден..."</eventtext.itamissioneventlivemudraptor>
+	<eventtext.itamissioneventcargobulk>"Доставка крупной партии грузов. Просторная грузовая подлодка, оборудованная стеллажами, строго рекомендована!"</eventtext.itamissioneventcargobulk>
+
+	<eventtext.itahusk1.p1>Громкоговорители аванпоста: &quot;Тревога! Изоляционная камера с паразитами вскрыта! Кто бы ты ни был, ты заплатишь за это!&quot;&#xD;&#xA;[Аванпост &#x9;  Репутация -200]</eventtext.itahusk1.p1>
+	<eventtext.itahusk1.p2>Громкоговорители аванпоста: &quot;Тревога! Изоляционная камера с паразитами вскрыта! Кто бы ты ни был, ты заплатишь за это!&quot; Культ одобряет это... &#xD;&#xA;[Культ Паразита &#x9;&#x9;  Репутация+50]&#xD;&#xA;[Коалиция   Репутация -70]&#xD;&#xA;[Аванпост &#x9;  Репутация -200]</eventtext.itahusk1.p2>
+
+	<eventtext.itacrawler1.p1>Громкоговорители аванпоста: &quot;Ползуны выбрались из камеры содержания! Тот, кто их выпустил, ответит за это.&quot;&#xD;&#xA;[Аванпост &#x9;  Репутация -200]&#xD;&#xA;[Коалиция  Репутация -30]</eventtext.itacrawler1.p1>
+	<eventtext.itacrawler1.p2>Громкоговорители аванпоста: &quot;Ползуны выбрались из камеры содержания! Тот, кто их выпустил, ответит за это.&quot;&#xD;&#xA;[Аванпост &#x9;  Репутация -200]&#xD;&#xA;[Сепаратисты  Репутация +20]&#xD;&#xA;[Коалиция  Репутация -30]</eventtext.itacrawler1.p2>
+
+	<eventtext.v1mechanicsarespecial1>Старший механик, возившийся над старым, видавшем виды, двигателем шаттла, бросил на вас сердитый взгляд, словно оценивая.</eventtext.v1mechanicsarespecial1>
+	<eventtext.v1mechanicsarespecial.cl1>В инженерном отсеке собралось много усталых и угрюмых трудяг. Было бы весьма кстати кому-нибудь подбодрить их.</eventtext.v1mechanicsarespecial.cl1>
+	<eventtext.v1mechanicsarespecial.cl2>[Велосипедный Гудок] Выступить с небольшой импровизацией и вашим верным красным гудком.</eventtext.v1mechanicsarespecial.cl2>
+	<eventtext.v1mechanicsarespecial.cl3>&quot;Изобразив расстроенный вид, вы стаскиваете свой клоунский парик, указывая на поломанный двигатель. Заведя за выхлопную трубу руку с гудком, и хлопнув по нему другой, вы издаете слабый протяжный гудок. Вам удалось рассмешить рабочих и напряженная обстановка сразу спадает. Легкая улыбка проскользнула на лице старшего механика, и он протянул вам купюру в 50 кредитов.&quot;&#xD;&#xA;&#xD;&#xA;[Красный Нос  Репутация +10]&#xD;&#xA;[Аванпост  Репутация +10]</eventtext.v1mechanicsarespecial.cl3>
+	<eventtext.v1mechanicsarespecial.cl4>[Гитара] Попробовать растопить сердца рабочих приятной мелодией.</eventtext.v1mechanicsarespecial.cl4>
+	<eventtext.v1mechanicsarespecial.cl5>Увы, но звук вашей гитары тонет среди гула и шума оборудования, и лишь отзвуки мелодии, достигающие слуха рабочих, не вызывают никакой реакции. Плохой день...</eventtext.v1mechanicsarespecial.cl5>
+	<eventtext.v1mechanicsarespecial.cl6>Взять с полки гаечный ключ и *bonk* себя по голове.</eventtext.v1mechanicsarespecial.cl6>
+	<eventtext.v1mechanicsarespecial.cl7>Механик нахмурился.&#xD;&#xA;&quot;Проваливай отсюда, клоун, пока мы не наваляли тебе еще.&quot;&#xD;&#xA;&#xD;&#xA;[Красный Нос  Репутация -5]&#xD;&#xA;[Аванпост  Репутация -5]</eventtext.v1mechanicsarespecial.cl7>
+	<eventtext.v1mechanicsarespecial.2>[Управление 70] Вы припоминаете номерной код двигатей этой модели из старой накладной.</eventtext.v1mechanicsarespecial.2>
+	<eventtext.v1mechanicsarespecial.3>&quot;Я узнаю этот двигатель. Такие закупались для шаттлов Венчур.&quot;</eventtext.v1mechanicsarespecial.3>
+	<eventtext.v1mechanicsarespecial.4>&quot;Кхм...умник.&quot;&#xD;&#xA;&#xD;&#xA; Ваши слова его явно не заинтересовали, и он возвращается к своей работе. Похоже, вы провалились.</eventtext.v1mechanicsarespecial.4>
+	<eventtext.v1mechanicsarespecial.5>Оставаться безмолвным.</eventtext.v1mechanicsarespecial.5>
+	<eventtext.v1mechanicsarespecial.6>&quot;Эй ты, выглядишь вполовину компетентным. Помоги-ка мне с этим двигателем.&quot;</eventtext.v1mechanicsarespecial.6>
+	<eventtext.v1mechanicsarespecial.7>&quot;Пошел ты...урод.&quot;</eventtext.v1mechanicsarespecial.7>
+	<eventtext.v1mechanicsarespecial.8>Не веря своим ушам механик покачал головой и продолжил свою работу.&#xD;&#xA;[Аванпост  Репутация -10]</eventtext.v1mechanicsarespecial.8>
+	<eventtext.v1mechanicsarespecial.9>Закатать рукава и помочь ему с ремонтом.</eventtext.v1mechanicsarespecial.9>
+	<eventtext.v1mechanicsarespecial.10>Закатав рукава, вы вместе с ним начинаете перебирать двигатель. Через некоторое время вам, все-таки, удается запустить его. Механик хмыкнул, явно довольный результатом - “Уверен, я бы и сам справился, но все равно, спасибо, вы сэкономили мне время. Дайте мне знать, если над вашей лодкой надо поработать, и я позабочусь о том, чтоб вам предоставили небольшую скидку.”&#xD;&#xA;[Механика +5]&#xD;&#xA;[Аванпост  Репутация +20]&#xD;&#xA;[Скидка на улучшения = 15%]</eventtext.v1mechanicsarespecial.10>
+	<eventtext.v1mechanicsarespecial.11>Закатав рукава, вы вместе с ним начинаете перебирать двигатель, но несмотря на все ваши усилия, мотор отказывается запускаться. С досады хлопнув приборной крышкой, механик закурил. “Чтож, полагаю этот пойдет в утиль. В любом случае, спасибо за помощь.”&#xD;&#xA;[Механика +1]&#xD;&#xA;[Аванпост  Репутация +5]</eventtext.v1mechanicsarespecial.11>
+	<eventtext.v1mechanicsarespecial.12>Ваши слова его явно не заинтересовали, и он возвращается к своей работе. Похоже, вы провалились.&#xD;&#xA;&#xD;&#xA;&quot;Если среди вашего экипажа есть кто-то, готовый испачкать руки, пришли его ко мне.&quot;</eventtext.v1mechanicsarespecial.12>
+	<eventtext.v1mechanicsarespecial.13>[Механика 90] Вы сразу узнаете двигатель.</eventtext.v1mechanicsarespecial.13>
+	<eventtext.v1mechanicsarespecial.14>&quot;Это же движок шаттлов Венчур. Они постоянно ломаются, обеспечивая таких людей, как я и ты, работой.&quot;</eventtext.v1mechanicsarespecial.14>
+
+	<eventtext.v2givingdirections.1>&quot;Проблемы с маршрутом? Я позову своего товарища по команде, может он сможет помочь.&quot;</eventtext.v2givingdirections.1>
+	<eventtext.v2givingdirections.2>&quot;Я был бы признателен за это, спасибо.&quot;</eventtext.v2givingdirections.2>
+	<eventtext.v2givingdirections.3>[Оружие --/60] Попробовать выхватить у него револьвер, пока он отвернулся.</eventtext.v2givingdirections.3>
+	<eventtext.v2givingdirections.4>[Управление --/50] &quot;Позвольте, я взгляну. Возможно, мы направляемся в одну сторону.&quot;</eventtext.v2givingdirections.4>
+	<eventtext.v2givingdirections.5>Пусть с капитанскими проблемами разбирается кто-нибудь другой.</eventtext.v2givingdirections.5>
+
+	<eventtext.v3soundinthevent1>[Отвертка][Механика --/60] Открутить вентиляционную решетку, чтобы заглянуть внутрь.</eventtext.v3soundinthevent1>
+	<eventtext.v3soundinthevent2>Снять ее не составило труда, и вы сразу смогли обнаружить источник шума: лопасти вентилятора задевают небольшую металлическую коробочку. Осторожно вынув ее, вы находите в ней 1000 кредитов! Какой-то посторонний шум все еще слышен глубже в вентиляционной трубе, но кого это уже волнует?&#xD;&#xA;[1000кр]&#xD;&#xA;[Механика +3]</eventtext.v3soundinthevent2>
+	<eventtext.v3soundinthevent3>Провозившись с вентиляционной решеткой ее все-таки удается снять, но при этом, весьма неловко попав под вращающиеся лопости. Вы не успеваете отдернуть руку, и лопасть задевает ее, рассекая артерию.&#xD;&#xA;&#xD;&#xA;[Оружие 30] Успех&#xD;&#xA;&#xD;&#xA;Преодолевая боль, вы все-таки дотягиваетесь до небольшой металлической коробочки, которая и была источником шума. Осторожно открыв ее, вы находите в ней 1000 кредитов! Какой-то посторонний шум все еще слышен глубже в вентиляционной трубе, но кого это уже волнует?&#xD;&#xA;&#xD;&#xA;[1000кр]&#xD;&#xA;[Оружие +3]&#xD;&#xA;</eventtext.v3soundinthevent3>
+	<eventtext.v3soundinthevent4>Провозившись с вентиляционной решеткой ее все-таки удается снять, но при этом, весьма неловко попав под вращающиеся лопости. Вы не успеваете отдернуть руку, и лопасть задевает ее, рассекая артерию.</eventtext.v3soundinthevent4>
+	<eventtext.v3soundinthevent5>Голыми руками открутить винты не удалось.</eventtext.v3soundinthevent5>
+	<eventtext.v3soundinthevent6>[Фонарик] Посветить фонариком через в вентиляцию, может быть удастся что-нибудь разглядеть.</eventtext.v3soundinthevent6>
+	<eventtext.v3soundinthevent7>Вы видите, что лопасти вентилятора задевают маленькую металлическую коробочку. Однако, чтоб достать ее, вам придется открутить вентиляционную решетку...</eventtext.v3soundinthevent7>
+	<eventtext.v3soundinthevent8>Вы хлопаете себя по карманам, в поисках фонарика, но вспоминаете, что у вас его нет. Может быть найдется, у кого-то из ваших товарищей?</eventtext.v3soundinthevent8>
+	<eventtext.v3soundinthevent9>Проигнорировать звук. Быть может, кто-то из ваших товарищей по команде захочет разобраться с этим...</eventtext.v3soundinthevent9>
+
+	<eventtext.v4goodsamaritan.1>Вы натыкаетесь на лежащего без сознания рабочего. Никаких признаков насилия нет, и никого вокруг - тоже. Медикаменты нынче не дешевы, но, быть может если вылечить бедолагу это улучшит отношения с местными.</eventtext.v4goodsamaritan.1>
+	<eventtext.v4goodsamaritan.2>После умелого укола дозой налоксона вы обнаруживаете, что у пациента гиперчувствительность к парабенам. Вам не остается ничего другово, как продолжить вводить налоксон небольшими дозами, наблюдая за реакцией пациента. Кажется ему становится лучше.&#xD;&#xA;&#xD;&#xA;[Медицина +5]</eventtext.v4goodsamaritan.2>
+	<eventtext.v4goodsamaritan.3>Пациент наконец очнулся, и со стонами поднимается - &quot;Охх...Спасибо за помощь, док... Мне всего лишь хотелось заглушить свою боль от потери питомца... Оранжевый парень был мне так дорог, но его растерзали рапторы выбравшиеся из вентиляции... &#xD;&#xA;Мне особо нечем вам отплатить, но я расскажу своему другу, что вы мне помогли. Он работает в магазине и, думаю, не откажет вам в небольшой скидке.&quot;&#xD;&#xA;&#xD;&#xA;[Награда 50кр]&#xD;&#xA;[Скидка в магазине = 10%]&#xD;&#xA;[Аванпост  Репутация +10]</eventtext.v4goodsamaritan.3>
+	<eventtext.v4goodsamaritan.4>Пациент наконец очнулся, и со стонами поднимается - &quot;Охх...Спасибо за помощь, док... Мне всего лишь хотелось заглушить свою боль от потери питомца... Оранжевый парень был мне так дорог, но его растерзали рапторы выбравшиеся из вентиляции... &#xD;&#xA;Я бы хотел отплатить за помощь, но какой-то ублюдок украл мои деньги, пока я был в отключке. Я расскажу своему другу, что вы мне помогли. Он работает в магазине и, думаю, не откажет вам в небольшой скидке.&quot;&#xD;&#xA;&#xD;&#xA;[Скидка в магазине = 10%]&#xD;&#xA;[Аванпост   Репутация +10]</eventtext.v4goodsamaritan.4>
+	<eventtext.v4goodsamaritan.5>Рабочему становится хуже. В области укола быстро образуется опухоль, дыхание сбивается. Прохожие начинают с любопытством поглядывать на происходящее  - пора уходить. </eventtext.v4goodsamaritan.5>
+
+	<eventtext.v5impromptuengineering.1>Ваше внимание привлек исследовательский терминал неподалеку. Хаотично мигание индикаторов время от времени полностью пропадает.</eventtext.v5impromptuengineering.1>
+	<eventtext.v5impromptuengineering.2>[Отвертка] Снять приборную крышку и попробовать провести диагностику.</eventtext.v5impromptuengineering.2>
+	<eventtext.v5impromptuengineering.3>Нажав пару кнопок для проверки, и не получив никакого результата, вы открываете боковую панель. Изрядная путаница проводов и какой-то процессор, который - похоже в хорошем состоянии, предстают перед вами.</eventtext.v5impromptuengineering.3>
+	<eventtext.v5impromptuengineering.4>[Электрика 50] Поживиться деталями.</eventtext.v5impromptuengineering.4>
+	<eventtext.v5impromptuengineering.5>[Электрика --/60] Попробовать починить терминал.</eventtext.v5impromptuengineering.5>
+	<eventtext.v5impromptuengineering.6>Вы подергиваете проводки, ведущие к экрану, и терминал оживает. Знакомство с системой открывает кое-какие возможности. Похоже, терминал подключен к службе снабжения аванпоста. Что будете делать?</eventtext.v5impromptuengineering.6>
+	<eventtext.v5impromptuengineering.7>Запросить экспериментальные боеприпасы для магнитной пушки.</eventtext.v5impromptuengineering.7>
+	<eventtext.v5impromptuengineering.8>Немного пощелкав кнопками, вы сумели сделать заказ на два ящика физикориевых боеприпасов для вашего судна, совершенно бесплатно.</eventtext.v5impromptuengineering.8>
+	<eventtext.v5impromptuengineering.9>Установить на систему олдскульный шутер от первого лица.</eventtext.v5impromptuengineering.9>
+	<eventtext.v5impromptuengineering.9.1>Отличная работа.&#xD;&#xA;[Электрика +5]</eventtext.v5impromptuengineering.9.1>
+	<eventtext.v5impromptuengineering.10>Изучить файлы с последними медицинскими исследованиями.</eventtext.v5impromptuengineering.10>
+	<eventtext.v5impromptuengineering.11>Вам обнаруживаете программу для медицинского фабрикатора, которая, похоже, весьма эффективно используется для производства соединения N. Видимо, этот аванпост снабжает Коалицию взрывчаткой.</eventtext.v5impromptuengineering.11>
+	<eventtext.v5impromptuengineering.11.1>Изучить методы производства.&#xD;&#xA;[Медицина +5]</eventtext.v5impromptuengineering.11.1>
+	<eventtext.v5impromptuengineering.12>[Сепаратисты 30] Изменить рецепт на производство нестабильного соединение N.</eventtext.v5impromptuengineering.12>
+	<eventtext.v5impromptuengineering.13>Вам обнаруживаете программу для медицинского фабрикатора, которая, похоже, весьма эффективно используется для производства соединения N. Вы изучаете методы производства.</eventtext.v5impromptuengineering.13>
+	<eventtext.v5impromptuengineering.13.1>Отличная работа.&#xD;&#xA;[Медицина +5]</eventtext.v5impromptuengineering.13.1>
+	<eventtext.v5impromptuengineering.14>Поискать информацию связанную с инопланетным.</eventtext.v5impromptuengineering.14>
+	<eventtext.v5impromptuengineering.15>Немного покопавшись в файлах, вы натыкаетесь на изображение подробного анатомического строения грязевого раптора. Похоже, что при стрельбе с колена, если выстрелить в живот, можно причинить серьезный урон эти бронированным созданиям. А выстрелы из дробовика в упор прямо в пасть, могут обезглавить их.</eventtext.v5impromptuengineering.15>
+	<eventtext.v5impromptuengineering.15.1>Отличная работа.&#xD;&#xA;[Оружие +5]</eventtext.v5impromptuengineering.15.1>
+	<eventtext.v5impromptuengineering.16>Оставить эту задачу инженерам.</eventtext.v5impromptuengineering.16>
+
+	<eventtext.v8propaganda.1>[Распылитель+Этанол] Подать местным жителям пример порядочного гражданина, убрав следы вандализма.</eventtext.v8propaganda.1>
+	<eventtext.v8propaganda.2>[Краска] Вы и сами своего рода художник.</eventtext.v8propaganda.2>
+	<eventtext.v8propaganda.3>Пройти мимо.</eventtext.v8propaganda.3>
+	<eventtext.v8propaganda.4>Пока вы стираете надписи, вам удалось расслышать шепот, наблюдающих за вами. Похоже люди сплетничают, не состоите ли вы в Коалиции на каких-то высоких постах. Некоторые из них, пристально посмотрев на вас, уходят...&#xD;&#xA;[Аванпост  Репутация +15]&#xD;&#xA;[Коалиция  Репутация +10]&#xD;&#xA;[Сепаратисты  Репутация -10]</eventtext.v8propaganda.4>
+	<eventtext.v8propaganda.5>Ваше творчество довольно вульгарно, его оказалось вполне достаточно, чтобы вызвать среди людей еще больше споров, которые быстро перерастают в драку.&#xD;&#xA;[Аванпост  Репутация -15]&#xD;&#xA;[Коалиция  Репутация -30]&#xD;&#xA;[Сепаратисты  Репутация +10]</eventtext.v8propaganda.5>
+	<eventtext.v8propaganda.6>Немного хаоса заставит людей дважды подумать о так называемых &quot;Порядке и Безопасности&quot; в Коалиции.</eventtext.v8propaganda.6>
+	<eventtext.v8propaganda.7>Что? Ты не взял краску? Какой же из тебя бунтарь? Иди и возьми ее!</eventtext.v8propaganda.7>
+
+	<eventtext.itacollectorsell1>&quot;Артефакт продан.&quot;[+1400кр][Аванпост  Репутация +7]</eventtext.itacollectorsell1>
+
+	<eventtext.itaprisonbreak1.1>Громкоговорители аванпоста: &quot;Несанкционированное действие! Террорист освобожден! Нейтрализать его и его соратников!&quot;&#xD;&#xA;&#xD;&#xA;[Аванпост  Репутация -200]</eventtext.itaprisonbreak1.1>
+	<eventtext.itaprisonbreak1.2>Громкоговорители аванпоста: &quot;Несанкционированное действие! Террорист освобожден! Нейтрализать его и его соратников!&quot;&#xD;&#xA;&#xD;&#xA;[Аванпост  Репутация -200]&#xD;&#xA;[Коалиция  Репутация -45]&#xD;&#xA;[Сепаратисты  Репутация +20]</eventtext.itaprisonbreak1.2>
+
+	<eventtext.itaprisonbreak2.1>Громкоговорители аванпоста: &quot;Несанкционированное действие! Диверсант освобожден! Нейтрализать его и его соратников!&quot;&#xD;&#xA;&#xD;&#xA;[Аванпост  Репутация -200]</eventtext.itaprisonbreak2.1>
+	<eventtext.itaprisonbreak2.2>Громкоговорители аванпоста: &quot;Несанкционированное действие! Диверсант освобожден! Нейтрализать его и его соратников!&quot;&#xD;&#xA;&#xD;&#xA;[Аванпост  Репутация -200]&#xD;&#xA;[Коалиция  Репутация -45]&#xD;&#xA;[Красный Нос  Репутация +20]</eventtext.itaprisonbreak2.2>
+
+	<eventtext.itaprisonescape1.0.1>Громкоговорители аванпоста: &quot;Экипаж с подводной лодки выпустил пленных! Убейте их!&quot;&#xD;&#xA;&#xD;&#xA;[Аванпост  Репутация -200]</eventtext.itaprisonescape1.0.1>
+	<eventtext.itaprisonescape1.0.2>Громкоговорители аванпоста: &quot;Экипаж с подводной лодки выпустил пленных! Убейте их!&quot;&#xD;&#xA;&#xD;&#xA;[Аванпост  Репутация -200]&#xD;&#xA;[Коалиция  Репутация -50]&#xD;&#xA;[Сепаратисты  Репутация +10]</eventtext.itaprisonescape1.0.2>
+
+	<eventtext.itaprisonescape2.0.1>Громкоговорители аванпоста: &quot;Экипаж с подводной лодки выпустил пленных! Убейте их!&quot;&#xD;&#xA;&#xD;&#xA;[Аванпост  Репутация -200]</eventtext.itaprisonescape2.0.1>
+	<eventtext.itaprisonescape2.0.2>Громкоговорители аванпоста: &quot;Экипаж с подводной лодки выпустил пленных! Убейте их!&quot;&#xD;&#xA;&#xD;&#xA;[Аванпост  Репутация -200]&#xD;&#xA;[Коалиция  Репутация -50]&#xD;&#xA;[Сепаратисты  Репутация +10]</eventtext.itaprisonescape2.0.2>
+
+	<eventtext.itaprisonescape2.1.1>С этим заключенным жестоко обошлись. Коалиция жестока к сепаратистам.&#xD;&#xA;&quot;Спасибо, что спасли меня! Я расскажу нашим капитанам о том, что вы помогли мне.&quot;</eventtext.itaprisonescape2.1.1>
+	<eventtext.itaprisonescape2.1.2>С этим заключенным жестоко обошлись. Коалиция жестока к сепаратистам.&#xD;&#xA;&quot;Спасибо, что спасли меня! Я расскажу нашим капитанам о том, что вы помогли мне.&quot;&#xD;&#xA;[Сепаратисты  Репутация +10]</eventtext.itaprisonescape2.1.2>
+
+	<eventtext.itaprisonescape2.2.1>Бедный клоун, подумал, что у охранников Коалиции есть чувство юмора.&#xD;&#xA;&quot;Благодаря тебе я могу снова нести людям радость. Моя музыка еще зазвучит! Слава красному носу!&quot;&#xD;&#xA;</eventtext.itaprisonescape2.2.1>
+	<eventtext.itaprisonescape2.2.2>Бедный клоун, подумал, что у охранников Коалиции есть чувство юмора.&#xD;&#xA;&quot;Благодаря тебе я могу снова нести людям радость. Моя музыка еще зазвучит! Слава красному носу!&quot;&#xD;&#xA;[Красный Нос  Репутация +10]</eventtext.itaprisonescape2.2.2>
+
+	<eventtext.itaprisonescape2.1>Из-за шпионов-сепаратистов параноя Коалиции настолько велика, что они часто сажают в тюрьмы обычных жителей и матросов вольных экпиажей и обращаются с ними так же, как с врагами...&#xD;&#xA;&quot;Спасибо, что вытащили меня оттуда! Я просто мыл полы в доках, когда меня арестовали и обвинили в подслушке на командном пункте! Коалиция - вот кто настоящие террористы! Теперь мне это ясно.&quot;&#xD;&#xA;</eventtext.itaprisonescape2.1>
+	<eventtext.itaprisonescape2.2>Из-за шпионов-сепаратистов параноя Коалиции настолько велика, что они часто сажают в тюрьмы обычных жителей и матросов вольных экпиажей и обращаются с ними так же, как с врагами...&#xD;&#xA;&quot;Спасибо, что вытащили меня оттуда! Я просто мыл полы в доках, когда меня арестовали и обвинили в подслушке на командном пункте! Коалиция - вот кто настоящие террористы! Теперь мне это ясно.&quot;&#xD;&#xA;[Сепаратисты  Репутация +10]</eventtext.itaprisonescape2.2>
+
+	<eventtext.itamissionscity1.1.1>&quot;Впереди еще много работы. Вот самые важные задачи.&quot;</eventtext.itamissionscity1.1.1>
+	<eventtext.itamissionscity1.2.2>&quot;Задачи есть всегда. Можете взять на себя этот контракт?&quot;</eventtext.itamissionscity1.2.2>
+	<eventtext.itamissionscity1.3.3>&quot;Эта задача требует хорошо организованной команды!&quot;</eventtext.itamissionscity1.3.3>
+	
+	<eventtext.itamissionsmining1.4>&quot;Необходимо провести геологическую разведку места, прежде чем мы развернем крупномасштабную добычу там. Сообщите, что вы найдете.&quot;</eventtext.itamissionsmining1.4>
+	<eventtext.itamissionsmining2.5>&quot;Нам нужно, чтобы вы избавились от гнезд тварей, которые мешают вести горные работы в пещерах.&quot;</eventtext.itamissionsmining2.5>
+	<eventtext.itamissionsmining3.6>&quot;Есть и другие задачи.&quot;</eventtext.itamissionsmining3.6>
+	
+	<eventtext.itamissionsmilitary1.7>&quot;У нас есть некоторые поручения, специально для вас.&quot;</eventtext.itamissionsmilitary1.7>
+	<eventtext.itamissionsmilitary2.8>&quot;Нам нужно, чтоб вы истребили крупный рой. Надеюсь, вы к этому готовы...&quot;</eventtext.itamissionsmilitary2.8>
+	<eventtext.itamissionsmilitary3.9>&quot;Враждебная фауна представляют серьезную угрозу населенным пунктам в этом районе. Для этой задачи требуется серьезная огневая мощь.&quot;</eventtext.itamissionsmilitary3.9>
+
+	<eventtext.itamissiontrusted>&quot;Вы зарекомендовали себя как опытный моряк, поэтому я доверяю вам эту миссию.&quot;</eventtext.itamissiontrusted>
+	<eventtext.itamissionscargowater>[Миссия] Транспортировка сухих грузов [Репутация +10][2000кр]</eventtext.itamissionscargowater>
+	<eventtext.itamissionscargowater2>[Миссия] Транспортировка сухих грузов [Репутация +10][2000кр]</eventtext.itamissionscargowater2>
+	<eventtext.itamissionscargofragile>[Миссия] Перевозка хрупких грузов [Репутация +10][2300кр]</eventtext.itamissionscargofragile>
+	<eventtext.itamissionscargofragileask>&quot;У нас есть задача перевезти ящики с хрупким грузом, которые никто не хочет брать, поэтому, надеемся на вас.&quot;</eventtext.itamissionscargofragileask>
+	<eventtext.itamissionscargoegg>[Миссия] Почти вылупившиеся яйца [Репутация +10][2000кр]</eventtext.itamissionscargoegg>
+	<eventtext.itamissionactivatebeacon>[Миссия] Активация маяка [2800кр]</eventtext.itamissionactivatebeacon>
+	<eventtext.itamissionkillhammerhead>[Миссия] Убийство Молотоглава [Репутация +10][3000кр]</eventtext.itamissionkillhammerhead>
+	<eventtext.itamissionmineralresearch>[Миссия] Пещерная разведка полезных ископаемых [Репутация +10][1500-1800кр]</eventtext.itamissionmineralresearch>
+	<eventtext.itamissionscargotime>[Миссия] Скоропортящиеся товары [Репутация +10][2000кр]</eventtext.itamissionscargotime>
+	<eventtext.itamissionscargocreature>[Миссия] Живой груз [Репутация +10][3000кр]</eventtext.itamissionscargocreature>
+	
+	<eventtext.itamissionsresearch1.11>Нам необходим, определенный артефакт, обладающий странными свойствами.</eventtext.itamissionsresearch1.11>
+	<eventtext.itamissionsresearch2.12>Нам необходим, определенный артефакт, обладающий странными свойствами.</eventtext.itamissionsresearch2.12>
+	<eventtext.itamissionsresearch3.13>Есть так же и задачи, не связанные с исследованиями.</eventtext.itamissionsresearch3.13>
+	<eventtext.itaresearchartifact1.14>Наши датчики заметили необычную сигнатуру артефакта. Помогите нам с исследованием, доставив его. Если вы найдете еще артефакты, поместите их в распределитель воздушного шлюза, мы заплатим и за них.</eventtext.itaresearchartifact1.14>
+
+	<eventtext.itarebelbase1>&quot;Чт ... кто ты? Что ты здесь делаешь!?&quot;</eventtext.itarebelbase1>
+	<eventtext.itarebelbase2>&quot;Очевидно, мы пришли убить тебя.&quot;</eventtext.itarebelbase2>
+	<eventtext.itarebelbase3>&quot;Что ТЫ здесь делаешь?&quot;</eventtext.itarebelbase3>
+	<eventtext.itarebelbase4>[Доставка] &quot;Я искал тебя. Есть кое-что, что я должен передать только в твои руки.&quot;</eventtext.itarebelbase4>
+	<eventtext.itarebelbase5>[Аванпост 90]&quot;Мы работаем на благо станции, и мы не хотим неприятностей.&quot;</eventtext.itarebelbase5>
+	<eventtext.itarebelbase6>[Сепаратисты 50] &quot;~Sic semper tyrannis~ Мы здесь, чтобы помочь.&quot;</eventtext.itarebelbase6>
+	
+	<eventtext.itabounty1.1>Плакат розыска с доски объявлений...</eventtext.itabounty1.1>
+	<eventtext.itabounty1.2>Разыскиваемая цель ликвидирована.&#xD;&#xA;[750кр]&#xD;&#xA;[Коалиция  Репутация +6]</eventtext.itabounty1.2>
+
+	<eventtext.itabeacontest1>&quot;Вы из команды снабжения? Назовите пароль!&quot;</eventtext.itabeacontest1>
+	<eventtext.itabeacontest2>&quot;Sic semper tyrrannis.&quot;</eventtext.itabeacontest2>
+	<eventtext.itabeacontest3>&quot;Sick pimper dracaris.&quot;</eventtext.itabeacontest3>
+	<eventtext.itabeacontest4>&quot;Sectumsempra!&quot;</eventtext.itabeacontest4>
+	<eventtext.itabeacontest5>[Аванпост 50]&quot;Нас наняла администрация станции для ремонта этого маяка.&quot;</eventtext.itabeacontest5>
+	<eventtext.itabeacontest6>&quot;Такой пароль подойдет?&quot; - *показать средний палец*</eventtext.itabeacontest6>
+
+	<eventtext.itabeaconsep1.0kill.1>Вы зачистили убежище сепаратистов.&#xD;&#xA;[Вознаграждение 800кр]&#xD;&#xA;[Коалиция  Репутация +8]&#xD;&#xA;[Сепаратисты  Репутация -15]</eventtext.itabeaconsep1.0kill.1>
+	<eventtext.itabeaconsep1.0.2>[Коалиция 40] &#xD;&#xA;&quot;Говорит офицер Коалиции. Я приказываю вам зачистить убежище сепаратистов на ближайшем маяке!&quot;</eventtext.itabeaconsep1.0.2>
+
+	<eventtext.itabeaconsep1.0a.1>Радиопередача: &quot;Приветствую, моряки! Нам нужна ваша помощь здесь, на маяке.&quot;</eventtext.itabeaconsep1.0a.1>
+	<eventtext.itabeaconsep1.0a.2>Молодой капитан, в форме сепаратиста, приветствует вас, заложив руки за спину, по-видимому гордый тем, что они  делают здесь. &quot;Добро пожаловать на нашу станцию, товарищи.&quot;</eventtext.itabeaconsep1.0a.2>
+	<eventtext.itabeaconsep1.0a.3>[Сепаратисты 30] &quot;Чем вы тут заняты?&quot;</eventtext.itabeaconsep1.0a.3>
+	<eventtext.itabeaconsep1.0a.4>&quot;Мы переделали этот маяк в радиовещательную станцию, чтобы рассказать всем правду и бороться с пропагандой. Людям нужно понять, что Коалиция манипулирует ими.&quot;</eventtext.itabeaconsep1.0a.4>
+	<eventtext.itabeaconsep1.0a.5>[Управление 70]&quot;Послушай, &quot;товарищ&quot;. Корабли Коалиции, патрулирующие эти туннели, без предупреждения обстреливая такие укрытия, если находят их. Когда-нибудь они навестят и вас, и тогда, кровь твоих подчиненных будет на твоих руках. Остановите трансляцию, сверни эту операцию и спаси своих людей, пока еще не слишком поздно.&quot;</eventtext.itabeaconsep1.0a.5>
+	<eventtext.itabeaconsep1.0a.6>&quot;Заставить нас замолчать? Этого вы хотите!? Вы правда думаете, что сможете нас напугать?&quot;</eventtext.itabeaconsep1.0a.6>
+	<eventtext.itabeaconsep1.0a.7>[Сепаратисты 50] &quot;Я на вашей стороне, но я не хочу рисковать жизнями этих людей только ради каких-то дурацких трансляций, которые все равно никто не слушает.&quot;</eventtext.itabeaconsep1.0a.7>
+	<eventtext.itabeaconsep1.0a.8>Победоносная улыбка командира, сползает с его лица, оставляя потрясенный вид. &quot;Черт побери, а ведь ты прав. Я не должен был ради такого ставить на кон наши жизни.&quot; И, он приказывает своим людям собирать вещи. &#xD;&#xA;[Сепаратисты  Репутация +10] [Коалиция  Репутация +5]</eventtext.itabeaconsep1.0a.8>
+	<eventtext.itabeaconsep1.0a.9>Экипаж маяка удалось убедить покинуть свой пост и прекратить операцию. Сепаратисты готовятся покинуть станцию.&#xD;&#xA;[Сепаратисты  Репутация +10] [Коалиция  Репутация +5]</eventtext.itabeaconsep1.0a.9>
+	<eventtext.itabeaconsep1.0a.10>&quot;Это слова неудачника. Иди трус, начищай ботинки офицерам Коалиции.&quot;</eventtext.itabeaconsep1.0a.10>
+	<eventtext.itabeaconsep1.0a.11>&quot;Будь по-твоему! Но если вдруг вам посчастливится выжить, не рассчитывайте на нашу помощь, когда Коалиция начнет охотиться за вами!&quot; [Сепаратисты  Репутация -3]</eventtext.itabeaconsep1.0a.11>
+	<eventtext.itabeaconsep1.0a.12>&quot;Вы понятия не имеете, о чем говорите.&quot;</eventtext.itabeaconsep1.0a.12>
+	<eventtext.itabeaconsep1.0a.13>&quot;Отлично. Бросьте вызов привчным взглядам, заставьте людей думать. Именно это, в конечном итоге, приведет к краху Коалиции.</eventtext.itabeaconsep1.0a.13>
+	<eventtext.itabeaconsep1.0a.14>Подсчитать личный состав маяка, осмотреть их оборудование и снаряжение - пусть Коалиция разберется с ними позже. Благодаря этой информации эти люди будут арестованы на первой же станции, которую они посетят, даже их родственникам не скрытся от наказания.&#xD;&#xA;[Коалиция  Репутация +8][Сепаратисты  Репутация -10]</eventtext.itabeaconsep1.0a.14>
+	<eventtext.itabeaconsep1.0a.15>&quot;Здорово.&quot;</eventtext.itabeaconsep1.0a.15>
+	<eventtext.itabeaconsep1.0a.16>&quot;Извините, я не могу раскрывать детали - приказ.&quot;</eventtext.itabeaconsep1.0a.16>
+	<eventtext.itabeaconsep1.0a.17>&quot;Мы можем как-то помочь?&quot;</eventtext.itabeaconsep1.0a.17>
+	<eventtext.itabeaconsep1.0a.18>&quot;Нам нужны припасы, чтобы продержаться здесь еще немного. Спросите подробнее у нашего механика.&quot;</eventtext.itabeaconsep1.0a.18>
+	<eventtext.itabeaconsep1.0a.19>&quot;Вы допустили серьезную ошибку, &quot;товарищ&quot;, впустив нас...&quot;</eventtext.itabeaconsep1.0a.19>
+	<eventtext.itabeaconsep1.0a.20>&quot;Не надо было сюда приходить!&quot;[Коалиция  Репутация +6]</eventtext.itabeaconsep1.0a.20>
+
+
+	<eventtext.itabeaconsep1.0b.1>Вы видите, что Механик уставился на дыру в стене с отверткой в руках. &quot;О! Приятно увидеть новые лица! Вы пришли помочь? Нам нужно, чтобы кто-то починил этот старый кусок... *кмх* барахло. Наша ППВ матрица вышла из строя.&quot;</eventtext.itabeaconsep1.0b.1>
+	<eventtext.itabeaconsep1.0b.2>[Электрика 45][ППВМ схема] &quot;Конечно, у нас найдется замена. Позвольте помочь.&quot;</eventtext.itabeaconsep1.0b.2>
+	<eventtext.itabeaconsep1.0b.3>Вы приближаетесь к дыре в стене и обнаруживаете там металлический короб, от которого тянутся провода. Открыв его, ваш взгляд сразу цепляет старая плата с явными следами окисления, местами даже с проржавевшими деталями. Убрав старые компоненты, вы заменяете их новыми.</eventtext.itabeaconsep1.0b.3>
+	<eventtext.itabeaconsep1.0b.4>&quot;Впечатляет! Как вы ловко управились, уверен теперь оборудование еще послужит нам... Мне особо нечем вас отблагодарить, но возьмите этот осколок воспламенита. Стащил его у одного из врачей, пока он был занят, *хех*!&quot;</eventtext.itabeaconsep1.0b.4>
+	<eventtext.itabeaconsep1.0b.5>&quot;Спасибо, пригодится. Удачи вам!&quot;&#xD;&#xA;[Сепаратисты  Репутация +3]</eventtext.itabeaconsep1.0b.5>
+	<eventtext.itabeaconsep1.0b.6>&quot;Мне ничего не нужно, спасибо. Это была просто дешевая схема. Удачи с вашей операцией!&quot;&#xD;&#xA;[Сепаратисты  Репутация +7]</eventtext.itabeaconsep1.0b.6>
+	<eventtext.itabeaconsep1.0b.7>[Оружие --/20] &quot;Я предоставил вам свое время, опыт и материалы, чтобы помочь. Думаю, я могу рассчитывать на более подходящую награду.&quot;</eventtext.itabeaconsep1.0b.7>
+	<eventtext.itabeaconsep1.0b.8>&quot;Эй, эй! Ты испытываешь свою удачу, дружище. Этот осколк довольно ценный, и... Впрочем ладно, забирай. Может и правда ничего не стоит...&quot;</eventtext.itabeaconsep1.0b.8>
+	<eventtext.itabeaconsep1.0b.9>&quot;Но это все, что у меня есть! Бери, что дают или проваливай.&quot;&#xD;&#xA;[Сепаратисты  Репутация -2]</eventtext.itabeaconsep1.0b.9>
+	<eventtext.itabeaconsep1.0b.10>[Электрика 45][Неудача] &quot;Да ты, похоже, такая же бестолочь, как я!&quot;</eventtext.itabeaconsep1.0b.10>
+	<eventtext.itabeaconsep1.0b.11>&quot;Даже я знаю, что это не схема ППВМ, малыш.&quot;</eventtext.itabeaconsep1.0b.11>
+	<eventtext.itabeaconsep1.0b.12>&quot;Прошу прощения, но нет. Просто осматриваюсь.&quot;</eventtext.itabeaconsep1.0b.12>
+	<eventtext.itabeaconsep1.0b.13>&quot;Ты клоун? Настоящий?&quot;</eventtext.itabeaconsep1.0b.13>
+	<eventtext.itabeaconsep1.0b.14>&quot;Именно так.&quot;</eventtext.itabeaconsep1.0b.14>
+	<eventtext.itabeaconsep1.0b.15>&quot;Ммм... мне кажется, не очень-то я похож...&quot;</eventtext.itabeaconsep1.0b.15>
+	<eventtext.itabeaconsep1.0b.16>[Велосипедный Гудок] Бибикнуть гудком.</eventtext.itabeaconsep1.0b.16>
+	<eventtext.itabeaconsep1.0b.17>Механик хихикает, но бросив взгляд в сторону командования, быстро возвращается к работе.&#xD;&#xA;[Красный Нос  Репутация +5]</eventtext.itabeaconsep1.0b.17>
+	<eventtext.itabeaconsep1.0b.18>Лучше вам было забыть свою голову, а не велосипедный гудок. Очень грустно.&#xD;&#xA;[Красный Нос  Репутация -5]</eventtext.itabeaconsep1.0b.18>
+	<eventtext.itabeaconsep1.0b.19>[Гитара] Сыграть веселую мелодию.</eventtext.itabeaconsep1.0b.19>
+	<eventtext.itabeaconsep1.0b.20>Сразу видно, что музыка и улыбки были уже позабыты этими людьми. Но ваше выступление возвращает эти воспоминания и дарит собравшимся позитивный настрой.&#xD;&#xA;[Красный Нос  Репутация +10] [Сепаратисты  Репутация +3]</eventtext.itabeaconsep1.0b.20>
+	<eventtext.v2givingdirections.21>Игра на воображаемой гитаре совершенно не впечатляет механика.&#xD;&#xA;[Красный Нос  Репутация -5]</eventtext.v2givingdirections.21>
+
+	<eventtext.itatransport3.0.1>&quot;Посмотрим, кто будет смеяться последним! Красный Нос наблюдает за мной.&quot;</eventtext.itatransport3.0.1>
+	<eventtext.itatransport4.0.1>&quot;Если убьете меня, они вам не заплатят! И в конце концов, вы все станете одним целым с океаном. Нет смысла откладывать неизбежное...&quot;</eventtext.itatransport4.0.1>
+
+	<eventtext.itarace1bet.1>&quot;Хотите сделать ставку на одного из грязевых рапторов в следующем забеге? - 100 кредитов.&quot;</eventtext.itarace1bet.1>
+	<eventtext.itarace1bet.2>Поставить на Красного Раптора.</eventtext.itarace1bet.2>
+	<eventtext.itarace1bet.3>Недостаточно наличности.</eventtext.itarace1bet.3>
+	<eventtext.itarace1bet.4>Поставить на Зеленого Раптора.</eventtext.itarace1bet.4>
+	<eventtext.itarace1bet.5>Поставить на Синего Раптора.</eventtext.itarace1bet.5>
+	<eventtext.itarace1bet.6>&quot;Не в этот раз, пожалуй.&quot;</eventtext.itarace1bet.6>
+	<eventtext.itarace1bet.7>&quot;Начинайте гонку!&quot;</eventtext.itarace1bet.7>
+	<eventtext.itarace1bet.8>&quot;Красный выиграл гонку! Возвращайтесь обналичить свой жетон!&quot;</eventtext.itarace1bet.8>
+	<eventtext.itarace1bet.9>Обналичить жетон.</eventtext.itarace1bet.9>
+	<eventtext.itarace1bet.10>&quot;Зеленый сделал своих соперников! Возвращайтесь обналичить свой жетон!&quot;</eventtext.itarace1bet.10>
+	<eventtext.itarace1bet.11>&quot;Синий вырвался вперед! Возвращайтесь обналичить свой жетон!&quot;</eventtext.itarace1bet.11>
+
+	<eventtext.itarace1.0.1>В забеге победил Красный!</eventtext.itarace1.0.1>
+	<eventtext.itarace1.0.2>В забеге победил Зеленый!</eventtext.itarace1.0.2>
+	<eventtext.itarace1.0.3>В забеге победил Синий!</eventtext.itarace1.0.3>
+
+	<eventtext.trainer.1>&quot;Я работал на R-29, ее еще называют Фура, поддерживая эту груду металла на плаву. Половину времени приходилось гонять подводным ружьем ползунов. Постоянно норовят прицепиться к носу лодки. Другая же половина времяпрепровождения сводилась к сварке. Пробоины в грузовом отсеке были настолько частыми, что я почти не ослеп. Это и вынудило меня осесть в этой гнусной дыре. Я могу поделиться с вами своим опытом, за деньги конечно.&quot;</eventtext.trainer.1>
+	<eventtext.trainer.2>[360кр] &quot;Расскажите подробнее, как вам удалось удержать на плаву такую большую подводную лодку.&quot; [Механика +3]</eventtext.trainer.2>
+	<eventtext.trainer.3>&quot;Может спрошу тебя о твоих приключениях позже...&quot;</eventtext.trainer.3>
+	<eventtext.trainer.4>&quot;Я починил насосов больше, чем любой другой челюскинец здесь. Я покажу вам лучшие способы ремонта, если вы проставитесь мне.&quot;</eventtext.trainer.4>
+	<eventtext.trainer.5>[360кр] &quot;Не вопрос! Я хочу знать, как чинить их быстрее.&quot; [Механика +3]</eventtext.trainer.5>
+	<eventtext.trainer.6>&quot;Мой опыт был оплачен годами страданий. Я стану учить тебя за просто так.&quot;</eventtext.trainer.6>
+	<eventtext.trainer.7>&quot;Может спрошу тебя о насосах позже...&quot;</eventtext.trainer.7>
+	<eventtext.trainer.8>&quot;Дым плавящихся проводов и гарь сгоревших микросхем немало подпортили мне здоровье и легкие. Такая вот цена за многие годы экстренных ремонтов. Теперь работа на подводной лодке мне уже не по плечу, приходится гнить здесь с обитателями заставы. Но я могу передать вам свои знания, за несколько кредитов...&quot;</eventtext.trainer.8>
+	<eventtext.trainer.9>[360кр] &quot;Звучит стояще. Я хочу знать, как эффективнее справляться с кабельными коробками.&quot; [Электрика +3]</eventtext.trainer.9>
+	<eventtext.trainer.10>&quot;Может спрошу позже...&quot;</eventtext.trainer.10>
+	<eventtext.trainer.11>&quot;Я не хочу, чтобы меня видели разговаривающим с негодяями вроде тебя.&quot;&#xD;&#xA;[Репутация у местных &lt;0]</eventtext.trainer.11>
+	<eventtext.trainer.12>&quot;Моя команда выгнала меня с подводной лодки! Они сказали, что то, что я сделал - саботаж! Но я всего лишь хотел улучшить системы корабля, с небольшими изменениями в проводке, и вот какой-то идиот открыл дверь в самый неподходящий момент и испортил всю мою работу, что и привело к небольшому затоплению... В любом случае, я могу показать вам несколько уловок, если у вас есть деньги.&quot;</eventtext.trainer.12>
+	<eventtext.trainer.13>[360кр] &quot;Конечно, если это достаточно безопасно...&quot; [Электрика +3]</eventtext.trainer.13>
+	<eventtext.trainer.14>&quot;Может кто-то из нашего экипажа заинтересуется... Только не подходи к системам нашего корабля.&quot;</eventtext.trainer.14>
+	<eventtext.trainer.15>&quot;Прошлый экипаж, в котором я служил, видимо состоял из одних неандертальцев! Меня арестовали за попытку отравить команду инженеров, хотя я нес яды на переработку! Местная администрация сразу освободила меня, и я больше не горю желанием наниматься в другой экипаж. Так что не пытайтесь, но немного кредитов, и я могу подучить вас медицине.&quot;</eventtext.trainer.15>
+	<eventtext.trainer.16>[360кр] &quot;Интересно, но, пожалуйста, держи руки на виду, хорошо?&quot; [Медицина +3]</eventtext.trainer.16>
+
+	<eventtext.shop.notreally>Не совсем.</eventtext.shop.notreally>
+	<eventtext.somthingborke>somthing borke</eventtext.somthingborke>
+	<eventtext.shop.nocash>&quot;Возвращайся с деньгами.&quot;</eventtext.shop.nocash>
+	<eventtext.shop.nothanks>&quot;Нет, благодарю.&quot;</eventtext.shop.nothanks>
+	<eventtext.shop.maybelater>&quot;Может позже.&quot;</eventtext.shop.maybelater>
+	<eventtext.shop.lowshoprep>&quot;Вы и неприятности - одно и тоже. Убирайся!&quot;&#xD;&#xA;[Репутация у местных &lt;0]</eventtext.shop.lowshoprep>
+	<eventtext.shop.getout>&quot;Уходите. Иметь с вами дело - одни проблемы.&quot;&#xD;&#xA;[Репутация у местных &lt;0]</eventtext.shop.getout>
+	
+	<eventtext.shop.1>&quot;Что-нибудь из горячего?&quot;</eventtext.shop.1>
+	<eventtext.shop.2>Горячий суп &quot;Craw-Yum!&quot; [12кр]</eventtext.shop.2>
+	<eventtext.shop.3>&quot;Чего-нибудь выпить??&quot;</eventtext.shop.3>
+	<eventtext.shop.4>&quot;Fishtail&quot; коктейль [32кр]</eventtext.shop.4>
+
+	<eventtext.shop.5>&quot;Хотите обновить гардероб?&quot;</eventtext.shop.5>
+	<eventtext.shop.6>Джинсы с порезами и рубашка [32кр]</eventtext.shop.6>
+	<eventtext.shop.7>Бежевый свитер [40кр]</eventtext.shop.7>
+	<eventtext.shop.8>Фиолетовый свитшот с жилеткой [34кр]</eventtext.shop.8>
+	<eventtext.shop.9>Зеленая толстовка и жилетка [37кр]</eventtext.shop.9>
+	<eventtext.shop.10>Одежда администратора [70кр]</eventtext.shop.10>
+	<eventtext.shop.11>Костюм начальника снабжения [70кр]</eventtext.shop.11>
+	<eventtext.shop.12>Плавучий вещмешок [230кр]</eventtext.shop.12>
+	<eventtext.shop.13>Пояс инструментов [35кр]</eventtext.shop.13>
+
+	<eventtext.shop.14>&quot;Нужны семена или расходники?&quot;</eventtext.shop.14>
+	<eventtext.shop.15>Небольшой ящик для рассады [120кр]</eventtext.shop.15>
+	<eventtext.shop.16>Лейка [80кр]</eventtext.shop.16>
+	<eventtext.shop.17>Удобрение [145кр]</eventtext.shop.17>
+	<eventtext.shop.18>Мешочек для семян [65кр]</eventtext.shop.18>
+	<eventtext.shop.19>Семя взрывного граната [34кр]</eventtext.shop.19>
+	<eventtext.shop.20>Семя табачной лозы [32кр]</eventtext.shop.20>
+	<eventtext.shop.21>Семя солевой лозы [35кр]</eventtext.shop.21>
+	<eventtext.shop.22>Семя бича раптора [38кр]</eventtext.shop.22>
+
+	<eventtext.shop.23>&quot;Хотите одно из этих странных яиц или корм для питомцев?&quot;</eventtext.shop.23>
+	<eventtext.shop.24>Еда для питомца [120кр]</eventtext.shop.24>
+	<eventtext.shop.25>Бирка для питомца [10кр]</eventtext.shop.25>
+	<eventtext.shop.26>Физраствор [50кр]</eventtext.shop.26>
+	<eventtext.shop.27>Яйцо - Арахис [500кр]</eventtext.shop.27>
+	<eventtext.shop.28>Яйцо - Псиложаба [500кр]</eventtext.shop.28>
+	<eventtext.shop.29>Яйцо - Оранжевый Парень [500кр]</eventtext.shop.29>
+
+	<eventtext.shop.30>&quot;Я могу исцелить всю вашу команду, если вы соберете их здесь.&quot;</eventtext.shop.30>
+	<eventtext.shop.31>Исцелить ближайших членов экипажа. [200кр]</eventtext.shop.31>
+	<eventtext.shop.32>&quot;Меня не волнует, можете хоть кровью истечь, пока вы мне не заплатите, я не шелохнусь!&quot;</eventtext.shop.32>
+	<eventtext.shop.33>Вылечить &quot;Дань смерти&quot; [1000кр]</eventtext.shop.33>
+
+	<eventtext.shop.34>&quot;Желаете приобрести снаряжение исследователя?&quot;</eventtext.shop.34>
+	<eventtext.shop.35>Тросомет [230кр]</eventtext.shop.35>
+	<eventtext.shop.36>Натяжной трос х8 [24кр]</eventtext.shop.36>
+	<eventtext.shop.37>Трос для спуска х8 [24кр]</eventtext.shop.37>
+	<eventtext.shop.38>Плазменный резак [72кр]</eventtext.shop.38>
+	<eventtext.shop.39>Фонарик [160кр]</eventtext.shop.39>
+	<eventtext.shop.40>Сигнальный огонь [30кр]</eventtext.shop.40>
+	<eventtext.shop.41>Инопланетный сигнальный огонь [90кр]</eventtext.shop.41>
+	<eventtext.shop.42>Лампа [210кр]</eventtext.shop.42>
+	<eventtext.shop.43>Аккумулятор [115кр]</eventtext.shop.43>
+
+	<eventtext.shop.44>&quot;Желаете обналичить средства или сделать вклад?&quot;&#xD;&#xA;Банк позволяет снять средства, только капитанам. &#xD;&#xA;&quot;Нам приходилось уже несколько раз сталкиваться с неприятными инцидентами несанкционированных трат, и поскольку рядовые члены экипажа подводных лодок часто ведут разгульный образ жизни, снятие денег одобряется только для капитана судна. Такие правилы были введны для всех наших отделов, во избежание нежелательных ситуаций в дальнейшем.&quot;</eventtext.shop.44>
+	<eventtext.shop.45>Снять [100кр]</eventtext.shop.45>
+	<eventtext.shop.46>&quot;На вашем счету недостаточно денег.&quot;</eventtext.shop.46>
+	<eventtext.shop.47>&quot;Обналичить валюту могут только капитаны. Вы можете сделать вклад, если хотите.&quot;</eventtext.shop.47>
+	<eventtext.shop.48>Снять [400кр]</eventtext.shop.48>
+	<eventtext.shop.49>Снять [1000кр]</eventtext.shop.49>
+	<eventtext.shop.50>Внести [100кр]</eventtext.shop.50>
+	<eventtext.shop.51>&quot;Вы положили все свои деньги на банковский счет вашей команды.&quot;</eventtext.shop.51>
+	<eventtext.shop.52>&quot;Денег недостаточно, но я внесу то, что у тебя есть.&quot;</eventtext.shop.52>
+	<eventtext.shop.53>Внести [400кр]</eventtext.shop.53>
+	<eventtext.shop.54>Внести [1000кр]</eventtext.shop.54>
+	<eventtext.shop.55>Внести всю наличность</eventtext.shop.55>
+
+	<eventtext.shop.56>&quot;Добро пожаловать в Joe's. Ищете логические компоненты или электросхемы?&quot;</eventtext.shop.56>
+	<eventtext.shop.57>Компонент проверки сигнала [95кр]</eventtext.shop.57>
+	<eventtext.shop.58>Реле [95кр]</eventtext.shop.58>
+	<eventtext.shop.59>Компонент "Память" [95кр]</eventtext.shop.59>
+	<eventtext.shop.60>Провода х4 [40кр]</eventtext.shop.60>
+	<eventtext.shop.61>Компонент «Сложение» [95кр]</eventtext.shop.61>
+	<eventtext.shop.62>Компонент "Умножить" [95кр]</eventtext.shop.62>
+	<eventtext.shop.63>Компонент "Разделить" [95кр]</eventtext.shop.63>
+	<eventtext.shop.64>Компонент «Задержки» [95кр]</eventtext.shop.64>
+	<eventtext.shop.65>&quot;Нужны боеприпасы?&quot;</eventtext.shop.65>
+	<eventtext.shop.66>Магазин для ПП [100кр]</eventtext.shop.66>
+	<eventtext.shop.67>Патрон для дробовика x8 [320кр]</eventtext.shop.67>
+	<eventtext.shop.68>40-мм граната [100кр]</eventtext.shop.68>
+	<eventtext.shop.69>40-мм оглушающая граната [120кр]</eventtext.shop.69>
+	<eventtext.shop.70>Патрон для револьвера х6 [180кр]</eventtext.shop.70>
+	<eventtext.shop.71>Глубинная бомба "Приманка" [250кр]</eventtext.shop.71>
+	<eventtext.shop.72>Крепление для глубинных бомб [200кр]</eventtext.shop.72>
+	<eventtext.shop.73>&quot;Проваливайте из моего магазина, вы, вредители!&quot;&#xD;&#xA;[Репутация у местных &lt;0]</eventtext.shop.73>
+	<eventtext.shop.74>&quot;Может быть в другой раз.&quot;</eventtext.shop.74>
+
+	<eventtext.itaoplockcity1>&quot;Убирайтесь, вы, вандалы!&quot;&#xD;&#xA;---ТРЕБОВАНИЕ---&#xD;&#xA;[Аванпост  Репутация -10]</eventtext.itaoplockcity1>
+	<eventtext.itaoplockcity2>&quot;Нарушители в стыковочном узле!&quot;</eventtext.itaoplockcity2>
+	<eventtext.itaoplockcity3>&quot;Нарушители в стыковочном узле!&quot;&#xD;&#xA;&#xD;&#xA;[Аванпост  Репутация -200]&#xD;&#xA;[Коалиция  Репутация -15]&#xD;&#xA;[Сепаратисты  Репутация +15]</eventtext.itaoplockcity3>
+	<eventtext.itaoplockcity4>&quot;Вход только для членов Коалиции. Не пытайтесь вторгнуться, иначе вы попадете в черный список.&quot;&#xD;&#xA;&#xD;&#xA;---ТРЕБОВАНИЕ---&#xD;&#xA;[Коалиция  Репутация +35]</eventtext.itaoplockcity4>
+	<eventtext.itaoplockcity5>&quot;Злоумышленники в стыковочном узле!&quot;</eventtext.itaoplockcity5>
+	<eventtext.itaoplockcity6>&quot;Нарушители в стыковочном узле!&quot;&#xD;&#xA;&#xD;&#xA;[Аванпост  Репутация -200]&#xD;&#xA;[Коалиция  Репутация -45]&#xD;&#xA;[Сепаратисты  Репутация +15]</eventtext.itaoplockcity6>
+	
+	<eventtext.itaresearchlock1.1>&quot;Доступ только для работников лаборатории.&quot;</eventtext.itaresearchlock1.1>
+	<eventtext.itaresearchlock1.2>[Аванпост 100] &quot;Я работаю в исследовательской группе. Вот мой ID.&quot;</eventtext.itaresearchlock1.2>
+	<eventtext.itaresearchlock1.3>Пройти мимо.</eventtext.itaresearchlock1.3>
+
+	<eventtext.itatransp1.0.1>[Согласится] &quot;Конечно. Поднимайся на борт.&quot;</eventtext.itatransp1.0.1>
+	<eventtext.itatransp1.0.2>Человек с протезами вместо рук подходит к вам в баре..&#xD;&#xA;&quot;Эй, у тебя ведь есть подлодка? С пушками и прочей хренью? Меня надо подвезти и я хорошо оплачу.&quot;&#xD;&#xA;[Перевозка пассажира: Вознаграждение - 800кр]</eventtext.itatransp1.0.2>
+	<eventtext.itatransp1.0.3>[Отказать] &quot;Нет. У нас уже и так дышать там нечем.&quot;</eventtext.itatransp1.0.3>
+	
+	<eventtext.itatransp1.1.1>&quot;Спасибо за "экскурсию". Увидимся.&quot;&#xD;&#xA;[Миссия Выполнена: 800кр] [Аванпост  Репутация +5]</eventtext.itatransp1.1.1>
+	<eventtext.itatransp1.1.2>&quot;Как долго нам еще плыть?&quot;</eventtext.itatransp1.1.2>
+
+	<eventtext.itatransp1.2.1>&quot;Спасибо, что вытащили меня из этой задницы.&quot;</eventtext.itatransp1.2.1>
+	<eventtext.itatransp1.2.2>[Миссия Выполнена: 800кр] [Аванпост  Репутация +5]</eventtext.itatransp1.2.2>
+
+
+	<!--Items-->
+
+	<!--Mission Crates-->
+	<entityname.ita_mcrate_time1>Ящик скоропортящихся товаров</entityname.ita_mcrate_time1>
+	<entitydescription.ita_mcrate_time1>Из ящика слышно какое-то шипение.</entitydescription.ita_mcrate_time1>
+	<entityname.ita_mcrate_water1>Ящик водобоязненных товаров</entityname.ita_mcrate_water1> 
+	<entitydescription.ita_mcrate_water1>Синяя маркировка на этом ящике сообщает - не допускать попадания влаги.</entitydescription.ita_mcrate_water1>
+	<entityname.ita_mcrate_egg1>Контейнер с яйцами</entityname.ita_mcrate_egg1>
+	<entitydescription.ita_mcrate_egg1>Что-то скользкое движется в этом ящике.</entitydescription.ita_mcrate_egg1>
+	<entityname.ita_mcrate_impact1>Ящик с хрупким грузом</entityname.ita_mcrate_impact1>
+	<entitydescription.ita_mcrate_impact1>Красная маркировка на этом ящике сообщает - не бить, не переворчивать, не бросать.</entitydescription.ita_mcrate_impact1>
+	<entityname.ita_mcrate_egg2>Холодильная камера с яйцами</entityname.ita_mcrate_egg2>
+	<entitydescription.ita_mcrate_egg2>Контейнер для яиц с системой охлаждения. Работает от аккумуляторов.</entitydescription.ita_mcrate_egg2>
+	<entityname.ita_mcrate_raptor1>Скованный грязевой раптор</entityname.ita_mcrate_raptor1>
+	<entitydescription.ita_mcrate_raptor1>Не похоже, что цепи достаточно надежны, гораздо надежней выглядит капельница с опиумом, поставленная, чтоб усыплять раптора.</entitydescription.ita_mcrate_raptor1>
+
+	<!--Trading crates-->
+	<entityname.ita_tcrate_mil1>Запечатанный контейнер [Боеприпасы]</entityname.ita_tcrate_mil1>
+	<entitydescription.ita_tcrate_mil1>Покупай дешево, продавай дорого. Доставьте эти водобоязненные ящики на военный аванпост, чтобы получить чистую прибыль в размере около 400кр за ящик. Но будьте внимательны, соблюдайте условия хранения на стеллажах, иначе товар портится.</entitydescription.ita_tcrate_mil1>
+	<entityname.ita_tcrate_res1>Запечатанный контейнер [Исследовательское оборудование]</entityname.ita_tcrate_res1>
+	<entitydescription.ita_tcrate_res1>Покупай дешево, продавай дорого. Доставьте эти водобоязненные ящики на исследовательский аванпост, чтобы получить чистую прибыль в размере около 400кр за ящик. Но будьте внимательны, соблюдайте условия хранения на стеллажах, иначе товар портится.</entitydescription.ita_tcrate_res1>
+	<entityname.ita_tcrate_city1>Запечатанный контейнер [Товары массового спроса]</entityname.ita_tcrate_city1>
+	<entitydescription.ita_tcrate_city1>Покупай дешево, продавай дорого. Доставьте эти водобоязненные ящики в колонию, чтобы получить чистую прибыль в размере около 150кр за ящик. Но будьте внимательны, соблюдайте условия хранения на стеллажах, иначе товар портится.</entitydescription.ita_tcrate_city1>
+	<entityname.ita_tcrate_hab1>Запечатанный контейнер [Товары первой необходимости]</entityname.ita_tcrate_hab1>
+	<entitydescription.ita_tcrate_hab1>Покупай дешево, продавай дорого. Доставьте припасы на жилой аванпост, чтобы получить около 100кр чистой прибыли за ящик. Но будьте внимательны, соблюдайте условия хранения на стеллажах, иначе товар портится.</entitydescription.ita_tcrate_hab1>
+	<entityname.ita_tcrate_mine1>Запечатанный контейнер [Шахтерское снаряжение]</entityname.ita_tcrate_mine1>
+	<entitydescription.ita_tcrate_mine1>Покупай дешево, продавай дорого. Доставьте припасы на шахтерский аванпост, чтобы получить около 100кр чистой прибыли за ящик. Но будьте внимательны, соблюдайте условия хранения на стеллажах, иначе товар портится.</entitydescription.ita_tcrate_mine1>
+
+	<!--Cash-->
+	<entityname.ita_wallet1>Бумажник</entityname.ita_wallet1>
+	<entitydescription.ita_wallet1>Подходит для хранения карточек или наличности.</entitydescription.ita_wallet1>
+	<entityname.ita_bill50>Купюра 50кр</entityname.ita_bill50>
+	<entitydescription.ita_bill50>Обычные бумажные деньги - ничего необычного.</entitydescription.ita_bill50>
+	<entityname.ita_bill100>Купюра 100кр</entityname.ita_bill100>
+	<entitydescription.ita_bill100>Обычные бумажные деньги - ничего необычного.</entitydescription.ita_bill100>
+	<entityname.ita_bill200>Купюра 200кр</entityname.ita_bill200>
+	<entitydescription.ita_bill200>Обычные бумажные деньги - ничего необычного..</entitydescription.ita_bill200>
+	<entityname.ita_coin5>Монета 5кр</entityname.ita_coin5>
+	<entitydescription.ita_coin5>Обычные монеты - ничего необычного.</entitydescription.ita_coin5>
+	<entityname.ita_coin1>Монета 1кр</entityname.ita_coin1>
+	<entitydescription.ita_coin1>Обычные монеты - ничего необычного.</entitydescription.ita_coin1>
+
+	<!--Minerals (temporary, until mining bug is fixed)-->
+	<entityname.ita_ilmenite>Ильменит</entityname.ita_ilmenite>
+	<entitydescription.ita_ilmenite>Минерал, содержащий титан.</entitydescription.ita_ilmenite>
+	<entityname.ita_chalcopyrite>Халькопирит</entityname.ita_chalcopyrite>
+	<entitydescription.ita_chalcopyrite>Минерал, содержащий медь.</entitydescription.ita_chalcopyrite>
+	<entityname.ita_brockite>Брокит</entityname.ita_brockite>
+	<entitydescription.ita_brockite>Минерал, содержащий торий и фосфор.</entitydescription.ita_brockite>
+	<entityname.ita_diamond>Алмаз</entityname.ita_diamond>
+	<entitydescription.ita_diamond>Кристалл, состоящий из твердого углерода.</entitydescription.ita_diamond>
+	<entityname.ita_pyromorphite>Пироморфит</entityname.ita_pyromorphite>
+	<entitydescription.ita_pyromorphite>Минерал, состоящий из хлорина.</entitydescription.ita_pyromorphite>
+
+	<!--Caves-->
+	<entityname.ita_climber2>Натяжной трос</entityname.ita_climber2>
+	<entitydescription.ita_climber2>Этот эластичный трос позволяет альпинистам достигать высоких вертикальных пространств.</entitydescription.ita_climber2>
+	<entityname.ita_climber4>Трос для спуска</entityname.ita_climber4>
+	<entitydescription.ita_climber4>Эта мягкий эластичный трос позволяет альпинистам медленно спускаться.</entitydescription.ita_climber4>
+	<entityname.ita_climber2hook>Крюк от натяжного троса</entityname.ita_climber2hook>
+	<entitydescription.ita_climber2hook>Этот крюк позволяет альпинистам достигать высоких вертикальных пространств.</entitydescription.ita_climber2hook>
+	<entityname.ita_climber4hook>Крюк от троса для спуска</entityname.ita_climber4hook>
+	<entitydescription.ita_climber4hook>Этот крюк позволяет альпинистам медленно спускаться.</entitydescription.ita_climber4hook>
+	<entityname.ita_climber1>Тросомет</entityname.ita_climber1>
+	<entitydescription.ita_climber1>Крайне полезное устройство для исследования сухих пещер и руин Европы.</entitydescription.ita_climber1>
+	<entityname.ita_CaveLamp1>Пещерная лампа 1</entityname.ita_CaveLamp1>
+	<entityname.ita_CaveLamp2>Пещерная лампа 2</entityname.ita_CaveLamp2>
+	<entityname.ita_lantern1>Лампа</entityname.ita_lantern1>
+	<entityname.ita_door1>Укрепленная дверь</entityname.ita_door1>
+	<entityname.ita_bridge1>Выдвижной мост</entityname.ita_bridge1>
+
+	<!--Store Items-->
+	<entityname.ita_container_depthholder1>Держатель для глубинных бомб</entityname.ita_container_depthholder1>
+	<entitydescription.ita_container_depthholder1>Съемное настенное крепление для надежного хранения глубинных бомб. Нажмите E, чтобы прикрепить или отсоединить с помощью гаечного ключа.</entitydescription.ita_container_depthholder1>
+	<entityname.ita_duffelbag1>Плавучий вещмешок</entityname.ita_duffelbag1>
+	<entitydescription.ita_duffelbag1>Вещмешок с вставками, которые регулируют плавучесть.</entitydescription.ita_duffelbag1>
+	
+	<entityname.ita_bartable>Барная Стойка</entityname.ita_bartable>
+	<entityname.ita_canteentable>Буфет</entityname.ita_canteentable>
+	<entityname.ita_clothiertable>Стойка - Одежда и Галантерея</entityname.ita_clothiertable>
+	<entityname.ita_pettradertable>Стойка - Питомцы</entityname.ita_pettradertable>
+	<entityname.ita_botanisttable>Стойка - Агроном</entityname.ita_botanisttable>
+	<entityname.ita_electriciantable>Стойка - Электрика</entityname.ita_electriciantable>
+	<entityname.ita_climbertable>Стойка - Оборудование Исследователя</entityname.ita_climbertable>
+	<entityname.ita_gunsmithtable1>Оружейная Стойка</entityname.ita_gunsmithtable1>
+	
+	<!--Furniture-->
+	<entityname.ita_bed>Удобная койка</entityname.ita_bed>
+	<entityname.ita_outpostchair1>Барный табурет</entityname.ita_outpostchair1>
+	<entityname.ita_terminal>Терминал аванпоста</entityname.ita_terminal>
+	<entityname.ita_board1>Доска объявлений</entityname.ita_board1>
+	<entityname.ita_display>Витрина</entityname.ita_display>
+	<entityname.ita_outpostchair2>Офисное кресло для клиентов</entityname.ita_outpostchair2>
+	
+	<!--Clothing-->
+	<entityname.ita_engineersuitmecha1>Мехасьют</entityname.ita_engineersuitmecha1>
+	<entityname.bluejumpsuit3>Комбинезон опытного Механика</entityname.bluejumpsuit3>
+	<entityname.orangejumpsuit3>Спецовка опытного Инженера</entityname.orangejumpsuit3>
+	<entityname.doctorsuniform3>Форма опытного Врача</entityname.doctorsuniform3>
+	<entityname.greenjumpsuit>Комбинезон Агронома</entityname.greenjumpsuit>
+	
+	<!--Food-->
+	<entityname.ita_bloodpunch>Напиток &quot;Blood Punch&quot;</entityname.ita_bloodpunch>
+	<entityname.ita_crispychitin>Чипсы &quot;Хрустящий Хитин&quot;</entityname.ita_crispychitin>
+	<entityname.ita_drinkfishtail>&quot;Fishtail&quot; коктейль</entityname.ita_drinkfishtail>
+	<entityname.ita_crawyum>Суп &quot;Сraw-yum&quot;</entityname.ita_crawyum>
+	<entitydescription.ita_crawyum>Лучше зажать нос и побыстрей проглотить.</entitydescription.ita_crawyum>
+	
+	<!--Contests-->
+	<entityname.ita_race_ticket1>Красный талон</entityname.ita_race_ticket1>
+	<entityname.ita_race_ticket2>Зеленый талон</entityname.ita_race_ticket2>
+	<entityname.ita_race_ticket3>Синий талон</entityname.ita_race_ticket3>
+
+	<!--Clothes-->
+	<entityname.ita_hazmat1>Костюм противорадиационной защиты</entityname.ita_hazmat1>
+	<entitydescription.ita_hazmat1>Этот костюм полной изоляции обеспечивает надежную защиту от воздействия радиации и огня. Для эксплуатации необходимо установить балон с кислородом в отсек на спине.</entitydescription.ita_hazmat1>
+
+	<entityname.ita_prisoneruniform>Униформа заключенного</entityname.ita_prisoneruniform>
+	<entitydescription.ita_prisoneruniform>Desc</entitydescription.ita_prisoneruniform>
+
+	<entityname.tongs>Щипцы</entityname.tongs>
+	<entitydescription.tongs>Инструмент для извлечения и переноски раскаленных топливных стержней.</entitydescription.tongs>
+
+	<!--Misc -->
+	<entityname.guide1>Руководство - Топливные стержни</entityname.guide1>
+	<locationname.Cave>Пещеры - Естественное образование</locationname.Cave>
+
+	<!--Jobs-->
+	<jobname.gunner>ita_gunner_npc</jobname.gunner>
+	<jobdescription.gunner>NPCjob</jobdescription.gunner>
+	<jobname.soldier>ita_soldier_npc</jobname.soldier>
+	<SkillName.tough>Крутой</SkillName.tough>
+	<SkillName.lepi>LePiromano</SkillName.lepi>
+	<jobdescription.soldier>NPCjob</jobdescription.soldier>
+	
+	<!--Alien-->
+	<entityname.itasocket>Ячейка для артефакта</entityname.itasocket>
+	<entitydescription.itasocket>Поместите сюда не нужные артефакты, и потяните за рычаг. Вклад в исследования Европы будет вознагражден.</entitydescription.itasocket>
+
+	<entityname.ita_alienchestwhite>Сундук Древних - Белый</entityname.ita_alienchestwhite>
+	<entityname.ita_alienchestblue>Сундук Древних - Синий</entityname.ita_alienchestblue>
+	<entityname.ita_alienchestred>Сундук Древних - Красный</entityname.ita_alienchestred>
+	<entityname.ita_divingsuit>Водолазная броня Повстанца</entityname.ita_divingsuit>
+	<entityname.ita_alienmace>Булава Древних</entityname.ita_alienmace>
+	<entityname.ita_alienmace1>Технология Древних - нижняя часть</entityname.ita_alienmace1>
+	<entityname.ita_alienmace2>Технология Древних - верхняя часть</entityname.ita_alienmace2>
+	<entityname.ita_ancientpiece>Изображение Древних</entityname.ita_ancientpiece>
+	
+	<entityname.spawnerfractal>Точка материализации Фрактальных Стражей</entityname.spawnerfractal>
+	<entityname.ita_fabricator1>Комбинатор Древних</entityname.ita_fabricator1>
+	<entityname.socket1ita>Ячейка квадратной формы</entityname.socket1ita>
+	<entityname.socket2ita>Ячейка шестиугольной формы</entityname.socket2ita>
+	<entityname.socket3ita>Ячейка T-формы</entityname.socket3ita>
+	<entityname.socket4ita>Ячейка для инопланетного энергоблока</entityname.socket4ita>
+	<entityname.ita_aliendoor_blue>Дверь Древних - Синяя</entityname.ita_aliendoor_blue>
+	<entityname.ita_aliendoor_red>Дверь Древних - Красная</entityname.ita_aliendoor_red>
+	<entityname.ita_alienhatch_blue>Люк Древних - Синий</entityname.ita_alienhatch_blue>
+	<entityname.ita_alienhatch_red>Люк Древних - Красный</entityname.ita_alienhatch_red>
+	
+	<locationchange.cave.changeto.mine>Колонисты с ближайших аванпостов основали новую шахту в пещере [previousname].</locationchange.cave.changeto.mine>
+	
+	<!-- When adding new text, do it so at the bottom under the 'New additions' & 'Changed values' respectively. If it's a new tag entirely, put it under the new additions one; If it's an update to an existing value, put it under the changed values one. -->
+	<!-- DO NOT EDIT EXISTING TAGS FOR ALREADY TRANSLATED LINES -> if you need a new tag for something, add it under the 'New values' header and comment if there's some other tag that should be replaced -->
+	
+	<!--LINES MODIFIED-->	
+
+	<!--NEW LINES ADDED-->
+</infotexts>
