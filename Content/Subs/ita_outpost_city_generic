@@ -1,0 +1,127 @@
+﻿<Submarine description="" checkval="1730064293" price="1000" initialsuppliesspawned="false" type="OutpostModule" tags="0" gameversion="0.11.0.10" dimensions="640,256" recommendedcrewsizemin="1" recommendedcrewsizemax="2" recommendedcrewexperience="Unknown" requiredcontentpackages="" maxcount="50" commonness="10" gappositions="Right, Left, Top, Bottom" flags="none" allowattachto="any" allowedlocationtypes="" name="ita_module_city_generic">
+  <Structure name="Back Wall C2" identifier="FF_Wall_C2" ID="1" rect="-320,136,656,272" specialtag="" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="1" texturescale="0.5,0.5" textureoffset="0,30" noaitarget="False" disallowedupgrades="" spritedepth="0.98" hiddeningame="False" />
+  <Gap ID="2" horizontal="false" rect="-56,-97,128,59" />
+  <Gap ID="3" horizontal="false" rect="-56,159,128,59" />
+  <Item name="" identifier="doorwbuttons" ID="4" rect="-324,104,24,208" linked="11,15,9" noninteractable="False" rotation="0" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="door" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.51" hiddeningame="False">
+    <Door openingspeed="3" closingspeed="3" togglecooldown="1" isopen="False" usebetweenoutpostmodules="True" pickingtime="10" canbepicked="True" allowingameediting="True" msg="ItemMsgForceOpenCrowbar">
+      <requireditem items="crowbar" type="Equipped" optional="true" ignoreineditor="false" />
+      <requireditem items="idcard" type="Picked" optional="true" ignoreineditor="false" />
+    </Door>
+    <Repairable deteriorationspeed="0" mindeteriorationdelay="0" maxdeteriorationdelay="0" mindeteriorationcondition="50" repairthreshold="80" fixdurationlowskill="25" fixdurationhighskill="10" pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgRepairWrench">
+      <requireditem items="wrench" type="Equipped" optional="false" ignoreineditor="false" />
+    </Repairable>
+    <ConnectionPanel locked="False" pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgRewireScrewdriver">
+      <requireditem items="screwdriver" type="Equipped" optional="false" ignoreineditor="false" />
+      <input name="toggle" />
+      <input name="set_state" />
+      <output name="state_out" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="doorwbuttons" ID="5" rect="316,104,24,208" linked="6,15,8" noninteractable="False" rotation="0" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="door" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.51" hiddeningame="False">
+    <Door openingspeed="3" closingspeed="3" togglecooldown="1" isopen="False" usebetweenoutpostmodules="True" pickingtime="10" canbepicked="True" allowingameediting="True" msg="ItemMsgForceOpenCrowbar">
+      <requireditem items="crowbar" type="Equipped" optional="true" ignoreineditor="false" />
+      <requireditem items="idcard" type="Picked" optional="true" ignoreineditor="false" />
+    </Door>
+    <Repairable deteriorationspeed="0" mindeteriorationdelay="0" maxdeteriorationdelay="0" mindeteriorationcondition="50" repairthreshold="80" fixdurationlowskill="25" fixdurationhighskill="10" pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgRepairWrench">
+      <requireditem items="wrench" type="Equipped" optional="false" ignoreineditor="false" />
+    </Repairable>
+    <ConnectionPanel locked="False" pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgRewireScrewdriver">
+      <requireditem items="screwdriver" type="Equipped" optional="false" ignoreineditor="false" />
+      <input name="toggle" />
+      <input name="set_state" />
+      <output name="state_out" />
+    </ConnectionPanel>
+  </Item>
+  <Gap ID="6" horizontal="true" rect="311,104,34,208" />
+  <Structure name="Large Horizontal Inside Wall" identifier="ff_x_wall" ID="7" rect="80,-104,272,48" specialtag="" maxhealth="75" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.5" texturescale="1,1" textureoffset="0,0" noaitarget="False" disallowedupgrades="" spritedepth="0.06" hiddeningame="False" />
+  <Structure name="Large Vertical Inside Wall" identifier="ff_y_wall" ID="8" rect="304,104,48,208" specialtag="" maxhealth="75" spritecolor="255,255,255,254" usedropshadow="False" dropshadowoffset="0,0" scale="0.5" texturescale="1,1" textureoffset="0,0" noaitarget="False" disallowedupgrades="" spritedepth="0.06" hiddeningame="False" />
+  <Structure name="Large Vertical Inside Wall" identifier="ff_y_wall" ID="9" rect="-336,104,48,208" specialtag="" maxhealth="75" spritecolor="255,255,255,252" usedropshadow="False" dropshadowoffset="0,0" scale="0.5" texturescale="1,1" textureoffset="0,0" noaitarget="False" disallowedupgrades="" spritedepth="0.06" hiddeningame="False" />
+  <Structure name="Large Horizontal Inside Wall" identifier="ff_x_wall" ID="10" rect="-336,152,272,48" specialtag="" maxhealth="75" spritecolor="255,255,255,253" usedropshadow="False" dropshadowoffset="0,0" scale="0.5" texturescale="1,1" textureoffset="0,0" noaitarget="False" disallowedupgrades="" spritedepth="0.06" hiddeningame="False" />
+  <Gap ID="11" horizontal="true" rect="-329,104,34,208" />
+  <Hull ID="12" rect="-312,128,640,256" water="0" backgroundsections="" roomname="RoomName.SubCenter" ambientlight="0,0,0,0" oxygen="163840" disallowedupgrades="" spritedepth="0.001" scale="0" hiddeningame="False" />
+  <Item name="" identifier="hatchwbuttons" ID="13" rect="-56,154,128,49" linked="3,15,23" noninteractable="False" rotation="0" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="door" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.7" hiddeningame="False">
+    <Door openingspeed="3" closingspeed="3" togglecooldown="1" isopen="False" usebetweenoutpostmodules="True" pickingtime="10" canbepicked="True" allowingameediting="True" msg="ItemMsgForceOpenCrowbar">
+      <requireditem items="crowbar" type="Equipped" optional="true" ignoreineditor="false" />
+      <requireditem items="idcard" type="Picked" optional="true" ignoreineditor="false" />
+    </Door>
+    <Repairable deteriorationspeed="0" mindeteriorationdelay="0" maxdeteriorationdelay="0" mindeteriorationcondition="50" repairthreshold="80" fixdurationlowskill="25" fixdurationhighskill="10" pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgRepairWrench">
+      <requireditem items="wrench" type="Equipped" optional="false" ignoreineditor="false" />
+    </Repairable>
+    <ConnectionPanel locked="False" pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgRewireScrewdriver">
+      <requireditem items="screwdriver" type="Equipped" optional="false" ignoreineditor="false" />
+      <input name="toggle" />
+      <input name="set_state" />
+      <output name="state_out" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="hatchwbuttons" ID="14" rect="-56,-102,128,49" linked="2,15,22" noninteractable="False" rotation="0" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="door" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.7" hiddeningame="False">
+    <Door openingspeed="3" closingspeed="3" togglecooldown="1" isopen="False" usebetweenoutpostmodules="True" pickingtime="10" canbepicked="True" allowingameediting="True" msg="ItemMsgForceOpenCrowbar">
+      <requireditem items="crowbar" type="Equipped" optional="true" ignoreineditor="false" />
+      <requireditem items="idcard" type="Picked" optional="true" ignoreineditor="false" />
+    </Door>
+    <Repairable deteriorationspeed="0" mindeteriorationdelay="0" maxdeteriorationdelay="0" mindeteriorationcondition="50" repairthreshold="80" fixdurationlowskill="25" fixdurationhighskill="10" pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgRepairWrench">
+      <requireditem items="wrench" type="Equipped" optional="false" ignoreineditor="false" />
+    </Repairable>
+    <ConnectionPanel locked="False" pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgRewireScrewdriver">
+      <requireditem items="screwdriver" type="Equipped" optional="false" ignoreineditor="false" />
+      <input name="toggle" />
+      <input name="set_state" />
+      <output name="state_out" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="junctionbox" ID="15" rect="64,72,55,88" linked="13,4,14,5" noninteractable="False" rotation="0" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="junctionbox,light" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.8" hiddeningame="False">
+    <PowerTransfer canbeoverloaded="True" overloadvoltage="2" fireprobability="0.15" isactive="True" minvoltage="0" powerconsumption="0" vulnerabletoemp="True" pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgInteractSelect" />
+    <LightComponent range="10" castshadows="False" drawbehindsubs="False" ison="True" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0" lightcolor="255,255,255,0" isactive="True" minvoltage="0.5" powerconsumption="1" vulnerabletoemp="True" pickingtime="0" canbepicked="False" allowingameediting="False" msg="" />
+    <LightComponent range="10" castshadows="False" drawbehindsubs="False" ison="False" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="1.5" lightcolor="255,255,255,0" minvoltage="0.5" powerconsumption="1" vulnerabletoemp="True" pickingtime="0" canbepicked="False" allowingameediting="False" msg="" />
+    <ConnectionPanel locked="False" pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgRewireScrewdriver">
+      <requireditem items="screwdriver" type="Equipped" optional="false" ignoreineditor="false" />
+      <output name="power">
+        <link w="28" />
+      </output>
+      <output name="signal_0" />
+      <output name="signal_1" />
+      <output name="signal_2" />
+      <output name="signal_3" />
+    </ConnectionPanel>
+    <Repairable deteriorationspeed="0.1" mindeteriorationdelay="120" maxdeteriorationdelay="720" mindeteriorationcondition="0" repairthreshold="80" fixdurationlowskill="25" fixdurationhighskill="5" pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgRepairScrewdriver">
+      <requireditem items="screwdriver" type="Equipped" optional="false" ignoreineditor="false" />
+    </Repairable>
+  </Item>
+  <Structure name="Large Horizontal Inside Wall" identifier="ff_x_wall" ID="16" rect="80,152,272,48" specialtag="" maxhealth="75" spritecolor="255,255,255,253" usedropshadow="False" dropshadowoffset="0,0" scale="0.5" texturescale="1,1" textureoffset="0,0" noaitarget="False" disallowedupgrades="" spritedepth="0.06" hiddeningame="False" />
+  <Structure name="Large Horizontal Inside Wall" identifier="ff_x_wall" ID="17" rect="-336,-104,272,48" specialtag="" maxhealth="75" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.5" texturescale="1,1" textureoffset="0,0" noaitarget="False" disallowedupgrades="" spritedepth="0.06" hiddeningame="False" />
+  <Structure name="Large Inside Wall Cap H1" identifier="inwalllcaph1" ID="18" rect="64,-104,27,48" specialtag="" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.5" texturescale="1,1" textureoffset="0,0" noaitarget="True" disallowedupgrades="" spritedepth="0.03" hiddeningame="False" />
+  <Structure name="Large Inside Wall Cap H1" identifier="inwalllcaph1" ID="19" rect="64,152,27,48" specialtag="" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.5" texturescale="1,1" textureoffset="0,0" noaitarget="True" disallowedupgrades="" spritedepth="0.03" hiddeningame="False" />
+  <Structure name="Large Inside Wall Cap H1" identifier="inwalllcaph1" ID="20" rect="-80,152,27,48" flippedx="true" specialtag="" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.5" texturescale="1,1" textureoffset="0,0" noaitarget="True" disallowedupgrades="" spritedepth="0.03" hiddeningame="False" />
+  <Structure name="Large Inside Wall Cap H1" identifier="inwalllcaph1" ID="21" rect="-80,-104,27,48" flippedx="true" specialtag="" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.5" texturescale="1,1" textureoffset="0,0" noaitarget="True" disallowedupgrades="" spritedepth="0.03" hiddeningame="False" />
+  <Structure name="Large Horizontal Inside Wall" identifier="ff_x_wall" ID="22" rect="-64,-104,144,48" specialtag="" maxhealth="75" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.5" texturescale="1,1" textureoffset="0,0" noaitarget="False" disallowedupgrades="" spritedepth="0.06" hiddeningame="False" />
+  <Structure name="Large Horizontal Inside Wall" identifier="ff_x_wall" ID="23" rect="-64,152,144,48" specialtag="" maxhealth="75" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="0.5" texturescale="1,1" textureoffset="0,0" noaitarget="False" disallowedupgrades="" spritedepth="0.06" hiddeningame="False" />
+  <Item name="" identifier="ladder" ID="24" rect="0,136,11,272" noninteractable="False" rotation="0" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="ladder" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.51" hiddeningame="False">
+    <Ladder pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgClimbSelect" />
+  </Item>
+  <Item name="" identifier="lightfluorescentm01" ID="25" rect="-64,87,40,56" noninteractable="False" rotation="0" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="smallitem,light" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.8" hiddeningame="False">
+    <LightComponent range="450" castshadows="True" drawbehindsubs="False" ison="True" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0" lightcolor="255,150,100,127" isactive="True" minvoltage="0.5" powerconsumption="5" vulnerabletoemp="True" pickingtime="0" canbepicked="False" allowingameediting="True" msg="" />
+    <ConnectionPanel locked="False" pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgRewireScrewdriver">
+      <requireditem items="screwdriver" type="Equipped" optional="false" ignoreineditor="false" />
+      <input name="power">
+        <link w="28" />
+      </input>
+      <input name="toggle" />
+      <input name="set_state" />
+    </ConnectionPanel>
+  </Item>
+  <Structure name="Cable Holder Horizontal" identifier="CableHolderHorizontal" ID="26" rect="-320,111,656,16" specialtag="" spritecolor="255,255,255,255" usedropshadow="False" dropshadowoffset="0,0" scale="1" texturescale="1,1" textureoffset="0,0" noaitarget="False" disallowedupgrades="" spritedepth="0.85" hiddeningame="False" />
+  <WayPoint ID="27" x="-265" y="-15" spawn="Path" linkedto0="29" linkedto1="35" />
+  <Item name="" identifier="redwire" ID="28" rect="-65,75,42,16" noninteractable="False" rotation="0" scale="0.5" spritecolor="254,23,17,255" inventoryiconcolor="254,23,17,255" containercolor="255,255,255,255" condition="100" tags="smallitem,wire" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.55" hiddeningame="False">
+    <Holdable holdpos="0,0" holdangle="0" swingamount="0,0" swingspeed="0" swingwhenholding="False" swingwhenaiming="False" swingwhenusing="False" pickingtime="0" canbepicked="True" allowingameediting="True" msg="ItemMsgPickUpSelect" />
+    <Wire pickingtime="0" canbepicked="False" allowingameediting="True" msg="" nodes="91.5;28;96;40;96;104;-40;104;-40;64;-44;59" />
+  </Item>
+  <WayPoint ID="29" x="-115" y="-15" spawn="Path" linkedto0="27" linkedto1="30" linkedto2="32" />
+  <WayPoint ID="30" x="35" y="-15" spawn="Path" linkedto0="29" linkedto1="31" linkedto2="32" />
+  <WayPoint ID="31" x="185" y="-15" spawn="Path" linkedto0="30" linkedto1="34" />
+  <WayPoint ID="32" x="2" y="-23" spawn="Path" ladders="24" linkedto0="33" linkedto1="29" linkedto2="30" linkedto3="36" linkedto4="37" />
+  <WayPoint ID="33" x="2" y="138" spawn="Path" ladders="24" linkedto0="32" />
+  <WayPoint ID="34" x="325" y="9" spawn="Path" gap="6" linkedto0="31" />
+  <WayPoint ID="35" x="-315" y="9" spawn="Path" gap="11" linkedto0="27" />
+  <WayPoint ID="36" x="5" y="-119" spawn="Path" gap="2" linkedto0="32" />
+  <WayPoint ID="37" x="5" y="126" spawn="Path" gap="3" linkedto0="32" />
+</Submarine>

@@ -46,11 +46,15 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  <Item name="" identifier="ita_mcrate_impact1" tags="cratetall" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" impacttolerance="2.9" hideinmenus="false">
+  <Item name="" identifier="ita_mcrate_impact1" tags="cratetall" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" impacttolerance="2.0" hideinmenus="false">
     <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_sprites_campaign.png" depth="0.54" sourcerect="166,304,93,110" origin="0.5,0.5" />
-    <Body width="93" height="110" density="50" />
+    <Body width="93" height="110" density="15" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
+      <StatusEffect type="OnImpact" target="This" Condition="-34.0" />
+	  <StatusEffect type="OnContained" target="This" setvalue="true" condition="0" comparison="Or">
+		<Conditional hastag="fabricator" targetcontainer="true" />
+		<Conditional hastag="deconstructor" targetcontainer="true" />
+	  </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionDebris4.ogg" selectionmode="All" range="5000" />
         <Explosion range="150.0" structuredamage="7" force="20.0" applyfireeffects="false">
@@ -1977,7 +1981,7 @@
 	</Holdable>
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="ita_climber2hook" removecontaineditemsondeconstruct="true">
       <Containable items="ita_climber2hook" />
-	  <StatusEffect type="OnUse" target="This" condition="-26.0" disabledeltatime="true">
+	  <StatusEffect type="OnUse" target="This" condition="-3.0" disabledeltatime="true">
         <SpawnItem identifiers="ita_climber2hook" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
@@ -2001,7 +2005,7 @@
 	</Holdable>
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="ita_climber4hook" removecontaineditemsondeconstruct="true">
       <Containable items="ita_climber4hook" />
-	  <StatusEffect type="OnUse" target="This" condition="-26.0" disabledeltatime="true">
+	  <StatusEffect type="OnUse" target="This" condition="-3.0" disabledeltatime="true">
         <SpawnItem identifiers="ita_climber4hook" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
@@ -2010,31 +2014,29 @@
     <InventoryIcon texture="Mods/IntoTheAbyss/Content/Sprites/CaveItems.png" sourcerect="0,157,106,94" origin="0.5,0.5" />
     <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
     <ContainedSprite texture="Mods/IntoTheAbyss/Content/Sprites/CaveItems.png" sourcerect="177,1,71,52" origin="0.5,0.5" />
-    <Body radius="40" density="0" friction="100000" />
+    <Body radius="10" density="0" friction="100000" />
     <Rope targetpullforce="10" SourcePullForce="53" projectilepullforce="" maxlength="2000" snaponcollision="false" spritewidth="6" tile="true">
       <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
       <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/CaveItems.png" sourcerect="0,143,250,13" depth="0.57" origin="0.5,0.5" />
       <EndSprite texture="Mods/IntoTheAbyss/Content/Sprites/CaveItems.png" sourcerect="366,10,136,103" depth="0.56" origin="0.5,0.5" />
-      <!-- Automatically snap after 300 seconds -->
-      <!--<StatusEffect type="OnUse" target="This" Snapped="true" delay="1"/>-->
-      <!-- Remove 1 second after snapping -->
-      <StatusEffect type="OnUse" target="This" Snapped="true" delay="5" condition="-29" />
-      <!-- Snap after 5 seconds if not stuck to anything -->
+      <!-- Damage this and snap after being shot from grapling gun  -->
+      <StatusEffect type="OnUse" target="This" Snapped="true" delay="6" condition="-100" />
+	  <!-- Remove on broken  -->
+	  <StatusEffect type="OnBroken" target="This" >
+		<Remove />
+      </StatusEffect>
+      <!-- Snap after 6.5 seconds if not stuck to anything and remove -->
       <StatusEffect type="OnUse" target="This" Snapped="true" delay="6.5" checkconditionalalways="true">
         <Conditional targetitemcomponent="Projectile" IsStuckToTarget="false" />
+		<Remove />
       </StatusEffect>
-      <StatusEffect type="OnDamaged" target="This">
-        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="1000" />
-        <ParticleEmitter particle="bloodsplash" particleamount="1" scalemin="1" scalemax="1.5" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" />
-        <ParticleEmitter particle="waterblood" particleamount="1" anglemin="0" anglemax="360" scalemin="2" scalemax="4" />
-        <ParticleEmitter particle="gib" particleamount="4" scalemin="0.25" scalemax="1" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
-      </StatusEffect>
+      <!-- Snap after 6.5 seconds if not stuck to anything -->
 	  <StatusEffect type="Always" target="This" delay="1" checkconditionalalways="true">
         <Conditional Snapped="true" />
         <Remove />
       </StatusEffect>
     </Rope>
-    <Projectile characterusable="false" launchimpulse="25.0" sticktostructures="true" sticktocharacters="false" stickpermanently="true" >
+    <Projectile characterusable="false" launchimpulse="25.0" sticktostructures="true" sticktocharacters="false" stickpermanently="true" sticktoitems="false" >
       <StatusEffect type="OnImpact" target="UseTarget">
         <sound file="Mods/IntoTheAbyss/Content/Sounds/ita_impacthook.ogg" range="2000" />
         <ParticleEmitter particle="spark" anglemin="0" anglemax="359" particleamount="5" velocitymin="100" velocitymax="500" scalemin="0.5" scalemax="1" />
@@ -2110,7 +2112,10 @@
       <sound file="Mods/IntoTheAbyss/Content/Sounds/ita_shoothook.ogg" range="1000" type="OnUse" />
       <RequiredItems items="climbingammo" type="Contained" msg="Out of Ropes" />
 	  <StatusEffect ignorecover="true" onlyinside="true" type="OnUse" target="This" setvalue="true" stackable="false" delay="2">
-		<Explosion range="30.0" structuredamage="0" empstrength="0" camerashake="0" stun="0.15" force="-10" flames="false" smoke="false" shockwave="false" sparks="false" underwaterbubble="false"/>
+		<Explosion range="30.0" structuredamage="0" empstrength="0" camerashake="0" stun="0.25" force="-20" flames="false" smoke="false" shockwave="false" sparks="false" underwaterbubble="false"/>
+	  </StatusEffect>
+	  <StatusEffect ignorecover="true" onlyinside="true" type="OnUse" target="This" setvalue="true" stackable="false" delay="2.5">
+		<Explosion range="30.0" structuredamage="0" empstrength="0" camerashake="0" stun="0.25" force="-20" flames="false" smoke="false" shockwave="false" sparks="false" underwaterbubble="false"/>
 	  </StatusEffect>
 	  <StatusEffect type="OnUse" target="Contained">
         <Use />
@@ -2690,16 +2695,11 @@
       </StatusEffect>
     </Holdable>
   </Item>
-<<<<<<< HEAD
-  <Item name="npc_outpostcard" identifier="ita_adresscard" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate">
-=======
-  <Item name="" identifier="ita_adresscard" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" noninteractable="true">
->>>>>>> parent of 2d076cb... Limit ruincount to 1, minor tweaks
+  <Item name="NPCCard" identifier="ita_adresscard" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" noninteractable="true">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,64,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/idcard.png" depth="0.8" sourcerect="0,0,16,16" />
+    <Sprite texture="Content/Items/idcard.png" depth="0.8" sourcerect="0,0,1,1" />
     <Body width="16" height="12" density="20" />
-    <IdCard slots="Card" msg="ItemMsgPickUpSelect" />
-    <Holdable slots="Card" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+    <Holdable slots="Any" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnContained" target="Character" stackable="false" disabledeltatime="true" delay="0.6">
         <Affliction identifier="stun" strength="-50" />
       </StatusEffect>
@@ -3024,7 +3024,7 @@
     </Controller>
   </Item>
   <!-- Event Items -->
-  <Item name="spawnershop" identifier="spawnershop" category="Electrical" Tags="smallitem,signal,logic,explosive" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+  <Item name="spawnershop" identifier="spawnershop" category="Electrical" Tags="smallitem,signal,logic,explosive" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true" hideinmenus="true">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,388,63,57" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="96,35,31,26" origin="0.5,0.5" />
     <Body width="31" height="25" density="30" />
@@ -3141,11 +3141,16 @@
           <RequiredItem items="gunsmith1" type="Contained" />
           <Remove />
         </StatusEffect>
+		<StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_cave1_sep1" />
+          <RequiredItem items="cave_hideout" type="Contained" />
+          <Remove />
+        </StatusEffect>
       </input>
     </ConnectionPanel>
     <ItemContainer canbeselected="true" capacity="1" itempos="0,0" hideitems="false" />
   </Item>
-  <Item name="spawnerevents" identifier="spawnerevents" category="Electrical" Tags="smallitem,signal,logic,explosive" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+  <Item name="spawnerevents" identifier="spawnerevents" category="Electrical" Tags="smallitem,signal,logic,explosive" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true" hideinmenus="true">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,388,63,57" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="96,35,31,26" origin="0.5,0.5" />
     <Body width="31" height="25" density="30" />
@@ -3425,7 +3430,7 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  <Item name="ID Card" identifier="ita_cardsep" category="Equipment" Tags="smallitem,id_cardsep" cargocontaineridentifier="metalcrate">
+  <Item name="ID Card" identifier="ita_cardsep" category="Equipment" Tags="smallitem,id_cardsep" cargocontaineridentifier="metalcrate" noninteractable="true">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,64,64,64" origin="0.5,0.5" scale="0.001" />
     <Sprite texture="Content/Items/idcard.png" depth="0.8" sourcerect="0,0,16,16" />
     <Body width="16" height="12" density="20" />
@@ -3437,6 +3442,25 @@
         <Remove />
       </StatusEffect>
     </Holdable>
+  </Item>
+  <Item name="." identifier="ita_cardsep1_hideout" category="Equipment" Tags="smallitem,id_cardsep" cargocontaineridentifier="metalcrate" noninteractable="true">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,64,64,64" origin="0.5,0.5" scale="0.001" />
+    <Sprite texture="Content/Items/idcard.png" depth="0.8" sourcerect="0,0,1,1" />
+    <Body width="16" height="12" density="20" />
+    <Holdable slots="Any" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="Character,This">
+        <Conditional IsDead="true" />
+        <TriggerEvent identifier="ita_sepkill1" />
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="" identifier="id_bounty_sep" category="Equipment" Tags="smallitem,id_bounty_sep" cargocontaineridentifier="metalcrate">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,64,64,64" origin="0.5,0.5" scale="0.001" />
+    <Sprite texture="Content/Items/idcard.png" depth="0.8" sourcerect="0,0,16,16" />
+    <Body width="16" height="12" density="20" />
+	<IdCard slots="Card" msg="ItemMsgPickUpSelect" />
+    <Holdable slots="Card,Any" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect"/>
   </Item>
   <Item name="SignalThingy" identifier="ita_beaconsignal" category="Equipment" Tags="smallitem,sonar" cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,320,64,64" origin="0.5,0.5" />
@@ -3470,8 +3494,7 @@
       </Containable>
     </ItemContainer>
   </Item>
- 
-  <!--Ancient Alien Machines-->
+    <!--Ancient Alien Machines-->
   <Item name="" identifier="ita_fabricator1" tags="ita_fabricator1" category="Machine" description="" scale="0.5">
     <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_sprites_alien.png" sourcerect="678,667,502,513" depth="0.8" />
     <DecorativeSprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_sprites_alien.png" sourcerect="6,676,178,178" depth="0.75" origin="0.5,0.5" rotationspeed="180" offset="16,-14">
