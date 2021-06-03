@@ -2695,7 +2695,7 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  <Item name="" identifier="ita_adresscard" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" noninteractable="true">
+  <Item name="NPCCard" identifier="ita_adresscard" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" noninteractable="true">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,64,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/idcard.png" depth="0.8" sourcerect="0,0,1,1" />
     <Body width="16" height="12" density="20" />
