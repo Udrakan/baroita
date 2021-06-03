@@ -714,7 +714,7 @@
 			</ItemSet>
 		</npc>
 		<!--BASIC EVENT NPCS-->
-			<npc identifier="ita_mechanic1" job="mechanic" commonness="1" healthmultiplier="1" preferredoutpostmoduletypes="ita_engineeringmodule" behavior="StayInHull">
+			<npc identifier="ita_mechanic1" job="mechanic" commonness="1" healthmultiplier="1" preferredoutpostmoduletypes="admin,adminmodule" behavior="Passive">
 			<ItemSet commonness="1">
 				<Item identifier="baseballcap" equip="true"/>
 				<Item identifier="bluejumpsuit3" equip="true"/>
@@ -934,93 +934,6 @@
 				<Item identifier="antidama1"/>
 			</ItemSet>
 		</npc>
-		
-		<npc identifier="ita_hideout_guard1" job="securityofficer" spawnpointtags="hideout1" healthmultiplier="1" behavior="StayInHull">
-			<ItemSet>
-				<Item identifier="securitypatrolclothes" equip="true" />
-				<Item identifier="ita_cardsep1_hideout" equip="false" tags="id_cardsep,idcard"/>
-				<Item identifier="id_bounty_sep" equip="true" tags="id_cardsep,idcard"/>
-				<Item identifier="smg">
-					<Item identifier="smgmagazine" />
-				</Item>
-				<Item identifier="smgmagazine" />
-				<Item identifier="smgmagazine" />
-				<Item identifier="divingknife" />
-				<Item identifier="handcuffs"/>
-				<Item identifier="batterycell" />
-				<Item identifier="stunbaton">
-					<Item identifier="batterycell" />
-				</Item>
-				<Item identifier="bodyarmor" equip="true"/>
-				<Item identifier="ballistichelmet1" equip="true"/>
-				<Item identifier="divingmask">
-					<Item identifier="oxygentank" />
-				</Item> 
-			</ItemSet>
-		</npc>
-		<npc identifier="ita_hideout_repairnpc1" job="mechanic" commonness="1" spawnpointtags="hideout2" healthmultiplier="1" behavior="StayInHull">
-      <ItemSet commonness="1">
-        <Item identifier="baseballcap" equip="true"/>
-        <Item identifier="bluejumpsuit1" equip="true"/>
-        <Item identifier="ita_cardsep1_hideout" equip="false" tags="id_cardsep,idcard"/>
-		<Item identifier="id_bounty_sep" equip="true" tags="id_cardsep,idcard"/>
-        <Item identifier="wrench" equip="true"/>
-        <Item identifier="screwdriver" equip="true"/>
-        <Item identifier="revolver" equip="false">
-          <Item identifier="revolverround"/>
-          <Item identifier="revolverround"/>
-          <Item identifier="revolverround"/>
-          <Item identifier="revolverround"/>
-          <Item identifier="revolverround"/>
-          <Item identifier="revolverround"/>
-        </Item>
-        <Item identifier="weldingtool" equip="false">
-          <Item identifier="weldingfueltank" />
-        </Item>
-        <Item identifier="divingmask">
-          <Item identifier="oxygentank" />
-        </Item> 
-      </ItemSet>
-    </npc>
-		<npc identifier="ita_hideout_repairnpc2" job="mechanic" commonness="1" spawnpointtags="hideout3" healthmultiplier="1" behavior="StayInHull">
-      <ItemSet commonness="1">
-        <Item identifier="toolbelt">
-          <Item identifier="weldingfueltank"/>
-          <Item identifier="aluminium"/>
-          <Item identifier="weldingtool">
-            <Item identifier="weldingfueltank" />
-          </Item> 
-        </Item>
-        <Item identifier="wrench" equip="true"/>
-        <Item identifier="screwdriver" equip="true"/>
-        <Item identifier="revolver" equip="false">
-          <Item identifier="revolverround"/>
-          <Item identifier="revolverround"/>
-          <Item identifier="revolverround"/>
-          <Item identifier="revolverround"/>
-          <Item identifier="revolverround"/>
-          <Item identifier="revolverround"/>
-        </Item>
-        <Item identifier="baseballcap" equip="true"/>
-        <Item identifier="bluejumpsuit2" equip="true"/>
-        <Item identifier="ita_cardsep1_hideout" equip="false" tags="id_cardsep,idcard"/>
-		<Item identifier="id_bounty_sep" equip="true" tags="id_cardsep,idcard"/>
-        <Item identifier="divingmask">
-          <Item identifier="oxygentank" />
-        </Item> 
-      </ItemSet>
-    </npc>
-
-		<npc identifier="ita_medic1" job="medicaldoctor" spawnpointtags="security" healthmultiplier="0.8" behavior="StayInHull">
-			<ItemSet commonness="1">
-				<Item identifier="medicalofficerclothes" equip="true"/>
-				<Item identifier="idcard" equip="true"/>
-				<Item identifier="antibloodloss1"/>
-				<Item identifier="antibloodloss1"/>
-				<Item identifier="antidama1"/>
-				<Item identifier="antidama1"/>
-			</ItemSet>
-		</npc>
 
 	</npcset>
 	
@@ -1147,7 +1060,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="banditleader_heavy" commonness="0" moduleflags="crewmodule,engineeringmodule" job="securityofficer" behavior="Passive" healthmultiplier="1.5" healthmultiplierinmultiplayer="2.5" aimspeed="1" aimaccuracy="0.85" reportrange="900">
+    <npc identifier="banditleader_heavy" commonness="0" moduleflags="crewmodule,engineeringmodule" job="securityofficer" behavior="Passive" healthmultiplier="2" healthmultiplierinmultiplayer="2.5" aimspeed="1" aimaccuracy="0.85" reportrange="900">
       <ItemSet commonness="0.8">
         <Item identifier="idcard"/>
 		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
