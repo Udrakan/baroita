@@ -1027,7 +1027,6 @@
 	<npcset identifier="ita_abandonedoutpostnpcs">
 	<npc identifier="bandit" commonness="0" moduleflags="crewmodule,engineeringmodule" job="securityofficer" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1.5" aimspeed="0.65" aimaccuracy="0.65" reportrange="800">
       <ItemSet commonness="1">
-        <Item identifier="idcard"/>
 		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
         <Item identifier="banditclothes1" equip="true"/>
 		<Item identifier="opium" equip="false"/>
@@ -1039,7 +1038,6 @@
         <Item identifier="toolbelt" equip="true"/>
       </ItemSet>
       <ItemSet commonness="1">
-        <Item identifier="idcard"/>
 		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
         <Item identifier="banditclothes2" equip="true"/>
 		<Item identifier="opium" equip="false"/>
@@ -1059,7 +1057,6 @@
         </Item>
       </ItemSet>
       <ItemSet commonness="1">
-        <Item identifier="idcard"/>
 		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
         <Item identifier="banditclothes1" equip="true"/>
 		<Item identifier="opium" equip="false"/>
@@ -1071,7 +1068,6 @@
         <Item identifier="toolbelt" equip="true"/>
       </ItemSet>
       <ItemSet commonness="1">
-        <Item identifier="idcard"/>
 		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
         <Item identifier="banditclothes2" equip="true"/>
         <Item identifier="divingmask">
@@ -1092,7 +1088,6 @@
         </Item>
       </ItemSet>
       <ItemSet commonness="1">
-        <Item identifier="idcard"/>
 		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
         <Item identifier="banditclothes1" equip="true"/>
         <Item identifier="divingmask">
@@ -1106,9 +1101,9 @@
     </npc>
     <npc identifier="banditleader" commonness="0" moduleflags="crewmodule,engineeringmodule" job="securityofficer" behavior="Passive" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.5" aimspeed="1" aimaccuracy="1" reportrange="900">
       <ItemSet commonness="1">
-        <Item identifier="idcard"/>
 		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
-        <Item identifier="divingknife" equip="false"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+		<Item identifier="divingknife" equip="false"/>
 		<Item identifier="antidama1" equip="false"/>
         <Item identifier="captainscap2" equip="true"/>
         <Item identifier="captainsuniform2" equip="true"/>
@@ -1128,8 +1123,8 @@
         </Item>
       </ItemSet>
       <ItemSet commonness="0.5">
-        <Item identifier="idcard"/>
 		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+		<Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
         <Item identifier="divingknife" equip="false"/>
         <Item identifier="wrench" equip="true"/>
         <Item identifier="captainscap2" equip="true"/>
@@ -1149,9 +1144,9 @@
     </npc>
     <npc identifier="banditleader_heavy" commonness="0" moduleflags="crewmodule,engineeringmodule" job="securityofficer" behavior="Passive" healthmultiplier="1.5" healthmultiplierinmultiplayer="2.5" aimspeed="1" aimaccuracy="0.85" reportrange="900">
       <ItemSet commonness="0.8">
-        <Item identifier="idcard"/>
 		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
-        <Item identifier="divingknife" equip="false"/>
+       <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+	   <Item identifier="divingknife" equip="false"/>
         <Item identifier="captainsuniform3" equip="true"/>
         <Item identifier="bodyarmor" equip="true"/>
 		<Item identifier="antidama1" equip="false"/>
@@ -1170,9 +1165,9 @@
         </Item>
       </ItemSet>
       <ItemSet commonness="0.5">
-        <Item identifier="idcard"/>
 		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
-        <Item identifier="divingknife" equip="false"/>
+       <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+	   <Item identifier="divingknife" equip="false"/>
         <Item identifier="wrench" equip="true"/>
         <Item identifier="captainsuniform3" equip="true"/>
         <Item identifier="bodyarmor" equip="true"/>
@@ -1188,9 +1183,9 @@
         </Item>
       </ItemSet>
       <ItemSet commonness="0.2">
-        <Item identifier="idcard"/>
 		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
-        <Item identifier="divingknife" equip="false"/>
+       <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+	   <Item identifier="divingknife" equip="false"/>
         <Item identifier="captainsuniform3" equip="true"/>
         <Item identifier="bodyarmor" equip="true"/>
 		<Item identifier="antidama1" equip="false"/>
@@ -1209,9 +1204,9 @@
         <Item identifier="shotgunshell"/>
       </ItemSet>
       <ItemSet commonness="0.2">
-        <Item identifier="idcard"/>
 		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
-        <Item identifier="divingknife" equip="false"/>
+       <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+	   <Item identifier="divingknife" equip="false"/>
         <Item identifier="captainsuniform3" equip="true"/>
         <Item identifier="bodyarmor" equip="true"/>
         <Item identifier="steroids"/>
@@ -1225,9 +1220,9 @@
         </Item>
       </ItemSet>
       <ItemSet commonness="0.5">
-        <Item identifier="idcard"/>
 		<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
-        <Item identifier="divingknife" equip="false"/>
+       <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+	   <Item identifier="divingknife" equip="false"/>
         <Item identifier="orangejumpsuit2" equip="true"/>
 		<Item identifier="captainscap2" equip="true"/>
 		<Item identifier="captainscap2" equip="true"/>

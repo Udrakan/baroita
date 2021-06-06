@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <infotexts language="English" nowhitespace="false" translatedname="English">
 
-	<!-- When adding new text, do it so at the bottom under the 'New additions' & 'Changed values' respectively. If it's a new tag entirely, put it under the new additions one; If it's an update to an existing value, put it under the changed values one. -->
-	<!-- DO NOT EDIT EXISTING TAGS FOR ALREADY TRANSLATED LINES -> if you need a new tag for something, add it under the 'New values' header and comment if there's some other tag that should be replaced -->
+<!-- When adding new text, do it so at the bottom under the 'New additions' & 'Changed values' respectively. If it's a new tag entirely, put it under the new additions one; If it's an update to an existing value, put it under the changed values one. -->
+<!-- DO NOT EDIT EXISTING TAGS FOR ALREADY TRANSLATED LINES -> if you need a new tag for something, add it under the 'New values' header and comment if there's some other tag that should be replaced -->
 
-
+	
 	<!--Afflictions-->
-
+	
 	<afflictionname.exposure>Nuclear Waste Exposure</afflictionname.exposure>
 	<afflictiondescription.exposure>Caused by handling hot fuel rods. Severe localised radiation-related burns and blisters.</afflictiondescription.exposure>
 	<afflictioncauseofdeath.exposure>Died of exposure to hot nuclear waste</afflictioncauseofdeath.exposure>
@@ -28,7 +28,7 @@
 
 	<afflictionname.heal4>Well relaxed</afflictionname.heal4>
 	<afflictiondescription.heal4>Drinking in company of relatively sane people at the outpost makes you forget about the horrors of the Sea a little.[PSYCH RESISTANCE UP][PSYCH REGEN UP]</afflictiondescription.heal4>
-
+ 
 	<!--Characters-->
 
 	<character.Molochboss>Ancient Moloch</character.Molochboss>
@@ -267,11 +267,11 @@
 	<eventtext.itamissionscity1.1.1>There is plenty of work to be done. These are the most needed tasks.</eventtext.itamissionscity1.1.1>
 	<eventtext.itamissionscity1.2.2>There is always more to be done. You can take on this contract.</eventtext.itamissionscity1.2.2>
 	<eventtext.itamissionscity1.3.3>This task requires a well organised crew!</eventtext.itamissionscity1.3.3>
-
+	
 	<eventtext.itamissionsmining1.4>We need to see what types of minerals exist in this location before we start large scale mining operation. See what you can find.</eventtext.itamissionsmining1.4>
 	<eventtext.itamissionsmining2.5>We need you to clear out nests so we can keep digging in the caves.</eventtext.itamissionsmining2.5>
 	<eventtext.itamissionsmining3.6>Various other tasks are needed too.</eventtext.itamissionsmining3.6>
-
+	
 	<eventtext.itamissionsmilitary1.7>We need you to run some errands.</eventtext.itamissionsmilitary1.7>
 	<eventtext.itamissionsmilitary2.8>We need you to exterminate a large swarm. I hope you are ready for it...</eventtext.itamissionsmilitary2.8>
 	<eventtext.itamissionsmilitary3.9>We need you to get rid of massive threats to human settlements in the area. You'd better pack some serious firepower.</eventtext.itamissionsmilitary3.9>
@@ -287,7 +287,7 @@
 	<eventtext.itamissionmineralresearch>[MISSION] Cave mineral research [+10REP][1500-1800mk]</eventtext.itamissionmineralresearch>
 	<eventtext.itamissionscargotime>[MISSION] Rapidly deteriorating crate. [+10REP][2000mk]</eventtext.itamissionscargotime>
 	<eventtext.itamissionscargocreature>[MISSION] Creature cargo. [+10REP][3000mk]</eventtext.itamissionscargocreature>
-
+	
 	<eventtext.itamissionsresearch1.11>We need you to bring us a particular artifact that shows strange behaviour.</eventtext.itamissionsresearch1.11>
 	<eventtext.itamissionsresearch2.12>We need you to bring us a particular artifact that shows strange behaviour.</eventtext.itamissionsresearch2.12>
 	<eventtext.itamissionsresearch3.13>There are non-research related tasks too.</eventtext.itamissionsresearch3.13>
@@ -299,7 +299,7 @@
 	<eventtext.itarebelbase4>[DELIVERY] &quot;I've been looking for you. Got something I'm supposed to deliver - your hands only&quot;</eventtext.itarebelbase4>
 	<eventtext.itarebelbase5>[OUTPOST REP 90]&quot;We work for the station. We are not looking for trouble.&quot;</eventtext.itarebelbase5>
 	<eventtext.itarebelbase6>[SEPARATIST REP 50] &quot;Sic semper tyrannis. We're here to help.&quot;</eventtext.itarebelbase6>
-
+	
 	<eventtext.itabounty1.1>A WANTED poster from a noticeboard...</eventtext.itabounty1.1>
 	<eventtext.itabounty1.2>Bounty target eliminated&#xD;&#xA;[750mk]&#xD;&#xA;[COALITION REP +6]</eventtext.itabounty1.2>
 
@@ -342,9 +342,9 @@
 	<eventtext.itabeaconsep1.0b.5>&quot;Great! Good luck with your operations.&quot;&#xD;&#xA;[SEPARATIST REP +3]</eventtext.itabeaconsep1.0b.5>
 	<eventtext.itabeaconsep1.0b.6>&quot;I don't need anything, thanks. It was just a cheap circuit. Good luck with your operations!&quot;&#xD;&#xA;[SEPARATIST REP +7]</eventtext.itabeaconsep1.0b.6>
 	<eventtext.itabeaconsep1.0b.7>[WEAPONS 20] &quot;I've spent time, expertise, and material to help you. Surely you can reward me properly.&quot;</eventtext.itabeaconsep1.0b.7>
-	<eventtext.itabeaconsep1.0b.8>&quot;Hey, hey! You're pushing your luck 'ere, stranger.. This Crystal has its values, but.. Eh, whatever, here - take it. Probably not worth anything anyways..quot;&#xD;&#xA;[SEPARATIST REP +3]</eventtext.itabeaconsep1.0b.8>
-	<eventtext.itabeaconsep1.0b.9>[WEAPON 20 FAILED] &quot;Sorry, but that's all I've got. Take it or leave it.&quot;&#xD;&#xA;[SEPARATIST REP -2]</eventtext.itabeaconsep1.0b.9>
-	<eventtext.itabeaconsep1.0b.10>[ENGI 60 FAILED] &quot;You seem to be as clueless as I am!&quot;</eventtext.itabeaconsep1.0b.10>
+	
+	<eventtext.itabeaconsep1.0b.9>[WEAPON 20 FAILED] &quot;Sorry, but that's all I've got. Take it or leave it.&quot;&#xD;&#xA;[SEPARATIST REP -3]</eventtext.itabeaconsep1.0b.9>
+	
 	<eventtext.itabeaconsep1.0b.11>&quot;Even I know that that's not an FPGA circuit, kid.&quot;</eventtext.itabeaconsep1.0b.11>
 	<eventtext.itabeaconsep1.0b.12>&quot;Nope, sorry. Just looking around.&quot;</eventtext.itabeaconsep1.0b.12>
 	<eventtext.itabeaconsep1.0b.13>&quot;'You a clown? The real kind?&quot;</eventtext.itabeaconsep1.0b.13>
@@ -389,7 +389,6 @@
 	<eventtext.trainer.11>&quot;I don't want to be seen talking to scoundrels like you.&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]</eventtext.trainer.11>
 	<eventtext.trainer.12>&quot;I've been kicked out of my own submarine! They said I sabotaged them but all I've done were improvements with a bit of rewiring, until some idiot opened the door at a wrong moment and messed up my entire signal setup, resulting in a bit of flooding through a forcibly opened airlock... Anyways, I can show you some tips and tricks, if you've got the cash.&quot;</eventtext.trainer.12>
 	<eventtext.trainer.13>[360mk] &quot;As long as it simple and safe, sure.&quot; [+3 ELECTRICAL]</eventtext.trainer.13>
-	<eventtext.trainer.14>&quot;Maybe one of us will talk to you later about training, as long as you don't come anywhere close to our docking port.quot;</eventtext.trainer.14>
 	<eventtext.trainer.15>&quot;My former crew were complete neanderthals! They arrested me for trying to poison the engineering crew, but I was carrying the poisons to the deconstructor! The authorities here had me immediately released and I'm not climbing into a submarine again. I'm not for hire, but for a couple marks, I can teach you medical skill.&quot;</eventtext.trainer.15>
 	<eventtext.trainer.16>[360mk] &quot;Sure, just keep your hands where I can see them, okay?&quot; [+3 MEDICAL]</eventtext.trainer.16>
 
@@ -400,7 +399,7 @@
 	<eventtext.shop.maybelater>&quot;Maybe later.&quot;</eventtext.shop.maybelater>
 	<eventtext.shop.lowshoprep>&quot;You are nothing but trouble. Get out!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]</eventtext.shop.lowshoprep>
 	<eventtext.shop.getout>&quot;Get out of here, troublemakers!&quot;&#xD;&#xA;[LOCATION REPUTATION &lt;0]</eventtext.shop.getout>
-
+	
 	<eventtext.shop.1>&quot;Something warm to eat?&quot;</eventtext.shop.1>
 	<eventtext.shop.2>Warm Craw-Yum! soup [12 mk]</eventtext.shop.2>
 	<eventtext.shop.3>&quot;Do you want a drink?&quot;</eventtext.shop.3>
@@ -489,7 +488,7 @@
 	<eventtext.itaoplockcity4>&quot;Only coalition affiliates may enter. Do not try to trespass, or you will be blacklisted.&quot;&#xD;&#xA;&#xD;&#xA;---REQUIREMENTS---&#xD;&#xA;[COALITION REP+35]</eventtext.itaoplockcity4>
 	<eventtext.itaoplockcity5>&quot;Blacklisted trespassers in the docking port!&quot;</eventtext.itaoplockcity5>
 	<eventtext.itaoplockcity6>&quot;Trespassers in the docking port!&quot;&#xD;&#xA;&#xD;&#xA;[OUTPOST     REP-200]&#xD;&#xA;[COALITION   REP-45 ]&#xD;&#xA;[SEPARATISTS REP+15 ]</eventtext.itaoplockcity6>
-
+	
 	<eventtext.itaresearchlock1.1>&quot;Only researchers can enter this laboratory.&quot;</eventtext.itaresearchlock1.1>
 	<eventtext.itaresearchlock1.2>[OUTPOST REP 100] &quot;I'm working for the research team. Here's my ID.&quot;</eventtext.itaresearchlock1.2>
 	<eventtext.itaresearchlock1.3>Keep walking.</eventtext.itaresearchlock1.3>
@@ -497,7 +496,7 @@
 	<eventtext.itatransp1.0.1>[ACCEPT] &quot;Sure. Come on board.&quot;</eventtext.itatransp1.0.1>
 	<eventtext.itatransp1.0.2>Mechanic with prosthetic hands approaches you at the bar.&#xD;&#xA;&quot;Hey, you have a submarine, right? One with guns and shit? I need a ride. I'll pay you good.&quot;&#xD;&#xA;[MISSION: PASSENGER TRANSPORT, REWARD: 800mk]</eventtext.itatransp1.0.2>
 	<eventtext.itatransp1.0.3>[DECLINE] &quot;Nope. Our air is thin enough already.&quot;</eventtext.itatransp1.0.3>
-
+	
 	<eventtext.itatransp1.1.1>&quot;Thanks for the ride. I'll see you around.&quot;&#xD;&#xA;[MISSION COMPLETE 800mk OUTPOST REP+5]</eventtext.itatransp1.1.1>
 	<eventtext.itatransp1.1.2>&quot;How long is it going to take?&quot;</eventtext.itatransp1.1.2>
 
@@ -581,7 +580,7 @@
 	<entitydescription.ita_container_depthholder1>Attachable wall mount for storing depth charges securely. Press E to attach or detach with wrench.</entitydescription.ita_container_depthholder1>
 	<entityname.ita_duffelbag1>Buoyant Duffelbag</entityname.ita_duffelbag1>
 	<entitydescription.ita_duffelbag1>Duffelbag with a layer that adjusts it's buoyancy.</entitydescription.ita_duffelbag1>
-
+	
 	<entityname.ita_bartable>Shop Table - Bar</entityname.ita_bartable>
 	<entityname.ita_canteentable>Shop Table - Canteen</entityname.ita_canteentable>
 	<entityname.ita_clothiertable>Shop Table - Clothier</entityname.ita_clothiertable>
@@ -590,7 +589,7 @@
 	<entityname.ita_electriciantable>Shop Table - Electrician</entityname.ita_electriciantable>
 	<entityname.ita_climbertable>Shop Table - Climber</entityname.ita_climbertable>
 	<entityname.ita_gunsmithtable1>Shop Table - Gunsmith</entityname.ita_gunsmithtable1>
-
+	
 	<!--Furniture-->
 	<entityname.ita_bed>Outpost Bed</entityname.ita_bed>
 	<entityname.ita_outpostchair1>Bar Stool</entityname.ita_outpostchair1>
@@ -598,20 +597,20 @@
 	<entityname.ita_board1>Notice Board</entityname.ita_board1>
 	<entityname.ita_display>Display Case</entityname.ita_display>
 	<entityname.ita_outpostchair2>Office Client Chair</entityname.ita_outpostchair2>
-
+	
 	<!--Clothing-->
 	<entityname.ita_engineersuitmecha1>NPC MechaSuit</entityname.ita_engineersuitmecha1>
 	<entityname.bluejumpsuit3>Expert Mechanic Outfit</entityname.bluejumpsuit3>
 	<entityname.orangejumpsuit3>Expert Engineer Outfit</entityname.orangejumpsuit3>
 	<entityname.doctorsuniform3>Expert Doctor Outfit</entityname.doctorsuniform3>
 	<entityname.greenjumpsuit>Botanist's Jumpsuit</entityname.greenjumpsuit>
-
+	
 	<!--Clothing-->
 	<entityname.ita_bloodpunch>Blood Punch Drink</entityname.ita_bloodpunch>
 	<entityname.ita_crispychitin>Crispy Chitin Bits</entityname.ita_crispychitin>
 	<entityname.ita_drinkfishtail>Fishtail Cocktail</entityname.ita_drinkfishtail>
-	<entityname.ita_crawyum>ita_crawyum</entityname.ita_crawyum>
-
+	
+	
 	<!--Contests-->
 	<entityname.ita_race_ticket1>Red ticket</entityname.ita_race_ticket1>
 	<entityname.ita_race_ticket2>Green ticket</entityname.ita_race_ticket2>
@@ -638,7 +637,7 @@
 	<SkillName.tough>Tough</SkillName.tough>
 	<SkillName.lepi>LePiromano</SkillName.lepi>
 	<jobdescription.soldier>NPCjob</jobdescription.soldier>
-
+	
 	<!--Alien-->
 	<entityname.itasocket>Artifact Socket</entityname.itasocket>
 	<entitydescription.itasocket>Place non-mission artifacts in here and pull the lever to contribute to Europan research for a reward.</entitydescription.itasocket>
@@ -651,7 +650,7 @@
 	<entityname.ita_alienmace1>Ancient Tech - Bottom Part</entityname.ita_alienmace1>
 	<entityname.ita_alienmace2>Ancient Tech - Top Part</entityname.ita_alienmace2>
 	<entityname.ita_ancientpiece>Ancient Icon</entityname.ita_ancientpiece>
-
+	
 	<entityname.spawnerfractal>Fractal Guardian Spawner</entityname.spawnerfractal>
 	<entityname.ita_fabricator1>Ancient Combiner</entityname.ita_fabricator1>
 	<entityname.socket1ita>Square-Shaped socket</entityname.socket1ita>
@@ -662,43 +661,17 @@
 	<entityname.ita_aliendoor_red>Alien Red Door</entityname.ita_aliendoor_red>
 	<entityname.ita_alienhatch_blue>Alien Blue Hatch</entityname.ita_alienhatch_blue>
 	<entityname.ita_alienhatch_red>Alien Red Hatch</entityname.ita_alienhatch_red>
-
+	
 	<locationchange.cave.changeto.mine>Settlers at [previousname] have established a mining outpost in the cleared cave.</locationchange.cave.changeto.mine>
-
-
+	
 	<!-- When adding new text, do it so at the bottom under the 'New additions' & 'Changed values' respectively. If it's a new tag entirely, put it under the new additions one; If it's an update to an existing value, put it under the changed values one. -->
 	<!-- DO NOT EDIT EXISTING TAGS FOR ALREADY TRANSLATED LINES -> if you need a new tag for something, add it under the 'New values' header and comment if there's some other tag that should be replaced -->
-
+	
 	<!--LINES MODIFIED-->	
-
+	<eventtext.itabeaconsep1.0b.8>"Hey, hey! You're pushing your luck 'ere, stranger.. This Crystal has its values, but.. Eh, whatever, here - take it. Probably not worth anything anyways.."&#xD;&#xA;</eventtext.itabeaconsep1.0b.8>
+	<eventtext.itabeaconsep1.0b.10>[ENGI 45 FAILED] &quot;You seem to be as clueless as I am!&quot;</eventtext.itabeaconsep1.0b.10>
+	<eventtext.trainer.14>"Maybe one of us will talk to you later about training, as long as you don't come anywhere close to our docking port."</eventtext.trainer.14>
+    <entityname.ita_crawyum>Craw-Yum! Soup</entityname.ita_crawyum>
 	<!--NEW LINES ADDED-->
-	<eventtext.shop.1/>
-
-	<eventtext.hideout1.1.1>A couple strangers have taken refuge here in the dangerous caves. The one in security uniform approaches you.
-
-	"Hey. Are you with the Coalition?"</eventtext.hideout1.1.1>
-	<eventtext.hideout1.1.2>"Yea, you could say that."</eventtext.hideout1.1.2>
-	<eventtext.hideout1.1.3>"Hell no!"</eventtext.hideout1.1.3>
-	<eventtext.hideout1.1.4>[HELM 70] "Are you?"</eventtext.hideout1.1.4>
-	<eventtext.hideout1.1.5>"We're trying to join the free folk and have to wait in this damn cave for our Contact a couple more days.
-	Could you spare a bottle of Ethanol to make the wait shorter? We'll put in a good word for you with the Jovs once we meet with them."</eventtext.hideout1.1.5>
-
-	<eventtext.hideout1.1.6>[ETHANOL] "Sure, here you are. Good luck!"</eventtext.hideout1.1.6>
-	<eventtext.hideout1.1.7>"I'll get you some Ethanol."</eventtext.hideout1.1.7>
-	<eventtext.hideout1.1.8>"Ethanol is a valued commodity on submarines. You'll have to entertain your selves in some other way. Good luck!"</eventtext.hideout1.1.8>
-	<eventtext.hideout1.1.9>"How about some lead for a bit of fun instead?"</eventtext.hideout1.1.9>
-
-	<eventtext.hideout1.1.10>"Did you bring us the ethanol?"</eventtext.hideout1.1.10>
-	<eventtext.hideout1.1.11>[ETHANOL] "I've got the fun liquid for you."</eventtext.hideout1.1.11>
-	<eventtext.hideout1.1.12>"Nope."</eventtext.hideout1.1.12>
-	<eventtext.hideout1.1.13>"Thanks, mate! This will make the wait feel much shorter. I'll mention you to our new comrades when they pick us up."
-
-	[SEPARATIST REP +5]</eventtext.hideout1.1.13>
-	<eventtext.hideout1.1.14>"A pleasure."</eventtext.hideout1.1.14>
-
-
-
-
-	<entityname.id_bounty_sep>Separatist's ID Card</entityname.id_bounty_sep>
-	<entitydescription.id_bounty_sep>Deliver separatist ID cards to a Coalition Officer for reward. They usually work at Military Outposts. Fits neatly in a wallet.</entitydescription.id_bounty_sep>
+	<entitydescription.ita_crawyum>Pinch your nose and swallow quickly.</entitydescription.ita_crawyum>
 </infotexts>

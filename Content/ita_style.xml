@@ -1178,6 +1178,9 @@
   <CampaignInteractionIcon.Talk color="255,255,255">
     <Sprite name="CampaignInteractionIcon.Talk" texture="Content/UI/CampaignUIAtlas2.png" tile="false" sourcerect="774,1,35,18" origin="0.5,0.5" maintainaspectratio="true" />
   </CampaignInteractionIcon.Talk>
+  <CampaignInteractionIcon.Examine color="#ffda00">
+    <Sprite name="CampaignInteractionIcon.Examine" texture="Content/UI/UIAtlasGeneral.png" tile="false" sourcerect="536,563,36,36" origin="0.5,0.5" maintainaspectratio="true" />
+  </CampaignInteractionIcon.Examine>											   
 
   <PetIcon.Happy color="255,255,255">
     <Sprite name="PetIcon.Happy" texture="Content/UI/CampaignUIAtlas2.png" tile="false" sourcerect="701,94,35,28" origin="0.5,0.5" maintainaspectratio="true" />
@@ -1212,6 +1215,25 @@
     <Sprite name="StoreArrow" texture="Content/UI/UIAtlasGeneral.png" tile="false" maintainaspectratio="true" sourcerect="271,499,32,25" origin="0.5,0.5" />
   </StoreArrow>
 
+  <WeaponInstallButton color="255,255,255,255" disabledcolor="128,128,128,255">
+    <Sprite name="WeaponInstallButton_None" texture="Content/UI/CampaignUIAtlas2.png" state="None" tile="false" sourcerect="9,413,92,68" maintainaspectratio="true" />
+    <Sprite name="WeaponInstallButton_Hover" texture="Content/UI/CampaignUIAtlas2.png" state="Hover" tile="false" sourcerect="109,414,92,68" maintainaspectratio="true" />
+    <Sprite name="WeaponInstallButton_Pressed" texture="Content/UI/CampaignUIAtlas2.png" state="Pressed" tile="false" sourcerect="209,413,92,68" maintainaspectratio="true" />
+  </WeaponInstallButton>
+  <WeaponUninstallButton color="255,255,255,255" disabledcolor="128,128,128,255">
+    <Sprite name="WeaponUninstallButton_None" texture="Content/UI/CampaignUIAtlas2.png" state="None" tile="false" sourcerect="315,413,92,68" maintainaspectratio="true" />
+    <Sprite name="WeaponUninstallButton_Hover" texture="Content/UI/CampaignUIAtlas2.png" state="Hover" tile="false" sourcerect="416,412,92,68" maintainaspectratio="true" />
+    <Sprite name="WeaponUninstallButton_Pressed" texture="Content/UI/CampaignUIAtlas2.png" state="Pressed" tile="false" sourcerect="517,412,92,68" maintainaspectratio="true" />
+  </WeaponUninstallButton>
+  <WeaponSwitchIcon color="22,30,26,255" disabledcolor="0,0,0,255">
+    <Sprite name="WeaponSwitchIcon_None" texture="Content/UI/CampaignUIAtlas2.png" tile="false" sourcerect="843,32,44,48" maintainaspectratio="true" />
+  </WeaponSwitchIcon>
+  <WeaponSwitchIcon.DropShadow color="255,255,255,255" disabledcolor="128,128,128,255">
+    <Sprite name="WeaponSwitchIcon.DropShadow_None" texture="Content/UI/CampaignUIAtlas2.png" tile="false" sourcerect="838,86,53,56" maintainaspectratio="true" />
+  </WeaponSwitchIcon.DropShadow>
+  <WeaponSwitchTab color="131,171,162,255" hovercolor="182,205,200,255" selectedcolor="215,227,224,255" disabledcolor="100,117,114,255" pressedcolor="122,165,155,255">
+    <Sprite name="WeaponSwitchTab_None" texture="Content/UI/CampaignUIAtlas2.png" tile="false" sourcerect="914,23,73,72" maintainaspectratio="true" />
+  </WeaponSwitchTab>
   <CrewManagementHeaderIcon color="255,255,255,255">
     <Sprite name="CrewManagementHeaderIcon" texture="Content/UI/CampaignUIAtlas2.png" tile="false" sourcerect="384,256,128,128" maintainaspectratio="true" />
   </CrewManagementHeaderIcon>
@@ -1344,6 +1366,24 @@
     <Sprite name="ExpandButton.None" texture="Content/UI/InventoryUIAtlas.png" sourcerect="795,190,40,40" tile="false" maintainaspectratio="true" origin="0.5,0.5" state="None" />
     <Sprite name="ExpandButton.Hover" texture="Content/UI/InventoryUIAtlas.png" sourcerect="845,190,40,40" tile="false" maintainaspectratio="true" origin="0.5,0.5" state="Hover" />
   </ExpandButton>
+<IdleObjectiveIcon color="255,255,255,255">
+    <Sprite name="IdleObjectiveIcon" texture="Content/UI/CommandUIAtlas.png" sourcerect="384,512,128,128" maintainaspectratio="true" tile="false" />
+  </IdleObjectiveIcon>
+  <FindSafetyObjectiveIcon color="255,255,255,255">
+    <Sprite name="FindSafetyObjectiveIcon" texture="Content/UI/CommandUIAtlas.png" sourcerect="512,768,128,128" maintainaspectratio="true" tile="false" />
+  </FindSafetyObjectiveIcon>
+  <CombatObjectiveIcon color="255,255,255,255">
+    <Sprite name="CombatObjectiveIcon" texture="Content/UI/CommandUIAtlas.png" sourcerect="512,896,128,128" maintainaspectratio="true" tile="false" />
+  </CombatObjectiveIcon>
+  <SlideDownArrow color="220,220,220,220" pressedcolor="125,125,125,125" hovercolor="255,255,255,255" selectedcolor="220,220,220,220" disabledcolor="125,125,125,125">
+    <Sprite name="SlideDownArrow" texture="Content/UI/UIAtlasGeneral.png" tile="false" maintainaspectratio="true" sourcerect="276,566,27,30" origin="0.5,0.5" />
+  </SlideDownArrow>
+  <SlideDown color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="255,255,255,255" disabledcolor="125,125,125,255" pressedcolor="230,230,230,255">
+    <Sprite name="SlideDown.None" texture="Content/UI/InventoryUIAtlas.png" state="None" sourcerect="518,949,126,42" slice="524,949,638,991" origin="0.5,0.5" />
+    <Sprite name="SlideDown.Hover" texture="Content/UI/InventoryUIAtlas.png" state="Hover" sourcerect="518,949,126,42" slice="524,949,638,991" origin="0.5,0.5" />
+    <Sprite name="SlideDown.Selected" texture="Content/UI/InventoryUIAtlas.png" state="Selected" sourcerect="518,949,126,42" slice="524,949,638,991" origin="0.5,0.5" />
+    <Sprite name="SlideDown.Pressed" texture="Content/UI/InventoryUIAtlas.png" state="Pressed" sourcerect="518,949,126,42" slice="524,949,638,991" origin="0.5,0.5" />
+  </SlideDown>
 </style>
 
 </Override>

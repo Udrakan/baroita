@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ItemAssembly name="ita_corridor_1b" description="" hideinmenus="false">
-  <Item name="" identifier="aliendoor" noninteractable="True" ID="86" rect="-24,103,48,208" linked="107" rotation="0" scale="1" spritecolor="254,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="alien,aliendoor" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.9" hiddeningame="False">
+  <Item name="" identifier="aliendoor" noninteractable="True" ID="86" rect="-24,103,48,208" linked="107" noninteractable="True" rotation="0" scale="1" spritecolor="254,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="alien,aliendoor" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.9" hiddeningame="False">
     <Door openingspeed="3" closingspeed="3" togglecooldown="1" isopen="True" usebetweenoutpostmodules="True" pickingtime="30" canbepicked="False" allowingameediting="True" msg="ItemMsgForceOpenCrowbar">
       <requireditem items="crowbar" type="Equipped" optional="false" ignoreineditor="false" />
     </Door>

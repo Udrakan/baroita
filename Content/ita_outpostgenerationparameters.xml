@@ -129,31 +129,6 @@
 			<npc from="ita_citynpcs1" identifier="ita_commoner2bar"/>
 		</npcs>
 	</OutpostConfig>
-	<OutpostConfig identifier="optest" totalmodulecount="5" minhallwaylength="0" allowedlocationtypes="City">
-		<modulecount flag="ita_city_dock" count="1"/>
-		<modulecount flag="Ita_engineeringmodule" count="1"/>
-		<modulecount flag="Ita_lifesupportmodule" count="1"/>
-		<modulecount flag="ita_city_special" count="1"/>
-		<modulecount flag="AdminModule" count="1"/>
-		<npcs>
-			<npc from="outpostnpcs1" identifier="hrmanager"/>
-			<npc from="outpostnpcs1" identifier="repairnpc"/>
-			<npc from="outpostnpcs1" identifier="outpostdoctor"/>
-			<npc from="outpostnpcs1" identifier="outpostmanager"/>
-			<npc from="outpostnpcs1" identifier="reactoroperator"/>
-			<npc from="ita_citynpcs1" identifier="ita_subupgradenpc"/>
-			<npc from="ita_citynpcs1" identifier="ita_subsalesnpc"/>
-			<npc from="ita_citynpcs1" identifier="ita_merchant"/>
-			<npc from="ita_citynpcs1" identifier="ita_guard1"/>
-			<npc from="ita_citynpcs1" identifier="ita_guard1"/>
-			<npc from="ita_citynpcs1" identifier="ita_guard2"/>
-			<npc from="ita_citynpcs1" identifier="ita_guard2"/>
-			<npc from="ita_citynpcs1" identifier="ita_commoner1"/>
-			<npc from="ita_citynpcs1" identifier="ita_commoner1"/>
-			<npc from="ita_citynpcs1" identifier="ita_commoner1"/>
-			<npc from="ita_citynpcs1" identifier="ita_commoner2bar"/>
-		</npcs>
-	</OutpostConfig>
 	<OutpostConfig identifier="researchoutpost" totalmodulecount="7" minhallwaylength="0" allowedlocationtypes="Research">
 		<modulecount flag="ita_research_dock" count="1"/>
 		<modulecount flag="ita_research_crew" count="1"/>

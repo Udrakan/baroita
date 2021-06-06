@@ -151,6 +151,704 @@
 			<SpawnAction itemidentifier="ita_climber4" targetinventory="c" />
 			<SpawnAction itemidentifier="ita_climber4" targetinventory="c" />
 		</ScriptedEvent>
+		<!--VANILLA EVENTS-->
+		<ScriptedEvent identifier="v1_mechanicsarespecial">
+			<CheckDataAction identifier="v1done" condition="eq 1" _npos="-2475.0845,-798.73016">
+				<Success>
+					<TriggerEventAction identifier="v2_givingdirections" _npos="-2476.7144,-569.90295" />
+				</Success>
+				<Failure>
+					<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_mechanic1" targettag="repairnpc1" spawnpointtag="engineering" _npos="-1764.3336,-735.6175" />
+					<Label name="start" _npos="-1229.5048,-737.4871" />
+					<ClearTagAction tag="player" _npos="-769.23364,-736.7877" />
+
+					<WaitAction time="5" _npos="-226.23846,-736.3262" />
+					<TagAction criteria="crew" tag="player" _npos="279.41528,-735.73083" />
+					<TriggerAction target1tag="repairnpc1" target2tag="player" applytotarget2="triggerer_player" radius="250" _npos="781.1395,-735.21423" />
+					<ConversationAction text="eventtext.v1mechanicsarespecial1" targettag="triggerer_player" eventsprite="ita_engi1" continueconversation="true" _npos="1778.056,-734.621" />
+					<CheckDataAction identifier="v1_clowndone" condition="eq 1" _npos="1053.8425,1236.4136">
+						<Success>
+							<GoTo name="noclown" _npos="1544.0562,1255.0804" />
+						</Success>
+						<Failure>
+							<CheckItemAction targettag="triggerer_player" itemidentifiers="clownmask" _npos="1056.9348,1456.543">
+								<Success>
+									<CheckItemAction targettag="triggerer_player" itemidentifiers="clowncostume" _npos="1539.6516,1445.0122">
+										<Success>
+											<ConversationAction text="EventText.v1mechanicsarespecial.cl1" targettag="triggerer_player" eventsprite="clown" _npos="2010.6323,1477.1975">
+												<Option text="EventText.v1mechanicsarespecial.cl2">
+													<CheckItemAction targettag="triggerer_player" itemidentifiers="bikehorn" _npos="2595.9368,884.2871">
+														<Success>
+															<ConversationAction text="EventText.v1mechanicsarespecial.cl3" targettag="triggerer_player" eventsprite="ita_engi1" _npos="3212.1604,555.18713" />
+															<ReputationAction increase="10" targettype="Location" _npos="3644.8828,556.58215" />
+															<ReputationAction increase="10" identifier="clowns" targettype="Faction" _npos="4024.6174,560.1039" />
+															<SpawnAction itemidentifier="ita_bill50" targetinventory="triggerer_player" _npos="4401.2705,560.80835" />
+															<SetDataAction operation="Set" value="1" identifier="v1_clowndone" _npos="4771.357,560.13385" />
+															<GoTo name="start" _npos="5138.3965,560.5403" />
+														</Success>
+														<Failure>
+															<GoTo name="badclown" _npos="3212.2297,999.713" />
+														</Failure>
+													</CheckItemAction>
+												</Option>
+												<Option text="EventText.v1mechanicsarespecial.cl4">
+													<CheckItemAction targettag="triggerer_player" itemidentifiers="guitar" _npos="2656.234,1328.307">
+														<Success>
+															<ConversationAction text="EventText.v1mechanicsarespecial.cl5" targettag="triggerer_player" _npos="3194.447,1359.3032" />
+															<SetDataAction operation="Set" value="1" identifier="v1_clowndone" _npos="3624.731,1358.3256" />
+															<GoTo name="start" _npos="4000.465,1358.2007" />
+														</Success>
+														<Failure>
+															<GoTo name="badclown" _npos="3194.637,1778.6752" />
+														</Failure>
+													</CheckItemAction>
+												</Option>
+												<Option text="EventText.v1mechanicsarespecial.cl6">
+													<SpawnAction itemidentifier="wrench" targetinventory="triggerer_player" _npos="2656.658,2111.7224" />
+													<AfflictionAction affliction="blunttrauma" strength="10" limbtype="Head" targettag="triggerer_player" _npos="3175.8528,2111.9456" />
+													<Label name="badclown" _npos="3570.1326,2111.195" />
+													<ConversationAction text="EventText.v1mechanicsarespecial.cl7" targettag="triggerer_player" eventsprite="ita_engi1" _npos="3983.2642,2111.6897" />
+													<ReputationAction increase="-5" identifier="clowns" targettype="Faction" _npos="4544.4985,2111.82" />
+													<ReputationAction increase="-5" targettype="Location" _npos="4958.2695,2111.9268" />
+													<SetDataAction operation="Set" value="1" identifier="v1_clowndone" _npos="5371.0127,2111.7446" />
+													<GoTo name="start" _npos="5761.4834,2111.7354" />
+												</Option>
+											</ConversationAction>
+										</Success>
+										<Failure>
+											<GoTo name="noclown" _npos="1546.0994,1646.4622" />
+										</Failure>
+									</CheckItemAction>
+								</Success>
+								<Failure>
+									<Label name="noclown" _npos="968.54236,3259.2507" />
+									<SkillCheckAction requiredskill="helm" requiredlevel="70" probabilitybased="false" targettag="triggerer_player" _npos="976.4324,3424.8137">
+										<Success>
+											<ConversationAction text="EventText.v1mechanicsarespecial.2" targettag="triggerer_player" continueconversation="true" _npos="1466.3015,3458.239">
+												<Option text="EventText.v1mechanicsarespecial.3">
+													<ConversationAction text="EventText.v1mechanicsarespecial.4" targettag="triggerer_player" eventsprite="ita_engi1" _npos="2112.9802,3416.2668" />
+												</Option>
+												<Option text="EventText.v1mechanicsarespecial.5">
+													<Label name="continue" _npos="2110.6191,3855.6204" />
+													<SkillCheckAction requiredskill="mechanical" requiredlevel="50" targettag="triggerer_player" _npos="2981.3635,-773.544">
+														<Success>
+															<ConversationAction text="EventText.v1mechanicsarespecial.6" targettag="triggerer_player" continueconversation="true" _npos="3459.323,-741.8374">
+																<Option text="EventText.v1mechanicsarespecial.7">
+																	<ConversationAction text="EventText.v1mechanicsarespecial.8" targettag="triggerer_player" eventsprite="ita_engi1" _npos="3933.1462,-1311.4194" />
+																</Option>
+																<Option text="EventText.v1mechanicsarespecial.9">
+																	<SkillCheckAction requiredskill="mechanical" requiredlevel="75" probabilitybased="false" targettag="triggerer_player" _npos="3990.103,-674.72394">
+																		<Success>
+																			<GoTo name="end" _npos="4479.325,-642.5033" />
+																		</Success>
+																		<Failure>
+																			<RNGAction chance="0.75" _npos="4424.925,-462.6549">
+																				<Success>
+																					<Label name="end" _npos="4924.717,-24.50354" />
+																					<ConversationAction text="EventText.v1mechanicsarespecial.10" targettag="triggerer_player" _npos="5324.627,-23.290283" />
+																					<ReputationAction increase="20" targettype="Location" _npos="5779.6426,-19.732666" />
+																					<GiveSkillEXPAction skill="mechanical" amount="5" targettag="triggerer_player" _npos="6184.8604,-20.017944" />
+																					<SetPriceMultiplierAction multiplier="0.85" operation="Multiply" targetmultiplier="Mechanical" _npos="6586.7236,-20.017944" />
+																					<Label name="counter" _npos="6958.947,-20.82022" />
+																					<SetDataAction operation="Set" value="1" identifier="v1done" _npos="7399.6787,-20.135742" />
+																					<SetDataAction operation="Add" value="1" identifier="eventsdone" _npos="7780.385,-20.80223" />
+																				</Success>
+																				<Failure>
+																					<ConversationAction text="EventText.v1mechanicsarespecial.11" targettag="triggerer_player" _npos="5811.2485,396.94336" />
+																					<ReputationAction increase="5" targettype="Location" _npos="6178.4463,397.85492" />
+																					<GiveSkillExpAction skill="mechanical" amount="1" targettag="triggerer_player" _npos="6543.714,397.79773" />
+																				</Failure>
+																			</RNGAction>
+																		</Failure>
+																	</SkillCheckAction>
+																</Option>
+																<Option text="" />
+															</ConversationAction>
+														</Success>
+														<Failure>
+															<ConversationAction text="EventText.v1mechanicsarespecial.12" targettag="triggerer_player" eventsprite="ita_engi1" _npos="3448.126,-183.6543" />
+															<GoTo name="start" _npos="3818.4746,-183.6311" />
+														</Failure>
+													</SkillCheckAction>
+												</Option>
+											</ConversationAction>
+										</Success>
+										<Failure>
+											<SkillCheckAction requiredskill="mechanical" requiredlevel="90" probabilitybased="false" targettag="triggerer_player" _npos="956.8318,4128.494">
+												<Success>
+													<ConversationAction text="EventText.v1mechanicsarespecial.13" targettag="triggerer_player" continueconversation="true" _npos="1451.6433,4160.9795">
+														<Option text="EventText.v1mechanicsarespecial.14">
+															<ConversationAction text="EventText.v1mechanicsarespecial.4" targettag="triggerer_player" eventsprite="ita_engi1" _npos="2371.9546,4192.8047" />
+														</Option>
+														<Option text="EventText.v1mechanicsarespecial.5">
+															<GoTo name="continue" _npos="1972.1674,4287.0234" />
+														</Option>
+													</ConversationAction>
+												</Success>
+												<Failure>
+													<GoTo name="continue" _npos="959.4606,4326.7764" />
+												</Failure>
+											</SkillCheckAction>
+										</Failure>
+									</SkillCheckAction>
+								</Failure>
+							</CheckItemAction>
+						</Failure>
+					</CheckDataAction>
+				</Failure>
+			</CheckDataAction>
+		</ScriptedEvent>		
+		<ScriptedEvent identifier="v2_givingdirections">
+			<CheckDataAction identifier="v2done" condition="eq 1" _npos="-1198.0295,-7.459442">
+				<Success>
+					<TriggerEventAction identifier="v3_soundinthevent" _npos="-1198.5193,186.3304" />
+				</Success>
+				<Failure>
+					<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_captain2a" targettag="givingdirections_captain" spawnlocation="Outpost" spawnpointtype="Path" targetmoduletags="crewmodule" _npos="-676.0439,15.516052" />
+					<Label name="start" _npos="-173.07062,2.6664734" />
+					<ClearTagAction tag="triggerer_player" _npos="218.97495,9.516632" />
+
+					<ClearTagAction tag="player" _npos="219.9154,107.93793" />
+
+					<WaitAction time="5" _npos="216.78595,209.81152" />
+					<TagAction criteria="crew" tag="player" _npos="754.16296,5.1573486" />
+					<TriggerAction target1tag="givingdirections_captain" target2tag="player" applytotarget2="triggerer_player" radius="100" _npos="1200,0" />
+					<NPCWaitAction npctag="givingdirections_captain" wait="true" _npos="1800,0" />
+					<ConversationAction text="EventText.givingdirections.c1" targettag="triggerer_player" eventsprite="captain" _npos="2400,0">
+						<Option text="EventText.givingdirections.o1">
+							<ConversationAction text="EventText.givingdirections.o1.c1" targettag="triggerer_player" _npos="2991.5012,33.99469">
+								<Option text="EventText.v2givingdirections.4">
+									<SkillCheckAction requiredskill="Helm" requiredlevel="50" probabilitybased="false" targettag="triggerer_player" _npos="3942.393,-267.9598">
+										<Success>
+											<GiveSkillEXPAction skill="helm" amount="5" targettag="triggerer_player" _npos="4200,0" />
+											<ConversationAction text="EventText.givingdirections.o1.o1.c1" targettag="triggerer_player" _npos="4800,0">
+												<Option text="EventText.givingdirections.o1.o1.o1" />
+											</ConversationAction>
+											<Label name="end" _npos="5371.6797,3.800171" />
+											<SetDataAction operation="Set" value="1" identifier="v2done" _npos="5829.841,3.852234" />
+										</Success>
+										<Failure>
+											<ConversationAction text="EventText.givingdirections.o1.o1.c2" targettag="triggerer_player" _npos="4328,401">
+												<Option text="EventText.givingdirections.o1.o1.o2" />
+											</ConversationAction>
+										</Failure>
+									</SkillCheckAction>
+								</Option>
+								<Option text="EventText.v2givingdirections.1">
+									<ConversationAction text="EventText.v2givingdirections.2" targettag="triggerer_player" _npos="3518.631,-536.91174" />
+									<GoTo name="start" _npos="3882.2776,-535.29504" />
+								</Option>
+								<Option text="EventText.givingdirections.o1.o2" />
+							</ConversationAction>
+						</Option>
+						<Option text="EventText.v2givingdirections.3">
+							<SkillCheckAction requiredskill="weapons" requiredlevel="60" probabilitybased="true" targettag="triggerer_player" _npos="3204.279,579.5769">
+								<Success>
+									<ConversationAction text="EventText.givingdirections.o2.c1" targettag="triggerer_player" _npos="3814.2146,444.5477">
+										<Option text="EventText.givingdirections.o2.o1" endconversation="true">
+											<SpawnAction itemidentifier="revolver" targettag="prizerevolver" targetinventory="triggerer_player" _npos="4456,1046" />
+											<SpawnAction itemidentifier="revolverround" targetinventory="prizerevolver" _npos="4928,648" />
+											<SpawnAction itemidentifier="revolverround" targetinventory="prizerevolver" _npos="5387.3906,645.802" />
+											<SpawnAction itemidentifier="revolverround" targetinventory="prizerevolver" _npos="5885.129,644.39984" />
+											<GoTo name="end" _npos="6297.2427,644.65576" />
+										</Option>
+									</ConversationAction>
+								</Success>
+								<Failure>
+									<ConversationAction text="EventText.givingdirections.o2.c2" targettag="triggerer_player" _npos="3856,1058">
+										<Option text="EventText.givingdirections.o2.o2" />
+									</ConversationAction>
+									<CombatAction combatmode="Offensive" guardreaction="None" witnessreaction="Retreat" npctag="givingdirections_captain" enemytag="triggerer_player" _npos="4584,1709" />
+									<GoTo name="end" _npos="5024.234,1716.8381" />
+								</Failure>
+							</SkillCheckAction>
+						</Option>
+						<Option text="EventText.v2givingdirections.5" endconversation="true">
+							<GoTo name="start" _npos="2490.5554,457.33676" />
+						</Option>
+					</ConversationAction>
+					<NPCWaitAction npctag="givingdirections_captain" wait="false" _npos="3256,881" />
+				</Failure>
+			</CheckDataAction>
+		</ScriptedEvent>
+		<ScriptedEvent identifier="v3_soundinthevent">
+			<CheckDataAction identifier="v3done" condition="eq 1" _npos="-2411.769,1114.0885">
+				<Success>
+					<TriggerEventAction identifier="v4_goodsamaritan" _npos="-2414.1074,1313.3083" />
+				</Success>
+				<Failure>
+					<Label name="start" _npos="-1988.9702,1177.0986" />
+					<ClearTagAction tag="player" _npos="-1633.3433,1176.6882" />
+
+					<ClearTagAction tag="triggerer_player" _npos="-1633.8442,1274.1311" />
+
+					<WaitAction time="6" _npos="-1634.4872,1370.8475" />
+					<TagAction criteria="crew" tag="player" _npos="-1175.021,1174.8369" />
+					<TagAction criteria="itemtag:mudraptorspawnvent" tag="mudraptorspawnvent" _npos="-781.6987,1174.4695" />
+					<TriggerAction target1tag="mudraptorspawnvent" target2tag="player" applytotarget1="selectedmudraptorspawnvent" applytotarget2="triggerer_player" radius="100" _npos="-253.38318,1175.6821" />
+					<StatusEffectAction targettag="selectedmudraptorspawnvent" _npos="131.50781,1176.103">
+						<StatusEffect _npos="132.36426,1279.0939">
+							<Sound file="Content/Sounds/Damage/Creak1.ogg" range="500" _npos="133.71143,1380.6393" />
+						</StatusEffect>
+					</StatusEffectAction>
+					<ConversationAction text="EventText.soundinthevent.c1" targettag="triggerer_player" eventsprite="vent" _npos="673.32935,1176.114">
+						<Option text="EventText.v3soundinthevent1">
+							<CheckItemAction targettag="triggerer_player" itemidentifiers="screwdriver" _npos="1646.3458,546.9296">
+								<Success>
+									<SkillCheckAction requiredskill="Mechanical" requiredlevel="60" targettag="triggerer_player" _npos="2174.1003,123.79242">
+										<Success>
+											<GiveSkillEXPAction skill="mechanical" amount="3" targettag="triggerer_player" _npos="3331.1355,-509.23538" />
+											<ConversationAction text="EventText.v3soundinthevent2" targettag="triggerer_player" _npos="3973.5923,-508.70868" />
+											<Label name="rewardx" _npos="4381.3867,-500.84174" />
+											<SpawnAction itemidentifier="ita_bill200" targetinventory="triggerer_player" _npos="4774.1885,-509.20828" />
+											<SpawnAction itemidentifier="ita_bill200" targetinventory="triggerer_player" _npos="5142.6597,-508.45093" />
+											<SpawnAction itemidentifier="ita_bill200" targetinventory="triggerer_player" _npos="5549.06,-509.36462" />
+											<SpawnAction itemidentifier="ita_bill200" targetinventory="triggerer_player" _npos="5988.419,-507.53732" />
+											<SpawnAction itemidentifier="ita_bill200" targetinventory="triggerer_player" _npos="6428.074,-506.96588" />
+											<Label name="end" _npos="6859.301,-505.10083" />
+											<SetDataAction operation="Set" value="1" identifier="v3done" _npos="7338.665,-506.9072" />
+										</Success>
+										<Failure>
+											<AfflictionAction affliction="lacerations" strength="15" limbtype="LeftHand" targettag="triggerer_player" _npos="3328.6782,582.3935" />
+											<AfflictionAction affliction="bleeding" strength="15" limbtype="LeftArm" targettag="triggerer_player" _npos="3731.278,584.7113" />
+											<StatusEffectAction targettag="selectedmudraptorspawnvent" _npos="4182.7256,585.9493">
+												<StatusEffect _npos="4534.193,752.4659">
+													<Explosion range="200.0" stun="0.2" force="5.0" flames="false" flash="false" shockwave="false" sparks="false" underwaterbubble="false" _npos="4536.22,855.1874" />
+													<Sound file="Content/Sounds/Damage/StructureCrunch2.ogg" range="500" _npos="4537.2876,1179.386" />
+												</StatusEffect>
+											</StatusEffectAction>
+											<SkillCheckAction requiredskill="weapons" requiredlevel="30" probabilitybased="false" targettag="triggerer_player" _npos="5049.3774,585.03687">
+												<Success>
+													<ConversationAction text="EventText.v3soundinthevent3" targettag="triggerer_player" _npos="5767.5723,516.99115" />
+													<GoTo name="rewardx" _npos="6216.7974,513.67487" />
+												</Success>
+												<Failure>
+													<ConversationAction text="EventText.v3soundinthevent4" targettag="triggerer_player" _npos="5782.6377,961.9897" />
+													<GoTo name="end" _npos="6166.988,964.7968" />
+												</Failure>
+											</SkillCheckAction>
+										</Failure>
+									</SkillCheckAction>
+								</Success>
+								<Failure>
+									<ConversationAction text="EventText.v3soundinthevent5" targettag="triggerer_player" eventsprite="vent" _npos="2188.1768,815.1262" />
+									<GoTo name="start" _npos="2581.1575,815.3694" />
+								</Failure>
+							</CheckItemAction>
+						</Option>
+						<Option text="EventText.v3soundinthevent6" endconversation="true">
+							<CheckItemAction targettag="triggerer_player" itemidentifiers="flashlight" _npos="1648.0658,1948.5294">
+								<Success>
+									<RNGAction chance="0.5" _npos="2109.008,1674.2876">
+										<Success>
+											<ConversationAction text="EventText.v3soundinthevent7" targettag="triggerer_player" eventsprite="vent" _npos="2985.4167,1326.3164" />
+											<GoTo name="start" _npos="3365.5635,1327.9249" />
+										</Success>
+										<Failure>
+											<WaitAction time="1.5" _npos="2995.597,2247.1035" />
+											<StatusEffectAction targettag="selectedmudraptorspawnvent" _npos="3363.8213,2247.1777">
+												<StatusEffect _npos="3745.343,2357.173">
+													<Explosion range="200.0" stun="1" force="10.0" flash="false" flames="false" shockwave="false" sparks="false" underwaterbubble="false" _npos="3747.3113,2458.6875" />
+													<Sound file="Content/Items/Door/DoorBreak1.ogg" range="500" _npos="3746.8943,2782.0383" />
+												</StatusEffect>
+											</StatusEffectAction>
+											<RNGAction chance="0.5" _npos="4163.174,2247.4294">
+												<Success>
+													<SpawnAction speciesname="mudraptor" spawnlocation="Outpost" spawnpointtag="selectedmudraptorspawnvent" _npos="4693.165,1920.871" />
+													<GoTo name="end" _npos="5107.267,1920.5908" />
+												</Success>
+												<Failure>
+													<SpawnAction speciesname="mudraptor" spawnlocation="Outpost" spawnpointtag="selectedmudraptorspawnvent" _npos="4691.3438,2443.5796" />
+													<SpawnAction speciesname="mudraptor" spawnlocation="Outpost" spawnpointtag="selectedmudraptorspawnvent" _npos="5073.6646,2443.5278" />
+													<SpawnAction speciesname="mudraptor" spawnlocation="Outpost" spawnpointtag="selectedmudraptorspawnvent" _npos="5446.9077,2443.0098" />
+													<GoTo name="end" _npos="5852.7686,2443.732" />
+												</Failure>
+											</RNGAction>
+										</Failure>
+									</RNGAction>
+								</Success>
+								<Failure>
+									<ConversationAction text="EventText.v3soundinthevent8" targettag="triggerer_player" eventsprite="vent" _npos="2092.628,2461.2834" />
+									<GoTo name="start" _npos="2489.178,2461.4697" />
+								</Failure>
+							</CheckItemAction>
+						</Option>
+						<Option text="EventText.v3soundinthevent9" endconversation="true">
+							<GoTo name="start" _npos="671.69775,1601.8116" />
+						</Option>
+					</ConversationAction>
+				</Failure>
+			</CheckDataAction>
+		</ScriptedEvent>
+		<ScriptedEvent identifier="v4_goodsamaritan">
+			<CheckDataAction identifier="v4done" condition="eq 0" _npos="-6431.785,-24.849396">
+				<Success>
+					<WaitAction time="3" _npos="-5977.392,6.764557" />
+					<TagAction criteria="crew" tag="player" _npos="-5472.666,-6.9339294" />
+					<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_commoner1" lootingisstealing="true" targettag="patient" spawnlocation="Outpost" spawnpointtype="Path" _npos="-5106.648,-8.163452" />
+					<AfflictionAction affliction="opiateoverdose" strength="35" targettag="patient" _npos="-4605.687,-22.217438" />
+					<AfflictionAction affliction="paralysis" strength="100" targettag="patient" _npos="-4117.0786,-0.14880371" />
+					<Label name="start" _npos="-3673.4832,-7.2577515" />
+					<TriggerAction target1tag="patient" target2tag="player" applytotarget2="triggerer_player" radius="150" disableincombat="false" disableiftargetincapacitated="false" _npos="-3196.3997,-2.822174" />
+					<ConversationAction text="EventText.v4goodsamaritan.1" targettag="triggerer_player" eventsprite="unconscious" _npos="-2808.7795,-2.7611084" />
+					<SetDataAction operation="Set" value="1" identifier="v4done" _npos="-3383.2192,-474.0031" />
+					<Label name="healcheck" _npos="-2946.4734,-653.058" />
+					<CheckAfflictionAction identifier="opiateoverdose" targettag="patient" _npos="-2552.493,-653.7312">
+						<Success>
+							<WaitAction time="5" _npos="-2562.6345,-892.1849" />
+							<GoTo name="healcheck" _npos="-2561.0056,-993.52637" />
+						</Success>
+						<Failure>
+							<TriggerAction target1tag="patient" target2tag="player" applytotarget2="healer" radius="200" disableiftargetincapacitated="false" _npos="-2100.0264,-589.1046" />
+							<SkillCheckAction requiredskill="medical" requiredlevel="60" probabilitybased="true" targettag="healer" _npos="-1506.7234,-581.83276">
+								<Success>
+									<ConversationAction text="EventText.v4goodsamaritan.2" targettag="healer" eventsprite="unconscious" _npos="-941.5709,-958.59595" />
+									<AfflictionAction affliction="stun" strength="-1000" targettag="patient" _npos="-544.43463,-913.96747" />
+									<AfflictionAction affliction="paralysis" strength="-1000" targettag="patient" _npos="-547.8421,-716.8437" />
+									<GiveSkillExpAction skill="medical" amount="5" targettag="healer" _npos="-547.6629,-1098.8577" />
+									<CheckItemAction targettag="patient" itemidentifiers="ita_bill50" _npos="-340.3955,-1346.7427">
+										<Success>
+											<ConversationAction text="EventText.v4goodsamaritan.3" speakertag="patient" invokertag="healreward" _npos="-7.5151596,-965.2131" />
+											<SpawnAction itemidentifier="ita_bill50" targetinventory="healreward" _npos="395.42984,-965.96423" />
+											<Label name="rew" _npos="692.5479,-1071.4188" />
+											<ReputationAction increase="10" targettype="Location" _npos="1001.2194,-1002.95703" />
+											<SetPriceMultiplierAction multiplier="0.8" operation="Multiply" targetmultiplier="Store" _npos="1395.4077,-992.5905" />
+											<Label name="end" _npos="1774.5485,-992.801" />
+											<SetDataAction operation="Set" value="1" identifier="v4done" _npos="1786.553,-868.70764" />
+										</Success>
+										<Failure>
+											<ConversationAction text="EventText.v4goodsamaritan.4" speakertag="patient" invokertag="healreward" _npos="207.71222,-1518.2726" />
+											<GoTo name="rew" _npos="626.496,-1512.1696" />
+										</Failure>
+									</CheckItemAction>
+								</Success>
+								<Failure>
+									<AfflictionAction affliction="organdamage" strength="50" targettag="patient" _npos="-938.6234,-430.48956" />
+									<AfflictionAction affliction="stun" strength="100" targettag="patient" _npos="-569.2152,-430.36002" />
+									<ConversationAction text="EventText.v4goodsamaritan.5" targettag="healer" eventsprite="unconscious" _npos="-189.18024,-430.82266" />
+									<GoTo name="end" _npos="194.15735,-430.31567" />
+								</Failure>
+							</SkillCheckAction>
+						</Failure>
+					</CheckAfflictionAction>
+				</Success>
+				<Failure>
+					<TriggerEventAction identifier="v5_impromptuengineering" _npos="-6417.346,202.43222" />
+				</Failure>
+			</CheckDataAction>
+		</ScriptedEvent>
+		<ScriptedEvent identifier="v5_impromptuengineering">
+			<CheckDataAction identifier="v5done" condition="eq 1" _npos="-1118.5564,2.4940186">
+				<Success>
+					<TriggerEventAction identifier="v6_clownrelations1" _npos="-1117.4298,219.47887" />
+				</Success>
+				<Failure>
+					<TagAction criteria="player" tag="player" _npos="0,0" />
+					<TagAction criteria="itemidentifier:opdeco_computer" tag="potentialresearchterminal" submarinetype="Outpost" _npos="600,0" />
+					<TagAction criteria="itemidentifier:opdeco_desk" tag="potentialresearchterminal" submarinetype="Outpost" _npos="1200,0" />
+					<TagAction criteria="itemidentifier:op_researchtable" tag="potentialresearchterminal" submarinetype="Outpost" _npos="1800,0" />
+					<TagAction criteria="itemidentifier:op_researchterminal" tag="potentialresearchterminal" submarinetype="Outpost" _npos="2189.286,-0.7510376" />
+					<Label name="start" _npos="2621.469,3.9074097" />
+					<ClearTagAction tag="triggerer_player" _npos="2625.8096,165.58632" />
+					<ClearTagAction tag="triggerer_player" _npos="2626.014,282.42175" />
+					<ClearTagAction tag="triggerer_player" _npos="2628.6284,394.8464" />
+					<WaitAction time="6" _npos="2628.7832,536.5194" />
+					<TagAction criteria="player" tag="player" _npos="2627.175,634.8794" />
+					<TriggerAction target1tag="potentialresearchterminal" target2tag="player" applytotarget1="selectedresearchterminal" applytotarget2="triggerer_player" radius="150" _npos="3135.229,0" />
+					<StatusEffectAction targettag="selectedresearchterminal" _npos="3600,0">
+						<StatusEffect indestructible="false" condition="0" setvalue="true" _npos="4200,0" />
+					</StatusEffectAction>
+					<ConversationAction text="EventText.v5impromptuengineering.1" targettag="triggerer_player" eventsprite="brokenterminal" _npos="4040.0835,366.98135">
+						<Option text="EventText.v5impromptuengineering.2" endconversation="true">
+							<CheckItemAction targettag="triggerer_player" itemidentifiers="screwdriver" _npos="4525.9976,462.55853">
+								<Success>
+									<ConversationAction text="EventText.v5impromptuengineering.3" targettag="triggerer_player" _npos="4800,0">
+										<Option text="EventText.v5impromptuengineering.4">
+											<SkillCheckAction requiredskill="Electrical" requiredlevel="50" probabilitybased="false" targettag="triggerer_player" _npos="5400,0">
+												<Success>
+													<GiveSkillEXPAction skill="electrical" amount="5" targettag="triggerer_player" _npos="6000,0" />
+													<ConversationAction text="EventText.impromptuengineering.o1.o1.c1" targettag="triggerer_player" _npos="6600,0">
+														<Option text="EventText.impromptuengineering.o1.o1.o1" endconversation="true">
+															<SpawnAction itemidentifier="bluewire" targetinventory="triggerer_player" _npos="7197.4023,6.1702576" />
+															<SpawnAction itemidentifier="bluewire" targetinventory="triggerer_player" _npos="7788.894,6.1705017" />
+															<SpawnAction itemidentifier="fpgacircuit" targetinventory="triggerer_player" _npos="8225.973,6.171051" />
+															<SpawnAction itemidentifier="fpgacircuit" targetinventory="triggerer_player" _npos="8634.677,6.4117126" />
+															<SpawnAction itemidentifier="fpgacircuit" targetinventory="triggerer_player" _npos="9092.392,7.645508" />
+															<SpawnAction itemidentifier="fpgacircuit" targetinventory="triggerer_player" _npos="9577.447,7.644745" />
+															<SpawnAction itemidentifier="fpgacircuit" targetinventory="triggerer_player" _npos="10067.16,7.645691" />
+															<Label name="end" _npos="10436.288,6.709839" />
+															<SetDataAction operation="Set" value="1" identifier="v5done" _npos="10901.396,6.3497925" />
+														</Option>
+													</ConversationAction>
+												</Success>
+												<Failure>
+													<ConversationAction text="EventText.impromptuengineering.o1.o1.c2" targettag="triggerer_player" _npos="6128,407">
+														<Option text="EventText.impromptuengineering.o1.o1.o2" endconversation="true">
+															<SpawnAction itemidentifier="redwire" targetinventory="triggerer_player" _npos="6588.66,439.69952" />
+														</Option>
+													</ConversationAction>
+												</Failure>
+											</SkillCheckAction>
+										</Option>
+										<Option text="EventText.v5impromptuengineering.5">
+											<SkillCheckAction requiredskill="electrical" requiredlevel="60" targettag="triggerer_player" _npos="5399.1113,427.90106">
+												<Success>
+													<StatusEffectAction targettag="selectedresearchterminal" _npos="5395.976,761.53174">
+														<StatusEffect condition="100" indestructible="true" setvalue="true" _npos="5394.3574,858.03595" />
+													</StatusEffectAction>
+													<ConversationAction text="EventText.v5impromptuengineering.6" targettag="triggerer_player" _npos="5944.9185,1161.8551">
+														<Option text="EventText.v5impromptuengineering.7">
+															<SpawnAction itemidentifier="physicoriumammobox" spawnlocation="MainSub" _npos="7213.93,640.7167" />
+															<SpawnAction itemidentifier="physicoriumammobox" spawnlocation="MainSub" _npos="7928,640" />
+															<ConversationAction text="EventText.v5impromptuengineering.8" targettag="triggerer_player" _npos="8528,694">
+																<Option text="EventText.impromptuengineering.o1.o2.o1.o1" endconversation="true">
+																	<GoTo name="end" _npos="9077.5,741.5" />
+																</Option>
+															</ConversationAction>
+														</Option>
+														<Option text="EventText.v5impromptuengineering.9">
+															<ConversationAction text="EventText.impromptuengineering.o1.o2.o2.c1" targettag="triggerer_player" _npos="7493.2383,1106.0947">
+																<Option text="EventText.v5impromptuengineering.9.1" endconversation="true" />
+																<GiveSkillExpAction skill="electrical" amount="5" targettag="triggerer_player" />
+															</ConversationAction>
+														</Option>
+														<Option text="EventText.v5impromptuengineering.10">
+															<CheckReputationAction targettype="Faction" identifier="separatists" condition="gte 30" _npos="7611.9155,1670.404">
+																<Success>
+																	<ConversationAction text="EventText.v5impromptuengineering.11" targettag="triggerer_player" _npos="8076.817,1836.6901">
+																		<Option text="EventText.v5impromptuengineering.11.1" endconversation="true">
+																			<GiveSkillExpAction skill="medical" amount="5" targettag="triggerer_player" _npos="8522.274,1691.0706" />
+																			<GoTo name="end" _npos="8978.653,1673.3073" />
+																		</Option>
+																		<Option text="EventText.v5impromptuengineering.12" endconversation="true">
+																			<ReputationAction increase="10" identifier="separatists" targettype="Faction" _npos="8530.812,1956.4315" />
+																			<SetDataAction operation="Set" value="1" identifier="sepsab_v5" _npos="8958.138,1956.1691" />
+																			<SetDataAction operation="Add" value="1" identifier="sepsab_total" _npos="9331.387,1956.6255" />
+																			<GoTo name="end" _npos="9714.047,1956.6329" />
+																		</Option>
+																	</ConversationAction>
+																</Success>
+																<Failure>
+																	<ConversationAction text="EventText.v5impromptuengineering.13" targettag="triggerer_player" _npos="8069.0483,1384.6802">
+																		<Option text="EventText.v5impromptuengineering.13.1" endconversation="true">
+																			<GiveSkillExpAction skill="medical" amount="5" targettag="triggerer_player" _npos="8554.694,1423.1345" />
+																			<GoTo name="end" _npos="8959.776,1423.1174" />
+																		</Option>
+																	</ConversationAction>
+																</Failure>
+															</CheckReputationAction>
+														</Option>
+														<Option text="EventText.v5impromptuengineering.14">
+															<ConversationAction text="EventText.v5impromptuengineering.15" targettag="triggerer_player" _npos="7524.794,2326.451">
+																<Option text="EventText.v5impromptuengineering.15.1" endconversation="true">
+																	<GiveSkillExpAction skill="weapons" amount="5" targettag="triggerer_player" _npos="8034.1187,2357.8794" />
+																	<GoTo name="end" _npos="8947.612,2339.1582" />
+																</Option>
+															</ConversationAction>
+														</Option>
+													</ConversationAction>
+												</Success>
+												<Failure>
+													<ConversationAction text="EventText.impromptuengineering.o1.o2.c2" targettag="triggerer_player" _npos="4025.63,2029.0051" />
+													<AfflictionAction affliction="burn" strength="15" limbtype="LeftHand" targettag="triggerer_player" _npos="4395.087,2030.5247" />
+													<StatusEffectAction targettag="triggerer_player" _npos="4782.121,2029.6045">
+														<StatusEffect _npos="4780.1743,2126.7102">
+															<Sound file="Content/Sounds/Damage/Electrocution1.ogg" range="1000" _npos="4779.43,2229.4014" />
+															<Explosion range="100.0" stun="0.0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" _npos="5252.4395,2055.8323" />
+															<GoTo name="end" _npos="5751.1973,2057.3357" />
+														</StatusEffect>
+													</StatusEffectAction>
+												</Failure>
+											</SkillCheckAction>
+										</Option>
+										<Option text="EventText.impromptuengineering.o1.o3" />
+									</ConversationAction>
+								</Success>
+								<Failure>
+									<GoTo name="start" _npos="4845.4106,585.1568" />
+								</Failure>
+							</CheckItemAction>
+						</Option>
+						<Option text="EventText.v5impromptuengineering.16" endconversation="true">
+							<GoTo name="start" _npos="4527.6353,687.0188" />
+						</Option>
+					</ConversationAction>
+				</Failure>
+			</CheckDataAction>
+		</ScriptedEvent>
+		<ScriptedEvent identifier="v6_clownrelations1">
+			<CheckDataAction identifier="v6done" condition="eq 0" _npos="-1063.9146,-3.6407166">
+				<Success>
+					<SetDataAction operation="Set" value="1" identifier="v6done" _npos="-447.8534,-1.8238678" />
+					<SpawnAction itemidentifier="toolbox" targettag="clowntoolbox" spawnlocation="Outpost" targetmoduletags="crewmodule" ignorebyai="true" _npos="0,0" />
+					<SpawnAction itemidentifier="bikehorn" targetinventory="clowntoolbox" _npos="600,0" />
+					<SpawnAction itemidentifier="bikehorn" targetinventory="clowntoolbox" _npos="1200,0" />
+					<SpawnAction itemidentifier="clownmask" targetinventory="clowntoolbox" _npos="1800,0" />
+					<SpawnAction itemidentifier="clowncostume" targetinventory="clowntoolbox" _npos="2400,0" />
+					<TagAction criteria="player" tag="player" _npos="3000,0" />
+					<TriggerAction target1tag="clowntoolbox" target2tag="player" applytotarget2="triggerer_player" radius="150" _npos="3600,0" />
+					<ConversationAction text="EventText.clownrelations1.c1" targettag="triggerer_player" _npos="4200,0">
+						<Option text="EventText.clownrelations1.o1">
+							<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="clown" targettag="clown1" spawnlocation="Outpost" targetmoduletags="crewmodule" _npos="4800,0" />
+							<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="clown" targettag="clown1" spawnlocation="Outpost" targetmoduletags="crewmodule" _npos="5400,0" />
+							<NPCFollowAction npctag="clown1" targettag="clowntoolbox" follow="true" _npos="6000,0" />
+							<NPCFollowAction npctag="clown2" targettag="triggerer_player" follow="true" _npos="6600,0" />
+							<WaitAction time="2" _npos="7200,0" />
+							<ConversationAction text="EventText.clownrelations1.o1.c1" targettag="triggerer_player" eventsprite="clown" _npos="7800,0">
+								<Option text="EventText.clownrelations1.o1.o1">
+									<ConversationAction text="EventText.clownrelations1.o1.o1.c1" targettag="triggerer_player" _npos="8400,0" />
+								</Option>
+								<Option text="EventText.clownrelations1.o1.o2">
+									<SpawnAction itemidentifier="bikehorn" targetinventory="triggerer_player" _npos="8528,668" />
+									<ReputationAction increase="30" identifier="clowns" targettype="Faction" _npos="9000,0" />
+									<ReputationAction increase="-20" targettype="Location" _npos="9600,0" />
+									<ReputationAction increase="-20" identifier="coalition" targettype="Faction" _npos="10200,0" />
+									<StatusEffectAction targettag="triggerer_player" _npos="10800,0">
+										<StatusEffect _npos="11400,0">
+											<Sound file="Content/Items/Weapons/honk.ogg" range="300" _npos="12000,0" />
+										</StatusEffect>
+									</StatusEffectAction>
+									<ConversationAction text="EventText.clownrelations1.o1.o2.c1" targettag="triggerer_player" _npos="11528,277" />
+								</Option>
+							</ConversationAction>
+						</Option>
+						<Option text="EventText.clownrelations1.o2" />
+					</ConversationAction>
+					<NPCFollowAction npctag="clown1" targettag="clowntoolbox" follow="false" _npos="4928,585" />
+					<NPCFollowAction npctag="clown2" targettag="triggerer_player" follow="false" _npos="5528,657" />
+				</Success>
+				<Failure>
+					<TriggerEventAction identifier="v7clownrelations2" _npos="-1064.2971,197.9325" />
+				</Failure>
+			</CheckDataAction>
+		</ScriptedEvent>
+		<ScriptedEvent identifier="v7_clownrelations2">
+			<CheckDataAction identifier="v7done" condition="eq 0" _npos="-423.05237,8.545288">
+				<Success>
+					<TagAction criteria="player" tag="player" _npos="90.28143,-2.094696" />
+					<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="clown" targettag="clown" spawnlocation="Outpost" spawnpointtype="Path" _npos="600,0" />
+					<TriggerAction target1tag="clown" target2tag="player" applytotarget2="triggerer_player" radius="150" _npos="1200,0" />
+					<NPCFollowAction npctag="clown" targettag="triggerer_player" follow="true" _npos="1588.6669,3.0517578E-05" />
+					<SetDataAction operation="Set" value="1" identifier="v7done" _npos="1966.9894,-5.409668" />
+					<ConversationAction text="EventText.clownrelations2.c1" targettag="triggerer_player" eventsprite="clown" _npos="2400,0">
+						<Option text="EventText.clownrelations2.o1">
+							<CheckReputationAction targettype="Faction" identifier="clowns" condition="gte 30" _npos="3000,0">
+								<Success>
+									<ConversationAction text="EventText.clownrelations2.o1.c1" targettag="triggerer_player" _npos="3702.175,27.135742" />
+									<SpawnAction itemidentifier="bikehorn" targetinventory="triggerer_player" _npos="4089.0625,30.603516" />
+									<NPCFollowAction npctag="clown" targettag="triggerer_player" follow="false" _npos="4292.5063,-252.22931" />
+								</Success>
+								<Failure>
+									<ConversationAction text="EventText.clownrelations2.o1.c2" targettag="triggerer_player" _npos="3748.2397,591.73785">
+										<Option text="EventText.clownrelations2.o1.o1" />
+									</ConversationAction>
+									<AfflictionAction affliction="blunttrauma" strength="3" limbtype="Head" targettag="triggerer_player" _npos="4328,644" />
+									<CombatAction combatmode="Retreat" npctag="clown" enemytag="triggerer_player" _npos="4800,0" />
+								</Failure>
+							</CheckReputationAction>
+						</Option>
+						<Option text="EventText.clownrelations2.o2" endconversation="true">
+							<WaitAction time="10" _npos="3128,380" />
+							<NPCFollowAction npctag="clown" targettag="triggerer_player" follow="false" _npos="3135.4563,626.9734" />
+						</Option>
+					</ConversationAction>
+				</Success>
+				<Failure>
+					<TriggerEventAction identifier="v8_propaganda" _npos="-420.9604,213.62299" />
+				</Failure>
+			</CheckDataAction>
+		</ScriptedEvent>
+		<ScriptedEvent identifier="v8_propaganda">
+			<CheckDataAction identifier="v8done" condition="eq 0" _npos="2593.2395,323.24667">
+				<Success>
+					<TagAction criteria="crew" tag="player" _npos="3101.2878,355.09644" />
+					<TagAction criteria="structureidentifier:opdeco_hrflyers" tag="potentialflyers" submarinetype="Outpost" _npos="3501.3538,355.1243" />
+					<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="commoner" targettag="c1" spawnpointtag="hr" _npos="3890.8428,356.6084" />
+					<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="commoner" targettag="c2" spawnpointtag="hr" _npos="4290.4907,356.4132" />
+					<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="commoner" targettag="c3" spawnpointtag="hr" _npos="3893.8745,835.90027" />
+					<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="commoner" targettag="c4" spawnpointtag="hr" _npos="4292.6704,836.6907" />
+					<Label name="start" _npos="4767.346,-516.3082" />
+					<ClearTagAction tag="triggerer_player" _npos="4766.2803,-419.94775" />
+
+					<WaitAction time="6" _npos="4768.5864,143.40524" />
+					<TriggerAction target1tag="potentialflyers" target2tag="player" applytotarget1="selectedfliers" applytotarget2="triggerer_player" radius="250" _npos="5230.2666,-50.796906" />
+					<NPCFollowAction npctag="c1" targettag="triggerer_player" follow="true" _npos="5230.3267,272.47482" />
+					<NPCFollowAction npctag="c2" targettag="triggerer_player" follow="true" _npos="5230.3765,435.55118" />
+					<NPCFollowAction npctag="c3" targettag="triggerer_player" follow="true" _npos="5229.017,598.131" />
+					<NPCFollowAction npctag="c4" targettag="triggerer_player" follow="true" _npos="5229.803,759.3109" />
+					<SetDataAction operation="Set" value="1" identifier="v8done" _npos="5562.316,-323.72092" />
+					<ConversationAction text="EventText.propaganda.c1" targettag="triggerer_player" eventsprite="noticeboard" _npos="5929.476,-323.41934">
+						<Option text="EventText.propaganda.c1.o1">
+							<ConversationAction text="EventText.propaganda.c1.o1.c1" targettag="triggerer_player" continueconversation="true" _npos="6408.6245,-113.295166">
+								<Option text="EventText.v8propaganda.1" endconversation="true">
+									<CheckItemAction targettag="triggerer_player" itemidentifiers="sprayer" _npos="6955.8867,37.534332">
+										<Success>
+											<CheckItemAction targettag="triggerer_player" itemidentifiers="ethanol" _npos="7386.7256,39.007767">
+												<Success>
+													<ConversationAction text="EventText.v8propaganda.4" targettag="triggerer_player" _npos="7630.4756,340.88916" />
+													<ReputationAction increase="15" targettype="Location" _npos="8024.04,340.7349" />
+													<ReputationAction increase="10" identifier="coalition" targettype="Faction" _npos="8024.6484,501.88116" />
+													<ReputationAction increase="-10" identifier="separatists" targettype="Faction" _npos="8024.62,662.48175" />
+													<NPCFollowAction npctag="c1" targettag="triggerer_player" follow="false" />
+													<NPCFollowAction npctag="c2" targettag="triggerer_player" follow="false" />
+													<NPCFollowAction npctag="c3" targettag="triggerer_player" follow="false" />
+													<NPCFollowAction npctag="c4" targettag="triggerer_player" follow="false" />
+												</Success>
+												<Failure>
+													<GoTo name="start" _npos="7385.309,203.7391" />
+													<NPCFollowAction npctag="c1" targettag="triggerer_player" follow="false" />
+													<NPCFollowAction npctag="c2" targettag="triggerer_player" follow="false" />
+													<NPCFollowAction npctag="c3" targettag="triggerer_player" follow="false" />
+													<NPCFollowAction npctag="c4" targettag="triggerer_player" follow="false" />
+												</Failure>
+											</CheckItemAction>
+										</Success>
+										<Failure>
+											<GoTo name="start" _npos="6956.7173,199.74133" />
+										</Failure>
+									</CheckItemAction>
+								</Option>
+								<Option text="EventText.v8propaganda.2" endconversation="true">
+									<CheckItemAction targettag="triggerer_player" itemtags="paint" _npos="6954.0806,-216.54984">
+										<Success>
+											<ReputationAction increase="-15" targettype="Location" _npos="7353.98,-184.18964" />
+											<ReputationAction increase="10" identifier="separatists" targettype="Faction" _npos="7742.136,-184.10553" />
+											<ReputationAction increase="-30" identifier="coalition" targettype="Faction" _npos="8113.5317,-184.37677" />
+											<ConversationAction text="EventText.v8propaganda.5" targettag="triggerer_player" eventsprite="mediator" _npos="8483.713,-184.21393">
+												<Option text="EventText.v8propaganda.6" endconversation="true">
+													<CombatAction combatmode="Offensive" isinstigator="true" guardreaction="Arrest" witnessreaction="Retreat" npctag="c1" enemytag="c2" _npos="8996.241,-152.08496" />
+													<CombatAction combatmode="Offensive" isinstigator="true" guardreaction="Arrest" witnessreaction="Retreat" npctag="c2" enemytag="c1" _npos="9417.998,-153.51736" />
+													<CombatAction combatmode="Offensive" isinstigator="true" guardreaction="Arrest" witnessreaction="Retreat" npctag="c3" enemytag="c4" _npos="9810.5625,-153.36993" />
+													<CombatAction combatmode="Offensive" isinstigator="false" guardreaction="Arrest" witnessreaction="Retreat" npctag="c4" enemytag="triggerer_player" _npos="10204.574,-153.85916" />
+												</Option>
+											</ConversationAction>
+										</Success>
+										<Failure>
+											<ConversationAction text="EventText.v8propaganda.7" targettag="triggerer_player" dialogtype="Small" _npos="7390.1577,-632.927" />
+											<NPCFollowAction npctag="c1" targettag="triggerer_player" follow="false" />
+											<NPCFollowAction npctag="c2" targettag="triggerer_player" follow="false" />
+											<NPCFollowAction npctag="c3" targettag="triggerer_player" follow="false" />
+											<NPCFollowAction npctag="c4" targettag="triggerer_player" follow="false" />
+											<GoTo name="start" _npos="7758.9287,-632.59515" />
+										</Failure>
+									</CheckItemAction>
+								</Option>
+								<Option text="EventText.v8propaganda.3" endconversation="true">
+									<NPCFollowAction npctag="c1" targettag="triggerer_player" follow="false" />
+									<NPCFollowAction npctag="c2" targettag="triggerer_player" follow="false" />
+									<NPCFollowAction npctag="c3" targettag="triggerer_player" follow="false" />
+									<NPCFollowAction npctag="c4" targettag="triggerer_player" follow="false" />
+									<GoTo name="start" _npos="6821.94,403.4666" />
+								</Option>
+							</ConversationAction>
+						</Option>
+					</ConversationAction>
+				</Success>
+				<Failure>
+					<!--<TriggerEventAction identifier="v9" _npos="2593.6738,516.7322" />-->
+				</Failure>
+			</CheckDataAction>
+		</ScriptedEvent>
 		<!--SHOPS-->
 		<ScriptedEvent identifier="ita_canteen1">
 			<TagAction criteria="itemtag:ita_canteentable1" tag="ita_canteentable1" _npos="-3595.7273,65.36722" />
@@ -6080,565 +6778,180 @@
 			<SetDataAction operation="Set" value="1" identifier="traversed90" _npos="-1212,228" />
 		</ScriptedEvent>
 	</EventPrefabs>
+	<EventSet identifier="outpostevents" leveltype="outpost" locationtype="city" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
+		<Commonness commonness="1000">
+			<Override leveltype="outpostlevel" commonness="1000" />
+		</Commonness>
+		<EventSet identifier="outpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
+			<ScriptedEvent identifier="v1_mechanicsarespecial" commonness="50" />
+			<ScriptedEvent identifier="v2_givingdirections" commonness="100" />
+			<ScriptedEvent identifier="v3_soundinthevent" commonness="50" />
+			<ScriptedEvent identifier="v4_goodsamaritan" commonness="50" />
+			<ScriptedEvent identifier="v5_impromptuengineering" commonness="50" />
+			<ScriptedEvent identifier="v6_clownrelations1" commonness="50" />
+			<ScriptedEvent identifier="v7_clownrelations2" commonness="100" />
+			<ScriptedEvent identifier="v8_propaganda" commonness="12" />
+			<ScriptedEvent identifier="firefighting" commonness="100" />
+			<ScriptedEvent identifier="clownbrutality" commonness="10" />
+			<ScriptedEvent identifier="separatistrelations" commonness="10" />
+			<ScriptedEvent identifier="huskcultrelations" commonness="10" />
+			<ScriptedEvent identifier="mediator" commonness="10" />
+			<ScriptedEvent identifier="blackmarket" commonness="10" />
+			<ScriptedEvent identifier="huskcultist" commonness="10" />
+			<ScriptedEvent identifier="fanclub" commonness="10" />
+			<ScriptedEvent identifier="huskcultambush" commonness="10" />
+		</EventSet>
+		<EventSet identifier="outpostevents.missionevents" allowatstart="true" chooserandom="true" eventcount="3">
+			<ScriptedEvent identifier="ita_missions_city1.1" commonness="125" />
+			<ScriptedEvent identifier="ita_missions_city1.2" commonness="125" />
+			<ScriptedEvent identifier="ita_missions_city1.3" commonness="125" />
+		</EventSet>
+		<EventSet identifier="ita_outpostevents_city1" allowatstart="true" chooserandom="false" eventcount="2">
+			<ScriptedEvent identifier="ita_untraversed90"/>
+			<ScriptedEvent identifier="ita_citycheck"/>
+		</EventSet>
+		<EventSet identifier="ita_randomoutpostevents_trainers1" allowatstart="true" chooserandom="true" eventcount="1">
+			<ScriptedEvent identifier="ita_trainer1" commonness="50" />
+			<ScriptedEvent identifier="ita_trainer2" commonness="50" />
+			<ScriptedEvent identifier="ita_trainer3" commonness="50" />
+			<ScriptedEvent identifier="ita_trainer4" commonness="50" />
+		</EventSet>
 
-	  <!--OUTPOST BASIC EVENTS-->
-  <EventSet identifier="outpostevents" leveltype="outpost" locationtype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="40" chooserandom="false" ignorecooldown="true">
-    <Commonness commonness="0">
-      <Override leveltype="outpostlevel" commonness="10" />
-    </Commonness>       
-    <!--Only basic events until difficulty > 40-->
-    <EventSet identifier="outpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
-      <ScriptedEvent identifier="givingdirections" commonness="100" />
-      <ScriptedEvent identifier="clownrelations1" commonness="100" />
-      <ScriptedEvent identifier="goodsamaritan" commonness="100" />
-      <ScriptedEvent identifier="propaganda" commonness="100" />
-      <ScriptedEvent identifier="miketheidiot1" commonness="25" />
-      <!--<ScriptedEvent identifier="foreshadowing" commonness="50" />-->
-      <ScriptedEvent identifier="separatistrelations" commonness="100" />
-      <ScriptedEvent identifier="Engineers_are_special" commonness="100" />
-      <ScriptedEvent identifier="huskcultist" commonness="100" />
-      <ScriptedEvent identifier="fanclub" commonness="100" />
-      <ScriptedEvent identifier="shockjock" commonness="60" />
-      <ScriptedEvent identifier="infiltration" commonness="70" />
-      <ScriptedEvent identifier="manandhisraptor1" commonness="50" />
-      <ScriptedEvent identifier="bombscare" commonness="50" />
-      <ScriptedEvent identifier="terrorism101" commonness="50" />
-      <ScriptedEvent identifier="censorship" commonness="60" />
-      <ScriptedEvent identifier="atwitsend" commonness="60" />
-    </EventSet>
-    <EventSet identifier="outpostevents.missionevents" allowatstart="true" chooserandom="true" eventcount="2">
-      <!--<ScriptedEvent identifier="missionevent_cargo1" commonness="125" />
-      <ScriptedEvent identifier="missionevent_cargo2" commonness="50" />
-      <ScriptedEvent identifier="missionevent_cargo3" commonness="100" />-->
-      <ScriptedEvent identifier="missionevent_cargoany" commonness="200" />
-      <ScriptedEvent identifier="missionevent_killswarm" commonness="100" />
-      <ScriptedEvent identifier="missionevent_killmonstercommon" commonness="85" />
-      <ScriptedEvent identifier="missionevent_killmonsterrare" commonness="25" />
-      <ScriptedEvent identifier="missionevent_salvageartifact" commonness="75" />
-      <ScriptedEvent identifier="missionevent_salvagewreck" commonness="75" />
-      <ScriptedEvent identifier="missionevent_crawlernest" commonness="80" />
-      <ScriptedEvent identifier="missionevent_mudraptornest" commonness="70" />
-      <ScriptedEvent identifier="missionevent_tigerthreshernest" commonness="60" />
-      <ScriptedEvent identifier="missionevent_collectminerals" commonness="75" />
-    </EventSet>
-    <EventSet identifier="outpostevents.randommissionevents" allowatstart="true" chooserandom="true">
-      <ScriptedEvent identifier="missionevent_killmonster" commonness="100" />
-      <ScriptedEvent identifier="missionevent_cargo" commonness="100" />
-      <ScriptedEvent identifier="missionevent_salvage" commonness="100" />
-      <ScriptedEvent identifier="missionevent_clownoutbreak" commonness="40" />
-    </EventSet>
-    <EventSet identifier="outpostevents.fixedevents" allowatstart="true" chooserandom="false">
-      <ScriptedEvent identifier="healreaperstax" />
-    </EventSet>
-  </EventSet>
-  <!--OUTPOST ADVANCED EVENTS-->
-  <EventSet identifier="outpostevents" leveltype="outpost" locationtype="outpost" allowatstart="true" minleveldifficulty="41" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
-    <Commonness commonness="0">
-      <Override leveltype="outpostlevel" commonness="10" />
-    </Commonness>
-    <!--Basic + advanced events, commonness modified to favor more advanced-->
-    <EventSet identifier="outpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
-      <ScriptedEvent identifier="givingdirections" commonness="50" />
-      <ScriptedEvent identifier="soundinthevent" commonness="100" />
-      <ScriptedEvent identifier="clownrelations1" commonness="50" />
-      <ScriptedEvent identifier="clownrelations2" commonness="100" />
-      <ScriptedEvent identifier="goodsamaritan" commonness="50" />
-      <ScriptedEvent identifier="propaganda" commonness="50" />
-      <ScriptedEvent identifier="goblincooking1" commonness="50" />
-      <ScriptedEvent identifier="outbreak" commonness="100" />
-      <ScriptedEvent identifier="miketheidiot1" commonness="12" />
-      <ScriptedEvent identifier="miketheidiot2" commonness="25" />
-      <ScriptedEvent identifier="firefighting" commonness="100" />
-      <ScriptedEvent identifier="sleightofhand" commonness="100" />
-      <!--<ScriptedEvent identifier="foreshadowing" commonness="50" />-->
-      <ScriptedEvent identifier="clownbrutality" commonness="100" />
-      <ScriptedEvent identifier="separatistrelations" commonness="50" />
-      <ScriptedEvent identifier="huskcultrelations" commonness="100" />
-      <ScriptedEvent identifier="Engineers_are_special" commonness="50" />
-      <ScriptedEvent identifier="mediator" commonness="100" />
-      <ScriptedEvent identifier="blackmarket" commonness="100" />
-      <ScriptedEvent identifier="huskcultist" commonness="50" />
-      <ScriptedEvent identifier="fanclub" commonness="50" />
-      <ScriptedEvent identifier="huskcultambush" commonness="50" />
-      <ScriptedEvent identifier="shockjock" commonness="40" />
-      <ScriptedEvent identifier="badvibrations1" commonness="80" />
-      <ScriptedEvent identifier="manandhisraptor1" commonness="60" />
-      <ScriptedEvent identifier="bombscare" commonness="40" />
-      <ScriptedEvent identifier="terrorism101" commonness="40" />
-      <ScriptedEvent identifier="stuckinthemiddle" commonness="50" />
-    </EventSet>
-    <EventSet identifier="outpostevents.missionevents" allowatstart="true" chooserandom="true" eventcount="2">
-      <!--<ScriptedEvent identifier="missionevent_cargo1" commonness="125" />
-      <ScriptedEvent identifier="missionevent_cargo2" commonness="50" />
-      <ScriptedEvent identifier="missionevent_cargo3" commonness="100" />-->
-      <ScriptedEvent identifier="missionevent_cargoany" commonness="200" />
-      <ScriptedEvent identifier="missionevent_killswarm" commonness="100" />
-      <ScriptedEvent identifier="missionevent_killmonstercommon" commonness="50" />
-      <ScriptedEvent identifier="missionevent_killmonsterrare" commonness="50" />
-      <ScriptedEvent identifier="missionevent_salvageartifact" commonness="100" />
-      <ScriptedEvent identifier="missionevent_salvagewreck" commonness="100" />
-    </EventSet>
-    <EventSet identifier="outpostevents.randommissionevents" allowatstart="true" chooserandom="true">
-      <ScriptedEvent identifier="missionevent_killmonster" commonness="100" />
-      <ScriptedEvent identifier="missionevent_cargo" commonness="100" />
-      <ScriptedEvent identifier="missionevent_salvage" commonness="100" />
-      <ScriptedEvent identifier="missionevent_clownoutbreak" commonness="40" />
-    </EventSet>
-    <EventSet identifier="outpostevents.fixedevents" allowatstart="true" chooserandom="false">
-      <ScriptedEvent identifier="healreaperstax" />
-    </EventSet>
-  </EventSet>
-  <!--CITY BASIC EVENTS-->
-  <EventSet identifier="outpostevents" leveltype="outpost" locationtype="city" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="40" chooserandom="false" ignorecooldown="true">
-    <Commonness commonness="0">
-      <Override leveltype="outpostlevel" commonness="10" />
-    </Commonness>
-    <!--Only basic events until difficulty > 40-->
-    <EventSet identifier="outpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
-      <ScriptedEvent identifier="givingdirections" commonness="100" />
-      <ScriptedEvent identifier="clownrelations1" commonness="100" />
-      <ScriptedEvent identifier="goodsamaritan" commonness="100" />
-      <ScriptedEvent identifier="propaganda" commonness="100" />
-      <ScriptedEvent identifier="miketheidiot1" commonness="25" />
-      <!--<ScriptedEvent identifier="foreshadowing" commonness="50" />-->
-      <ScriptedEvent identifier="separatistrelations" commonness="100" />
-      <ScriptedEvent identifier="Engineers_are_special" commonness="100" />
-      <ScriptedEvent identifier="huskcultist" commonness="100" />
-      <ScriptedEvent identifier="fanclub" commonness="100" />
-      <ScriptedEvent identifier="atwitsend" commonness="70" />
-      <ScriptedEvent identifier="shockjock" commonness="60" />
-      <ScriptedEvent identifier="infiltration" commonness="70" />
-      <ScriptedEvent identifier="manandhisraptor1" commonness="50" />
-      <ScriptedEvent identifier="bombscare" commonness="50" />
-      <ScriptedEvent identifier="terrorism101" commonness="50" />
-      <ScriptedEvent identifier="censorship" commonness="60" />
-      <ScriptedEvent identifier="atwitsend" commonness="60" />
-    </EventSet>
-    <EventSet identifier="outpostevents.missionevents" allowatstart="true" chooserandom="true" eventcount="3">
-      <!--<ScriptedEvent identifier="missionevent_cargo1" commonness="125" />
-      <ScriptedEvent identifier="missionevent_cargo2" commonness="50" />
-      <ScriptedEvent identifier="missionevent_cargo3" commonness="100" />-->
-      <ScriptedEvent identifier="missionevent_cargoany" commonness="200" />
-      <ScriptedEvent identifier="missionevent_killswarm" commonness="100" />
-      <ScriptedEvent identifier="missionevent_killmonstercommon" commonness="85" />
-      <ScriptedEvent identifier="missionevent_killmonsterrare" commonness="25" />
-      <ScriptedEvent identifier="missionevent_salvageartifact" commonness="75" />
-      <ScriptedEvent identifier="missionevent_salvagewreck" commonness="75" />
-      <ScriptedEvent identifier="missionevent_crawlernest" commonness="80" />
-      <ScriptedEvent identifier="missionevent_mudraptornest" commonness="70" />
-      <ScriptedEvent identifier="missionevent_tigerthreshernest" commonness="60" />
-      <ScriptedEvent identifier="missionevent_collectminerals" commonness="75" />
-      <ScriptedEvent identifier="missionevent_escort" commonness="100" />
-      <ScriptedEvent identifier="missionevent_pirate1" commonness="80" />
-    </EventSet>
-    <EventSet identifier="outpostevents.randommissionevents" allowatstart="true" chooserandom="true">
-      <ScriptedEvent identifier="missionevent_killmonster" commonness="100" />
-      <ScriptedEvent identifier="missionevent_cargo" commonness="100" />
-      <ScriptedEvent identifier="missionevent_salvage" commonness="100" />
-      <ScriptedEvent identifier="missionevent_clownoutbreak" commonness="40" />
-    </EventSet>
-    <EventSet identifier="outpostevents.fixedevents" allowatstart="true" chooserandom="false">
-      <ScriptedEvent identifier="healreaperstax" />
-    </EventSet>
-  </EventSet>
-  <!--CITY ADVANCED EVENTS-->
-  <EventSet identifier="outpostevents" leveltype="outpost" locationtype="city" allowatstart="true" minleveldifficulty="41" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
-    <Commonness commonness="0">
-      <Override leveltype="outpostlevel" commonness="10" />
-    </Commonness>
-    <!--Basic + advanced events, commonness modified to favor more advanced-->
-    <EventSet identifier="outpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
-      <ScriptedEvent identifier="givingdirections" commonness="50" />
-      <ScriptedEvent identifier="soundinthevent" commonness="100" />
-      <ScriptedEvent identifier="clownrelations1" commonness="50" />
-      <ScriptedEvent identifier="clownrelations2" commonness="100" />
-      <ScriptedEvent identifier="goodsamaritan" commonness="50" />
-      <ScriptedEvent identifier="propaganda" commonness="50" />
-      <ScriptedEvent identifier="goblincooking1" commonness="50" />
-      <ScriptedEvent identifier="outbreak" commonness="100" />
-      <ScriptedEvent identifier="miketheidiot1" commonness="12" />
-      <ScriptedEvent identifier="miketheidiot2" commonness="25" />
-      <ScriptedEvent identifier="firefighting" commonness="100" />
-      <ScriptedEvent identifier="sleightofhand" commonness="100" />
-      <!--<ScriptedEvent identifier="foreshadowing" commonness="50" />-->
-      <ScriptedEvent identifier="clownbrutality" commonness="100" />
-      <ScriptedEvent identifier="separatistrelations" commonness="50" />
-      <ScriptedEvent identifier="huskcultrelations" commonness="100" />
-      <ScriptedEvent identifier="Engineers_are_special" commonness="50" />
-      <ScriptedEvent identifier="mediator" commonness="100" />
-      <ScriptedEvent identifier="blackmarket" commonness="100" />
-      <ScriptedEvent identifier="huskcultist" commonness="50" />
-      <ScriptedEvent identifier="fanclub" commonness="50" />
-      <ScriptedEvent identifier="huskcultambush" commonness="50" />
-      <ScriptedEvent identifier="shockjock" commonness="40" />
-      <ScriptedEvent identifier="badvibrations1" commonness="80" />
-      <ScriptedEvent identifier="manandhisraptor1" commonness="60" />
-      <ScriptedEvent identifier="bombscare" commonness="40" />
-      <ScriptedEvent identifier="terrorism101" commonness="40" />
-      <ScriptedEvent identifier="stuckinthemiddle" commonness="50" />
-    </EventSet>
-    <EventSet identifier="outpostevents.missionevents" allowatstart="true" chooserandom="true" eventcount="2">
-      <!--<ScriptedEvent identifier="missionevent_cargo1" commonness="125" />
-      <ScriptedEvent identifier="missionevent_cargo2" commonness="50" />
-      <ScriptedEvent identifier="missionevent_cargo3" commonness="100" />-->
-      <ScriptedEvent identifier="missionevent_cargoany" commonness="200" />
-      <ScriptedEvent identifier="missionevent_killswarm" commonness="100" />
-      <ScriptedEvent identifier="missionevent_killmonstercommon" commonness="50" />
-      <ScriptedEvent identifier="missionevent_killmonsterrare" commonness="50" />
-      <ScriptedEvent identifier="missionevent_salvageartifact" commonness="100" />
-      <ScriptedEvent identifier="missionevent_salvagewreck" commonness="100" />
-    </EventSet>
-    <EventSet identifier="outpostevents.randommissionevents" allowatstart="true" chooserandom="true">
-      <ScriptedEvent identifier="missionevent_killmonster" commonness="100" />
-      <ScriptedEvent identifier="missionevent_cargo" commonness="100" />
-      <ScriptedEvent identifier="missionevent_salvage" commonness="100" />
-      <ScriptedEvent identifier="missionevent_clownoutbreak" commonness="40" />
-    </EventSet>
-    <EventSet identifier="outpostevents.fixedevents" allowatstart="true" chooserandom="false">
-      <ScriptedEvent identifier="healreaperstax" />
-    </EventSet>
-  </EventSet>
-
-  <!--MILITARY OUTPOST BASIC EVENTS-->
-  <EventSet identifier="militaryoutpostevents" leveltype="outpost" locationtype="military" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="40" chooserandom="false" ignorecooldown="true">
-    <Commonness commonness="0">
-      <Override leveltype="outpostlevel" commonness="10" />
-    </Commonness>
-    <EventSet identifier="militaryoutpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
-      <ScriptedEvent identifier="givingdirections" commonness="100" />
-      <ScriptedEvent identifier="clownrelations1" commonness="100" />
-      <ScriptedEvent identifier="goodsamaritan" commonness="100" />
-      <ScriptedEvent identifier="propaganda" commonness="100" />
-      <ScriptedEvent identifier="miketheidiot1" commonness="25" />
-      <!--<ScriptedEvent identifier="foreshadowing" commonness="50" />-->
-      <ScriptedEvent identifier="separatistrelations" commonness="100" />
-      <ScriptedEvent identifier="Engineers_are_special" commonness="100" />
-      <ScriptedEvent identifier="huskcultist" commonness="100" />
-      <ScriptedEvent identifier="fanclub" commonness="100" />
-      <ScriptedEvent identifier="shockjock" commonness="60" />
-      <ScriptedEvent identifier="infiltration" commonness="70" />
-      <ScriptedEvent identifier="manandhisraptor1" commonness="60" />
-      <ScriptedEvent identifier="bombscare" commonness="50" />
-      <ScriptedEvent identifier="terrorism101" commonness="50" />
-      <ScriptedEvent identifier="censorship" commonness="60" />
-      <ScriptedEvent identifier="atwitsend" commonness="60" />
-      <!--Events specific to military outposts:-->
-      <ScriptedEvent identifier="bigbrother" commonness="150" />
-    </EventSet>
-    <EventSet identifier="militaryoutpostevents.missionevents" allowatstart="true" chooserandom="true" eventcount="2">
-      <!--<ScriptedEvent identifier="missionevent_cargo1" commonness="125" />
-      <ScriptedEvent identifier="missionevent_cargo2" commonness="50" />
-      <ScriptedEvent identifier="missionevent_cargo3" commonness="100" />-->
-      <ScriptedEvent identifier="missionevent_cargoany" commonness="200" />
-      <ScriptedEvent identifier="missionevent_killswarm" commonness="100" />
-      <ScriptedEvent identifier="missionevent_killmonstercommon" commonness="85" />
-      <ScriptedEvent identifier="missionevent_killmonsterrare" commonness="25" />
-      <ScriptedEvent identifier="missionevent_salvageartifact" commonness="75" />
-      <ScriptedEvent identifier="missionevent_salvagewreck" commonness="75" />
-      <ScriptedEvent identifier="missionevent_crawlernest" commonness="80" />
-      <ScriptedEvent identifier="missionevent_mudraptornest" commonness="70" />
-      <ScriptedEvent identifier="missionevent_tigerthreshernest" commonness="60" />
-      <ScriptedEvent identifier="missionevent_collectminerals" commonness="75" />
-    </EventSet>
-    <EventSet identifier="militaryoutpostevents.randommissionevents" allowatstart="true" chooserandom="true">
-      <ScriptedEvent identifier="missionevent_killmonster" commonness="100" />
-      <ScriptedEvent identifier="missionevent_cargo" commonness="100" />
-      <ScriptedEvent identifier="missionevent_salvage" commonness="100" />
-      <ScriptedEvent identifier="missionevent_clownoutbreak" commonness="40" />
-    </EventSet>
-    <EventSet identifier="outpostevents.fixedevents" allowatstart="true" chooserandom="false">
-      <ScriptedEvent identifier="healreaperstax" />
-    </EventSet>
-  </EventSet>
-
-  <!--MILITARY OUTPOST ADVANCED EVENTS-->
-  <EventSet identifier="militaryoutpostevents" leveltype="outpost" locationtype="military" allowatstart="true" minleveldifficulty="41" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
-    <Commonness commonness="0">
-      <Override leveltype="outpostlevel" commonness="10" />
-    </Commonness>
-    <EventSet identifier="militaryoutpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
-      <ScriptedEvent identifier="givingdirections" commonness="50" />
-      <ScriptedEvent identifier="soundinthevent" commonness="100" />
-      <ScriptedEvent identifier="clownrelations1" commonness="50" />
-      <ScriptedEvent identifier="clownrelations2" commonness="100" />
-      <ScriptedEvent identifier="goodsamaritan" commonness="50" />
-      <ScriptedEvent identifier="propaganda" commonness="50" />
-      <ScriptedEvent identifier="goblincooking1" commonness="50" />
-      <ScriptedEvent identifier="outbreak" commonness="100" />
-      <ScriptedEvent identifier="miketheidiot1" commonness="12" />
-      <ScriptedEvent identifier="miketheidiot2" commonness="25" />
-      <ScriptedEvent identifier="firefighting" commonness="100" />
-      <ScriptedEvent identifier="sleightofhand" commonness="100" />
-      <!--<ScriptedEvent identifier="foreshadowing" commonness="50" />-->
-      <ScriptedEvent identifier="clownbrutality" commonness="100" />
-      <ScriptedEvent identifier="separatistrelations" commonness="50" />
-      <ScriptedEvent identifier="huskcultrelations" commonness="100" />
-      <ScriptedEvent identifier="Engineers_are_special" commonness="50" />
-      <ScriptedEvent identifier="mediator" commonness="100" />
-      <ScriptedEvent identifier="blackmarket" commonness="100" />
-      <ScriptedEvent identifier="huskcultist" commonness="50" />
-      <ScriptedEvent identifier="fanclub" commonness="50" />
-      <ScriptedEvent identifier="huskcultambush" commonness="50" />
-      <ScriptedEvent identifier="shockjock" commonness="40" />
-      <ScriptedEvent identifier="badvibrations1" commonness="80" />
-      <ScriptedEvent identifier="manandhisraptor1" commonness="60" />
-      <ScriptedEvent identifier="bombscare" commonness="40" />
-      <ScriptedEvent identifier="terrorism101" commonness="40" />
-      <ScriptedEvent identifier="stuckinthemiddle" commonness="50" />
-      <!--Events specific to military outposts:-->
-      <ScriptedEvent identifier="bigbrother" commonness="150" />
-    </EventSet>
-    <EventSet identifier="militaryoutpostevents.missionevents" allowatstart="true" chooserandom="true" eventcount="2">
-      <!--<ScriptedEvent identifier="missionevent_cargo1" commonness="125" />
-      <ScriptedEvent identifier="missionevent_cargo2" commonness="50" />
-      <ScriptedEvent identifier="missionevent_cargo3" commonness="100" />-->
-      <ScriptedEvent identifier="missionevent_cargoany" commonness="200" />
-      <ScriptedEvent identifier="missionevent_killswarm" commonness="100" />
-      <ScriptedEvent identifier="missionevent_killmonstercommon" commonness="50" />
-      <ScriptedEvent identifier="missionevent_killmonsterrare" commonness="50" />
-      <ScriptedEvent identifier="missionevent_salvageartifact" commonness="100" />
-      <ScriptedEvent identifier="missionevent_salvagewreck" commonness="100" />
-    </EventSet>
-    <EventSet identifier="militaryoutpostevents.randommissionevents" allowatstart="true" chooserandom="true">
-      <ScriptedEvent identifier="missionevent_killmonster" commonness="100" />
-      <ScriptedEvent identifier="missionevent_cargo" commonness="100" />
-      <ScriptedEvent identifier="missionevent_salvage" commonness="100" />
-      <ScriptedEvent identifier="missionevent_clownoutbreak" commonness="40" />
-    </EventSet>
-    <EventSet identifier="outpostevents.fixedevents" allowatstart="true" chooserandom="false">
-      <ScriptedEvent identifier="healreaperstax" />
-    </EventSet>
-  </EventSet>
-  <!--RESEARCH OUTPOST BASIC EVENTS-->
-  <EventSet identifier="researchoutpostevents" leveltype="outpost" locationtype="research" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="40" chooserandom="false" ignorecooldown="true">
-    <Commonness commonness="0">
-      <Override leveltype="outpostlevel" commonness="10" />
-    </Commonness>
-    <EventSet identifier="researchoutpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
-      <ScriptedEvent identifier="givingdirections" commonness="100" />
-      <ScriptedEvent identifier="clownrelations1" commonness="100" />
-      <ScriptedEvent identifier="goodsamaritan" commonness="100" />
-      <ScriptedEvent identifier="propaganda" commonness="100" />
-      <ScriptedEvent identifier="miketheidiot1" commonness="25" />
-      <!--<ScriptedEvent identifier="foreshadowing" commonness="50" />-->
-      <ScriptedEvent identifier="separatistrelations" commonness="100" />
-      <ScriptedEvent identifier="Engineers_are_special" commonness="100" />
-      <ScriptedEvent identifier="huskcultist" commonness="100" />
-      <ScriptedEvent identifier="fanclub" commonness="100" />
-      <ScriptedEvent identifier="shockjock" commonness="60" />
-      <ScriptedEvent identifier="infiltration" commonness="70" />
-      <ScriptedEvent identifier="manandhisraptor1" commonness="50" />
-      <ScriptedEvent identifier="bombscare" commonness="50" />
-      <ScriptedEvent identifier="terrorism101" commonness="50" />
-      <ScriptedEvent identifier="censorship" commonness="60" />
-      <ScriptedEvent identifier="atwitsend" commonness="60" />
-      <!--Events specific to research outposts:-->
-      <ScriptedEvent identifier="tastetest" commonness="150" />
-      <ScriptedEvent identifier="crawleroutbreak" commonness="150" />
-      <ScriptedEvent identifier="impromptuengineering" commonness="150" />
-    </EventSet>
-    <EventSet identifier="researchoutpostevents.missionevents" allowatstart="true" chooserandom="true" eventcount="2">
-      <!--<ScriptedEvent identifier="missionevent_cargo1" commonness="125" />
-      <ScriptedEvent identifier="missionevent_cargo2" commonness="50" />
-      <ScriptedEvent identifier="missionevent_cargo3" commonness="100" />-->
-      <ScriptedEvent identifier="missionevent_cargoany" commonness="200" />
-      <ScriptedEvent identifier="missionevent_killswarm" commonness="100" />
-      <ScriptedEvent identifier="missionevent_killmonstercommon" commonness="85" />
-      <ScriptedEvent identifier="missionevent_killmonsterrare" commonness="25" />
-      <ScriptedEvent identifier="missionevent_salvageartifact" commonness="75" />
-      <ScriptedEvent identifier="missionevent_salvagewreck" commonness="75" />
-      <ScriptedEvent identifier="missionevent_crawlernest" commonness="80" />
-      <ScriptedEvent identifier="missionevent_mudraptornest" commonness="70" />
-      <ScriptedEvent identifier="missionevent_tigerthreshernest" commonness="60" />
-      <ScriptedEvent identifier="missionevent_collectminerals" commonness="75" />
-    </EventSet>
-    <EventSet identifier="researchoutpostevents.randommissionevents" allowatstart="true" chooserandom="true">
-      <ScriptedEvent identifier="missionevent_killmonster" commonness="100" />
-      <ScriptedEvent identifier="missionevent_cargo" commonness="100" />
-      <ScriptedEvent identifier="missionevent_salvage" commonness="100" />
-      <ScriptedEvent identifier="missionevent_clownoutbreak" commonness="40" />
-    </EventSet>
-    <EventSet identifier="outpostevents.fixedevents" allowatstart="true" chooserandom="false">
-      <ScriptedEvent identifier="healreaperstax" />
-    </EventSet>
-  </EventSet>
-
-  <!--RESEARCH OUTPOST ADVANCED EVENTS-->
-  <EventSet identifier="researchoutpostevents" leveltype="outpost" locationtype="research" allowatstart="true" minleveldifficulty="41" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
-    <Commonness commonness="0">
-      <Override leveltype="outpostlevel" commonness="10" />
-    </Commonness>
-    <EventSet identifier="researchoutpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
-      <ScriptedEvent identifier="givingdirections" commonness="50" />
-      <ScriptedEvent identifier="soundinthevent" commonness="100" />
-      <ScriptedEvent identifier="clownrelations1" commonness="50" />
-      <ScriptedEvent identifier="clownrelations2" commonness="100" />
-      <ScriptedEvent identifier="goodsamaritan" commonness="50" />
-      <ScriptedEvent identifier="propaganda" commonness="50" />
-      <ScriptedEvent identifier="goblincooking1" commonness="50" />
-      <ScriptedEvent identifier="outbreak" commonness="100" />
-      <ScriptedEvent identifier="miketheidiot1" commonness="12" />
-      <ScriptedEvent identifier="miketheidiot2" commonness="25" />
-      <ScriptedEvent identifier="firefighting" commonness="100" />
-      <ScriptedEvent identifier="sleightofhand" commonness="100" />
-      <!--<ScriptedEvent identifier="foreshadowing" commonness="50" />-->
-      <ScriptedEvent identifier="clownbrutality" commonness="100" />
-      <ScriptedEvent identifier="separatistrelations" commonness="50" />
-      <ScriptedEvent identifier="huskcultrelations" commonness="100" />
-      <ScriptedEvent identifier="Engineers_are_special" commonness="50" />
-      <ScriptedEvent identifier="mediator" commonness="100" />
-      <ScriptedEvent identifier="blackmarket" commonness="100" />
-      <ScriptedEvent identifier="huskcultist" commonness="50" />
-      <ScriptedEvent identifier="fanclub" commonness="50" />
-      <ScriptedEvent identifier="huskcultambush" commonness="50" />
-      <ScriptedEvent identifier="shockjock" commonness="40" />
-      <ScriptedEvent identifier="badvibrations1" commonness="80" />
-      <ScriptedEvent identifier="manandhisraptor1" commonness="60" />
-      <ScriptedEvent identifier="bombscare" commonness="40" />
-      <ScriptedEvent identifier="terrorism101" commonness="40" />
-      <ScriptedEvent identifier="stuckinthemiddle" commonness="50" />
-      <!--Events specific to research outposts:-->
-      <ScriptedEvent identifier="tastetest" commonness="150" />
-      <ScriptedEvent identifier="crawleroutbreak" commonness="150" />
-      <ScriptedEvent identifier="impromptuengineering" commonness="150" />
-    </EventSet>
-    <EventSet identifier="researchoutpostevents.missionevents" allowatstart="true" chooserandom="true" eventcount="2">
-      <!--<ScriptedEvent identifier="missionevent_cargo1" commonness="125" />
-      <ScriptedEvent identifier="missionevent_cargo2" commonness="50" />
-      <ScriptedEvent identifier="missionevent_cargo3" commonness="100" />-->
-      <ScriptedEvent identifier="missionevent_cargoany" commonness="200" />
-      <ScriptedEvent identifier="missionevent_killswarm" commonness="100" />
-      <ScriptedEvent identifier="missionevent_killmonstercommon" commonness="50" />
-      <ScriptedEvent identifier="missionevent_killmonsterrare" commonness="50" />
-      <ScriptedEvent identifier="missionevent_salvageartifact" commonness="100" />
-      <ScriptedEvent identifier="missionevent_salvagewreck" commonness="100" />
-    </EventSet>
-    <EventSet identifier="researchoutpostevents.randommissionevents" allowatstart="true" chooserandom="true">
-      <ScriptedEvent identifier="missionevent_killmonster" commonness="100" />
-      <ScriptedEvent identifier="missionevent_cargo" commonness="100" />
-      <ScriptedEvent identifier="missionevent_salvage" commonness="100" />
-      <ScriptedEvent identifier="missionevent_clownoutbreak" commonness="40" />
-    </EventSet>
-    <EventSet identifier="outpostevents.fixedevents" allowatstart="true" chooserandom="false">
-      <ScriptedEvent identifier="healreaperstax" />
-    </EventSet>
-  </EventSet>
-
-  <!--MINING OUTPOST BASIC EVENTS-->
-  <EventSet identifier="miningoutpostevents" leveltype="outpost" locationtype="mine" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="40" chooserandom="false" ignorecooldown="true">
-    <Commonness commonness="0">
-      <Override leveltype="outpostlevel" commonness="10" />
-    </Commonness>
-    <EventSet identifier="outpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
-      <ScriptedEvent identifier="givingdirections" commonness="100" />
-      <ScriptedEvent identifier="clownrelations1" commonness="100" />
-      <ScriptedEvent identifier="goodsamaritan" commonness="100" />
-      <ScriptedEvent identifier="propaganda" commonness="100" />
-      <ScriptedEvent identifier="miketheidiot1" commonness="25" />
-      <!--<ScriptedEvent identifier="foreshadowing" commonness="50" />-->
-      <ScriptedEvent identifier="separatistrelations" commonness="100" />
-      <ScriptedEvent identifier="Engineers_are_special" commonness="100" />
-      <ScriptedEvent identifier="huskcultist" commonness="100" />
-      <ScriptedEvent identifier="fanclub" commonness="100" />
-      <ScriptedEvent identifier="shockjock" commonness="60" />
-      <ScriptedEvent identifier="infiltration" commonness="70" />
-      <ScriptedEvent identifier="manandhisraptor1" commonness="50" />
-      <ScriptedEvent identifier="bombscare" commonness="50" />
-      <ScriptedEvent identifier="terrorism101" commonness="50" />
-      <ScriptedEvent identifier="censorship" commonness="60" />
-      <ScriptedEvent identifier="atwitsend" commonness="60" />
-      <!--Events specific to mining outposts:-->
-      <ScriptedEvent identifier="consultant" commonness="150" />
-    </EventSet>
-    <EventSet identifier="outpostevents.missionevents" allowatstart="true" chooserandom="true" eventcount="2">
-      <!--<ScriptedEvent identifier="missionevent_cargo1" commonness="125" />
-      <ScriptedEvent identifier="missionevent_cargo2" commonness="50" />
-      <ScriptedEvent identifier="missionevent_cargo3" commonness="100" />-->
-      <ScriptedEvent identifier="missionevent_cargoany" commonness="200" />
-      <ScriptedEvent identifier="missionevent_killswarm" commonness="100" />
-      <ScriptedEvent identifier="missionevent_killmonstercommon" commonness="85" />
-      <ScriptedEvent identifier="missionevent_killmonsterrare" commonness="25" />
-      <ScriptedEvent identifier="missionevent_salvageartifact" commonness="75" />
-      <ScriptedEvent identifier="missionevent_salvagewreck" commonness="75" />
-      <ScriptedEvent identifier="missionevent_crawlernest" commonness="80" />
-      <ScriptedEvent identifier="missionevent_mudraptornest" commonness="70" />
-      <ScriptedEvent identifier="missionevent_tigerthreshernest" commonness="60" />
-      <ScriptedEvent identifier="missionevent_collectminerals" commonness="75" />
-    </EventSet>
-    <EventSet identifier="outpostevents.randommissionevents" allowatstart="true" chooserandom="true">
-      <ScriptedEvent identifier="missionevent_killmonster" commonness="100" />
-      <ScriptedEvent identifier="missionevent_cargo" commonness="100" />
-      <ScriptedEvent identifier="missionevent_salvage" commonness="100" />
-      <ScriptedEvent identifier="missionevent_clownoutbreak" commonness="40" />
-    </EventSet>
-    <EventSet identifier="outpostevents.fixedevents" allowatstart="true" chooserandom="false">
-      <ScriptedEvent identifier="healreaperstax" />
-    </EventSet>
-  </EventSet>
-  <!--MINING OUTPOST ADVANCED EVENTS-->
-  <EventSet identifier="miningoutpostevents" leveltype="outpost" locationtype="mine" allowatstart="true" minleveldifficulty="41" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
-    <Commonness commonness="0">
-      <Override leveltype="outpostlevel" commonness="10" />
-    </Commonness>
-    <EventSet identifier="outpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
-      <ScriptedEvent identifier="givingdirections" commonness="50" />
-      <ScriptedEvent identifier="soundinthevent" commonness="100" />
-      <ScriptedEvent identifier="clownrelations1" commonness="50" />
-      <ScriptedEvent identifier="clownrelations2" commonness="100" />
-      <ScriptedEvent identifier="goodsamaritan" commonness="50" />
-      <ScriptedEvent identifier="propaganda" commonness="50" />
-      <ScriptedEvent identifier="goblincooking1" commonness="50" />
-      <ScriptedEvent identifier="outbreak" commonness="100" />
-      <ScriptedEvent identifier="miketheidiot1" commonness="12" />
-      <ScriptedEvent identifier="miketheidiot2" commonness="25" />
-      <ScriptedEvent identifier="firefighting" commonness="100" />
-      <ScriptedEvent identifier="sleightofhand" commonness="100" />
-      <!--<ScriptedEvent identifier="foreshadowing" commonness="50" />-->
-      <ScriptedEvent identifier="clownbrutality" commonness="100" />
-      <ScriptedEvent identifier="separatistrelations" commonness="50" />
-      <ScriptedEvent identifier="huskcultrelations" commonness="100" />
-      <ScriptedEvent identifier="Engineers_are_special" commonness="50" />
-      <ScriptedEvent identifier="mediator" commonness="100" />
-      <ScriptedEvent identifier="blackmarket" commonness="100" />
-      <ScriptedEvent identifier="huskcultist" commonness="50" />
-      <ScriptedEvent identifier="fanclub" commonness="50" />
-      <ScriptedEvent identifier="huskcultambush" commonness="50" />
-      <ScriptedEvent identifier="shockjock" commonness="40" />
-      <ScriptedEvent identifier="badvibrations1" commonness="80" />
-      <ScriptedEvent identifier="manandhisraptor1" commonness="60" />
-      <ScriptedEvent identifier="bombscare" commonness="40" />
-      <ScriptedEvent identifier="terrorism101" commonness="40" />
-      <ScriptedEvent identifier="stuckinthemiddle" commonness="50" />
-      <!--Events specific to mining outposts:-->
-      <ScriptedEvent identifier="consultant" commonness="150" />
-    </EventSet>
-    <EventSet identifier="outpostevents.missionevents" allowatstart="true" chooserandom="true" eventcount="2">
-      <!--<ScriptedEvent identifier="missionevent_cargo1" commonness="125" />
-      <ScriptedEvent identifier="missionevent_cargo2" commonness="50" />
-      <ScriptedEvent identifier="missionevent_cargo3" commonness="100" />-->
-      <ScriptedEvent identifier="missionevent_cargoany" commonness="200" />
-      <ScriptedEvent identifier="missionevent_killswarm" commonness="100" />
-      <ScriptedEvent identifier="missionevent_killmonstercommon" commonness="50" />
-      <ScriptedEvent identifier="missionevent_killmonsterrare" commonness="50" />
-      <ScriptedEvent identifier="missionevent_salvageartifact" commonness="100" />
-      <ScriptedEvent identifier="missionevent_salvagewreck" commonness="100" />
-    </EventSet>
-    <EventSet identifier="outpostevents.randommissionevents" allowatstart="true" chooserandom="true">
-      <ScriptedEvent identifier="missionevent_killmonster" commonness="100" />
-      <ScriptedEvent identifier="missionevent_cargo" commonness="100" />
-      <ScriptedEvent identifier="missionevent_salvage" commonness="100" />
-      <ScriptedEvent identifier="missionevent_clownoutbreak" commonness="40" />
-    </EventSet>
-    <EventSet identifier="outpostevents.fixedevents" allowatstart="true" chooserandom="false">
-      <ScriptedEvent identifier="healreaperstax" />
-    </EventSet>
-  </EventSet>
-
-  <!--TRANSIT EVENTS-->
-  <EventSet identifier="transitevents" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true">
-    <ScriptedEvent identifier="stowaway1" commonness="100" probability="0.1"/>
-    <!--<ScriptedEvent identifier="stowaway2" commonness="100" probability="0.2"/>-->
-  </EventSet>
+	</EventSet>
+	<EventSet identifier="outpostevents" leveltype="outpost" locationtype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
+		<Commonness commonness="1000">
+			<Override leveltype="outpostlevel" commonness="1000" />
+		</Commonness>
+		<EventSet identifier="outpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
+			<ScriptedEvent identifier="v1_mechanicsarespecial" commonness="50" />
+			<ScriptedEvent identifier="v2_givingdirections" commonness="100" />
+			<ScriptedEvent identifier="v3_soundinthevent" commonness="50" />
+			<ScriptedEvent identifier="v4_goodsamaritan" commonness="50" />
+			<ScriptedEvent identifier="v5_impromptuengineering" commonness="50" />
+			<ScriptedEvent identifier="v6_clownrelations1" commonness="50" />
+			<ScriptedEvent identifier="v7_clownrelations2" commonness="100" />
+			<ScriptedEvent identifier="v8_propaganda" commonness="12" />
+			<ScriptedEvent identifier="firefighting" commonness="100" />
+			<ScriptedEvent identifier="clownbrutality" commonness="10" />
+			<ScriptedEvent identifier="separatistrelations" commonness="10" />
+			<ScriptedEvent identifier="huskcultrelations" commonness="10" />
+			<ScriptedEvent identifier="mediator" commonness="10" />
+			<ScriptedEvent identifier="blackmarket" commonness="10" />
+			<ScriptedEvent identifier="huskcultist" commonness="10" />
+			<ScriptedEvent identifier="fanclub" commonness="10" />
+			<ScriptedEvent identifier="huskcultambush" commonness="10" />
+		</EventSet>
+		<EventSet identifier="outpostevents.missionevents" allowatstart="true" chooserandom="true" eventcount="3">
+			<ScriptedEvent identifier="ita_missions_city1.1" commonness="125" />
+			<ScriptedEvent identifier="ita_missions_city1.2" commonness="125" />
+		</EventSet>
+		<EventSet identifier="ita_outpostevents_hab1" allowatstart="true" chooserandom="false" eventcount="1">
+			<ScriptedEvent identifier="ita_untraversed90"/>
+			<ScriptedEvent identifier="ita_habcheck"/>
+		</EventSet>
+	</EventSet>
+	<EventSet identifier="outpostevents" leveltype="outpost" locationtype="mine" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
+		<Commonness commonness="1000">
+			<Override leveltype="outpostlevel" commonness="1000" />
+		</Commonness>
+		<EventSet identifier="outpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
+			<ScriptedEvent identifier="v1_mechanicsarespecial" commonness="50" />
+			<ScriptedEvent identifier="v2_givingdirections" commonness="100" />
+			<ScriptedEvent identifier="v3_soundinthevent" commonness="50" />
+			<ScriptedEvent identifier="v4_goodsamaritan" commonness="50" />
+			<ScriptedEvent identifier="v5_impromptuengineering" commonness="50" />
+			<ScriptedEvent identifier="v6_clownrelations1" commonness="50" />
+			<ScriptedEvent identifier="v7_clownrelations2" commonness="100" />
+			<ScriptedEvent identifier="v8_propaganda" commonness="12" />
+			<ScriptedEvent identifier="firefighting" commonness="100" />
+			<ScriptedEvent identifier="clownbrutality" commonness="10" />
+			<ScriptedEvent identifier="separatistrelations" commonness="10" />
+			<ScriptedEvent identifier="huskcultrelations" commonness="10" />
+			<ScriptedEvent identifier="mediator" commonness="10" />
+			<ScriptedEvent identifier="blackmarket" commonness="10" />
+			<ScriptedEvent identifier="huskcultist" commonness="10" />
+			<ScriptedEvent identifier="fanclub" commonness="10" />
+			<ScriptedEvent identifier="huskcultambush" commonness="10" />
+		</EventSet>
+		<EventSet identifier="outpostevents.missionevents" allowatstart="true" chooserandom="true" eventcount="3">
+			<ScriptedEvent identifier="ita_missions_mining1" commonness="125" />
+			<ScriptedEvent identifier="ita_missions_mining2" commonness="125" />
+			<ScriptedEvent identifier="ita_missions_mining3" commonness="125" />
+		</EventSet>
+		<EventSet identifier="ita_outpostevents_mine1" allowatstart="true" chooserandom="false" eventcount="2">
+			<ScriptedEvent identifier="ita_untraversed90"/>
+			<ScriptedEvent identifier="ita_minecheck"/>
+		</EventSet>
+	</EventSet>
+	<EventSet identifier="outpostevents" leveltype="outpost" locationtype="military" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
+		<Commonness commonness="1000">
+			<Override leveltype="outpostlevel" commonness="1000" />
+		</Commonness>
+		<EventSet identifier="outpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
+			<ScriptedEvent identifier="v1_mechanicsarespecial" commonness="50" />
+			<ScriptedEvent identifier="v2_givingdirections" commonness="100" />
+			<ScriptedEvent identifier="v3_soundinthevent" commonness="50" />
+			<ScriptedEvent identifier="v4_goodsamaritan" commonness="50" />
+			<ScriptedEvent identifier="v5_impromptuengineering" commonness="50" />
+			<ScriptedEvent identifier="v6_clownrelations1" commonness="50" />
+			<ScriptedEvent identifier="v7_clownrelations2" commonness="100" />
+			<ScriptedEvent identifier="v8_propaganda" commonness="12" />
+			<ScriptedEvent identifier="firefighting" commonness="100" />
+			<ScriptedEvent identifier="clownbrutality" commonness="10" />
+			<ScriptedEvent identifier="separatistrelations" commonness="10" />
+			<ScriptedEvent identifier="huskcultrelations" commonness="10" />
+			<ScriptedEvent identifier="mediator" commonness="10" />
+			<ScriptedEvent identifier="blackmarket" commonness="10" />
+			<ScriptedEvent identifier="huskcultist" commonness="10" />
+			<ScriptedEvent identifier="fanclub" commonness="10" />
+			<ScriptedEvent identifier="huskcultambush" commonness="10" />
+		</EventSet>
+		<EventSet identifier="outpostevents.missionevents" allowatstart="true" chooserandom="true" eventcount="3">
+			<!--<ScriptedEvent identifier="ita_oplock_military" commonness="125" />-->
+			<ScriptedEvent identifier="ita_missions_military1" commonness="125" />
+			<ScriptedEvent identifier="ita_missions_military2" commonness="125" />
+			<ScriptedEvent identifier="ita_missions_military3" commonness="125" />
+		</EventSet>
+		<EventSet identifier="ita_outpostevents_military1" allowatstart="true" chooserandom="false" eventcount="1">
+			<ScriptedEvent identifier="ita_untraversed90"/>
+			<ScriptedEvent identifier="ita_milcheck"/>
+		</EventSet>
+	</EventSet>
+	<EventSet identifier="outpostevents" leveltype="outpost" locationtype="research" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
+		<Commonness commonness="1000">
+			<Override leveltype="outpostlevel" commonness="1000" />
+		</Commonness>
+		<EventSet identifier="outpostevents.randomevents" allowatstart="true" chooserandom="true" onceperoutpost="true">
+			<ScriptedEvent identifier="v1_mechanicsarespecial" commonness="50" />
+			<ScriptedEvent identifier="v2_givingdirections" commonness="100" />
+			<ScriptedEvent identifier="v3_soundinthevent" commonness="50" />
+			<ScriptedEvent identifier="v4_goodsamaritan" commonness="50" />
+			<ScriptedEvent identifier="v5_impromptuengineering" commonness="50" />
+			<ScriptedEvent identifier="v6_clownrelations1" commonness="50" />
+			<ScriptedEvent identifier="v7_clownrelations2" commonness="100" />
+			<ScriptedEvent identifier="v8_propaganda" commonness="12" />
+			<ScriptedEvent identifier="firefighting" commonness="100" />
+			<ScriptedEvent identifier="clownbrutality" commonness="10" />
+			<ScriptedEvent identifier="separatistrelations" commonness="10" />
+			<ScriptedEvent identifier="huskcultrelations" commonness="10" />
+			<ScriptedEvent identifier="mediator" commonness="10" />
+			<ScriptedEvent identifier="blackmarket" commonness="10" />
+			<ScriptedEvent identifier="huskcultist" commonness="10" />
+			<ScriptedEvent identifier="fanclub" commonness="10" />
+			<ScriptedEvent identifier="huskcultambush" commonness="10" />
+		</EventSet>
+		<EventSet identifier="outpostevents.missionevents" allowatstart="true" chooserandom="true" eventcount="3">
+			<ScriptedEvent identifier="ita_missions_city1.1" commonness="125" />
+			<ScriptedEvent identifier="ita_research_artifact1" commonness="100"/>
+		</EventSet>
+		<EventSet identifier="ita_outpostevents_research1" allowatstart="true" chooserandom="false" eventcount="1">
+			<ScriptedEvent identifier="ita_untraversed90"/>
+			<ScriptedEvent identifier="ita_rescheck"/>
+		</EventSet>
+		<EventSet identifier="ita_randomoutpostevents_trainers2" allowatstart="true" chooserandom="true" eventcount="1">
+			<ScriptedEvent identifier="ita_trainer5" commonness="50" />
+		</EventSet>
+	</EventSet>
 	<EventSet identifier="outpostevents" leveltype="outpost" locationtype="cave" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
 		<Commonness commonness="1000">
 			<Override leveltype="outpostlevel" commonness="1000" />

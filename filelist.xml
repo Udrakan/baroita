@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.13.3.11" steamworkshopid="2005463692" installtime="1621466004">
+<contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.13.3.11" steamworkshopid="2005463692" installtime="1622764925">
   <Text file="Mods/IntoTheAbyss/Content/Texts/ita_English.xml" />
   <UIStyle file="Mods/IntoTheAbyss/Content/ita_style.xml" />
   <EventManagerSettings file="Mods/IntoTheAbyss/Content/ita_eventmanagersettings.xml" />
@@ -8,12 +8,13 @@
   <Item file="Mods/IntoTheAbyss/Content/ita_items.xml" />
   <Text file="Mods/IntoTheAbyss/Content/Texts/ita_English.xml" />
   <Text file="Mods/IntoTheAbyss/Content/Texts/ita_CastillianSpanish.xml" />
+  <Text file="Mods/IntoTheAbyss/Content/Texts/ita_Japanese.xml" />
+  <Text file="Mods/IntoTheAbyss/Content/Texts/ita_Russian.xml" />
   <Sounds file="Mods/IntoTheAbyss/Content/ita_sounds.xml" />
   <Jobs file="Mods/IntoTheAbyss/Content/ita_jobs.xml" />
   <LocationTypes file="Mods/IntoTheAbyss/Content/Map/ita_locationtypes.xml" />
   <Afflictions file="Mods/IntoTheAbyss/Content/ita_afflictions.xml" />
   <Missions file="Mods/IntoTheAbyss/Content/ita_missions.xml" />
-  <LevelGenerationParameters file="Mods/IntoTheAbyss/Content/Map/ita_biomes_europanridge.xml" />
   <LevelGenerationParameters file="Mods/IntoTheAbyss/Content/Map/ita_biomes_coldcaverns.xml" />
   <NPCSets file="Mods/IntoTheAbyss/Content/ita_npcs.xml" />
   <Particles file="Mods/IntoTheAbyss/Content/ita_particles.xml" />
@@ -89,6 +90,7 @@
   <ItemAssembly file="Mods/IntoTheAbyss/Content/Assemblies/ita_corridor_1d.xml" />
   <ItemAssembly file="Mods/IntoTheAbyss/Content/Assemblies/ita_corridor_trap1a.xml" />
   <ItemAssembly file="Mods/IntoTheAbyss/Content/Assemblies/ita_armory_blackchest1.xml" />
+  <ItemAssembly file="Mods/IntoTheAbyss/Content/Assemblies/ita_armory_blackchest2.xml" />
   <ItemAssembly file="Mods/IntoTheAbyss/Content/Assemblies/ita_armory_blackchest3.xml" />
   <ItemAssembly file="Mods/IntoTheAbyss/Content/Assemblies/ita_genericb_house1.xml" />
   <ItemAssembly file="Mods/IntoTheAbyss/Content/Assemblies/ita_genericb_house2.xml" />
@@ -172,6 +174,5 @@
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shop_bank1R.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_milengineering.sub" />
   <Submarine file="Mods/IntoTheAbyss/Content/Subs/BeaconStation1amodded.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave_ice1_special2.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave_ice1_special3.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_research_ancient1.sub" />
 </contentpackage>
