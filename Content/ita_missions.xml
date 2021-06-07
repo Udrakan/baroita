@@ -213,7 +213,7 @@
 		</CargoMission>
 		<!--LARGE MONSTERS-->
 		<MonsterMission name="" identifier="killwatcher" tags="killmonster,killwatcher,killmonsterrare,ita_monsterlarge" type="Monster" description="" commonness="25" reward="4500" sonarlabel="" maxsonarmarkerdistance="10000" successmessage="">
-			<Reputation identifier="location" amount="10" />
+			<Reputation identifier="location" amount="5" />
 			<Reputation identifier="coalition" amount="5" />
 			<monster character="watcher" count="1"/>
 			<monster character="husk" count="7"/>
@@ -903,5 +903,234 @@
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 			<message header="Target terminated" text="The monster is dead. Navigate the submarine out of the cavern to claim the reward."/>
 		</MonsterMission>
+		
+  <EscortMission name="Personnel Transport"
+    identifier="escort1"
+    tags="escortcommoners, escort"
+    type="Escort"
+    description="Transport personnel safely to the next station. Payment scales with the number of transported personnel."
+    difficulty="2"
+    commonness="80"
+    reward="1100"
+    achievementidentifier="escortmission"
+    successmessage="Personnel transport successful."
+    baseescortedcharacters="1"
+    scalingescortedcharacters="0.35">
+    <message header="Personnel died" text="" />
+    <Characters>
+      <Item from="escortnpcs1" identifier="commoner" />
+    </Characters>
+    <Reputation identifier="location" amount="20" />
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="768,512,256,256" color="243,146,55" />
+    <LocationType from="City" to="City" />
+    <LocationType from="Outpost" to="City" />
+    <LocationType from="Military" to="City" />
+    <LocationType from="Research" to="City" />
+    <LocationType from="Mine" to="City" />
+  </EscortMission>
+  
+  <EscortMission name="VIP Transport"
+    identifier="escort2"
+    tags="escortVIP, escort"
+    type="Escort"
+    description="Transport the VIP and their armed escort to the next station."
+    difficulty="2"
+    commonness="80"
+    reward="3400"
+    achievementidentifier="escortmission"
+    successmessage="VIP transport successful.">
+    <message header="Personnel died" text="" />
+    <Characters>
+      <Item from="escortnpcs1" identifier="vip" escortidentifier="vip" color="238,130,238"/>
+      <Item from="escortnpcs1" identifier="securitynpc"/>
+      <Item from="escortnpcs1" identifier="securitynpc"/>    
+    </Characters>
+    <Reputation identifier="location" amount="30" />
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,512,256,256" color="243,146,55" />
+    <LocationType from="City" to="Research" />
+    <LocationType from="Outpost" to="Research" />
+    <LocationType from="Military" to="Research" />
+    <LocationType from="Research" to="Research" />
+    <LocationType from="Mine" to="Research" />
+  </EscortMission>
+  
+  <EscortMission name="Terrorist Stakeout"
+    identifier="escort4"
+    tags="escortterrorists, escort"
+    type="Escort"
+    description="Separatist terrorists have been hijacking ships in this sector. Our reports suggest that some of them have snuck onto your ship alongside innocent passengers. Make sure the innocent passengers make it to [location2] alive, and be ready for any hostile takeover. Get rid of any terrorists you come across."
+    difficulty="3"
+    commonness="80"
+    reward="1700"
+    achievementidentifier="escortmission"
+    successmessage="Personnel transport successful and the terrorists have been dealt with."
+    baseescortedcharacters="1"
+    scalingescortedcharacters="0.35"
+    terroristchance="0.35">
+    <message header="Personnel died" text="" />
+    <message header="Terrorists defeated" text="" />
+    <Characters>
+      <Item from="escortnpcs1" identifier="commoner" />
+    </Characters>
+    <TerroristItems>
+      <Item identifier="divingknife" equip="true" mindifficulty="20"/>
+      <Item identifier="divingknife" equip="true" mindifficulty="20"/>
+      <Item identifier="stungun" equip="true" mindifficulty="40">
+        <Item identifier="stungundart"/>
+      </Item>
+      <Item identifier="revolver" equip="true" mindifficulty="60">
+        <Item identifier="revolverround" />
+        <Item identifier="revolverround" />
+        <Item identifier="revolverround" />
+        <Item identifier="revolverround" />
+        <Item identifier="revolverround" />
+        <Item identifier="revolverround" />
+      </Item>
+    </TerroristItems>
+    <Reputation identifier="location" amount="20" />
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="243,146,55" />
+    <LocationType from="City" to="City" />
+    <LocationType from="City" to="Outpost" />
+    <LocationType from="City" to="Military" />
+    <LocationType from="City" to="Research" />
+    <LocationType from="City" to="Mine" />
+  </EscortMission>
+
+  <PirateMission name="Pirate Vessel"
+    type="Pirate"
+    identifier="pirate1"
+    tags="piratehumpback"
+    description="A pirate vessel has been sighted in this area. Check the locations that the submarine has reportedly been patrolling, and find the vessel and eliminate its crew."
+    difficulty="4"
+    sonarlabel="Pirate sighting"
+    commonness="80"
+    reward="3500"
+    achievementidentifier="piratemission"
+    successmessage="The pirate vessel's crew was successfully eliminated."
+    addedmissiondifficultyperplayer="10">
+    <message header="Pirates detected" text="" />
+    <message header="Pirates eliminated" text="" />
+    <Reputation identifier="coalition" amount="15" />
+    <SubmarineTypes>
+      <Submarine path="Content/Map/EnemySubmarines/DugongPirate.sub" preferreddifficulty="10" alternatereward="2200"/>
+      <Submarine path="Content/Map/EnemySubmarines/HumpbackPirate.sub" preferreddifficulty="10" alternatereward="3200"/>
+      <Submarine path="Content/Map/EnemySubmarines/Typhon2Pirate.sub" preferreddifficulty="10" alternatereward="3600"/>
+    </SubmarineTypes>
+    <Characters>
+      <Character typeidentifier="piratecaptain" minamount="1" maxamount="1"/>
+      <Character typeidentifier="piratesecurity" minamount="1" maxamount="5" />
+      <Character typeidentifier="piratemechanic" minamount="1" maxamount="1" />
+      <Character typeidentifier="pirateengineer" minamount="1" maxamount="1" />
+    </Characters>
+    <CharacterTypes>
+      <CharacterType typeidentifier="piratecaptain">
+        <Character identifier="piratecaptain" from="piratenpcs1" preferreddifficulty="50" iscommander="true" />
+        <Character identifier="piratecaptainlord" from="piratenpcs1" preferreddifficulty="90" iscommander="true" />
+      </CharacterType>
+      <CharacterType typeidentifier="piratesecurity">
+        <Character identifier="piratesecurityrecruit" from="piratenpcs1" preferreddifficulty="40"/>
+        <Character identifier="piratesecuritygunner" from="piratenpcs1" preferreddifficulty="60"/>
+        <Character identifier="piratesecuritybrute" from="piratenpcs1" preferreddifficulty="70"/>
+        <Character identifier="piratesecurityelite" from="piratenpcs1" preferreddifficulty="100"/>
+      </CharacterType>
+      <CharacterType typeidentifier="piratemechanic">
+        <Character identifier="piratemechanicrecruit" from="piratenpcs1" preferreddifficulty="40"/>
+        <Character identifier="piratemechanicveteran" from="piratenpcs1" preferreddifficulty="70"/>
+      </CharacterType>
+      <CharacterType typeidentifier="pirateengineer">
+        <Character identifier="pirateengineerrecruit" from="piratenpcs1" preferreddifficulty="40"/>
+        <Character identifier="pirateengineerveteran" from="piratenpcs1" preferreddifficulty="70"/>
+      </CharacterType>
+    </CharacterTypes>
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="243,146,55"/>
+    <LocationType from="City" to="City" />
+    <LocationType from="City" to="Outpost" />
+    <LocationType from="City" to="Military" />
+    <LocationType from="City" to="Research" />
+    <LocationType from="City" to="Mine" />
+  </PirateMission>
+  
+  <EscortMission name="Stowaway Transport"
+    identifier="stowawayescort1"
+    tags="escortstowaway"
+    type="Escort"
+    description=""
+    commonness="0"
+    reward="0"
+    achievementidentifier="escortmission"
+    successmessage="Personnel transport successful.">
+    <message header="Personnel died" text="" />
+    <Characters>
+      <Item from="customnpcs1" identifier="stowaway" />
+    </Characters>
+    <Reputation identifier="location" amount="20" />
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="768,512,256,256" color="243,146,55" />
+    <LocationType from="City" to="City" />
+    <LocationType from="Outpost" to="City" />
+    <LocationType from="Military" to="City" />
+    <LocationType from="Research" to="City" />
+    <LocationType from="Mine" to="City" />
+  </EscortMission>
+  
+  <EscortMission name="Subra Transport"
+    identifier="subraescort"
+    tags="escortsubra"
+    type="Escort"
+    description=""
+    commonness="0"
+    reward="0"
+    achievementidentifier="escortmission"
+    successmessage="Personnel transport successful.">
+    <message header="Personnel died" text="" />
+    <Characters>
+      <Item from="customnpcs1" identifier="jacovsubra" />
+    </Characters>
+    <Reputation identifier="location" amount="20" />
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="768,512,256,256" color="243,146,55" />
+    <LocationType from="City" to="City" />
+    <LocationType from="Outpost" to="City" />
+    <LocationType from="Military" to="City" />
+    <LocationType from="Research" to="City" />
+    <LocationType from="Mine" to="City" />
+  </EscortMission>
+  
+  <EscortMission name="Raptor Escort"
+    identifier="raptorescort"
+    tags="escortraptor"
+    type="Escort"
+    description=""
+    commonness="0"
+    reward="2000"
+    achievementidentifier="escortmission"
+    successmessage="Personnel transport successful.">
+    <message header="Personnel died" text="" />
+    <Characters>
+      <Item from="customnpcs1" identifier="raptorowner" />
+    </Characters>
+    <Reputation identifier="location" amount="20" />
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="768,512,256,256" color="243,146,55" />
+    <LocationType from="City" to="City" />
+    <LocationType from="Outpost" to="City" />
+    <LocationType from="Military" to="City" />
+    <LocationType from="Research" to="City" />
+    <LocationType from="Mine" to="City" />
+    <TriggerEvent state="0" delay="5" eventidentifier="manandhisraptor2" campaignonly="true"/>
+  </EscortMission>
+  
+  <GotoMission
+    name=""
+    identifier="gotosubra"
+    type="GoTo"
+    description="You must go to [location1]!"
+    difficulty="3"
+    commonness="0"
+    reward="1000"
+    successmessage="You've arrived at the place!">
+    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
+    <TriggerEvent state="1" delay="5" eventidentifier="assassinationofjacovsubra4" campaignonly="true"/>  
+    <LocationType identifier="Abandoned" />
+  </GotoMission>		
+		
+		
 	</Missions>
 	</Override>
