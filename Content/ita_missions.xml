@@ -138,7 +138,7 @@
 			<LocationType from="Outpost" to="Outpost"/>
 			<LocationType from="Outpost" to="City"/>
 		</CargoMission>
-		<CargoMission name="" identifier="cargoeggs" tags="cargo,cargomonster2,city1,ita_cargo" type="Cargo" description="" commonness="50" reward="3100" achievementidentifier="cargomission" successmessage="">
+		<CargoMission name="" identifier="cargoeggs" tags="cargo,cargomonster2,city1,ita_cargo" type="Cargo" description="" commonness="20" reward="2100" achievementidentifier="cargomission" successmessage="">
 			<Items>
 				<Item identifier="ita_mcrate_egg1" />
 			</Items>
@@ -212,7 +212,7 @@
 			<LocationType from="Outpost" to="City"/>
 		</CargoMission>
 		<!--LARGE MONSTERS-->
-		<MonsterMission name="" identifier="killwatcher" tags="killmonster,killwatcher,killmonsterrare,ita_monsterlarge" type="Monster" description="" commonness="25" reward="4500" sonarlabel="" maxsonarmarkerdistance="10000" successmessage="">
+		<MonsterMission name="" identifier="killwatcher" tags="killmonster,killwatcher,killmonsterrare,ita_monsterlarge" type="Monster" description="A particularly aggressive Watcher has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to those who kill the creature and its minions." commonness="25" reward="4500" sonarlabel="" maxsonarmarkerdistance="10000" successmessage="">
 			<Reputation identifier="location" amount="5" />
 			<Reputation identifier="coalition" amount="5" />
 			<monster character="watcher" count="1"/>
@@ -1003,8 +1003,8 @@
     description="A pirate vessel has been sighted in this area. Check the locations that the submarine has reportedly been patrolling, and find the vessel and eliminate its crew."
     difficulty="4"
     sonarlabel="Pirate sighting"
-    commonness="80"
-    reward="3500"
+    commonness="25"
+    reward="2500"
     achievementidentifier="piratemission"
     successmessage="The pirate vessel's crew was successfully eliminated."
     addedmissiondifficultyperplayer="10">
