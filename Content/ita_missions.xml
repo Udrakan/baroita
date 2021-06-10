@@ -393,7 +393,7 @@
 			<message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward."/>
 		</MonsterMission>
 		<!--MINING-->
-		<MineralMission name="Collecting titanite" identifier="titanitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="10" reward="1500" sonarlabel="titanite" successmessage="The existence of the titanite deposits has been successfully proven.">
+		<MineralMission name="Collecting titanite" identifier="titanitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="titanite" successmessage="The existence of the titanite deposits has been successfully proven.">
 			<Items>
 				<Item identifier="titanite" />
 				<Item identifier="titanite" />
@@ -411,7 +411,7 @@
 			<LocationType from="Mine" to="None"/>
 			<message header="titanite collected" text="You have collected enough titanite. Bring them to an outpost to claim the reward." />
 		</MineralMission>
-		<MineralMission name="Collecting amblygonite" identifier="amblygonitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="10" reward="1500" sonarlabel="amblygonite" successmessage="The existence of the amblygonite deposits has been successfully proven.">
+		<MineralMission name="Collecting amblygonite" identifier="amblygonitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="amblygonite" successmessage="The existence of the amblygonite deposits has been successfully proven.">
 			<Items>
 				<Item identifier="amblygonite" />
 				<Item identifier="amblygonite" />
@@ -429,7 +429,7 @@
 			<LocationType from="Mine" to="None"/>
 			<message header="amblygonite collected" text="You have collected enough amblygonite. Bring them to an outpost to claim the reward." />
 		</MineralMission>
-		<MineralMission name="Collecting sphalerite" identifier="sphaleritecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="10" reward="1500" sonarlabel="sphalerite" successmessage="The existence of the sphalerite deposits has been successfully proven.">
+		<MineralMission name="Collecting sphalerite" identifier="sphaleritecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="sphalerite" successmessage="The existence of the sphalerite deposits has been successfully proven.">
 			<Items>
 				<Item identifier="sphalerite" />
 				<Item identifier="sphalerite" />
@@ -447,7 +447,7 @@
 			<LocationType from="Mine" to="None"/>
 			<message header="sphalerite collected" text="You have collected enough sphalerite. Bring them to an outpost to claim the reward." />
 		</MineralMission>
-		<MineralMission name="Collecting pyromorphite" identifier="pyromorphitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="10" reward="1500" sonarlabel="pyromorphite" successmessage="The existence of the pyromorphite deposits has been successfully proven.">
+		<MineralMission name="Collecting pyromorphite" identifier="pyromorphitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="pyromorphite" successmessage="The existence of the pyromorphite deposits has been successfully proven.">
 			<Items>
 				<Item identifier="pyromorphite" />
 				<Item identifier="pyromorphite" />
@@ -465,7 +465,7 @@
 			<LocationType from="Mine" to="None"/>
 			<message header="pyromorphite collected" text="You have collected enough pyromorphite. Bring them to an outpost to claim the reward." />
 		</MineralMission>
-		<MineralMission name="Collecting quartz" identifier="quartzcollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="10" reward="1500" sonarlabel="quartz" successmessage="The existence of the quartz deposits has been successfully proven.">
+		<MineralMission name="Collecting quartz" identifier="quartzcollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="quartz" successmessage="The existence of the quartz deposits has been successfully proven.">
 			<Items>
 				<Item identifier="quartz" />
 				<Item identifier="quartz" />
@@ -484,7 +484,7 @@
 			<message header="quartz collected" text="You have collected enough quartz. Bring them to an outpost to claim the reward." />
 		</MineralMission>
 
-		<MineralMission name="Collecting ilmenite" identifier="ilmenitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="10" reward="1500" sonarlabel="ilmenite" successmessage="The existence of the ilmenite deposits has been successfully proven.">
+		<MineralMission name="Collecting ilmenite" identifier="ilmenitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="ilmenite" successmessage="The existence of the ilmenite deposits has been successfully proven.">
 			<Items>
 				<Item identifier="ilmenite" />
 				<Item identifier="ilmenite" />
@@ -502,7 +502,7 @@
 			<LocationType from="Mine" to="None"/>
 			<message header="ilmenite collected" text="You have collected enough ilmenite. Bring them to an outpost to claim the reward." />
 		</MineralMission>
-		<MineralMission name="Collecting stannite" identifier="stannitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="10" reward="1500" sonarlabel="stannite" successmessage="The existence of the stannite deposits has been successfully proven.">
+		<MineralMission name="Collecting stannite" identifier="stannitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="stannite" successmessage="The existence of the stannite deposits has been successfully proven.">
 			<Items>
 				<Item identifier="stannite" />
 				<Item identifier="stannite" />
@@ -520,7 +520,7 @@
 			<LocationType from="Mine" to="None"/>
 			<message header="stannite collected" text="You have collected enough stannite. Bring them to an outpost to claim the reward." />
 		</MineralMission>
-		<MineralMission name="Collecting chalcopyrite" identifier="chalcopyritecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="10" reward="1500" sonarlabel="chalcopyrite" successmessage="The existence of the chalcopyrite deposits has been successfully proven.">
+		<MineralMission name="Collecting chalcopyrite" identifier="chalcopyritecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="chalcopyrite" successmessage="The existence of the chalcopyrite deposits has been successfully proven.">
 			<Items>
 				<Item identifier="chalcopyrite" />
 				<Item identifier="chalcopyrite" />
@@ -538,7 +538,7 @@
 			<LocationType from="Mine" to="None"/>
 			<message header="chalcopyrite collected" text="You have collected enough chalcopyrite. Bring them to an outpost to claim the reward." />
 		</MineralMission>
-		<MineralMission name="Collecting esperite" identifier="esperitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="10" reward="1500" sonarlabel="esperite" successmessage="The existence of the esperite deposits has been successfully proven.">
+		<MineralMission name="Collecting esperite" identifier="esperitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="esperite" successmessage="The existence of the esperite deposits has been successfully proven.">
 			<Items>
 				<Item identifier="esperite" />
 				<Item identifier="esperite" />
@@ -556,7 +556,7 @@
 			<LocationType from="Mine" to="None"/>
 			<message header="esperite collected" text="You have collected enough esperite. Bring them to an outpost to claim the reward." />
 		</MineralMission>
-		<MineralMission name="Collecting galena" identifier="galenacollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="10" reward="1500" sonarlabel="galena" successmessage="The existence of the galena deposits has been successfully proven.">
+		<MineralMission name="Collecting galena" identifier="galenacollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="galena" successmessage="The existence of the galena deposits has been successfully proven.">
 			<Items>
 				<Item identifier="galena" />
 				<Item identifier="galena" />
@@ -1003,7 +1003,7 @@
     description="A pirate vessel has been sighted in this area. Check the locations that the submarine has reportedly been patrolling, and find the vessel and eliminate its crew."
     difficulty="4"
     sonarlabel="Pirate sighting"
-    commonness="80"
+    commonness="50"
     reward="2500"
     achievementidentifier="piratemission"
     successmessage="The pirate vessel's crew was successfully eliminated."
@@ -1063,7 +1063,7 @@
     tags="escortstowaway"
     type="Escort"
     description=""
-    commonness="50"
+    commonness="0"
     reward="0"
     achievementidentifier="escortmission"
     successmessage="Personnel transport successful.">
