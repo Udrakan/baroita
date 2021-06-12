@@ -33,8 +33,6 @@
 				</Item>
 				<Item identifier="captainspipe" equip="false"/>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_bill100"/>
-					<Item identifier="ita_bill100"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
@@ -66,8 +64,6 @@
 				</Item>
 				<Item identifier="steroids"/>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_bill100"/>
-					<Item identifier="ita_bill100"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
@@ -98,8 +94,6 @@
 					<sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_3.png" sourcerect="121,0,76,80" offset="-20,15" />
 				</PreviewSprites>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_bill100"/>
-					<Item identifier="ita_bill100"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
@@ -153,7 +147,6 @@
 					<Item identifier="batterycell" showpreview="false"/>
 				</Item>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_bill100"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
@@ -187,7 +180,6 @@
 					<Item identifier="batterycell" showpreview="false"/>
 				</Item>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_bill100"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
@@ -254,7 +246,6 @@
 					<Item identifier="batterycell" showpreview="false"/>
 				</Item>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_bill100"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
@@ -288,7 +279,6 @@
 					<Item identifier="batterycell" showpreview="false"/>
 				</Item>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_bill100"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
@@ -356,7 +346,6 @@
         <Item identifier="batterycell" showpreview="false"/>
       </Item>
 	  <Item identifier="ita_wallet1">
-					<Item identifier="ita_bill100"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
@@ -390,7 +379,6 @@
         <Item identifier="batterycell" showpreview="false"/>
       </Item>
 	  <Item identifier="ita_wallet1">
-					<Item identifier="ita_bill100"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
@@ -425,7 +413,6 @@
       <Item identifier="bodyarmor" equip="true"/>
       <Item identifier="ballistichelmet2" equip="true"/>
 	  <Item identifier="ita_wallet1">
-					<Item identifier="ita_bill100"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
@@ -486,7 +473,6 @@
 				<Item identifier="antibiotics"/>
 				<Item identifier="antidama1"/>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_bill100"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
@@ -517,7 +503,6 @@
 				<Item identifier="antidama1"/>
 				<Item identifier="tonicliquid"/>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_bill100"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
@@ -569,7 +554,6 @@
 					<Item identifier="batterycell" showpreview="false"/>
 				</Item>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_bill100"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
 					<Item identifier="ita_coin1"/>
@@ -621,7 +605,7 @@
 					<Item identifier="batterycell" showpreview="false"/>
 				</Item>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_bill100"/>
+					<Item identifier="ita_bill50"/>
 				</Item>
 				<PreviewSprites dims="120,109">
 					<sprite texture="Content/Items/Jobgear/Assistant/assistant_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
@@ -675,7 +659,7 @@
 					<Item identifier="batterycell" showpreview="false"/>
 				</Item>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_bill100"/>
+					<Item identifier="ita_bill50"/>
 				</Item>
 				<PreviewSprites dims="120,109">
 					<sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
