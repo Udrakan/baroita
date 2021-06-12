@@ -9,6 +9,8 @@
   BrainRoomHorizontalWall="thalamuswall_horizontal_decorative"
   AgentSpawnDelay="60"
   AgentSpawnDelayRandomFactor="0.5"
+  AgentSpawnDelayDifficultyMultiplier="1.0"
+  AgentSpawnCountDifficultyMultiplier="1.0"
   MinAgentsPerBrainRoom="2"
   MaxAgentsPerRoom="5"
   MinAgentsOutside="2"
