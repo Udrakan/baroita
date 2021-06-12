@@ -2613,7 +2613,7 @@
 			<WaitAction time="4" />
 			<ClearTagAction tag="customer" _npos="-2832.0925,-310.77393" />
 			<TriggerAction target1tag="bank1" target2tag="player" applytotarget2="customer" waitforinteraction="true" _npos="-128,-128" />
-			<ConversationAction text="EventText.shop.44" targettag="banker1" dialogtype="Regular" _npos="-2449.6855,-423.52817">
+			<ConversationAction text="EventText.shop.44" targettag="customer" dialogtype="Regular" _npos="-2449.6855,-423.52817">
 				<Option text="EventText.shop.45" endconversation="true">
 					<CheckItemAction targettag="customer" itemtags="jobid:captain" _npos="-1669.3551,-1175.3494">
 						<Success>
@@ -2687,7 +2687,6 @@
 					<CheckDataAction identifier="depositb1" condition="gte 0" _npos="1715.3757,-296.62766">
 						<Success>
 							<Label name="end" _npos="2905.4592,-1576.0847" />
-							<ClearTagAction tag="customer" _npos="3335.985,-1928.5243" />
 
 							<SetDataAction operation="Set" value="0" identifier="depositb1" _npos="3773.4731,-1577.1074" />
 							<SetDataAction operation="Set" value="0" identifier="depamount" _npos="4155.3584,-1577.5702" />
