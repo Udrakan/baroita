@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 	<Override>
 	<Missions>
-		<SalvageMission name="Wreck salvage" identifier="salvagewreck1" tags="salvage,salvagewreck,ita_wreck1,city1" type="Salvage" description="Wreck salvage mission description goes here" commonness="20" reward="2800" achievementidentifier="salvagewreckmission" sonarlabel="Wreck" failuremessage="Salvaging the wreck failed" successmessage="Mission successful" spawntype="wreck" showmessagewhenpickedup="true" itemidentifier="handheldterminal" containertag="locker">
+		<SalvageMission name="Wreck salvage" identifier="salvagewreck1" tags="salvage,salvagewreck,ita_wreck1,city1" type="Salvage" description="Wreck salvage mission description goes here" commonness="20" reward="2100" achievementidentifier="salvagewreckmission" sonarlabel="Wreck" failuremessage="Salvaging the wreck failed" successmessage="Mission successful" spawntype="wreck" showmessagewhenpickedup="true" itemidentifier="handheldterminal" containertag="locker">
 			<Reputation identifier="location" amount="5" />
-			<Reputation identifier="coalition" amount="10" />
+			<Reputation identifier="coalition" amount="5" />
 			<chooserandom>
 				<StatusEffect target="This" welcomemessage="Receiving encrypted transmission: cbspusbvnbhbnf.dpn/efsfmjdu/[ERR:_INSERT_PASS].htm"/>
 				<StatusEffect target="This" welcomemessage="Receiving encrypted transmission: [PASS_1]beweht"/>
@@ -236,7 +236,7 @@
 		</MonsterMission>
 		<MonsterMission name="Killing Ancient Moloch" identifier="killmolochboss" tags="killmonster,killmoloch,killmonstercommon,ita_monsterlarge" type="Monster" description="This ancient moloch is dangerous enough to cause massive logistics issues and even took down a couple attack submarines. A reward of [reward] is promised to any professional crew who can take it down." commonness="25" reward="6000" sonarlabel="Moloch" maxsonarmarkerdistance="10000" successmessage="The Ancient Moloch has been killed." monsterfile="Molochboss">
 			<Reputation identifier="location" amount="30" />
-			<Reputation identifier="coalition" amount="20" />
+			<Reputation identifier="coalition" amount="8" />
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,512,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -249,7 +249,7 @@
 		</MonsterMission>
 		<MonsterMission name="Killing a Hammerheads" identifier="killhammerhead" tags="killmonster,killhammerhead.killmonstercommon,ita_monsterlarge" type="Monster" description="A particularly aggressive Hammerhead has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to those who kill the creature." commonness="35" reward="1200" sonarlabel="Hammerhead" maxsonarmarkerdistance="10000" successmessage="The Hammerhead has been killed." monsterfile="Hammerhead">
 			<Reputation identifier="location" amount="10" />
-			<Reputation identifier="coalition" amount="15" />
+			<Reputation identifier="coalition" amount="6" />
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -262,7 +262,7 @@
 		</MonsterMission>
 		<MonsterMission name="Killing a Matriarch" identifier="killmatriarch1" tags="killmonster,killhammerhead,killmonsterrare,ita_monsterlarge" type="Monster" description="Eliminate the Hammerhead Matriarch and her minions." commonness="20" reward="4500" sonarlabel="Matriarch" maxsonarmarkerdistance="10000" successmessage="The Matriarch has been eliminated.">
 			<Reputation identifier="location" amount="15" />
-			<Reputation identifier="coalition" amount="20" />
+			<Reputation identifier="coalition" amount="4" />
 			<monster character="hammerheadmatriarch" count="1"/>
 			<monster character="hammerhead" min="4" max="5"/>
 			<monster character="hammerheadgold" min="0" max="1"/>
@@ -279,7 +279,7 @@
 		<!--SMALL SWARMS-->
 		<MonsterMission name="Terminate a Small Swarm" identifier="ita_swarmsmall_crawler" tags="killmonster,killswarm,ita_swarmsmall,city1" type="Monster" description="A small swarm of crawlers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it." commonness="45" reward="3000" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated." monsterfile="Swarmcrawler" monstercount="16" >
 			<Reputation identifier="location" amount="10" />
-			<Reputation identifier="coalition" amount="10" />
+			<Reputation identifier="coalition" amount="2" />
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -294,7 +294,7 @@
 			<monster character="tigerthresher" min="10" max="12"/>
 			<monster character="bonethresher" min="3" max="4"/>
 			<Reputation identifier="location" amount="10" />
-			<Reputation identifier="coalition" amount="10" />
+			<Reputation identifier="coalition" amount="5" />
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -309,7 +309,7 @@
 			<monster character="Mudraptor_unarmored" min="6" max="8"/>
 			<monster character="Mudraptor" min="2" max="2"/>
 			<Reputation identifier="location" amount="10" />
-			<Reputation identifier="coalition" amount="10" />
+			<Reputation identifier="coalition" amount="5" />
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -323,7 +323,7 @@
 		<MonsterMission name="Terminate a Small Swarm" identifier="ita_swarmsmall_mudraptor2" tags="killmonster,killswarm,ita_swarmsmall" type="Monster" description="A small pack of mature mudraptors is roaming between [location1] and [location2]. Take them down and [reward] marks are yours." commonness="30" reward="3500" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated.">
 			<monster character="Mudraptor" min="7" max="7"/>
 			<Reputation identifier="location" amount="10" />
-			<Reputation identifier="coalition" amount="10" />
+			<Reputation identifier="coalition" amount="5" />
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -337,7 +337,7 @@
 		<!--LARGE SWARMS-->
 		<MonsterMission name="Terminate a Massive Swarm" identifier="ita_swarmlarge_crawler" tags="killmonster,killswarm,ita_swarmlarge" type="Monster" description="A massive swarm of crawlers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it." commonness="45" reward="6000" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated." monsterfile="Swarmcrawler" monstercount="25" >
 			<Reputation identifier="location" amount="15" />
-			<Reputation identifier="coalition" amount="15" />
+			<Reputation identifier="coalition" amount="6" />
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -352,7 +352,7 @@
 			<monster character="tigerthresher" min="15" max="20"/>
 			<monster character="bonethresher" min="6" max="6"/>
 			<Reputation identifier="location" amount="20" />
-			<Reputation identifier="coalition" amount="15" />
+			<Reputation identifier="coalition" amount="6" />
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -367,7 +367,7 @@
 			<monster character="Mudraptor_unarmored" min="9" max="12"/>
 			<monster character="Mudraptor" min="4" max="4"/>
 			<Reputation identifier="location" amount="20" />
-			<Reputation identifier="coalition" amount="15" />
+			<Reputation identifier="coalition" amount="6" />
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -381,7 +381,7 @@
 		<MonsterMission name="Terminate a Massive Swarm" identifier="ita_swarmlarge_mudraptor2" tags="killmonster,killswarm,ita_swarmlarge" type="Monster" description="A large pack of mudraptors is roaming back and forth between [location1] and [location2], killing everything in it's path, including military submarines. Over 9000 marks are promised to any mad crew to challenge them." commonness="30" reward="9001" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated.">
 			<monster character="Mudraptor" min="14" max="14"/>
 			<Reputation identifier="location" amount="20" />
-			<Reputation identifier="coalition" amount="15" />
+			<Reputation identifier="coalition" amount="6" />
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -1007,10 +1007,10 @@
     reward="2500"
     achievementidentifier="piratemission"
     successmessage="The pirate vessel's crew was successfully eliminated."
-    addedmissiondifficultyperplayer="10">
+    addedmissiondifficultyperplayer="15">
     <message header="Pirates detected" text="" />
     <message header="Pirates eliminated" text="" />
-    <Reputation identifier="coalition" amount="15" />
+    <Reputation identifier="coalition" amount="2" />
     <SubmarineTypes>
       <Submarine path="Content/Map/EnemySubmarines/DugongPirate.sub" preferreddifficulty="10" alternatereward="2200"/>
       <Submarine path="Content/Map/EnemySubmarines/HumpbackPirate.sub" preferreddifficulty="10" alternatereward="3200"/>
@@ -1018,9 +1018,9 @@
     </SubmarineTypes>
     <Characters>
       <Character typeidentifier="piratecaptain" minamount="1" maxamount="1"/>
-      <Character typeidentifier="piratesecurity" minamount="1" maxamount="5" />
-      <Character typeidentifier="piratemechanic" minamount="1" maxamount="1" />
-      <Character typeidentifier="pirateengineer" minamount="1" maxamount="1" />
+      <Character typeidentifier="piratesecurity" minamount="1" maxamount="6" />
+      <Character typeidentifier="piratemechanic" minamount="1" maxamount="2" />
+      <Character typeidentifier="pirateengineer" minamount="1" maxamount="2" />
     </Characters>
     <CharacterTypes>
       <CharacterType typeidentifier="piratecaptain">
