@@ -22,7 +22,7 @@
     identifier="City"
     replaceinradiation="Abandoned"
     namefile="Content/Map/cityNames.txt"
-    commonnessperzone="1: 2.0">
+    commonnessperzone="1: 2.0, 2: 0.9, 3: 0.5">
 
     <Symbol texture="Content/Map/MapAtlas.png" sourcerect="384,512,128,128" color="128,206,175,255"/>
     <RadiationSymbol texture="Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105"/>
@@ -40,7 +40,7 @@
 	<Abandoned
     identifier="Abandoned"
     namefile="Content/Map/cityNames.txt"
-    commonnessperzone="1: 0, 2: 0.8, 3: 0.8, 4: 0.5, 5: 0.5, 6: 0"
+    commonnessperzone="1: 0.2, 2: 0.8, 3: 0.9, 4: 0.5, 5: 0.5, 6: 0"
     missiontags="abandonedoutpost"
     hideentitysubcategories="abandonedhuman,abandonedmonster"
     outpostteam="None">
@@ -80,7 +80,7 @@
     identifier="Outpost"
     replaceinradiation="Abandoned"
     namefile="Content/Map/cityNames.txt"
-    commonnessperzone="2: 2.5, 3: 1.0">
+    commonnessperzone="2: 1.0, 3: 0.6">
 
     <Symbol texture="Content/Map/MapAtlas.png" sourcerect="256,512,128,128" color="128,206,175,255"/>
     <Portrait texture="Content/Map/LocationPortraits/HabitationOutpost.png" premultiplyalpha="false"/>
@@ -135,7 +135,7 @@
     identifier="Military"
     replaceinradiation="Abandoned"
     namefile="Content/Map/locationNames.txt"
-    commonnessperzone="1: 0.6, 2: 1.75, 3: 0"
+    commonnessperzone="1: 0.6, 2: 1.75, 3: 0.3"
     useinmainmenu="true">
 
     <Symbol texture="Content/Map/MapAtlas.png" sourcerect="640,512,128,128" color="128,206,175,255"/>
@@ -159,7 +159,7 @@
     identifier="Research"
     replaceinradiation="Abandoned"
     namefile="Content/Map/locationNames.txt"
-    commonnessperzone="1: 0.0, 2: 1.75, 3: 0.5">
+    commonnessperzone="1: 0.0, 2: 1.75, 3: 0.7">
 
     <Symbol texture="Content/Map/MapAtlas.png" sourcerect="512,512,128,128" color="128,206,175,255"/>
     <RadiationSymbol texture="Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105"/>
@@ -187,7 +187,7 @@
     identifier="Mine"
     replaceinradiation="Abandoned"
     namefile="Content/Map/locationNames.txt"
-    commonnessperzone="1: 0.6, 2: 1.75, 3: 0.5">
+    commonnessperzone="1: 0.6, 2: 1.55, 3: 0.5">
 
     <Symbol texture="Content/Map/MapAtlas.png" sourcerect="256,640,128,128" color="128,206,175,255"/>
     <RadiationSymbol texture="Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105"/>
