@@ -1,15 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 	<Override>
 	<Missions>
-<<<<<<< HEAD
-		<SalvageMission name="Wreck salvage" identifier="salvagewreck1" tags="salvage,salvagewreck,ita_wreck1,city1" type="Salvage" description="Wreck salvage mission description goes here" commonness="20" reward="2800" achievementidentifier="salvagewreckmission" sonarlabel="Wreck" failuremessage="Salvaging the wreck failed" successmessage="Mission successful" spawntype="wreck" showmessagewhenpickedup="true" itemidentifier="handheldterminal" containertag="locker">
-			<Reputation identifier="location" amount="5" />
-			<Reputation identifier="coalition" amount="10" />
-=======
 		<SalvageMission name="Wreck salvage" identifier="salvagewreck1" tags="salvage,salvagewreck,ita_wreck1,city1" type="Salvage" description="Wreck salvage mission description goes here" commonness="20" reward="2100" achievementidentifier="salvagewreckmission" sonarlabel="Wreck" failuremessage="Salvaging the wreck failed" successmessage="Mission successful" spawntype="wreck" showmessagewhenpickedup="true" itemidentifier="handheldterminal" containertag="locker">
 			<Reputation identifier="location" amount="5" />
 			<Reputation identifier="coalition" amount="5" />
->>>>>>> unstable
 			<chooserandom>
 				<StatusEffect target="This" welcomemessage="Receiving encrypted transmission: cbspusbvnbhbnf.dpn/efsfmjdu/[ERR:_INSERT_PASS].htm"/>
 				<StatusEffect target="This" welcomemessage="Receiving encrypted transmission: [PASS_1]beweht"/>
@@ -48,11 +42,7 @@
 			<message header="Thing collected" text="The thing is now on board. Navigate the submarine out of the cavern to claim the reward."/>
 		</SalvageMission>
 		<!--TRANSPORT PRISONERS-->
-<<<<<<< HEAD
-		<CargoMission name="" identifier="cargopassanger1" tags="ita_taxi1" type="Cargo" description="" commonness="10" reward="600" successmessage="">
-=======
-		<CargoMission name="" identifier="cargopassanger1" tags="ita_taxi1" type="Cargo" description="" commonness="5" reward="600" successmessage="">
->>>>>>> unstable
+		<!--<CargoMission name="" identifier="cargopassanger1" tags="ita_taxi1" type="Cargo" description="" commonness="5" reward="600" successmessage="">
 			<Items>
 				<Item identifier="ita_taxicheck" />
 			</Items>
@@ -69,11 +59,7 @@
 			<LocationType from="Military" to="Research"/>
 			<LocationType from="Military" to="Mine"/>
 		</CargoMission>
-<<<<<<< HEAD
-		<CargoMission name="" identifier="cargoprisoner1" tags="ita_prisonertransport,ita_military1,city1" type="Cargo" description="" commonness="40" reward="1900" successmessage="">
-=======
 		<CargoMission name="" identifier="cargoprisoner1" tags="ita_prisonertransport,ita_military1,city1" type="Cargo" description="" commonness="5" reward="1900" successmessage="">
->>>>>>> unstable
 			<Items>
 				<Item identifier="ita_taxicheck2" />
 			</Items>
@@ -87,11 +73,7 @@
 			<LocationType from="City" to="Research"/>
 			<LocationType from="City" to="Mine"/>
 		</CargoMission>
-<<<<<<< HEAD
-		<CargoMission name="" identifier="cargoprisoner2" tags="ita_prisonertransport,ita_military1,city1" type="Cargo" description="" commonness="40" reward="1600" successmessage="">
-=======
 		<CargoMission name="" identifier="cargoprisoner2" tags="ita_prisonertransport,ita_military1,city1" type="Cargo" description="" commonness="5" reward="1600" successmessage="">
->>>>>>> unstable
 			<Items>
 				<Item identifier="ita_taxicheck3" />
 			</Items>
@@ -105,11 +87,7 @@
 			<LocationType from="City" to="Research"/>
 			<LocationType from="City" to="Mine"/>
 		</CargoMission>
-<<<<<<< HEAD
-		<CargoMission name="" identifier="cargoprisoner3" tags="ita_prisonertransport,ita_military1,city1" type="Cargo" description="" commonness="40" reward="1600" successmessage="">
-=======
 		<CargoMission name="" identifier="cargoprisoner3" tags="ita_prisonertransport,ita_military1,city1" type="Cargo" description="" commonness="5" reward="1600" successmessage="">
->>>>>>> unstable
 			<Items>
 				<Item identifier="ita_taxicheck4" />
 			</Items>
@@ -123,14 +101,11 @@
 			<LocationType from="City" to="Research"/>
 			<LocationType from="City" to="Mine"/>
 		</CargoMission>
+		-->
 		<!--TRANSPORT CARGO -->
-<<<<<<< HEAD
-		<CargoMission name="" identifier="cargotime1" tags="cargo,cargotime,city1,ita_cargo" type="Cargo" description="" commonness="10" reward="2800" achievementidentifier="cargomission" successmessage="">
-=======
-		<CargoMission name="" identifier="cargotime1" tags="cargo,cargotime,city1,ita_cargo" type="Cargo" description="" commonness="5" reward="1800" achievementidentifier="cargomission" successmessage="">
->>>>>>> unstable
+		<CargoMission name="" identifier="cargotime1" tags="cargo,cargotime,city1,ita_cargo" type="Cargo" description="" commonness="5" reward="1500" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_mcrate_time1" />
+				<Item identifier="ita_mcrate_time1" reward="100" maxcount="25"/>
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="3" />
@@ -146,13 +121,9 @@
 			<LocationType from="Outpost" to="Outpost"/>
 			<LocationType from="Outpost" to="City"/>
 		</CargoMission>
-<<<<<<< HEAD
-		<CargoMission name="" identifier="cargowater1" tags="cargo,cargosensitive,city1,ita_cargo" type="Cargo" description="" commonness="50" reward="1700" achievementidentifier="cargomission" successmessage="">
-=======
-		<CargoMission name="" identifier="cargowater1" tags="cargo,cargosensitive,city1,ita_cargo" type="Cargo" description="" commonness="5" reward="1700" achievementidentifier="cargomission" successmessage="">
->>>>>>> unstable
+		<CargoMission name="" identifier="cargowater1" tags="cargo,cargosensitive,city1,ita_cargo" type="Cargo" description="" commonness="5" reward="1500" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_mcrate_water1" />
+				<Item identifier="ita_mcrate_water1" reward="150" maxcount="25"/>
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="5" />
@@ -168,13 +139,9 @@
 			<LocationType from="Outpost" to="Outpost"/>
 			<LocationType from="Outpost" to="City"/>
 		</CargoMission>
-<<<<<<< HEAD
-		<CargoMission name="" identifier="cargoeggs" tags="cargo,cargomonster2,city1,ita_cargo" type="Cargo" description="" commonness="50" reward="3100" achievementidentifier="cargomission" successmessage="">
-=======
-		<CargoMission name="" identifier="cargoeggs" tags="cargo,cargomonster2,city1,ita_cargo" type="Cargo" description="" commonness="10" reward="1100" achievementidentifier="cargomission" successmessage="">
->>>>>>> unstable
+		<CargoMission name="" identifier="cargoeggs" tags="cargo,cargomonster2,city1,ita_cargo" type="Cargo" description="" commonness="10" reward="2500" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_mcrate_egg1" />
+				<Item identifier="ita_mcrate_egg1" reward="300" maxcount="4"/>
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="3" />
@@ -190,13 +157,9 @@
 			<LocationType from="Outpost" to="Outpost"/>
 			<LocationType from="Outpost" to="City"/>
 		</CargoMission>
-<<<<<<< HEAD
-		<CargoMission name="" identifier="cargofragile1" tags="cargo,cargoexplosive,cargosensitive,city1,ita_cargo" type="Cargo" description="" commonness="50" reward="2500" achievementidentifier="cargomission" successmessage="">
-=======
-		<CargoMission name="" identifier="cargofragile1" tags="cargo,cargoexplosive,cargosensitive,city1,ita_cargo" type="Cargo" description="" commonness="5" reward="1500" achievementidentifier="cargomission" successmessage="">
->>>>>>> unstable
+		<CargoMission name="" identifier="cargofragile1" tags="cargo,cargoexplosive,cargosensitive,city1,ita_cargo" type="Cargo" description="" commonness="5" reward="1000" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_mcrate_impact1" />
+				<Item identifier="ita_mcrate_impact1" reward="150" maxcount="10"/>
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="3" />
@@ -212,14 +175,9 @@
 			<LocationType from="Outpost" to="Outpost"/>
 			<LocationType from="Outpost" to="City"/>
 		</CargoMission>
-<<<<<<< HEAD
-		<CargoMission name="" identifier="cargoeggs2" tags="cargo,cargomonster1,city1,ita_cargo" type="Cargo" description="" commonness="50" reward="1800" achievementidentifier="cargomission" successmessage="">
-=======
-		<CargoMission name="" identifier="cargoeggs2" tags="cargo,cargomonster1,city1,ita_cargo" type="Cargo" description="" commonness="5" reward="1800" achievementidentifier="cargomission" successmessage="">
->>>>>>> unstable
+		<CargoMission name="" identifier="cargoeggs2" tags="cargo,cargomonster1,city1,ita_cargo" type="Cargo" description="" commonness="5" reward="2000" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_mcrate_egg2" />
-				<Item identifier="ita_mcrate_egg2" />
+				<Item identifier="ita_mcrate_egg2" reward="250" maxcount="4"/>
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="3" />
@@ -235,13 +193,9 @@
 			<LocationType from="Outpost" to="Outpost"/>
 			<LocationType from="Outpost" to="City"/>
 		</CargoMission>
-<<<<<<< HEAD
-		<CargoMission name="" identifier="cargoeggs3" tags="cargo,cargomonster1,city1,ita_cargo" type="Cargo" description="" commonness="50" reward="1900" achievementidentifier="cargomission" successmessage="">
-=======
-		<CargoMission name="" identifier="cargoeggs3" tags="cargo,cargomonster1,city1,ita_cargo" type="Cargo" description="" commonness="7" reward="1900" achievementidentifier="cargomission" successmessage="">
->>>>>>> unstable
+		<CargoMission name="" identifier="cargoeggs3" tags="cargo,cargomonster1,city1,ita_cargo" type="Cargo" description="" commonness="7" reward="2000" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_mcrate_raptor1" />
+				<Item identifier="ita_mcrate_raptor1" reward="250" maxcount="4"/>
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="3" />
@@ -258,13 +212,8 @@
 			<LocationType from="Outpost" to="City"/>
 		</CargoMission>
 		<!--LARGE MONSTERS-->
-<<<<<<< HEAD
-		<MonsterMission name="" identifier="killwatcher" tags="killmonster,killwatcher,killmonsterrare,ita_monsterlarge" type="Monster" description="" commonness="25" reward="4500" sonarlabel="" maxsonarmarkerdistance="10000" successmessage="">
-			<Reputation identifier="location" amount="10" />
-=======
 		<MonsterMission name="" identifier="killwatcher" tags="killmonster,killwatcher,killmonsterrare,ita_monsterlarge" type="Monster" description="A particularly aggressive Watcher has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to those who kill the creature and its minions." commonness="25" reward="4500" sonarlabel="" maxsonarmarkerdistance="10000" successmessage="">
 			<Reputation identifier="location" amount="5" />
->>>>>>> unstable
 			<Reputation identifier="coalition" amount="5" />
 			<monster character="watcher" count="1"/>
 			<monster character="husk" count="7"/>
@@ -287,11 +236,7 @@
 		</MonsterMission>
 		<MonsterMission name="Killing Ancient Moloch" identifier="killmolochboss" tags="killmonster,killmoloch,killmonstercommon,ita_monsterlarge" type="Monster" description="This ancient moloch is dangerous enough to cause massive logistics issues and even took down a couple attack submarines. A reward of [reward] is promised to any professional crew who can take it down." commonness="25" reward="6000" sonarlabel="Moloch" maxsonarmarkerdistance="10000" successmessage="The Ancient Moloch has been killed." monsterfile="Molochboss">
 			<Reputation identifier="location" amount="30" />
-<<<<<<< HEAD
-			<Reputation identifier="coalition" amount="20" />
-=======
 			<Reputation identifier="coalition" amount="8" />
->>>>>>> unstable
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,512,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -304,11 +249,7 @@
 		</MonsterMission>
 		<MonsterMission name="Killing a Hammerheads" identifier="killhammerhead" tags="killmonster,killhammerhead.killmonstercommon,ita_monsterlarge" type="Monster" description="A particularly aggressive Hammerhead has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to those who kill the creature." commonness="35" reward="1200" sonarlabel="Hammerhead" maxsonarmarkerdistance="10000" successmessage="The Hammerhead has been killed." monsterfile="Hammerhead">
 			<Reputation identifier="location" amount="10" />
-<<<<<<< HEAD
-			<Reputation identifier="coalition" amount="15" />
-=======
 			<Reputation identifier="coalition" amount="6" />
->>>>>>> unstable
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -321,11 +262,7 @@
 		</MonsterMission>
 		<MonsterMission name="Killing a Matriarch" identifier="killmatriarch1" tags="killmonster,killhammerhead,killmonsterrare,ita_monsterlarge" type="Monster" description="Eliminate the Hammerhead Matriarch and her minions." commonness="20" reward="4500" sonarlabel="Matriarch" maxsonarmarkerdistance="10000" successmessage="The Matriarch has been eliminated.">
 			<Reputation identifier="location" amount="15" />
-<<<<<<< HEAD
-			<Reputation identifier="coalition" amount="20" />
-=======
 			<Reputation identifier="coalition" amount="4" />
->>>>>>> unstable
 			<monster character="hammerheadmatriarch" count="1"/>
 			<monster character="hammerhead" min="4" max="5"/>
 			<monster character="hammerheadgold" min="0" max="1"/>
@@ -342,11 +279,7 @@
 		<!--SMALL SWARMS-->
 		<MonsterMission name="Terminate a Small Swarm" identifier="ita_swarmsmall_crawler" tags="killmonster,killswarm,ita_swarmsmall,city1" type="Monster" description="A small swarm of crawlers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it." commonness="45" reward="3000" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated." monsterfile="Swarmcrawler" monstercount="16" >
 			<Reputation identifier="location" amount="10" />
-<<<<<<< HEAD
-			<Reputation identifier="coalition" amount="10" />
-=======
 			<Reputation identifier="coalition" amount="2" />
->>>>>>> unstable
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -361,11 +294,7 @@
 			<monster character="tigerthresher" min="10" max="12"/>
 			<monster character="bonethresher" min="3" max="4"/>
 			<Reputation identifier="location" amount="10" />
-<<<<<<< HEAD
-			<Reputation identifier="coalition" amount="10" />
-=======
 			<Reputation identifier="coalition" amount="5" />
->>>>>>> unstable
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -380,11 +309,7 @@
 			<monster character="Mudraptor_unarmored" min="6" max="8"/>
 			<monster character="Mudraptor" min="2" max="2"/>
 			<Reputation identifier="location" amount="10" />
-<<<<<<< HEAD
-			<Reputation identifier="coalition" amount="10" />
-=======
 			<Reputation identifier="coalition" amount="5" />
->>>>>>> unstable
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -398,11 +323,7 @@
 		<MonsterMission name="Terminate a Small Swarm" identifier="ita_swarmsmall_mudraptor2" tags="killmonster,killswarm,ita_swarmsmall" type="Monster" description="A small pack of mature mudraptors is roaming between [location1] and [location2]. Take them down and [reward] marks are yours." commonness="30" reward="3500" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated.">
 			<monster character="Mudraptor" min="7" max="7"/>
 			<Reputation identifier="location" amount="10" />
-<<<<<<< HEAD
-			<Reputation identifier="coalition" amount="10" />
-=======
 			<Reputation identifier="coalition" amount="5" />
->>>>>>> unstable
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -416,11 +337,7 @@
 		<!--LARGE SWARMS-->
 		<MonsterMission name="Terminate a Massive Swarm" identifier="ita_swarmlarge_crawler" tags="killmonster,killswarm,ita_swarmlarge" type="Monster" description="A massive swarm of crawlers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it." commonness="45" reward="6000" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated." monsterfile="Swarmcrawler" monstercount="25" >
 			<Reputation identifier="location" amount="15" />
-<<<<<<< HEAD
-			<Reputation identifier="coalition" amount="15" />
-=======
 			<Reputation identifier="coalition" amount="6" />
->>>>>>> unstable
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -435,11 +352,7 @@
 			<monster character="tigerthresher" min="15" max="20"/>
 			<monster character="bonethresher" min="6" max="6"/>
 			<Reputation identifier="location" amount="20" />
-<<<<<<< HEAD
-			<Reputation identifier="coalition" amount="15" />
-=======
 			<Reputation identifier="coalition" amount="6" />
->>>>>>> unstable
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -454,11 +367,7 @@
 			<monster character="Mudraptor_unarmored" min="9" max="12"/>
 			<monster character="Mudraptor" min="4" max="4"/>
 			<Reputation identifier="location" amount="20" />
-<<<<<<< HEAD
-			<Reputation identifier="coalition" amount="15" />
-=======
 			<Reputation identifier="coalition" amount="6" />
->>>>>>> unstable
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -472,11 +381,7 @@
 		<MonsterMission name="Terminate a Massive Swarm" identifier="ita_swarmlarge_mudraptor2" tags="killmonster,killswarm,ita_swarmlarge" type="Monster" description="A large pack of mudraptors is roaming back and forth between [location1] and [location2], killing everything in it's path, including military submarines. Over 9000 marks are promised to any mad crew to challenge them." commonness="30" reward="9001" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated.">
 			<monster character="Mudraptor" min="14" max="14"/>
 			<Reputation identifier="location" amount="20" />
-<<<<<<< HEAD
-			<Reputation identifier="coalition" amount="15" />
-=======
 			<Reputation identifier="coalition" amount="6" />
->>>>>>> unstable
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 			<LocationType from="Military" to="None"/>
 			<LocationType from="Military" to="City"/>
@@ -488,11 +393,7 @@
 			<message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward."/>
 		</MonsterMission>
 		<!--MINING-->
-<<<<<<< HEAD
-		<MineralMission name="Collecting titanite" identifier="titanitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="titanite" successmessage="The existence of the titanite deposits has been successfully proven.">
-=======
 		<MineralMission name="Collecting titanite" identifier="titanitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="titanite" successmessage="The existence of the titanite deposits has been successfully proven.">
->>>>>>> unstable
 			<Items>
 				<Item identifier="titanite" />
 				<Item identifier="titanite" />
@@ -510,11 +411,7 @@
 			<LocationType from="Mine" to="None"/>
 			<message header="titanite collected" text="You have collected enough titanite. Bring them to an outpost to claim the reward." />
 		</MineralMission>
-<<<<<<< HEAD
-		<MineralMission name="Collecting amblygonite" identifier="amblygonitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="amblygonite" successmessage="The existence of the amblygonite deposits has been successfully proven.">
-=======
 		<MineralMission name="Collecting amblygonite" identifier="amblygonitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="amblygonite" successmessage="The existence of the amblygonite deposits has been successfully proven.">
->>>>>>> unstable
 			<Items>
 				<Item identifier="amblygonite" />
 				<Item identifier="amblygonite" />
@@ -532,11 +429,7 @@
 			<LocationType from="Mine" to="None"/>
 			<message header="amblygonite collected" text="You have collected enough amblygonite. Bring them to an outpost to claim the reward." />
 		</MineralMission>
-<<<<<<< HEAD
-		<MineralMission name="Collecting sphalerite" identifier="sphaleritecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="sphalerite" successmessage="The existence of the sphalerite deposits has been successfully proven.">
-=======
 		<MineralMission name="Collecting sphalerite" identifier="sphaleritecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="sphalerite" successmessage="The existence of the sphalerite deposits has been successfully proven.">
->>>>>>> unstable
 			<Items>
 				<Item identifier="sphalerite" />
 				<Item identifier="sphalerite" />
@@ -554,11 +447,7 @@
 			<LocationType from="Mine" to="None"/>
 			<message header="sphalerite collected" text="You have collected enough sphalerite. Bring them to an outpost to claim the reward." />
 		</MineralMission>
-<<<<<<< HEAD
-		<MineralMission name="Collecting pyromorphite" identifier="pyromorphitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="pyromorphite" successmessage="The existence of the pyromorphite deposits has been successfully proven.">
-=======
 		<MineralMission name="Collecting pyromorphite" identifier="pyromorphitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="pyromorphite" successmessage="The existence of the pyromorphite deposits has been successfully proven.">
->>>>>>> unstable
 			<Items>
 				<Item identifier="pyromorphite" />
 				<Item identifier="pyromorphite" />
@@ -576,11 +465,7 @@
 			<LocationType from="Mine" to="None"/>
 			<message header="pyromorphite collected" text="You have collected enough pyromorphite. Bring them to an outpost to claim the reward." />
 		</MineralMission>
-<<<<<<< HEAD
-		<MineralMission name="Collecting quartz" identifier="quartzcollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="quartz" successmessage="The existence of the quartz deposits has been successfully proven.">
-=======
 		<MineralMission name="Collecting quartz" identifier="quartzcollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="quartz" successmessage="The existence of the quartz deposits has been successfully proven.">
->>>>>>> unstable
 			<Items>
 				<Item identifier="quartz" />
 				<Item identifier="quartz" />
@@ -599,11 +484,7 @@
 			<message header="quartz collected" text="You have collected enough quartz. Bring them to an outpost to claim the reward." />
 		</MineralMission>
 
-<<<<<<< HEAD
-		<MineralMission name="Collecting ilmenite" identifier="ilmenitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="ilmenite" successmessage="The existence of the ilmenite deposits has been successfully proven.">
-=======
 		<MineralMission name="Collecting ilmenite" identifier="ilmenitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="ilmenite" successmessage="The existence of the ilmenite deposits has been successfully proven.">
->>>>>>> unstable
 			<Items>
 				<Item identifier="ilmenite" />
 				<Item identifier="ilmenite" />
@@ -621,11 +502,7 @@
 			<LocationType from="Mine" to="None"/>
 			<message header="ilmenite collected" text="You have collected enough ilmenite. Bring them to an outpost to claim the reward." />
 		</MineralMission>
-<<<<<<< HEAD
-		<MineralMission name="Collecting stannite" identifier="stannitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="stannite" successmessage="The existence of the stannite deposits has been successfully proven.">
-=======
 		<MineralMission name="Collecting stannite" identifier="stannitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="stannite" successmessage="The existence of the stannite deposits has been successfully proven.">
->>>>>>> unstable
 			<Items>
 				<Item identifier="stannite" />
 				<Item identifier="stannite" />
@@ -643,11 +520,7 @@
 			<LocationType from="Mine" to="None"/>
 			<message header="stannite collected" text="You have collected enough stannite. Bring them to an outpost to claim the reward." />
 		</MineralMission>
-<<<<<<< HEAD
-		<MineralMission name="Collecting chalcopyrite" identifier="chalcopyritecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="chalcopyrite" successmessage="The existence of the chalcopyrite deposits has been successfully proven.">
-=======
 		<MineralMission name="Collecting chalcopyrite" identifier="chalcopyritecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="chalcopyrite" successmessage="The existence of the chalcopyrite deposits has been successfully proven.">
->>>>>>> unstable
 			<Items>
 				<Item identifier="chalcopyrite" />
 				<Item identifier="chalcopyrite" />
@@ -665,11 +538,7 @@
 			<LocationType from="Mine" to="None"/>
 			<message header="chalcopyrite collected" text="You have collected enough chalcopyrite. Bring them to an outpost to claim the reward." />
 		</MineralMission>
-<<<<<<< HEAD
-		<MineralMission name="Collecting esperite" identifier="esperitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="esperite" successmessage="The existence of the esperite deposits has been successfully proven.">
-=======
 		<MineralMission name="Collecting esperite" identifier="esperitecollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="esperite" successmessage="The existence of the esperite deposits has been successfully proven.">
->>>>>>> unstable
 			<Items>
 				<Item identifier="esperite" />
 				<Item identifier="esperite" />
@@ -687,11 +556,7 @@
 			<LocationType from="Mine" to="None"/>
 			<message header="esperite collected" text="You have collected enough esperite. Bring them to an outpost to claim the reward." />
 		</MineralMission>
-<<<<<<< HEAD
-		<MineralMission name="Collecting galena" identifier="galenacollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="50" reward="1500" sonarlabel="galena" successmessage="The existence of the galena deposits has been successfully proven.">
-=======
 		<MineralMission name="Collecting galena" identifier="galenacollection" tags="collectminerals,collectmineralscommon" type="Mineral" commonness="5" reward="1500" sonarlabel="galena" successmessage="The existence of the galena deposits has been successfully proven.">
->>>>>>> unstable
 			<Items>
 				<Item identifier="galena" />
 				<Item identifier="galena" />
@@ -1038,8 +903,6 @@
 			<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 			<message header="Target terminated" text="The monster is dead. Navigate the submarine out of the cavern to claim the reward."/>
 		</MonsterMission>
-<<<<<<< HEAD
-=======
 		
   <EscortMission name="Personnel Transport"
     identifier="escort1"
@@ -1277,6 +1140,5 @@
   </GotoMission>		
 		
 		
->>>>>>> unstable
 	</Missions>
 	</Override>
