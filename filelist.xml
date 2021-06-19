@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.14.6.0" steamworkshopid="2005463692" installtime="1621462401">
+=======
+<contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.13.3.11" steamworkshopid="2005463692" installtime="1622764925">
+>>>>>>> unstable
   <Text file="Mods/IntoTheAbyss/Content/Texts/ita_English.xml" />
   <UIStyle file="Mods/IntoTheAbyss/Content/ita_style.xml" />
   <EventManagerSettings file="Mods/IntoTheAbyss/Content/ita_eventmanagersettings.xml" />
@@ -146,7 +150,11 @@
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_mine_dock1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_canteen.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_Hall4wayModule_Hab_02.sub" />
+<<<<<<< HEAD
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_hab_dock3.sub" />
+=======
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_city_dock3.sub" />
+>>>>>>> unstable
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave3.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shop_bar1R.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shop_electrician1.sub" />
@@ -175,4 +183,12 @@
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_milengineering.sub" />
   <Submarine file="Mods/IntoTheAbyss/Content/Subs/BeaconStation1amodded.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_research_ancient1.sub" />
+<<<<<<< HEAD
+=======
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_hab_dock1.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_hab_crewquarters.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_hab_engineering.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_hab_office.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_hab_crewquarters2.sub" />
+>>>>>>> unstable
 </contentpackage>

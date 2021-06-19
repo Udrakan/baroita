@@ -23,6 +23,7 @@
 		<modulecount flag="ResearchModule" count="1"/>
 		<modulecount flag="SecurityModule" count="1"/>
 	</OutpostConfig>
+<<<<<<< HEAD
 	<OutpostConfig identifier="outpost" totalmodulecount="6" minhallwaylength="0" allowedlocationtypes="Outpost">
 		<modulecount flag="ita_hab_dock" count="1"/>
 		<modulecount flag="ita_smallengineering" count="1"/>
@@ -35,13 +36,28 @@
 			<npc from="outpostnpcs1" identifier="repairnpc"/>
 			<npc from="ita_citynpcs1" identifier="ita_subupgradenpc"/>
 			<npc from="ita_citynpcs1" identifier="ita_subsalesnpc"/>
+=======
+	<OutpostConfig identifier="outpost" totalmodulecount="4" minhallwaylength="0" allowedlocationtypes="Outpost">
+		<modulecount flag="ita_hab_dock" count="1"/>
+		<modulecount flag="ita_hab_engineering" count="1"/>
+		<modulecount flag="ita_hab_office" count="1"/>
+		<modulecount flag="ita_hab_crewquarters" count="1"/>
+		<npcs>
+			<npc from="outpostnpcs1" identifier="hrmanager"/>
+			<npc from="outpostnpcs1" identifier="repairnpc"/>
+>>>>>>> unstable
 			<npc from="outpostnpcs1" identifier="reactoroperator"/>
 			<npc from="ita_citynpcs1" identifier="ita_merchant"/>
 			<npc from="ita_citynpcs1" identifier="ita_guard1"/>
 			<npc from="ita_citynpcs1" identifier="ita_guard1"/>
+<<<<<<< HEAD
 			<npc from="ita_citynpcs1" identifier="ita_guard2"/>
 			<npc from="outpostnpcs1" identifier="outpostmanager"/>
 			<npc from="outpostnpcs1" identifier="outpostdoctor"/>
+=======
+			<npc from="outpostnpcs1" identifier="outpostmanager"/>
+			<npc from="outpostnpcs1" identifier="commoner"/>
+>>>>>>> unstable
 			<npc from="outpostnpcs1" identifier="commoner"/>
 			<npc from="outpostnpcs1" identifier="commoner"/>
 			<npc from="outpostnpcs1" identifier="commoner"/>
