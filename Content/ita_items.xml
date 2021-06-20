@@ -3088,7 +3088,7 @@
         </StatusEffect>
         <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
           <TriggerEvent identifier="ita_climber1" />
-          <RequiredItem items="ita_climber2" type="Contained" />
+          <RequiredItem items="harmonica" type="Contained" />
           <Remove />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
