@@ -2257,8 +2257,10 @@
 		</ScriptedEvent>			
 		<ScriptedEvent identifier="ita_climber1">
 			<TagAction criteria="itemtag:ita_climbertable" tag="climbertablecl1" _npos="-3595.7273,65.36722" />
+			<TagAction criteria="crew" tag="player" _npos="-3595.7273,65.36722" />
 			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_climber1" targettag="climbercl1" spawnpointtag="climbercl1" _npos="-2195.9033,56.7901" />
 			<Label name="clothesc1" _npos="-1890.9636,55.244232" />
+			
 			<WaitAction time="4" />
 			<ClearTagAction tag="customer" _npos="9736.438,-1345.706" />
 			<TriggerAction target1tag="climbertablecl1" target2tag="player" applytotarget2="customer" waitforinteraction="true" _npos="-128,-128" />

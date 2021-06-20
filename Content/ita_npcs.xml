@@ -522,34 +522,34 @@
       </ItemSet>
     </npc>
 
-		<npc identifier="ita_prisoner" job="assistant" commonness="1" healthmultiplier="0.5" behavior="Active">
+		<npc identifier="ita_prisoner" job="prisoner" commonness="1" healthmultiplier="0.5" behavior="Active">
 			<ItemSet commonness="1">
-				<Item identifier="ita_npccard1" equip="true" tags="id_prisoner"/>
+				<Item identifier="idcard" equip="true" />
 				<Item identifier="handcuffs" equip="true"/>
 				<Item identifier="ita_prisoneruniform" equip="true"/>
 			</ItemSet>
 		</npc>
-		<npc identifier="ita_transport_prisoner_clown1" commonness="0" moduleflags="none" behavior="Active">
+		<npc identifier="ita_transport_prisoner_clown1" job="prisoner" commonness="0" moduleflags="none" behavior="Active">
 			<ItemSet commonness="1">
 				<Item identifier="ita_npccard1" equip="true"/>
 				<Item identifier="clowncostume" equip="true"/>
 				<Item identifier="handcuffs" equip="true"/>
 			</ItemSet>
 		</npc>
-		<npc identifier="ita_transport_prisoner_cultist1" commonness="0" moduleflags="none" behavior="Active">
+		<npc identifier="ita_transport_prisoner_cultist1" job="prisoner" commonness="0" moduleflags="none" behavior="Active">
 			<ItemSet commonness="1">
 				<Item identifier="ita_npccard1" equip="true"/>
 				<Item identifier="ita_prisoneruniform" equip="true"/>
 				<Item identifier="handcuffs" equip="true"/>
 			</ItemSet>
 		</npc>
-		<npc identifier="ita_prisonersep1" job="Assistant" commonness="1" spawnpointtags="prisonersep1" behavior="Active" >
+		<npc identifier="ita_prisonersep1" job="prisoner" commonness="1" spawnpointtags="prisonersep1" behavior="Active" >
 			<ItemSet>
 				<Item identifier="handcuffs" equip="true" />
 				<Item identifier="idcard"/>
 			</ItemSet>
 		</npc>
-		<npc identifier="ita_prisonerclown1" job="Assistant" commonness="1" spawnpointtags="prisonerclown1" behavior="Active" >
+		<npc identifier="ita_prisonerclown1" job="prisoner" commonness="1" spawnpointtags="prisonerclown1" behavior="Active" >
 			<ItemSet>
 				<Item identifier="handcuffs" equip="true" />
 				<Item identifier="clownmask" equip="true" />
@@ -1021,6 +1021,7 @@
 				<Item identifier="antidama1"/>
 			</ItemSet>
 		</npc>
+
 
 	</npcset>
 	
