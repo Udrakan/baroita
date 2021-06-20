@@ -153,7 +153,7 @@
 		</ScriptedEvent>
 		<!--SHOPS-->
 		<ScriptedEvent identifier="ita_canteen1">
-		
+
 			<TagAction criteria="itemtag:ita_canteentable1" tag="ita_canteentable1" _npos="-3595.7273,65.36722" />
 			<TagAction criteria="crew" tag="player" _npos="-3595.7273,65.36722" />
 			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_bartender" targettag="canteencook1" spawnpointtag="canteen1" _npos="-2195.9033,56.7901" />
@@ -4550,7 +4550,6 @@
 				</StatusEffect>
 			</StatusEffectAction>
 		</ScriptedEvent>-->
-
 		<ScriptedEvent identifier="ita_transport_fail1">
 			<TagAction criteria="itemtag:ita_taxi1" tag="ita_taxicheck1" _npos="-529.1705,-5.161072" />
 			<StatusEffectAction targettag="ita_taxicheck1" _npos="5384.6694,-20.963867">
@@ -4633,21 +4632,139 @@
 		</ScriptedEvent>
 		<!--ENTERTAINMENT-->
 		<ScriptedEvent identifier="ita_race1bet">
-			<CheckDataAction identifier="race1cancelled" condition="eq 1" _npos="-4906.867,-229.13528">
+			<CheckDataAction identifier="race1cancelled" condition="eq 1" _npos="-5931.7065,-347.98212">
 				<Failure>
-					<SetDataAction operation="Set" value="0" identifier="race1done" _npos="748.73346,55.5069" />
-					<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_raceman" targettag="raceman" spawnpointtag="raceman" _npos="-4525.2715,-164.36716" />
-					<Label name="lab1" _npos="-4522.9033,300.64035" />
-					<ClearTagAction tag="beter1" _npos="-3922.7866,274.7721" />
-
-					<CheckDataAction identifier="race1done" condition="eq 1" _npos="-459.76404,-26.55832">
-						<Failure>
-							<ConversationAction text="EventText.itarace1bet.1" speakertag="raceman" invokertag="beter1" _npos="20.083832,23.967651">
+					<SetDataAction operation="Set" value="0" identifier="race1done" _npos="-5289.5967,289.23187" />
+					<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_raceman" targettag="raceman" spawnpointtag="raceman" _npos="-4872.305,288.438" />
+					<Label name="lab1" _npos="-4498.398,289.65173" />
+					<ClearTagAction tag="player" _npos="-4491.2886,441.1053" />
+					<ClearTagAction tag="beter1" _npos="-4496.576,547.18536" />
+					<TagAction criteria="crew" tag="player" _npos="-4499.4883,652.6113" />
+					<CheckDataAction identifier="race1done" condition="eq 1" _npos="-4502.1733,854.868">
+					<Success>
+											<Label name="lab4" _npos="-1114.2743,-1223.3319" />
+											<ClearTagAction tag="redeemer1" _npos="-4496.576,547.18536" />
+											<CheckDataAction identifier="race1w" condition="eq 1" _npos="47.246185,-1215.915">
+												<Success>
+													<StatusEffectAction targettag="r1green" _npos="-554.27795,-1912.9579">
+														<StatusEffect _npos="-549.40466,-1811.4128">
+															<Remove _npos="-551.3428,-1711.1603" />
+														</StatusEffect>
+													</StatusEffectAction>
+													<StatusEffectAction targettag="r1blue" _npos="-63.57007,-1922.3722">
+														<StatusEffect _npos="-62.47046,-1815.0702">
+															<Remove _npos="-56.625366,-1715.7129" />
+														</StatusEffect>
+													</StatusEffectAction>
+													<TriggerAction target1tag="raceman" target2tag="player" applytotarget2="redeemer1" waitforinteraction="true" _npos="-3677.4446,340.3709" />
+													<ConversationAction text="EventText.itarace1bet.8" targettag="redeemer1" _npos="561.3102,-1508.3163">
+														<Option text="EventText.itarace1bet.9" endconversation="true">
+															<Label name="ticketred"/>
+															<CheckItemAction targettag="redeemer1" itemidentifiers="ita_race_ticket1" _npos="1113.7853,-1365.5023">
+																<Success>
+																	<RemoveItemAction targettag="redeemer1" itemidentifier="ita_race_ticket1" amount="1" _npos="1651.9489,-1482.5913" />
+																	<WaitAction time="0.5" />
+																	<StatusEffectAction targettag="raceman" _npos="2268.3337,-1473.8374">
+																		<StatusEffect _npos="2265.0586,-1371.0797">
+																			<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_cashregister.ogg" range="500" _npos="2266.0278,-1272.6305" />
+																		</StatusEffect>
+																	</StatusEffectAction>
+																	<SpawnAction itemidentifier="ita_bill200" targetinventory="redeemer1" _npos="2756.1885,-1478.7001" />
+																	<GoTo name="ticketred" _npos="3282.7498,-1473.1537" />
+																</Success>
+																<Failure>
+																	<GoTo name="lab4" _npos="11400,0" />
+																</Failure>
+															</CheckItemAction>
+														</Option>
+													</ConversationAction>
+												</Success>
+												<Failure>
+													<CheckDataAction identifier="race1w" condition="eq 2" _npos="56.630035,-1006.67773">
+														<Success>
+															<StatusEffectAction targettag="r1red" _npos="9856,567">
+																<StatusEffect _npos="10328,334">
+																	<Remove _npos="10928,346" />
+																</StatusEffect>
+															</StatusEffectAction>
+															<StatusEffectAction targettag="r1blue" _npos="10456,486">
+																<StatusEffect _npos="11056,662">
+																	<Remove _npos="11528,346" />
+																</StatusEffect>
+															</StatusEffectAction>
+															<TriggerAction target1tag="raceman" target2tag="player" applytotarget2="redeemer1" waitforinteraction="true" _npos="-3677.4446,340.3709" />
+															<ConversationAction text="EventText.itarace1bet.10" targettag="redeemer1" _npos="561.3102,-1508.3163">
+														<Option text="EventText.itarace1bet.9" endconversation="true">
+															<Label name="ticketgreen"/>
+															<CheckItemAction targettag="redeemer1" itemidentifiers="ita_race_ticket2" _npos="1113.7853,-1365.5023">
+																<Success>
+																	<RemoveItemAction targettag="redeemer1" itemidentifier="ita_race_ticket2" amount="1" _npos="1651.9489,-1482.5913" />
+																	<WaitAction time="0.5" />
+																	<StatusEffectAction targettag="raceman" _npos="2268.3337,-1473.8374">
+																		<StatusEffect _npos="2265.0586,-1371.0797">
+																			<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_cashregister.ogg" range="500" _npos="2266.0278,-1272.6305" />
+																		</StatusEffect>
+																	</StatusEffectAction>
+																	<SpawnAction itemidentifier="ita_bill200" targetinventory="redeemer1" _npos="2756.1885,-1478.7001" />
+																	<GoTo name="ticketgreen" _npos="3282.7498,-1473.1537" />
+																</Success>
+																<Failure>
+																	<GoTo name="lab4" _npos="11400,0" />
+																</Failure>
+															</CheckItemAction>
+														</Option>
+													</ConversationAction>
+													</Success>
+														<Failure>
+															<CheckDataAction identifier="w3" condition="eq 1" _npos="48.694458,-779.717">
+																<Success>
+																	<StatusEffectAction targettag="r1red" _npos="10456,672">
+																		<StatusEffect _npos="11056,493">
+																			<Remove _npos="11656,510" />
+																		</StatusEffect>
+																	</StatusEffectAction>
+																	<StatusEffectAction targettag="r1green" _npos="11184,810">
+																		<StatusEffect _npos="11656,614">
+																			<Remove _npos="12128,262" />
+																		</StatusEffect>
+																	</StatusEffectAction>
+																	<TriggerAction target1tag="raceman" target2tag="player" applytotarget2="redeemer1" waitforinteraction="true" _npos="-3677.4446,340.3709" />
+																	<ConversationAction text="EventText.itarace1bet.11" targettag="redeemer1" _npos="486.07443,-596.3571">
+																		<Option text="EventText.itarace1bet.9" endconversation="true">
+																			<Label name="ticketblue"/>
+																			<CheckItemAction targettag="redeemer1" itemidentifiers="ita_race_ticket3" _npos="1113.7853,-1365.5023">
+																				<Success>
+																					<RemoveItemAction targettag="redeemer1" itemidentifier="ita_race_ticket3" amount="1" _npos="1651.9489,-1482.5913" />
+																					<WaitAction time="0.5" />
+																					<StatusEffectAction targettag="raceman" _npos="2268.3337,-1473.8374">
+																						<StatusEffect _npos="2265.0586,-1371.0797">
+																							<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_cashregister.ogg" range="500" _npos="2266.0278,-1272.6305" />
+																						</StatusEffect>
+																					</StatusEffectAction>
+																					<SpawnAction itemidentifier="ita_bill200" targetinventory="redeemer1" _npos="2756.1885,-1478.7001" />
+																					<GoTo name="ticketblue" _npos="3282.7498,-1473.1537" />
+																				</Success>
+																				<Failure>
+																					<GoTo name="lab4" _npos="11400,0" />
+																				</Failure>
+																			</CheckItemAction>
+																		</Option>
+																	</ConversationAction>
+																</Success>
+															</CheckDataAction>
+														</Failure>
+													</CheckDataAction>
+												</Failure>
+											</CheckDataAction>
+										</Success>
+					<Failure>
+							<TriggerAction target1tag="raceman" target2tag="player" applytotarget2="beter1" waitforinteraction="true" _npos="-3677.4446,340.3709" />
+							<ConversationAction text="EventText.itarace1bet.1" targettag="beter1" _npos="-3186.046,341.44116">
 								<Option text="EventText.itarace1bet.2" endconversation="true">
-									<SetDataAction operation="Set" value="1" identifier="r1bet" _npos="748.73346,55.5069" />
-									<Label name="labop" _npos="365.5538,679.2201" />
-									<SetDataAction operation="Set" value="-100" identifier="r1betsize" _npos="359.88055,786.698" />
-									<Label name="lab2" _npos="359.21527,949.7349" />
+									<SetDataAction operation="Set" value="1" identifier="r1bet" _npos="-1615.05,922.3982" />
+									<Label name="labop" _npos="-1135.4469,919.1279" />
+									<SetDataAction operation="Set" value="-100" identifier="r1betsize" _npos="-665.08966,922.4541" />
+									<Label name="lab2" _npos="-256.5993,932.8547" />
 									<CheckItemAction targettag="beter1" itemidentifiers="ita_coin1" _npos="806.71814,782.7836">
 										<Success>
 											<RemoveItemAction targettag="beter1" itemidentifier="ita_coin1" amount="1" _npos="1265.9202,792.2302" />
@@ -4663,7 +4780,6 @@
 																	<SetDataAction operation="Set" value="0" identifier="r1betsize" _npos="2599.7607,3043.5618" />
 																	<SetDataAction operation="Set" value="0" identifier="r1nocash" _npos="2597.5337,3213.2417" />
 																	<ClearTagAction tag="beter1" _npos="2597.188,3374.789" />
-
 																	<GoTo name="lab1" _npos="2594.454,3473.6274" />
 																</Success>
 																<Failure>
@@ -4676,8 +4792,6 @@
 																				</StatusEffect>
 																			</StatusEffectAction>
 																			<SpawnAction itemidentifier="ita_race_ticket1" targettag="r1red" targetinventory="beter1" _npos="3496.5498,3200.0813" />
-																			<ClearTagAction tag="beter1" _npos="3496.6123,3649.8938" />
-
 																			<GoTo name="lab1" _npos="3496.2705,3746.4634" />
 																		</Success>
 																		<Failure>
@@ -4689,21 +4803,17 @@
 																						</StatusEffect>
 																					</StatusEffectAction>
 																					<SpawnAction itemidentifier="ita_race_ticket2" targettag="r1green" targetinventory="beter1" _npos="3975.2458,3196.9917" />
-																					<ClearTagAction tag="beter1" _npos="3975.963,3646.0427" />
-
 																					<GoTo name="lab1" _npos="3977.8508,3746.4634" />
 																				</Success>
 																				<Failure>
 																					<CheckDataAction identifier="r1bet" condition="eq 3" _npos="4418.702,3004.2568">
 																						<Success>
-																							<StatusEffectAction targettag="raceman" _npos="4960.7363,-294.79236">
-																								<StatusEffect _npos="4971.423,-145.55658">
-																									<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_sounds_ticketrip.ogg" range="500" _npos="4961.747,-91.940796" />
+																							<StatusEffectAction targettag="raceman" _npos="5859.1045,-381.52466">
+																								<StatusEffect _npos="5847.3286,-259.9145">
+																									<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_sounds_ticketrip.ogg" range="500" _npos="5818.4536,-164.07214" />
 																								</StatusEffect>
 																							</StatusEffectAction>
 																							<SpawnAction itemidentifier="ita_race_ticket3" targettag="r1blue" targetinventory="beter1" _npos="4418.9033,3197.8525" />
-																							<ClearTagAction tag="beter1" _npos="4418.3384,3646.7163" />
-
 																							<GoTo name="lab1" _npos="4417.8154,3746.4634" />
 																						</Success>
 																					</CheckDataAction>
@@ -4828,7 +4938,7 @@
 																		<Failure>
 																			<CheckDataAction identifier="r1betsize" condition="gte 0" _npos="3532.1758,802.18964">
 																				<Success>
-																					<GoTo name="lab3" _npos="4035.9604,833.51556" />
+																					<GoTo name="lab3" _npos="3997.7344,836.70087" />
 																				</Success>
 																				<Failure>
 																					<SetDataAction operation="Set" value="1" identifier="r1nocash" _npos="3330.7742,1585.5046" />
@@ -4848,29 +4958,157 @@
 									</CheckItemAction>
 								</Option>
 								<Option text="EventText.itarace1bet.4" endconversation="true">
-									<SetDataAction operation="Set" value="2" identifier="r1bet" _npos="747.1982,218.36432" />
-									<GoTo name="labop" _npos="1122.3107,222.90619" />
+									<SetDataAction operation="Set" value="2" identifier="r1bet" _npos="-1624.4375,1261.7279" />
+									<GoTo name="labop" _npos="-1135.7545,1256.2612" />
 								</Option>
 								<Option text="EventText.itarace1bet.5" endconversation="true">
-									<SetDataAction operation="Set" value="3" identifier="r1bet" _npos="747.68463,381.83112" />
-									<GoTo name="labop" _npos="1112.4536,381.48737" />
+									<SetDataAction operation="Set" value="3" identifier="r1bet" _npos="-1629.8914,1422.4655" />
+									<GoTo name="labop" _npos="-1149.9221,1432.9468" />
 								</Option>
 								<Option text="EventText.itarace1bet.6" endconversation="true">
-									<GoTo name="lab1" _npos="-64.478,575.7368" />
+									<GoTo name="lab1" _npos="-2704.9192,577.17267" />
 								</Option>
 								<Option text="EventText.itarace1bet.7" endconversation="true">
-									<TriggerEventAction identifier="ita_race1.0" _npos="1773.1602,195.59229" />
-									<WaitAction time="3" _npos="1783.9044,305.96875" />
-									<TriggerEventAction identifier="ita_race1start" _npos="1785.291,408.09158" />
-									<Label name="wait" _npos="2219.2876,235.71954" />
-									<WaitAction time="3" _npos="2219.045,334.864" />
-									<CheckDataAction identifier="race1done" condition="eq 1" _npos="2221.8438,431.0932">
+									<TagAction criteria="itemtag:r1sounder" tag="r1sounder" _npos="-2315.009,-953.5108" />
+									<TagAction criteria="itemtag:raceopen" tag="racedoor" _npos="-440.5974,0.6141815" />
+									<TagAction criteria="itemtag:att1" tag="att1"/>
+									<TagAction criteria="itemtag:att2" tag="att2"/>
+									<TagAction criteria="itemtag:att3" tag="att3"/>
+									<TagAction criteria="itemtag:att4" tag="att4"/>
+									<SpawnAction speciesname="Hammerheadspawn" targettag="bait" spawnpointtag="raceend" _npos="-1941.5005,-953.70483" />
+									<AfflictionAction affliction="stun" strength="100" limbtype="Torso" targettag="bait" _npos="-1574.6199,-953.0574" />
+									<SetDataAction operation="Set" value="0" identifier="race1w" _npos="-1204.9064,-953.6646" />
+									<TriggerEventAction identifier="ita_race1.1" _npos="-836.6904,-954.0129" />
+									<TriggerEventAction identifier="ita_race1.2" _npos="-463.67126,-954.0361" />
+									<TriggerEventAction identifier="ita_race1.3" _npos="-99.42578,-954.10175" />
+									<SetDataAction operation="Set" value="1" identifier="start" _npos="29.869507,-0.9338379" />
+									<SpawnAction itemidentifier="alienpowercell" targetinventory="racedoor" _npos="438.53772,21.887482" />
+									<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="commoner" targettag="w1" spawnpointtag="hr" />
+									<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="commoner" targettag="w2" spawnpointtag="hr" />
+									<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="commoner" targettag="w3" spawnpointtag="hr" />
+									<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="commoner" targettag="w4" spawnpointtag="hr" />
+									<NPCFollowAction npctag="w1" targettag="att1" follow="true" />
+									<NPCFollowAction npctag="w2" targettag="att2" follow="true" />
+									<NPCFollowAction npctag="w3" targettag="att3" follow="true" />
+									<NPCFollowAction npctag="w4" targettag="att4" follow="true" />
+									<Label name="wincheck" _npos="-508.05878,-77.651" />
+									<CheckDataAction identifier="race1w" condition="eq 1" _npos="-64.6969,-77.99176">
 										<Success>
-											<Label name="lab4" _npos="-1114.2743,-1223.3319" />
+											<StatusEffectAction targettag="r1sounder" _npos="4960.7363,-294.79236">
+												<StatusEffect _npos="4961.413,-193.60559">
+													<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_sounds_cheering1.ogg" range="1000" _npos="4961.747,-91.940796" />
+												</StatusEffect>
+											</StatusEffectAction>
+											<SpawnAction itemidentifier="ita_effects_smoker1" spawnpointtag="smoker1" _npos="478.80225,-1428.1719" />
+											<SpawnAction itemidentifier="ita_effects_smoker1" spawnpointtag="smoker2" _npos="481.80457,-1428.1719" />
+											<SpawnAction itemidentifier="ita_effects_smoker1" spawnpointtag="smoker3" _npos="481.80457,-1428.1719" />
+											<SpawnAction itemidentifier="ita_effects_smoker1" spawnpointtag="smoker4" _npos="481.80457,-1428.1719" />
+											<ConversationAction text="EventText.itarace1.0.1" eventsprite="mediator" dialogtype="Small" _npos="-238.97943,423.75623" />
+											<GoTo name="end" _npos="-252.5917,851.2501" />
+										</Success>
+										<Failure>
+											<CheckDataAction identifier="race1w" condition="eq 2" _npos="337.00723,-81.06848">
+												<Success>
+													<StatusEffectAction targettag="r1sounder" _npos="4960.7363,-294.79236">
+														<StatusEffect _npos="4961.413,-193.60559">
+															<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_sounds_cheering1.ogg" range="1000" _npos="4961.747,-91.940796" />
+														</StatusEffect>
+													</StatusEffectAction>
+													<SpawnAction itemidentifier="ita_effects_smoker2" spawnpointtag="smoker1" _npos="480.55533,-1012.8739" />
+													<SpawnAction itemidentifier="ita_effects_smoker2" spawnpointtag="smoker2" _npos="480.55533,-1012.8739" />
+													<SpawnAction itemidentifier="ita_effects_smoker2" spawnpointtag="smoker3" _npos="480.55533,-1012.8739" />
+													<SpawnAction itemidentifier="ita_effects_smoker2" spawnpointtag="smoker4" _npos="477.553,-1012.8739" />
+													<ConversationAction text="EventText.itarace1.0.2" eventsprite="mediator" dialogtype="Small" _npos="352.00018,422.15988" />
+													<GoTo name="end" _npos="350.89377,852.90765" />
+												</Success>
+												<Failure>
+													<CheckDataAction identifier="race1w" condition="eq 3" _npos="802.6248,-76.426056">
+														<Success>
+															<SpawnAction itemidentifier="ita_effects_smoker3" spawnpointtag="smoker1" _npos="476.58163,-594.19366" />
+															<SpawnAction itemidentifier="ita_effects_smoker3" spawnpointtag="smoker2" _npos="479.58395,-594.19366" />
+															<SpawnAction itemidentifier="ita_effects_smoker3" spawnpointtag="smoker3" _npos="479.58395,-594.19366" />
+															<SpawnAction itemidentifier="ita_effects_smoker3" spawnpointtag="smoker4" _npos="474.08163,-592.81793" />
+															<StatusEffectAction targettag="r1sounder" _npos="4957.5483,-389.3667">
+																<StatusEffect _npos="4961.413,-193.60559">
+																	<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_sounds_cheering1.ogg" range="1000" _npos="4961.747,-91.940796" />
+																</StatusEffect>
+															</StatusEffectAction>
+															<ConversationAction text="EventText.itarace1.0.3" eventsprite="mediator" dialogtype="Small" _npos="801.5752,415.74652" />
+															<Label name="end" _npos="1237.7823,412.59546" />
+															<SetDataAction operation="Set" value="1" identifier="race1done" _npos="1632.3002,411.79678" />
+															<GoTo name="lab1" _npos="1632.3002,411.79678"/>
+														</Success>
+														<Failure>
+															<GoTo name="wincheck"/>
+														</Failure>
+													</CheckDataAction>
+												</Failure>
+											</CheckDataAction>
+										</Failure>
+									</CheckDataAction>
+
+									<CheckDataAction identifier="race1w" condition="eq 1" _npos="-64.6969,-77.99176">
+										<Success>
+											<StatusEffectAction targettag="r1sounder" _npos="4960.7363,-294.79236">
+												<StatusEffect _npos="4961.413,-193.60559">
+													<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_sounds_cheering1.ogg" range="1000" _npos="4961.747,-91.940796" />
+												</StatusEffect>
+											</StatusEffectAction>
+											<SpawnAction itemidentifier="ita_effects_smoker1" spawnpointtag="smoker1" _npos="478.80225,-1428.1719" />
+											<SpawnAction itemidentifier="ita_effects_smoker1" spawnpointtag="smoker2" _npos="481.80457,-1428.1719" />
+											<SpawnAction itemidentifier="ita_effects_smoker1" spawnpointtag="smoker3" _npos="481.80457,-1428.1719" />
+											<SpawnAction itemidentifier="ita_effects_smoker1" spawnpointtag="smoker4" _npos="481.80457,-1428.1719" />
+											<ConversationAction text="EventText.itarace1.0.1" eventsprite="mediator" dialogtype="Small" _npos="-238.97943,423.75623" />
+											<GoTo name="end" _npos="-252.5917,851.2501" />
+										</Success>
+										<Failure>
+											<CheckDataAction identifier="race1w" condition="eq 2" _npos="337.00723,-81.06848">
+												<Success>
+													<StatusEffectAction targettag="r1sounder" _npos="4960.7363,-294.79236">
+														<StatusEffect _npos="4961.413,-193.60559">
+															<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_sounds_cheering1.ogg" range="1000" _npos="4961.747,-91.940796" />
+														</StatusEffect>
+													</StatusEffectAction>
+													<SpawnAction itemidentifier="ita_effects_smoker2" spawnpointtag="smoker1" _npos="480.55533,-1012.8739" />
+													<SpawnAction itemidentifier="ita_effects_smoker2" spawnpointtag="smoker2" _npos="480.55533,-1012.8739" />
+													<SpawnAction itemidentifier="ita_effects_smoker2" spawnpointtag="smoker3" _npos="480.55533,-1012.8739" />
+													<SpawnAction itemidentifier="ita_effects_smoker2" spawnpointtag="smoker4" _npos="477.553,-1012.8739" />
+													<ConversationAction text="EventText.itarace1.0.2" eventsprite="mediator" dialogtype="Small" _npos="352.00018,422.15988" />
+													<GoTo name="end" _npos="350.89377,852.90765" />
+												</Success>
+												<Failure>
+													<CheckDataAction identifier="race1w" condition="eq 3" _npos="802.6248,-76.426056">
+														<Success>
+															<SpawnAction itemidentifier="ita_effects_smoker3" spawnpointtag="smoker1" _npos="476.58163,-594.19366" />
+															<SpawnAction itemidentifier="ita_effects_smoker3" spawnpointtag="smoker2" _npos="479.58395,-594.19366" />
+															<SpawnAction itemidentifier="ita_effects_smoker3" spawnpointtag="smoker3" _npos="479.58395,-594.19366" />
+															<SpawnAction itemidentifier="ita_effects_smoker3" spawnpointtag="smoker4" _npos="474.08163,-592.81793" />
+															<StatusEffectAction targettag="r1sounder" _npos="4957.5483,-389.3667">
+																<StatusEffect _npos="4961.413,-193.60559">
+																	<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_sounds_cheering1.ogg" range="1000" _npos="4961.747,-91.940796" />
+																</StatusEffect>
+															</StatusEffectAction>
+															<ConversationAction text="EventText.itarace1.0.3" eventsprite="mediator" dialogtype="Small" _npos="801.5752,415.74652" />
+															<Label name="end" _npos="1237.7823,412.59546" />
+															<SetDataAction operation="Set" value="1" identifier="race1done" _npos="1632.3002,411.79678" />
+														</Success>
+														<Failure>
+															<GoTo name="wincheck" _npos="1262.5122,-12.655579" />
+														</Failure>
+													</CheckDataAction>
+												</Failure>
+											</CheckDataAction>
+										</Failure>
+									</CheckDataAction>
+
+
+
+									<CheckDataAction identifier="race1done" condition="eq 1" _npos="2227.3,442.00708">
+										<Success>
+											<Label name="lab4" _npos="-1366.3448,-1104.7958" />
 											<ClearTagAction tag="beterw1" _npos="-816.03326,-1102.6361" />
 											<ClearTagAction tag="beterw2" _npos="-821.24976,-1007.7969" />
 											<ClearTagAction tag="beterw3" _npos="-821.24976,-907.34406" />
-
 											<WaitAction time="1" _npos="-446.2019,-810.50073" />
 											<CheckDataAction identifier="w1" condition="eq 1" _npos="47.246185,-1215.915">
 												<Success>
@@ -4898,7 +5136,7 @@
 																	<GoTo name="lab4" _npos="3282.7498,-1473.1537" />
 																</Success>
 																<Failure>
-																	<GoTo name="lab4" _npos="11400,0" />
+																	<GoTo name="lab4" _npos="1636.0354,-1205.7703" />
 																</Failure>
 															</CheckItemAction>
 														</Option>
@@ -4922,23 +5160,23 @@
 																	<CheckItemAction targettag="beterw2" itemidentifiers="ita_race_ticket2" _npos="1004.9049,-980.6812">
 																		<Success>
 																			<RemoveItemAction targettag="beterw2" itemidentifier="ita_race_ticket2" amount="1" _npos="1004.87036,-820.3992" />
-																			<StatusEffectAction targettag="raceman" _npos="4951.7275,-336.83514">
+																			<StatusEffectAction targettag="raceman" _npos="5274.0034,59.727753">
 																				<StatusEffect _npos="5545.007,66.65747">
 																					<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_cashregister.ogg" range="500" _npos="5246.0366,204.36029" />
 																				</StatusEffect>
 																			</StatusEffectAction>
-																			<SpawnAction itemidentifier="ita_bill200" targetinventory="beterw2" _npos="1488.592,-962.6271" />
+																			<SpawnAction itemidentifier="ita_bill200" targetinventory="beterw2" _npos="1477.0472,-962.6271" />
 																			<GoTo name="lab4" _npos="13928,644" />
 																		</Success>
 																		<Failure>
-																			<GoTo name="lab4" _npos="12000,0" />
+																			<GoTo name="lab4" _npos="1004.9866,-664.5406" />
 																		</Failure>
 																	</CheckItemAction>
 																</Option>
 															</ConversationAction>
 														</Success>
 														<Failure>
-															<CheckDataAction identifier="w3" condition="eq 1" _npos="48.694458,-779.717">
+															<CheckDataAction identifier="w3" condition="eq 1" _npos="55.07495,-796.7315">
 																<Success>
 																	<StatusEffectAction targettag="r1red" _npos="10456,672">
 																		<StatusEffect _npos="11056,493">
@@ -4950,12 +5188,12 @@
 																			<Remove _npos="12128,262" />
 																		</StatusEffect>
 																	</StatusEffectAction>
-																	<ConversationAction text="EventText.itarace1bet.11" speakertag="raceman" invokertag="beterw3" _npos="486.07443,-596.3571">
+																	<ConversationAction text="EventText.itarace1bet.11" speakertag="raceman" invokertag="beterw3" _npos="468.78793,-537.5828">
 																		<Option text="EventText.itarace1bet.9" endconversation="true">
-																			<CheckItemAction targettag="beterw3" itemidentifiers="ita_race_ticket3" _npos="999.6004,-562.7059">
+																			<CheckItemAction targettag="beterw3" itemidentifiers="ita_race_ticket3" _npos="990.3809,-492.40723">
 																				<Success>
-																					<RemoveItemAction targettag="beterw3" itemidentifier="ita_race_ticket3" amount="1" _npos="998.42126,-399.32703" />
-																					<StatusEffectAction targettag="raceman" _npos="4976.753,-318.81683">
+																					<RemoveItemAction targettag="beterw3" itemidentifier="ita_race_ticket3" amount="1" _npos="989.2018,-329.02838" />
+																					<StatusEffectAction targettag="raceman" _npos="4881.388,-465.00775">
 																						<StatusEffect _npos="5571.034,54.63562">
 																							<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_cashregister.ogg" range="500" _npos="5275.6997,198.93243" />
 																							<sound file="Content/Items/Weapons/Revolver2.ogg" range="1000.0" volume="1" _npos="15128,628" />
@@ -4965,7 +5203,7 @@
 																					<GoTo name="lab4" _npos="14528,585" />
 																				</Success>
 																				<Failure>
-																					<GoTo name="lab4" _npos="12600,0" />
+																					<GoTo name="lab4" _npos="989.70825,-160.4137" />
 																				</Failure>
 																			</CheckItemAction>
 																		</Option>
@@ -4978,76 +5216,11 @@
 											</CheckDataAction>
 										</Success>
 										<Failure>
-											<GoTo name="wait" _npos="2221.4006,627.66473" />
+											<GoTo name="wait" _npos="2224.1067,630.6666" />
 										</Failure>
 									</CheckDataAction>
 								</Option>
 							</ConversationAction>
-						</Failure>
-					</CheckDataAction>
-				</Failure>
-			</CheckDataAction>
-		</ScriptedEvent>
-		<ScriptedEvent identifier="ita_race1.0">
-			<TagAction criteria="itemtag:r1sounder" tag="r1sounder" />
-			<SpawnAction speciesname="Hammerheadspawn" targettag="bait" spawnpointtag="raceend" _npos="-1301.2632,-923.635" />
-			<AfflictionAction affliction="stun" strength="100" limbtype="Torso" targettag="bait" />
-			<SetDataAction operation="Set" value="0" identifier="w1" _npos="-927.5799,-923.4108" />
-			<SetDataAction operation="Set" value="0" identifier="w2" _npos="-554.948,-923.97766" />
-			<SetDataAction operation="Set" value="0" identifier="w3" _npos="-185.0044,-923.5746" />
-			<TriggerEventAction identifier="ita_race1.1" _npos="198.08527,-923.53125" />
-			<TriggerEventAction identifier="ita_race1.2" _npos="573.47546,-923.53076" />
-			<TriggerEventAction identifier="ita_race1.3" _npos="942.10864,-923.59656" />
-			<Label name="wincheck" _npos="936.7718,-512.6167" />
-			<CheckDataAction identifier="w1" condition="eq 1" _npos="1428.9169,-513.31616">
-				<Success>
-					<StatusEffectAction targettag="r1sounder" _npos="4960.7363,-294.79236">
-						<StatusEffect _npos="4961.413,-193.60559">
-							<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_sounds_cheering1.ogg" range="1000" _npos="4961.747,-91.940796" />
-						</StatusEffect>
-					</StatusEffectAction>
-					<SpawnAction itemidentifier="ita_effects_smoker1" spawnpointtag="smoker1" _npos="481.80457,-1428.1719"/>
-					<SpawnAction itemidentifier="ita_effects_smoker1" spawnpointtag="smoker2" _npos="481.80457,-1428.1719"/>
-					<SpawnAction itemidentifier="ita_effects_smoker1" spawnpointtag="smoker3" _npos="481.80457,-1428.1719"/>
-					<SpawnAction itemidentifier="ita_effects_smoker1" spawnpointtag="smoker4" _npos="481.80457,-1428.1719"/>
-					<ConversationAction text="EventText.itarace1.0.1" eventsprite="mediator" _npos="1432.308,-262.8426" dialogtype="Small"/>
-					<SetDataAction operation="Set" value="1" identifier="race1done"/>
-				</Success>
-				<Failure>
-					<CheckDataAction identifier="w2" condition="eq 1" _npos="1840.3585,-515.21155">
-						<Success>
-							<StatusEffectAction targettag="r1sounder" _npos="4960.7363,-294.79236">
-								<StatusEffect _npos="4961.413,-193.60559">
-									<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_sounds_cheering1.ogg" range="1000" _npos="4961.747,-91.940796" />
-								</StatusEffect>
-							</StatusEffectAction>
-							<SpawnAction itemidentifier="ita_effects_smoker2" spawnpointtag="smoker1" _npos="480.55533,-1012.8739"/>
-							<SpawnAction itemidentifier="ita_effects_smoker2" spawnpointtag="smoker2" _npos="480.55533,-1012.8739"/>
-							<SpawnAction itemidentifier="ita_effects_smoker2" spawnpointtag="smoker3" _npos="480.55533,-1012.8739"/>
-							<SpawnAction itemidentifier="ita_effects_smoker2" spawnpointtag="smoker4" _npos="480.55533,-1012.8739"/>
-							<ConversationAction text="EventText.itarace1.0.2" eventsprite="mediator" _npos="1841.3053,-267.22757" dialogtype="Small"/>
-							<SetDataAction operation="Set" value="1" identifier="race1done"/>
-						</Success>
-						<Failure>
-							<CheckDataAction identifier="w3" condition="eq 1" _npos="2262.5896,-510.76404">
-								<Success>
-									<SpawnAction itemidentifier="ita_effects_smoker3" spawnpointtag="smoker1" _npos="479.58395,-594.19366"/>
-									<SpawnAction itemidentifier="ita_effects_smoker3" spawnpointtag="smoker2" _npos="479.58395,-594.19366"/>
-									<SpawnAction itemidentifier="ita_effects_smoker3" spawnpointtag="smoker3" _npos="479.58395,-594.19366"/>
-									<SpawnAction itemidentifier="ita_effects_smoker3" spawnpointtag="smoker4" _npos="479.58395,-594.19366"/>
-									<StatusEffectAction targettag="r1sounder" _npos="4960.7363,-294.79236">
-										<StatusEffect _npos="4961.413,-193.60559">
-											<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_sounds_cheering1.ogg" range="1000" _npos="4961.747,-91.940796" />
-										</StatusEffect>
-									</StatusEffectAction>
-									<ConversationAction text="EventText.itarace1.0.3" eventsprite="mediator" _npos="2264.5444,-271.3252" dialogtype="Small"/>
-									<SetDataAction operation="Set" value="1" identifier="race1done"/>
-								</Success>
-								<Failure>
-									<!--<WaitAction time="0.5" _npos="2645.806,-447.23874" />-->
-									<GoTo name="wincheck" _npos="3075.5986,-445.7917" />
-								</Failure>
-							</CheckDataAction>
 						</Failure>
 					</CheckDataAction>
 				</Failure>
@@ -5059,14 +5232,10 @@
 			<TagAction criteria="itemtag:raceend1" tag="raceend2" _npos="430.7741,-300.49716" />
 			<SpawnAction speciesname="mudraptorred" targettag="red" spawnpointtag="racestart" _npos="894.2991,-487.4691" />
 			<TriggerAction target1tag="red" target2tag="raceend2" radius="300" disableincombat="false" disableiftargetincapacitated="false" _npos="1367.6598,-460.98938" />
-			<CheckDataAction identifier="w2" condition="eq 1" _npos="1835.6345,-454.31213">
-				<Failure>
-					<CheckDataAction identifier="w3" condition="eq 1" _npos="2267.3616,-390.04065">
-						<Failure>
-							<SetDataAction operation="Set" value="1" identifier="w1" _npos="2718.5479,-328.4523" />
-						</Failure>
-					</CheckDataAction>
-				</Failure>
+			<CheckDataAction identifier="race1w" condition="eq 0" _npos="1888.2964,-460.78333">
+				<Success>
+					<SetDataAction operation="Set" value="1" identifier="race1w" _npos="2330.61,-429.53638" />
+				</Success>
 			</CheckDataAction>
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_race1.2">
@@ -5075,15 +5244,10 @@
 			<TagAction criteria="itemtag:racestart1" tag="racestart" _npos="272.11383,-255.12164" />
 			<SpawnAction speciesname="mudraptorgreen" targettag="green" spawnpointtag="racestart" _npos="650.5545,-256.58127" />
 			<TriggerAction target1tag="green" target2tag="raceend2" radius="300" disableincombat="false" disableiftargetincapacitated="false" _npos="1175.7659,-271.0426" />
-			<CheckDataAction identifier="w1" condition="eq 1" _npos="1702.1553,-278.68335">
-				<Failure>
-					<CheckDataAction identifier="w3" condition="eq 1" _npos="2268.8557,-224.1726">
-						<Failure>
-							<SetDataAction operation="Set" value="1" identifier="w2" _npos="2711.9363,-145.6735" />
-							<SetDataAction operation="Set" value="0" identifier="start" _npos="3149.2222,-134.40894" />
-						</Failure>
-					</CheckDataAction>
-				</Failure>
+			<CheckDataAction identifier="race1w" condition="eq 0" _npos="1888.2964,-460.78333">
+				<Success>
+					<SetDataAction operation="Set" value="2" identifier="race1w" _npos="2330.61,-429.53638" />
+				</Success>
 			</CheckDataAction>
 		</ScriptedEvent>
 		<ScriptedEvent identifier="ita_race1.3">
@@ -5092,35 +5256,12 @@
 			<TagAction criteria="itemtag:racestart1" tag="racestart2" _npos="934.5123,-191.42786" />
 			<SpawnAction speciesname="mudraptorblue" targettag="blue" spawnpointtag="racestart" _npos="1305.0569,-191.71396" />
 			<TriggerAction target1tag="blue" target2tag="raceend2" radius="300" _npos="1684.6113,-191.00269" />
-			<CheckDataAction identifier="w1" condition="eq 1" _npos="2053.0217,-191.15247">
-				<Failure>
-					<CheckDataAction identifier="w2" condition="eq 1" _npos="2419.385,-127.39166">
-						<Failure>
-							<SetDataAction operation="Set" value="1" identifier="w3" _npos="2788.5056,-63.471832" />
-							<SetDataAction operation="Set" value="0" identifier="start" _npos="3158.2788,-63.60553" />
-						</Failure>
-					</CheckDataAction>
-				</Failure>
+			<CheckDataAction identifier="race1w" condition="eq 0" _npos="1888.2964,-460.78333">
+				<Success>
+					<SetDataAction operation="Set" value="3" identifier="race1w" _npos="2330.61,-429.53638" />
+				</Success>
 			</CheckDataAction>
-		</ScriptedEvent>
-		<ScriptedEvent identifier="ita_race1start">
-			<TagAction criteria="itemtag:raceopen" tag="racedoor" _npos="-440.5974,0.6141815" />
-			<TagAction criteria="itemtag:att1" tag="att1"/>
-			<TagAction criteria="itemtag:att2" tag="att2"/>
-			<TagAction criteria="itemtag:att3" tag="att3"/>
-			<TagAction criteria="itemtag:att4" tag="att4"/>
-			<SetDataAction operation="Set" value="1" identifier="start" _npos="29.869507,-0.9338379" />
-			<SpawnAction itemidentifier="alienpowercell" targetinventory="racedoor" _npos="438.53772,21.887482" />
-			<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="commoner" targettag="w1" spawnpointtag="hr" />
-			<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="commoner" targettag="w2" spawnpointtag="hr" />
-			<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="commoner" targettag="w3" spawnpointtag="hr" />
-			<SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="commoner" targettag="w4" spawnpointtag="hr" />
-			<NPCFollowAction npctag="w1" targettag="att1" follow="true" />
-			<NPCFollowAction npctag="w2" targettag="att2" follow="true" />
-			<NPCFollowAction npctag="w3" targettag="att3" follow="true" />
-			<NPCFollowAction npctag="w4" targettag="att4" follow="true" />
-			<WaitAction time="15.0" />
-		</ScriptedEvent>					
+		</ScriptedEvent>				
 		<!--TRAINERS-->
 		<ScriptedEvent identifier="ita_trainer1">
 			<CheckDataAction identifier="trainer1" condition="eq 0" _npos="-3761.239,-268.341">
