@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <infotexts language="Russian" nowhitespace="false" translatedname="Русский">
-
-<!-- When adding new text, do it so at the bottom under the 'New additions' & 'Changed values' respectively. If it's a new tag entirely, put it under the new additions one; If it's an update to an existing value, put it under the changed values one. -->
-<!-- DO NOT EDIT EXISTING TAGS FOR ALREADY TRANSLATED LINES -> if you need a new tag for something, add it under the 'New values' header and comment if there's some other tag that should be replaced -->
-
-	
 	<!--Afflictions-->
 	
 	<afflictionname.exposure>Лучевые Ожоги</afflictionname.exposure>
@@ -203,8 +198,8 @@
 	<eventtext.v3soundinthevent5>Голыми руками открутить винты не удалось.</eventtext.v3soundinthevent5>
 	<eventtext.v3soundinthevent6>[Фонарик] Посветить фонариком через в вентиляцию, может быть удастся что-нибудь разглядеть.</eventtext.v3soundinthevent6>
 	<eventtext.v3soundinthevent7>Вы видите, что лопасти вентилятора задевают маленькую металлическую коробочку. Однако, чтоб достать ее, вам придется открутить вентиляционную решетку...</eventtext.v3soundinthevent7>
-	<eventtext.v3soundinthevent8>Вы хлопаете себя по карманам, в поисках фонарика, но вспоминаете, что у вас его нет. Может быть найдется, у кого-то из ваших товарищей?</eventtext.v3soundinthevent8>
-	<eventtext.v3soundinthevent9>Проигнорировать звук. Быть может, кто-то из ваших товарищей по команде захочет разобраться с этим...</eventtext.v3soundinthevent9>
+	<eventtext.v3soundinthevent8>Вы хлопаете себя по карманам в поисках фонарика, но вспоминаете, что у вас его нет. Может быть найдется, у кого-то из ваших товарищей?</eventtext.v3soundinthevent8>
+	<eventtext.v3soundinthevent9>Проигнорировать звук. Быть может кто-то из ваших товарищей по команде захочет разобраться с этим...</eventtext.v3soundinthevent9>
 
 	<eventtext.v4goodsamaritan.1>Вы натыкаетесь на лежащего без сознания рабочего. Никаких признаков насилия нет, и никого вокруг - тоже. Медикаменты нынче не дешевы, но, быть может если вылечить бедолагу это улучшит отношения с местными.</eventtext.v4goodsamaritan.1>
 	<eventtext.v4goodsamaritan.2>После умелого укола дозой налоксона вы обнаруживаете, что у пациента гиперчувствительность к парабенам. Вам не остается ничего другово, как продолжить вводить налоксон небольшими дозами, наблюдая за реакцией пациента. Кажется ему становится лучше.&#xD;&#xA;&#xD;&#xA;[Медицина +5]</eventtext.v4goodsamaritan.2>
@@ -365,12 +360,12 @@
 	<eventtext.itarace1bet.3>Недостаточно наличности.</eventtext.itarace1bet.3>
 	<eventtext.itarace1bet.4>Поставить на Зеленого Раптора.</eventtext.itarace1bet.4>
 	<eventtext.itarace1bet.5>Поставить на Синего Раптора.</eventtext.itarace1bet.5>
-	<eventtext.itarace1bet.6>&quot;Не в этот раз, пожалуй.&quot;</eventtext.itarace1bet.6>
-	<eventtext.itarace1bet.7>&quot;Начинайте гонку!&quot;</eventtext.itarace1bet.7>
-	<eventtext.itarace1bet.8>&quot;Красный выиграл гонку! Возвращайтесь обналичить свой жетон!&quot;</eventtext.itarace1bet.8>
+	<eventtext.itarace1bet.6>Не в этот раз, пожалуй.</eventtext.itarace1bet.6>
+	<eventtext.itarace1bet.7>Начинайте гонку!</eventtext.itarace1bet.7>
+	<eventtext.itarace1bet.8>Красный выиграл гонку! Возвращайтесь обналичить свой жетон!</eventtext.itarace1bet.8>
 	<eventtext.itarace1bet.9>Обналичить жетон.</eventtext.itarace1bet.9>
-	<eventtext.itarace1bet.10>&quot;Зеленый сделал своих соперников! Возвращайтесь обналичить свой жетон!&quot;</eventtext.itarace1bet.10>
-	<eventtext.itarace1bet.11>&quot;Синий вырвался вперед! Возвращайтесь обналичить свой жетон!&quot;</eventtext.itarace1bet.11>
+	<eventtext.itarace1bet.10>Зеленый сделал своих соперников! Возвращайтесь обналичить свой жетон!</eventtext.itarace1bet.10>
+	<eventtext.itarace1bet.11>Синий вырвался вперед! Возвращайтесь обналичить свой жетон!</eventtext.itarace1bet.11>
 
 	<eventtext.itarace1.0.1>В забеге победил Красный!</eventtext.itarace1.0.1>
 	<eventtext.itarace1.0.2>В забеге победил Зеленый!</eventtext.itarace1.0.2>
@@ -647,11 +642,12 @@
 	<entityname.ita_alienchestwhite>Сундук Древних - Белый</entityname.ita_alienchestwhite>
 	<entityname.ita_alienchestblue>Сундук Древних - Синий</entityname.ita_alienchestblue>
 	<entityname.ita_alienchestred>Сундук Древних - Красный</entityname.ita_alienchestred>
-	<entityname.ita_divingsuit>Водолазная броня Повстанца</entityname.ita_divingsuit>
+	<entityname.ita_divingsuit>Юпитерианский Скафандр</entityname.ita_divingsuit>
 	<entityname.ita_alienmace>Булава Древних</entityname.ita_alienmace>
 	<entityname.ita_alienmace1>Технология Древних - нижняя часть</entityname.ita_alienmace1>
 	<entityname.ita_alienmace2>Технология Древних - верхняя часть</entityname.ita_alienmace2>
-	<entityname.ita_ancientpiece>Изображение Древних</entityname.ita_ancientpiece>
+	<entityname.ita_ancientpiece>Безделушка Древних</entityname.ita_ancientpiece>
+	<entitydescription.ita_ancientpiece>Тяжелое украшение из чужеродных металлов.</entitydescription.ita_ancientpiece>
 	
 	<entityname.spawnerfractal>Точка материализации Фрактальных Стражей</entityname.spawnerfractal>
 	<entityname.ita_fabricator1>Комбинатор Древних</entityname.ita_fabricator1>
@@ -665,11 +661,3 @@
 	<entityname.ita_alienhatch_red>Люк Древних - Красный</entityname.ita_alienhatch_red>
 	
 	<locationchange.cave.changeto.mine>Колонисты с ближайших аванпостов основали новую шахту в пещере [previousname].</locationchange.cave.changeto.mine>
-	
-	<!-- When adding new text, do it so at the bottom under the 'New additions' & 'Changed values' respectively. If it's a new tag entirely, put it under the new additions one; If it's an update to an existing value, put it under the changed values one. -->
-	<!-- DO NOT EDIT EXISTING TAGS FOR ALREADY TRANSLATED LINES -> if you need a new tag for something, add it under the 'New values' header and comment if there's some other tag that should be replaced -->
-	
-	<!--LINES MODIFIED-->	
-
-	<!--NEW LINES ADDED-->
-</infotexts>
