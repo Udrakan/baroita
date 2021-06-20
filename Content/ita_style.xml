@@ -176,8 +176,6 @@
   -->
   <TitleText color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="255,255,255,255" pressedcolor="255,255,255,255">
     <Sprite texture="Mods/IntoTheAbyss/ita_titletext.png" sourcerect="0,520,1024,328" tile="false" maintainaspectratio="true">
-      <override language="Traditional Chinese" texture="Content/UI/titleText.png" sourcerect="0,176,1024,343" />
-      <override language="Simplified Chinese" texture="Content/UI/titleText.png" sourcerect="0,176,1024,343" />
     </Sprite>
   </TitleText>
   <ita_document1 color="255,255,255,255" textcolor="0,0,0,255">
