@@ -1,25 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Override
-  sizemin="7000,8000"
-  sizemax="7000,8000"
-  roomdivisioniterationsmin="4"
-  roomdivisioniterationsmax="4"
-  verticalsplitprobability="0"
-  minsplitwidth="1100"
-  minsplitheight="600"
-  roomwidthrange="0.7,0.8"
-  roomheightrange="0.7,0.8"
-  corridorwidthrange="256,256">
+<Override>
   <Structures
-    sizemin="7000,8000"
-    sizemax="7000,8000"
+    sizemin="7000,6500"
+    sizemax="8400,8600"
+    roomdivisioniterationsmin="3"
+    roomdivisioniterationsmax="5"
+    verticalsplitprobability="0.1"
     minsplitwidth="1100"
     minsplitheight="600"
-    roomdivisioniterationsmin="4"
-    roomdivisioniterationsmax="4"
-    verticalsplitprobability="0"
-    roomwidthrange="0.7,0.8"
-    roomheightrange="0.7,0.8"
+    roomwidthrange="0.5,0.7"
+    roomheightrange="0.7,0.9"
     corridorwidthrange="256,256">
     <RoomType
       name="vault"
@@ -51,12 +41,12 @@
           prefab="physicorium90"
           alignment="Left"
           type="Prop"
-          commonness="5" />
+          commonness="3" />
         <itemassembly
           prefab="physicorium270"
           alignment="Right"
           type="Prop"
-          commonness="5" />
+          commonness="2" />
         <itemassembly
           prefab="fulgurium90"
           alignment="Left"
@@ -71,24 +61,24 @@
           prefab="sulphuriteshard90"
           alignment="Left"
           type="Prop"
-          commonness="5" />
+          commonness="4" />
         <itemassembly
           prefab="sulphuriteshard270"
           alignment="Right"
           type="Prop"
-          commonness="5" />
+          commonness="4" />
       </ChooseOne>
       <ChooseOne>
         <itemassembly
           prefab="physicorium90"
           alignment="Left"
           type="Prop"
-          commonness="5" />
+          commonness="3" />
         <itemassembly
           prefab="physicorium270"
           alignment="Right"
           type="Prop"
-          commonness="5" />
+          commonness="2" />
         <itemassembly
           prefab="fulgurium90"
           alignment="Left"
@@ -103,12 +93,12 @@
           prefab="sulphuriteshard90"
           alignment="Left"
           type="Prop"
-          commonness="5" />
+          commonness="4" />
         <itemassembly
           prefab="sulphuriteshard270"
           alignment="Right"
           type="Prop"
-          commonness="5" />
+          commonness="4" />
       </ChooseOne>
       <!--Bossfight-->
       <ChooseOne>
@@ -245,7 +235,9 @@
           prefab="ita_corridor_trap1a"
           alignment="Center"
           type="Door"
-          minroomsize="450,0"
+          minroomsize="350,0"
+          minoffset="-150,0"
+          maxoffset="-150,0"
           commonness="3" />
         <!--<item prefab="ita_corridor_1a" alignment="Center" type="Door" minroomsize="450,0" commonness="5"/>-->
         <item
@@ -265,6 +257,8 @@
           alignment="Center"
           type="Door"
           minroomsize="250,0"
+          minoffset="-150,0"
+          maxoffset="-150,0"
           commonness="10" />
       </ChooseOne>
     </RoomType>
@@ -340,7 +334,7 @@
         <itemassembly
           prefab="ita_lights4"
           alignment="Center"
-          minroomsize="400,150"
+          minroomsize="650,150"
           type="Prop"
           commonness="5" />
         <itemassembly
@@ -352,7 +346,7 @@
         <itemassembly
           prefab="ita_genericb_house1"
           alignment="Center"
-          minroomsize="500,650"
+          minroomsize="600,650"
           type="Prop"
           commonness="1">
           <item
@@ -387,7 +381,7 @@
         <itemassembly
           prefab="ita_genericb_house2"
           alignment="Center"
-          minroomsize="500,650"
+          minroomsize="600,650"
           type="Prop"
           commonness="1">
           <item
@@ -477,7 +471,7 @@
         <itemassembly
           prefab="ita_genericb_pump3"
           alignment="Center"
-          minroomsize="300,350"
+          minroomsize="300,600"
           type="Prop"
           commonness="2">
           <item
@@ -571,7 +565,7 @@
         <itemassembly
           prefab="ita_infight1"
           alignment="Center"
-          minroomsize="550,550"
+          minroomsize="650,550"
           type="Prop"
           commonness="5" />
         <itemassembly
@@ -624,64 +618,64 @@
           prefab="incendium0"
           alignment="Bottom"
           type="Prop"
-          commonness="5" />
+          commonness="3" />
         <itemassembly
           prefab="dementonite0"
           alignment="Bottom"
           type="Prop"
-          commonness="5" />
+          commonness="4" />
         <itemassembly
           prefab="oxygeniteshard0"
           alignment="Bottom"
           type="Prop"
-          commonness="5" />
+          commonness="4" />
         <itemassembly
           prefab="incendium180"
           alignment="Top"
           type="Prop"
-          commonness="5" />
+          commonness="3" />
         <itemassembly
           prefab="dementonite180"
           alignment="Top"
           type="Prop"
-          commonness="5" />
+          commonness="4" />
         <itemassembly
           prefab="oxygeniteshard180"
           alignment="Top"
           type="Prop"
-          commonness="5" />
+          commonness="4" />
       </ChooseOne>
       <ChooseOne>
         <itemassembly
           prefab="incendium90"
           alignment="Left"
           type="Prop"
-          commonness="5" />
+          commonness="3" />
         <itemassembly
           prefab="dementonite90"
           alignment="Left"
           type="Prop"
-          commonness="5" />
+          commonness="4" />
         <itemassembly
           prefab="oxygeniteshard90"
           alignment="Left"
           type="Prop"
-          commonness="5" />
+          commonness="4" />
         <itemassembly
           prefab="incendium270"
           alignment="Right"
           type="Prop"
-          commonness="5" />
+          commonness="3" />
         <itemassembly
           prefab="dementonite270"
           alignment="Right"
           type="Prop"
-          commonness="5" />
+          commonness="4" />
         <itemassembly
           prefab="oxygeniteshard270"
           alignment="Right"
           type="Prop"
-          commonness="5" />
+          commonness="4" />
       </ChooseOne>
     </RoomType>
     <RoomType
@@ -692,7 +686,7 @@
       maxwateramount="0.6">
       <structure
         prefab="RuinWallHeavyHorizontal"
-        alignment="Top, Bottom"
+        alignment="Top,Bottom"
         type="Wall" />
       <structure
         prefab="RuinWallHeavyVertical"
@@ -766,10 +760,12 @@
         </itemassembly>
         <itemassembly
           prefab="ita_armory_blackchest2"
-          alignment="Center"
-          minroomsize="500,350"
+          alignment="Left"
+          minroomsize="900,750"
           type="Prop"
-          commonness="2">
+          minoffset="0,-30"
+          maxoffset="0,-30"
+          commonness="3">
           <item
             prefab="alientrinket1"
             alignment="Center"
@@ -794,10 +790,10 @@
         </itemassembly>
         <itemassembly
           prefab="ita_armory_blackchest3"
-          alignment="Center"
-          minroomsize="350,350"
+          alignment="Right"
+          minroomsize="900,800"
           type="Prop"
-          commonness="2">
+          commonness="3">
           <item
             prefab="alientrinket1"
             alignment="Center"
@@ -822,30 +818,30 @@
         </itemassembly>
         <itemassembly
           prefab="ita_armory_bluechest1"
-          alignment="Center"
+          alignment="Top,Center"
           maxoffset="0.0,0.0"
-          minroomsize="400,800"
+          minroomsize="700,900"
           type="Prop"
-          commonness="1" />
+          commonness="2" />
         <itemassembly
           prefab="ita_armory_bluechest2"
           alignment="Center"
           maxoffset="0.0,0.0"
-          minroomsize="400,800"
+          minroomsize="700,900"
           type="Prop"
-          commonness="1" />
+          commonness="2" />
         <itemassembly
           prefab="ita_armory_redchest1"
           alignment="Center"
           maxoffset="0.0,0.0"
-          minroomsize="400,800"
+          minroomsize="750,800"
           type="Prop"
           commonness="1" />
         <itemassembly
           prefab="ita_armory_redchest2"
           alignment="Center"
           maxoffset="0.0,0.0"
-          minroomsize="400,800"
+          minroomsize="750,800"
           type="Prop"
           commonness="1" />
       </ChooseOne>
