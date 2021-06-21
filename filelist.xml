@@ -115,10 +115,6 @@
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_engineering2.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_lifesupport1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_fabrication1.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_atrium1.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shop_clothier1.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shop_clinic1R.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shop_botanist1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_military_dock1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_military_prison1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_military_engineering1.sub" />
@@ -130,13 +126,13 @@
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_research_ancient1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_smallengineering1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shop_petshop1.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_atrium3.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shop_botanist2.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_hab_racetrack1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_bar1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shipyard.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shipyard1.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_atrium1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_atrium2.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_atrium3.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_city_dock2.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_engineering3.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_military_prison2.sub" />
@@ -149,7 +145,6 @@
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_city_dock3.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave3.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shop_bar1R.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shop_electrician1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_fabrication2.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shop_gunshop1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_military_dock2.sub" />
@@ -170,8 +165,6 @@
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave_ice1_special1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave_ice1_horiza4.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_cave_ice1_entrance2.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shop_climber1R.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_shop_bank1R.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_milengineering.sub" />
   <Submarine file="Mods/IntoTheAbyss/Content/Subs/ita_beacon_sep1a.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_research_ancient1.sub" />
@@ -180,4 +173,11 @@
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_hab_engineering.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_hab_office.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_hab_crewquarters2.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_city_shop_botanist1.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_city_shop_botanist2.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_city_shop_climber1R.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_city_shop_bank1R.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_city_shop_clinic1R.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_city_shop_clothier1.sub" />
+  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_city_shop_electrician1.sub" />
 </contentpackage>
