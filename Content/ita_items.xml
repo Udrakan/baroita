@@ -4376,7 +4376,7 @@
         <Attack targetimpulse="2" severlimbsprobability="0" itemdamage="0">
           <Affliction identifier="stun" strength="0.5" />
         </Attack>
-        <StatusEffect type="OnImpact" target="Hull" oxygen="5000.0" />
+        <StatusEffect type="OnImpact" target="Hull" oxygen="5000.0" duration="2" disabledeltatime="true"/>
         <StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true">
           <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="5000" selectionmode="All" />
           <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="5000" />
