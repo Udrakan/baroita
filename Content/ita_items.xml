@@ -2656,18 +2656,17 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  <Item name="-" identifier="ita_adresscard" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" noninteractable="true">
+  <Item name="-" identifier="ita_adresscard" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" noninteractable="true" hideinmenus="true">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,64,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/idcard.png" depth="0.8" sourcerect="0,0,16,16" />
     <Body width="16" height="12" density="20" />
     <IdCard slots="Card" msg="ItemMsgPickUpSelect" />
-    <Holdable slots="Card" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnContained" target="Character" stackable="false" disabledeltatime="true" delay="0.6">
-        <Affliction identifier="stun" strength="-50" />
-		<Affliction identifier="incrementalstun" strength="-50" />
-		<Affliction identifier="progressivestun" strength="-50" />
+    <Wearable slots="Card" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <sprite texture="Content/Items/idcard.png" depth="0.9" sourcerect="0,0,1,1" limb="Torso" hidelimb="false"/>
+      <StatusEffect type="OnWearing" target="Character" stackable="false" disabledeltatime="true" delay="5">
+        <Affliction identifier="hardass" strength="1" />
       </StatusEffect>
-    </Holdable>
+    </Wearable>
   </Item>
   <Item name="HealMist" identifier="healmist" category="Equipment" Tags="smallitem,medical" useinhealthinterface="true" cargocontaineridentifier="chemicalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -4390,7 +4389,7 @@
           <Remove />
         </StatusEffect>
       </Projectile>
-      <ItemContainer autofill="False" hideitems="true" capacity="1" drawinventory="false" ShowContainedStateIndicator="false" canbeselected="false" removecontaineditemsondeconstruct="true">
+      <ItemContainer autofill="False" hideitems="true" capacity="1" drawinventory="false" allowdraganddrop="false" ShowContainedStateIndicator="false" canbeselected="false" removecontaineditemsondeconstruct="true">
         <Containable items="oxygeniteshard"/>
       </ItemContainer>
     </Item>

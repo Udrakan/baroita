@@ -350,29 +350,43 @@
 			<ItemSet>
 				<Item identifier="securitypatrolclothes" equip="true" />
 				<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+				<Item identifier="toolbelt" equip="true" >
+					<Item identifier="divingmask">
+						<Item identifier="oxygentank" />
+					</Item>
+					<Item identifier="divingknife" />
+					<Item identifier="batterycell" />
+				</Item>
 				<Item identifier="smg">
 					<Item identifier="smgmagazine" />
 				</Item>
 				<Item identifier="smgmagazine" />
 				<Item identifier="smgmagazine" />
 				<Item identifier="idcard"/>
-				<Item identifier="divingknife" />
 				<Item identifier="handcuffs" />
-				<Item identifier="batterycell" />
 				<Item identifier="stunbaton">
 					<Item identifier="batterycell" />
 				</Item>
 				<Item identifier="bodyarmor" equip="true"/>
 				<Item identifier="ballistichelmet1" equip="true"/>
-				<Item identifier="divingmask">
-					<Item identifier="oxygentank" />
-				</Item> 
 			</ItemSet>
 		</npc>
 		<npc identifier="ita_guard2" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol" aimspeed="0.85" aimaccuracy="0.55" >
 			<ItemSet>
 				<Item identifier="securitypatrolclothes" equip="true" />
 				<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+				<Item identifier="toolbelt" equip="true" >
+					<Item identifier="shotgunshell" />
+					<Item identifier="shotgunshell" />
+					<Item identifier="shotgunshell" />
+					<Item identifier="shotgunshell" />
+					<Item identifier="shotgunshell" />
+					<Item identifier="shotgunshell" />
+					<Item identifier="divingmask">
+						<Item identifier="oxygentank" />
+					</Item>
+					<Item identifier="divingknife" />
+				</Item>
 				<Item identifier="shotgun">
 					<Item identifier="shotgunshell" />
 					<Item identifier="shotgunshell" />
@@ -383,26 +397,25 @@
 				</Item>
 				<Item identifier="handcuffs" />
 				<Item identifier="batterycell" />
-				<Item identifier="shotgunshell" />
-				<Item identifier="shotgunshell" />
-				<Item identifier="shotgunshell" />
-				<Item identifier="shotgunshell" />
-				<Item identifier="divingknife" />
 				<Item identifier="idcard"/>
 				<Item identifier="stunbaton">
 					<Item identifier="batterycell" />
 				</Item>
 				<Item identifier="bodyarmor" equip="true"/>
 				<Item identifier="ballistichelmet1" equip="true"/>
-				<Item identifier="divingmask">
-					<Item identifier="oxygentank" />
-				</Item> 
 			</ItemSet>
 		</npc>		
 		<npc identifier="ita_guard3" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol" aimspeed="0.85" aimaccuracy="0.55" >
 			<ItemSet>
 				<Item identifier="securitypatrolclothes" equip="true" />
 				<Item identifier="ita_adresscard" equip="true" tags="id_outpostsecurity,id_card"/>
+				<Item identifier="toolbelt" equip="true" >
+					<Item identifier="divingmask">
+						<Item identifier="oxygentank" />
+					</Item>
+					<Item identifier="divingknife" />
+					<Item identifier="batterycell" />
+				</Item>
 				<Item identifier="grenadelauncher">
 					<Item identifier="40mmgrenade" />
 				</Item>
@@ -417,17 +430,12 @@
 				<Item identifier="40mmgrenade" />
 				<Item identifier="40mmgrenade" />
 				<Item identifier="handcuffs" />
-				<Item identifier="batterycell" />
-				<Item identifier="divingknife" />
 				<Item identifier="idcard"/>
 				<Item identifier="stunbaton">
 					<Item identifier="batterycell" />
 				</Item>
 				<Item identifier="bodyarmor" equip="true"/>
 				<Item identifier="ballistichelmet1" equip="true"/>
-				<Item identifier="divingmask">
-					<Item identifier="oxygentank" />
-				</Item> 
 			</ItemSet>
 		</npc>
 		<npc identifier="ita_guardofficer1" job="securityofficer" spawnpointtags="security" healthmultiplier="2" behavior="Patrol" aimspeed="0.65" aimaccuracy="0.55" >
