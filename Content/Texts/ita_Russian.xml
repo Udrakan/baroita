@@ -72,14 +72,14 @@
 	<missionsuccess.cargoeggs3>Транспортировка прошла успешно, к несчастью для раптора.</missionsuccess.cargoeggs3>
 
 	<missionname.killwatcher>Уничтожение Смотрителя</missionname.killwatcher>
-	<missiondescription.killwatcher>Избавьтесь от Смотрителя и его прислужников.</missiondescription.killwatcher>
+	<missiondescription.killwatcher>Особенно агрессивный Смотритель терроризирует суда, курсирующие между [location1] и [location2]. Тем, кто убьет это существо и его прислужников, обещана награда в виде [reward] кредитов.</missiondescription.killwatcher>
 	<missionsonarlabel.killwatcher>Цель</missionsonarlabel.killwatcher>
 	<missionsuccess.killwatcher>Смотритель и его прислужники были уничтожены.</missionsuccess.killwatcher>
 	<missionheader0.killwatcher>Цели уничтожены</missionheader0.killwatcher>
 	<missionmessage0.killwatcher>Смотритель и его прислужники были уничтожены. На аванпосте вас ожидает вознаграждение.</missionmessage0.killwatcher>
 
 	<missionname.killmolochboss>Уничтожение Древнего Молоха</missionname.killmolochboss>
-	<missiondescription.killmolochboss>Этот древний молох вызывает серьезные проблемы с логистикой и достаточно опасен, что даже потопил пару ударных подводных лодок. Награда в размере [reward]кр. обещана тем профессионалам, что смогут избавиться от него.</missiondescription.killmolochboss>
+	<missiondescription.killmolochboss>Этот древний молох вызывает серьезные проблемы с логистикой и настолько опасен, что даже потопил несколько военных подводных лодок. Награда в размере [reward]кр. обещана тем профессионалам, что смогут избавиться от него.</missiondescription.killmolochboss>
 	<missionsonarlabel.killmolochboss>Цель</missionsonarlabel.killmolochboss>
 	<missionsuccess.killmolochboss>Древний Молох был уничтожен.</missionsuccess.killmolochboss>
 	<missionheader0.killmolochboss>Цель уничтожена</missionheader0.killmolochboss>
@@ -146,6 +146,55 @@
 	<missionsonarlabel.ita_drycave_clear1>O</missionsonarlabel.ita_drycave_clear1>
 	<missionheader0.ita_drycave_clear1>Гнездо Зачищено</missionheader0.ita_drycave_clear1>
 	<missionsuccess.ita_drycave_clear1>Вы уничтожили гнездо, помешав тварям развитить здесь их род.</missionsuccess.ita_drycave_clear1>
+
+    <missionname.amblygonitecollection>Добыча амблигонита</missionname.amblygonitecollection>
+    <missiondescription.amblygonitecollection>Говорят, где-то между точками [location1] и [location2] есть залежи амблигонита. Привезите десяток образцов амблигонита, чтобы проверить, так ли это.</missiondescription.amblygonitecollection>
+    <missionheader0.amblygonitecollection>Амблигонит добыт</missionheader0.amblygonitecollection>
+    <missionmessage0.amblygonitecollection>Вы добыли достаточно амблигонита. Доставьте его на аванпост и получите награду.</missionmessage0.amblygonitecollection>
+    <missionsuccess.amblygonitecollection>Существование залежей амблигонита подтверждено.</missionsuccess.amblygonitecollection>
+    <missionsonarlabel.amblygonitecollection>Амблигонит</missionsonarlabel.amblygonitecollection>
+
+	<missionname.sphaleritecollection>Добыча сфалерита</missionname.sphaleritecollection>
+	<missiondescription.sphaleritecollection>Говорят, где-то между точками [location1] и [location2] есть залежи сфалерита. Привезите десяток образцов сфалерита, чтобы проверить, так ли это.</missiondescription.sphaleritecollection>
+	<missionheader0.sphaleritecollection>Сфалерит добыт</missionheader0.sphaleritecollection>
+	<missionmessage0.sphaleritecollection>Вы добыли достаточно сфалерита. Доставьте его на аванпост и получите награду.</missionmessage0.sphaleritecollection>
+	<missionsuccess.sphaleritecollection>Существование залежей сфалерита подтверждено.</missionsuccess.sphaleritecollection>
+	<missionsonarlabel.sphaleritecollection>Сфалерит</missionsonarlabel.sphaleritecollection>
+
+	<missionname.ilmenitecollection>Добыча ильменитовой руды</missionname.ilmenitecollection>
+	<missiondescription.ilmenitecollection>Говорят, где-то между точками [location1] и [location2] есть залежи ильменитовой руды. Привезите десяток образцов ильменитовой руды, чтобы проверить, так ли это.</missiondescription.ilmenitecollection>
+	<missionheader0.ilmenitecollection>Ильменит добыт</missionheader0.ilmenitecollection>
+	<missionmessage0.ilmenitecollection>Вы добыли достаточно ильменитовой руды. Доставьте его на аванпост и получите награду.</missionmessage0.ilmenitecollection>
+	<missionsuccess.ilmenitecollection>Существование залежей ильменитовой руды подтверждено.</missionsuccess.ilmenitecollection>
+	<missionsonarlabel.ilmenitecollection>Ильменит</missionsonarlabel.ilmenitecollection>
+
+	<missionname.stannitecollection>Добыча станнита</missionname.stannitecollection>
+	<missiondescription.stannitecollection>Говорят, где-то между точками [location1] и [location2] есть залежи станнита. Привезите десяток образцов станнита, чтобы проверить, так ли это.</missiondescription.stannitecollection>
+	<missionheader0.stannitecollection>Станнит добыт</missionheader0.stannitecollection>
+	<missionmessage0.stannitecollection>Вы добыли достаточно станнита. Доставьте его на аванпост и получите награду.</missionmessage0.stannitecollection>
+	<missionsuccess.stannitecollection>Существование залежей станнита подтверждено.</missionsuccess.stannitecollection>
+	<missionsonarlabel.stannitecollection>Станнит</missionsonarlabel.stannitecollection>
+
+	<missionname.chalcopyritecollection>Добыча халькопирита</missionname.chalcopyritecollection>
+	<missiondescription.chalcopyritecollection>Говорят, где-то между точками [location1] и [location2] есть залежи халькопирита. Привезите десяток образцов халькопирита, чтобы проверить, так ли это.</missiondescription.chalcopyritecollection>
+	<missionheader0.chalcopyritecollection>Халькопирит добыт</missionheader0.chalcopyritecollection>
+	<missionmessage0.chalcopyritecollection>Вы добыли достаточно халькопирита. Доставьте его на аванпост и получите награду.</missionmessage0.chalcopyritecollection>
+	<missionsuccess.chalcopyritecollection>Существование залежей халькопирита подтверждено.</missionsuccess.chalcopyritecollection>
+	<missionsonarlabel.chalcopyritecollection>Халькопирит</missionsonarlabel.chalcopyritecollection>
+    
+	<missionname.esperitecollection>Добыча эсперита</missionname.esperitecollection>
+	<missiondescription.esperitecollection>Говорят, где-то между точками [location1] и [location2] есть залежи эсперита. Привезите десяток образцов эсперита, чтобы проверить, так ли это.</missiondescription.esperitecollection>
+	<missionheader0.esperitecollection>Эсперит добыт</missionheader0.esperitecollection>
+	<missionmessage0.esperitecollection>Вы добыли достаточно эсперита. Доставьте его на аванпост и получите награду.</missionmessage0.esperitecollection>
+	<missionsuccess.esperitecollection>Существование залежей эсперита подтверждено.</missionsuccess.esperitecollection>
+	<missionsonarlabel.esperitecollection>Эсперит</missionsonarlabel.esperitecollection>
+
+	<missionname.galenacollection>Добыча галена</missionname.galenacollection>
+	<missiondescription.galenacollection>Говорят, где-то между точками [location1] и [location2] есть залежи галена. Привезите десяток образцов галена, чтобы проверить, так ли это.</missiondescription.galenacollection>
+	<missionheader0.galenacollection>Галена добыт</missionheader0.galenacollection>
+	<missionmessage0.galenacollection>Вы добыли достаточно галена. Доставьте его на аванпост и получите награду.</missionmessage0.galenacollection>
+	<missionsuccess.galenacollection>Существование залежей галена подтверждено.</missionsuccess.galenacollection>
+	<missionsonarlabel.galenacollection>Галена</missionsonarlabel.galenacollection>
 
 
 	<!--Event Texts-->
