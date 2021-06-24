@@ -2512,7 +2512,7 @@
         <RequiredItem items="oxygentank" type="Contained" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" ObstructVision="true" SpeedMultiplier="0.6" setvalue="true">
-        <Affliction identifier="exposure" strength="-100" />
+        <ReduceAffliction identifier="exposure_ita" strength="100" />
       </StatusEffect>
       <ItemContainer capacity="1" hideitems="true" maxstacksize="1">
         <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,157,92,27" />
@@ -2699,14 +2699,14 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  <Item name="-" identifier="ita_adresscard" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" noninteractable="true" hideinmenus="true">
+  <Item name="ID" identifier="ita_adresscard" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" noninteractable="true" hideinmenus="true">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,64,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/idcard.png" depth="0.8" sourcerect="0,0,16,16" />
     <Body width="16" height="12" density="20" />
     <IdCard slots="Card" msg="ItemMsgPickUpSelect" />
     <Wearable slots="Card" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <sprite texture="Content/Items/idcard.png" depth="0.9" sourcerect="0,0,1,1" limb="Torso" hidelimb="false"/>
-      <StatusEffect type="OnWearing" target="Character" stackable="false" disabledeltatime="true" delay="5">
+      <StatusEffect type="OnWearing" target="Character" stackable="false" disabledeltatime="true" delay="10">
         <Affliction identifier="hardass" strength="1" />
       </StatusEffect>
     </Wearable>
@@ -3005,7 +3005,7 @@
       </Containable>
     </ItemContainer>
   </Item>
-  <Item name="Picker" identifier="itapicker" category="Material" Tags="smallitem,purchased,clothing,container" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="Picker" identifier="itapicker" category="Material" Tags="smallitem,purchased,clothing,container" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="898,192,61,63" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Materials/CraftingElements1.png" sourcerect="4,130,49,41" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="32" density="50" />
