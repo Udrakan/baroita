@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Override>
+  <SkillSettings
+    SingleRoundSkillGainMultiplier="5.0"
+    SkillIncreasePerRepair="6"
+    SkillIncreasePerCprRevive="0.2"
+    SkillIncreasePerRepairedStructureDamage="0.02"
+    SkillIncreasePerSecondWhenSteering="0.003"
+    SkillIncreasePerFabricatorRequiredSkill="0.2"
+    SkillIncreasePerHostileDamage="0.15"
+    SkillIncreasePerSecondWhenOperatingTurret="0.005"
+    SkillIncreasePerFriendlyHealed="0.2"
+    AssistantSkillIncreaseMultiplier="1.3" />
+</Override>

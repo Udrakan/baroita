@@ -2,7 +2,7 @@
 <Jobs>
 	<!--submariners-->	
 		<Override><!--captain-->
-		<Job identifier="captain" minnumber="1" maxnumber="1" minkarma="45" initialcount="1" uicolor="0.65,0.73,0.84" vitalitymodifier="-20" pricemultiplier="1.3" idlebehavior="Passive">
+		<Job identifier="captain" minnumber="1" maxnumber="1" minkarma="45" initialcount="1" uicolor="0.65,0.73,0.84" vitalitymodifier="-20" pricemultiplier="1.3" idlebehavior="StayInHull">
 			<Jobicon>
 				<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,256,128,128" origin="0.5,0.5"/>
 			</Jobicon>
@@ -10,11 +10,11 @@
 				<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,669,28,28" origin="0.5,0.5"/>
 			</JobiconSmall>
 			<Skills>
-				<Skill identifier="helm" level="40,50" primary="true"/>
-				<Skill identifier="weapons" level="25,35"/>
-				<Skill identifier="mechanical" level="15,25"/>
-				<Skill identifier="electrical" level="15,25"/>
-				<Skill identifier="medical" level="5,10"/>
+      			<Skill identifier="helm" level="40,45" primary="true"/>
+      			<Skill identifier="weapons" level="1,30"/>
+      			<Skill identifier="medical" level="1,30"/>
+      			<Skill identifier="mechanical" level="1,10"/>
+      			<Skill identifier="electrical" level="1,10"/>
 			</Skills>
 			<ItemSet>
 				<Item identifier="idcard" equip="true" showpreview="false"/>
@@ -33,14 +33,14 @@
 				</Item>
 				<Item identifier="captainspipe" equip="false"/>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
 				</Item>
 				<PreviewSprites dims="120,109">
 					<sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
@@ -64,14 +64,14 @@
 				</Item>
 				<Item identifier="steroids"/>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
 				</Item>
 				<PreviewSprites dims="120,109">
 					<sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
@@ -94,14 +94,14 @@
 					<sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_3.png" sourcerect="121,0,76,80" offset="-20,15" />
 				</PreviewSprites>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
 				</Item>
 			</ItemSet>
 			<PortraitClothing>
@@ -126,11 +126,11 @@
 				<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,727,28,28" origin="0.5,0.5"/>
 			</JobiconSmall>
 			<Skills>
-				<Skill identifier="electrical" level="40,50" primary="true"/>
-				<Skill identifier="mechanical" level="25,35"/>
-				<Skill identifier="weapons" level="15,25"/>
-				<Skill identifier="medical" level="15,25"/>
-				<Skill identifier="helm" level="5,10"/>
+      			<Skill identifier="electrical" level="40,45" primary="true"/>
+      			<Skill identifier="mechanical" level="1,30"/>
+      			<Skill identifier="weapons" level="1,20"/>
+      			<Skill identifier="medical" level="1,20"/>
+      			<Skill identifier="helm" level="1,10"/>
 			</Skills>
 			<ItemSet>
 				<Item identifier="idcard" equip="true" showpreview="false"/>
@@ -147,14 +147,14 @@
 					<Item identifier="batterycell" showpreview="false"/>
 				</Item>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
 				</Item>
 				<PreviewSprites dims="120,109">
 					<sprite texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
@@ -180,14 +180,14 @@
 					<Item identifier="batterycell" showpreview="false"/>
 				</Item>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
 				</Item>
 				<PreviewSprites dims="120,109">
 					<sprite texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
@@ -222,11 +222,11 @@
 				<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="641,640,28,28" origin="0.5,0.5"/>
 			</JobiconSmall>
 			<Skills>
-				<Skill identifier="mechanical" level="40,50" primary="true"/>
-				<Skill identifier="electrical" level="25,35"/>
-				<Skill identifier="weapons" level="15,25"/>
-				<Skill identifier="medical" level="15,25"/>
-				<Skill identifier="helm" level="5,10"/>
+      			<Skill identifier="mechanicalelectrical" level="40,45" primary="true"/>
+      			<Skill identifier="electrical" level="1,30"/>
+      			<Skill identifier="weapons" level="1,20"/>
+      			<Skill identifier="medical" level="1,20"/>
+      			<Skill identifier="helm" level="1,10"/>
 			</Skills>
 			<ItemSet>
 				<Item identifier="idcard" equip="true" showpreview="false"/>
@@ -246,14 +246,14 @@
 					<Item identifier="batterycell" showpreview="false"/>
 				</Item>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
 				</Item>
 				<PreviewSprites dims="120,109">
 					<sprite texture="Content/Items/Jobgear/Mechanic/mechanic_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
@@ -279,14 +279,14 @@
 					<Item identifier="batterycell" showpreview="false"/>
 				</Item>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
 				</Item>
 				<PreviewSprites dims="120,109">
 					<sprite texture="Content/Items/Jobgear/Mechanic/mechanic_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
@@ -321,11 +321,11 @@
 				<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,640,28,28" origin="0.5,0.5"/>
 			</JobiconSmall>
 			<Skills>
-				<Skill identifier="weapons" level="40,50" primary="true"/>
-				<Skill identifier="medical" level="25,35"/>
-				<Skill identifier="mechanical" level="15,25"/>
-				<Skill identifier="electrical" level="15,25"/>
-				<Skill identifier="helm" level="5,10"/>
+     			<Skill identifier="weapons" level="45,50" primary="true"/>
+     			<Skill identifier="medical" level="1,30"/>
+     			<Skill identifier="mechanical" level="1,20"/>
+     			<Skill identifier="electrical" level="1,20"/>
+     			<Skill identifier="helm" level="1,10"/>
 			</Skills>
 			<ItemSet>
       <Item identifier="securityuniform1" equip="true" outfit="true"/>
@@ -346,14 +346,14 @@
         <Item identifier="batterycell" showpreview="false"/>
       </Item>
 	  <Item identifier="ita_wallet1">
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
 		</Item>
       <PreviewSprites dims="120,109">
         <sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
@@ -379,14 +379,14 @@
         <Item identifier="batterycell" showpreview="false"/>
       </Item>
 	  <Item identifier="ita_wallet1">
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
 				</Item>
       <PreviewSprites dims="120,109">
         <sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
@@ -413,14 +413,14 @@
       <Item identifier="bodyarmor" equip="true"/>
       <Item identifier="ballistichelmet2" equip="true"/>
 	  <Item identifier="ita_wallet1">
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
 				</Item>
       <Item identifier="headset" equip="true" showpreview="false">
         <Item identifier="batterycell" showpreview="false"/>
@@ -453,11 +453,11 @@
 				<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,698,28,28" origin="0.5,0.5"/>
 			</JobiconSmall>
 			<Skills>
-				<Skill identifier="medical" level="40,50" primary="true"/>
-				<Skill identifier="weapons" level="15,25"/>
-				<Skill identifier="mechanical" level="15,25"/>
-				<Skill identifier="electrical" level="15,25"/>
-				<Skill identifier="helm" level="5,10"/>
+     			<Skill identifier="medical" level="40,45" primary="true"/>
+     			<Skill identifier="weapons" level="1,30"/>
+     			<Skill identifier="helm" level="1,15"/>
+     			<Skill identifier="mechanical" level="1,15"/>
+     			<Skill identifier="electrical" level="1,15"/>
 			</Skills>
 			<ItemSet>
 				<Item identifier="idcard" equip="true" showpreview="false"/>
@@ -473,14 +473,14 @@
 				<Item identifier="antibiotics"/>
 				<Item identifier="antidama1"/>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
 				</Item>
 				<PreviewSprites dims="120,109">
 					<sprite texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
@@ -503,14 +503,14 @@
 				<Item identifier="antidama1"/>
 				<Item identifier="tonicliquid"/>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
 				</Item>
 				<PreviewSprites dims="120,109">
 					<sprite texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
@@ -539,11 +539,11 @@
 				<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="641,669,28,28" origin="0.5,0.5"/>
 			</JobiconSmall>
 			<Skills>
-				<Skill identifier="weapons" level="15,25"/>
-				<Skill identifier="mechanical" level="15,25"/>
-				<Skill identifier="electrical" level="15,25"/>
-				<Skill identifier="medical" level="15,25"/>
-				<Skill identifier="helm" level="12.5,15"/>
+    		  <Skill identifier="weapons" level="1,35"/>
+    		  <Skill identifier="mechanical" level="1,35"/>
+    		  <Skill identifier="electrical" level="1,35"/>
+    		  <Skill identifier="medical" level="1,35"/>
+    		  <Skill identifier="helm" level="1,35"/>
 			</Skills>
 			<ItemSet>
 				<Item identifier="idcard" equip="true" showpreview="false"/>
@@ -554,14 +554,14 @@
 					<Item identifier="batterycell" showpreview="false"/>
 				</Item>
 				<Item identifier="ita_wallet1">
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
-					<Item identifier="ita_coin1"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
+				  <Item identifier="ita_coin1" showpreview="false"/>
 				</Item>
 				<PreviewSprites dims="120,109">
 					<sprite texture="Content/Items/Jobgear/Assistant/assistant_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
