@@ -409,7 +409,7 @@
       </StatusEffect>
       <StatusEffect type="Always" target="This,NearbyCharacters" range="60" delay="0.5" duration="0.75" stackable="false">
         <RequiredItem items="hot" type="Contained" excludebroken="false"/>
-        <Affliction identifier="exposure_ita" strength="6" />
+        <Affliction identifier="exposure" strength="6" />
       </StatusEffect>
     </Holdable>
     <ItemContainer capacity="1" hideitems="false" itempos="0,0" containedspritedepth="0.51" ShowContainedStateIndicator="false" keepopenwhenequipped="true">
@@ -489,12 +489,12 @@
 			</StatusEffect>
 		  <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="100" delay="1.3" duration="1.5" stackable="false">
 				<Conditional hastag="hot" />
-				<Affliction identifier="exposure_ita" strength="9" />
+				<Affliction identifier="exposure" strength="9" />
 				<Fire />
 			</StatusEffect>
 			<StatusEffect type="OnContained" targettype="This,Character" delay="0.5" duration="0.75" stackable="false">
 				<Conditional hastag="hot" excludebroken="false" />
-				<Affliction identifier="exposure_ita" strength="9" />
+				<Affliction identifier="exposure" strength="9" />
 			</StatusEffect>
 			<StatusEffect type="InWater" target="This" allowwhenbroken="true">
 				<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="1" />
@@ -572,12 +572,12 @@
 			</StatusEffect>
 		  <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="100" delay="1.3" duration="1.5" stackable="false">
 				<Conditional hastag="hot" />
-				<Affliction identifier="exposure_ita" strength="9" />
+				<Affliction identifier="exposure" strength="9" />
 				<Fire />
 			</StatusEffect>
 			<StatusEffect type="OnContained" targettype="This,Character" delay="0.5" duration="0.75" stackable="false">
 				<Conditional hastag="hot" excludebroken="false" />
-				<Affliction identifier="exposure_ita" strength="9" />
+				<Affliction identifier="exposure" strength="9" />
 			</StatusEffect>
 			<StatusEffect type="InWater" target="This" allowwhenbroken="true">
 				<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="1" />
@@ -655,12 +655,12 @@
 			</StatusEffect>
 		  <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="100" delay="1.3" duration="1.5" stackable="false">
 				<Conditional hastag="hot" />
-				<Affliction identifier="exposure_ita" strength="9" />
+				<Affliction identifier="exposure" strength="9" />
 				<Fire />
 			</StatusEffect>
 			<StatusEffect type="OnContained" targettype="This,Character" delay="0.5" duration="0.75" stackable="false">
 				<Conditional hastag="hot" excludebroken="false" />
-				<Affliction identifier="exposure_ita" strength="9" />
+				<Affliction identifier="exposure" strength="9" />
 			</StatusEffect>
 			<StatusEffect type="InWater" target="This" allowwhenbroken="true">
 				<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="1" />
@@ -2512,7 +2512,7 @@
         <RequiredItem items="oxygentank" type="Contained" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" ObstructVision="true" SpeedMultiplier="0.6" setvalue="true">
-        <ReduceAffliction identifier="exposure_ita" strength="100" />
+        <ReduceAffliction identifier="exposure" strength="100" />
       </StatusEffect>
       <ItemContainer capacity="1" hideitems="true" maxstacksize="1">
         <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,157,92,27" />
