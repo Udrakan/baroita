@@ -78,7 +78,7 @@
 			</ItemSet>
 		</npc>						
 		<!--COMMONNERS-->
-		<npc identifier="ita_commoner1" commonness="0" moduleflags="none" job="mechanic" behavior="Passive" healthmultiplier="0.75" preferredoutpostmoduletypes="crewmodule,seccrewmodule,mine,tempmine" spawnpointtags="hr">
+		<npc identifier="ita_commoner1" commonness="0" moduleflags="none" job="mechanic" behavior="Patrol" healthmultiplier="0.75" preferredoutpostmoduletypes="crewmodule,seccrewmodule,mine,tempmine">
 			<ItemSet commonness="1">
 				<Item identifier="idcard" equip="true"/>
 				<Item identifier="commonerclothes1" equip="true"/>
