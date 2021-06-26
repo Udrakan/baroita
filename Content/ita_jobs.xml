@@ -539,11 +539,11 @@
 				<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="641,669,28,28" origin="0.5,0.5"/>
 			</JobiconSmall>
 			<Skills>
-    		  <Skill identifier="weapons" level="1,35"/>
-    		  <Skill identifier="mechanical" level="1,35"/>
-    		  <Skill identifier="electrical" level="1,35"/>
-    		  <Skill identifier="medical" level="1,35"/>
-    		  <Skill identifier="helm" level="1,35"/>
+    		  <Skill identifier="weapons" level="1,25"/>
+    		  <Skill identifier="mechanical" level="1,25"/>
+    		  <Skill identifier="electrical" level="1,25"/>
+    		  <Skill identifier="medical" level="1,25"/>
+    		  <Skill identifier="helm" level="1,25"/>
 			</Skills>
 			<ItemSet>
 				<Item identifier="idcard" equip="true" showpreview="false"/>
