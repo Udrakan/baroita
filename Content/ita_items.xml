@@ -416,11 +416,10 @@
       <Containable items="reactorfuel,hot" excludeditems="tongs" />
     </ItemContainer>
    </Item> 
-  </Override>
 
   <Override>
 	<Item name="" identifier="fuelrod" Tags="smallitem,reactorfuel" cargocontaineridentifier="metalcrate" scale="0.5" description="Rod of dangerous radioactive material, used by humanity as a reliable power source on Europa.">
-		<PreferredContainer primary="reactorcab" minamount="2" maxamount="5" spawnprobability="1" />
+		<PreferredContainer primary="reactorcab" minamount="2" maxamount="4" spawnprobability="1" />
 		<PreferredContainer primary="wreckreactorcab" minamount="0" maxamount="1" spawnprobability="0.25" />
 		<Price baseprice="910">
 			<Price locationtype="outpost" multiplier="1" minavailable="2" maxavailable="2" />
@@ -511,7 +510,7 @@
 
   <Override>
 	<Item name="" identifier="thoriumfuelrod" Tags="smallitem,reactorfuel" cargocontaineridentifier="metalcrate" health="200" scale="0.5" description="Rod of dangerous radioactive material, used by humanity as a reliable power source on Europa.">
-    <PreferredContainer primary="reactorcab" minamount="2" maxamount="3" spawnprobability="1" />
+    <PreferredContainer primary="reactorcab" minamount="1" maxamount="3" spawnprobability="0.5" />
     <Fabricate suitablefabricators="fabricator" requiredtime="10">
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredItem identifier="thorium" />
