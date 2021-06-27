@@ -3144,6 +3144,11 @@
           <RequiredItem items="gunsmith1" type="Contained" />
           <Remove />
         </StatusEffect>
+        <StatusEffect type="OnUse" target="This" eventtag="statuseffecttarget">
+          <TriggerEvent identifier="ita_atm" />
+          <RequiredItem items="atm" type="Contained" />
+          <Remove />
+        </StatusEffect>
       </input>
     </ConnectionPanel>
     <ItemContainer canbeselected="true" capacity="1" itempos="0,0" hideitems="false" />
@@ -3472,6 +3477,12 @@
         <StatusEffect type="Always" targettype="This" Voltage="1.0" setvalue="true" />
       </Containable>
     </ItemContainer>
+  </Item>
+  <Item name="" identifier="ita_atm" tags="atm" scale="0.3">
+    <sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_atm.png" sourcerect="32,54,287,266" depth="0.7" premultiplyalpha="false" origin="0.5,0.5" />
+	<LightComponent range="55.0" lightcolor="255,255,255,130" IsOn="true" castshadows="false" allowingameediting="false">
+      <sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_atmem.png" depth="0.025" sourcerect="32,54,287,266" scale="0.3"/>
+    </LightComponent>
   </Item>
   <!--Ancient Alien Machines-->
   <Item name="" identifier="ita_fabricator1" tags="ita_fabricator1" category="Machine" description="" scale="0.5">

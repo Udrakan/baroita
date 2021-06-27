@@ -3492,7 +3492,540 @@
 				</Option>
 			</ConversationAction>
 		</ScriptedEvent>
+		<ScriptedEvent identifier="ita_bank1">
+			<TagAction criteria="itemtag:bank1" tag="bank1" _npos="-3595.7273,65.36722" />
+			<TagAction criteria="crew" tag="player" _npos="-3595.7273,65.36722" />
+			<SpawnAction npcsetidentifier="ita_citynpcs1" npcidentifier="ita_banker" targettag="banker1" spawnpointtag="banker1" _npos="-3194.9563,-423.22144" />
+			<Label name="banker1" _npos="-2824.0894,-423.63867" />
+			<WaitAction time="4" />
+			<ClearTagAction tag="customer" _npos="-2832.0925,-310.77393" />
+			<TriggerAction target1tag="bank1" target2tag="player" applytotarget2="customer" waitforinteraction="true" _npos="-128,-128" />
+			<ConversationAction text="EventText.shop.44" targettag="customer" dialogtype="Regular" _npos="-2449.6855,-423.52817">
+				<Option text="EventText.shop.45" endconversation="true">
+					<CheckItemAction targettag="customer" itemtags="jobid:captain" _npos="-1669.3551,-1175.3494">
+						<Success>
+							<CheckMoneyAction amount="100" _npos="-855.53687,-1142.9672">
+								<Success>
+									<MoneyAction amount="-100" _npos="66.6947,-1110.895" />
+									<SpawnAction itemidentifier="ita_bill100" targetinventory="customer" _npos="1172.7083,-2138.4583" />
+									<GoTo name="end" _npos="1177.1658,-2239.0532" />
+								</Success>
+								<Failure>
+									<Label name="nocash" _npos="-465.12897,-1079.9841" />
+									<ConversationAction text="EventText.shop.46" targettag="customer" _npos="-463.7223,-1521.4492" />
+									<GoTo name="end" _npos="-464.1349,-1625.8993" />
+								</Failure>
+							</CheckMoneyAction>
+						</Success>
+						<Failure>
+							<Label name="caponly" _npos="-1259.9684,-1111.7631" />
+							<ConversationAction text="EventText.shop.47" targettag="customer" _npos="-1261.3726,-1541.353" />
+							<GoTo name="end" _npos="-1260.3705,-1644.46" />
+						</Failure>
+					</CheckItemAction>
+				</Option>
+				<Option text="EventText.shop.48" endconversation="true">
+					<CheckItemAction targettag="customer" itemtags="jobid:captain" _npos="-1669.8514,-1009.24384">
+						<Success>
+							<CheckMoneyAction amount="400" _npos="-858.9281,-973.6248">
+								<Success>
+									<MoneyAction amount="-400" _npos="62.459045,-934.8922" />
+									<SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="1169.701,-1460.6562" />
+									<SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="1594.2981,-1458.08" />
+									<GoTo name="end" _npos="2056.6526,-1448.8816" />
+								</Success>
+								<Failure>
+									<GoTo name="nocash" _npos="-461.958,-909.40753" />
+								</Failure>
+							</CheckMoneyAction>
+						</Success>
+						<Failure>
+							<GoTo name="caponly" _npos="-1271.0862,-944.9459" />
+						</Failure>
+					</CheckItemAction>
+				</Option>
+				<Option text="EventText.shop.49" endconversation="true">
+					<CheckItemAction targettag="customer" itemtags="jobid:captain" _npos="-1669.3488,-844.7765">
+						<Success>
+							<CheckMoneyAction amount="1000" _npos="-860.15704,-807.2525">
+								<Success>
+									<MoneyAction amount="-1000" _npos="60.772705,-771.5382" />
+									<SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="1210.4609,-852.689" />
+									<SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="1618.9385,-838.1339" />
+									<SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="2068.3184,-841.71704" />
+									<SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="2480.6538,-832.3025" />
+									<SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="2855.3552,-837.118" />
+									<GoTo name="end" _npos="3268.4517,-831.1397" />
+								</Success>
+								<Failure>
+									<GoTo name="nocash" _npos="-461.26465,-744.3913" />
+								</Failure>
+							</CheckMoneyAction>
+						</Success>
+						<Failure>
+							<GoTo name="caponly" _npos="-1271.4424,-780.99146" />
+						</Failure>
+					</CheckItemAction>
+				</Option>
+				<Option text="EventText.shop.50" endconversation="true">
+					<SetDataAction operation="Set" value="100" identifier="depamount" _npos="336.05823,-290.4804" />
+					<SetDataAction operation="Set" value="-100" identifier="depositb1" _npos="901.42413,-289.29242" />
+					<Label name="deposit" _npos="1316.9004,-297.69086" />
+					<CheckDataAction identifier="depositb1" condition="gte 0" _npos="1715.3757,-296.62766">
+						<Success>
+							<Label name="end" _npos="2905.4592,-1576.0847" />
 
+							<SetDataAction operation="Set" value="0" identifier="depositb1" _npos="3773.4731,-1577.1074" />
+							<SetDataAction operation="Set" value="0" identifier="depamount" _npos="4155.3584,-1577.5702" />
+							<GoTo name="banker1" _npos="4693.74,-1576.1235" />
+						</Success>
+						<Failure>
+							<CheckItemAction targettag="customer" itemidentifiers="ita_coin1" _npos="2080.757,-130.29752">
+								<Success>
+									<SetDataAction operation="Add" value="1" identifier="depositb1" _npos="2080.2969,31.57399" />
+									<RemoveItemAction targettag="customer" itemidentifier="ita_coin1" amount="1" _npos="2079.0444,194.60721" />
+									<MoneyAction amount="1" _npos="2078.1772,360.47464" />
+									<GoTo name="deposit" _npos="2077.4214,464.50443" />
+								</Success>
+								<Failure>
+									<CheckItemAction targettag="customer" itemidentifiers="ita_coin5" _npos="2561,-115.5">
+										<Success>
+											<SetDataAction operation="Add" value="5" identifier="depositb1" _npos="2562.4092,48.053284" />
+											<RemoveItemAction targettag="customer" itemidentifier="ita_coin5" amount="1" _npos="2561.8086,209.46045" />
+											<MoneyAction amount="5" _npos="2561.678,371.39453" />
+											<GoTo name="deposit" _npos="2561.303,473.5455" />
+										</Success>
+										<Failure>
+											<CheckItemAction targettag="customer" itemidentifiers="ita_bill50" _npos="2998,-115.5">
+												<Success>
+													<SetDataAction operation="Add" value="50" identifier="depositb1" _npos="2999.9792,45.347534" />
+													<RemoveItemAction targettag="customer" itemidentifier="ita_bill50" amount="1" _npos="2999.728,206.11884" />
+													<MoneyAction amount="50" _npos="2999.1646,369.91577" />
+													<GoTo name="deposit" _npos="3001.7976,481.6225" />
+												</Success>
+												<Failure>
+													<CheckItemAction targettag="customer" itemidentifiers="ita_bill100" _npos="3417.1,-111.527985">
+														<Success>
+															<SetDataAction operation="Add" value="100" identifier="depositb1" _npos="3421.3237,49.856995" />
+															<RemoveItemAction targettag="customer" itemidentifier="ita_bill100" amount="1" _npos="3418.6086,210.64856" />
+															<MoneyAction amount="100" _npos="3418.9297,374.352" />
+															<GoTo name="deposit" _npos="3420.185,489.67578" />
+														</Success>
+														<Failure>
+															<CheckItemAction targettag="customer" itemidentifiers="ita_bill200" _npos="3830.3804,-109.40167">
+																<Success>
+																	<SetDataAction operation="Add" value="200" identifier="depositb1" _npos="3831.2798,53.428833" />
+																	<RemoveItemAction targettag="customer" itemidentifier="ita_bill200" amount="1" _npos="3830.6458,212.46045" />
+																	<MoneyAction amount="200" _npos="3830.026,375.83075" />
+																	<GoTo name="deposit" _npos="3829.648,481.71216" />
+																</Success>
+																<Failure>
+																	<CheckDataAction identifier="depositb1" condition="gte 0" _npos="4247.8564,-144.59105">
+																		<Failure>
+																			<CheckDataAction identifier="depamount" condition="eq 1337" _npos="4245.3174,122.83441">
+																				<Success>
+																					<ConversationAction text="EventText.shop.51" targettag="customer" _npos="4238.9307,319.21524" />
+																					<GoTo name="end" _npos="4236.3096,740.71094" />
+																				</Success>
+																				<Failure>
+																					<ConversationAction text="EventText.shop.52" targettag="customer" _npos="4727.883,-670.77936" />
+																					<CheckDataAction identifier="depamount" condition="eq 100" _npos="4908.8477,-53.329926">
+																						<Success>
+																							<SetDataAction operation="Add" value="100" identifier="depositb1" _npos="4907.5254,142.69766" />
+																							<Label name="returncash" _npos="4905.202,308.2016" />
+																							<CheckDataAction identifier="depositb1" condition="gt 0" _npos="4842.524,609.97125">
+																								<Success>
+																									<CheckDataAction identifier="depositb1" condition="gte 200" _npos="4863.392,1060.183">
+																										<Success>
+																											<SetDataAction operation="Add" value="-200" identifier="depositb1" _npos="4864.371,1255.5955" />
+																											<SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="4861.9395,1416.2717" />
+																											<GoTo name="returncash" _npos="4861.9854,1866.0228" />
+																										</Success>
+																										<Failure>
+																											<CheckDataAction identifier="depositb1" condition="gte 100" _npos="5314.158,1056.2438">
+																												<Success>
+																													<SetDataAction operation="Add" value="-100" identifier="depositb1" _npos="5314.625,1250.7765" />
+																													<SpawnAction itemidentifier="ita_bill100" targetinventory="customer" _npos="5314.9565,1412.46" />
+																													<GoTo name="returncash" _npos="5314.9966,1862.0132" />
+																												</Success>
+																												<Failure>
+																													<CheckDataAction identifier="depositb1" condition="gte 50" _npos="5802.62,1057.113">
+																														<Success>
+																															<SetDataAction operation="Add" value="-50" identifier="depositb1" _npos="5802.65,1249.9941" />
+																															<SpawnAction itemidentifier="ita_bill50" targetinventory="customer" _npos="5802.711,1410.3982" />
+																															<GoTo name="returncash" _npos="5803.0576,1861.0085" />
+																														</Success>
+																														<Failure>
+																															<CheckDataAction identifier="depositb1" condition="gte 5" _npos="6270.8247,1063.6833">
+																																<Success>
+																																	<SetDataAction operation="Add" value="-5" identifier="depositb1" _npos="6270.3643,1255.2479" />
+																																	<SpawnAction itemidentifier="ita_coin5" targetinventory="customer" _npos="6270.115,1417.3718" />
+																																	<GoTo name="returncash" _npos="6270.701,1865.0089" />
+																																</Success>
+																																<Failure>
+																																	<CheckDataAction identifier="depositb1" condition="gte 1" _npos="6794.022,1056.9849">
+																																		<Success>
+																																			<SetDataAction operation="Add" value="-1" identifier="depositb1" _npos="6794.4,1247.9579" />
+																																			<SpawnAction itemidentifier="ita_coin1" targetinventory="customer" _npos="6793.896,1409.2358" />
+																																			<GoTo name="returncash" _npos="6794.9893,1860.0084" />
+																																		</Success>
+																																	</CheckDataAction>
+																																</Failure>
+																															</CheckDataAction>
+																														</Failure>
+																													</CheckDataAction>
+																												</Failure>
+																											</CheckDataAction>
+																										</Failure>
+																									</CheckDataAction>
+																								</Success>
+																								<Failure>
+																									<GoTo name="end" _npos="5616.0635,670.58435" />
+																								</Failure>
+																							</CheckDataAction>
+																						</Success>
+																						<Failure>
+																							<CheckDataAction identifier="depamount" condition="eq 400" _npos="5408.6895,-53.35173">
+																								<Success>
+																									<SetDataAction operation="Add" value="400" identifier="depositb1" _npos="5406.4956,141.0394" />
+																									<GoTo name="returncash" _npos="5407.6636,302.8474" />
+																								</Success>
+																								<Failure>
+																									<CheckDataAction identifier="depamount" condition="eq 1000" _npos="5872.4453,-49.750122">
+																										<Success>
+																											<SetDataAction operation="Add" value="1000" identifier="depositb1" _npos="5872.3433,144.87769" />
+																											<GoTo name="returncash" _npos="5872.2983,306.6232" />
+																										</Success>
+																									</CheckDataAction>
+																								</Failure>
+																							</CheckDataAction>
+																						</Failure>
+																					</CheckDataAction>
+																				</Failure>
+																			</CheckDataAction>
+																		</Failure>
+																	</CheckDataAction>
+																</Failure>
+															</CheckItemAction>
+														</Failure>
+													</CheckItemAction>
+												</Failure>
+											</CheckItemAction>
+										</Failure>
+									</CheckItemAction>
+								</Failure>
+							</CheckItemAction>
+						</Failure>
+					</CheckDataAction>
+				</Option>
+				<Option text="EventText.shop.53" endconversation="true">
+					<SetDataAction operation="Set" value="400" identifier="depamount" _npos="317.24664,-124.79257" />
+					<SetDataAction operation="Set" value="-400" identifier="depositb1" _npos="905.5088,-129.84729" />
+					<GoTo name="deposit" _npos="1316.2311,-133.60165" />
+				</Option>
+				<Option text="EventText.shop.54" endconversation="true">
+					<SetDataAction operation="Set" value="1000" identifier="depamount" _npos="316.77567,38.413086" />
+					<SetDataAction operation="Set" value="-1000" identifier="depositb1" _npos="908.6627,42.299683" />
+					<GoTo name="deposit" _npos="1336.9873,22.081726" />
+				</Option>
+				<Option text="EventText.shop.55" endconversation="true">
+					<SetDataAction operation="Set" value="1337" identifier="depamount" _npos="317.909,201.59882" />
+					<SetDataAction operation="Set" value="-10000" identifier="depositb1" _npos="904.4518,196.9801" />
+					<GoTo name="deposit" _npos="1342.1672,198.02798" />
+				</Option>
+				<Option text="EventText.shop.74" endconversation="true">
+					<GoTo name="banker1" _npos="-1851.457,-114.04956" />
+				</Option>
+				<Option text="" endconversation="true" />
+			</ConversationAction>
+		</ScriptedEvent>
+		<ScriptedEvent identifier="ita_atm">
+  <TagAction criteria="itemtag:atm" tag="banker1" _npos="-5002.668,-447.01016" />
+  <TagAction criteria="player" tag="player" _npos="-4604.0576,-441.44333" />
+  <Label name="banker1" _npos="-3770.5227,-460.36377" />
+  <WaitAction time="1" _npos="-3770.3188,-364.90857" />
+  <ClearTagAction tag="customer" _npos="-3771.3853,-266.60687" />
+  <TriggerAction target1tag="banker1" target2tag="player" applytotarget2="customer" waitforinteraction="true" _npos="-3772.6768,-166.58713" />
+  <ConversationAction text="eventtext.atm.1" targettag="customer" dialogtype="Regular" _npos="-2731.8752,-209.44131">
+    <Option text="EventText.shop.45" endconversation="true">
+      <CheckItemAction targettag="customer" itemtags="jobid:captain" _npos="-1669.3551,-1175.3494">
+        <Success>
+          <CheckMoneyAction amount="100" _npos="-855.53687,-1142.9672">
+            <Success>
+              <MoneyAction amount="-100" _npos="66.6947,-1110.895" />
+			  <StatusEffectAction targettag="banker1">
+				<StatusEffect>
+					<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_atm.ogg" range="500"  />
+				</StatusEffect>
+			   </StatusEffectAction>
+			   <WaitAction time="0.5" />
+              <SpawnAction itemidentifier="ita_bill100" targetinventory="customer" _npos="1172.7083,-2138.4583" />
+			  <GoTo name="end" _npos="1171.7238,-2238.1458" />
+            </Success>
+            <Failure>
+              <Label name="nocash" _npos="-465.12897,-1079.9841" />
+              <ConversationAction text="EventText.shop.46" targettag="customer" _npos="-463.7223,-1521.4492" />
+              <GoTo name="end" _npos="-464.1349,-1625.8993" />
+            </Failure>
+          </CheckMoneyAction>
+        </Success>
+        <Failure>
+          <Label name="caponly" _npos="-1259.9684,-1111.7631" />
+          <ConversationAction text="EventText.shop.47" targettag="customer" _npos="-1261.3726,-1541.353" />
+          <GoTo name="end" _npos="-1260.3705,-1644.46" />
+        </Failure>
+      </CheckItemAction>
+    </Option>
+    <Option text="EventText.shop.48" endconversation="true">
+      <CheckItemAction targettag="customer" itemtags="jobid:captain" _npos="-1669.8514,-1009.24384">
+        <Success>
+          <CheckMoneyAction amount="400" _npos="-858.9281,-973.6248">
+            <Success>
+              <MoneyAction amount="-400" _npos="62.459045,-934.8922" />
+			  <StatusEffectAction targettag="banker1">
+				<StatusEffect>
+					<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_atm.ogg" range="500"  />
+				</StatusEffect>
+			   </StatusEffectAction>
+			   <WaitAction time="0.5" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="1169.701,-1460.6562" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="1594.2981,-1458.08" />
+              <GoTo name="end" _npos="1963.8262,-1459.1931" />
+            </Success>
+            <Failure>
+              <GoTo name="nocash" _npos="-461.958,-909.40753" />
+            </Failure>
+          </CheckMoneyAction>
+        </Success>
+        <Failure>
+          <GoTo name="caponly" _npos="-1271.0862,-944.9459" />
+        </Failure>
+      </CheckItemAction>
+    </Option>
+    <Option text="EventText.shop.49" endconversation="true">
+      <CheckItemAction targettag="customer" itemtags="jobid:captain" _npos="-1669.3488,-844.7765">
+        <Success>
+          <CheckMoneyAction amount="1000" _npos="-860.15704,-807.2525">
+            <Success>
+              <MoneyAction amount="-1000" _npos="60.772705,-771.5382" />
+			  <StatusEffectAction targettag="banker1">
+				<StatusEffect>
+					<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_atm.ogg" range="500"  />
+				</StatusEffect>
+			   </StatusEffectAction>
+			   <WaitAction time="0.5" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="1210.4609,-852.689" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="1618.9385,-838.1339" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="2071.521,-833.7075" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="2482.2544,-835.5039" />
+              <SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="2853.7544,-835.5173" />
+              <GoTo name="end" _npos="3228.018,-835.7508" />
+            </Success>
+            <Failure>
+              <GoTo name="nocash" _npos="-461.26465,-744.3913" />
+            </Failure>
+          </CheckMoneyAction>
+        </Success>
+        <Failure>
+          <GoTo name="caponly" _npos="-1271.4424,-780.99146" />
+        </Failure>
+      </CheckItemAction>
+    </Option>
+    <Option text="EventText.shop.50" endconversation="true">
+      <SetDataAction operation="Set" value="100" identifier="depamount" _npos="317.72607,-286.5498" />
+      <SetDataAction operation="Set" value="-100" identifier="depositb1" _npos="901.42413,-286.67206" />
+	  <StatusEffectAction targettag="banker1">
+				<StatusEffect>
+					<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_atm.ogg" range="500"  />
+				</StatusEffect>
+			   </StatusEffectAction>
+			   <WaitAction time="0.5" />
+      <Label name="deposit" _npos="1315.7322,-285.8991" />
+      <CheckDataAction identifier="depositb1" condition="gte 0" _npos="1698.2612,-286.0956">
+        <Success>
+          <Label name="end" _npos="2905.4592,-1576.0847" />
+          <SetDataAction operation="Set" value="0" identifier="depositb1" _npos="3773.4731,-1577.1074" />
+          <SetDataAction operation="Set" value="0" identifier="depamount" _npos="4155.3584,-1577.5702" />
+          <GoTo name="banker1" _npos="4522.23,-1576.9111" />
+        </Success>
+        <Failure>
+          <CheckItemAction targettag="customer" itemidentifiers="ita_coin1" _npos="2080.757,-130.29752">
+            <Success>
+              <SetDataAction operation="Add" value="1" identifier="depositb1" _npos="2080.2969,31.57399" />
+              <RemoveItemAction targettag="customer" itemidentifier="ita_coin1" amount="1" _npos="2079.0444,194.60721" />
+              <MoneyAction amount="1" _npos="2078.1772,360.47464" />
+              <GoTo name="deposit" _npos="2077.4214,464.50443" />
+            </Success>
+            <Failure>
+              <CheckItemAction targettag="customer" itemidentifiers="ita_coin5" _npos="2561,-115.5">
+                <Success>
+                  <SetDataAction operation="Add" value="5" identifier="depositb1" _npos="2562.4092,48.053284" />
+                  <RemoveItemAction targettag="customer" itemidentifier="ita_coin5" amount="1" _npos="2561.8086,209.46045" />
+                  <MoneyAction amount="5" _npos="2561.678,371.39453" />
+                  <GoTo name="deposit" _npos="2561.303,473.5455" />
+                </Success>
+                <Failure>
+                  <CheckItemAction targettag="customer" itemidentifiers="ita_bill50" _npos="2998,-115.5">
+                    <Success>
+                      <SetDataAction operation="Add" value="50" identifier="depositb1" _npos="2999.9792,45.347534" />
+                      <RemoveItemAction targettag="customer" itemidentifier="ita_bill50" amount="1" _npos="2999.728,206.11884" />
+                      <MoneyAction amount="50" _npos="2999.1646,369.91577" />
+                      <GoTo name="deposit" _npos="3001.7976,481.6225" />
+                    </Success>
+                    <Failure>
+                      <CheckItemAction targettag="customer" itemidentifiers="ita_bill100" _npos="3417.1,-111.527985">
+                        <Success>
+                          <SetDataAction operation="Add" value="100" identifier="depositb1" _npos="3421.3237,49.856995" />
+                          <RemoveItemAction targettag="customer" itemidentifier="ita_bill100" amount="1" _npos="3418.6086,210.64856" />
+                          <MoneyAction amount="100" _npos="3418.9297,374.352" />
+                          <GoTo name="deposit" _npos="3420.185,489.67578" />
+                        </Success>
+                        <Failure>
+                          <CheckItemAction targettag="customer" itemidentifiers="ita_bill200" _npos="3830.3804,-109.40167">
+                            <Success>
+                              <SetDataAction operation="Add" value="200" identifier="depositb1" _npos="3831.2798,53.428833" />
+                              <RemoveItemAction targettag="customer" itemidentifier="ita_bill200" amount="1" _npos="3830.6458,212.46045" />
+                              <MoneyAction amount="200" _npos="3830.026,375.83075" />
+                              <GoTo name="deposit" _npos="3829.648,481.71216" />
+                            </Success>
+                            <Failure>
+                              <CheckDataAction identifier="depositb1" condition="gte 0" _npos="4247.8564,-144.59105">
+                                <Failure>
+                                  <CheckDataAction identifier="depamount" condition="eq 1337" _npos="4245.3174,122.83441">
+                                    <Success>
+                                      <ConversationAction text="EventText.shop.51" targettag="customer" _npos="4238.9307,319.21524" />
+                                      <GoTo name="end" _npos="4236.3096,740.71094" />
+                                    </Success>
+                                    <Failure>
+                                      <ConversationAction text="eventtext.atm.3" targettag="customer" _npos="4554.8706,-683.3761" />
+                                      <CheckDataAction identifier="depamount" condition="eq 100" _npos="4908.8477,-53.329926">
+                                        <Success>
+                                          <SetDataAction operation="Add" value="100" identifier="depositb1" _npos="4907.5254,142.69766" />
+                                          <Label name="returncash" _npos="4905.202,308.2016" />
+                                          <CheckDataAction identifier="depositb1" condition="gt 0" _npos="4842.524,609.97125">
+                                            <Success>
+                                              <CheckDataAction identifier="depositb1" condition="gte 200" _npos="4863.392,1060.183">
+                                                <Success>
+                                                  <SetDataAction operation="Add" value="-200" identifier="depositb1" _npos="4864.371,1255.5955" />
+                                                  <SpawnAction itemidentifier="ita_bill200" targetinventory="customer" _npos="4861.9395,1416.2717" />
+                                                  <GoTo name="returncash" _npos="4861.9854,1866.0228" />
+                                                </Success>
+                                                <Failure>
+                                                  <CheckDataAction identifier="depositb1" condition="gte 100" _npos="5314.158,1056.2438">
+                                                    <Success>
+                                                      <SetDataAction operation="Add" value="-100" identifier="depositb1" _npos="5314.625,1250.7765" />
+                                                      <SpawnAction itemidentifier="ita_bill100" targetinventory="customer" _npos="5314.9565,1412.46" />
+                                                      <GoTo name="returncash" _npos="5314.9966,1862.0132" />
+                                                    </Success>
+                                                    <Failure>
+                                                      <CheckDataAction identifier="depositb1" condition="gte 50" _npos="5802.62,1057.113">
+                                                        <Success>
+                                                          <SetDataAction operation="Add" value="-50" identifier="depositb1" _npos="5802.65,1249.9941" />
+                                                          <SpawnAction itemidentifier="ita_bill50" targetinventory="customer" _npos="5802.711,1410.3982" />
+                                                          <GoTo name="returncash" _npos="5803.0576,1861.0085" />
+                                                        </Success>
+                                                        <Failure>
+                                                          <CheckDataAction identifier="depositb1" condition="gte 5" _npos="6270.8247,1063.6833">
+                                                            <Success>
+                                                              <SetDataAction operation="Add" value="-5" identifier="depositb1" _npos="6270.3643,1255.2479" />
+                                                              <SpawnAction itemidentifier="ita_coin5" targetinventory="customer" _npos="6270.115,1417.3718" />
+                                                              <GoTo name="returncash" _npos="6270.701,1865.0089" />
+                                                            </Success>
+                                                            <Failure>
+                                                              <CheckDataAction identifier="depositb1" condition="gte 1" _npos="6794.022,1056.9849">
+                                                                <Success>
+                                                                  <SetDataAction operation="Add" value="-1" identifier="depositb1" _npos="6794.4,1247.9579" />
+                                                                  <SpawnAction itemidentifier="ita_coin1" targetinventory="customer" _npos="6793.896,1409.2358" />
+                                                                  <GoTo name="returncash" _npos="6794.9893,1860.0084" />
+                                                                </Success>
+                                                              </CheckDataAction>
+                                                            </Failure>
+                                                          </CheckDataAction>
+                                                        </Failure>
+                                                      </CheckDataAction>
+                                                    </Failure>
+                                                  </CheckDataAction>
+                                                </Failure>
+                                              </CheckDataAction>
+                                            </Success>
+                                            <Failure>
+                                              <GoTo name="end" _npos="5289.3276,673.70044" />
+                                            </Failure>
+                                          </CheckDataAction>
+                                        </Success>
+                                        <Failure>
+                                          <CheckDataAction identifier="depamount" condition="eq 400" _npos="5408.6895,-53.35173">
+                                            <Success>
+                                              <SetDataAction operation="Add" value="400" identifier="depositb1" _npos="5406.4956,141.0394" />
+                                              <GoTo name="returncash" _npos="5407.6636,302.8474" />
+                                            </Success>
+                                            <Failure>
+                                              <CheckDataAction identifier="depamount" condition="eq 1000" _npos="5872.4453,-49.750122">
+                                                <Success>
+                                                  <SetDataAction operation="Add" value="1000" identifier="depositb1" _npos="5872.3433,144.87769" />
+                                                  <GoTo name="returncash" _npos="5872.2983,306.6232" />
+                                                </Success>
+                                              </CheckDataAction>
+                                            </Failure>
+                                          </CheckDataAction>
+                                        </Failure>
+                                      </CheckDataAction>
+                                    </Failure>
+                                  </CheckDataAction>
+                                </Failure>
+                              </CheckDataAction>
+                            </Failure>
+                          </CheckItemAction>
+                        </Failure>
+                      </CheckItemAction>
+                    </Failure>
+                  </CheckItemAction>
+                </Failure>
+              </CheckItemAction>
+            </Failure>
+          </CheckItemAction>
+        </Failure>
+      </CheckDataAction>
+    </Option>
+    <Option text="EventText.shop.53" endconversation="true">
+      <SetDataAction operation="Set" value="400" identifier="depamount" _npos="317.24664,-124.79257" />
+      <SetDataAction operation="Set" value="-400" identifier="depositb1" _npos="900.26733,-124.60651" />
+	  <StatusEffectAction targettag="banker1">
+				<StatusEffect>
+					<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_atm.ogg" range="500"  />
+				</StatusEffect>
+			   </StatusEffectAction>
+			   <WaitAction time="0.5" />
+      <GoTo name="deposit" _npos="1317.1495,-125.74051" />
+    </Option>
+    <Option text="EventText.shop.54" endconversation="true">
+      <SetDataAction operation="Set" value="1000" identifier="depamount" _npos="318.08585,38.413086" />
+      <SetDataAction operation="Set" value="-1000" identifier="depositb1" _npos="902.1116,38.36902" />
+	  <StatusEffectAction targettag="banker1">
+				<StatusEffect>
+					<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_atm.ogg" range="500"  />
+				</StatusEffect>
+			   </StatusEffectAction>
+			   <WaitAction time="0.5" />
+      <GoTo name="deposit" _npos="1319.9547,37.80371" />
+    </Option>
+    <Option text="EventText.shop.55" endconversation="true">
+      <SetDataAction operation="Set" value="1337" identifier="depamount" _npos="319.21918,200.28864" />
+      <SetDataAction operation="Set" value="-10000" identifier="depositb1" _npos="904.4518,200.9107" />
+	  <StatusEffectAction targettag="banker1">
+				<StatusEffect>
+					<Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_atm.ogg" range="500"  />
+				</StatusEffect>
+			   </StatusEffectAction>
+			   <WaitAction time="0.5" />
+      <GoTo name="deposit" _npos="1329.0653,200.64816" />
+    </Option>
+    <Option text="eventtext.atm.5" endconversation="true">
+      <GoTo name="banker1" _npos="-2094.423,64.665405" />
+    </Option>
+    <Option text="" endconversation="true" />
+  </ConversationAction>
+</ScriptedEvent>
 
 		<ScriptedEvent identifier="ita_collectorsell1">
 			<TagAction criteria="itemidentifier:socket4ita" tag="socket4ita" />
