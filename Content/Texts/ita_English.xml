@@ -503,7 +503,9 @@
 	<eventtext.itatransp1.2.1>&quot;Thanks for getting me out of that shithole.&quot;</eventtext.itatransp1.2.1>
 	<eventtext.itatransp1.2.2>[PASSENGER MISSION COMPLETE 800mk OUTPOST REP+5]</eventtext.itatransp1.2.2>
 
-
+	<eventtext.itabeaconsep1.0b.8>"Hey, hey! You're pushing your luck 'ere, stranger.. This Crystal has its values, but.. Eh, whatever, here - take it. Probably not worth anything anyways.."&#xD;&#xA;</eventtext.itabeaconsep1.0b.8>
+	<eventtext.itabeaconsep1.0b.10>[ENGI 45 FAILED] &quot;You seem to be as clueless as I am!&quot;</eventtext.itabeaconsep1.0b.10>
+	<eventtext.trainer.14>"Maybe one of us will talk to you later about training, as long as you don't come anywhere close to our docking port."</eventtext.trainer.14>
 	<!--Items-->
 
 	<!--Mission Crates-->
@@ -661,23 +663,13 @@
 	<entityname.ita_aliendoor_red>Alien Red Door</entityname.ita_aliendoor_red>
 	<entityname.ita_alienhatch_blue>Alien Blue Hatch</entityname.ita_alienhatch_blue>
 	<entityname.ita_alienhatch_red>Alien Red Hatch</entityname.ita_alienhatch_red>
+	<entityname.ita_crawyum>Craw-Yum! Soup</entityname.ita_crawyum>
+	<entitydescription.ita_crawyum>Pinch your nose and swallow quickly.</entitydescription.ita_crawyum>
+	<entitydescription.ita_ancientpiece>Heavy ornament made from alien metals.</entitydescription.ita_ancientpiece>
 	
 	<locationchange.cave.changeto.mine>Settlers at [previousname] have established a mining outpost in the cleared cave.</locationchange.cave.changeto.mine>
 	
-	<!-- When adding new text, do it so at the bottom under the 'New additions' & 'Changed values' respectively. If it's a new tag entirely, put it under the new additions one; If it's an update to an existing value, put it under the changed values one. -->
-	<!-- DO NOT EDIT EXISTING TAGS FOR ALREADY TRANSLATED LINES -> if you need a new tag for something, add it under the 'New values' header and comment if there's some other tag that should be replaced -->
-	
-	<!--LINES MODIFIED-->	
-	<eventtext.itabeaconsep1.0b.8>"Hey, hey! You're pushing your luck 'ere, stranger.. This Crystal has its values, but.. Eh, whatever, here - take it. Probably not worth anything anyways.."&#xD;&#xA;</eventtext.itabeaconsep1.0b.8>
-	<eventtext.itabeaconsep1.0b.10>[ENGI 45 FAILED] &quot;You seem to be as clueless as I am!&quot;</eventtext.itabeaconsep1.0b.10>
-	<eventtext.trainer.14>"Maybe one of us will talk to you later about training, as long as you don't come anywhere close to our docking port."</eventtext.trainer.14>
-    <entityname.ita_crawyum>Craw-Yum! Soup</entityname.ita_crawyum>
-	<!--NEW LINES ADDED-->
-	<entitydescription.ita_crawyum>Pinch your nose and swallow quickly.</entitydescription.ita_crawyum>
-	<!--NEW LINES ADDED-->
-	<entitydescription.ita_ancientpiece>Heavy ornament made from alien metals.</entitydescription.ita_ancientpiece>
-
-	<!--after R-3.385-->
+	<!--R-3.385-->
 	<missionname.amblygonitecollection>Collecting amblygonite</missionname.amblygonitecollection>
 	<missiondescription.amblygonitecollection>There's been talk of deposits of amblygonite along the way from [location1] to [location2]. Bring back six samples of amblygonite to verify these claims.</missiondescription.amblygonitecollection>
 	<missionheader0.amblygonitecollection>Amblygonite collected</missionheader0.amblygonitecollection>
@@ -727,4 +719,12 @@
 	<missionsuccess.galenacollection>The existence of the galena deposits has been successfully proven.</missionsuccess.galenacollection>
 	<missionsonarlabel.galenacollection>Galena</missionsonarlabel.galenacollection>
 
+	<!--R-3.386-->
+	<entityname.ita_atm>ATM</entityname.ita_atm>
+	<entitydescription.ita_atm>A machine for automatic handling of hard cash.</entitydescription.ita_atm>
+	<eventtext.atm.1>Withdraw or deposit cash.</eventtext.atm.1>
+	<eventtext.atm.2>You don't have enough money on your account</eventtext.atm.2>
+	<eventtext.atm.3>Depositing all remaining cash</eventtext.atm.3>
+	<eventtext.atm.4>Only crew captains can withdraw.</eventtext.atm.4>
+	<eventtext.atm.5>Step away</eventtext.atm.5>
 </infotexts>
