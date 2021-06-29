@@ -1,0 +1,6 @@
+﻿<Charactervariant inherit="Hammerheadspawn" speciesname="Bait" group="human">
+  <health vitality="0"/>
+  <StatusEffect type="Always" target="This" stackable="false" disabledeltatime="true" delay="1">
+	<Affliction identifier="stun" strength="10" />
+  </StatusEffect>
+</Charactervariant>

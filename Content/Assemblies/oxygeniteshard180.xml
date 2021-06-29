@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ItemAssembly name="oxygeniteshard180" description="" hideinmenus="false">
+  <Item name="" identifier="oxygeniteshard" ID="166" isoverride="true" rect="-15,1,30,27"  rotation="180" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="smallitem" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.2" hiddeningame="False">
+    <Holdable attached="True" holdpos="0,0" holdangle="0" swingamount="0,0" swingspeed="0" swingwhenholding="False" swingwhenaiming="False" swingwhenusing="False" pickingtime="5" canbepicked="False" allowingameediting="True" msg="ItemMsgForceOpenCrowbar">
+      <requireditem items="crowbar" type="Equipped" optional="false" ignoreineditor="false" />
+    </Holdable>
+  </Item>
+</ItemAssembly>

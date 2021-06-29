@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Traditional Chinese" nowhitespace="true" translatedname="中文(繁體)">
+
+<!-- When adding new text, do it so at the bottom under the 'New additions' & 'Changed values' respectively. If it's a new tag entirely, put it under the new additions one; If it's an update to an existing value, put it under the changed values one. -->
+<!-- DO NOT EDIT EXISTING TAGS FOR ALREADY TRANSLATED LINES -> if you need a new tag for something, add it under the 'New values' header and comment if there's some other tag that should be replaced -->
+
+	
+	<!--Afflictions-->
+	
+	<afflictionname.exposure>暴露於核廢料</afflictionname.exposure>
+	<afflictiondescription.exposure>處理熱燃料棒時導致嚴重輻射燒傷和水皰。 </afflictiondescription.exposure>
+	<afflictioncauseofdeath.exposure>暴露於高溫核廢料而死。</afflictioncauseofdeath.exposure>
+	<afflictioncauseofdeathself.exposure>你沒能抵擋住放射性廢料。</afflictioncauseofdeathself.exposure>
+
+	<afflictionname.ancientburn>藍火燒傷</afflictionname.ancientburn>
+	<afflictiondescription.ancientburn>燒傷、深藍色水泡和腐爛的皮膚，都是歐羅巴遠古的異星科技造成的。 </afflictiondescription.ancientburn>
+	<afflictioncauseofdeath.ancientburn>被燒死</afflictioncauseofdeath.ancientburn>
+	<afflictioncauseofdeathself.ancientburn>你已經被燒死了。</afflictioncauseofdeathself.ancientburn>
+
+	<afflictionname.heal1>治療</afflictionname.heal1>
+	<afflictiondescription.heal1>前哨站提供優秀的治療</afflictiondescription.heal1>
+
+	<afflictionname.heal2>吃飽</afflictionname.heal2>
+	<afflictiondescription.heal2>熱呼呼的食物暖到心裡。[恢復內臟損傷]</afflictiondescription.heal2>
+
+	<afflictionname.heal3>充分休息</afflictionname.heal3>
+	<afflictiondescription.heal3>在通風良好的前哨站睡個暖覺有助身體康服.[恢復內臟損傷]</afflictiondescription.heal3>
+
+	<afflictionname.heal4>放鬆</afflictionname.heal4>
+	<afflictiondescription.heal4>在前哨站與明白事理的人一起喝酒令你忘記對海洋的恐懼。[精神抗性][恢復精神]</afflictiondescription.heal4>
+ 
+	<!--Characters-->
+
+	<character.Molochboss>遠古的摩螺克之王</character.Molochboss>
+	<character.OutpostOrangeboy>馴化橙童</character.OutpostOrangeboy>
+
+	<!--Mission texts-->
+
+	<missionname.cargopassanger1>運送乘客</missionname.cargopassanger1>
+	<missiondescription.cargopassanger1>請帶我安全到達[location2]，我會給你 [reward] mk 作回報。</missiondescription.cargopassanger1>
+	<missionsuccess.cargopassanger1>謝謝你載我。</missionsuccess.cargopassanger1>
+
+	<missionname.cargoprisoner1>運送囚犯</missionname.cargoprisoner1>
+	<missiondescription.cargoprisoner1>5名囚犯需要活著運送到 [location2]。</missiondescription.cargoprisoner1>
+	<missionsuccess.cargoprisoner1>囚犯們在運送途中倖存下來了</missionsuccess.cargoprisoner1>
+
+	<missionname.cargoprisoner2>運送囚犯</missionname.cargoprisoner2>
+	<missiondescription.cargoprisoner2>一群小丑在 [location1] 打擾到居民，[reward] mk 被承諾給予任何能將他們活著運送到 [location2] 的人，讓當地享受小丑帶來的歡樂。</missiondescription.cargoprisoner2>
+	<missionsuccess.cargoprisoner2>小丑們已抵達...</missionsuccess.cargoprisoner2>
+
+	<missionname.cargoprisoner3>運送囚犯</missionname.cargoprisoner3>
+	<missiondescription.cargoprisoner3>一群瘋狂的邪教徒因在 [location1] 參與可疑活動而被捕，請將這3人安然無恙地送到 [location2] 的精神科醫生那裡以獲得 [reward] mk 的回報。</missiondescription.cargoprisoner3>
+	<missionsuccess.cargoprisoner3>精神科醫生把邪教徒們當作兄弟一樣來迎接，並支付對你承諾的獎勵。</missionsuccess.cargoprisoner3>
+
+	<missionname.cargotime1>緊急貨物</missionname.cargotime1>
+	<missiondescription.cargotime1>一箱快速變質的貨物需要被送到附近前哨站的一位研究人員手中，我們預測它從微波爐取出後，僅剩10分鐘壽命。祝你好運！</missiondescription.cargotime1>
+	<missionsuccess.cargotime1>不穩定的貨物已在腐爛之前成功送達。</missionsuccess.cargotime1>
+
+	<missionname.cargowater1>運送對乾貨物 </missionname.cargowater1>
+	<missiondescription.cargowater1>一盒酥皮需要被運到 [location2]，切勿把它弄濕！</missiondescription.cargowater1>
+	<missionsuccess.cargowater1>貨物又乾又脆地送到了！</missionsuccess.cargowater1>
+
+	<missionname.cargoeggs>運送蛋</missionname.cargoeggs>
+	<missiondescription.cargoeggs>2個泥偶迅猛龍蛋需要被運到 [location2] 的冰箱，從這裡的冰箱中取出後，蛋會在大約 11 分鐘內孵化。請及時送牠們！</missiondescription.cargoeggs>
+	<missionsuccess.cargoeggs>蛋在孵化前被送到 [location2] 的研究冷凍室。</missionsuccess.cargoeggs>
+
+	<missionname.cargofragile1>運送易碎貨物</missionname.cargofragile1>
+	<missiondescription.cargofragile1>[location2] 需要這件易碎物品，請確保貨物不會掉到地上！如果您需要攜帶它，請先蹲下再放下箱子。</missiondescription.cargofragile1>
+	<missionsuccess.cargofragile1>易碎貨物完整無缺地送到了。</missionsuccess.cargofragile1>
+
+	<missionname.cargoeggs2>運送危險的蛋</missionname.cargoeggs2>
+	<missiondescription.cargoeggs2>2個冷藏的泥偶迅猛龍蛋需要被送到 [location2] 的1位科學家手中，貨箱裡的蛋需要電池來維持冷凍，請及時更換新的電池！</missiondescription.cargoeggs2>
+	<missionsuccess.cargoeggs2>迅猛龍蛋在孵化前已交付給研究人員。</missionsuccess.cargoeggs2>
+
+	<missionname.cargoeggs3>運送生物樣品</missionname.cargoeggs3>
+	<missiondescription.cargoeggs3>[location1] 的安保捕獲並鎖住了一隻泥偶迅猛龍，牠現在需要被送到 [location2] 接受泥偶迅猛龍競速的訓練，牠需要用鴉片鎮靜以保持冷靜。</missiondescription.cargoeggs3>
+	<missionsuccess.cargoeggs3>可憐的泥偶迅猛龍在人類的運送過程中倖存下來。</missionsuccess.cargoeggs3>
+
+	<missionname.killwatcher>獵殺獨目哨兵</missionname.killwatcher>
+	<missiondescription.killwatcher>消滅獨目哨兵和牠的僕從。</missiondescription.killwatcher>
+	<missionsonarlabel.killwatcher>目標</missionsonarlabel.killwatcher>
+	<missionsuccess.killwatcher>獨目哨兵和牠的僕從已被消滅。</missionsuccess.killwatcher>
+	<missionheader0.killwatcher>目標已排除</missionheader0.killwatcher>
+	<missionmessage0.killwatcher>獨目哨兵和牠的僕從已被消滅，現駕駛潛艇離開洞穴以領取獎勵。</missionmessage0.killwatcher>
+
+	<missionname.killmolochboss>獵殺遠古的摩螺克之王</missionname.killmolochboss>
+	<missiondescription.killmolochboss>這個遠古摩螺克之王非常危險，牠足以導致大規模的後勤問題，過往甚至擊落了幾艘攻擊型潛艇。任何能擊殺牠的專業船員，都承諾給予【reward】作回報。</missiondescription.killmolochboss>
+	<missionsonarlabel.killmolochboss>遠古摩螺克之王</missionsonarlabel.killmolochboss>
+	<missionsuccess.killmolochboss>遠古摩螺克之王已經被殺死。</missionsuccess.killmolochboss>
+	<missionheader0.killmolochboss>目標已排除</missionheader0.killmolochboss>
+	<missionmessage0.killmolochboss>你的船員簡直是傳奇，遠古的摩螺克之王死了，現駕駛潛艇離開洞穴以領取獎勵。</missionmessage0.killmolochboss>
+
+	<missionname.ita_swarmsmall_crawler>清理小怪群</missionname.ita_swarmsmall_crawler>
+	<missiondescription.ita_swarmsmall_crawler>一小群藻鬃爬行者一直在威脅 [location1] 與 [location2] 之間航行的船隻，[reward] mk 的獎勵已承諾給任何能消滅牠們的船員。</missiondescription.ita_swarmsmall_crawler>
+	<missionsonarlabel.ita_swarmsmall_crawler>怪群</missionsonarlabel.ita_swarmsmall_crawler>
+	<missionsuccess.ita_swarmsmall_crawler>怪群已被消滅。</missionsuccess.ita_swarmsmall_crawler>
+	<missionheader0.ita_swarmsmall_crawler>目標已排除</missionheader0.ita_swarmsmall_crawler>
+	<missionmessage0.ita_swarmsmall_crawler>這群藻鬃爬行者已被消滅，現駕駛潛艇離開洞穴以領取獎勵。</missionmessage0.ita_swarmsmall_crawler>
+
+	<missionname.ita_swarmsmall_thresher>清理小怪群</missionname.ita_swarmsmall_thresher>
+	<missiondescription.ita_swarmsmall_thresher>一小群長尾鯊群一直在威脅 [location1] 與 [location2] 之間航行的船隻，[reward] mk 的獎勵已承諾給任何能消滅牠們的船員。</missiondescription.ita_swarmsmall_thresher>
+	<missionsonarlabel.ita_swarmsmall_thresher>怪群</missionsonarlabel.ita_swarmsmall_thresher>
+	<missionsuccess.ita_swarmsmall_thresher>怪群已被消滅。</missionsuccess.ita_swarmsmall_thresher>
+	<missionheader0.ita_swarmsmall_thresher>目標已排除</missionheader0.ita_swarmsmall_thresher>
+	<missionmessage0.ita_swarmsmall_thresher>這群長尾鯊已被消滅，現駕駛潛艇離開洞穴以領取獎勵。</missionmessage0.ita_swarmsmall_thresher>
+
+	<missionname.ita_swarmsmall_mudraptor1>清理小怪群</missionname.ita_swarmsmall_mudraptor1>
+	<missiondescription.ita_swarmsmall_mudraptor1>一小群年輕的迅猛龍在 [location1] 與 [location2] 之間遊蕩。如你能同時殺死雌性、雄性和其幼童，這些 [reward] mk 都歸你所有。</missiondescription.ita_swarmsmall_mudraptor1>
+	<missionsonarlabel.ita_swarmsmall_mudraptor1>怪群</missionsonarlabel.ita_swarmsmall_mudraptor1>
+	<missionsuccess.ita_swarmsmall_mudraptor1>怪群已被消滅。</missionsuccess.ita_swarmsmall_mudraptor1>
+	<missionheader0.ita_swarmsmall_mudraptor1>目標已排除</missionheader0.ita_swarmsmall_mudraptor1>
+	<missionmessage0.ita_swarmsmall_mudraptor1>這群泥偶迅猛龍已被消滅，現駕駛潛艇離開洞穴以領取獎勵。</missionmessage0.ita_swarmsmall_mudraptor1>
+
+	<missionname.ita_swarmsmall_mudraptor2>清理小怪群</missionname.ita_swarmsmall_mudraptor2>
+	<missiondescription.ita_swarmsmall_mudraptor2>一小群成年的泥偶迅猛龍在 [location1] 與 [location2] 之間遊蕩。清除牠們後，這些 [reward] mk 都歸你所有。</missiondescription.ita_swarmsmall_mudraptor2>
+	<missionsonarlabel.ita_swarmsmall_mudraptor2>怪群</missionsonarlabel.ita_swarmsmall_mudraptor2>
+	<missionsuccess.ita_swarmsmall_mudraptor2>怪群已被消滅。</missionsuccess.ita_swarmsmall_mudraptor2>
+	<missionheader0.ita_swarmsmall_mudraptor2>目標已排除</missionheader0.ita_swarmsmall_mudraptor2>
+	<missionmessage0.ita_swarmsmall_mudraptor2>這群泥偶迅猛龍已被消滅，現駕駛潛艇離開洞穴以領取獎勵。</missionmessage0.ita_swarmsmall_mudraptor2>
+
+	<missionname.ita_swarmlarge_crawler>清理大怪群</missionname.ita_swarmlarge_crawler>
+	<missiondescription.ita_swarmlarge_crawler>一大群藻鬃爬行者一直在威脅 [location1] 與 [location2] 之間航行的船隻，[reward] mk 的獎勵已承諾給任何能消滅牠們的船員。</missiondescription.ita_swarmlarge_crawler>
+	<missionsonarlabel.ita_swarmlarge_crawler>怪群</missionsonarlabel.ita_swarmlarge_crawler>
+	<missionsuccess.ita_swarmlarge_crawler>怪群已被消滅。</missionsuccess.ita_swarmlarge_crawler>
+	<missionheader0.ita_swarmlarge_crawler>目標已排除</missionheader0.ita_swarmlarge_crawler>
+	<missionmessage0.ita_swarmlarge_crawler>大群藻鬃爬行者已被消滅，現駕駛潛艇離開洞穴以領取獎勵。</missionmessage0.ita_swarmlarge_crawler>
+
+	<missionname.ita_swarmlarge_thresher>清理大怪群</missionname.ita_swarmlarge_thresher>
+	<missiondescription.ita_swarmlarge_thresher>一大群長尾鯊群一直在威脅 [location1] 與 [location2] 之間航行的船隻，[reward] mk 的獎勵已承諾給任何能消滅牠們的船員。</missiondescription.ita_swarmlarge_thresher>
+	<missionsonarlabel.ita_swarmlarge_thresher>怪群</missionsonarlabel.ita_swarmlarge_thresher>
+	<missionsuccess.ita_swarmlarge_thresher>怪群已被消滅。</missionsuccess.ita_swarmlarge_thresher>
+	<missionheader0.ita_swarmlarge_thresher>目標已排除</missionheader0.ita_swarmlarge_thresher>
+	<missionmessage0.ita_swarmlarge_thresher>大群長尾鯊已被消滅，現駕駛潛艇離開洞穴以領取獎勵。</missionmessage0.ita_swarmlarge_thresher>
+
+	<missionname.ita_swarmlarge_mudraptor1>清理大怪群</missionname.ita_swarmlarge_mudraptor1>
+	<missiondescription.ita_swarmlarge_mudraptor1>一小群年輕的迅猛龍在 [location1] 與 [location2] 之間遊蕩。如你能同時殺死雌性、雄性和其幼童，這些 [reward] mk 都歸你所有。</missiondescription.ita_swarmlarge_mudraptor1>
+	<missionsonarlabel.ita_swarmlarge_mudraptor1>怪群</missionsonarlabel.ita_swarmlarge_mudraptor1>
+	<missionsuccess.ita_swarmlarge_mudraptor1>怪群已被消滅。</missionsuccess.ita_swarmlarge_mudraptor1>
+	<missionheader0.ita_swarmlarge_mudraptor1>目標已排除</missionheader0.ita_swarmlarge_mudraptor1>
+	<missionmessage0.ita_swarmlarge_mudraptor1>大群泥偶迅猛龍已被消滅，現駕駛潛艇離開洞穴以領取獎勵。</missionmessage0.ita_swarmlarge_mudraptor1>
+
+	<missionname.ita_swarmlarge_mudraptor2>清理大怪群</missionname.ita_swarmlarge_mudraptor2>
+	<missiondescription.ita_swarmlarge_mudraptor2>一大群成年的泥偶迅猛龍在 [location1] 與 [location2] 之間遊蕩並殺死所有生物，甚至連軍用潛艇也不是牠們的對手。任何瘋狂的船員如能成功挑戰牠們，將被給予 9000 mk。</missiondescription.ita_swarmlarge_mudraptor2>
+	<missionsonarlabel.ita_swarmlarge_mudraptor2>怪群</missionsonarlabel.ita_swarmlarge_mudraptor2>
+	<missionsuccess.ita_swarmlarge_mudraptor2>怪群已被消滅。</missionsuccess.ita_swarmlarge_mudraptor2>
+	<missionheader0.ita_swarmlarge_mudraptor2>目標已排除</missionheader0.ita_swarmlarge_mudraptor2>
+	<missionmessage0.ita_swarmlarge_mudraptor2>大群泥偶迅猛龍已被消滅，現駕駛潛艇離開洞穴以領取獎勵。</missionmessage0.ita_swarmlarge_mudraptor2>
+
+	<missionname.ita_drycave_clear1>清理洞穴</missionname.ita_drycave_clear1>
+	<missiondescription.ita_drycave_clear1>這個洞穴裡到處都是怪物，而且阻礙了人類未來的發展。請使用聲納尋找並摧毀怪物及牠們的蛋。</missiondescription.ita_drycave_clear1>
+	<missionsonarlabel.ita_drycave_clear1>O</missionsonarlabel.ita_drycave_clear1>
+	<missionheader0.ita_drycave_clear1>巢穴已清除</missionheader0.ita_drycave_clear1>
+	<missionsuccess.ita_drycave_clear1>你順利清除了巢穴，阻止了怪物未來在該區的增長。</missionsuccess.ita_drycave_clear1>
+
+
+	<!--Event Texts-->
+
+	<eventtext.itamissioneventcargosensitive>「請小心運達敏感貨物，切勿打破它！」</eventtext.itamissioneventcargosensitive>
+	<eventtext.itamissioneventcargomonster>「運送活物時請小心別被牠吃掉...」</eventtext.itamissioneventcargomonster>
+	<eventtext.itamissioneventeggtime>「運送活物時請小心別被牠吃掉...」</eventtext.itamissioneventeggtime>
+	<eventtext.itamissioneventeggfridge>「運送活物時請小心別被牠吃掉...」</eventtext.itamissioneventeggfridge>
+	<eventtext.itamissioneventlivemudraptor>「運送活物時請小心別被牠吃掉...」</eventtext.itamissioneventlivemudraptor>
+	<eventtext.itamissioneventcargobulk>「大量貨物需要被運送，因此你最好有寬敞的貨運型潛艇並裝有足夠的貨物架以備放置！」</eventtext.itamissioneventcargobulk>
+
+	<eventtext.itahusk1.p1>前哨站廣播：&quot;警報！這裡已經被畫皮突破了！任何按下按鈕的人都將付出代價！&quot;&#xD;&#xA;[前哨站 &#x9;聲望 -200]</eventtext.itahusk1.p1>
+	<eventtext.itahusk1.p2>前哨站廣播：&quot;警報！這裡已經被畫皮突破了！任何按下按鈕的人都將付出代價！&quot; 這會令邪教高興... &#xD;&#xA;[畫皮教派 &#x9;&#x9;聲望 +50]&#xD;&#xA;[木衛二聯盟 聲望 -70]&#xD;&#xA;[前哨站 &#x9;聲望 -200]</eventtext.itahusk1.p2>
+
+	<eventtext.itacrawler1.p1>前哨站廣播：&quot;這裡已經被藻鬃爬行者突破了！任何按下按鈕的人都將付出代價！&quot;&#xD;&#xA;[前哨站 &#x9;  聲望 -200]&#xD;&#xA;[木衛二聯盟 聲望 -30]</eventtext.itacrawler1.p1>
+	<eventtext.itacrawler1.p2>前哨站廣播：&quot;這裡已經被藻鬃爬行者突破了！任何按下按鈕的人都將付出代價！&quot;&#xD;&#xA;[前哨站 &#x9;  聲望 -200]&#xD;&#xA;[木星分離主義分子 聲望 +20]&#xD;&#xA;[木衛二聯盟 聲望 -30]</eventtext.itacrawler1.p2>
+
+	<eventtext.v1mechanicsarespecial1>一名機械維修工在維修一個破舊引擎時對你怒目而視，彷彿在打量你。</eventtext.v1mechanicsarespecial1>
+	<eventtext.v1mechanicsarespecial.cl1>工程間到處都是又認真又疲倦的工人，若能讓這些人快樂，將會是一項了不起的成就。</eventtext.v1mechanicsarespecial.cl1>
+	<eventtext.v1mechanicsarespecial.cl2>[小丑喇叭] 用您信賴的紅色小丑喇叭來即興演奏一小段。</eventtext.v1mechanicsarespecial.cl2>
+	<eventtext.v1mechanicsarespecial.cl3>&quot;你做了一個非常悲傷的表情，然後拿下小丑假髮並指著引擎。您將小丑喇叭放在排氣管後面，拍一下引擎並輕輕地按喇叭。房間由原先嚴肅的氣氛變成充滿歡樂笑聲，機械工露出一絲微笑並遞給您一張 50 mk 的鈔票。&quot;&#xD;&#xA;&#xD;&#xA;[小丑聖母之子 聲望 +10]&#xD;&#xA;[位置 聲望 +10]</eventtext.v1mechanicsarespecial.cl3>
+	<eventtext.v1mechanicsarespecial.cl4>「[吉他] 試著用溫馨的曲調打動工人的心。」</eventtext.v1mechanicsarespecial.cl4>
+	<eventtext.v1mechanicsarespecial.cl5>由於工作場所發出的噪音覆蓋了吉他的聲音，只有很少音效傳遞至工人耳中，工人似乎沒有任何反應...</eventtext.v1mechanicsarespecial.cl5>
+	<eventtext.v1mechanicsarespecial.cl6>從架子上拿一把扳手來敲自己的頭。</eventtext.v1mechanicsarespecial.cl6>
+	<eventtext.v1mechanicsarespecial.cl7>機械工皺眉。&#xD;&#xA;&quot;趕緊離開這裡，小丑，不然我們毆打你。&quot;&#xD;&#xA;&#xD;&#xA;[小丑聖母之子 聲望 -5]&#xD;&#xA;[位置 聲望 -5]</eventtext.v1mechanicsarespecial.cl7>
+	<eventtext.v1mechanicsarespecial.2>[駕駛水準 70] 你想起這個引擎的型號曾出現在一張舊發票內。</eventtext.v1mechanicsarespecial.2>
+	<eventtext.v1mechanicsarespecial.3>&quot;我認得這個引擎是為了 Venture 飛船而購買的。&quot;</eventtext.v1mechanicsarespecial.3>
+	<eventtext.v1mechanicsarespecial.4>&quot;自作聰明。&quot;&#xD;&#xA;&#xD;&#xA;他完全不在乎他所看見的並繼續原先的工作。顯然，你不知為何沒有通過測試。</eventtext.v1mechanicsarespecial.4>
+	<eventtext.v1mechanicsarespecial.5>閉嘴！</eventtext.v1mechanicsarespecial.5>
+	<eventtext.v1mechanicsarespecial.6>&quot;你看起來有一半的潛力，過來幫我一起弄這個引擎。&quot;</eventtext.v1mechanicsarespecial.6>
+	<eventtext.v1mechanicsarespecial.7>&quot;Fuck off, greasy.&quot;</eventtext.v1mechanicsarespecial.7>
+	<eventtext.v1mechanicsarespecial.8>機械工難以置信地搖頭，然後繼續修理引擎。&#xD;&#xA;[位置 聲望 -10]</eventtext.v1mechanicsarespecial.8>
+	<eventtext.v1mechanicsarespecial.9>捲起你的衣袖去幫他們搞那台引擎。</eventtext.v1mechanicsarespecial.9>
+	<eventtext.v1mechanicsarespecial.10>你捲起衣袖，開始和他一起改裝引擎。經過幾分鐘的工作，你們都設法讓它運行起來。「謝謝，我相信自己最終能完成它，但你已經為我節省了一些時間。如果你想為你的潛艇上做改動，請告訴我，我會考慮給你一些折扣以解決你的麻煩。」&#xD;&#xA;[機械工程 +5]&#xD;&#xA;[位置 聲望 +20]&#xD;&#xA;[UPGRADE SALE 15%]</eventtext.v1mechanicsarespecial.10>
+	<eventtext.v1mechanicsarespecial.11>你捲起衣袖，開始和他一起改裝引擎。儘管您盡了最大努力，但引擎仍然無法啟動。他用力地關上修理面板。「好吧，我想這是給鏟屎官準備的，但還是謝謝你的幫助。」&#xD;&#xA;[機械工程 +1]&#xD;&#xA;[位置 聲望 +5]</eventtext.v1mechanicsarespecial.11>
+	<eventtext.v1mechanicsarespecial.12>他完全不在乎他所看見的並繼續原先的工作。顯然，你不知為何沒有通過測試。&#xD;&#xA;&#xD;&#xA;&quot;如果您的船員中有熟悉引擎的人，請將他們帶來這裡。&quot;</eventtext.v1mechanicsarespecial.12>
+	<eventtext.v1mechanicsarespecial.13>[機械工程 90] 你第一眼就認出該引擎。</eventtext.v1mechanicsarespecial.13>
+	<eventtext.v1mechanicsarespecial.14>&quot;那是 Venture 飛船引擎。它經常出問題，好讓你我這樣的人繼續做生意。&quot;</eventtext.v1mechanicsarespecial.14>
+
+	<eventtext.v2givingdirections.1>&quot;你迷路了吧，我看看我的船員能否給你指路。&quot;</eventtext.v2givingdirections.1>
+	<eventtext.v2givingdirections.2>&quot;我很感激，謝謝。&quot;</eventtext.v2givingdirections.2>
+	<eventtext.v2givingdirections.3>[運氣% 或 武器操作 60] 試圖在他們轉身時搶走他們的左輪手槍...</eventtext.v2givingdirections.3>
+	<eventtext.v2givingdirections.4>[駕駛水準 50] 「嘿，我能看看那張地圖嗎？我想知道離開這個鬼地方的最短路線。」</eventtext.v2givingdirections.4>
+	<eventtext.v2givingdirections.5>讓其他人處理船長的問題吧。</eventtext.v2givingdirections.5>
+
+	<eventtext.v3soundinthevent1>[螺絲刀][運氣% 或 機械工程 60] 拆除通風口仔細地查看內部。</eventtext.v3soundinthevent1>
+	<eventtext.v3soundinthevent2>您很輕鬆地拆除了通風口並立即發現了噪音來源：風扇葉片正與一個小金屬盒摩擦。你小心地拿出它，打開發現裡面藏有 1000 mk！可是你依然聽到通風口後面有怪聲，但誰在乎呢。 &#xD;&#xA;[1000 mk]&#xD;&#xA;[機械工程 +3]</eventtext.v3soundinthevent2>
+	<eventtext.v3soundinthevent3>您拆除通風蓋時並意外接觸到旋轉中的刀片，當你想伸回手時已經太晚了，最後劃傷了動脈還要被卡住。&#xD;&#xA;&#xD;&#xA;[武器操作 30] SUCCESS&#xD;&#xA;&#xD;&#xA;你忍受著痛苦，設法取得通風葉片後面的盒子，打開發現裡面藏有 1000 mk！可是你依然聽到通風口後面有怪聲，但誰在乎呢。&#xD;&#xA;&#xD;&#xA;[1000 mk]&#xD;&#xA;[武器操作 +3]&#xD;&#xA;</eventtext.v3soundinthevent3>
+	<eventtext.v3soundinthevent4>您拆除通風蓋時並意外接觸到旋轉中的刀片，當你想伸回手時已經太晚了，最後劃傷了動脈還要被卡住。</eventtext.v3soundinthevent4>
+	<eventtext.v3soundinthevent5>你無法徒手拆開通風口！</eventtext.v3soundinthevent5>
+	<eventtext.v3soundinthevent6>[手電筒] 用手電筒照射通風口查看任何不尋常的東西。</eventtext.v3soundinthevent6>
+	<eventtext.v3soundinthevent7>你看到一個小金屬盒正與通風葉片摩擦！你必須拆除通風口才能拿到它...</eventtext.v3soundinthevent7>
+	<eventtext.v3soundinthevent8>你在口袋裡尋找手電筒，發現沒有。也許你的船員們有一個... </eventtext.v3soundinthevent8>
+	<eventtext.v3soundinthevent9>暫時忽略它，也許你的一名船員會想處理這件事...</eventtext.v3soundinthevent9>
+
+	<eventtext.v4goodsamaritan.1>你遇到了一個失去知覺的工人，附近也沒有其他人也沒有任何暴力跡象，若治療當地人將會花費你的錢，但會有益你與這裡的人之間的關係。</eventtext.v4goodsamaritan.1>
+	<eventtext.v4goodsamaritan.2>順利地註射了一點納洛酮後，您發現患者出現對羥基苯甲酸酯過敏跡象。別無選擇的情況下，你花更多時間持續註射小劑量的納洛酮，並仔細觀察患者的反應。最後效果越來越好。&#xD;&#xA;&#xD;&#xA;[醫療水準 60 或 運氣% 成功]&#xD;&#xA;[醫療水準 +5]</eventtext.v4goodsamaritan.2>
+	<eventtext.v4goodsamaritan.3>&quot;嘿！謝謝你讓我醒來。我嘗試用一些鴉片類來治愈我的橙童，牠被一堆泥偶迅猛龍玩弄，可是藥物對我沒有效果。雖然我沒有東西可以給你，但我會告訴我店裡的朋友你幫助了我。他們會給你打個折扣。&quot;&#xD;&#xA;&#xD;&#xA;[獎勵 50 mk]&#xD;&#xA;[商店 折扣 10%]&#xD;&#xA;[位置 聲望 +10]</eventtext.v4goodsamaritan.3>
+	<eventtext.v4goodsamaritan.4>&quot;嘿！謝謝你讓我醒來。我嘗試用一些鴉片類來治愈我的橙童，牠被一堆泥偶迅猛龍玩弄，可是藥物對我沒有效果。我想給你一些金錢作回報，可惜我昏迷的時間，有些混蛋偷走了，但我會告訴我店裡的朋友你幫助了我。他們會給你打個折扣。&quot;&#xD;&#xA;&#xD;&#xA;[商店 折扣 10%]&#xD;&#xA;[位置 聲望 +10]</eventtext.v4goodsamaritan.4>
+	<eventtext.v4goodsamaritan.5>工人對你的藥物產生不良反應，注射的部位周圍迅速腫脹，其呼吸亦變得不規律。人們開始好奇——是時候離開了... &#xD;&#xA;&#xD;&#xA;[醫療水準 60 或 LUCK% FAIL]</eventtext.v4goodsamaritan.5>
+
+	<eventtext.v5impromptuengineering.1>附近的研究終端快速閃爍一段時間，然後變暗，這引起您的注意。</eventtext.v5impromptuengineering.1>
+	<eventtext.v5impromptuengineering.2>[螺絲刀] 調查</eventtext.v5impromptuengineering.2>
+	<eventtext.v5impromptuengineering.3>你嘗試按幾個按鈕但是沒有反應，打開側面板可以看到一團混亂的電線和幾個看似完好無損的 FPGA 電路。</eventtext.v5impromptuengineering.3>
+	<eventtext.v5impromptuengineering.4>[電氣工程 50] 尋找可用零件</eventtext.v5impromptuengineering.4>
+	<eventtext.v5impromptuengineering.5>[運氣% 或 電氣工程 60] 嘗試修復終端</eventtext.v5impromptuengineering.5>
+	<eventtext.v5impromptuengineering.6>終端在您重新連接顯示器的電源線時恢復正常，瀏覽系統時發現一些機會。看起來它連接到前哨站的裝備服務。你會想做什麼？</eventtext.v5impromptuengineering.6>
+	<eventtext.v5impromptuengineering.7>請求實驗用彈藥箱</eventtext.v5impromptuengineering.7>
+	<eventtext.v5impromptuengineering.8>點擊幾下後，您成功免費為您的船隻訂購了2箱剛素彈藥。</eventtext.v5impromptuengineering.8>
+	<eventtext.v5impromptuengineering.9>在終端上安裝一款舊式第一人稱射擊遊戲&#xD;&#xA;[電氣工程 +5]</eventtext.v5impromptuengineering.9>
+	<eventtext.v5impromptuengineering.9.1>順利地完成了工作。</eventtext.v5impromptuengineering.9.1>
+	<eventtext.v5impromptuengineering.10>瀏覽最新醫學研究的文件&#xD;&#xA;[醫療水準 +5]</eventtext.v5impromptuengineering.10>
+	<eventtext.v5impromptuengineering.11>您發現一台醫藥加工台介面可以非常有效地控制疊氮化合物的生產，看來這個前哨站正向木衛二聯盟供應炸藥。</eventtext.v5impromptuengineering.11>
+	<eventtext.v5impromptuengineering.11.1>研究生產 [醫療水準 +5]"</eventtext.v5impromptuengineering.11.1>
+	<eventtext.v5impromptuengineering.12>[木星分離主義分子 聲望 30] 將配方改為揮發性疊氮化合物... [木星分離主義分子 聲望 +10]</eventtext.v5impromptuengineering.12>
+	<eventtext.v5impromptuengineering.13>您發現一台有趣的醫藥加工台的介面可以非常有效地控制疊氮化合物的生產，你研究它的生產程序並從中獲得一些智識。</eventtext.v5impromptuengineering.13>
+	<eventtext.v5impromptuengineering.13.1>順利地完成了工作。</eventtext.v5impromptuengineering.13.1>
+	<eventtext.v5impromptuengineering.14>搜索有關外星生物解剖學的信息&#xD;&#xA;[武器操作 +5]</eventtext.v5impromptuengineering.14>
+	<eventtext.v5impromptuengineering.15>這裡有一張橫截面圖片詳細展示了泥偶迅猛龍，擁有厚甲的牠，看似只要蹲下並對著牠的腹部下面射擊是最佳的應對方法，用霰彈槍直接射向下巴更可能直接將牠致死。</eventtext.v5impromptuengineering.15>
+	<eventtext.v5impromptuengineering.15.1>順利地完成了工作。</eventtext.v5impromptuengineering.15.1>
+	<eventtext.v5impromptuengineering.16>把這個留給電工</eventtext.v5impromptuengineering.16>
+
+	<eventtext.v8propaganda.1>[噴漆器 + 醫用酒精] 通過清除牆上的塗鴉向當地人展示一名好公民的應有的榜樣。</eventtext.v8propaganda.1>
+	<eventtext.v8propaganda.2>[塗料] 在原先的塗鴉增添自己的藝術。</eventtext.v8propaganda.2>
+	<eventtext.v8propaganda.3>保持行走。</eventtext.v8propaganda.3>
+	<eventtext.v8propaganda.4>人們看著你清理爛攤子，他們開始互相竊竊私語，猜測你是否木衛二聯盟的人，其中一部份人對你露出了純拜的眼神便一起離開了...&#xD;&#xA;[位置 聲望 +15]&#xD;&#xA;[木衛二聯盟 聲望 +10]&#xD;&#xA;[木星分離主義分子 聲望 -10]</eventtext.v8propaganda.4>
+	<eventtext.v8propaganda.5>你畫了一些低俗的藝術已經足以令人們激烈地討論，甚至有人動手打架！&#xD;&#xA;[位置 聲望 -15]&#xD;&#xA;[木衛二聯盟 聲望 -30]&#xD;&#xA;[木星分離主義分子 聲望 +10]</eventtext.v8propaganda.5>
+	<eventtext.v8propaganda.6>一點點的混亂便足以令人對木衛二聯盟所謂的&quot;秩序與安全&quot;三思。</eventtext.v8propaganda.6>
+	<eventtext.v8propaganda.7>幹，你怎麼會沒有塗料？你算是反叛者嗎？還不去拿些回來。</eventtext.v8propaganda.7>
+
+	<eventtext.itacollectorsell1>&quot;出售遺物&quot;[+1400 mk][前哨站 聲望 +7]</eventtext.itacollectorsell1>
+
+	<eventtext.itaprisonbreak1.1>前哨站廣播：&quot;恐怖分子在沒有授權的情況下被釋放出牢房了！殺了他和他的同夥！&quot;&#xD;&#xA;&#xD;&#xA;[前哨站 聲望 -200]</eventtext.itaprisonbreak1.1>
+	<eventtext.itaprisonbreak1.2>前哨站廣播：&quot;恐怖分子在沒有授權的情況下被釋放出牢房了！殺了他和他的同夥！&quot;&#xD;&#xA;&#xD;&#xA;[前哨站 聲望 -200]&#xD;&#xA;[木衛二聯盟 聲望 -45]&#xD;&#xA;[木星分離主義分子 聲望 +20]</eventtext.itaprisonbreak1.2>
+
+	<eventtext.itaprisonbreak2.1>前哨站廣播：&quot;破壞分子在沒有授權的情況下被釋放出牢房了！殺了他和他的同夥！&quot;&#xD;&#xA;&#xD;&#xA;[前哨站 聲望 -200]</eventtext.itaprisonbreak2.1>
+	<eventtext.itaprisonbreak2.2>前哨站廣播：&quot;破壞分子在沒有授權的情況下被釋放出牢房了！殺了他和他的同夥！&quot;&#xD;&#xA;&#xD;&#xA;[前哨站 聲望 -200]&#xD;&#xA;[木衛二聯盟 聲望 -45]&#xD;&#xA;[小丑聖母之子 聲望 +20]</eventtext.itaprisonbreak2.2>
+
+	<eventtext.itaprisonescape1.0.1>前哨站廣播：&quot;囚犯們被潛艇船員釋放了！ 殺了他們！&quot;&#xD;&#xA;&#xD;&#xA;[前哨站 聲望 -200]</eventtext.itaprisonescape1.0.1>
+	<eventtext.itaprisonescape1.0.2>前哨站廣播：&quot;囚犯們被潛艇船員釋放了！ 殺了他們！&quot;&#xD;&#xA;&#xD;&#xA;[前哨站 聲望 -200]&#xD;&#xA;[木衛二聯盟 聲望 -50]&#xD;&#xA;[木星分離主義分子 聲望 +10]</eventtext.itaprisonescape1.0.2>
+
+	<eventtext.itaprisonescape2.0.1>前哨站廣播：&quot;囚犯們被潛艇船員釋放了！ 殺了他們！&quot;&#xD;&#xA;&#xD;&#xA;[前哨站 聲望 -200]</eventtext.itaprisonescape2.0.1>
+	<eventtext.itaprisonescape2.0.2>前哨站廣播：&quot;囚犯們被潛艇船員釋放了！ 殺了他們！&quot;&#xD;&#xA;&#xD;&#xA;[前哨站 聲望 -200]&#xD;&#xA;[木衛二聯盟 聲望 -50]&#xD;&#xA;[木星分離主義分子 聲望 +10]</eventtext.itaprisonescape2.0.2>
+
+	<eventtext.itaprisonescape2.1.1>這名囚犯受到不平等對待，看來木衛二聯盟對待木星分離主義分子的方式挺殘忍的。&#xD;&#xA;&quot;感謝你救我！我會跟船長說你所做的事情。&quot;</eventtext.itaprisonescape2.1.1>
+	<eventtext.itaprisonescape2.1.2>這名囚犯受到不平等對待，看來木衛二聯盟對待木星分離主義分子的方式挺殘忍的。&#xD;&#xA;&quot;感謝你救我！我會跟船長說你所做的事情。&quot;&#xD;&#xA;[木星分離主義分子 聲望 +10]</eventtext.itaprisonescape2.1.2>
+
+	<eventtext.itaprisonescape2.2.1>可憐的小丑以為木衛二聯盟的衛兵有幽默感。&#xD;&#xA;&quot;多虧了你，我才能繼續到處傳播歡樂。我的音樂還沒消失！願小丑聖母祝福你。&quot;&#xD;&#xA;</eventtext.itaprisonescape2.2.1>
+	<eventtext.itaprisonescape2.2.2>可憐的小丑以為木衛二聯盟的衛兵有幽默感。&#xD;&#xA;&quot;多虧了你，我才能繼續到處傳播歡樂。我的音樂還沒消失！願小丑聖母祝福你。&quot;&#xD;&#xA;[小丑聖母之子 聲望 +10]</eventtext.itaprisonescape2.2.2>
+
+	<eventtext.itaprisonescape2.1>木衛二聯盟胡亂判斷他人是木星分離主義分子派來的間諜，他們經常監禁前哨站的居民和潛艇船員，並將他們視為敵人一樣地對待...&#xD;&#xA;&quot;謝謝你幫我逃離那裡！當我正在碼頭清潔地板時，竟然被指控竊聽指揮室對話而被捕。木衛二聯盟才是真正的恐怖分子！&quot;&#xD;&#xA;</eventtext.itaprisonescape2.1>
+	<eventtext.itaprisonescape2.2>木衛二聯盟胡亂判斷他人是木星分離主義分子派來的間諜，他們經常監禁前哨站的居民和潛艇船員，並將他們視為敵人一樣地對待...&#xD;&#xA;&quot;謝謝你幫我逃離那裡！當我正在碼頭清潔地板時，竟然被指控竊聽指揮室對話而被捕。木衛二聯盟才是真正的恐怖分子！&quot;&#xD;&#xA;[木星分離主義分子 聲望 +10]</eventtext.itaprisonescape2.2>
+
+	<eventtext.itamissionscity1.1.1>這些是優先需要處理的工作，之後還有很多要做。</eventtext.itamissionscity1.1.1>
+	<eventtext.itamissionscity1.2.2>工作是沒有止境的，你可以先接受這份合同。</eventtext.itamissionscity1.2.2>
+	<eventtext.itamissionscity1.3.3>這次任務需要有組織的船員！</eventtext.itamissionscity1.3.3>
+	
+	<eventtext.itamissionsmining1.4>在進行大規模採礦活動前，我們需要事先了解礦物的類型和它們的位置。看看你能找到甚麼。</eventtext.itamissionsmining1.4>
+	<eventtext.itamissionsmining2.5>我們需要你先清理巢穴，才能繼續挖掘洞穴。</eventtext.itamissionsmining2.5>
+	<eventtext.itamissionsmining3.6>其他種類的工作也需要。</eventtext.itamissionsmining3.6>
+	
+	<eventtext.itamissionsmilitary1.7>我們需要你去辦一些差事。</eventtext.itamissionsmilitary1.7>
+	<eventtext.itamissionsmilitary2.8>我們需要你去消滅一大群怪物，希望你準備好了...</eventtext.itamissionsmilitary2.8>
+	<eventtext.itamissionsmilitary3.9>我們需要你消除該地區的巨大威脅，以免影響人類居住，你最好配備一些強大的火力。</eventtext.itamissionsmilitary3.9>
+
+	<eventtext.itamissiontrusted>&quot;你已經證明自己是一名經驗豐富的水手，所以我相信你能完成這些任務。&quot;</eventtext.itamissiontrusted>
+	<eventtext.itamissionscargowater>[任務] 運送乾貨 [聲望 +10][2000 mk]</eventtext.itamissionscargowater>
+	<eventtext.itamissionscargowater2>[任務] 運送乾補給貨物 [聲望 +10][+2000 mk]</eventtext.itamissionscargowater2>
+	<eventtext.itamissionscargofragile>[任務] 運送易碎物品 [聲望 +10][2300 mk]</eventtext.itamissionscargofragile>
+	<eventtext.itamissionscargofragileask>&quot;有一些敏感的貨物一直沒有人願意運送，所以我們唯有要求你去做。&quot;</eventtext.itamissionscargofragileask>
+	<eventtext.itamissionscargoegg>[任務] 運送即將孵化的蛋 [聲望 +10][2000 mk]</eventtext.itamissionscargoegg>
+	<eventtext.itamissionactivatebeacon>[任務] 啟動信標 [2800 mk]</eventtext.itamissionactivatebeacon>
+	<eventtext.itamissionkillhammerhead>[任務] 獵殺錘頭煞 [聲望 +10][3000 mk]</eventtext.itamissionkillhammerhead>
+	<eventtext.itamissionmineralresearch>[任務] 研究礦物洞穴 [聲望 +10][1500-1800 mk]</eventtext.itamissionmineralresearch>
+	<eventtext.itamissionscargotime>[任務] 迅速變質的貨物 [聲望 +10][2000 mk]</eventtext.itamissionscargotime>
+	<eventtext.itamissionscargocreature>[任務] 生物貨物 [聲望 +10][3000 mk]</eventtext.itamissionscargocreature>
+	
+	<eventtext.itamissionsresearch1.11>我們需要你帶來1件有奇怪象徵且特別的異星遺物。</eventtext.itamissionsresearch1.11>
+	<eventtext.itamissionsresearch2.12>我們需要你帶來1件有奇怪象徵且特別的異星遺物。</eventtext.itamissionsresearch2.12>
+	<eventtext.itamissionsresearch3.13>這裡也有除研究外的工作。</eventtext.itamissionsresearch3.13>
+	<eventtext.itaresearchartifact1.14>我們在測量中發現了不尋常的偽影特徵。通過收集來幫助我們進行研究。 如果您發現更多普通文物，請將它們存放在氣閘分配器中以獲得獎勵。</eventtext.itaresearchartifact1.14>
+
+	<eventtext.itarebelbase1>&quot;哇！你是誰！？你在這裡做什麼！？&quot;</eventtext.itarebelbase1>
+	<eventtext.itarebelbase2>&quot;我們當然是來這裡殺你。&quot;</eventtext.itarebelbase2>
+	<eventtext.itarebelbase3>&quot;你來這裡做甚麼？&quot;</eventtext.itarebelbase3>
+	<eventtext.itarebelbase4>[交付] &quot;我到處找你。給我你的手，有個東西應該交給你。&quot;</eventtext.itarebelbase4>
+	<eventtext.itarebelbase5>[前哨站 聲望 90]&quot;我們是在站內工作的，不是想找麻煩。&quot;</eventtext.itarebelbase5>
+	<eventtext.itarebelbase6>[木星分離主義分子 聲望 50] &quot;Sic semper tyrannis，我們是來幫助你的。&quot;</eventtext.itarebelbase6>
+	
+	<eventtext.itabounty1.1>1張貼在告示板上的通緝海報...</eventtext.itabounty1.1>
+	<eventtext.itabounty1.2>賞金目標已死&#xD;&#xA;[750 mk]&#xD;&#xA;[木衛二聯盟 聲望 +6]</eventtext.itabounty1.2>
+
+	<eventtext.itabeacontest1>&quot;你是補給成員嗎？密碼甚什麼！？&quot;</eventtext.itabeacontest1>
+	<eventtext.itabeacontest2>&quot;Sic semper tyrranis。&quot; [木星分離主義分子 聲望 +5]</eventtext.itabeacontest2>
+	<eventtext.itabeacontest3>&quot;Sick pimper dracaris？ [小丑聖母之子 聲望 +5]</eventtext.itabeacontest3>
+	<eventtext.itabeacontest4>&quot;Sectumsempra。 [小丑聖母之子 聲望 +5]</eventtext.itabeacontest4>
+	<eventtext.itabeacontest5>[位置 聲望 50]&quot;我們是為站內工作的，這個信標需要修理。</eventtext.itabeacontest5>
+	<eventtext.itabeacontest6>*舉中指 &quot;這是密碼嗎？&quot;</eventtext.itabeacontest6>
+
+	<eventtext.itabeaconsep1.0kill.1>你清除了一個木星分離主義分子的藏身處...&#xD;&#xA;[+800 mk]&#xD;&#xA;[木衛二聯盟 聲望 +8]&#xD;&#xA;[木星分離主義分子 聲望 -15]</eventtext.itabeaconsep1.0kill.1>
+	<eventtext.itabeaconsep1.0.2>[木衛二聯盟 聲望 40] &#xD;&#xA;&quot;我是木衛二聯盟的軍官，現在命令你清除附近信標站內的木星分離主義分子藏身處！&quot;</eventtext.itabeaconsep1.0.2>
+
+	<eventtext.itabeaconsep1.0a.1>無線電：&quot;「你好，旅行者！我們在信標站需要你的幫助。」&quot;</eventtext.itabeaconsep1.0a.1>
+	<eventtext.itabeaconsep1.0a.2>一位身穿木星分離主義分子制服的年輕船長雙手放背歡迎您，他們似乎為這裡的任務感到自豪。&quot;同志們，歡迎光臨本站。&quot;</eventtext.itabeaconsep1.0a.2>
+	<eventtext.itabeaconsep1.0a.3>[木星分離主義分子 聲望 30] &quot;你在這裡做甚麼？&quot;</eventtext.itabeaconsep1.0a.3>
+	<eventtext.itabeaconsep1.0a.4>&quot;我們將這個信標站改建成一個廣播站，並將真相傳播到附近的前哨站以對抗宣傳。人們需要意識到木衛二聯盟正在將他們洗腦。&quot;</eventtext.itabeaconsep1.0a.4>
+	<eventtext.itabeaconsep1.0a.5>[駕駛水準 70]&quot;聽著，&quot;同志&quot;。木衛二聯盟的船隻正四處監視這些頻道，並在沒有任何警告下攻擊這些藏身處。總有一天，他們會用核武拜訪你，那時你手上將沾滿你船員的鮮血。避免為時已晚，請暫停廣播停止這項任務吧。&quot;</eventtext.itabeaconsep1.0a.5>
+	<eventtext.itabeaconsep1.0a.6>&quot;要我們停止？那是你要的嗎？你真的認為你能嚇到我們嗎？&quot;</eventtext.itabeaconsep1.0a.6>
+	<eventtext.itabeaconsep1.0a.7>[木星分離主義分子 聲望 50] &quot;我是站在你這邊的，但我不想冒著生命危險廣播一些根本沒人在聽的訊息。&quot;</eventtext.itabeaconsep1.0a.7>
+	<eventtext.itabeaconsep1.0a.8>信標站的指揮官笑了笑，彷彿在為完美的反擊作準備，臉上的表情也變得更加嚴肅和現實。&quot;Fuck!你說得對。我不應該為此冒生命危險。&quot;他命令成員開始打包。[木星分離主義分子 聲望 +10][木衛二聯盟 聲望 +5]</eventtext.itabeaconsep1.0a.8>
+	<eventtext.itabeaconsep1.0a.9>信標站的成員被說服放棄他們的職位和停止所有行動，並且準備棄站。&#xD;&#xA;[木星分離主義分子 聲望 +10][木衛二聯盟 聲望 +5]</eventtext.itabeaconsep1.0a.9>
+	<eventtext.itabeaconsep1.0a.10>&quot;那是失敗者才會說的，繼續去擦亮木衛二聯盟軍官的鞋子吧，懦夫。&quot;</eventtext.itabeaconsep1.0a.10>
+	<eventtext.itabeaconsep1.0a.11>&quot;隨你了！ 即使你活了下來，也不要以為被木衛二聯盟開始追捕你時，我們會提供這艘潛艇作你的避難所！&quot; [木星分離主義分子 聲望 -3]</eventtext.itabeaconsep1.0a.11>
+	<eventtext.itabeaconsep1.0a.12>&quot;你根本不知道自己在說甚麼。&quot;</eventtext.itabeaconsep1.0a.12>
+	<eventtext.itabeaconsep1.0a.13>&quot;很好！挑戰他人的觀點，令他們思考。這正是木衛二聯盟最終滅亡的原因。</eventtext.itabeaconsep1.0a.13>
+	<eventtext.itabeaconsep1.0a.14>清點人數跟檢查他們的設備，並查看船員登記冊——稍後讓木衛二聯盟處置他們。全靠這些信息，這些人會在他們訪問任何站時被逮捕，甚至連他們的親屬也無法逃脫懲罰，而你將不必見證其中的任何一個。&#xD;&#xA;[木衛二聯盟 聲望 +8][木星分離主義分子 聲望 -10]</eventtext.itabeaconsep1.0a.14>
+	<eventtext.itabeaconsep1.0a.15>&quot;酷！&quot;</eventtext.itabeaconsep1.0a.15>
+	<eventtext.itabeaconsep1.0a.16>&quot;抱歉，我不能透露任何細節、命令。&quot;</eventtext.itabeaconsep1.0a.16>
+	<eventtext.itabeaconsep1.0a.17>&quot;我們能怎樣幫助你？&quot;</eventtext.itabeaconsep1.0a.17>
+	<eventtext.itabeaconsep1.0a.18>&quot;我們需要一些補給品才能在這裡多待一段時間，我們的機械工會提供更詳細的信息。&quot;</eventtext.itabeaconsep1.0a.18>
+	<eventtext.itabeaconsep1.0a.19>&quot;你犯了一個嚴重的錯誤，就是讓我們進內。*同志*...&quot;</eventtext.itabeaconsep1.0a.19>
+	<eventtext.itabeaconsep1.0a.20>&quot;一開始就不應該來這裡！&quot;[木衛二聯盟 聲望 +6]</eventtext.itabeaconsep1.0a.20>
+
+
+	<eventtext.itabeaconsep1.0b.1>你看見一名機械工拿著一把螺絲刀，並往牆上的一個洞裡看。&quot;噢，你好！你是來幫忙嗎？這個FPGA電路壞掉了，我們需要有人修復這個破舊的垃圾。 &quot;</eventtext.itabeaconsep1.0b.1>
+	<eventtext.itabeaconsep1.0b.2>[電氣工程 45][FPGA電路] &quot;好啊！我有一個，讓我來。&quot;</eventtext.itabeaconsep1.0b.2>
+	<eventtext.itabeaconsep1.0b.3>你走近牆上的洞，尋找一塊生鏽的電子零件。你看到金屬牆的內部有一個被燒焦了一半的舊FPGA電路，你把它拆掉並替換一個新的。</eventtext.itabeaconsep1.0b.3>
+	<eventtext.itabeaconsep1.0b.4>&quot;謝謝你讓這個地方現多運行一段時間！雖然我沒有甚麼可以給你，但你能把這塊燃素碎片拿去。我趁醫生們忙碌的時候偷來的，哈哈！應該是有一定價值，所以，你懂我的意思吧，不要把它都花在同一個地方。&quot;</eventtext.itabeaconsep1.0b.4>
+	<eventtext.itabeaconsep1.0b.5>&quot;太好了！祝你的營運順利。&quot;&#xD;&#xA;[木星分離主義分子 聲望 +3]</eventtext.itabeaconsep1.0b.5>
+	<eventtext.itabeaconsep1.0b.6>&quot;謝謝，但我不需要任何回報，這只是一個廉價的電路板。祝你的營運順利。&quot;&#xD;&#xA;[木星分離主義分子 聲望 +7]</eventtext.itabeaconsep1.0b.6>
+	<eventtext.itabeaconsep1.0b.7>[武器操作 20] &quot;我花時間、材料和專業知識來幫助你。 相信你會給我相對的報酬。&quot;</eventtext.itabeaconsep1.0b.7>
+	
+	<eventtext.itabeaconsep1.0b.9>[武器操作 20 失敗] &quot;對不起，但我只有這些。要麼接受，不然就離開。&quot;&#xD;&#xA;[木星分離主義分子 聲望 -3]</eventtext.itabeaconsep1.0b.9>
+	
+	<eventtext.itabeaconsep1.0b.11>&quot;即使是我，也知道那不是FPGA電路，孩子。&quot;</eventtext.itabeaconsep1.0b.11>
+	<eventtext.itabeaconsep1.0b.12>&quot;不，抱歉。我只是隨便看看。&quot;</eventtext.itabeaconsep1.0b.12>
+	<eventtext.itabeaconsep1.0b.13>&quot;'你是個小丑？真正的小丑？&quot;</eventtext.itabeaconsep1.0b.13>
+	<eventtext.itabeaconsep1.0b.14>&quot;我是。&quot;</eventtext.itabeaconsep1.0b.14>
+	<eventtext.itabeaconsep1.0b.15>&quot;嗯...你看起來並不像...算了。&quot; [小丑聖母之子 聲望 -5]</eventtext.itabeaconsep1.0b.15>
+	<eventtext.itabeaconsep1.0b.16>[小丑喇叭] 嗶嗶~小丑喇叭.</eventtext.itabeaconsep1.0b.16>
+	<eventtext.itabeaconsep1.0b.17>機械工笑了笑便迅速返回他的崗位。&#xD;&#xA;[小丑聖母之子 聲望 +5]</eventtext.itabeaconsep1.0b.17>
+	<eventtext.itabeaconsep1.0b.18>真可惜，看來你把你的小丑喇叭留在家裡。&#xD;&#xA;[小丑聖母之子 聲望 -5]</eventtext.itabeaconsep1.0b.18>
+	<eventtext.itabeaconsep1.0b.19>[吉他] 演奏一首歡樂的音樂。</eventtext.itabeaconsep1.0b.19>
+	<eventtext.itabeaconsep1.0b.20>顯而易見，這些人已經很久沒有聽過音樂或發自內心的笑了。你的音樂觸動了他們的靈魂，讓信標站的所有人心情愉快。&#xD;&#xA;[小丑聖母之子 聲望 +10][木星分離主義分子 聲望 +3]</eventtext.itabeaconsep1.0b.20>
+	<eventtext.v2givingdirections.21>機械工對你彈奏空氣吉他毫無反應。&#xD;&#xA;[小丑聖母之子 聲望 -5]</eventtext.v2givingdirections.21>
+
+	<eventtext.itatransport3.0.1>&quot;看誰會有笑到最後！小丑聖母會看著我。&quot;</eventtext.itatransport3.0.1>
+	<eventtext.itatransport4.0.1>&quot;你會需要我！如果你殺了我們，他們就不會付錢給你！而你們最終都會被大海吞噬，沒有意義延遲不可避免的事情。&quot;</eventtext.itatransport4.0.1>
+
+	<eventtext.itarace1bet.1>&quot;想在下個泥偶迅猛龍比賽中為1隻小龍下注 100 mk 嗎？&quot;</eventtext.itarace1bet.1>
+	<eventtext.itarace1bet.2>賭 100 mk 在紅色泥偶迅猛龍...</eventtext.itarace1bet.2>
+	<eventtext.itarace1bet.3>沒有足夠的賭注...</eventtext.itarace1bet.3>
+	<eventtext.itarace1bet.4>賭 100 mk 在綠色泥偶迅猛龍...</eventtext.itarace1bet.4>
+	<eventtext.itarace1bet.5>賭 100 mk 在藍色泥偶迅猛龍...</eventtext.itarace1bet.5>
+	<eventtext.itarace1bet.6>&quot;下次吧。&quot;</eventtext.itarace1bet.6>
+	<eventtext.itarace1bet.7>&quot;比賽開始！&quot;</eventtext.itarace1bet.7>
+	<eventtext.itarace1bet.8>&quot;紅色獲勝！來兌換你的代幣！&quot;</eventtext.itarace1bet.8>
+	<eventtext.itarace1bet.9>兌換你的代幣...</eventtext.itarace1bet.9>
+	<eventtext.itarace1bet.10>&quot;綠色獲勝！來兌換你的代幣！&quot;</eventtext.itarace1bet.10>
+	<eventtext.itarace1bet.11>&quot;藍色獲勝！來兌換你的代幣！&quot;</eventtext.itarace1bet.11>
+
+	<eventtext.itarace1.0.1>紅色獲勝！</eventtext.itarace1.0.1>
+	<eventtext.itarace1.0.2>綠色獲勝！</eventtext.itarace1.0.2>
+	<eventtext.itarace1.0.3>藍色獲勝！</eventtext.itarace1.0.3>
+
+	<eventtext.trainer.1>&quot;我曾經在重型運輸潛艇 R-29 工作，要令該大塊的金屬漂浮。我有一半的時間要用魚叉槍刮掉船頭的藻鬃爬行者。而另一半時間，我需要焊接貨物倉，長時間的焊接讓我都眼睛幾乎都失明了。這就是我來到了這個狗屎鎮的原因。要是你付錢，我會分享我的專業知識。&quot;</eventtext.trainer.1>
+	<eventtext.trainer.2>[360 mk] &quot;請詳細地告訴我你是如何讓那麼大的潛艇漂浮。&quot; [機械工程 +3]</eventtext.trainer.2>
+	<eventtext.trainer.3>&quot;我稍後再聽你的冒險經歷。&quot;</eventtext.trainer.3>
+	<eventtext.trainer.4>&quot;我修復過的泵機比這裡滿手機械油的機械工還多。如果你買我的時間，我會告訴你最好的維修方法。&quot;</eventtext.trainer.4>
+	<eventtext.trainer.5>[360 mk] &quot;沒問題，我想知道怎樣能快速維修這些泵機。&quot; [機械工程 +3]</eventtext.trainer.5>
+	<eventtext.trainer.6>&quot;我的經驗是隨著多年的艱辛累積的。除非你支付相對的金額，否則我不會教你。&quot;</eventtext.trainer.6>
+	<eventtext.trainer.7>&quot;我稍後再問你的關於泵機的問題。&quot;</eventtext.trainer.7>
+	<eventtext.trainer.8>&quot;多年來因修復接線盒而吸入燒焦的塑料煙霧，如今我的肺部只剩1個，其功能也不完全。要是我在潛艇內工作，反會成為醫療負擔，因此我只能和前哨站的居民度過餘生。要是你願意提供小額金錢，我可以傳承你一些技巧...&quot;</eventtext.trainer.8>
+	<eventtext.trainer.9>[360 mk] &quot;聽起來很有用，我想知道如何更有效地處理接線盒。&quot; [電氣工程 +3]</eventtext.trainer.9>
+	<eventtext.trainer.10>&quot;也許我的船員會對您的專業知識有興趣。&quot;</eventtext.trainer.10>
+	<eventtext.trainer.11>&quot;我不想被別人看到我跟你這樣的流氓說話。&quot;&#xD;&#xA;[位置 聲望 &lt;0]</eventtext.trainer.11>
+	<eventtext.trainer.12>&quot;我被自己的潛艇驅逐了！他們認為我在破壞，但我所做的一切都是為了改良線路系統，直到某個白痴在錯誤的時刻打開了門並弄亂了我的整個信號設置，導致少量海水滲入了手動打開的氣閘...不管怎樣，如果你有錢，我可以向你示範一些技巧和竅門。&quot;</eventtext.trainer.12>
+	<eventtext.trainer.13>[360 mk] &quot;只要簡單安全就行。&quot; [電氣工程 +3]</eventtext.trainer.13>
+	<eventtext.trainer.15>&quot;我之前的船員根本就是尼安德特人！他們因我試圖對工程師下毒逮捕了我，可是，我只是想把毒藥放到解構儀！這裡的負責人立即放了我，我也不會再走進潛艇了。我不是來找職位的，但只要少量金錢，我就可以教你醫術。&quot;</eventtext.trainer.15>
+	<eventtext.trainer.16>[360 mk] &quot;好啊，但能把你的手放在我的視線範圍內嗎？&quot; [醫療水準 +3]</eventtext.trainer.16>
+
+	<eventtext.shop.notreally>不肯定。</eventtext.shop.notreally>
+	<eventtext.somthingborke>有東西壞了</eventtext.somthingborke>
+	<eventtext.shop.nocash>&quot;請帶更多錢再回來。&quot;</eventtext.shop.nocash>
+	<eventtext.shop.nothanks>&quot;不，謝謝。&quot;</eventtext.shop.nothanks>
+	<eventtext.shop.maybelater>&quot;稍後吧。&quot;</eventtext.shop.maybelater>
+	<eventtext.shop.lowshoprep>&quot;帶著你的麻煩離開！&quot;&#xD;&#xA;[位置 聲望 &lt;0]</eventtext.shop.lowshoprep>
+	<eventtext.shop.getout>&quot;走開，鬧事者！&quot;&#xD;&#xA;[位置 聲望 &lt;0]</eventtext.shop.getout>
+	
+	<eventtext.shop.1>&quot;有些熱乎乎的食物嗎？&quot;</eventtext.shop.1>
+	<eventtext.shop.2>新鮮香口蟹肉湯！ [12 mk]</eventtext.shop.2>
+	<eventtext.shop.3>&quot;要飲料嗎？&quot;</eventtext.shop.3>
+	<eventtext.shop.4>魚尾雞尾酒 [32 mk]</eventtext.shop.4>
+
+	<eventtext.shop.5>&quot;想買些衣服嗎？&quot;</eventtext.shop.5>
+	<eventtext.shop.6>襯衫配破洞牛仔褲 [32 mk]</eventtext.shop.6>
+	<eventtext.shop.7>淺褐色的毛衣 [40 mk]</eventtext.shop.7>
+	<eventtext.shop.8>背心配紫色衛衣 [34 mk]</eventtext.shop.8>
+	<eventtext.shop.9>背心配綠色衛衣 [37 mk]</eventtext.shop.9>
+	<eventtext.shop.10>管理員的衣服 [70 mk]</eventtext.shop.10>
+	<eventtext.shop.11>船長的服裝 [70 mk]</eventtext.shop.11>
+	<eventtext.shop.12>輕便遺物袋 [230 mk]</eventtext.shop.12>
+	<eventtext.shop.13>工具帶 [35 mk]</eventtext.shop.13>
+
+	<eventtext.shop.14>&quot;想買一些種植設備嗎？&quot;</eventtext.shop.14>
+	<eventtext.shop.15>種植箱 [120 mk]</eventtext.shop.15>
+	<eventtext.shop.16>噴壺 [80 mk]</eventtext.shop.16>
+	<eventtext.shop.17>肥料 [145 mk]</eventtext.shop.17>
+	<eventtext.shop.18>種子收納包 [65 mk]</eventtext.shop.18>
+	<eventtext.shop.19>爆彈果種子 [34 mk]</eventtext.shop.19>
+	<eventtext.shop.20>煙草芽種子 [32 mk]</eventtext.shop.20>
+	<eventtext.shop.21>鹽木鱗種子 [35 mk]</eventtext.shop.21>
+	<eventtext.shop.22>梟禍根種子 [38 mk]</eventtext.shop.22>
+
+	<eventtext.shop.23>&quot;請問你想買一些特別的蛋，還是寵物食品？&quot;</eventtext.shop.23>
+	<eventtext.shop.24>寵物食品 [120 mk]</eventtext.shop.24>
+	<eventtext.shop.25>寵物名字標牌 [10 mk]</eventtext.shop.25>
+	<eventtext.shop.26>生理鹽水 [50 mk]</eventtext.shop.26>
+	<eventtext.shop.27>花生蛋 [500 mk]</eventtext.shop.27>
+	<eventtext.shop.28>巨蟾蛋 [500 mk]</eventtext.shop.28>
+	<eventtext.shop.29>橙童蛋 [500 mk]</eventtext.shop.29>
+
+	<eventtext.shop.30>&quot;我可以治療你的船員，但你要先把他們叫過來，或是治療你的死神之稅。&quot;</eventtext.shop.30>
+	<eventtext.shop.31>治療附近的船員 [200 mk]</eventtext.shop.31>
+	<eventtext.shop.32>&quot;沒有足夠的錢，你的死活與我沒關係！&quot;</eventtext.shop.32>
+	<eventtext.shop.33>治療死神之稅 [1000 mk]</eventtext.shop.33>
+
+	<eventtext.shop.34>&quot;您要購買一些攀岩裝備嗎？&quot;</eventtext.shop.34>
+	<eventtext.shop.35>繩索槍 [230 mk]</eventtext.shop.35>
+	<eventtext.shop.36>彈性的繩 x8 [24 mk]</eventtext.shop.36>
+	<eventtext.shop.37>鬆弛的繩 x8 [24 mk]</eventtext.shop.37>
+	<eventtext.shop.38>等離子切割器 [72 mk]</eventtext.shop.38>
+	<eventtext.shop.39>手電筒 [160 mk]</eventtext.shop.39>
+	<eventtext.shop.40>紅色照明彈 [30 mk]</eventtext.shop.40>
+	<eventtext.shop.41>異星照明彈 [90 mk]</eventtext.shop.41>
+	<eventtext.shop.42>燈籠 [210 mk]</eventtext.shop.42>
+	<eventtext.shop.43>電池 [115 mk]</eventtext.shop.43>
+
+	<eventtext.shop.44>&quot;您想要提取還是存入現金？&quot;&#xD;&#xA;因為潛艇船員經常把錢亂花，所以銀行規定只有船長能提取現金，並分配給船員金。</eventtext.shop.44>
+	<eventtext.shop.45>提取 100</eventtext.shop.45>
+	<eventtext.shop.46>&quot;您的帳戶沒有那麼多錢。&quot;</eventtext.shop.46>
+	<eventtext.shop.47>&quot;只有船長可以提取現金。要是你願意，你仍然可以存入現金。&quot;</eventtext.shop.47>
+	<eventtext.shop.48>提取 400</eventtext.shop.48>
+	<eventtext.shop.49>提取 1000</eventtext.shop.49>
+	<eventtext.shop.50>存入 100</eventtext.shop.50>
+	<eventtext.shop.51>&quot;您已將所有現金存入船員的銀行賬戶。&quot;</eventtext.shop.51>
+	<eventtext.shop.52>&quot;雖然現金不足，但我還是能把你僅有的存入。&quot;</eventtext.shop.52>
+	<eventtext.shop.53>存入 400</eventtext.shop.53>
+	<eventtext.shop.54>存入 1000</eventtext.shop.54>
+	<eventtext.shop.55>存入 所有現金</eventtext.shop.55>
+
+	<eventtext.shop.56>&quot;歡迎來到喬的商店！你想買一些電子零件嗎？&quot;</eventtext.shop.56>
+	<eventtext.shop.57>信號檢查組件 [95 mk]</eventtext.shop.57>
+	<eventtext.shop.58>繼電邏輯門 [95 mk]</eventtext.shop.58>
+	<eventtext.shop.59>記憶體元件 [95 mk]</eventtext.shop.59>
+	<eventtext.shop.60>導線 x4 [40 mk]</eventtext.shop.60>
+	<eventtext.shop.61>梯子 [95 mk]</eventtext.shop.61>
+	<eventtext.shop.62>乘法組件 [95 mk]</eventtext.shop.62>
+	<eventtext.shop.63>除法組件 [95 mk]</eventtext.shop.63>
+	<eventtext.shop.64>延遲邏輯門 [95 mk]</eventtext.shop.64>
+	<eventtext.shop.65>&quot;需要彈藥嗎？&quot;</eventtext.shop.65>
+	<eventtext.shop.66>衝鋒槍彈夾 [100 mk]</eventtext.shop.66>
+	<eventtext.shop.67>霰彈槍彈藥 x8 [320 mk]</eventtext.shop.67>
+	<eventtext.shop.68>40mm 榴彈 [100 mk]</eventtext.shop.68>
+	<eventtext.shop.69>40mm 震撼榴彈[120 mk]</eventtext.shop.69>
+	<eventtext.shop.70>左輪子彈 x6 [180 mk]</eventtext.shop.70>
+	<eventtext.shop.71>深潛誘餌 [250 mk]</eventtext.shop.71>
+	<eventtext.shop.72>深水炸彈用牆架 [200 mk]</eventtext.shop.72>
+	<eventtext.shop.73>&quot;滾出我的商店，你們這些破壞者！&quot;&#xD;&#xA;[位置 聲望 &lt;0]</eventtext.shop.73>
+	<eventtext.shop.74>&quot;下次吧。&quot;</eventtext.shop.74>
+
+	<eventtext.itaoplockcity1>&quot;走開，你們這些破壞者！&quot;&#xD;&#xA;---需要---&#xD;&#xA;[前哨站 聲望 -10]</eventtext.itaoplockcity1>
+	<eventtext.itaoplockcity2>&quot;入侵者在碼頭裡！&quot;</eventtext.itaoplockcity2>
+	<eventtext.itaoplockcity3>&quot;入侵者在碼頭裡！&quot;&#xD;&#xA;&#xD;&#xA;[前哨站 聲望 -200]&#xD;&#xA;[木衛二聯盟 聲望 -15]&#xD;&#xA;[木星分離主義分子 聲望 +15]</eventtext.itaoplockcity3>
+	<eventtext.itaoplockcity4>&quot;僅限木衛二聯盟相關機構進入。任何嘗試進入人士，都將被列入黑名單處理。&quot;&#xD;&#xA;&#xD;&#xA;---REQUIREMENTS---&#xD;&#xA;[木衛二聯盟 聲望 +35]</eventtext.itaoplockcity4>
+	<eventtext.itaoplockcity5>&quot;黑名單的入侵者在碼頭裡！&quot;</eventtext.itaoplockcity5>
+	<eventtext.itaoplockcity6>&quot;入侵者在碼頭裡！&quot;&#xD;&#xA;&#xD;&#xA;[前哨站 聲望 -200]&#xD;&#xA;[木衛二聯盟 聲望 -45 ]&#xD;&#xA;[木星分離主義分子 聲望 +15]</eventtext.itaoplockcity6>
+	
+	<eventtext.itaresearchlock1.1>&quot;只有研究人員允許進入這個實驗室。&quot;</eventtext.itaresearchlock1.1>
+	<eventtext.itaresearchlock1.2>[前哨站 聲望 100] &quot;我是為研究團隊工作的，這是我的身份證。&quot;</eventtext.itaresearchlock1.2>
+	<eventtext.itaresearchlock1.3>繼續行走。</eventtext.itaresearchlock1.3>
+
+	<eventtext.itatransp1.0.1>[接受] &quot;當然可以！來，跟我上船。&quot;</eventtext.itatransp1.0.1>
+	<eventtext.itatransp1.0.2>在酒吧裡，一名手裝義肢機械工靠近你。&#xD;&#xA;&quot;嗨，聽說你有一艘潛艇，對吧？ 一艘配備槍械和其他厲害的武器？我需要你載我一程，我會給你報酬的。&quot;&#xD;&#xA;[任務：運送乘客 獎勵：800 mk]</eventtext.itatransp1.0.2>
+	<eventtext.itatransp1.0.3>[拒絕] &quot;不，船上的空氣已經很稀薄了。&quot;</eventtext.itatransp1.0.3>
+	
+	<eventtext.itatransp1.1.1>&quot;謝謝你載我，有機會再見。&quot;&#xD;&#xA;[任務完成 800 mk 前哨站 聲望 +5]</eventtext.itatransp1.1.1>
+	<eventtext.itatransp1.1.2>&quot;請問需要多久？&quot;</eventtext.itatransp1.1.2>
+
+	<eventtext.itatransp1.2.1>&quot;謝謝你把我從那個狗屎洞救出來。&quot;</eventtext.itatransp1.2.1>
+	<eventtext.itatransp1.2.2>[運送乘客完成 800 mk 前哨站 聲望 +5]</eventtext.itatransp1.2.2>
+
+
+	<!--Items-->
+
+	<!--Mission Crates-->
+	<entityname.ita_mcrate_time1>Time Sensitive Crate</entityname.ita_mcrate_time1>
+	<entitydescription.ita_mcrate_time1>你聽到貨箱內發出嘶嘶聲...</entitydescription.ita_mcrate_time1>
+	<entityname.ita_mcrate_water1>乾貨箱</entityname.ita_mcrate_water1> 
+	<entitydescription.ita_mcrate_water1>貨箱上的藍色標籤警告你不要淹沒它。</entitydescription.ita_mcrate_water1>
+	<entityname.ita_mcrate_egg1>蛋貨箱</entityname.ita_mcrate_egg1>
+	<entitydescription.ita_mcrate_egg1>這個貨箱裡有些黏糊糊的東西在四處移動。</entitydescription.ita_mcrate_egg1>
+	<entityname.ita_mcrate_impact1>易碎貨箱</entityname.ita_mcrate_impact1>
+	<entitydescription.ita_mcrate_impact1>貨箱上的紅色標籤警告你不要將它掉落。</entitydescription.ita_mcrate_impact1>
+	<entityname.ita_mcrate_egg2>冷藏蛋貨箱</entityname.ita_mcrate_egg2>
+	<entitydescription.ita_mcrate_egg2>這個蛋貨箱安裝了製冷裝置，讓即將孵化的蛋保持冷凍。請勿讓電池耗盡！</entitydescription.ita_mcrate_egg2>
+	<entityname.ita_mcrate_raptor1>補獲裝甲泥偶迅猛龍</entityname.ita_mcrate_raptor1>
+	<entitydescription.ita_mcrate_raptor1>一隻被鎖上的泥偶迅猛龍，牠的嘴裡有一小瓶鴉片，牠慢慢地吸著裡面的液體，使它保持冷靜，感覺又怪又可愛的。不要讓鴉片耗盡！</entitydescription.ita_mcrate_raptor1>
+
+	<!--Trading crates-->
+	<entityname.ita_tcrate_mil1>密封軍事用品貨箱</entityname.ita_tcrate_mil1>
+	<entitydescription.ita_tcrate_mil1>低價買入，高價出售。將這些乾貨箱運送到軍事衛所以獲取每箱 400 mk 利潤，但要切記將它們放在貨架上，否則它們會隨時間惡化。</entitydescription.ita_tcrate_mil1>
+	<entityname.ita_tcrate_res1>密封研究用品貨箱</entityname.ita_tcrate_res1>
+	<entitydescription.ita_tcrate_res1>低價買入，高價出售。將這些乾貨箱運送到研究基地以獲取每箱 400 mk 利潤，但要切記將它們放在貨架上，否則它們會隨時間惡化。</entitydescription.ita_tcrate_res1>
+	<entityname.ita_tcrate_city1>密封城市用品貨箱</entityname.ita_tcrate_city1>
+	<entitydescription.ita_tcrate_city1>低價買入，高價出售。將這些乾貨箱運送到聚居地以獲取每箱 150 mk 利潤，但要切記將它們放在貨架上，否則它們會隨時間惡化。</entitydescription.ita_tcrate_city1>
+	<entityname.ita_tcrate_hab1>密封居所用品貨箱</entityname.ita_tcrate_hab1>
+	<entitydescription.ita_tcrate_hab1>低價買入，高價出售。將這些貨箱運送到居住區以獲取每箱 100 mk 利潤，但要切記將它們放在貨架上，否則它們會隨時間惡化。</entitydescription.ita_tcrate_hab1>
+	<entityname.ita_tcrate_mine1>密封採礦用品貨箱</entityname.ita_tcrate_mine1>
+	<entitydescription.ita_tcrate_mine1>低價買入，高價出售。將這些貨箱運送到礦業中心以獲取每箱 100 mk 利潤，但要切記將它們放在貨架上，否則它們會隨時間惡化。</entitydescription.ita_tcrate_mine1>
+
+	<!--Cash-->
+	<entityname.ita_wallet1>錢包</entityname.ita_wallet1>
+	<entitydescription.ita_wallet1>適合存放現金或卡片。</entitydescription.ita_wallet1>
+	<entityname.ita_bill50>現金 50 mk</entityname.ita_bill50>
+	<entitydescription.ita_bill50>普通老舊現金。</entitydescription.ita_bill50>
+	<entityname.ita_bill100>現金 100 mk</entityname.ita_bill100>
+	<entitydescription.ita_bill100>普通老舊現金。</entitydescription.ita_bill100>
+	<entityname.ita_bill200>現金 200 mk</entityname.ita_bill200>
+	<entitydescription.ita_bill200>普通老舊現金。</entitydescription.ita_bill200>
+	<entityname.ita_coin5>硬幣 5 mk</entityname.ita_coin5>
+	<entitydescription.ita_coin5>普通老舊硬幣。</entitydescription.ita_coin5>
+	<entityname.ita_coin1>硬幣 1 mk</entityname.ita_coin1>
+	<entitydescription.ita_coin1>普通老舊硬幣。</entitydescription.ita_coin1>
+
+	<!--Minerals (temporary, until mining bug is fixed)-->
+	<entityname.ita_ilmenite>鈦鐵礦</entityname.ita_ilmenite>
+	<entitydescription.ita_ilmenite>一種含鈦的礦物。</entitydescription.ita_ilmenite>
+	<entityname.ita_chalcopyrite>黃銅礦</entityname.ita_chalcopyrite>
+	<entitydescription.ita_chalcopyrite>一種含銅的礦物。</entitydescription.ita_chalcopyrite>
+	<entityname.ita_brockite>水磷鈣釷石礦</entityname.ita_brockite>
+	<entitydescription.ita_brockite>一種含釷和磷的礦物。</entitydescription.ita_brockite>
+	<entityname.ita_diamond>鑽石</entityname.ita_diamond>
+	<entitydescription.ita_diamond>一種由固體碳組成的晶體。</entitydescription.ita_diamond>
+	<entityname.ita_pyromorphite>磷氯鉛礦</entityname.ita_pyromorphite>
+	<entitydescription.ita_pyromorphite>開採磷氯鉛礦</entitydescription.ita_pyromorphite>
+
+	<!--Caves-->
+	<entityname.ita_climber2>彈性的繩</entityname.ita_climber2>
+	<entitydescription.ita_climber2>這種彈性的繩能夠讓登山者到達更高的垂直空間。</entitydescription.ita_climber2>
+	<entityname.ita_climber4>鬆弛的繩</entityname.ita_climber4>
+	<entitydescription.ita_climber4>這種鬆弛的繩能夠讓登山者慢慢下降。</entitydescription.ita_climber4>
+	<entityname.ita_climber2hook>彈性的鉤</entityname.ita_climber2hook>
+	<entitydescription.ita_climber2hook>這種彈性的繩能夠讓登山者到達更高的垂直空間。</entitydescription.ita_climber2hook>
+	<entityname.ita_climber4hook>鬆弛的鉤</entityname.ita_climber4hook>
+	<entitydescription.ita_climber4hook>這種鬆弛的繩能夠讓登山者慢慢下降。</entitydescription.ita_climber4hook>
+	<entityname.ita_climber1>抓鉤發射器</entityname.ita_climber1>
+	<entitydescription.ita_climber1>用於探索歐羅巴的洞穴和廢墟。</entitydescription.ita_climber1>
+	<entityname.ita_CaveLamp1>洞穴用燈1</entityname.ita_CaveLamp1>
+	<entityname.ita_CaveLamp2>洞穴用燈2</entityname.ita_CaveLamp2>
+	<entityname.ita_lantern1>燈籠</entityname.ita_lantern1>
+	<entityname.ita_door1>強化門</entityname.ita_door1>
+	<entityname.ita_bridge1>可伸縮的橋</entityname.ita_bridge1>
+
+	<!--Store Items-->
+	<entityname.ita_container_depthholder1>深水炸彈擺放架</entityname.ita_container_depthholder1>
+	<entitydescription.ita_container_depthholder1>可安裝的牆架，用於隱定地存放深水炸彈。按 E 用扳手安裝或拆卸。</entitydescription.ita_container_depthholder1>
+	<entityname.ita_duffelbag1>輕便遺物袋</entityname.ita_duffelbag1>
+	<entitydescription.ita_duffelbag1>帶有一個介面調節浮力的遺物袋。</entitydescription.ita_duffelbag1>
+	
+	<entityname.ita_bartable>櫃台 - 酒吧</entityname.ita_bartable>
+	<entityname.ita_canteentable>櫃台 - 食堂</entityname.ita_canteentable>
+	<entityname.ita_clothiertable>櫃台 - 服裝店</entityname.ita_clothiertable>
+	<entityname.ita_pettradertable>櫃台 - 寵物商人</entityname.ita_pettradertable>
+	<entityname.ita_botanisttable>櫃台 - 植物學家</entityname.ita_botanisttable>
+	<entityname.ita_electriciantable>櫃台 - 電工</entityname.ita_electriciantable>
+	<entityname.ita_climbertable>櫃台 - 登山者</entityname.ita_climbertable>
+	<entityname.ita_gunsmithtable1>櫃台 - 槍匠</entityname.ita_gunsmithtable1>
+	
+	<!--Furniture-->
+	<entityname.ita_bed>前哨站的床</entityname.ita_bed>
+	<entityname.ita_outpostchair1>酒吧椅子</entityname.ita_outpostchair1>
+	<entityname.ita_terminal>前哨站的終端</entityname.ita_terminal>
+	<entityname.ita_board1>告示板</entityname.ita_board1>
+	<entityname.ita_display>展示箱</entityname.ita_display>
+	<entityname.ita_outpostchair2>辦公室客戶椅</entityname.ita_outpostchair2>
+	
+	<!--Clothing-->
+	<entityname.ita_engineersuitmecha1>NPC 機甲套裝</entityname.ita_engineersuitmecha1>
+	<entityname.bluejumpsuit3>專業機械師服裝</entityname.bluejumpsuit3>
+	<entityname.orangejumpsuit3>專業工程師服裝</entityname.orangejumpsuit3>
+	<entityname.doctorsuniform3>專業醫生師服裝</entityname.doctorsuniform3>
+	<entityname.greenjumpsuit>植物學家連身衣</entityname.greenjumpsuit>
+	
+	<!--Clothing-->
+	<entityname.ita_bloodpunch>血沖飲料</entityname.ita_bloodpunch>
+	<entityname.ita_crispychitin>脆皮幾丁質塊</entityname.ita_crispychitin>
+	<entityname.ita_drinkfishtail>魚尾雞尾酒</entityname.ita_drinkfishtail>
+	
+	
+	<!--Contests-->
+	<entityname.ita_race_ticket1>紅色的票</entityname.ita_race_ticket1>
+	<entityname.ita_race_ticket2>綠色的票</entityname.ita_race_ticket2>
+	<entityname.ita_race_ticket3>藍色的票</entityname.ita_race_ticket3>
+
+	<!--Clothes-->
+	<entityname.ita_hazmat1>輻射防護服</entityname.ita_hazmat1>
+	<entitydescription.ita_hazmat1>這款防護服對輻射、暴晒和火提供強大的保護。而且背面有一個插槽用於放置氧氣罐。</entitydescription.ita_hazmat1>
+
+	<entityname.ita_prisoneruniform>囚犯衣服</entityname.ita_prisoneruniform>
+	<entitydescription.ita_prisoneruniform>Desc</entitydescription.ita_prisoneruniform>
+
+	<entityname.tongs>鉗子</entityname.tongs>
+	<entitydescription.tongs>用它把熱燃料棒拿走。如果掉在地上了，趕緊用手拿起再放入鉗子中。</entitydescription.tongs>
+
+	<!--Misc -->
+	<entityname.guide1>指南 - 燃料棒</entityname.guide1>
+	<locationname.Cave>幹洞結構</locationname.Cave>
+
+	<!--Jobs-->
+	<jobname.gunner>ita_gunner_npc</jobname.gunner>
+	<jobdescription.gunner>NPCjob</jobdescription.gunner>
+	<jobname.soldier>ita_soldier_npc</jobname.soldier>
+	<SkillName.tough>Tough</SkillName.tough>
+	<SkillName.lepi>LePiromano</SkillName.lepi>
+	<jobdescription.soldier>NPCjob</jobdescription.soldier>
+	
+	<!--Alien-->
+	<entityname.itasocket>遺物插槽</entityname.itasocket>
+	<entitydescription.itasocket>將非任務遺物放在此處並拉動控槓桿為歐羅巴研究做出貢獻並獲得回報。</entitydescription.itasocket>
+
+	<entityname.ita_alienchestwhite>遠古的白箱</entityname.ita_alienchestwhite>
+	<entityname.ita_alienchestblue>遠古的藍箱</entityname.ita_alienchestblue>
+	<entityname.ita_alienchestred>遠古的紅箱</entityname.ita_alienchestred>
+	<entityname.ita_divingsuit>木星潛水盔甲</entityname.ita_divingsuit>
+	<entityname.ita_alienmace>遠古的錘</entityname.ita_alienmace>
+	<entityname.ita_alienmace1>遠古科技 - 底部</entityname.ita_alienmace1>
+	<entityname.ita_alienmace2>遠古科技 - 頂部</entityname.ita_alienmace2>
+	<entityname.ita_ancientpiece>遠古圖示</entityname.ita_ancientpiece>
+	
+	<entityname.spawnerfractal>分形衛水母生怪點</entityname.spawnerfractal>
+	<entityname.ita_fabricator1>遠古合成器</entityname.ita_fabricator1>
+	<entityname.socket1ita>方形插槽</entityname.socket1ita>
+	<entityname.socket2ita>六角形插槽</entityname.socket2ita>
+	<entityname.socket3ita>T 型插槽</entityname.socket3ita>
+	<entityname.socket4ita>異星電池插槽</entityname.socket4ita>
+	<entityname.ita_aliendoor_blue>異星藍門</entityname.ita_aliendoor_blue>
+	<entityname.ita_aliendoor_red>異星紅門</entityname.ita_aliendoor_red>
+	<entityname.ita_alienhatch_blue>異星藍艙口</entityname.ita_alienhatch_blue>
+	<entityname.ita_alienhatch_red>異星紅艙口</entityname.ita_alienhatch_red>
+	
+	<locationchange.cave.changeto.mine>一群冒險者在 [previousname] 的安全洞穴裡興建了一座礦業中心。</locationchange.cave.changeto.mine>
+	
+	<!-- When adding new text, do it so at the bottom under the 'New additions' & 'Changed values' respectively. If it's a new tag entirely, put it under the new additions one; If it's an update to an existing value, put it under the changed values one. -->
+	<!-- DO NOT EDIT EXISTING TAGS FOR ALREADY TRANSLATED LINES -> if you need a new tag for something, add it under the 'New values' header and comment if there's some other tag that should be replaced -->
+	
+	<!--LINES MODIFIED-->	
+	<eventtext.itabeaconsep1.0b.8>「嘿，嘿！陌生人，你這是在碰運氣...這個水晶有它的價值，但是...算了，拿吧。反正可能不值錢...」&#xD;&#xA;</eventtext.itabeaconsep1.0b.8>
+	<eventtext.itabeaconsep1.0b.10>[電氣工程 45 失敗] &quot;你看來像我一樣無知啊！&quot;</eventtext.itabeaconsep1.0b.10>
+	<eventtext.trainer.14>「我們其中一人稍後可能會跟你談談有關訓練的事，只要你別靠近我們的碼頭。」</eventtext.trainer.14>
+    <entityname.ita_crawyum>香口蟹肉湯</entityname.ita_crawyum>
+	<!--NEW LINES ADDED-->
+	<entitydescription.ita_crawyum>捏住鼻子，快速吞嚥。</entitydescription.ita_crawyum>
+</infotexts>
