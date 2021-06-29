@@ -843,9 +843,9 @@
 				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="seccrewmodule"/>
 				<Character identifier="bandit" from="ita_abandonedoutpostnpcs" moduleflags="seccrewmodule" multiplayeronly="true"/>
 				<Character identifier="banditleader" from="ita_abandonedoutpostnpcs" spawnpointtags="banditleader"/>
-				<Character identifier="hostage" from="ita_abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
-				<Character identifier="hostage" from="ita_abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
-				<Character identifier="hostage" from="ita_abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true"/>
+				<Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+				<Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+				<Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true"/>
 			</Characters>
 		</OutpostDestroyMission>
 		<OutpostNestMission name="Outpost Recovery" identifier="abandonedoutpostmudraptor" textidentifier="abandonedoutpostmonsters" tags="abandonedoutpost" type="OutpostDestroy" reward="3000" difficulty="4" commonness="20" allowretry="true" sonarlabel="nest" unhideentitysubcategories="abandonedmonster">
