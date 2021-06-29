@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+	<OutpostConfig identifier="fallback" totalmodulecount="6" minhallwaylength="0">
+		<modulecount flag="Airlock" count="1"/>
+		<modulecount flag="ita_engineeringmodule" count="1"/>
+		<modulecount flag="AdminModule" count="1"/>
+	</OutpostConfig>
+	<OutpostConfig identifier="cave" totalmodulecount="16" allowedlocationtypes="Cave" spawncrewinsideoutpost="false" minhallwaylength="600" allowstealing="true">
+		<modulecount flag="ita_cave_entrance" count="1"/>
+		<modulecount flag="ita_cave_junction" count="1"/>
+		<modulecount flag="ita_cave_raiser" count="1"/>
+		<modulecount flag="ita_cave_horiz" count="3"/>
+		<modulecount flag="ita_cave_vertic" count="3"/>
+		<modulecount flag="ita_cave_hall" count="2"/>
+		<modulecount flag="ita_cave_special1" count="1"/>
+		<modulecount flag="ita_cave_ice1generic" count="30"/>
+	</OutpostConfig>
+	<OutpostConfig identifier="abandonedoutpost" totalmodulecount="6" minhallwaylength="0" allowedlocationtypes="Abandoned" spawncrewinsideoutpost="false" alwaysdestructible="true" alwaysrewireable="true" allowstealing="true">
+		<modulecount flag="Airlock" count="1"/>
+		<modulecount flag="EngineeringModule" count="1"/>
+		<modulecount flag="AdminModule" count="1"/>
+		<modulecount flag="CrewModule" count="1"/>
+		<modulecount flag="ResearchModule" count="1"/>
+		<modulecount flag="SecurityModule" count="1"/>
+	</OutpostConfig>
+	<OutpostConfig identifier="outpost" totalmodulecount="4" minhallwaylength="0" allowedlocationtypes="Outpost">
+		<modulecount flag="ita_hab_dock" count="1"/>
+		<modulecount flag="ita_hab_engineering" count="1"/>
+		<modulecount flag="ita_hab_office" count="1"/>
+		<modulecount flag="ita_hab_crewquarters" count="1"/>
+		<modulecount flag="ita_hab_entertainment" count="1"/>
+		<npcs>
+			<npc from="outpostnpcs1" identifier="hrmanager"/>
+			<npc from="outpostnpcs1" identifier="repairnpc"/>
+			<npc from="outpostnpcs1" identifier="reactoroperator"/>
+			<npc from="ita_citynpcs1" identifier="ita_merchant"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard1"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard1"/>
+			<npc from="outpostnpcs1" identifier="outpostmanager"/>
+			<npc from="outpostnpcs1" identifier="commoner"/>
+			<npc from="outpostnpcs1" identifier="commoner"/>
+			<npc from="outpostnpcs1" identifier="commoner"/>
+			<npc from="outpostnpcs1" identifier="commoner"/>
+		</npcs>
+	</OutpostConfig>
+	<OutpostConfig identifier="militaryoutpost" totalmodulecount="8" minhallwaylength="0" allowedlocationtypes="Military">
+		<modulecount flag="ita_military_dock" count="1"/>
+		<modulecount flag="ita_military_engineering" count="1"/>
+		<modulecount flag="ita_military_admin" count="1"/>
+		<modulecount flag="ita_military_crew" count="1"/>
+		<modulecount flag="ita_military_prison" count="1"/>
+		<modulecount flag="Ita_military_var1" count="1"/>
+		<modulecount flag="ita_city_clinic" count="1"/>
+		<modulecount flag="ita_city_shop" count="1"/>
+		<npcs>
+			<npc from="outpostnpcs1" identifier="hrmanager"/>
+			<npc from="outpostnpcs1" identifier="repairnpc"/>
+			<npc from="ita_citynpcs1" identifier="ita_subupgradenpc"/>
+			<npc from="ita_citynpcs1" identifier="ita_subsalesnpc"/>
+			<npc from="outpostnpcs1" identifier="reactoroperator"/>
+			<npc from="ita_citynpcs1" identifier="ita_merchant"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard1"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard1"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard2"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard2"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard3"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard1"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard2"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard3"/>
+			<npc from="outpostnpcs1" identifier="outpostmanager"/>
+			<npc from="outpostnpcs1" identifier="outpostdoctor"/>
+		</npcs>
+	</OutpostConfig>
+	<OutpostConfig identifier="miningoutpost" replaceinradiation="abandonedoutpost" totalmodulecount="6" minhallwaylength="0" allowedlocationtypes="Mine">
+		<modulecount flag="Airlock" count="1"/>
+		<modulecount flag="ita_smallengineering" count="1"/>
+		<modulecount flag="AdminModule" count="1"/>
+		<modulecount flag="CrewModule" count="1"/>
+		<modulecount flag="MineModule" count="1"/>
+		<modulecount flag="ita_city_clinic" count="1"/>
+		<npcs>
+			<npc from="outpostnpcs1" identifier="hrmanager"/>
+			<npc from="outpostnpcs1" identifier="repairnpc"/>
+			<npc from="outpostnpcs1" identifier="subupgradenpc"/>
+			<npc from="outpostnpcs1" identifier="subsalesnpc"/>
+			<npc from="outpostnpcs1" identifier="reactoroperator"/>
+			<npc from="outpostnpcs1" identifier="merchant"/>
+			<npc from="outpostnpcs1" identifier="securitynpc"/>
+			<npc from="outpostnpcs1" identifier="outpostmanager"/>
+			<npc from="outpostnpcs1" identifier="outpostdoctor"/>
+			<npc from="outpostnpcs1" identifier="miner"/>
+			<npc from="outpostnpcs1" identifier="miner"/>
+			<npc from="outpostnpcs1" identifier="miner"/>
+		</npcs>
+	</OutpostConfig>
+	<OutpostConfig identifier="city" totalmodulecount="12" minhallwaylength="0" allowedlocationtypes="City">
+		<modulecount flag="ita_city_dock" count="1"/>
+		<modulecount flag="Ita_engineeringmodule" count="1"/>
+		<modulecount flag="Ita_lifesupportmodule" count="1"/>
+		<modulecount flag="Ita_fabricationmodule" count="1"/>
+		<modulecount flag="ita_city_atrium" count="1"/>
+		<modulecount flag="ita_city_bar" count="1"/>
+		<modulecount flag="ita_city_shop" count="2"/>
+		<modulecount flag="ita_city_clinic" count="1"/>
+		<modulecount flag="ita_city_bank" count="1"/>
+		<modulecount flag="ita_city_special" count="1"/>
+		<!--<modulecount flag="ita_shipyard" count="1"/>-->
+		<modulecount flag="AdminModule" count="1"/>
+		<npcs>
+			<npc from="outpostnpcs1" identifier="hrmanager"/>
+			<npc from="outpostnpcs1" identifier="repairnpc"/>
+			<npc from="outpostnpcs1" identifier="outpostdoctor"/>
+			<npc from="outpostnpcs1" identifier="outpostmanager"/>
+			<npc from="outpostnpcs1" identifier="reactoroperator"/>
+			<npc from="ita_citynpcs1" identifier="ita_subupgradenpc"/>
+			<npc from="ita_citynpcs1" identifier="ita_subsalesnpc"/>
+			<npc from="ita_citynpcs1" identifier="ita_merchant"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard1"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard1"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard2"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard2"/>
+			<npc from="ita_citynpcs1" identifier="ita_commoner1"/>
+			<npc from="ita_citynpcs1" identifier="ita_commoner1"/>
+			<npc from="ita_citynpcs1" identifier="ita_commoner1"/>
+			<npc from="ita_citynpcs1" identifier="ita_commoner2bar"/>
+		</npcs>
+	</OutpostConfig>
+	<OutpostConfig identifier="researchoutpost" totalmodulecount="7" minhallwaylength="0" allowedlocationtypes="Research">
+		<modulecount flag="ita_research_dock" count="1"/>
+		<modulecount flag="ita_research_crew" count="1"/>
+		<modulecount flag="ita_engineeringmodule" count="1"/>
+		<modulecount flag="ita_research_lab" count="1"/>
+		<modulecount flag="ita_research_ancient" count="1"/>
+		<modulecount flag="Ita_lifesupportmodule" count="1"/>
+		<modulecount flag="AdminModule" count="1"/>
+		<npcs>
+			<npc from="outpostnpcs1" identifier="hrmanager"/>
+			<npc from="outpostnpcs1" identifier="repairnpc"/>
+			<npc from="ita_citynpcs1" identifier="ita_subupgradenpc"/>
+			<npc from="ita_citynpcs1" identifier="ita_subsalesnpc"/>
+			<npc from="outpostnpcs1" identifier="reactoroperator"/>
+			<npc from="ita_citynpcs1" identifier="ita_merchant"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard1"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard1"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard1"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard2"/>
+			<npc from="ita_citynpcs1" identifier="ita_guard2"/>
+			<npc from="outpostnpcs1" identifier="outpostmanager"/>
+			<npc from="outpostnpcs1" identifier="outpostdoctor"/>
+			<npc from="outpostnpcs1" identifier="researcher"/>
+			<npc from="outpostnpcs1" identifier="researcher"/>
+			<npc from="outpostnpcs1" identifier="researcher"/>
+		</npcs>
+	</OutpostConfig>
+</Override>

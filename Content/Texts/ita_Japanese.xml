@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Japanese" nowhitespace="false" translatedname="日本語">
+
+<!--新しいテキストを追加するときは、一番下の「新規追加」と「変更された値」のそれぞれの下に入れるようにします。全く新しいタグであれば、新規追加の下に、既存の値の更新であれば、変更された値の下に入れてください。-->
+<!--既に翻訳されているラインの既存のタグを編集してはいけません -> 何かのために新しいタグが必要な場合は、'New values' ヘッダーの下に追加し、置き換えられるべき他のタグがある場合はコメントしてください -->
+
+	
+	<!--症状-->
+	
+	<afflictionname.exposure>核廃棄物への曝露</afflictionname.exposure>
+	<afflictiondescription.exposure>高温の燃料棒を扱ったことが原因です。</afflictiondescription.exposure>
+	<afflictioncauseofdeath.exposure>高温の核廃棄物にさらされて死亡</afflictioncauseofdeath.exposure>
+	<afflictioncauseofdeathself.exposure>あなたは高温の放射性廃棄物に屈してしまったのです。</afflictioncauseofdeathself.exposure>
+
+	<afflictionname.ancientburn>青い火傷</afflictionname.ancientburn>
+	<afflictiondescription.ancientburn>ユーロパの古代エイリアンの技術による火傷、紺色の水ぶくれ、腐った皮膚。</afflictiondescription.ancientburn>
+	<afflictioncauseofdeath.ancientburn>焼き殺される</afflictioncauseofdeath.ancientburn>
+	<afflictioncauseofdeathself.ancientburn>あなたは焼死した。</afflictioncauseofdeathself.ancientburn>
+
+	<afflictionname.heal1>治療</afflictionname.heal1>
+	<afflictiondescription.heal1>前哨基地での質の高い治療</afflictiondescription.heal1>
+
+	<afflictionname.heal2>よく食べた</afflictionname.heal2>
+	<afflictiondescription.heal2>美味しい食べ物は心まで温めてくれます。[外傷回復]</afflictiondescription.heal2>
+
+	<afflictionname.heal3>よく休んだ</afflictionname.heal3>
+	<afflictiondescription.heal3>風通しの良い場所で暖かいベッドに寝ると、体に良い影響を与えます。[内部損傷回復]</afflictiondescription.heal3>
+
+	<afflictionname.heal4>よく寛いだ</afflictionname.heal4>
+	<afflictiondescription.heal4>前哨基地で比較的まともな人たちと一緒に飲むと、海の怖さを少し忘れることができます。[精神耐性][精神回復]</afflictiondescription.heal4>
+ 
+	<!--キャラクター-->
+
+	<character.Molochboss>古代のモロク</character.Molochboss>
+	<character.OutpostOrangeboy>家畜のオレンジボイ</character.OutpostOrangeboy>
+
+	<!--ミッション・テキスト-->
+
+	<missionname.cargopassanger1>旅客輸送</missionname.cargopassanger1>
+	<missiondescription.cargopassanger1>無事に[location2]に連れて行ってくれたら、[reward]マークを支払う。 </missiondescription.cargopassanger1>
+	<missionsuccess.cargopassanger1>乗せてくれてありがとう。</missionsuccess.cargopassanger1>
+
+	<missionname.cargoprisoner1>囚人輸送</missionname.cargoprisoner1>
+	<missiondescription.cargoprisoner1>5人の囚人を生きたまま[location2]に運ぶ必要があります。 </missiondescription.cargoprisoner1>
+	<missionsuccess.cargoprisoner1>囚人たちは旅を乗り越えた</missionsuccess.cargoprisoner1>
+
+	<missionname.cargoprisoner2>囚人輸送</missionname.cargoprisoner2>
+	<missiondescription.cargoprisoner2>ピエロの一団が[location1]の住民を困らせている。彼らを生きたまま[location2]に運んでくれるクルーには、[reward]マークの報酬が約束されているので、彼らも楽しむことができます。</missiondescription.cargoprisoner2>
+	<missionsuccess.cargoprisoner2>ピエロがやってきた...</missionsuccess.cargoprisoner2>
+
+	<missionname.cargoprisoner3>囚人輸送</missionname.cargoprisoner3>
+	<missiondescription.cargoprisoner3>狂ったカルト信者の一団が、不審な活動に関与しているとして[location1]で逮捕されました。[reward]mkを受け取るためには、彼ら3人を無傷で[location2]の精神科医のところに連れて行ってください。</missiondescription.cargoprisoner3>
+	<missionsuccess.cargoprisoner3>精神科医は教団員を自分の兄弟として迎え入れ、約束の報酬をあなたに支払った。</missionsuccess.cargoprisoner3>
+
+	<missionname.cargotime1>緊急貨物</missionname.cargotime1>
+	<missiondescription.cargotime1>急速に劣化している物質の入った木箱を、近くの前哨基地にいる研究者に届ける必要があります。マイクロ波室から取り出した後、10分間の寿命があると予測しています。がんばってください！</missiondescription.cargotime1>
+	<missionsuccess.cargotime1>不安定な物質が腐敗する前に届けられた。 </missionsuccess.cargotime1>
+
+	<missionname.cargowater1>水に弱い商品の輸送</missionname.cargowater1>
+	<missiondescription.cargowater1>パリパリのペストリーの箱を[location2]に運ぶ必要があります。濡らして台無しにしてはいけません！</missiondescription.cargowater1>
+	<missionsuccess.cargowater1>商品が乾燥してパリッとした状態で届けられた！</missionsuccess.cargowater1>
+
+	<missionname.cargoeggs>卵の輸送</missionname.cargoeggs>
+	<missiondescription.cargoeggs>ムドラプターの卵2個の箱を[location2]の冷凍庫に運ばなければなりません。ここの冷蔵庫から取り出した卵は、約11分で孵化します。時間内に届けてください！</missiondescription.cargoeggs>
+	<missionsuccess.cargoeggs>卵が孵化する前に、[location2]の研究用冷凍庫に届けられました。</missionsuccess.cargoeggs>
+
+	<missionname.cargofragile1>割れ物の輸送</missionname.cargofragile1>
+	<missiondescription.cargofragile1>[location2]で壊れやすい品物を必要としています。荷物が床に強くぶつからないように気をつけてください。荷物を運ぶ必要がある場合は、木箱を落とす前にしゃがみましょう。</missiondescription.cargofragile1>
+	<missionsuccess.cargofragile1>Fragileな商品が無傷で届けられた。 </missionsuccess.cargofragile1>
+
+	<missionname.cargoeggs2>危険な卵の輸送</missionname.cargoeggs2>
+	<missiondescription.cargoeggs2>ムドラプターの卵が入った2つの冷蔵クレートを[location2]にいる科学者に届ける必要があります。卵の冷凍保存にはバッテリーセルが必要なので、こまめに交換するのが得策です！</missiondescription.cargoeggs2>
+	<missionsuccess.cargoeggs2>ラプターの卵は孵化する前に研究者に届けられました。</missionsuccess.cargoeggs2>
+
+	<missionname.cargoeggs3>生体試料の輸送</missionname.cargoeggs3>
+	<missiondescription.cargoeggs3>[location1]の警備員がムドラプターを捕まえて鎖でつないだ。ムドラプターは、ムドラプター・レースに向けて訓練するために[location2]に輸送する必要がある。落ち着いているためにアヘンで鎮静化する必要があります。 </missiondescription.cargoeggs3>
+	<missionsuccess.cargoeggs3>哀れなムドラプターは、人間との旅を生き延びました。</missionsuccess.cargoeggs3>
+
+	<missionname.killwatcher>ウォッチャーを殺す</missionname.killwatcher>
+	<missiondescription.killwatcher>ウォッチャーとその手下を排除する。 </missiondescription.killwatcher>
+	<missionsonarlabel.killwatcher>目標</missionsonarlabel.killwatcher>
+	<missionsuccess.killwatcher>ウォッチャーとその手下を排除しました。</missionsuccess.killwatcher>
+	<missionheader0.killwatcher>ターゲット排除</missionheader0.killwatcher>
+	<missionmessage0.killwatcher>ウォッチャーとその手下を排除しました。報酬を得るために、潜水艦を洞窟から脱出させてください。</missionmessage0.killwatcher>
+
+	<missionname.killmolochboss>古代のモロクを殺す</missionname.killmolochboss>
+	<missiondescription.killmolochboss>この古代のモロクは、大規模な物流問題を引き起こすほど危険で、攻撃型潜水艦2隻を倒したこともある。これを倒したプロのクルーには[reward]の報酬が約束されている。</missiondescription.killmolochboss>
+	<missionsonarlabel.killmolochboss>古代のモロク</missionsonarlabel.killmolochboss>
+	<missionsuccess.killmolochboss>古代のモロクが殺された。</missionsuccess.killmolochboss>
+	<missionheader0.killmolochboss>ターゲット排除</missionheader0.killmolochboss>
+	<missionmessage0.killmolochboss>あなたのクルーは伝説的です。古代のモロクは死んだ。報酬を得るために、潜水艦を洞窟から脱出させてください</missionmessage0.killmolochboss>
+
+	<missionname.ita_swarmsmall_crawler>小さな群れを駆除する</missionname.ita_swarmsmall_crawler>
+	<missiondescription.ita_swarmsmall_crawler>小さなクローラーの群れが、[location1]と[location2]の間を航行する船舶を恐怖に陥れている。これを無力化できたクルーには[reward]クレジットの報酬が約束されている。</missiondescription.ita_swarmsmall_crawler>
+	<missionsonarlabel.ita_swarmsmall_crawler>群れ</missionsonarlabel.ita_swarmsmall_crawler>
+	<missionsuccess.ita_swarmsmall_crawler>群れを排除した。</missionsuccess.ita_swarmsmall_crawler>
+	<missionheader0.ita_swarmsmall_crawler>ターゲット排除</missionheader0.ita_swarmsmall_crawler>
+	<missionmessage0.ita_swarmsmall_crawler>クローラーの群れが消滅しました。潜水艦を洞窟から脱出させ、報酬を受け取ってください。 </missionmessage0.ita_swarmsmall_crawler>
+
+	<missionname.ita_swarmsmall_thresher>小さな群れを駆除する</missionname.ita_swarmsmall_thresher>
+	<missiondescription.ita_swarmsmall_thresher>小さなシャークの群れが[location1]と[location2]の間を航行する船を恐怖に陥れている。これを無力化できたクルーには[reward]クレジットの報酬が約束されている。</missiondescription.ita_swarmsmall_thresher>
+	<missionsonarlabel.ita_swarmsmall_thresher>群れ</missionsonarlabel.ita_swarmsmall_thresher>
+	<missionsuccess.ita_swarmsmall_thresher>群れを排除した。</missionsuccess.ita_swarmsmall_thresher>
+	<missionheader0.ita_swarmsmall_thresher>ターゲット排除</missionheader0.ita_swarmsmall_thresher>
+	<missionmessage0.ita_swarmsmall_thresher>シャークの群れが消滅しました。報酬を得るために、潜水艦を洞窟から脱出させてください</missionmessage0.ita_swarmsmall_thresher>
+
+	<missionname.ita_swarmsmall_mudraptor1>小さな群れを駆除する</missionname.ita_swarmsmall_mudraptor1>
+	<missiondescription.ita_swarmsmall_mudraptor1>若いラプターの小さな集団が[location1]と[location2]の間を徘徊しています。オスだけでなく、メスや幼生も殺せば、[reward]マークがもらえます。</missiondescription.ita_swarmsmall_mudraptor1>
+	<missionsonarlabel.ita_swarmsmall_mudraptor1>集団</missionsonarlabel.ita_swarmsmall_mudraptor1>
+	<missionsuccess.ita_swarmsmall_mudraptor1>集団を排除した。 </missionsuccess.ita_swarmsmall_mudraptor1>
+	<missionheader0.ita_swarmsmall_mudraptor1>ターゲット排除</missionheader0.ita_swarmsmall_mudraptor1>
+	<missionmessage0.ita_swarmsmall_mudraptor1>ムドラプターの群れを排除しました。報酬を得るために、潜水艦を洞窟から脱出させてください。</missionmessage0.ita_swarmsmall_mudraptor1>
+	<missionname.ita_swarmsmall_mudraptor2>小さな群れを駆除する</missionname.ita_swarmsmall_mudraptor2>
+	<missiondescription.ita_swarmsmall_mudraptor2>成熟したムドラプターの小さな集団が[location1]と[location2]の間を徘徊しています。彼らを倒せば、[reward]マークがもらえます。 </missiondescription.ita_swarmsmall_mudraptor2>
+	<missionsonarlabel.ita_swarmsmall_mudraptor2>集団</missionsonarlabel.ita_swarmsmall_mudraptor2>
+	<missionsuccess.ita_swarmsmall_mudraptor2>集団を排除した。</missionsuccess.ita_swarmsmall_mudraptor2>
+	<missionheader0.ita_swarmsmall_mudraptor2>ターゲット排除</missionheader0.ita_swarmsmall_mudraptor2>
+	<missionmessage0.ita_swarmsmall_mudraptor2>マッドラプターの群れを排除しました。報酬を得るために、潜水艦を洞窟から脱出させてください。</missionmessage0.ita_swarmsmall_mudraptor2>
+
+	<missionname.ita_swarmlarge_crawler>巨大な群れを駆除する</missionname.ita_swarmlarge_crawler>
+	<missiondescription.ita_swarmlarge_crawler>巨大なクローラーの群れが、[location1]と[location2]の間を航行する船舶を恐怖に陥れている。これを無力化できたクルーには[reward]クレジットの報酬が約束されている。</missiondescription.ita_swarmlarge_crawler>
+	<missionsonarlabel.ita_swarmlarge_crawler>群れ</missionsonarlabel.ita_swarmlarge_crawler>
+	<missionsuccess.ita_swarmlarge_crawler>群れを排除した。</missionsuccess.ita_swarmlarge_crawler>
+	<missionheader0.ita_swarmlarge_crawler>ターゲット排除</missionheader0.ita_swarmlarge_crawler>
+	<missionmessage0.ita_swarmlarge_crawler>巨大なクローラーの群れを排除しました。潜水艦を洞窟から脱出させ、報酬を受け取ってください。 </missionmessage0.ita_swarmlarge_crawler>
+
+	<missionname.ita_swarmlarge_thresher>巨大な群れを駆除する</missionname.ita_swarmlarge_thresher>
+	<missiondescription.ita_swarmlarge_thresher>巨大なシャークの群れが、[location1]と[location2]の間を航行する船舶を恐怖に陥れている。これを無力化できたクルーには、[reward]クレジットの報酬が約束されている。</missiondescription.ita_swarmlarge_thresher>
+	<missionsonarlabel.ita_swarmlarge_thresher>群れ</missionsonarlabel.ita_swarmlarge_thresher>
+	<missionsuccess.ita_swarmlarge_thresher>群れを排除した。</missionsuccess.ita_swarmlarge_thresher>
+	<missionheader0.ita_swarmlarge_thresher>ターゲット排除</missionheader0.ita_swarmlarge_thresher>
+	<missionmessage0.ita_swarmlarge_thresher>巨大なシャークの群れが消滅しました。潜水艦を洞窟から脱出させ、報酬を受け取ってください。 </missionmessage0.ita_swarmlarge_thresher>
+
+	<missionname.ita_swarmlarge_mudraptor1>巨大な群れを駆除する</missionname.ita_swarmlarge_mudraptor1>
+	<missiondescription.ita_swarmlarge_mudraptor1>若いラプターの大群が[location1]と[location2]の間を徘徊しています。オスだけでなく、メスや子ガメも殺せば、[reward]マークがもらえます。</missiondescription.ita_swarmlarge_mudraptor1>
+	<missionsonarlabel.ita_swarmlarge_mudraptor1>集団</missionsonarlabel.ita_swarmlarge_mudraptor1>
+	<missionsuccess.ita_swarmlarge_mudraptor1>集団を排除した。</missionsuccess.ita_swarmlarge_mudraptor1>
+	<missionheader0.ita_swarmlarge_mudraptor1>ターゲット排除</missionheader0.ita_swarmlarge_mudraptor1>
+	<missionmessage0.ita_swarmlarge_mudraptor1>ムドラプターの大群を排除しました。潜水艦を洞窟から脱出させて、報酬を受け取ってください。</missionmessage0.ita_swarmlarge_mudraptor1>
+
+	<missionname.ita_swarmlarge_mudraptor2>巨大な群れを駆除する</missionname.ita_swarmlarge_mudraptor2>
+	<missiondescription.ita_swarmlarge_mudraptor2>ムドラプターの大群が[location1]と[location2]の間を行き来しており、軍の潜水艦を含むあらゆるものを殺している。彼らに挑戦する気の狂ったクルーには9000マルク以上の報酬が約束されている。</missiondescription.ita_swarmlarge_mudraptor2>
+	<missionsonarlabel.ita_swarmlarge_mudraptor2>集団</missionsonarlabel.ita_swarmlarge_mudraptor2>
+	<missionsuccess.ita_swarmlarge_mudraptor2>集団を排除した。</missionsuccess.ita_swarmlarge_mudraptor2>
+	<missionheader0.ita_swarmlarge_mudraptor2>ターゲット排除</missionheader0.ita_swarmlarge_mudraptor2>
+	<missionmessage0.ita_swarmlarge_mudraptor2>ムドラプターの大群が排除されました。潜水艦を洞窟の外に出して、報酬を受け取ってください。</missionmessage0.ita_swarmlarge_mudraptor2>
+
+	<missionname.ita_drycave_clear1>洞窟の一掃</missionname.ita_drycave_clear1>
+	<missiondescription.ita_drycave_clear1>この洞窟にはモンスターが群がっており、人類の未来の発展を妨げています。ソナーを使ってモンスターとその卵を見つけ出し、破壊してください。 </missiondescription.ita_drycave_clear1>
+	<missionsonarlabel.ita_drycave_clear1>O</missionsonarlabel.ita_drycave_clear1>
+	<missionheader0.ita_drycave_clear1>巣を一掃</missionheader0.ita_drycave_clear1>
+	<missionsuccess.ita_drycave_clear1>あなたは巣を取り除き、今後このエリアでモンスターが活動するのを防ぐことができました。</missionsuccess.ita_drycave_clear1>
+
+
+	<!--イベントのテキスト-->
+
+	<eventtext.itamissioneventcargosensitive>sens「取り扱い注意の貨物を安全に届ける必要があります!壊さないでください」</eventtext.itamissioneventcargosensitive>
+	<eventtext.itamissioneventcargomonster>「生きている生き物を届けなければならない。気をつけないと、食べられてしまいます...」</eventtext.itamissioneventcargomonster>
+	<eventtext.itamissioneventeggtime>「生きている生き物を届けなければならない。気をつけないと、食べられてしまいます...」</eventtext.itamissioneventeggtime>
+	<eventtext.itamissioneventeggfridge>「生きている生き物を届けなければならない。気をつけないと食べられてしまう...」</eventtext.itamissioneventeggfridge>
+	<eventtext.itamissioneventlivemudraptor>「生きている生き物を届けなければならない。気をつけないと、食べられてしまいます...」</eventtext.itamissioneventlivemudraptor>
+	<eventtext.itamissioneventcargobulk>「大量の貨物を運ぶ必要があります。広い貨物用の潜水艦で、たくさんの木箱の棚があるといいですね！」</eventtext.itamissioneventcargobulk>
+
+	<eventtext.itahusk1.p1>前哨基地のスピーカー: &quot;注意!このボタンを押した人は罰せられます。このボタンを押した人は、この代償を払うことになるでしょう！&quot;&#xD;&#xA;[前哨基地 &#x9;関係-200]</eventtext.itahusk1.p1>
+	<eventtext.itahusk1.p2>前哨基地のスピーカー: &quot;注意!このボタンを押した者は罰を受けることになる。このボタンを押した人は、この代償を払うことになります！ &quot; これでカルトも満足でしょう...。&#xD;&#xA;[殻教 &#x9;&#x9;関係+50 ]&#xD;&#xA;[連合  関係-70 ]&#xD;&#xA;[前哨基地 &#x9;関係-200]</eventtext.itahusk1.p2>
+
+	<eventtext.itacrawler1.p1>前哨基地のスピーカー: &quot;クローラーが脱走した！誰がボタンを押したのか知らないが、この代償を払ってもらう！&quot;&#xD;&#xA;[前哨基地 &#x9;  関係-200]&#xD;&#xA;[連合    関係-30 ]</eventtext.itacrawler1.p1>
+	<eventtext.itacrawler1.p2>前哨基地のスピーカー: &quot;クローラーが脱走した！誰がそのボタンを押したのか知らないが、この代償を払ってもらう！&quot;&#xD;&#xA;[前哨基地 &#x9;  関係-200]&#xD;&#xA;[分裂派  関係+20 ]&#xD;&#xA;[連合    関係-30 ]</eventtext.itacrawler1.p2>
+
+	<eventtext.v1mechanicsarespecial1>ボロボロになった古いシャトルのエンジンを修理している機械メンテナンスのクルーチーフが、あなたを見極めるように一瞬にして眉をひそめた。</eventtext.v1mechanicsarespecial1>
+	<eventtext.v1mechanicsarespecial.cl1>エンジニアリングベイには、真面目で疲れている作業員がたくさんいます。そんな人たちをもっと幸せにするのは至難の業です」</eventtext.v1mechanicsarespecial.cl1>
+	<eventtext.v1mechanicsarespecial.cl2>[バイク警笛] 頼りになる赤いバイクホーンを使って、即興で短い演技をしてみましょう」</eventtext.v1mechanicsarespecial.cl2>
+	<eventtext.v1mechanicsarespecial.cl3>&quot;あなたはとても悲しそうな顔をして、エンジンを指さし、ピエロの髪を引き下げます。あなたは、バイクホーンを排気口の後ろに移動させ、エンジンを叩いて弱々しく鳴らします。部屋の雰囲気が一変して大爆笑に包まれる。整備士は小さな笑みを浮かべ、あなたに50mk紙幣を渡します。&quot;&#xD;&#xA;&#xD;&#xA;[ホンク 関係 +10]&#xD;&#xA;[現在地 関係 +10]</eventtext.v1mechanicsarespecial.cl3>
+	<eventtext.v1mechanicsarespecial.cl4>[ギター] 素敵な曲で、働く人の心を動かしてみてください</eventtext.v1mechanicsarespecial.cl4>
+	<eventtext.v1mechanicsarespecial.cl5>ここでは騒音と作業が多すぎて、ギターの音がかき消されてしまい、作業員に届くわずかな音も効果がありません。悲しい日だ...</eventtext.v1mechanicsarespecial.cl5>
+	<eventtext.v1mechanicsarespecial.cl6>棚からレンチを取ってきて、自分の頭をボコボコにする」</eventtext.v1mechanicsarespecial.cl6>
+	<eventtext.v1mechanicsarespecial.cl7>メカニックは眉をひそめている。 &#xD;&#xA;&quot;ピエロさん、殴られる前に出て行ってください。&quot;&#xD;&#xA;&#xD;&#xA;[ホンク 関係 -5]&#xD;&#xA;[現在地 関係 -5]</eventtext.v1mechanicsarespecial.cl7>
+	<eventtext.v1mechanicsarespecial.2>[舵 70] このエンジンのモデルコードは、古い請求書の紙に書いてあったのを覚えています。</eventtext.v1mechanicsarespecial.2>
+	<eventtext.v1mechanicsarespecial.3>&quot;このエンジンには見覚えがあります。ベンチャーのシャトル用に購入したものです。&quot;</eventtext.v1mechanicsarespecial.3>
+	<eventtext.v1mechanicsarespecial.4>&quot;知ったかぶりが。&quot;&#xD;&#xA;&#xD;&#xA;彼は見たものをあまり気にせず、仕事に戻った。どうやら、あなたは審査に通らなかったようですね。</eventtext.v1mechanicsarespecial.4>
+	<eventtext.v1mechanicsarespecial.5>黙っていろ。</eventtext.v1mechanicsarespecial.5>
+	<eventtext.v1mechanicsarespecial.6>&quot;そこの君、少しは有能に見えるよ。このエンジンに手を貸してくれ。&quot;</eventtext.v1mechanicsarespecial.6>
+	<eventtext.v1mechanicsarespecial.7>&quot;気持ち悪い野郎だ。&quot;"</eventtext.v1mechanicsarespecial.7>
+	<eventtext.v1mechanicsarespecial.8>メカニックは、信じられないという感じで首を振り、エンジンの作業を続けている。&#xD;&#xA;[現在地 関係 -10]</eventtext.v1mechanicsarespecial.8>
+	<eventtext.v1mechanicsarespecial.9>腕まくりをしてエンジンに手を貸す。</eventtext.v1mechanicsarespecial.9>
+	<eventtext.v1mechanicsarespecial.10>あなたは腕まくりをして、彼と一緒にエンジンの改造に取り掛かりました。数分後、二人はなんとかエンジンをかけることができた。ありがとうございます。でも、君のおかげで時間を節約できたよ。潜水艦に何か細工をしたいときは言ってくれれば、ちょっとした割引をしてあげようかな」。&#xD;&#xA;[機械 +5]&#xD;&#xA;[現在地 関係 +20]&#xD;&#xA;[UPGRADE SALE 15%]</eventtext.v1mechanicsarespecial.10>
+	<eventtext.v1mechanicsarespecial.11>あなたは腕まくりをして、彼と一緒にエンジンの改造を始めました。しかし、どんなに頑張っても、エンジンは動かない。彼はアクセスパネルを閉めてしまった。さて、これはスクラップにするしかないな。&#xD;&#xA;[機械 +1]&#xD;&#xA;[現在地 関係 +5]</eventtext.v1mechanicsarespecial.11>
+	<eventtext.v1mechanicsarespecial.12>彼は自分が見たものをあまり気にせず、自分の仕事に戻った。どうやら、あなたは審査に通らなかったようです。&#xD;&#xA;&#xD;&#xA;&quot;もし、エンジンに詳しい人がいたら、ここに送ってください。&quot;</eventtext.v1mechanicsarespecial.12>
+	<eventtext.v1mechanicsarespecial.13>[機械 90] エンジンのことがよくわかる。</eventtext.v1mechanicsarespecial.13>
+	<eventtext.v1mechanicsarespecial.14>&quot;それは、ベンチャー・シャトルのエンジンです。このエンジンのおかげで、あなたや私のような人が仕事を続けられるのです。&quot;</eventtext.v1mechanicsarespecial.14>
+
+	<eventtext.v2givingdirections.1>&quot;迷っているようですね。クルーに道を聞いてみよう。&quot;</eventtext.v2givingdirections.1>
+	<eventtext.v2givingdirections.2>&quot;助かりました、ありがとう。&quot;</eventtext.v2givingdirections.2>
+	<eventtext.v2givingdirections.3>[運% OR 兵器 60] 相手が後ろを向いているときに、相手のリボルバーを奪おうとする...</eventtext.v2givingdirections.3>
+	<eventtext.v2givingdirections.4>[舵 50] おい、その地図を見せてくれないか？このクソ溜めから出る一番早いルートは何だ？</eventtext.v2givingdirections.4>
+	<eventtext.v2givingdirections.5>キャプテンの問題は他の人に任せましょう</eventtext.v2givingdirections.5>
+
+	<eventtext.v3soundinthevent1>[ドライバー][%運 OR 機械 60] ベントのネジを外して中をよく見てみる。</eventtext.v3soundinthevent1>
+	<eventtext.v3soundinthevent2>通気孔を簡単に外すことができ、すぐに音の原因を見つけることができました。ファンの羽根が小さな金属製の箱に当たっているのです。慎重に取り出して開けてみると、そこには1,000マークが入っていました。換気口の奥ではまだ音がしていますが、知りません。&#xD;&#xA;[1000mk]&#xD;&#xA;[機械 +3]</eventtext.v3soundinthevent2>
+	<eventtext.v3soundinthevent3>ベントカバーを外すときに手こずり、回転する刃に当たってしまう。手を離す前に刃が手に刺さり、動脈を傷つけて動けなくなった。&#xD;&#xA;&#xD;&#xA;[兵器 30] 成功&#xD;&#xA;&#xD;&#xA;痛みに耐えながら、換気口の後ろから箱を押し出しました。箱を開けると、中には1000mkが入っていました。換気口の奥ではまだ音がしていますが、もう気にしないことにしましょう。&#xD;&#xA;&#xD;&#xA;[1000mk]&#xD;&#xA;[兵器 +3]&#xD;&#xA;</eventtext.v3soundinthevent3>
+	<eventtext.v3soundinthevent4>換気口のカバーを外しているときに、回転している刃にぶつかってしまう。動脈を傷つけて動けなくなり、引き離す前に刃が手に刺さりました。</eventtext.v3soundinthevent4>
+	<eventtext.v3soundinthevent5>素手で通気口のネジを外すことはできない！</eventtext.v3soundinthevent5>
+	<eventtext.v3soundinthevent6>[懐中電灯] 懐中電灯で通気口を照らし、異常がないか確認する</eventtext.v3soundinthevent6>
+	<eventtext.v3soundinthevent7>換気口の羽根に小さな金属製の箱が当たっていますね。それを手に入れるには、換気口のネジを外さなければなりませんが...</eventtext.v3soundinthevent7>
+	<eventtext.v3soundinthevent8>ポケットの中の懐中電灯を探しますが、ありません。クルーの誰かが持っているかもしれませんが...</eventtext.v3soundinthevent8>
+	<eventtext.v3soundinthevent9>今は無視してください。もしかしたら、あなたのクルーの誰かがこの件に対処したいと思うかもしれません...</eventtext.v3soundinthevent9>
+
+	<eventtext.v4goodsamaritan.1>あなたは、意識を失っている作業員に出会いました。暴力を受けた形跡はなく、周囲には誰もいません。地元の人を癒すのはコストがかかるかもしれませんが、ここの人たちとの関係にプラスになるでしょう。</eventtext.v4goodsamaritan.1>
+	<eventtext.v4goodsamaritan.2>わずかな量のナロキソンを上手に注射した後、あなたは患者がパラベン過敏症であることを発見しました。他に選択肢がないので、ナロキソンを少量ずつ長時間かけて投与し、患者の反応を注意深く観察します。患者は快方に向かっているようだ。 &#xD;&#xA;&#xD;&#xA;[医療 60 or 運% SUCCESS]&#xD;&#xA;[+5 医療]</eventtext.v4goodsamaritan.2>
+	<eventtext.v4goodsamaritan.3>&quot;やぁ、僕を立ち直らせてくれてありがとう。ベントのマドラプターの群れにオレンジボーイを奪われた痛みを癒すために、アヘン剤を試してみたんだけど、僕には効かなかったんだ。あなたにあげるものはありませんが、お店の友人にあなたが私を助けてくれたことを伝えておきます。彼らはあなたに割引をしてくれるでしょう。&quot;&#xD;&#xA;&#xD;&#xA;[REWARD 50mk]&#xD;&#xA;[10% SHOP SALE]&#xD;&#xA;[現在地 関係 +10]</eventtext.v4goodsamaritan.3>
+	<eventtext.v4goodsamaritan.4>&quot;やぁ、僕を立ち直らせてくれてありがとう。ベントのマドラプターの群れにオレンジボーイを奪われた痛みを癒すために、アヘンを試してみたんだが、俺には効かなかった。現金を渡そうと思ったが、失神した後に野郎に盗まれてしまったんだ。君が助けてくれたことをショップの友人に伝えておくよ。彼らはあなたに割引をしてくれるでしょう。&quot;&#xD;&#xA;&#xD;&#xA;[10% SHOP SALE]&#xD;&#xA;[現在地 関係 +10]</eventtext.v4goodsamaritan.4>
+	<eventtext.v4goodsamaritan.5>作業員があなたの薬に悪い反応を示しました。注射の周りが急速に腫れて、呼吸が不規則になっています。周りから注目されています..そろそろ帰る時間のようです。&#xD;&#xA;&#xD;&#xA;[医療 60 or 運% FAIL]</eventtext.v4goodsamaritan.5>
+
+	<eventtext.v5impromptuengineering.1>近くにある研究用の端末が気になります。しばらくの間、高速で点滅した後、暗転します。</eventtext.v5impromptuengineering.1>
+	<eventtext.v5impromptuengineering.2>[ドライバー] 調査する</eventtext.v5impromptuengineering.2>
+	<eventtext.v5impromptuengineering.3>いくつかのボタンを押してみる。反応はない。サイドパネルを開けると、配線が絡まっていて、FPGA回路がいくつかあるが、まったく問題ないようだ。</eventtext.v5impromptuengineering.3>
+	<eventtext.v5impromptuengineering.4>[電気 50] 部品を漁る</eventtext.v5impromptuengineering.4>
+	<eventtext.v5impromptuengineering.5>[運% OR 電気 60] ターミナルの修理を試みる</eventtext.v5impromptuengineering.5>
+	<eventtext.v5impromptuengineering.6>ディスプレイの電源ケーブルを再接続すると、端末が生き返る。このシステムを調べてみると、いくつかの可能性が見えてきました。前哨基地の艤装サービスにつながっているようだ。何がしたいですか？</eventtext.v5impromptuengineering.6>
+	<eventtext.v5impromptuengineering.7>コイルガンの試作弾薬を依頼</eventtext.v5impromptuengineering.7>
+	<eventtext.v5impromptuengineering.8>少しクリックした後、あなたは自分の船のためにコイルガンの物理皮膚弾薬を2箱、無料で注文することに成功しました。</eventtext.v5impromptuengineering.8>
+	<eventtext.v5impromptuengineering.9>古いタイプの一人称視点のシューティングゲームを端末にインストール&#xD;&#xA;[電気 +5]</eventtext.v5impromptuengineering.9>
+	<eventtext.v5impromptuengineering.9.1>よくできました。</eventtext.v5impromptuengineering.9.1>
+	<eventtext.v5impromptuengineering.10>最新の医療研究のためのファイルを覗いてみる&#xD;&#xA;[医療 +5]</eventtext.v5impromptuengineering.10>
+	<eventtext.v5impromptuengineering.11>コンパウンドNの生産を非常に効率的にコントロールするメディカル・ファブリケーターのインターフェースを見つけた。この基地は連合に爆発物を供給しているようだ。 </eventtext.v5impromptuengineering.11>
+	<eventtext.v5impromptuengineering.11.1>生産を研究[医療 +5]」</eventtext.v5impromptuengineering.11.1>
+	<eventtext.v5impromptuengineering.12>[分裂派 関係 30]レシピを揮発性化合物Nに変更...[分裂派 関係 +10]</eventtext.v5impromptuengineering.12>
+	<eventtext.v5impromptuengineering.13>あなたは、化合物Nの生産を非常に効率的にコントロールする、興味深い医療用ファブリケータのインターフェースを見つけました。あなたはその手順を学び、理解を深めます。</eventtext.v5impromptuengineering.13>
+	<eventtext.v5impromptuengineering.13.1>よくできました。</eventtext.v5impromptuengineering.13.1>
+	<eventtext.v5impromptuengineering.14>エイリアンクリーチャーの解剖に関する情報を検索する&#xD;&#xA;[兵器 +5]</eventtext.v5impromptuengineering.14>
+	<eventtext.v5impromptuengineering.15>ムドラプターの詳細な断面図があります。装甲されたものに対処するには、しゃがんで下腹部を撃つのが一番よさそうですね。また、ショットガンで顎を狙ってヘッドショットをすれば、首を落とせるかもしれません。</eventtext.v5impromptuengineering.15>
+	<eventtext.v5impromptuengineering.15.1>よくできました。</eventtext.v5impromptuengineering.15.1>
+	<eventtext.v5impromptuengineering.16>電気屋に任せる</eventtext.v5impromptuengineering.16>
+
+	<eventtext.v8propaganda.1>[スプレー+エタノール] いたずらを取り除くことで、地元の人々に立派な市民としての良い手本を示してください。</eventtext.v8propaganda.1>
+	<eventtext.v8propaganda.2>[塗料] 自分のセンスも加えてみる。</eventtext.v8propaganda.2>
+	<eventtext.v8propaganda.3>通り過ぎる。</eventtext.v8propaganda.3>
+	<eventtext.v8propaganda.4>散らかったものを片付けるあなたを見て、人々はこう言います。彼らは、あなたが連合の上層部の人間ではないかと推測して、お互いにひそひそ話を始めます。何人かはあなたに鋭い視線を送り、一緒に立ち去っていく...&#xD;&#xA;[現在地 関係 +15]&#xD;&#xA;[連合 関係 +10]&#xD;&#xA;[分裂派 関係 -10]</eventtext.v8propaganda.4>
+	<eventtext.v8propaganda.5>自分で下品な絵を描いてしまったために、人々がさらに言い争いを始めてしまい、喧嘩になってしまった！ &#xD;&#xA;[現在地 関係 -15]&#xD;&#xA;[連合 関係 -30]&#xD;&#xA;[分裂派 関係 +10]</eventtext.v8propaganda.5>
+	<eventtext.v8propaganda.6>少しの混乱は、連合のいわゆる&quot;秩序と安全&quot;について人々に考え直させるでしょう。</eventtext.v8propaganda.6>
+	<eventtext.v8propaganda.7>くそ、ペンキの缶がないのか？それでも反逆者か？取ってこい。</eventtext.v8propaganda.7>
+
+	<eventtext.itacollectorsell1>&quot;アーティストを売った。&quot;[+1400mk][+7 前哨基地 関係]</eventtext.itacollectorsell1>
+
+	<eventtext.itaprisonbreak1.1>前哨基地のスピーカー: &quot;テロリストが許可なく独房から解放されました!彼と彼の仲間を殺しなさい！&quot;&#xD;&#xA;&#xD;&#xA;[前哨基地     関係-200]</eventtext.itaprisonbreak1.1>
+	<eventtext.itaprisonbreak1.2>前哨基地のスピーカー: &quot;テロリストが許可なく独房から解放されました!彼と彼の仲間を殺せ！&quot;&#xD;&#xA;&#xD;&#xA;[前哨基地     関係-200]&#xD;&#xA;[連合   関係-45]&#xD;&#xA;[分裂派 関係+20]</eventtext.itaprisonbreak1.2>
+
+	<eventtext.itaprisonbreak2.1>前哨基地のスピーカー: &quot;サボタージュ犯が許可なく独房から解放されました!彼と彼の仲間を殺せ！&quot;&#xD;&#xA;&#xD;&#xA;[前哨基地     関係-200]</eventtext.itaprisonbreak2.1>
+	<eventtext.itaprisonbreak2.2>前哨基地のスピーカー: &quot;サボタージュ犯が許可なく独房から解放された!彼と彼の仲間を殺せ！&quot;&#xD;&#xA;&#xD;&#xA;[前哨基地     関係-200]&#xD;&#xA;[連合   関係-45]&#xD;&#xA;[ホンク 関係+20]</eventtext.itaprisonbreak2.2>
+
+	<eventtext.itaprisonescape1.0.1>前哨基地のスピーカー: &quot;潜水艦のクルーによって囚人が解放された!殺せ！&quot;&#xD;&#xA;&#xD;&#xA;[前哨基地     関係-200]</eventtext.itaprisonescape1.0.1>
+	<eventtext.itaprisonescape1.0.2>前哨基地のスピーカー: &quot;潜水艦のクルーによって囚人が解放された!殺してしまえ！&quot;&#xD;&#xA;&#xD;&#xA;[前哨基地     関係-200]&#xD;&#xA;[連合   関係-50]&#xD;&#xA;[分裂派 関係+10]</eventtext.itaprisonescape1.0.2>
+
+	<eventtext.itaprisonescape2.0.1>前哨基地のスピーカー: &quot;潜水艦のクルーによって囚人が解放された!殺せ！&quot;&#xD;&#xA;&#xD;&#xA;[前哨基地     関係-200]</eventtext.itaprisonescape2.0.1>
+	<eventtext.itaprisonescape2.0.2>前哨基地のスピーカー: &quot;潜水艦のクルーによって囚人が解放された!殺してしまえ！&quot;&#xD;&#xA;&#xD;&#xA;[前哨基地     関係-200]&#xD;&#xA;[連合   関係-50]&#xD;&#xA;[分裂派 関係+10]</eventtext.itaprisonescape2.0.2>
+
+	<eventtext.itaprisonescape2.1.1>この囚人は酷い扱いを受けていた。連合は分裂主義者に対して残忍です。&#xD;&#xA;&quot;私を助けてくれてありがとうございます。あなたがしてくれたことを、仲間の船長たちに伝えておきます。&quot;</eventtext.itaprisonescape2.1.1>
+	<eventtext.itaprisonescape2.1.2>この囚人は酷い扱いを受けていた。連合は分裂主義者に対して残忍です。&#xD;&#xA;&quot;私を助けてくれてありがとうございます。あなたがしてくれたことを、仲間の船長たちに伝えておきます。&quot;&#xD;&#xA;[分裂派 関係+10]</eventtext.itaprisonescape2.1.2>
+
+	<eventtext.itaprisonescape2.2.1>哀れな道化師は、連合軍の警備員にはユーモアのセンスがあると思っていた。&#xD;&#xA;&quot;あなたのおかげで、私は他の場所で喜びを広げることができます。私の音楽はまだ黙っていません! あなたにホンクマザーの祝福を。&quot;&#xD;&#xA;</eventtext.itaprisonescape2.2.1>
+	<eventtext.itaprisonescape2.2.2>哀れな道化師は、連合軍の警備員にはユーモアのセンスがあると思っていた。&#xD;&#xA;&quot;あなたのおかげで、私は他の場所で喜びを広げることができます。私の音楽はまだ黙っていません! あなたにホンクマザーの祝福を。&quot;&#xD;&#xA;[CLOWN 関係+10]</eventtext.itaprisonescape2.2.2>
+
+	<eventtext.itaprisonescape2.1>連合は分裂主義者のスパイに対して非常に偏執的で、一般の前哨基地の住人や潜水艦のクルーをしばしば投獄し、敵に与えるのと同じ扱いをしています...&#xD;&#xA;&quot;私をそこから出してくれてありがとう!司令室での会話を聞いていたとして逮捕され、非難されましたが、私はドックで床掃除をしていました！今、はっきりとわかりました。連合こそが真のテロリストなのだ！ &quot;&#xD;&#xA;</eventtext.itaprisonescape2.1>
+	<eventtext.itaprisonescape2.2>連合は分裂主義者のスパイに対して非常に偏執的で、一般の前哨基地の住人や潜水艦のクルーをしばしば投獄し、敵に与えるのと同じ扱いをしています...&#xD;&#xA;&quot;私をそこから出してくれてありがとう!司令室での会話を聞いていたとして逮捕され、非難されましたが、私はドックで床掃除をしていました！今、はっきりとわかりました。連合こそが真のテロリストなのだ！&quot;&#xD;&#xA;[分裂派 関係+10]</eventtext.itaprisonescape2.2>
+
+	<eventtext.itamissionscity1.1.1>やらなければならない仕事はたくさんあります。これらは最も必要とされる仕事です。 </eventtext.itamissionscity1.1.1>
+	<eventtext.itamissionscity1.2.2>やるべきことは常にある。あなたはこの契約を引き受けることができます。 </eventtext.itamissionscity1.2.2>
+	<eventtext.itamissionscity1.3.3>このタスクには、よく組織されたクルーが必要です！</eventtext.itamissionscity1.3.3>
+	
+	<eventtext.itamissionsmining1.4>大規模な採掘作業を始める前に、この場所にどのような種類の鉱物が存在するかを確認する必要があります。何があるか見てください。</eventtext.itamissionsmining1.4>
+	<eventtext.itamissionsmining2.5>私たちが洞窟を掘り続けることができるように、巣を取り除いていただきたいのです</eventtext.itamissionsmining2.5>
+	<eventtext.itamissionsmining3.6>他にも様々な作業が必要です</eventtext.itamissionsmining3.6>
+	
+	<eventtext.itamissionsmilitary1.7>いくつかの用事を済ませてもらいたいのですが、</eventtext.itamissionsmilitary1.7>
+	<eventtext.itamissionsmilitary2.8>大群を駆除してほしい。準備ができているといいのですが...</eventtext.itamissionsmilitary2.8>
+	<eventtext.itamissionsmilitary3.9>この地域の人間居住地に対する大規模な脅威を取り除くために、あなたが必要です。そのためには、強力な武器を用意しなければなりません。</eventtext.itamissionsmilitary3.9>
+
+	<eventtext.itamissiontrusted>&quot;あなたは経験豊富な船乗りであることを証明したので、私はあなたにこれらのミッションを任せます。&quot;</eventtext.itamissiontrusted>
+	<eventtext.itamissionscargowater>[ミッション] 乾燥品の輸送 [+10関係][2000mk]</eventtext.itamissionscargowater>
+	<eventtext.itamissionscargowater2>[ミッション] 乾燥品の貨物 [+10関係][+2000mk]</eventtext.itamissionscargowater2>
+	<eventtext.itamissionscargofragile>[ミッション] 割れ物の輸送 [+10関係][2300mk]</eventtext.itamissionscargofragile>
+	<eventtext.itamissionscargofragileask>&quot;誰も届けたがらない取り扱い注意の貨物箱があるので、必然的にあなたにお願いしています。&quot;</eventtext.itamissionscargofragileask>
+	<eventtext.itamissionscargoegg>[ミッション] 孵化間近の卵の輸送 [+10関係][2000mk]</eventtext.itamissionscargoegg>
+	<eventtext.itamissionactivatebeacon>[ミッション] ビーコンをアクティブする [2800mk]</eventtext.itamissionactivatebeacon>
+	<eventtext.itamissionkillhammerhead>[ミッション] シュモクザメを殺す [+10関係][3000mk]</eventtext.itamissionkillhammerhead>
+	<eventtext.itamissionmineralresearch>[ミッション] 洞窟の鉱物調査 [+10関係][1500-1800mk]</eventtext.itamissionmineralresearch>
+	<eventtext.itamissionscargotime>[ミッション] 劣化の激しい貨物 [+10関係][2000mk]</eventtext.itamissionscargotime>
+	<eventtext.itamissionscargocreature>[ミッション] クリーチャーの貨物 [+10関係][3000mk]</eventtext.itamissionscargocreature>
+	
+	<eventtext.itamissionsresearch1.11>奇妙な挙動を示す特定のアーティファクトを持ってきてもらいたい。 </eventtext.itamissionsresearch1.11>
+	<eventtext.itamissionsresearch2.12>奇妙な挙動を示す特定のアーティファクトを持ってきてもらいたい。</eventtext.itamissionsresearch2.12>
+	<eventtext.itamissionsresearch3.13>研究以外の仕事もあります。</eventtext.itamissionsresearch3.13>
+	<eventtext.itaresearchartifact1.14>私たちは、測定で異常なアーティファクトのサインに気づきました。それを集めることで、私たちの研究に協力してください。さらに普通のアーティファクトを見つけたら、エアロックのディスペンサーに預けて報酬を得てください。 </eventtext.itaresearchartifact1.14>
+
+	<eventtext.itarebelbase1>&quot;え...誰だお前は！ここで何をしているんだ！？&quot;</eventtext.itarebelbase1>
+	<eventtext.itarebelbase2>&quot;私たちはあなたを殺すためにここに来た、見ての通りな。&quot;</eventtext.itarebelbase2>
+	<eventtext.itarebelbase3>&quot;お前は一体何をしているんだ？&quot;</eventtext.itarebelbase3>
+	<eventtext.itarebelbase4>[配達] &quot;あなたを探していました。届けたいものがあるんだけど、君の手しか借りられないんだ。&quot;</eventtext.itarebelbase4>
+	<eventtext.itarebelbase5>[前哨基地 関係 90]&quot;私たちは局のために働いています。私たちはトラブルを探しているわけではありません。 &quot;</eventtext.itarebelbase5>
+	<eventtext.itarebelbase6>[分裂派 関係 50] &quot;シック・センパー・ティラニス。私たちは助けるためにここにいるのです。&quot;</eventtext.itarebelbase6>
+	
+	<eventtext.itabounty1.1>掲示板に貼られたWANTEDのポスター...</eventtext.itabounty1.1>
+	<eventtext.itabounty1.2>懸賞金の対象が排除された&#xD;&#xA;[750mk]&#xD;&#xA;[連合 関係 +6]</eventtext.itabounty1.2>
+
+	<eventtext.itabeacontest1>&quot;あなたは補給のクルーですか？パスワードは何ですか！？&quot;</eventtext.itabeacontest1>
+	<eventtext.itabeacontest2>&quot;シック・センパー・ティラニス。&quot; [分裂派 関係+5]</eventtext.itabeacontest2>
+	<eventtext.itabeacontest3>&quot;シックリ・センパイ・ティラミス？&quot;[ホンク 関係 +5]</eventtext.itabeacontest3>
+	<eventtext.itabeacontest4>&quot;セクタムセンプラ。&quot; [ホンク 関係 +5]</eventtext.itabeacontest4>
+	<eventtext.itabeacontest5>[現在地 関係 50]&quot;私たちはステーションのために働いており、このビーコンは修理が必要です。 </eventtext.itabeacontest5>
+	<eventtext.itabeacontest6>*中指を立てる &quot;これがパスワードか？&quot;</eventtext.itabeacontest6>
+
+	<eventtext.itabeaconsep1.0kill.1>分裂主義者の隠れ家を一掃した...&#xD;&#xA;[報酬 800mk]&#xD;&#xA;[連合 関係 +8]&#xD;&#xA;[分裂派 関係 -15]</eventtext.itabeaconsep1.0kill.1>
+	<eventtext.itabeaconsep1.0.2>[連合 関係 40] &#xD;&#xA;&quot;こちらは連合軍のオフィサーだ。貴様には近くのビーコンにある分裂主義者の隠れ家の一掃を命じる！ &quot;</eventtext.itabeaconsep1.0.2>
+
+	<eventtext.itabeaconsep1.0a.1>無線通信: &quot;旅行者の皆さん、こんにちは。ビーコン・ステーションではあなたの助けが必要です。&quot;</eventtext.itabeaconsep1.0a.1>
+	<eventtext.itabeaconsep1.0a.2>分裂主義者の制服に身を包んだ若いキャプテンが、両手を後ろに回して、ここでの活動を誇りに思っているようにあなたを迎えてくれます。&quot;同士よ、ようこそ我がステーションへ。&quot;</eventtext.itabeaconsep1.0a.2>
+	<eventtext.itabeaconsep1.0a.3>[分裂派 関係 30] &quot;あなたはここで何をしているの？&quot;</eventtext.itabeaconsep1.0a.3>
+	<eventtext.itabeaconsep1.0a.4>&quot;私たちはこのビーコンを放送局として再利用し、近隣の前哨基地に真実を広めてプロパガンダに対抗している。人々は、連合が彼らを服従させるために操作されていることを理解する必要がある。&quot;</eventtext.itabeaconsep1.0a.4>
+	<eventtext.itabeaconsep1.0a.5>[舵 70]&quot;聞いてくれ、&quot;同志&quot;。連合軍の艦船がこのトンネルを巡回し、このような隠れ家を警告なしに核攻撃している。いつの日か、彼らはあなたを訪問し、ここのクルーの血で償わせることになる。手遅れになる前に、放送を切り、この作戦を終了し、仲間を救ってください。&quot;</eventtext.itabeaconsep1.0a.5>
+	<eventtext.itabeaconsep1.0a.6>&quot;沈黙しろと？それがあなたの望みか？私たちを脅かすことができると本気で思っているのか？&quot;</eventtext.itabeaconsep1.0a.6>
+	<eventtext.itabeaconsep1.0a.7>[分裂派 関係 50] &quot;私はあなたの味方ですが、誰も聞いていないくだらない放送のために、これらの人々の命を危険にさらしたくはありません。&quot;</eventtext.itabeaconsep1.0a.7>
+	<eventtext.itabeaconsep1.0a.8>ビーコンの司令官は、完璧なカムバックを準備しているかのように微笑んでいますが、その表情はより真剣で、敗北したような表情に変わります。 &quot;くそ、君の言うとおりだ。こんなことのために私たちの命を危険にさらすべきではなかった。&quot; 彼は、部下に荷造りを始めるように命令する。 [分裂派 +10][連合 +5]</eventtext.itabeaconsep1.0a.8>
+	<eventtext.itabeaconsep1.0a.9>ビーコンのクルーは自分の持ち場を放棄し、すべての活動を停止するように説得されました。ステーションを放棄するための準備が行われています。&#xD;&#xA;[分裂派 関係 +10][連合 関係+5]</eventtext.itabeaconsep1.0a.9>
+	<eventtext.itabeaconsep1.0a.10>&quot;それは敗北主義者の言葉だ。連合軍将校の靴を磨いてこい、臆病者。&quot;</eventtext.itabeaconsep1.0a.10>
+	<eventtext.itabeaconsep1.0a.11>&quot;勝手にしやがれ!たとえ生き残ったとしても、連合があなたを追い詰め始めたときに、私たちの潜水艦に避難させてくれるとは思わないでくださいね！&quot; [分裂派 関係 -3]</eventtext.itabeaconsep1.0a.11>
+	<eventtext.itabeaconsep1.0a.12>&quot;あなたは自分が何を言っているのか全くわからない。&quot;</eventtext.itabeaconsep1.0a.12>
+	<eventtext.itabeaconsep1.0a.13>&quot;いいですね。人々の意見に挑戦し、考えさせる。それこそが、長期的には連合を崩壊させることになるでしょう。</eventtext.itabeaconsep1.0a.13>
+	<eventtext.itabeaconsep1.0a.14>人員を数え、装備を点検し、クルー名簿を見て、後で連合に対処してもらう。この情報のおかげで、この人たちは最初に訪れたステーションで逮捕され、その親族でさえ罰を免れないでしょう。あなたはそれを目撃する必要はありません。 &#xD;&#xA;[連合 関係 +8][分裂派 関係 -10]</eventtext.itabeaconsep1.0a.14>
+	<eventtext.itabeaconsep1.0a.15>&quot;いいね。&quot;</eventtext.itabeaconsep1.0a.15>
+	<eventtext.itabeaconsep1.0a.16>&quot;申し訳ないが、詳細は明かせない;命令だ。.&quot;</eventtext.itabeaconsep1.0a.16>
+	<eventtext.itabeaconsep1.0a.17>&quot;何か手助けできるか？&quot;</eventtext.itabeaconsep1.0a.17>
+	<eventtext.itabeaconsep1.0a.18>&quot;もう少しここにいるためには、いくつかの物資が必要だ。詳しくはメカニックが教えてくれるだろう。&quot;</eventtext.itabeaconsep1.0a.18>
+	<eventtext.itabeaconsep1.0a.19>&quot;私たちを受け入れたのは大きな間違いだったな、「同士」よ...&quot;</eventtext.itabeaconsep1.0a.19>
+	<eventtext.itabeaconsep1.0a.20>&quot;ここに来るべきではなかった！&quot;[連合 関係 +6]</eventtext.itabeaconsep1.0a.20>
+
+
+	<eventtext.itabeaconsep1.0b.1>あなたは、壁の穴からドライバーを手にしたメカニックを見かけます。&quot;やあ、どうも！この壊れた壁を修理してほしいんだ。この壊れた古いジャンク品を誰かに修理してもらいたいんです。FPGA回路が壊れてしまったんです。&quot;</eventtext.itabeaconsep1.0b.1>
+	<eventtext.itabeaconsep1.0b.2>[電気 45][FPGA回路] &quot;いいよ、1つ持っているから助けよう&quot;</eventtext.itabeaconsep1.0b.2>
+	<eventtext.itabeaconsep1.0b.3>あなたは壁の穴に身を乗り出して、錆びついた電子機器の回路基板を見つけました。金属製の壁の内側には、古くて半分焼けたFPGA回路が見えます。あなたはそれをスロットから取り出して、ピカピカの新しいものと交換しました。</eventtext.itabeaconsep1.0b.3>
+	<eventtext.itabeaconsep1.0b.4>&quot;ありがとうございます!この場所はもうしばらくの間、運営されます。大したものは持っていないが、このインシジウムバーを持って行ってくれ。医務官が忙しそうにしている時に、医務官の一人から奪ったんだ。たぶん価値があると思うから、一箇所で全部使わないようにね。&quot;</eventtext.itabeaconsep1.0b.4>
+	<eventtext.itabeaconsep1.0b.5>&quot;素晴らしいですね。頑張ってください。&quot;&#xD;&#xA;[分裂派 関係 +3]</eventtext.itabeaconsep1.0b.5>
+	<eventtext.itabeaconsep1.0b.6>&quot;何も要らないよ、ありがとう。ただの安物の回路でした。頑張って運用してください！&quot;&#xD;&#xA;[分裂派 関係 +7]</eventtext.itabeaconsep1.0b.6>
+	<eventtext.itabeaconsep1.0b.7>[兵器 20] &quot;私はあなたを助けるために、時間、ノウハウ、材料を費やしました。きっとあなたは私にきちんと報いてくれるでしょう。&quot;</eventtext.itabeaconsep1.0b.7>
+	<eventtext.itabeaconsep1.0b.9>[兵器 20 失敗] &quot;申し訳ありませんが、これが私のすべてです。持っていっても置いていっても構いません。。&quot;&#xD;&#xA;[分裂派 関係 -2]</eventtext.itabeaconsep1.0b.9>
+	<eventtext.itabeaconsep1.0b.11>&quot;それがFPGAの回路ではないことは、私でも知っていますよ、坊や。&quot;</eventtext.itabeaconsep1.0b.11>
+	<eventtext.itabeaconsep1.0b.12>&quot;いいえ、すみません。ちょっと見て回っただけです。&quot;</eventtext.itabeaconsep1.0b.12>
+	<eventtext.itabeaconsep1.0b.13>&quot;あなたはピエロですか？本物？&quot;</eventtext.itabeaconsep1.0b.13>
+	<eventtext.itabeaconsep1.0b.14>&quot;そうですよ。&quot;</eventtext.itabeaconsep1.0b.14>
+	<eventtext.itabeaconsep1.0b.15>&quot;うーん...そうは見えないんだけど...。気にしないで。&quot; [ホンク 関係 -5]</eventtext.itabeaconsep1.0b.15>
+	<eventtext.itabeaconsep1.0b.16>[バイク警笛] 自転車のクラクションを鳴らす</eventtext.itabeaconsep1.0b.16>
+	<eventtext.itabeaconsep1.0b.17>メカニックは苦笑するが、すぐに仕事に戻る。 &#xD;&#xA;[ホンク 関係 +5]</eventtext.itabeaconsep1.0b.17>
+	<eventtext.itabeaconsep1.0b.18>自転車のクラクションを家に忘れたようですね。悲しい...&#xD;&#xA;[ホンク 関係 -5]</eventtext.itabeaconsep1.0b.18>
+	<eventtext.itabeaconsep1.0b.19>[ギター] ハッピーな曲を流す。</eventtext.itabeaconsep1.0b.19>
+	<eventtext.itabeaconsep1.0b.20>この人たちは久しぶりに音楽を聴いたり、笑ったりしたんだなということがすぐにわかります。あなたの歌は、ビーコンにいる人たちの魂を揺さぶり、みんなをいい気分にさせます。&#xD;&#xA;[ホンク 関係 +10][分裂派 関係 +3]</eventtext.itabeaconsep1.0b.20>
+	<eventtext.v2givingdirections.21>架空のエアギターで演奏しても、メカニックを楽しませることはできません。&#xD;&#xA;[ホンク 関係 -5]</eventtext.v2givingdirections.21>
+
+	<eventtext.itatransport3.0.1>&quot;最後に笑うのはどっちかな！？ホンクマザーが見守ってくれています。&quot;</eventtext.itatransport3.0.1>
+	<eventtext.itatransport4.0.1>&quot;私が必要です!私たちを殺したら、お金を払ってもらえませんよ!あなた方はいずれ海と一体になる。避けられないことを先延ばしにしても意味がありません...&quot;</eventtext.itatransport4.0.1>
+
+	<eventtext.itarace1bet.1>&quot;次のムドラプターレースでどれかのムディーに100mkを賭けてみませんか？?&quot;</eventtext.itarace1bet.1>
+	<eventtext.itarace1bet.2>赤のムドラプターに100mkを賭ける...</eventtext.itarace1bet.2>
+	<eventtext.itarace1bet.3>現金が足りない...</eventtext.itarace1bet.3>
+	<eventtext.itarace1bet.4>緑のムドラプターに100mkを賭ける...</eventtext.itarace1bet.4>
+	<eventtext.itarace1bet.5>青のムドラプターに100mkを賭ける...</eventtext.itarace1bet.5>
+	<eventtext.itarace1bet.6>&quot;今はやめておく。&quot;</eventtext.itarace1bet.6>
+	<eventtext.itarace1bet.7>&quot;レース開始！&quot;</eventtext.itarace1bet.7>
+	<eventtext.itarace1bet.8>&quot;赤がレースに勝ちました!トークンを交換しに来てください！&quot;</eventtext.itarace1bet.8>
+	<eventtext.itarace1bet.9>トークンの回収...</eventtext.itarace1bet.9>
+	<eventtext.itarace1bet.10>&quot;緑がレースを制しました!トークンを交換しに来てください！&quot;</eventtext.itarace1bet.10>
+	<eventtext.itarace1bet.11>&quot;青がレースに勝ちました!トークンを交換しに来てください！&quot;</eventtext.itarace1bet.11>
+
+	<eventtext.itarace1.0.1>赤がレースを制した！</eventtext.itarace1.0.1>
+	<eventtext.itarace1.0.2>緑がレースを制した！</eventtext.itarace1.0.2>
+	<eventtext.itarace1.0.3>青がレースを制した！</eventtext.itarace1.0.3>
+
+	<eventtext.trainer.1>&quot;私は以前、R-29で金属の塊を浮かせる仕事をしていました。半分は銛で船首のクローラーを削っていました。残りの半分は、目が見えなくなるほど貨物室の壁を溶接していました。それがこのクソみたいな町に来たわけだ。お金を払えば、私のノウハウを教えてあげますよ。&quot;</eventtext.trainer.1>
+	<eventtext.trainer.2>[360mk] &quot;どのようにしてあれほどの大きさの潜水艦を浮かせていたのか詳しく教えてください。&quot; [+3 機械]</eventtext.trainer.2>
+	<eventtext.trainer.3>&quot;また後であなたの冒険について尋ねるかもしれません。&quot;</eventtext.trainer.3>
+	<eventtext.trainer.4>&quot;私は、ここにいる誰よりも多くのポンプを修理してきました。時間を割いてくれるなら、最高の修理方法を教えてあげますよ。&quot;</eventtext.trainer.4>
+	<eventtext.trainer.5>[360mk] &quot;確かに、それらをより早く修正する方法を知りたい。&quot; [+3 機械]</eventtext.trainer.5>
+	<eventtext.trainer.6>&quot;私の経験は、長年の苦しみをもってして得たものです。ちゃんとお金を払ってくれないと教えませんよ。&quot;</eventtext.trainer.6>
+	<eventtext.trainer.7>&quot;ポンプのことは、また後で聞きに来るかもしれません。&quot;</eventtext.trainer.7>
+	<eventtext.trainer.8>&quot;長年にわたる配電盤の修理で焼けたプラスチックの煙を吸っていたため、肺が片方しか機能しておらず、潜水艦で働いていたら大変なことになっていたかもしれません。私が学んだことをあなたに伝えるには、少しばかりマークが必要です...&quot;</eventtext.trainer.8>
+	<eventtext.trainer.9>[360mk] &quot;便利そうですね。配電盤を効率よく処理する方法を知りたいですね。&quot; [+3 電気]</eventtext.trainer.9>
+	<eventtext.trainer.10>&quot;もしかしたら、後で私たちの誰かがあなたの専門知識について尋ねるかもしれません。&quot;</eventtext.trainer.10>
+	<eventtext.trainer.11>&quot;あなたのような悪党と話しているところを見られたくありません。&quot;&#xD;&#xA;[現在地 関係 &lt;0]</eventtext.trainer.11>
+	<eventtext.trainer.12>&quot;私は自分の潜水艦から追い出されました!私が破壊工作をしたと言われましたが、私がやったのはちょっとした配線変更による改良だけで、どこかのバカが間違ったタイミングでドアを開けて、私の信号設定全体をめちゃくちゃにしてしまい、結果的に強制的に開けられたエアロックからちょっとした洪水が起きてしまいました...。とにかく、お金があれば、いくつかのヒントやコツをお見せすることができます。&quot;</eventtext.trainer.12>
+	<eventtext.trainer.13>[360mk] &quot;簡単で安全であればいいですよ。 &quot; [+3 電気]</eventtext.trainer.13>
+	<eventtext.trainer.15>&quot;私の前のクルーは完全なネアンデルタールでした!技術者を毒殺しようとして逮捕されましたが、私は毒物をデコンストラクタに運んでいたのです。ここの当局は私をすぐに釈放させたが、私は二度と潜水艦には乗らない。雇われはしませんが、いくらかマークをくれれば医療技術を教えてあげますよ。.&quot;</eventtext.trainer.15>
+	<eventtext.trainer.16>[360mk] &quot;いいよ、手は見えるところに置いておいてね? &quot; [+3 医療]</eventtext.trainer.16>
+
+	<eventtext.shop.notreally>興味ない。</eventtext.shop.notreally>
+	<eventtext.somthingborke>なにかが壊れた</eventtext.somthingborke>
+	<eventtext.shop.nocash>&quot;金を持って戻ってこい。&quot;</eventtext.shop.nocash>
+	<eventtext.shop.nothanks>&quot;いいえ、結構です。&quot;</eventtext.shop.nothanks>
+	<eventtext.shop.maybelater>&quot;また後で。&quot;</eventtext.shop.maybelater>
+	<eventtext.shop.lowshoprep>&quot;あなたはトラブル以外の何者でもない。出て行け！&quot;&#xD;&#xA;[現在地 関係 &lt;0]</eventtext.shop.lowshoprep>
+	<eventtext.shop.getout>&quot;ここから出て行け、厄介者! &quot;&#xD;&#xA;[現在地 関係 &lt;0]</eventtext.shop.getout>
+	
+	<eventtext.shop.1>&quot;何か暖かいものを食べたい？&quot;</eventtext.shop.1>
+	<eventtext.shop.2>暖かいクローヤム！スープ [12 mk]</eventtext.shop.2>
+	<eventtext.shop.3>&quot;飲み物はいかがですか？&quot;</eventtext.shop.3>
+	<eventtext.shop.4>フィッシュテール・カクテル [32 mk]</eventtext.shop.4>
+
+	<eventtext.shop.5>&quot;服を買いませんか？&quot;</eventtext.shop.5>
+	<eventtext.shop.6>ダメージジーンズに合わせたシャツ [32 mk]</eventtext.shop.6>
+	<eventtext.shop.7>ベージュのセーター[40mk]</eventtext.shop.7>
+	<eventtext.shop.8>ベスト付きパープルのスウェットシャツ[34mk]</eventtext.shop.8>
+	<eventtext.shop.9>ベスト付きグリーンのスウェットシャツ[37mk]</eventtext.shop.9>
+	<eventtext.shop.10>管理者の服[70mk]</eventtext.shop.10>
+	<eventtext.shop.11>クルーチーフの服[70mk]</eventtext.shop.11>
+	<eventtext.shop.12>浮くダッフルバッグ [230mk]</eventtext.shop.12>
+	<eventtext.shop.13>工具用ベルト [35mk]</eventtext.shop.13>
+
+	<eventtext.shop.14>&quot;ガーデニング用品を買いませんか？&quot;</eventtext.shop.14>
+	<eventtext.shop.15>プランター [120 mk]</eventtext.shop.15>
+	<eventtext.shop.16>じょうろ [80mk]</eventtext.shop.16>
+	<eventtext.shop.17>肥料[145mk]</eventtext.shop.17>
+	<eventtext.shop.18>種のバッグ [65mk]</eventtext.shop.18>
+	<eventtext.shop.19>種 - 爆弾ザクロ [34mk]</eventtext.shop.19>
+	<eventtext.shop.20>種 - タバコ芽 [32mk]</eventtext.shop.20>
+	<eventtext.shop.21>種 - 塩球根 [35mk]</eventtext.shop.21>
+	<eventtext.shop.22>種 - 猛禽バネ [38mk]</eventtext.shop.22>
+
+	<eventtext.shop.23>&quot;特別な卵やペットフードはいかがですか？&quot;</eventtext.shop.23>
+	<eventtext.shop.24>ペットフード [120 mk]</eventtext.shop.24>
+	<eventtext.shop.25>ペット名札[10mk]</eventtext.shop.25>
+	<eventtext.shop.26>生理食塩水 [50mk]</eventtext.shop.26>
+	<eventtext.shop.27>卵 - ピーナッツ [500mk]</eventtext.shop.27>
+	<eventtext.shop.28>卵 - サイルトール [500mk]</eventtext.shop.28>
+	<eventtext.shop.29>卵 - オレンジボイ [500mk]</eventtext.shop.29>
+
+	<eventtext.shop.30>&quot;ここに集まってくれればクルー全員を治すこともできるし、死神の税金も治せる。&quot;</eventtext.shop.30>
+	<eventtext.shop.31>近くのクルーを癒す [200 mk]</eventtext.shop.31>
+	<eventtext.shop.32>&quot;出血しても構わない、金を払わないならな！&quot;</eventtext.shop.32>
+	<eventtext.shop.33>死神の税金を癒す [1000mk]</eventtext.shop.33>
+
+	<eventtext.shop.34>&quot;登山用品を購入しませんか？&quot;</eventtext.shop.34>
+	<eventtext.shop.35>ロープガン [230 mk]</eventtext.shop.35>
+	<eventtext.shop.36>張ったバンジーロープ 8本 [24mk]</eventtext.shop.36>
+	<eventtext.shop.37>緩いバンジーロープ 8本 [24mk]</eventtext.shop.37>
+	<eventtext.shop.38>プラズマカッター [72mk]</eventtext.shop.38>
+	<eventtext.shop.39>懐中電灯 [160mk]</eventtext.shop.39>
+	<eventtext.shop.40>照明弾 [30mk]</eventtext.shop.40>
+	<eventtext.shop.41>エイリアンフレア [90mk]</eventtext.shop.41>
+	<eventtext.shop.42>ランタン [210mk]</eventtext.shop.42>
+	<eventtext.shop.43>バッテリーセル [115mk]</eventtext.shop.43>
+
+	<eventtext.shop.44>&quot;現金の引き出しや預け入れをしたいですか？&quot;&#xD;&#xA;潜水艦のクルーは金遣いが荒いので、銀行はキャプテンだけが現金を引き出して乗組員に分配できるようにしています。</eventtext.shop.44>
+	<eventtext.shop.45>引き出し 100</eventtext.shop.45>
+	<eventtext.shop.46>&quot;あなたの口座に十分な資金がありません。&quot;</eventtext.shop.46>
+	<eventtext.shop.47>&quot;キャプテンだけが出金できます。ご希望なら、現金を預けることはできます。&quot;</eventtext.shop.47>
+	<eventtext.shop.48>引き出し 400</eventtext.shop.48>
+	<eventtext.shop.49>引き出し 1000</eventtext.shop.49>
+	<eventtext.shop.50>預け入れ 100</eventtext.shop.50>
+	<eventtext.shop.51>&quot;あなたはクルーの銀行口座にすべての現金を入金しました&quot;</eventtext.shop.51>
+	<eventtext.shop.52>&quot;それでは現金が足りませんが、あなたが持っている全額を預けましょう&quot;</eventtext.shop.52>
+	<eventtext.shop.53>預け入れ 400</eventtext.shop.53>
+	<eventtext.shop.54>預け入れ 1000</eventtext.shop.54>
+	<eventtext.shop.55>すべての現金を預ける</eventtext.shop.55>
+
+	<eventtext.shop.56>&quot;ジョーの店へようこそ。電気部品を買いませんか？&quot;</eventtext.shop.56>
+	<eventtext.shop.57>信号チェックコンポーネント [95 mk]</eventtext.shop.57>
+	<eventtext.shop.58>リレーコンポーネント　[95mk]</eventtext.shop.58>
+	<eventtext.shop.59>メモリーコンポーネント [95mk]</eventtext.shop.59>
+	<eventtext.shop.60>電線 4本　[40mk]</eventtext.shop.60>
+	<eventtext.shop.61>加算器 [95mk]</eventtext.shop.61>
+	<eventtext.shop.62>乗算コンポーネント [95mk]</eventtext.shop.62>
+	<eventtext.shop.63>除法コンポーネント [95mk]</eventtext.shop.63>
+	<eventtext.shop.64>遅延コンポーネント [95mk]</eventtext.shop.64>
+	<eventtext.shop.65>&quot;弾薬が必要か？&quot;</eventtext.shop.65>
+	<eventtext.shop.66>SMG弾倉 [100 mk]</eventtext.shop.66>
+	<eventtext.shop.67>散弾銃弾薬 8個 [320mk]</eventtext.shop.67>
+	<eventtext.shop.68>40mmグレネード [100mk]</eventtext.shop.68>
+	<eventtext.shop.69>40mmのスタン擲弾 [120mk]</eventtext.shop.69>
+	<eventtext.shop.70>リボルバーラウンド 6個 [180mk]</eventtext.shop.70>
+	<eventtext.shop.71>深デコイシェル [250mk]</eventtext.shop.71>
+	<eventtext.shop.72>爆雷ホルダー [200mk]</eventtext.shop.72>
+	<eventtext.shop.73>&quot;私の店から出て行け、野蛮人！&quot;&#xD;&#xA;[現在地 関係 &lt;0]</eventtext.shop.73>
+	<eventtext.shop.74>&quot;また今度にします。&quot;</eventtext.shop.74>
+
+	<eventtext.itaoplockcity1>&quot;消えろ、野蛮人。&quot;&#xD;&#xA;---要求---&#xD;&#xA;[前哨基地   関係-10]</eventtext.itaoplockcity1>
+	<eventtext.itaoplockcity2>&quot;ドッキングポートに不法侵入者！&quot;</eventtext.itaoplockcity2>
+	<eventtext.itaoplockcity3>&quot;ドッキングポートに不法侵入者！&quot;&#xD;&#xA;&#xD;&#xA;[前哨基地    関係-200]&#xD;&#xA;[連合 関係-15 ]&#xD;&#xA;[分裂派 関係+15 ]</eventtext.itaoplockcity3>
+	<eventtext.itaoplockcity4>&quot;連合の関係者以外は入れません。侵入しようとすると、ブラックリストに登録されます。&quot;&#xD;&#xA;&#xD;&#xA;---REQUIREMENTS---&#xD;&#xA;[連合 関係+35]</eventtext.itaoplockcity4>
+	<eventtext.itaoplockcity5>&quot;ドッキングポートの不法侵入者をブラックリストに登録しろ！&quot;</eventtext.itaoplockcity5>
+	<eventtext.itaoplockcity6>&quot;ドッキングポートに不法侵入者！&quot;&#xD;&#xA;&#xD;&#xA;[前哨基地     関係-200]&#xD;&#xA;[連合 関係-45 ]&#xD;&#xA;[分裂派 関係+15 ]</eventtext.itaoplockcity6>
+	
+	<eventtext.itaresearchlock1.1>&quot;この研究室には研究者しか入れません,&quot;</eventtext.itaresearchlock1.1>
+	<eventtext.itaresearchlock1.2>[前哨基地 関係 100] &quot;私は研究チームで働いています。これが私のIDです。&quot;</eventtext.itaresearchlock1.2>
+	<eventtext.itaresearchlock1.3>通り過ぎる。</eventtext.itaresearchlock1.3>
+
+	<eventtext.itatransp1.0.1>[承諾] &quot;わかった、乗ってくれ。&quot;</eventtext.itatransp1.0.1>
+	<eventtext.itatransp1.0.2>義手をつけたメカニックが、バーであなたに声をかける。&#xD;&#xA;&quot;ねえ、あなたは潜水艦を持っていますよね？銃を持ったやつとか？乗せて欲しいんだ。ちゃんと払うからさ。&quot;&#xD;&#xA;[ミッション: PASSENGER TRANSPORT, REWARD: 800mk]</eventtext.itatransp1.0.2>
+	<eventtext.itatransp1.0.3>[拒否] &quot;だめだ。艦内の空気はすでに十分薄い。&quot;</eventtext.itatransp1.0.3>
+	
+	<eventtext.itatransp1.1.1>&quot;乗せてくれてありがとう。また、会いしましょう。&quot;&#xD;&#xA;[ミッション COMPLETE 800mk 前哨基地 関係+5]</eventtext.itatransp1.1.1>
+	<eventtext.itatransp1.1.2>&quot;どれくらい時間がかかるのでしょうか？&quot;</eventtext.itatransp1.1.2>
+
+	<eventtext.itatransp1.2.1>&quot;あのクソみたいな場所から脱出させてくれてありがとう。&quot;</eventtext.itatransp1.2.1>
+	<eventtext.itatransp1.2.2>[旅客ミッション完了 800mk 前哨基地 関係+5]</eventtext.itatransp1.2.2>
+
+
+	<!--Items-->
+
+	<!--Mission Crates-->
+	<entityname.ita_mcrate_time1>時間制限のあるクレート</entityname.ita_mcrate_time1>
+	<entitydescription.ita_mcrate_time1>クレートの中から発泡音が聞こえてくる...</entitydescription.ita_mcrate_time1>
+	<entityname.ita_mcrate_water1>水に弱いクレート</entityname.ita_mcrate_water1> 
+	<entitydescription.ita_mcrate_water1>このクレートの青いラベルは、このクレートを水没させてはいけないことを示しています。</entitydescription.ita_mcrate_water1>
+	<entityname.ita_mcrate_egg1>卵のクレート</entityname.ita_mcrate_egg1>
+	<entitydescription.ita_mcrate_egg1>このクレートの中で何かヌルヌルしたものが動いている。</entitydescription.ita_mcrate_egg1>
+	<entityname.ita_mcrate_impact1>衝撃に弱いクレート</entityname.ita_mcrate_impact1>
+	<entitydescription.ita_mcrate_impact1>このクレートの赤いラベルは、強く落とさないように警告しています。</entitydescription.ita_mcrate_impact1>
+	<entityname.ita_mcrate_egg2>卵の冷蔵クレート</entityname.ita_mcrate_egg2>
+	<entitydescription.ita_mcrate_egg2>この卵のクレートには冷蔵ユニットが取り付けられており、孵化しかけた卵を休ませることができます。電池が切れないように注意してください！</entitydescription.ita_mcrate_egg2>
+	<entityname.ita_mcrate_raptor1>囚われた装甲ムドラプター</entityname.ita_mcrate_raptor1>
+	<entitydescription.ita_mcrate_raptor1>鎖でつながれたムドラプター。くちばしに小さなアヘンの瓶をくわえていて、ゆっくりと液体を吸うことで落ち着きを保っている。妙にかわいいですね。アヘンがなくなってしまわないように！</entitydescription.ita_mcrate_raptor1>
+
+	<!--クレートを売買する-->
+	<entityname.ita_tcrate_mil1>封印された軍隊供給品クレート</entityname.ita_tcrate_mil1>
+	<entitydescription.ita_tcrate_mil1>安く買って、高く売る。この水に弱いクレートを軍隊前哨基地に届けると、1個あたり約400mkの純利益が得られますが、注意が必要です。しかし、これらはクレートの棚に保管しておかないと、刻々と劣化していきます。 </entitydescription.ita_tcrate_mil1>
+	<entityname.ita_tcrate_res1>封印された研究供給品クレート</entityname.ita_tcrate_res1>
+	<entitydescription.ita_tcrate_res1>安く買って、高く売ることができます。この水に弱いクレートを研究前哨基地に届けると、1個あたり約400mkの純利益が得られますが、注意が必要です。このクレートは棚に保管しないと、刻々と劣化していきます。</entitydescription.ita_tcrate_res1>
+	<entityname.ita_tcrate_city1>封印されたコロニー供給品クレート</entityname.ita_tcrate_city1>
+	<entitydescription.ita_tcrate_city1>安く買って、高く売る。この水に弱いクレートをコロニーに納品すると、1個あたり約150mkの純利益が得られますが、注意が必要です。この水に弱いクレートは、棚に保管しておかないと、刻々と劣化していきます。</entitydescription.ita_tcrate_city1>
+	<entityname.ita_tcrate_hab1>封印された居住区供給品クレート</entityname.ita_tcrate_hab1>
+	<entitydescription.ita_tcrate_hab1>安く買って、高く売る。これらのクレートを居住前哨基地に届けると、1個あたり約100mkの純利益が得られますが、注意が必要です。これらは棚に保管しないと、刻々と劣化していきます。</entitydescription.ita_tcrate_hab1>
+	<entityname.ita_tcrate_mine1>封印された採掘供給品クレート</entityname.ita_tcrate_mine1>
+	<entitydescription.ita_tcrate_mine1>安く買って、高く売る。このクレートを採掘前哨基地に届けると、1個あたり約100mkの純利益が得られますが、注意が必要です。これらは棚に保管しないと、刻々と劣化していきます。</entitydescription.ita_tcrate_mine1>
+
+	<!--キャッシュ-->
+	<entityname.ita_wallet1>財布</entityname.ita_wallet1>
+	<entitydescription.ita_wallet1>現金やカードを入れておくのに最適です。</entitydescription.ita_wallet1>
+	<entityname.ita_bill50>50mk紙幣</entityname.ita_bill50>
+	<entitydescription.ita_bill50>普通の現金です。</entitydescription.ita_bill50>
+	<entityname.ita_bill100>100mk紙幣</entityname.ita_bill100>
+	<entitydescription.ita_bill100>普通の現金です。</entitydescription.ita_bill100>
+	<entityname.ita_bill200>200mk紙幣</entityname.ita_bill200>
+	<entitydescription.ita_bill200>普通の現金です。</entitydescription.ita_bill200>
+	<entityname.ita_coin5>5mkコイン</entityname.ita_coin5>
+	<entitydescription.ita_coin5>普通の現金です。</entitydescription.ita_coin5>
+	<entityname.ita_coin1>1mkコイン</entityname.ita_coin1>
+	<entitydescription.ita_coin1>普通の現金です。</entitydescription.ita_coin1>
+
+	<!--ミネラル（マイニングバグが修正されるまでの一時的なもの） -->
+	<entityname.ita_ilmenite>チタン鉄鉱</entityname.ita_ilmenite>
+	<entitydescription.ita_ilmenite>チタンを含む鉱物</entitydescription.ita_ilmenite>
+	<entityname.ita_chalcopyrite>黄銅鉱</entityname.ita_chalcopyrite>
+	<entitydescription.ita_chalcopyrite>銅を含んだ鉱物</entitydescription.ita_chalcopyrite>
+	<entityname.ita_brockite>板チタン石</entityname.ita_brockite>
+	<entitydescription.ita_brockite>トリウムとリンを含んだ鉱物</entitydescription.ita_brockite>
+	<entityname.ita_diamond>ダイヤモンド</entityname.ita_diamond>
+	<entitydescription.ita_diamond>固体の炭素で構成された結晶</entitydescription.ita_diamond>
+	<entityname.ita_pyromorphite>緑鉛鉱</entityname.ita_pyromorphite>
+	<entitydescription.ita_pyromorphite>緑鉛鉱を採掘</entitydescription.ita_pyromorphite>
+
+	<!--Caves-->
+	<entityname.ita_climber2>張ったバンジーコード</entityname.ita_climber2>
+	<entitydescription.ita_climber2>この引張力のある弾性ロープにより、クライマーは高所に到達できます。</entitydescription.ita_climber2>
+	<entityname.ita_climber4>緩いバンジーコード</entityname.ita_climber4>
+	<entitydescription.ita_climber4>柔らかい弾性ロープで、クライマーがゆっくりと下降することができます。</entitydescription.ita_climber4>
+	<entityname.ita_climber2hook>張ったバンジーフック</entityname.ita_climber2hook>
+	<entitydescription.ita_climber2hook>この引張力のある弾性ロープにより、クライマーは高所に到達できます。</entitydescription.ita_climber2hook>
+	<entityname.ita_climber4hook>緩いバンジーフック</entityname.ita_climber4hook>
+	<entitydescription.ita_climber4hook>柔らかい弾性ロープで、クライマーがゆっくりと下降することができます</entitydescription.ita_climber4hook>
+	<entityname.ita_climber1>グラップリングガン</entityname.ita_climber1>
+	<entitydescription.ita_climber1>ユーロパの多くの乾燥した洞窟網や遺跡の探索に使用される。</entitydescription.ita_climber1>
+	<entityname.ita_CaveLamp1>CaveLamp1</entityname.ita_CaveLamp1>
+	<entityname.ita_CaveLamp2>CaveLamp2</entityname.ita_CaveLamp2>
+	<entityname.ita_lantern1>ランタン</entityname.ita_lantern1>
+	<entityname.ita_door1>強化されたドア</entityname.ita_door1>
+	<entityname.ita_bridge1>伸縮可能な橋</entityname.ita_bridge1>
+
+	<!--Store Items-->
+	<entityname.ita_container_depthholder1>爆雷ホルダー</entityname.ita_container_depthholder1>
+	<entitydescription.ita_container_depthholder1>爆雷を安全に保管するための、取り付け可能なウォールマウント。Eボタンを押すと取り付けられ、レンチで取り外すことができます。</entitydescription.ita_container_depthholder1>
+	<entityname.ita_duffelbag1>浮くダッフルバッグ</entityname.ita_duffelbag1>
+	<entitydescription.ita_duffelbag1>浮力を調整するレイヤーを備えたダッフルバッグ</entitydescription.ita_duffelbag1>
+	
+	<entityname.ita_bartable>ショップテーブル - バー</entityname.ita_bartable>
+	<entityname.ita_canteentable>ショップテーブル - 食料売店</entityname.ita_canteentable>
+	<entityname.ita_clothiertable>ショップテーブル - 洋服店</entityname.ita_clothiertable>
+	<entityname.ita_pettradertable>ショップテーブル - ペット業者</entityname.ita_pettradertable>
+	<entityname.ita_botanisttable> ショップテーブル - 植物学者</entityname.ita_botanisttable>
+	<entityname.ita_electriciantable>ショップテーブル - 電気技師</entityname.ita_electriciantable>
+	<entityname.ita_climbertable>ショップテーブル - クライマー</entityname.ita_climbertable>
+	<entityname.ita_gunsmithtable1>ショップテーブル - 銃器店</entityname.ita_gunsmithtable1>
+	
+	<!--Furniture-->
+	<entityname.ita_bed>アウトポストベッド</entityname.ita_bed>
+	<entityname.ita_outpostchair1>バーの椅子</entityname.ita_outpostchair1>
+	<entityname.ita_terminal>前哨基地の端末</entityname.ita_terminal>
+	<entityname.ita_board1>告知板</entityname.ita_board1>
+	<entityname.ita_display>展示ケース</entityname.ita_display>
+	<entityname.ita_outpostchair2>オフィス用クライアントチェア</entityname.ita_outpostchair2>
+	
+	<!--Clothing-->
+	<entityname.ita_engineersuitmecha1>NPC MechaSuit</entityname.ita_engineersuitmecha1>
+	<entityname.bluejumpsuit3>エキスパート・メカニック服</entityname.bluejumpsuit3>
+	<entityname.orangejumpsuit3>エキスパート・エンジニア服</entityname.orangejumpsuit3>
+	<entityname.doctorsuniform3>エキスパート・医者服</entityname.doctorsuniform3>
+	<entityname.greenjumpsuit>植物学者のジャンプスーツ</entityname.greenjumpsuit>
+	
+	<!--Clothing-->
+	<entityname.ita_bloodpunch>ブラッドパンチドリンク</entityname.ita_bloodpunch>
+	<entityname.ita_crispychitin>クリスピー・キチン・ビッツ</entityname.ita_crispychitin>
+	<entityname.ita_drinkfishtail>フィッシュテール・カクテル</entityname.ita_drinkfishtail>
+	
+	<!--Contests-->
+	<entityname.ita_race_ticket1>赤のチケット</entityname.ita_race_ticket1>
+	<entityname.ita_race_ticket2>緑のチケット</entityname.ita_race_ticket2>
+	<entityname.ita_race_ticket3>青のチケット</entityname.ita_race_ticket3>
+
+	<!--衣服-->
+	<entityname.ita_hazmat1>耐放射線スーツ</entityname.ita_hazmat1>
+	<entitydescription.ita_hazmat1>この防護服は、放射線や被ばく、火事などからあなたを守るための強力な防護服です。背中には酸素ボンベ用のスロットが付いています。</entitydescription.ita_hazmat1>
+
+	<entityname.ita_prisoneruniform>囚人服</entityname.ita_prisoneruniform>
+	<entitydescription.ita_prisoneruniform>Desc</entitydescription.ita_prisoneruniform>
+
+	<entityname.tongs>トング</entityname.tongs>
+	<entitydescription.tongs>高温の燃料棒を潜水艦の外に持ち出すのに使います。燃料棒が地面に落ちている場合は、手でつまんですぐにトングに入れます</entitydescription.tongs>
+
+	<!--Misc -->
+	<entityname.guide1>ガイド - 燃料棒</entityname.guide1>
+	<locationname.Cave>乾燥した洞窟層</locationname.Cave>
+
+	<!--Jobs-->
+	<jobname.gunner>ita_gunner_npc</jobname.gunner>
+	<jobdescription.gunner>NPCjob</jobdescription.gunner>
+	<jobname.soldier>ita_soldier_npc</jobname.soldier>
+	<SkillName.tough>Tough</SkillName.tough>
+	<SkillName.lepi>LePiromano</SkillName.lepi>
+	<jobdescription.soldier>NPCjob</jobdescription.soldier>
+	
+	<!--Alien-->
+	<entityname.itasocket>アーティファクト・ソケット</entityname.itasocket>
+	<entitydescription.itasocket>ここにミッション以外のアーティファクトを置いてレバーを引くと、ユーロパの研究に貢献して報酬を得ることができます。</entitydescription.itasocket>
+
+	<entityname.ita_alienchestwhite>白い古代チェスト</entityname.ita_alienchestwhite>
+	<entityname.ita_alienchestblue>青い古代チェスト</entityname.ita_alienchestblue>
+	<entityname.ita_alienchestred>赤い古代チェスト</entityname.ita_alienchestred>
+	<entityname.ita_divingsuit>ジョビアン・ダイビング・アーマー</entityname.ita_divingsuit>
+	<entityname.ita_alienmace>古代のメイス</entityname.ita_alienmace>
+	<entityname.ita_alienmace1>古代の技術 - 下部パーツ</entityname.ita_alienmace1>
+	<entityname.ita_alienmace2>古代の技術 - 上部パーツ</entityname.ita_alienmace2>
+	<entityname.ita_ancientpiece>古代のアイコン</entityname.ita_ancientpiece>
+	
+	<entityname.spawnerfractal>フラクタル・ガーディアン・スポーンナー</entityname.spawnerfractal>
+	<entityname.ita_fabricator1>古代のコンバイナー</entityname.ita_fabricator1>
+	<entityname.socket1ita>四角いソケット</entityname.socket1ita>
+	<entityname.socket2ita>六角形のソケット</entityname.socket2ita>
+	<entityname.socket3ita>T字型ソケット</entityname.socket3ita>
+	<entityname.socket4ita>エイリアンパワーセルのソケット</entityname.socket4ita>
+	<entityname.ita_aliendoor_blue>エイリアン・ブルー・ドア</entityname.ita_aliendoor_blue>
+	<entityname.ita_aliendoor_red>エイリアン・レッド・ドア</entityname.ita_aliendoor_red>
+	<entityname.ita_alienhatch_blue>エイリアン・ブルー・ハッチ</entityname.ita_alienhatch_blue>
+	<entityname.ita_alienhatch_red>エイリアン・レッド・ハッチ</entityname.ita_alienhatch_red>
+	
+	<locationchange.cave.changeto.mine>[previousname]の入植者は、一掃された洞窟に採掘基地を設立しました。 </locationchange.cave.changeto.mine>
+	
+	<!--新しいテキストを追加するときは、一番下の「新規追加」と「変更された値」のそれぞれの下に入れるようにします。全く新しいタグであれば、新規追加の下に、既存の値の更新であれば、変更された値の下に入れてください。-->
+	<!--既に翻訳されているラインの既存のタグを編集してはいけません -> 何かのために新しいタグが必要な場合は、'New values' ヘッダーの下に追加し、置き換えられるべき他のタグがある場合はコメントしてください -->
+	
+	<!--ラインの修正-->	
+
+	<!--新しいラインの追加-->
+	
+	<!--LINES MODIFIED-->
+    <eventtext.itabeaconsep1.0b.8>""おい、おい！あんまり調子にのるなよ...このクリスタルには価値があるが...えーと、とにかく、これ、持って行って。どうせ何の価値もないんだろうけど..."&#xD;&#xA;</eventtext.itabeaconsep1.0b.8>
+    <eventtext.itabeaconsep1.0b.10>[電気 45 失敗] &quot;あなたも私と同じぐらい無知なようですね！&quot;</eventtext.itabeaconsep1.0b.10>
+    <eventtext.trainer.14>"あとで私たちの誰かがトレーニングについて話をするかもしれません、あなたが我々のドッキングポートに近づかなければね。"</eventtext.trainer.14>
+    <entityname.ita_crawyum>クローヤム！スープ</entityname.ita_crawyum>
+    <!--NEW LINES ADDED-->
+    <entitydescription.ita_crawyum>鼻をつまんで素早く飲み込む。</entitydescription.ita_crawyum>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</infotexts>

@@ -1,0 +1,850 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <Structures
+    sizemin="7000,6500"
+    sizemax="8400,8600"
+    roomdivisioniterationsmin="3"
+    roomdivisioniterationsmax="5"
+    verticalsplitprobability="0.1"
+    minsplitwidth="1100"
+    minsplitheight="600"
+    roomwidthrange="0.5,0.7"
+    roomheightrange="0.7,0.9"
+    corridorwidthrange="256,256">
+    <RoomType
+      name="vault"
+      placement="last"
+      minwateramount="0.1"
+      maxwateramount="0.5">
+      <structure
+        prefab="RuinWallHeavyHorizontal"
+        alignment="Top, Bottom"
+        type="Wall" />
+      <structure
+        prefab="RuinWallHeavyVertical"
+        alignment="Left,Right"
+        type="Wall" />
+      <structure
+        prefab="RuinBack2"
+        alignment="Center"
+        type="Back"
+        commonness="1" />
+      <item
+        prefab="artifactholder"
+        alignment="Center"
+        type="Prop"
+        minoffset="-0.25,-0.25"
+        maxoffset="0.25,0.25" />
+      <!--2x Random Alien Mineral in Vault Room-->
+      <ChooseOne>
+        <itemassembly
+          prefab="physicorium90"
+          alignment="Left"
+          type="Prop"
+          commonness="3" />
+        <itemassembly
+          prefab="physicorium270"
+          alignment="Right"
+          type="Prop"
+          commonness="2" />
+        <itemassembly
+          prefab="fulgurium90"
+          alignment="Left"
+          type="Prop"
+          commonness="2" />
+        <itemassembly
+          prefab="fulgurium270"
+          alignment="Right"
+          type="Prop"
+          commonness="2" />
+        <itemassembly
+          prefab="sulphuriteshard90"
+          alignment="Left"
+          type="Prop"
+          commonness="4" />
+        <itemassembly
+          prefab="sulphuriteshard270"
+          alignment="Right"
+          type="Prop"
+          commonness="4" />
+      </ChooseOne>
+      <ChooseOne>
+        <itemassembly
+          prefab="physicorium90"
+          alignment="Left"
+          type="Prop"
+          commonness="3" />
+        <itemassembly
+          prefab="physicorium270"
+          alignment="Right"
+          type="Prop"
+          commonness="2" />
+        <itemassembly
+          prefab="fulgurium90"
+          alignment="Left"
+          type="Prop"
+          commonness="2" />
+        <itemassembly
+          prefab="fulgurium270"
+          alignment="Right"
+          type="Prop"
+          commonness="2" />
+        <itemassembly
+          prefab="sulphuriteshard90"
+          alignment="Left"
+          type="Prop"
+          commonness="4" />
+        <itemassembly
+          prefab="sulphuriteshard270"
+          alignment="Right"
+          type="Prop"
+          commonness="4" />
+      </ChooseOne>
+      <!--Bossfight-->
+      <ChooseOne>
+        <itemassembly
+          prefab="ita_vaults_1a"
+          alignment="Center"
+          type="Prop"
+          minroomsize="1000,300" />
+        <itemassembly
+          prefab="ita_vaults_1b"
+          alignment="Center"
+          type="Prop"
+          minroomsize="300,900" />
+      </ChooseOne>
+    </RoomType>
+    <RoomType
+      name="entrancecorridor"
+      placement="first"
+      iscorridor="true">
+      <structure
+        prefab="RuinWallHorizontal"
+        alignment="Top,Bottom"
+        type="Wall" />
+      <structure
+        prefab="RuinWallVertical"
+        alignment="Left,Right"
+        type="Wall" />
+      <structure
+        prefab="RuinBack3"
+        alignment="Center"
+        type="Back"
+        commonness="3" />
+      <item
+        prefab="RuinDecal1"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <item
+        prefab="RuinDecal2"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <item
+        prefab="RuinDecal3"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <item
+        prefab="RuinDecal4"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <ChooseOne>
+        <itemassembly
+          prefab="ita_entrance_door1a"
+          alignment="Center"
+          type="Door" />
+      </ChooseOne>
+      <ChooseOne>
+        <itemassembly
+          prefab="ita_entrance_shaft1a"
+          alignment="Center"
+          type="Hatch" />
+      </ChooseOne>
+    </RoomType>
+    <RoomType
+      name="genericcorridor1"
+      placement="any"
+      iscorridor="true">
+      <structure
+        prefab="RuinWallHorizontalSmall"
+        alignment="Top,Bottom"
+        type="Wall" />
+      <structure
+        prefab="RuinWallVerticalSmall"
+        alignment="Left,Right"
+        type="Wall" />
+      <structure
+        prefab="RuinBack1"
+        alignment="Center"
+        type="Back"
+        commonness="3" />
+      <item
+        prefab="RuinDecal1"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <item
+        prefab="RuinDecal2"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <item
+        prefab="RuinDecal3"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <item
+        prefab="RuinDecal4"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <ChooseOne>
+        <itemassembly
+          prefab="aliendoorassembly1"
+          alignment="Center"
+          type="Door"
+          minroomsize="100,0" />
+        <item
+          prefab="ita_corridor_trap1a"
+          alignment="Center"
+          type="Door"
+          minroomsize="350,0"
+          minoffset="-150,0"
+          maxoffset="-150,0"
+          commonness="3" />
+        <!--<item prefab="ita_corridor_1a" alignment="Center" type="Door" minroomsize="450,0" commonness="5"/>-->
+        <item
+          prefab="ita_corridor_1b"
+          alignment="Center"
+          type="Door"
+          minroomsize="1100,0"
+          commonness="7" />
+        <item
+          prefab="ita_corridor_1c"
+          alignment="Center"
+          type="Door"
+          minroomsize="100,0"
+          commonness="10" />
+        <item
+          prefab="ita_corridor_1d"
+          alignment="Center"
+          type="Door"
+          minroomsize="250,0"
+          minoffset="-150,0"
+          maxoffset="-150,0"
+          commonness="10" />
+      </ChooseOne>
+    </RoomType>
+    <RoomType
+      name="genericroom1"
+      placement="any"
+      minwateramount="0.5"
+      maxwateramount="1.0">
+      <structure
+        prefab="RuinWallHorizontal"
+        alignment="Top, Bottom"
+        type="Wall" />
+      <structure
+        prefab="RuinWallVertical"
+        alignment="Left,Right"
+        type="Wall" />
+      <structure
+        prefab="RuinBack4"
+        alignment="Center"
+        type="Back"
+        commonness="2" />
+      <item
+        prefab="RuinDecal1"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <item
+        prefab="RuinDecal2"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <item
+        prefab="RuinDecal3"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <item
+        prefab="RuinDecal4"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <ChooseOne>
+        <itemassembly
+          prefab="ita_lights1"
+          alignment="Center"
+          minroomsize="150,150"
+          type="Prop"
+          commonness="5" />
+        <itemassembly
+          prefab="ita_lights2"
+          alignment="Center"
+          minroomsize="200,200"
+          type="Prop"
+          commonness="5" />
+        <itemassembly
+          prefab="ita_lights3"
+          alignment="Center"
+          minroomsize="250,150"
+          type="Prop"
+          commonness="5" />
+        <itemassembly
+          prefab="ita_lights4"
+          alignment="Center"
+          minroomsize="650,150"
+          type="Prop"
+          commonness="5" />
+        <itemassembly
+          prefab="ita_lights5s"
+          alignment="Center"
+          minroomsize="300,300"
+          type="Prop"
+          commonness="5" />
+        <itemassembly
+          prefab="ita_genericb_house1"
+          alignment="Center"
+          minroomsize="600,650"
+          type="Prop"
+          commonness="1">
+          <item
+            prefab="alientrinket1"
+            alignment="Center"
+            type="Prop"
+            minamount="-1"
+            maxamount="2"
+            targetcontainer="container1" />
+          <item
+            prefab="alientrinket2"
+            alignment="Center"
+            type="Prop"
+            minamount="0"
+            maxamount="1"
+            targetcontainer="container1" />
+          <item
+            prefab="alientrinket3"
+            alignment="Center"
+            type="Prop"
+            minamount="-1"
+            maxamount="1"
+            targetcontainer="container1" />
+          <item
+            prefab="alienpowercell"
+            alignment="Center"
+            type="Prop"
+            minamount="-1"
+            maxamount="1"
+            targetcontainer="container1" />
+        </itemassembly>
+        <itemassembly
+          prefab="ita_genericb_house2"
+          alignment="Center"
+          minroomsize="600,650"
+          type="Prop"
+          commonness="1">
+          <item
+            prefab="alientrinket1"
+            alignment="Center"
+            type="Prop"
+            minamount="-1"
+            maxamount="1"
+            targetcontainer="container1" />
+          <item
+            prefab="alientrinket2"
+            alignment="Center"
+            type="Prop"
+            minamount="-1"
+            maxamount="2"
+            targetcontainer="container1" />
+          <item
+            prefab="alientrinket3"
+            alignment="Center"
+            type="Prop"
+            minamount="0"
+            maxamount="1"
+            targetcontainer="container1" />
+          <item
+            prefab="alienpowercell"
+            alignment="Center"
+            type="Prop"
+            minamount="-1"
+            maxamount="1"
+            targetcontainer="container1" />
+        </itemassembly>
+        <itemassembly
+          prefab="itafractalspawner1a"
+          alignment="Center"
+          minroomsize="550,550"
+          maxroomsize="750,750"
+          type="Prop"
+          commonness="3" />
+        <itemassembly
+          prefab="itafractalspawner1a"
+          alignment="Center"
+          minoffset="-0.2,-0.2"
+          maxoffset="0.2,0.2"
+          minroomsize="550,550"
+          type="Prop"
+          commonness="4" />
+        <itemassembly
+          prefab="itafractalspawner1a"
+          alignment="Center"
+          minoffset="-0.4,-0.4"
+          maxoffset="0.4,0.4"
+          minroomsize="750,750"
+          type="Prop"
+          commonness="2" />
+        <itemassembly
+          prefab="ita_genericb_trap2a"
+          alignment="Center"
+          minoffset="-0.4,0"
+          maxoffset="0.4,0"
+          minroomsize="750,900"
+          type="Prop"
+          commonness="1" />
+        <itemassembly
+          prefab="ita_genericb_trap2b"
+          alignment="Center"
+          minoffset="-0.4,0"
+          maxoffset="0.4,0"
+          minroomsize="750,900"
+          type="Prop"
+          commonness="1" />
+        <itemassembly
+          prefab="ita_genericb_pump1"
+          alignment="Center"
+          minoffset="-0.4,0"
+          maxoffset="0.4,0"
+          minroomsize="500,300"
+          type="Prop"
+          commonness="3" />
+        <itemassembly
+          prefab="ita_genericb_pump2"
+          alignment="Center"
+          minoffset="-0.4,0"
+          maxoffset="0.4,0"
+          minroomsize="500,300"
+          type="Prop"
+          commonness="3" />
+        <itemassembly
+          prefab="ita_genericb_pump3"
+          alignment="Center"
+          minroomsize="300,600"
+          type="Prop"
+          commonness="2">
+          <item
+            prefab="alientrinket1"
+            alignment="Center"
+            type="Prop"
+            minamount="0"
+            maxamount="1"
+            targetcontainer="container1" />
+          <item
+            prefab="alientrinket2"
+            alignment="Center"
+            type="Prop"
+            minamount="-1"
+            maxamount="1"
+            targetcontainer="container1" />
+          <item
+            prefab="alientrinket3"
+            alignment="Center"
+            type="Prop"
+            minamount="-1"
+            maxamount="2"
+            targetcontainer="container1" />
+          <item
+            prefab="alienpowercell"
+            alignment="Center"
+            type="Prop"
+            minamount="1"
+            maxamount="1"
+            targetcontainer="container1" />
+        </itemassembly>
+        <itemassembly
+          prefab="ita_genericb_spawner1a"
+          alignment="Center"
+          minroomsize="750,750"
+          type="Prop"
+          commonness="2" />
+      </ChooseOne>
+    </RoomType>
+    <RoomType
+      name="genericroom2"
+      placement="any"
+      minwateramount="0.5"
+      maxwateramount="1.0">
+      <structure
+        prefab="RuinWallHorizontal"
+        alignment="Top, Bottom"
+        type="Wall" />
+      <structure
+        prefab="RuinWallVertical"
+        alignment="Left,Right"
+        type="Wall" />
+      <structure
+        prefab="RuinBack4"
+        alignment="Center"
+        type="Back"
+        commonness="2" />
+      <item
+        prefab="RuinDecal1"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <item
+        prefab="RuinDecal2"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <item
+        prefab="RuinDecal3"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <item
+        prefab="RuinDecal4"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <ChooseOne>
+        <itemassembly
+          prefab="ita_infight1"
+          alignment="Center"
+          minroomsize="650,550"
+          type="Prop"
+          commonness="5" />
+        <itemassembly
+          prefab="ita_infight2"
+          alignment="Center"
+          minroomsize="550,550"
+          type="Prop"
+          commonness="5" />
+        <itemassembly
+          prefab="ita_infight3"
+          alignment="Center"
+          minroomsize="550,550"
+          type="Prop"
+          commonness="5" />
+        <itemassembly
+          prefab="itafractalspawner1a"
+          alignment="Center"
+          minoffset="-0.2,-0.2"
+          maxoffset="0.2,0.2"
+          minroomsize="550,550"
+          type="Prop"
+          commonness="5" />
+        <itemassembly
+          prefab="itafractalspawner1a"
+          alignment="Center"
+          minoffset="-0.4,-0.4"
+          maxoffset="0.4,0.4"
+          minroomsize="750,750"
+          type="Prop"
+          commonness="5" />
+        <itemassembly
+          prefab="ita_genericb_trap2a"
+          alignment="Center"
+          minoffset="-0.4,-0.4"
+          maxoffset="0.4,0.4"
+          minroomsize="750,750"
+          type="Prop"
+          commonness="1" />
+        <itemassembly
+          prefab="ita_genericb_trap2b"
+          alignment="Center"
+          minoffset="-0.4,-0.4"
+          maxoffset="0.4,0.4"
+          minroomsize="750,750"
+          type="Prop"
+          commonness="1" />
+      </ChooseOne>
+      <ChooseOne>
+        <itemassembly
+          prefab="incendium0"
+          alignment="Bottom"
+          type="Prop"
+          commonness="3" />
+        <itemassembly
+          prefab="dementonite0"
+          alignment="Bottom"
+          type="Prop"
+          commonness="4" />
+        <itemassembly
+          prefab="oxygeniteshard0"
+          alignment="Bottom"
+          type="Prop"
+          commonness="4" />
+        <itemassembly
+          prefab="incendium180"
+          alignment="Top"
+          type="Prop"
+          commonness="3" />
+        <itemassembly
+          prefab="dementonite180"
+          alignment="Top"
+          type="Prop"
+          commonness="4" />
+        <itemassembly
+          prefab="oxygeniteshard180"
+          alignment="Top"
+          type="Prop"
+          commonness="4" />
+      </ChooseOne>
+      <ChooseOne>
+        <itemassembly
+          prefab="incendium90"
+          alignment="Left"
+          type="Prop"
+          commonness="3" />
+        <itemassembly
+          prefab="dementonite90"
+          alignment="Left"
+          type="Prop"
+          commonness="4" />
+        <itemassembly
+          prefab="oxygeniteshard90"
+          alignment="Left"
+          type="Prop"
+          commonness="4" />
+        <itemassembly
+          prefab="incendium270"
+          alignment="Right"
+          type="Prop"
+          commonness="3" />
+        <itemassembly
+          prefab="dementonite270"
+          alignment="Right"
+          type="Prop"
+          commonness="4" />
+        <itemassembly
+          prefab="oxygeniteshard270"
+          alignment="Right"
+          type="Prop"
+          commonness="4" />
+      </ChooseOne>
+    </RoomType>
+    <RoomType
+      name="armory"
+      placement="last"
+      placementoffset="-1"
+      minwateramount="0.3"
+      maxwateramount="0.6">
+      <structure
+        prefab="RuinWallHeavyHorizontal"
+        alignment="Top,Bottom"
+        type="Wall" />
+      <structure
+        prefab="RuinWallHeavyVertical"
+        alignment="Left,Right"
+        type="Wall" />
+      <structure
+        prefab="RuinBack2"
+        alignment="Center"
+        type="Back"
+        commonness="1" />
+      <item
+        prefab="RuinDecal1"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <item
+        prefab="RuinDecal2"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <item
+        prefab="RuinDecal3"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <item
+        prefab="RuinDecal4"
+        alignment="Center"
+        minoffset="-0.4,-0.4"
+        maxoffset="0.4,0.4"
+        minroomsize="500,500"
+        type="Prop"
+        commonness="5" />
+      <ChooseOne>
+        <itemassembly
+          prefab="ita_armory_blackchest1"
+          alignment="Center"
+          minroomsize="400,400"
+          type="Prop"
+          commonness="2">
+          <item
+            prefab="alientrinket1"
+            alignment="Center"
+            type="Prop"
+            minamount="1"
+            maxamount="1"
+            targetcontainer="container1" />
+          <item
+            prefab="alientrinket2"
+            alignment="Center"
+            type="Prop"
+            minamount="0"
+            maxamount="1"
+            targetcontainer="container1" />
+          <item
+            prefab="alientrinket3"
+            alignment="Center"
+            type="Prop"
+            minamount="0"
+            maxamount="1"
+            targetcontainer="container1" />
+        </itemassembly>
+        <itemassembly
+          prefab="ita_armory_blackchest2"
+          alignment="Left"
+          minroomsize="900,750"
+          type="Prop"
+          minoffset="0,-30"
+          maxoffset="0,-30"
+          commonness="3">
+          <item
+            prefab="alientrinket1"
+            alignment="Center"
+            type="Prop"
+            minamount="0"
+            maxamount="1"
+            targetcontainer="container1" />
+          <item
+            prefab="alientrinket2"
+            alignment="Center"
+            type="Prop"
+            minamount="-1"
+            maxamount="1"
+            targetcontainer="container1" />
+          <item
+            prefab="alientrinket3"
+            alignment="Center"
+            type="Prop"
+            minamount="-1"
+            maxamount="2"
+            targetcontainer="container1" />
+        </itemassembly>
+        <itemassembly
+          prefab="ita_armory_blackchest3"
+          alignment="Right"
+          minroomsize="900,800"
+          type="Prop"
+          commonness="3">
+          <item
+            prefab="alientrinket1"
+            alignment="Center"
+            type="Prop"
+            minamount="0"
+            maxamount="1"
+            targetcontainer="container1" />
+          <item
+            prefab="alientrinket2"
+            alignment="Center"
+            type="Prop"
+            minamount="-1"
+            maxamount="1"
+            targetcontainer="container1" />
+          <item
+            prefab="alientrinket3"
+            alignment="Center"
+            type="Prop"
+            minamount="-1"
+            maxamount="2"
+            targetcontainer="container1" />
+        </itemassembly>
+        <itemassembly
+          prefab="ita_armory_bluechest1"
+          alignment="Top,Center"
+          maxoffset="0.0,0.0"
+          minroomsize="700,900"
+          type="Prop"
+          commonness="2" />
+        <itemassembly
+          prefab="ita_armory_bluechest2"
+          alignment="Center"
+          maxoffset="0.0,0.0"
+          minroomsize="700,900"
+          type="Prop"
+          commonness="2" />
+        <itemassembly
+          prefab="ita_armory_redchest1"
+          alignment="Center"
+          maxoffset="0.0,0.0"
+          minroomsize="750,800"
+          type="Prop"
+          commonness="1" />
+        <itemassembly
+          prefab="ita_armory_redchest2"
+          alignment="Center"
+          maxoffset="0.0,0.0"
+          minroomsize="750,800"
+          type="Prop"
+          commonness="1" />
+      </ChooseOne>
+    </RoomType>
+  </Structures>
+</Override>
