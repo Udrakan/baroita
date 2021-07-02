@@ -41,7 +41,7 @@
       <StatusEffect type="OnFire" target="This" disabledeltatime="true" stackable="false" delay="1" Condition="-10" />
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Sounds/Damage/Gore1.ogg" selectionmode="All" range="5000" />
-        <SpawnCharacter speciesname="Mudraptor_hatchling" count="4" />
+        <SpawnCharacter speciesname="Mudraptor_hatchling" count="1" />
         <Remove />
       </StatusEffect>
     </Holdable>
@@ -85,7 +85,7 @@
       <!--When crate is broken, release mudraptor-->
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Sounds/Damage/Gore1.ogg" selectionmode="All" range="600" />
-        <SpawnCharacter speciesname="Mudraptor_hatchling" count="4" />
+        <SpawnCharacter speciesname="Mudraptor_hatchling" count="1" />
         <Remove />
       </StatusEffect>
     </Holdable>
