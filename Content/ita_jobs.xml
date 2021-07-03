@@ -582,7 +582,7 @@
 		</Override>
 	<!--various-->
 		<Override><!--gunner-->
-		<Job identifier="gunner" minnumber="0" maxnumber="0" initialcount="0" idlebehavior="Passive">
+		<Job identifier="gunner" minnumber="0" maxnumber="0" initialcount="0" idlebehavior="Passive" hiddenjob="true">
 			<Jobicon>
 				<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="640,256,128,128" origin="0.5,0.5"/>
 			</Jobicon>
@@ -621,7 +621,7 @@
 		</Job>
 		</Override>
 		<Override><!--soldier-->
-		<Job identifier="soldier" minnumber="0" maxnumber="0" initialcount="0" minkarma="100" idlebehavior="Patrol">
+		<Job identifier="soldier" minnumber="0" maxnumber="0" initialcount="0" minkarma="100" idlebehavior="Patrol" hiddenjob="true">
 			<Jobicon>
 				<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5"/>
 			</Jobicon>

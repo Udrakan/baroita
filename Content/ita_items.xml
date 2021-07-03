@@ -72,7 +72,7 @@
       <!--Battery contained, crate repairs-->
       <StatusEffect type="Always" target="This" condition="100" setvalue="true">
         <RequiredItem items="mobilebattery" type="Contained" />
-        <sound file="Mods/IntoTheAbyss/Content/Sounds/ita_fridgesound.ogg" range="300.0" volume="0.5" loop="true" />
+        <sound file="Mods/IntoTheAbyss/Content/Sounds/ita_fridgesound.ogg" range="300.0" volume="0.4"/>
       </StatusEffect>
       <StatusEffect type="Always" target="This" condition="-15" disabledeltatime="false" />
       <!--Drain battery and fulgurium -->
@@ -84,13 +84,12 @@
       </StatusEffect>
       <!--When crate is broken, release mudraptor-->
       <StatusEffect type="OnBroken" target="This">
-        <sound file="Content/Sounds/Damage/Gore1.ogg" selectionmode="All" range="600" />
-        <SpawnCharacter speciesname="Mudraptor_hatchling" count="4" />
+        <sound file="Content/Sounds/Damage/Gore1.ogg" selectionmode="All" range="3000" />
+        <SpawnCharacter speciesname="Mudraptor_hatchling" count="1" />
         <Remove />
       </StatusEffect>
     </Holdable>
-    <ItemContainer capacity="1" hideitems="true" spawnwithID="batterycell" maxstacksize="1">
-      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="1,70,107,31" />
+    <ItemContainer capacity="1" hideitems="true" spawnwithID="batterycell" maxstacksize="1" containedstateindicatorstyle="battery">
       <Containable items="mobilebattery" />
       <!--Warning beep when required item not contained-->
       <StatusEffect type="Always" target="Contained" playsoundonrequireditemfailure="true">
@@ -123,8 +122,7 @@
         <Remove />
       </StatusEffect>
     </Holdable>
-    <ItemContainer capacity="1" hideitems="true" spawnwithID="opium" maxstacksize="1">
-      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="1,70,107,31" />
+    <ItemContainer capacity="1" hideitems="true" spawnwithID="opium" maxstacksize="1" containedstateindicatorstyle="syringe">
       <Containable items="opium" />
       <!--Warning beep when required item not contained-->
       <StatusEffect type="Always" target="Contained" stackable="false" delay="4" disabledeltatime="true" playsoundonrequireditemfailure="true">
@@ -378,297 +376,279 @@
     </LightComponent>
     <Holdable slots="RightHand,LeftHand" holdpos="100,-15" aimpos="100,0" handle1="-85,-4" handle2="-85,-4" msg="ItemMsgPickUpSelect" attachable="false">
       <StatusEffect type="OnActive" target="This" setvalue="true" lightcolor="30,180,30,255" range="330.0">
-        <RequiredItem items="fuelrod" type="Contained" excludebroken="false" />
+        <RequiredItem items="fuelrod" type="Contained" excludebroken="false"/>
       </StatusEffect>
       <StatusEffect type="OnActive" target="This" setvalue="true" lightcolor="30,80,160,255" range="330.0">
-        <RequiredItem items="thoriumfuelrod" type="Contained" excludebroken="false" />
+        <RequiredItem items="thoriumfuelrod" type="Contained" excludebroken="false"/>
       </StatusEffect>
       <StatusEffect type="OnActive" target="This" setvalue="true" lightcolor="255,20,0,255" range="350.0">
-        <RequiredItem items="fulguriumfuelrod" type="Contained" excludebroken="false" />
+        <RequiredItem items="fulguriumfuelrod" type="Contained" excludebroken="false"/>
       </StatusEffect>
-      <StatusEffect type="Always" target="This" voltage="1">
-        <RequiredItem items="hot" type="Contained" excludebroken="false" />
+      <StatusEffect type="Always" target="This" voltage="1" checkconditionalalways="true">
+        <RequiredItem items="hot" type="Contained" excludebroken="false"/>
       </StatusEffect>
       <StatusEffect type="Always" target="This" IsOn="true" setvalue="true">
         <Conditional voltage="gt 0.7" />
       </StatusEffect>
-      <StatusEffect type="Always" target="This" IsOn="false" setvalue="true">
+      <StatusEffect type="Always" target="This" IsOn="false" setvalue="true" checkconditionalalways="true">
         <Conditional voltage="lt 0.7" />
       </StatusEffect>
-      <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false">
-        <RequiredItem items="hot" type="Contained" excludebroken="false" />
-        <Conditional hastag="container" targetcontainer="true" />
-        <Conditional hastag="mobilecontainer" targetcontainer="true" />
-        <Conditional hastag="crate" targetcontainer="true" />
-        <Conditional hastag="donttakeitems" targetcontainer="true" />
+      <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" checkconditionalalways="true">
+        <Conditional ishuman="true" targetcontainer="true" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" scale="0.01" checkconditionalalways="true" comparison="And">
+        <RequiredItem items="hot" type="Contained" excludebroken="false"/>
+        <Conditional scale="lt 0.53" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false" comparison="And">
+        <RequiredItem items="hot" type="Contained" excludebroken="false"/>
+        <Conditional scale="gt 0.52" />
         <Fire />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This" delay="1.3" stackable="false" checkconditionalalways="true">
-        <RequiredItem items="hot" type="Contained" excludebroken="false" />
-        <Fire size="1" />
+        <RequiredItem items="hot" type="Contained" excludebroken="false"/>
+        <Fire/>
       </StatusEffect>
       <StatusEffect type="Always" target="This,NearbyCharacters" range="60" delay="0.5" duration="0.75" stackable="false">
-        <RequiredItem items="hot" type="Contained" excludebroken="false" />
+        <RequiredItem items="hot" type="Contained" excludebroken="false"/>
         <Affliction identifier="exposure" strength="6" />
       </StatusEffect>
     </Holdable>
     <ItemContainer capacity="1" hideitems="false" itempos="0,0" containedspritedepth="0.51" ShowContainedStateIndicator="false" keepopenwhenequipped="true">
       <Containable items="reactorfuel,hot" excludeditems="tongs" />
     </ItemContainer>
+   </Item> 
+  <Override>
+  <Item name="" identifier="fuelrod" Tags="smallitem,reactorfuel" cargocontaineridentifier="metalcrate" scale="0.5" description="Rod of dangerous radioactive material, used by humanity as a reliable power source on Europa.">
+    <PreferredContainer primary="reactorcab" minamount="2" maxamount="4" spawnprobability="1" />
+    <PreferredContainer primary="wreckreactorcab" minamount="0" maxamount="1" spawnprobability="0.2" />
+    <Price baseprice="910">
+      <Price locationtype="outpost" multiplier="1" minavailable="2" maxavailable="2" />
+      <Price locationtype="city" multiplier="0.9" minavailable="3" maxavailable="5" />
+      <Price locationtype="research" multiplier="1" minavailable="2" maxavailable="5" />
+      <Price locationtype="military" multiplier="1" minavailable="2" maxavailable="5" />
+      <Price locationtype="mine" multiplier="0.8" minavailable="4" maxavailable="8" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator,workbench" requiredtime="15">
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem identifier="uranium" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="lead" />
+    </Fabricate>
+    <Sprite texture="Content/Items/Tools/tools.png" depth="0.55" sourcerect="410,1,19,68"/>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,64,64,64" origin="0.5,0.5" />
+    <BrokenSprite texture="Mods/IntoTheAbyss/Content/Sprites/icons_ita.png" sourcerect="627,248,19,69" depth="0.500" offset="0,0" origin="0.5,0.5" maxcondition="99.99"/>
+    <Body radius="6" height="55" density="20" />
+    <LightComponent range="0" lightcolor="30,180,30,255" powerconsumption="0" IsOn="false" VulnerableToEMP="false" castshadows="true" allowingameediting="false">
+      <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/icons_ita.png" sourcerect="627,248,19,69"/>
+      <StatusEffect type="Always" target="This" range="330" setvalue="true" comparison="And">
+        <Conditional hastag="reactor" targetcontainer="true" />
+        <Conditional condition="lt 100" />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This" range="-1" delay="2" duration="1" stackable="false"/>
+    </LightComponent>
+    <Holdable slots="RightHand,LeftHand" holdpos="30,-15" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="This" IsOn="true" tags="hot" voltage="1" setvalue="true">
+        <Conditional range="gt 50" targetitemcomponent="LightComponent" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" IsOn="false" tags="cold" setvalue="true">
+        <Conditional range="lt 50" targetitemcomponent="LightComponent" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" allowwhenbroken="true" checkconditionalalways="true">
+        <Conditional hastag="reactor" targetcontainer="true" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" checkconditionalalways="true" comparison="And">
+        <Conditional hastag="tongs" targetcontainer="true" />
+        <Conditional condition="gt 1" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" checkconditionalalways="true" comparison="And">
+        <Conditional ishuman="true" targetcontainer="true" />
+        <Conditional condition="gt 1" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" scale="0.01" checkconditionalalways="true" comparison="And">
+        <Conditional condition="lt 100" />
+        <Conditional hastag="hot" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" scale="-0.05" allowwhenbroken="true" checkconditionalalways="true" comparison="And">
+        <Conditional condition="lt 1" scale="gt 0.46" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" targetgrandparent="true" condition="0.5" allowwhenbroken="true">
+        <Conditional scale="lt 0.48" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false" comparison="And">
+        <Conditional hastag="hot" />
+        <Conditional scale="gt 0.52" />
+        <Fire />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="100" delay="1.3" duration="1.5" stackable="false">
+        <Conditional hastag="hot" />
+        <Affliction identifier="exposure" strength="9" />
+        <Fire />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This,Character" delay="0.5" duration="0.75" stackable="false">
+        <Conditional hastag="hot" excludebroken="false" />
+        <Affliction identifier="exposure" strength="9" />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This" allowwhenbroken="true">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="1" />
+        <ParticleEmitter particle="extinguisher" anglemin="0" anglemax="360" velocitymin="5.0" velocitymax="50.0" particlespersecond="20" />
+        <sound file="Mods/IntoTheAbyss/Content/Sounds/bubbleloop.ogg" type="OnUse" range="300.0" loop="true" />
+        <Conditional hastag="hot" />
+      </StatusEffect>
+    </Holdable>
+    <Upgrade gameversion="0.15.0.0">
+      <LightComponent range="0" lightcolor="30,180,30,255" />
+    </Upgrade>
   </Item>
-  <Override>
-    <Item name="" identifier="fuelrod" Tags="smallitem,reactorfuel" cargocontaineridentifier="metalcrate" scale="0.5" description="Rod of dangerous radioactive material, used by humanity as a reliable power source on Europa.">
-      <PreferredContainer primary="reactorcab" minamount="2" maxamount="4" spawnprobability="1" />
-      <PreferredContainer primary="wreckreactorcab" minamount="0" maxamount="1" spawnprobability="0.25" />
-      <Price baseprice="910">
-        <Price locationtype="outpost" multiplier="1" minavailable="2" maxavailable="2" />
-        <Price locationtype="city" multiplier="0.9" minavailable="3" maxavailable="5" />
-        <Price locationtype="research" multiplier="1" minavailable="2" maxavailable="5" />
-        <Price locationtype="military" multiplier="1" minavailable="2" maxavailable="5" />
-        <Price locationtype="mine" multiplier="0.8" minavailable="4" maxavailable="8" />
-      </Price>
-      <Fabricate suitablefabricators="fabricator,workbench" requiredtime="15">
-        <RequiredSkill identifier="mechanical" level="30" />
-        <RequiredItem identifier="uranium" />
-        <RequiredItem identifier="steel" />
-        <RequiredItem identifier="lead" />
-      </Fabricate>
-      <Sprite texture="Content/Items/Tools/tools.png" depth="0.55" sourcerect="410,1,19,68" />
-      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,64,64,64" origin="0.5,0.5" />
-      <BrokenSprite texture="Mods/IntoTheAbyss/Content/Sprites/icons_ita.png" sourcerect="627,248,19,69" depth="0.500" offset="0,0" origin="0.5,0.5" maxcondition="99.99" />
-      <Body radius="6" height="55" density="20" />
-      <LightComponent range="0" lightcolor="30,180,30,255" powerconsumption="0" IsOn="false" VulnerableToEMP="false" castshadows="true" allowingameediting="false">
-        <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/icons_ita.png" sourcerect="627,248,19,69" />
-        <StatusEffect type="Always" target="This" range="330" setvalue="true" allowwhenbroken="true" comparison="And">
-          <Conditional hastag="reactor" targetcontainer="true" />
-          <Conditional condition="lt 100" />
-        </StatusEffect>
-        <StatusEffect type="InWater" target="This" range="-1" delay="2" duration="1" stackable="false" allowwhenbroken="true" />
-      </LightComponent>
-      <Holdable slots="RightHand,LeftHand" holdpos="30,-15" handle1="0,0" msg="ItemMsgPickUpSelect">
-        <StatusEffect type="Always" target="This" IsOn="true" tags="hot" voltage="1" setvalue="true" allowwhenbroken="true">
-          <Conditional range="gt 50" targetitemcomponent="LightComponent" />
-        </StatusEffect>
-        <StatusEffect type="Always" target="This" IsOn="false" tags="cold" setvalue="true" allowwhenbroken="true">
-          <Conditional range="lt 50" targetitemcomponent="LightComponent" />
-        </StatusEffect>
-        <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" allowwhenbroken="true" checkconditionalalways="true">
-          <Conditional hastag="reactor" targetcontainer="true" />
-        </StatusEffect>
-        <StatusEffect type="Always" target="This" scale="0.5" setvalue="true" checkconditionalalways="true" comparison="And">
-          <Conditional condition="lt 100" />
-          <Conditional condition="gte 1" />
-        </StatusEffect>
-        <StatusEffect type="Always" target="This" scale="-0.05" allowwhenbroken="true" checkconditionalalways="true" comparison="And">
-          <Conditional condition="lt 1" scale="gt 0.46" />
-        </StatusEffect>
-        <StatusEffect type="Always" target="This" targetgrandparent="true" condition="0.5" allowwhenbroken="true">
-          <Conditional scale="lt 0.48" />
-        </StatusEffect>
-        <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false" comparison="And">
-          <Conditional hastag="hot" />
-          <Conditional hastag="container" targetcontainer="true" />
-          <Fire />
-        </StatusEffect>
-        <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false" comparison="And">
-          <Conditional hastag="hot" />
-          <Conditional hastag="mobilecontainer" targetcontainer="true" />
-          <Fire />
-        </StatusEffect>
-        <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false" comparison="And">
-          <Conditional hastag="hot" />
-          <Conditional hastag="crate" targetcontainer="true" />
-          <Fire />
-        </StatusEffect>
-        <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false" comparison="And">
-          <Conditional hastag="hot" />
-          <Conditional hastag="donttakeitems" targetcontainer="true" />
-          <Fire />
-        </StatusEffect>
-        <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="100" delay="1.3" duration="1.5" stackable="false">
-          <Conditional hastag="hot" />
-          <Affliction identifier="exposure" strength="9" />
-          <Fire />
-        </StatusEffect>
-        <StatusEffect type="OnContained" targettype="This,Character" delay="0.5" duration="0.75" stackable="false">
-          <Conditional hastag="hot" excludebroken="false" />
-          <Affliction identifier="exposure" strength="9" />
-        </StatusEffect>
-        <StatusEffect type="InWater" target="This" allowwhenbroken="true">
-          <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="1" />
-          <ParticleEmitter particle="extinguisher" anglemin="0" anglemax="360" velocitymin="5.0" velocitymax="50.0" particlespersecond="20" />
-          <sound file="Mods/IntoTheAbyss/Content/Sounds/bubbleloop.ogg" type="OnUse" range="300.0" loop="true" />
-          <Conditional hastag="hot" />
-        </StatusEffect>
-      </Holdable>
-      <Upgrade gameversion="0.15.0.0">
-        <LightComponent range="0" lightcolor="30,180,30,255" />
-      </Upgrade>
-    </Item>
   </Override>
   <Override>
-    <Item name="" identifier="thoriumfuelrod" Tags="smallitem,reactorfuel" cargocontaineridentifier="metalcrate" health="200" scale="0.5" description="Rod of dangerous radioactive material, used by humanity as a reliable power source on Europa.">
-      <PreferredContainer primary="reactorcab" minamount="1" maxamount="3" spawnprobability="0.5" />
-      <Fabricate suitablefabricators="fabricator" requiredtime="10">
-        <RequiredSkill identifier="mechanical" level="60" />
-        <RequiredItem identifier="thorium" />
-        <RequiredItem identifier="steel" />
-        <RequiredItem identifier="lead" />
-      </Fabricate>
-      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="384,64,64,64" origin="0.5,0.5" />
-      <Sprite texture="Content/Items/Tools/tools.png" depth="0.55" sourcerect="452,1,19,68" />
-      <BrokenSprite texture="Mods/IntoTheAbyss/Content/Sprites/icons_ita.png" sourcerect="627,248,19,69" depth="0.500" offset="0,0" origin="0.5,0.5" maxcondition="199.99" />
-      <Body radius="6" height="55" density="20" />
-      <LightComponent range="0" lightcolor="30,80,160,230" powerconsumption="0" IsOn="false" VulnerableToEMP="false" castshadows="true" allowingameediting="false">
-        <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/icons_ita.png" sourcerect="627,248,19,69" />
-        <StatusEffect type="Always" target="This" range="330" setvalue="true" allowwhenbroken="true" comparison="And">
-          <Conditional hastag="reactor" targetcontainer="true" />
-          <Conditional condition="lt 200" />
-        </StatusEffect>
-        <StatusEffect type="InWater" target="This" range="-1" delay="2" duration="1" stackable="false" allowwhenbroken="true" />
-      </LightComponent>
-      <Holdable slots="RightHand,LeftHand" holdpos="30,-15" handle1="0,0" msg="ItemMsgPickUpSelect">
-        <StatusEffect type="Always" target="This" IsOn="true" tags="hot" voltage="1" setvalue="true" allowwhenbroken="true">
-          <Conditional range="gt 50" targetitemcomponent="LightComponent" />
-        </StatusEffect>
-        <StatusEffect type="Always" target="This" IsOn="false" tags="cold" setvalue="true" allowwhenbroken="true">
-          <Conditional range="lt 50" targetitemcomponent="LightComponent" />
-        </StatusEffect>
-        <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" allowwhenbroken="true" checkconditionalalways="true">
-          <Conditional hastag="reactor" targetcontainer="true" />
-        </StatusEffect>
-        <StatusEffect type="Always" target="This" scale="0.5" setvalue="true" checkconditionalalways="true" comparison="And">
-          <Conditional condition="lt 200" />
-          <Conditional condition="gte 1" />
-        </StatusEffect>
-        <StatusEffect type="Always" target="This" scale="-0.05" allowwhenbroken="true" checkconditionalalways="true" comparison="And">
-          <Conditional condition="lt 1" scale="gt 0.46" />
-        </StatusEffect>
-        <StatusEffect type="Always" target="This" targetgrandparent="true" condition="0.5" allowwhenbroken="true">
-          <Conditional scale="lt 0.48" />
-        </StatusEffect>
-        <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false" comparison="And">
-          <Conditional hastag="hot" />
-          <Conditional hastag="container" targetcontainer="true" />
-          <Fire />
-        </StatusEffect>
-        <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false" comparison="And">
-          <Conditional hastag="hot" />
-          <Conditional hastag="mobilecontainer" targetcontainer="true" />
-          <Fire />
-        </StatusEffect>
-        <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false" comparison="And">
-          <Conditional hastag="hot" />
-          <Conditional hastag="crate" targetcontainer="true" />
-          <Fire />
-        </StatusEffect>
-        <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false" comparison="And">
-          <Conditional hastag="hot" />
-          <Conditional hastag="donttakeitems" targetcontainer="true" />
-          <Fire />
-        </StatusEffect>
-        <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="100" delay="1.3" duration="1.5" stackable="false">
-          <Conditional hastag="hot" />
-          <Affliction identifier="exposure" strength="9" />
-          <Fire />
-        </StatusEffect>
-        <StatusEffect type="OnContained" targettype="This,Character" delay="0.5" duration="0.75" stackable="false">
-          <Conditional hastag="hot" excludebroken="false" />
-          <Affliction identifier="exposure" strength="9" />
-        </StatusEffect>
-        <StatusEffect type="InWater" target="This" allowwhenbroken="true">
-          <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="1" />
-          <ParticleEmitter particle="extinguisher" anglemin="0" anglemax="360" velocitymin="5.0" velocitymax="50.0" particlespersecond="20" />
-          <sound file="Mods/IntoTheAbyss/Content/Sounds/bubbleloop.ogg" type="OnUse" range="300.0" loop="true" />
-          <Conditional hastag="hot" />
-        </StatusEffect>
-      </Holdable>
-      <Upgrade gameversion="0.15.0.0">
-        <LightComponent range="0" lightcolor="30,80,160,230" />
-      </Upgrade>
-    </Item>
+	<Item name="" identifier="thoriumfuelrod" Tags="smallitem,reactorfuel" cargocontaineridentifier="metalcrate" health="200" scale="0.5" description="Rod of dangerous radioactive material, used by humanity as a reliable power source on Europa.">
+    <PreferredContainer primary="reactorcab" minamount="1" maxamount="3" spawnprobability="0.5" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredItem identifier="thorium" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="lead" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="384,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Tools/tools.png" depth="0.55" sourcerect="452,1,19,68" />
+    <BrokenSprite texture="Mods/IntoTheAbyss/Content/Sprites/icons_ita.png" sourcerect="627,248,19,69" depth="0.500" offset="0,0" origin="0.5,0.5" maxcondition="199.99" />
+    <Body radius="6" height="55" density="20" />
+		<LightComponent range="0" lightcolor="30,80,160,230" powerconsumption="0" IsOn="false" VulnerableToEMP="false" castshadows="true" allowingameediting="false">
+      <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/icons_ita.png" sourcerect="627,248,19,69" />
+			<StatusEffect type="Always" target="This" range="330" setvalue="true" allowwhenbroken="true" comparison="And">
+				<Conditional hastag="reactor" targetcontainer="true"/>
+        <Conditional condition="lt 200"/>
+			</StatusEffect>
+			<StatusEffect type="InWater" target="This" range="-1" delay="2" duration="1" stackable="false" allowwhenbroken="true" />
+		</LightComponent>
+		<Holdable slots="RightHand,LeftHand" holdpos="30,-15" handle1="0,0" msg="ItemMsgPickUpSelect">
+			<StatusEffect type="Always" target="This" IsOn="true" tags="hot" voltage="1" setvalue="true" allowwhenbroken="true">
+				<Conditional range="gt 50" targetitemcomponent="LightComponent" />
+			</StatusEffect>
+			<StatusEffect type="Always" target="This" IsOn="false" tags="cold" setvalue="true" allowwhenbroken="true">
+        <Conditional range="lt 50" targetitemcomponent="LightComponent"/>
+			</StatusEffect>
+      <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" allowwhenbroken="true" checkconditionalalways="true">
+        <Conditional hastag="reactor" targetcontainer="true" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" checkconditionalalways="true" comparison="And">
+        <Conditional hastag="tongs" targetcontainer="true" />
+        <Conditional condition="gt 1" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" checkconditionalalways="true" comparison="And">
+        <Conditional ishuman="true" targetcontainer="true" />
+        <Conditional condition="gt 1" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" scale="0.01" checkconditionalalways="true" comparison="And">
+        <Conditional condition="lt 200" />
+        <Conditional hastag="hot" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" scale="-0.05" allowwhenbroken="true" checkconditionalalways="true" comparison="And">
+        <Conditional condition="lt 1" scale="gt 0.46" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" targetgrandparent="true" condition="0.5" allowwhenbroken="true">
+        <Conditional scale="lt 0.48" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false" comparison="And">
+        <Conditional hastag="hot" />
+        <Conditional scale="gt 0.52" />
+        <Fire />
+      </StatusEffect>
+		  <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="100" delay="1.3" duration="1.5" stackable="false">
+				<Conditional hastag="hot" />
+				<Affliction identifier="exposure" strength="9" />
+				<Fire />
+			</StatusEffect>
+			<StatusEffect type="OnContained" targettype="This,Character" delay="0.5" duration="0.75" stackable="false">
+				<Conditional hastag="hot" excludebroken="false" />
+				<Affliction identifier="exposure" strength="9" />
+			</StatusEffect>
+			<StatusEffect type="InWater" target="This" allowwhenbroken="true">
+				<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="1" />
+				<ParticleEmitter particle="extinguisher" anglemin="0" anglemax="360" velocitymin="5.0" velocitymax="50.0" particlespersecond="20" />
+				<sound file="Mods/IntoTheAbyss/Content/Sounds/bubbleloop.ogg" type="OnUse" range="300.0" loop="true" />
+				<Conditional hastag="hot" />
+			</StatusEffect>
+		</Holdable>
+    <Upgrade gameversion="0.15.0.0">
+      <LightComponent range="0" lightcolor="30,80,160,230"/>
+    </Upgrade> 
+	</Item>
   </Override>
   <Override>
-    <Item name="" identifier="fulguriumfuelrod" Tags="smallitem,reactorfuel" cargocontaineridentifier="metalcrate" health="150" scale="0.5" description="Rod of dangerous radioactive material, used by humanity as a reliable power source on Europa.">
-      <Fabricate suitablefabricators="fabricator" requiredtime="10">
-        <RequiredSkill identifier="mechanical" level="40" />
-        <RequiredItem identifier="fulgurium" />
-        <RequiredItem identifier="fulgurium" />
-        <RequiredItem identifier="steel" />
-        <RequiredItem identifier="lead" />
-      </Fabricate>
-      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,64,64,64" origin="0.5,0.5" />
-      <Sprite texture="Content/Items/Tools/tools.png" depth="0.55" sourcerect="431,1,19,68" />
-      <BrokenSprite texture="Mods/IntoTheAbyss/Content/Sprites/icons_ita.png" sourcerect="627,248,19,69" depth="0.500" offset="0,0" origin="0.5,0.5" maxcondition="149.99" />
-      <Body radius="6" height="55" density="20" />
-      <LightComponent range="0" lightcolor="255,20,0,255" powerconsumption="0" IsOn="false" VulnerableToEMP="false" castshadows="true" allowingameediting="false">
-        <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/icons_ita.png" sourcerect="627,248,19,69" />
-        <StatusEffect type="Always" target="This" range="350" setvalue="true" allowwhenbroken="true" comparison="And">
-          <Conditional hastag="reactor" targetcontainer="true" />
-          <Conditional condition="lt 150" />
-        </StatusEffect>
-        <StatusEffect type="InWater" target="This" range="-1" delay="2" duration="1" stackable="false" allowwhenbroken="true" />
-      </LightComponent>
-      <Holdable slots="RightHand,LeftHand" holdpos="30,-15" handle1="0,0" msg="ItemMsgPickUpSelect">
-        <StatusEffect type="Always" target="This" IsOn="true" tags="hot" voltage="1" setvalue="true" allowwhenbroken="true">
-          <Conditional range="gt 50" targetitemcomponent="LightComponent" />
-        </StatusEffect>
-        <StatusEffect type="Always" target="This" IsOn="false" tags="cold" setvalue="true" allowwhenbroken="true">
-          <Conditional range="lt 50" targetitemcomponent="LightComponent" />
-        </StatusEffect>
-        <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" allowwhenbroken="true" checkconditionalalways="true">
-          <Conditional hastag="reactor" targetcontainer="true" />
-        </StatusEffect>
-        <StatusEffect type="Always" target="This" scale="0.5" setvalue="true" checkconditionalalways="true" comparison="And">
-          <Conditional condition="lt 150" />
-          <Conditional condition="gte 1" />
-        </StatusEffect>
-        <StatusEffect type="Always" target="This" scale="-0.05" allowwhenbroken="true" checkconditionalalways="true" comparison="And">
-          <Conditional condition="lt 1" scale="gt 0.46" />
-        </StatusEffect>
-        <StatusEffect type="Always" target="This" targetgrandparent="true" condition="0.5" allowwhenbroken="true">
-          <Conditional scale="lt 0.48" />
-        </StatusEffect>
-        <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false" comparison="And">
-          <Conditional hastag="hot" />
-          <Conditional hastag="container" targetcontainer="true" />
-          <Fire />
-        </StatusEffect>
-        <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false" comparison="And">
-          <Conditional hastag="hot" />
-          <Conditional hastag="mobilecontainer" targetcontainer="true" />
-          <Fire />
-        </StatusEffect>
-        <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false" comparison="And">
-          <Conditional hastag="hot" />
-          <Conditional hastag="crate" targetcontainer="true" />
-          <Fire />
-        </StatusEffect>
-        <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false" comparison="And">
-          <Conditional hastag="hot" />
-          <Conditional hastag="donttakeitems" targetcontainer="true" />
-          <Fire />
-        </StatusEffect>
-        <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="100" delay="1.3" duration="1.5" stackable="false">
-          <Conditional hastag="hot" />
-          <Affliction identifier="exposure" strength="9" />
-          <Fire />
-        </StatusEffect>
-        <StatusEffect type="OnContained" targettype="This,Character" delay="0.5" duration="0.75" stackable="false">
-          <Conditional hastag="hot" excludebroken="false" />
-          <Affliction identifier="exposure" strength="9" />
-        </StatusEffect>
-        <StatusEffect type="InWater" target="This" allowwhenbroken="true">
-          <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="1" />
-          <ParticleEmitter particle="extinguisher" anglemin="0" anglemax="360" velocitymin="5.0" velocitymax="50.0" particlespersecond="20" />
-          <sound file="Mods/IntoTheAbyss/Content/Sounds/bubbleloop.ogg" type="OnUse" range="300.0" loop="true" />
-          <Conditional hastag="hot" />
-        </StatusEffect>
-      </Holdable>
-      <Upgrade gameversion="0.15.0.0">
-        <LightComponent range="0" lightcolor="255,20,0,255" />
-      </Upgrade>
-    </Item>
+	<Item name="" identifier="fulguriumfuelrod" Tags="smallitem,reactorfuel" cargocontaineridentifier="metalcrate" health="150" scale="0.5" description="Rod of dangerous radioactive material, used by humanity as a reliable power source on Europa.">
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem identifier="fulgurium" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="lead" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Tools/tools.png" depth="0.55" sourcerect="431,1,19,68" />
+    <BrokenSprite texture="Mods/IntoTheAbyss/Content/Sprites/icons_ita.png" sourcerect="627,248,19,69" depth="0.500" offset="0,0" origin="0.5,0.5" maxcondition="149.99" />
+    <Body radius="6" height="55" density="20" />
+		<LightComponent range="0" lightcolor="255,20,0,255" powerconsumption="0" IsOn="false" VulnerableToEMP="false" castshadows="true" allowingameediting="false">
+      <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/icons_ita.png" sourcerect="627,248,19,69" />
+			<StatusEffect type="Always" target="This" range="350" setvalue="true" allowwhenbroken="true" comparison="And">
+				<Conditional hastag="reactor" targetcontainer="true"/>
+        <Conditional condition="lt 150"/>
+			</StatusEffect>
+			<StatusEffect type="InWater" target="This" range="-1" delay="2" duration="1" stackable="false" allowwhenbroken="true" />
+		</LightComponent>
+		<Holdable slots="RightHand,LeftHand" holdpos="30,-15" handle1="0,0" msg="ItemMsgPickUpSelect">
+			<StatusEffect type="Always" target="This" IsOn="true" tags="hot" voltage="1" setvalue="true" allowwhenbroken="true">
+				<Conditional range="gt 50" targetitemcomponent="LightComponent" />
+			</StatusEffect>
+			<StatusEffect type="Always" target="This" IsOn="false" tags="cold" setvalue="true" allowwhenbroken="true">
+        <Conditional range="lt 50" targetitemcomponent="LightComponent"/>
+			</StatusEffect>
+      <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" allowwhenbroken="true" checkconditionalalways="true">
+        <Conditional hastag="reactor" targetcontainer="true" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" checkconditionalalways="true" comparison="And">
+        <Conditional hastag="tongs" targetcontainer="true" />
+        <Conditional condition="gt 1" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" checkconditionalalways="true" comparison="And">
+        <Conditional ishuman="true" targetcontainer="true" />
+        <Conditional condition="gt 1" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" scale="0.01" checkconditionalalways="true" comparison="And">
+        <Conditional condition="lt 150" />
+        <Conditional hastag="hot" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" scale="-0.05" allowwhenbroken="true" checkconditionalalways="true" comparison="And">
+        <Conditional condition="lt 1" scale="gt 0.46" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" targetgrandparent="true" condition="0.5" allowwhenbroken="true">
+        <Conditional scale="lt 0.48" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1.3" stackable="false" comparison="And">
+        <Conditional hastag="hot" />
+        <Conditional scale="gt 0.52" />
+        <Fire />
+      </StatusEffect>
+		  <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="100" delay="1.3" duration="1.5" stackable="false">
+				<Conditional hastag="hot" />
+				<Affliction identifier="exposure" strength="9" />
+				<Fire />
+			</StatusEffect>
+			<StatusEffect type="OnContained" targettype="This,Character" delay="0.5" duration="0.75" stackable="false">
+				<Conditional hastag="hot" excludebroken="false" />
+				<Affliction identifier="exposure" strength="9" />
+			</StatusEffect>
+			<StatusEffect type="InWater" target="This" allowwhenbroken="true">
+				<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="1" />
+				<ParticleEmitter particle="extinguisher" anglemin="0" anglemax="360" velocitymin="5.0" velocitymax="50.0" particlespersecond="20" />
+				<sound file="Mods/IntoTheAbyss/Content/Sounds/bubbleloop.ogg" type="OnUse" range="300.0" loop="true" />
+				<Conditional hastag="hot" />
+			</StatusEffect>
+		</Holdable>
+    <Upgrade gameversion="0.15.0.0">
+      <LightComponent range="0" lightcolor="255,20,0,255"/>
+    </Upgrade> 
+	</Item>
   </Override>
   <!--Minerals-->
   <Override>
@@ -1835,7 +1815,7 @@
     <Body width="11" height="11" density="20" />
     <Holdable slots="Any" aimpos="5,0" handle1="-5,0" holdangle="220" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name="" maxstacksize="10" identifier="ita_coin1" cargocontaineridentifier="metalcrate" tags="smallitem,coin,money,ita_coin1" scale="0.5" linkable="true" pickdistance="150" impactsoundtag="impact_metal_heavy" hideinmenus="false">
+  <Item name="" maxstacksize="10" identifier="ita_coin1" cargocontaineridentifier="metalcrate" tags="smallitem,coin,money,ita_coin1" scale="0.5" linkable="true" pickdistance="150" impactsoundtag="impact_coin" hideinmenus="false">
     <PreferredContainer primary="crewcab" minamount="2" maxamount="3" spawnprobability="1" />
     <PreferredContainer secondary="outposttrashcan,outpostcrewcabinet" minamount="0" maxamount="2" spawnprobability="0.5" />
     <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_sprites_campaign.png" depth="0.54" sourcerect="444,296,53,52" origin="0.5,0.5" />
@@ -2510,8 +2490,7 @@
       <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" ObstructVision="true" SpeedMultiplier="0.6" setvalue="true">
         <ReduceAffliction identifier="exposure" strength="100" />
       </StatusEffect>
-      <ItemContainer capacity="1" hideitems="true" maxstacksize="1">
-        <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,157,92,27" />
+      <ItemContainer capacity="1" hideitems="true" maxstacksize="1" containedstateindicatorstyle="tank">
         <Containable items="oxygentank" />
       </ItemContainer>
     </Wearable>
@@ -2840,7 +2819,7 @@
     <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_spritesoutpost.png" depth="0.84" sourcerect="3,289,141,159" canflipx="true" origin="0.5,0.5" />
     <ItemContainer capacity="10" canbeselected="true" hideitems="false" itempos="84,16" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
-      <Containable items="clothing,ita_duffelbag1,money" />
+      <Containable items="clothing,ita_duffelbag1,money,mobilecontainer" />
     </ItemContainer>
   </Item>
   <Item name="" identifier="ita_pettradertable" tags="ita_pettradertable" pickdistance="150" scale="0.5">
@@ -2949,9 +2928,9 @@
       <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="1,497,238,396" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
       <LightComponent range="0.0" lightcolor="255,255,255,111" IsOn="true" castshadows="false" allowingameediting="false">
         <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="241,497,238,396" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+        <Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_vending2.ogg" type="Always" loop="true" range="400" />
       </LightComponent>
       <ItemContainer hideitems="true" capacity="1" canbeselected="false" maxstacksize="1">
-        <Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_vending2.ogg" type="Always" loop="true" range="500" />
         <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
         <Containable items="ita_coin1" />
         <StatusEffect type="Always" target="Contained" stackable="false" disabledeltatime="true">
@@ -2972,9 +2951,9 @@
       <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="481,497,238,396" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
       <LightComponent range="0.0" lightcolor="255,255,255,111" IsOn="true" castshadows="false" allowingameediting="false">
         <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="721,497,238,396" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+        <Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_vending2.ogg" type="Always" loop="true" range="400" />
       </LightComponent>
       <ItemContainer hideitems="true" capacity="1" canbeselected="false" maxstacksize="1">
-        <Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_vending2.ogg" type="Always" loop="true" range="500" />
         <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
         <Containable items="ita_coin1" />
         <StatusEffect type="Always" target="Contained" stackable="false" disabledeltatime="true">
@@ -3892,7 +3871,7 @@
       <Containable items="smallitem,mediumitem" />
     </ItemContainer>
   </Item>
-  <Item name="" identifier="ita_divingsuit" category="Equipment" tags="diving,deepdiving,provocative" scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="ita_divingsuit" category="Equipment" tags="divingsuit,diving,deepdiving,provocative" scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy">
     <!--<InventoryIcon texture="Mods/IntoTheAbyss/Content/Sprites/ita_sprites_alien.png" sourcerect="530,809,130,218" origin="0.5,0.5" />-->
     <Sprite name="Diving Suit Item" texture="Mods/IntoTheAbyss/Content/Sprites/ita_jovianarmoricon.png" sourcerect="0,0,146,120" depth="0.55" origin="0.5,0.5" />
     <Fabricate suitablefabricators="ita_fabricator1" requiredtime="60">
@@ -3925,7 +3904,7 @@
       <sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_DivingSuit_Legs.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_DivingSuit_Legs.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_DivingSuit_Legs.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <StatusEffect type="OnWearing" target="Character" HideFace="false" ObstructVision="false" PressureProtection="100.0" SpeedMultiplier="0.6" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
+      <StatusEffect type="OnWearing" target="Character" HideFace="false" ObstructVision="false" PressureProtection="10000" SpeedMultiplier="0.6" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
         <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" />
         <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" />
       </StatusEffect>
@@ -3963,16 +3942,15 @@
         <RequiredItem items="skyholderartifact" type="Contained" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds,blunttrauma,lacerations,gunshotwound" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="radiationsickness" damagemultiplier="0.0" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.25" probabilitymultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.0" damagesound="LimbArmor"/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.25" probabilitymultiplier="0.5" damagesound="LimbArmor"/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
     </Wearable>
-    <ItemContainer capacity="1" hideitems="true" maxstacksize="1">
-      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,157,92,27" />
+    <ItemContainer capacity="1" hideitems="true" maxstacksize="1" containedstateindicatorstyle="tank">
       <Containable items="oxygensource,weldingfuel" />
       <StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true">
         <RequiredItem items="oxygensource" type="Contained" matchonempty="true" />
@@ -4067,7 +4045,6 @@
       </StatusEffect>
     </MeleeWeapon>
     <ItemContainer capacity="1" hideitems="true" maxstacksize="1">
-      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="1,70,107,31" />
       <Containable items="fulgurium,incendium,oxygeniteshard,physicorium,dementonite" />
     </ItemContainer>
     <aitarget sightrange="500" soundrange="500" fadeouttime="1" />
@@ -4346,8 +4323,8 @@
       <Price baseprice="200" soldeverywhere="false">
         <Price locationtype="outpost" multiplier="0.8" sold="false" />
         <Price locationtype="city" multiplier="0.8" sold="false" />
-        <Price locationtype="research" multiplier="1.15" sold="false" />
-        <Price locationtype="military" multiplier="0.8" sold="false" />
+        <Price locationtype="research" multiplier="3.25" sold="false" />
+        <Price locationtype="military" multiplier="1.2" sold="false" />
         <Price locationtype="mine" multiplier="0.9" sold="true" minavailable="0" maxavailable="1" />
       </Price>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="70,835,52,59" origin="0.5,0.5" />
@@ -4497,8 +4474,7 @@
       <Sprite texture="Content/Items/Containers/containers.png" depth="0.54" sourcerect="907,782,117,89" origin="0.5,0.5" />
       <Body width="115" height="88" density="50" />
       <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
-      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true">
-        <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="2,121,53,22" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
         <StatusEffect type="OnUse" target="This" disabledeltatime="true">
           <SpawnItem identifiers="physicoriumbolt" spawnposition="ThisInventory" />
         </StatusEffect>

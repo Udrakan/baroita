@@ -108,7 +108,8 @@
     maxstrength="10">
     <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="1" maxresistance="1.5" strengthchange="0">
       <StatusEffect target="Character" disabledeltatime="true" delay="3.5" stackable="false">
-        <ReduceAffliction identifier="nausea" strength="10" /> 
+        <ReduceAffliction identifier="nausea" strength="10"/>
+        <ReduceAffliction identifier="stun" strength="10"/>
       </StatusEffect>
     </Effect>
 	<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" color="195,104,60,255" origin="0,0"/>
