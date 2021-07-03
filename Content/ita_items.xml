@@ -41,7 +41,7 @@
       <StatusEffect type="OnFire" target="This" disabledeltatime="true" stackable="false" delay="1" Condition="-10" />
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Sounds/Damage/Gore1.ogg" selectionmode="All" range="5000" />
-        <SpawnCharacter speciesname="Mudraptor_hatchling" count="4" />
+        <SpawnCharacter speciesname="Mudraptor_hatchling" count="1" />
         <Remove />
       </StatusEffect>
     </Holdable>
@@ -1835,7 +1835,7 @@
     <Body width="11" height="11" density="20" />
     <Holdable slots="Any" aimpos="5,0" handle1="-5,0" holdangle="220" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name="" maxstacksize="10" identifier="ita_coin1" cargocontaineridentifier="metalcrate" tags="smallitem,coin,money,ita_coin1" scale="0.5" linkable="true" pickdistance="150" impactsoundtag="impact_coin" hideinmenus="false">
+  <Item name="" maxstacksize="10" identifier="ita_coin1" cargocontaineridentifier="metalcrate" tags="smallitem,coin,money,ita_coin1" scale="0.5" linkable="true" pickdistance="150" impactsoundtag="impact_metal_heavy" hideinmenus="false">
     <PreferredContainer primary="crewcab" minamount="2" maxamount="3" spawnprobability="1" />
     <PreferredContainer secondary="outposttrashcan,outpostcrewcabinet" minamount="0" maxamount="2" spawnprobability="0.5" />
     <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_sprites_campaign.png" depth="0.54" sourcerect="444,296,53,52" origin="0.5,0.5" />

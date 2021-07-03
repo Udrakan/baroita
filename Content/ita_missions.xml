@@ -136,7 +136,7 @@
 		<!--TRANSPORT CARGO -->
 		<CargoMission name="" identifier="cargotime1" tags="cargo,cargotime,city1,ita_cargo" type="Cargo" description="" commonness="5" reward="1500" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_mcrate_time1" reward="100" maxcount="25"/>
+				<Item identifier="ita_mcrate_time1" reward="200" maxcount="25"/>
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="3" />
@@ -154,7 +154,7 @@
 		</CargoMission>
 		<CargoMission name="" identifier="cargowater1" tags="cargo,cargosensitive,city1,ita_cargo" type="Cargo" description="" commonness="5" reward="1500" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_mcrate_water1" reward="150" maxcount="25"/>
+				<Item identifier="ita_mcrate_water1" reward="200" maxcount="25"/>
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="5" />
@@ -172,7 +172,7 @@
 		</CargoMission>
 		<CargoMission name="" identifier="cargoeggs" tags="cargo,cargomonster2,city1,ita_cargo" type="Cargo" description="" commonness="10" reward="2500" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_mcrate_egg1" reward="300" maxcount="4"/>
+				<Item identifier="ita_mcrate_egg1" reward="450" maxcount="8"/>
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="3" />
@@ -190,7 +190,7 @@
 		</CargoMission>
 		<CargoMission name="" identifier="cargofragile1" tags="cargo,cargoexplosive,cargosensitive,city1,ita_cargo" type="Cargo" description="" commonness="5" reward="1000" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_mcrate_impact1" reward="150" maxcount="10"/>
+				<Item identifier="ita_mcrate_impact1" reward="300" maxcount="10"/>
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="3" />
@@ -208,7 +208,7 @@
 		</CargoMission>
 		<CargoMission name="" identifier="cargoeggs2" tags="cargo,cargomonster1,city1,ita_cargo" type="Cargo" description="" commonness="5" reward="2000" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_mcrate_egg2" reward="250" maxcount="4"/>
+				<Item identifier="ita_mcrate_egg2" reward="750" maxcount="8"/>
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="3" />
@@ -226,7 +226,7 @@
 		</CargoMission>
 		<CargoMission name="" identifier="cargoeggs3" tags="cargo,cargomonster1,city1,ita_cargo" type="Cargo" description="" commonness="7" reward="2000" achievementidentifier="cargomission" successmessage="">
 			<Items>
-				<Item identifier="ita_mcrate_raptor1" reward="250" maxcount="4"/>
+				<Item identifier="ita_mcrate_raptor1" reward="750" maxcount="4"/>
 			</Items>
 			<Reputation identifier="location" amount="10" />
 			<Reputation identifier="coalition" amount="3" />
