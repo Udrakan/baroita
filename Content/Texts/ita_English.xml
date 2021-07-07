@@ -669,7 +669,7 @@
 	
 	<locationchange.cave.changeto.mine>Settlers at [previousname] have established a mining outpost in the cleared cave.</locationchange.cave.changeto.mine>
 	
-	<!--R-3.385-->
+	<!--R-3.386-->
 	<missionname.amblygonitecollection>Collecting amblygonite</missionname.amblygonitecollection>
 	<missiondescription.amblygonitecollection>There's been talk of deposits of amblygonite along the way from [location1] to [location2]. Bring back six samples of amblygonite to verify these claims.</missiondescription.amblygonitecollection>
 	<missionheader0.amblygonitecollection>Amblygonite collected</missionheader0.amblygonitecollection>
@@ -719,7 +719,6 @@
 	<missionsuccess.galenacollection>The existence of the galena deposits has been successfully proven.</missionsuccess.galenacollection>
 	<missionsonarlabel.galenacollection>Galena</missionsonarlabel.galenacollection>
 
-	<!--R-3.386-->
 	<entityname.ita_atm>ATM</entityname.ita_atm>
 	<entitydescription.ita_atm>A machine for automatic handling of hard cash.</entitydescription.ita_atm>
 	<eventtext.atm.1>Withdraw or deposit cash.</eventtext.atm.1>
@@ -727,4 +726,51 @@
 	<eventtext.atm.3>Depositing all remaining cash</eventtext.atm.3>
 	<eventtext.atm.4>Only crew captains can withdraw.</eventtext.atm.4>
 	<eventtext.atm.5>Step away</eventtext.atm.5>
+
+    <upgradecategory.sonar>Sonar</upgradecategory.sonar>
+    <upgradecategory.weaponry>Weaponry</upgradecategory.weaponry>
+    <upgradecategory.dischargecoils>Discharge Coils</upgradecategory.dischargecoils>
+    <upgradecategory.machinery>Machinery</upgradecategory.machinery>
+    <upgradecategory.electronics>Electronics</upgradecategory.electronics>
+    <upgradename.ita_wallhealth>Reinforced Hull</upgradename.ita_wallhealth>
+    <upgradedescription.ita_wallhealth>Increases submarine hull durability. Makes the walls less vulnerable to damage.</upgradedescription.ita_wallhealth>
+    <upgradename.ita_wallstrength>Strengthening Support Frame</upgradename.ita_wallstrength>
+    <upgradedescription.ita_wallstrength>Allows the submarine to dive deeper without getting crushed by pressure.</upgradedescription.ita_wallstrength>
+    <upgradename.ita_reactoroutput>Reactor Core Restructuring</upgradename.ita_reactoroutput>
+    <upgradedescription.ita_reactoroutput>Increases reactor power output by increasing the core zone, reduces reactor stability and increases fuel consumption.</upgradedescription.ita_reactoroutput>
+    <upgradename.ita_fuelconsumption>Reactor Efficiency</upgradename.ita_fuelconsumption>
+    <upgradedescription.ita_fuelconsumption>Decreases fuel consumption rate. Advanced systems requires higher qualified crew.</upgradedescription.ita_fuelconsumption>
+    <upgradename.ita_batterycapacity>Enhanced Battery Capacity</upgradename.ita_batterycapacity>
+    <upgradedescription.ita_batterycapacity>Increases maximum energy storage capacity in cost of a slightly decreasing recharge rate.</upgradedescription.ita_batterycapacity>
+    <upgradename.ita_supercapacitorcapacity>Enhanced Supercapacitor Capacity</upgradename.ita_supercapacitorcapacity>
+    <upgradedescription.ita_supercapacitorcapacity>Increases maximum energy storage capacity in cost of a slightly decreasing recharge rate.</upgradedescription.ita_supercapacitorcapacity>
+    <upgradename.ita_pumpflow>Faster Pumps</upgradename.ita_pumpflow>
+    <upgradedescription.ita_pumpflow>Increases the speed at which water is pumped in or out of the sub. System overclocking reduces machinery life, complicates repairing and increases energy consumption.</upgradedescription.ita_pumpflow>
+    <upgradename.ita_engineforce>Engine Power</upgradename.ita_engineforce>
+    <upgradedescription.ita_engineforce>Increases maximum speed. System overclocking reduces machinery life, complicates repairing and increases energy consumption.</upgradedescription.ita_engineforce>
+    <upgradename.ita_sonarrange>Sonar Hypersensitivity</upgradename.ita_sonarrange>
+    <upgradedescription.ita_sonarrange>Increases the view range of sonar systems. Energy consumption of the overclocked system greatly increasing.</upgradedescription.ita_sonarrange>
+    <upgradename.ita_weaponryrotation>Quicker Servomotors</upgradename.ita_weaponryrotation>
+    <upgradedescription.ita_weaponryrotation>Increases the rotation rate of all turrets and searchlights.</upgradedescription.ita_weaponryrotation>
+    <upgradename.ita_turretoffset>Enhanced Periscopes</upgradename.ita_turretoffset>
+    <upgradedescription.ita_turretoffset>Increase the view range of all optical systems.</upgradedescription.ita_turretoffset>
+    <upgradename.ita_turretfirerate>Powersupplying Stabilisation</upgradename.ita_turretfirerate>
+    <upgradedescription.ita_turretfirerate>Increases guns fire rate. Energy consumption of the overclocked system slightly increasing.</upgradedescription.ita_turretfirerate>
+    <upgradename.ita_coilrange>Discharge-Coil Amplifier</upgradename.ita_coilrange>
+    <upgradedescription.ita_coilrange>Increases range of discharge coils. Energy consumption of the overclocked system slightly increasing.</upgradedescription.ita_coilrange>
+    <upgradename.ita_oxygengeneration>Oxygen Generator Efficiency</upgradename.ita_oxygengeneration>
+    <upgradedescription.ita_oxygengeneration>Increases the amount of oxygen generated. Advanced systems complicates repairing.</upgradedescription.ita_oxygengeneration>
+    <upgradename.ita_fabricationspeed>Quicker Fabrication</upgradename.ita_fabricationspeed>
+    <upgradedescription.ita_fabricationspeed>Decreases the time needed to fabricate items. Energy consumption of the overclocked system moderately increasing.</upgradedescription.ita_fabricationspeed>
+    <upgradename.ita_deconstructiontime>Quicker Deconstruction</upgradename.ita_deconstructiontime>
+    <upgradedescription.ita_deconstructiontime>Items will be deconstructed faster. Energy consumption of the overclocked system moderately increasing.</upgradedescription.ita_deconstructiontime>
+    <upgradename.ita_deteriorationspeed>Quality Comes First</upgradename.ita_deteriorationspeed>
+    <upgradedescription.ita_deteriorationspeed>Increases the time to complete wear for a damaged equipment.</upgradedescription.ita_deteriorationspeed>
+    <upgradename.ita_deteriorationdelay>System Standardization</upgradename.ita_deteriorationdelay>
+    <upgradedescription.ita_deteriorationdelay>Re-equipment of systems according to the latest standards of the Europa Coalition, increases their service time.</upgradedescription.ita_deteriorationdelay>
+    <upgradename.ita_lowskillfixduration>System Optimization</upgradename.ita_lowskillfixduration>
+    <upgradedescription.ita_lowskillfixduration>Decreases the amount of time needed to repair equipment.</upgradedescription.ita_lowskillfixduration>
+    <upgradename.ita_requiredskilllevel>System Unification</upgradename.ita_requiredskilllevel>
+    <upgradedescription.ita_requiredskilllevel>Unification of spare parts reduces skill requirement for the service crew.</upgradedescription.ita_requiredskilllevel>
+
 </infotexts>
