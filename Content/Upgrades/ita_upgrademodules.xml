@@ -150,17 +150,17 @@
   <UpgradeModule identifier="ita_deteriorationdelay" maxlevel="3" categories="machinery,electronics">
     <Price baseprice="5500" increaselow="+30%" increasehigh="+30%"/>
     <Repairable mindeteriorationdelay="+15%" maxdeteriorationdelay="+15%"/>
-    <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="256,896,128,128" origin="0.5,0.5"/>
+    <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_UpgradeIcons.png" sourcerect="128,128,128,128" origin="0.5,0.5"/>
   </UpgradeModule>
   <UpgradeModule identifier="ita_lowskillfixduration" maxlevel="3" categories="machinery,electronics">
     <Price baseprice="2200" increaselow="+85%" increasehigh="+85%"/>
     <Repairable fixdurationlowskill="-15%" fixdurationhighskill="-5%"/>
-    <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_UpgradeIcons.png" sourcerect="128,128,128,128" origin="0.5,0.5"/>
+    <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="384,896,128,128" origin="0.5,0.5"/>
   </UpgradeModule>
   <UpgradeModule identifier="ita_requiredskilllevel" maxlevel="1" categories="electronics,pumps,engines">
     <Price baseprice="4700" increaselow="+0%" increasehigh="+0%"/>
     <Repairable skillrequirementmultiplier="-30%"/>
-    <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="384,896,128,128" origin="0.5,0.5"/>
+    <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="256,896,128,128" origin="0.5,0.5"/>
   </UpgradeModule>
   
 </UpgradeModules>

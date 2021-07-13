@@ -710,4 +710,59 @@
 	<entityname.ita_alienhatch_red>Люк Древних - Красный</entityname.ita_alienhatch_red>
 	
 	<locationchange.cave.changeto.mine>Колонисты с ближайших аванпостов основали новую шахту в пещере [previousname].</locationchange.cave.changeto.mine>
+
+	<entityname.ita_atm>Банкомат</entityname.ita_atm>
+	<entitydescription.ita_atm>Аппарат для выдачи и приёма денег.</entitydescription.ita_atm>
+	<eventtext.atm.1>Снимите или внесите наличные.</eventtext.atm.1>
+	<eventtext.atm.2>На вашем счете недостаточно денег.</eventtext.atm.2>
+	<eventtext.atm.3>Внесение имеющихся денег.</eventtext.atm.3>
+	<eventtext.atm.4>Только капитаны могут снять наличность со счета.</eventtext.atm.4>
+	<eventtext.atm.5>Отойти.</eventtext.atm.5>
+
+    <upgradecategory.sonar>Сонар</upgradecategory.sonar>
+    <upgradecategory.weaponry>Вооружение</upgradecategory.weaponry>
+    <upgradecategory.dischargecoils>Разрядные катшуки</upgradecategory.dischargecoils>
+    <upgradecategory.machinery>Механизмы</upgradecategory.machinery>
+    <upgradecategory.electronics>Электроника</upgradecategory.electronics>
+    <upgradename.ita_wallhealth>Укрепление корпуса</upgradename.ita_wallhealth>
+    <upgradedescription.ita_wallhealth>Повышает прочность корпуса подводной лодки. Обшивка более устойчива к повреждениям.</upgradedescription.ita_wallhealth>
+    <upgradename.ita_wallstrength>Усиление опорных конструкций</upgradename.ita_wallstrength>
+    <upgradedescription.ita_wallstrength>Позволяет подлодке погружаться глубже без риска повреждений от высокого давления.</upgradedescription.ita_wallstrength>
+    <upgradename.ita_reactoroutput>Реструктуризация активной зоны реактора</upgradename.ita_reactoroutput>
+    <upgradedescription.ita_reactoroutput>Увеличивает выходную мощность реактора за счет увеличения активной зоны, незначительное увеличение расхода топлива и снижаение стабильности реактора.</upgradedescription.ita_reactoroutput>
+    <upgradename.ita_fuelconsumption>Топливная эффективность</upgradename.ita_fuelconsumption>
+    <upgradedescription.ita_fuelconsumption>Снижается потребление топлива. Продвинутые системы требуют большей квалификации от экипажа.</upgradedescription.ita_fuelconsumption>
+    <upgradename.ita_batterycapacity>Увеличенная емкость батарей</upgradename.ita_batterycapacity>
+    <upgradedescription.ita_batterycapacity>Увеличивается максимальная емкость энергохранилища за счет снижения скорости перезарядки.</upgradedescription.ita_batterycapacity>
+    <upgradename.ita_supercapacitorcapacity>Увеличенная емкость суперконденсаторов</upgradename.ita_supercapacitorcapacity>
+    <upgradedescription.ita_supercapacitorcapacity>Увеличивается максимальная емкость энергохранилища за счет снижения скорости перезарядки.</upgradedescription.ita_supercapacitorcapacity>
+    <upgradename.ita_pumpflow>Быстрые насосы</upgradename.ita_pumpflow>
+    <upgradedescription.ita_pumpflow>Увеличивается скорость, скорость с которой вода перекачивается. Разгон системы сокращает срок службы оборудования, усложняет ремонт и увеличивает потребление энергии.</upgradedescription.ita_pumpflow>
+    <upgradename.ita_engineforce>Мощность двигателя</upgradename.ita_engineforce>
+    <upgradedescription.ita_engineforce>Увеличивается максимальная скорость. Разгон системы сокращает срок службы оборудования, усложняет ремонт и увеличивает потребление энергии.</upgradedescription.ita_engineforce>
+    <upgradename.ita_sonarrange>Сверхчувствительный Сонар</upgradename.ita_sonarrange>
+    <upgradedescription.ita_sonarrange>Увеличивает дальность обзора сонарных систем. Энергопотребление модифицированной системы сильно возрастает.</upgradedescription.ita_sonarrange>
+    <upgradename.ita_weaponryrotation>Быстрые Сервомоторы</upgradename.ita_weaponryrotation>
+    <upgradedescription.ita_weaponryrotation>Повышается скорость вращения всех пушек и прожекторов.</upgradedescription.ita_weaponryrotation>
+    <upgradename.ita_turretoffset>Улучшенные перископы</upgradename.ita_turretoffset>
+    <upgradedescription.ita_turretoffset>Повышается диапазон видимости для всех оптических систем.</upgradedescription.ita_turretoffset>
+    <upgradename.ita_turretfirerate>Стабилизация Энергоподачи</upgradename.ita_turretfirerate>
+    <upgradedescription.ita_turretfirerate>Увеличивает скорострельность орудий. Энергопотребление разогнанной системы немного увеличивается.</upgradedescription.ita_turretfirerate>
+    <upgradename.ita_coilrange>Усилитель разрядных катушек</upgradename.ita_coilrange>
+    <upgradedescription.ita_coilrange>Увеличивает дальность действия разрядных катушек. Энергопотребление разогнанной системы немного увеличивается.</upgradedescription.ita_coilrange>
+    <upgradename.ita_oxygengeneration>Эффективность генератора кислорода</upgradename.ita_oxygengeneration>
+    <upgradedescription.ita_oxygengeneration>Увеличивает количество сгенерированного кислорода. Продвинутые системы усложняют ремонт.</upgradedescription.ita_oxygengeneration>
+    <upgradename.ita_fabricationspeed>Ускоренное производство</upgradename.ita_fabricationspeed>
+    <upgradedescription.ita_fabricationspeed>Уменьшается время, требуемое для производства предметов. Энергопотребление разогнанной системы умеренно увеличивается.</upgradedescription.ita_fabricationspeed>
+    <upgradename.ita_deconstructiontime>Ускоренная переработка</upgradename.ita_deconstructiontime>
+    <upgradedescription.ita_deconstructiontime>Переработка предметов проходит быстрее. Энергопотребление разогнанной системы умеренно увеличивается.</upgradedescription.ita_deconstructiontime>
+    <upgradename.ita_deteriorationspeed>Качество превыше всего</upgradename.ita_deteriorationspeed>
+    <upgradedescription.ita_deteriorationspeed>Увеличивает время до полного износа поврежденного оборудования.</upgradedescription.ita_deteriorationspeed>
+    <upgradename.ita_deteriorationdelay>Стандартизация системы</upgradename.ita_deteriorationdelay>
+    <upgradedescription.ita_deteriorationdelay>Переоборудование систем по последним стандартам Коалиции Европы, увеличение срока их службы.</upgradedescription.ita_deteriorationdelay>
+    <upgradename.ita_lowskillfixduration>Оптимизация системы</upgradename.ita_lowskillfixduration>
+    <upgradedescription.ita_lowskillfixduration>Уменьшает время, необходимое для ремонта оборудования.</upgradedescription.ita_lowskillfixduration>
+    <upgradename.ita_requiredskilllevel>Унификация система</upgradename.ita_requiredskilllevel>
+    <upgradedescription.ita_requiredskilllevel>Унификация запасных частей снижает требования к квалификации обслуживающего экипажа.</upgradedescription.ita_requiredskilllevel>
+
 </infotexts>
