@@ -1,6 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Override>
 	<Missions>
+	
+		<PirateMission name="Hijacking Separatist Cargo Sub"
+    type="Pirate"
+    identifier="ita_coa1"
+    tags="coa_hijack,coa"
+    description="Eliminate the hostile crew, capture the enemy ship and deliver it back to the outpost."
+    difficulty="4"
+    sonarlabel="Enemy sighting"
+    commonness="50"
+    reward="4500"
+    successmessage="You've brought back the enemy submarine!"
+    addedmissiondifficultyperplayer="15">
+	<message header="Enemy submarine detected!" text="" />
+	<message header="Submarine captured!" text="Dock your main sub the outpost to claim your reward." />
+			<Reputation identifier="coalition" amount="10" />
+			<SubmarineTypes>
+				<Submarine path="Mods/IntoTheAbyss/Content/Subs/ita_sub_sepcargo1.sub"/>
+			</SubmarineTypes>
+			<Characters>
+				<Character typeidentifier="piratecaptain" minamount="1" maxamount="1"/>
+				<Character typeidentifier="piratesecurity1" minamount="1" maxamount="1" />
+				<Character typeidentifier="piratesecurity2" minamount="1" maxamount="1" />
+				<Character typeidentifier="piratesecurity3" minamount="1" maxamount="1" />
+				<Character typeidentifier="piratesecurity4" minamount="1" maxamount="1" />
+				<Character typeidentifier="piratemechanic1" minamount="1" maxamount="1" />
+				<Character typeidentifier="piratemechanic2" minamount="1" maxamount="1" />
+				<Character typeidentifier="ghost" minamount="1" maxamount="1" />
+			</Characters>
+			<CharacterTypes>
+				<CharacterType typeidentifier="ghost">
+					<Character identifier="ita_ghost1" from="ita_separatists" preferreddifficulty="50" />
+				</CharacterType>
+				<CharacterType typeidentifier="piratecaptain">
+					<Character identifier="captain" from="ita_separatists" preferreddifficulty="50" iscommander="true" />
+				</CharacterType>
+				<CharacterType typeidentifier="piratesecurity1">
+					<Character identifier="securityofficer" from="ita_separatists" preferreddifficulty="60"/>
+				</CharacterType>
+				<CharacterType typeidentifier="piratesecurity2">
+					<Character identifier="securityofficer" from="ita_separatists" preferreddifficulty="60"/>
+				</CharacterType>
+				<CharacterType typeidentifier="piratesecurity3">
+					<Character identifier="securityofficer" from="ita_separatists" preferreddifficulty="60"/>
+				</CharacterType>
+				<CharacterType typeidentifier="piratesecurity4">
+					<Character identifier="securityofficer" from="ita_separatists" preferreddifficulty="60"/>
+				</CharacterType>
+				<CharacterType typeidentifier="piratemechanic1">
+					<Character identifier="mechanic" from="ita_separatists" preferreddifficulty="40"/>
+				</CharacterType>
+				<CharacterType typeidentifier="piratemechanic2">
+					<Character identifier="mechanic" from="ita_separatists" preferreddifficulty="40"/>
+				</CharacterType>
+			</CharacterTypes>
+			<Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="243,146,55"/>
+			<LocationType from="City" to="City" />
+			<LocationType from="City" to="Outpost" />
+			<LocationType from="City" to="Military" />
+			<LocationType from="City" to="Research" />
+			<LocationType from="City" to="Mine" />
+			<LocationType from="City" to="None" />
+			<LocationType from="Military" to="None"/>
+			<LocationType from="Military" to="City"/>
+			<LocationType from="Military" to="Outpost"/>
+			<LocationType from="Military" to="Military"/>
+			<LocationType from="Military" to="Research"/>
+			<LocationType from="Military" to="Mine"/>
+			<LocationType from="Military" to="Lair"/>
+		</PirateMission>
+	
 		<SalvageMission name="Wreck salvage" identifier="salvagewreck1" tags="salvage,salvagewreck,ita_wreck1,city1" type="Salvage" description="Wreck salvage mission description goes here" commonness="20" reward="2100" achievementidentifier="salvagewreckmission" sonarlabel="Wreck" failuremessage="Salvaging the wreck failed" successmessage="Mission successful" spawntype="wreck" showmessagewhenpickedup="true" itemidentifier="handheldterminal" containertag="locker">
 			<Reputation identifier="location" amount="5" />
 			<Reputation identifier="coalition" amount="5" />
@@ -241,6 +311,19 @@
 			<LocationType from="Outpost" to="City"/>
 			<LocationType from="Outpost" to="Outpost"/>
 			<LocationType from="Outpost" to="City"/>
+		</CargoMission>
+		
+		<CargoMission name="Large Cargo Haul" identifier="ita_uld1" tags="independent1,uld" type="Cargo" description="" commonness="7" reward="2000" achievementidentifier="cargomission" successmessage="">
+			<Items>
+				<Item identifier="ita_mcrate_uld1" reward="200" maxcount="40"/>
+			</Items>
+			<Reputation identifier="location" amount="10" />
+			<Icon texture="Mods/IntoTheAbyss/Content/Sprites/ita_missionicon_egg1.png" sourcerect="0,0,233,233" color="243,146,55"/>
+			<LocationType from="City" to="City"/>
+			<LocationType from="City" to="Outpost"/>
+			<LocationType from="City" to="Military"/>
+			<LocationType from="City" to="Research"/>
+			<LocationType from="City" to="Mine"/>
 		</CargoMission>
 		<!--LARGE MONSTERS-->
 		<MonsterMission name="" identifier="killwatcher" tags="killmonster,killwatcher,killmonsterrare,ita_monsterlarge" type="Monster" description="A particularly aggressive Watcher has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to those who kill the creature and its minions." commonness="25" reward="4500" sonarlabel="" maxsonarmarkerdistance="10000" successmessage="">
@@ -1027,7 +1110,7 @@
 			<LocationType from="City" to="Mine" />
 		</EscortMission>
 
-		<PirateMission name="Pirate Vessel"
+		<!--<PirateMission name="Pirate Vessel"
     type="Pirate"
     identifier="pirate1"
     tags="piratehumpback"
@@ -1088,7 +1171,7 @@
 			<LocationType from="Military" to="Mine"/>
 			<LocationType from="Military" to="Lair"/>
 		</PirateMission>
-
+-->
 		<EscortMission name="Stowaway Transport"
     identifier="stowawayescort1"
     tags="escortstowaway"

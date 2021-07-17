@@ -841,8 +841,101 @@
 			</ItemSet>
 		</npc>
 	</npcset>
-	
+		<!--SEPARATISTS-->
 	<npcset identifier="ita_separatists">
+	<npc identifier="captain" job="captain" spawnpointtags="captain" healthmultiplier="0.8" behavior="Passive" aimspeed="0.8" aimaccuracy="0.8" reportrange="750">
+			<ItemSet>
+				<Item identifier="captainsuniform2" equip="true" />
+				<Item identifier="idcard" equip="true" tags="id_cardsep"/>
+				<Item identifier="captainscap2" equip="true" />
+				<Item identifier="headset" equip="true" showpreview="false">
+					<Item identifier="batterycell" showpreview="false" />
+				</Item>
+				<Item identifier="ita_cardsep2" tags="id_cardsep,idcard,sepcard"/>
+				<Item identifier="revolver">
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+					<Item identifier="revolverround"/>
+				</Item>
+				<Item identifier="divingmask">
+					<Item identifier="oxygentank" />
+				</Item> 
+			</ItemSet>
+		</npc>
+	<npc identifier="mechanic" job="mechanic" commonness="1" spawnpointtags="security" healthmultiplier="1" behavior="Passive" aimspeed="0.8" aimaccuracy="0.8" reportrange="750">
+			<ItemSet commonness="1">
+        <Item identifier="baseballcap" equip="true"/>
+        <Item identifier="bluejumpsuit1" equip="true"/>
+		<Item identifier="idcard" equip="true" tags="id_cardsep"/>
+		<Item identifier="ita_cardsep2" tags="id_cardsep,idcard"/>
+        <Item identifier="wrench" equip="true"/>
+		<Item identifier="headset" equip="true" showpreview="false">
+			<Item identifier="batterycell" showpreview="false" />
+		</Item>
+        <Item identifier="screwdriver" equip="true"/>
+        <Item identifier="revolver" equip="false">
+          <Item identifier="revolverround"/>
+          <Item identifier="revolverround"/>
+          <Item identifier="revolverround"/>
+          <Item identifier="revolverround"/>
+          <Item identifier="revolverround"/>
+          <Item identifier="revolverround"/>
+        </Item>
+        <Item identifier="weldingtool" equip="false">
+          <Item identifier="weldingfueltank" />
+        </Item>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item> 
+      </ItemSet>
+		</npc>
+	<npc identifier="securityofficer" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol" aimspeed="0.8" aimaccuracy="0.8" reportrange="750">
+			<ItemSet>
+				<Item identifier="securitypatrolclothes" equip="true" />
+				<Item identifier="idcard" equip="true" tags="id_cardsep"/>
+				<Item identifier="ita_cardsep2" tags="id_cardsep,idcard"/>
+				<Item identifier="smg">
+					<Item identifier="smgmagazine" />
+				</Item>
+				<Item identifier="smgmagazine" />
+				<Item identifier="smgmagazine" />
+				<Item identifier="headset" equip="true" showpreview="false">
+					<Item identifier="batterycell" showpreview="false" />
+				</Item>
+				<Item identifier="divingknife" />
+				<Item identifier="handcuffs"/>
+				<Item identifier="batterycell" />
+				<Item identifier="stunbaton">
+					<Item identifier="batterycell" />
+				</Item>
+				<Item identifier="bodyarmor" equip="true"/>
+				<Item identifier="ballistichelmet1" equip="true"/>
+				<Item identifier="divingmask">
+					<Item identifier="oxygentank" />
+				</Item> 
+			</ItemSet>
+		</npc>
+	<npc identifier="ita_ghost1" job="assistant" healthmultiplier="100.0" behavior="Passive" aimspeed="0.0" aimaccuracy="0.8" spawnpointtype="Cargo">
+		<Character name=" " speciesname="ghost" gender="male" race="White" headspriteid="1" hairindex="2" beardindex="0" moustacheindex="0" faceattachmentindex="0" personality="Fearful">
+			<job name="Assistant" identifier="assistant">
+          <skill identifier="electrical" level="5" />
+          <skill identifier="mechanical" level="5" />
+          <skill identifier="weapons" level="5" />
+          <skill identifier="medical" level="5" />
+          <skill identifier="helm" level="5" />
+        </job>
+			</Character>
+			<ItemSet>
+				<Item identifier="clowncostume" equip="true" />
+				<Item identifier="ita_sepcard1" />
+				<Item identifier="ita_cardsep2" equip="true"/>
+			</ItemSet>
+		</npc>
+	
+
 		<npc identifier="ita_guard1" job="securityofficer" spawnpointtags="security" healthmultiplier="1.0" behavior="Patrol">
 			<ItemSet>
 				<Item identifier="securitypatrolclothes" equip="true" />
@@ -967,7 +1060,7 @@
 			</ItemSet>
 		</npc>
 		<npc identifier="ita_hideout_repairnpc1" job="mechanic" commonness="1" spawnpointtags="hideout2" healthmultiplier="1" behavior="StayInHull">
-      <ItemSet commonness="1">
+			<ItemSet commonness="1">
         <Item identifier="baseballcap" equip="true"/>
         <Item identifier="bluejumpsuit1" equip="true"/>
         <Item identifier="ita_cardsep1_hideout" equip="false" tags="id_cardsep,idcard"/>
@@ -989,7 +1082,7 @@
           <Item identifier="oxygentank" />
         </Item> 
       </ItemSet>
-    </npc>
+		</npc>
 		<npc identifier="ita_hideout_repairnpc2" job="mechanic" commonness="1" spawnpointtags="hideout3" healthmultiplier="1" behavior="StayInHull">
       <ItemSet commonness="1">
         <Item identifier="toolbelt">
@@ -1029,8 +1122,7 @@
 				<Item identifier="antidama1"/>
 			</ItemSet>
 		</npc>
-
-
+		
 	</npcset>
 	
 	<npcset identifier="ita_abandonedoutpostnpcs">
