@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ItemAssembly name="oxygeniteshard90" description="" hideinmenus="false">
-  <Item name="" identifier="oxygeniteshard" ID="166" isoverride="true" rect="-15,1,30,27"  rotation="90" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="smallitem" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.2" hiddeningame="False">
-    <Holdable attached="True" holdpos="0,0" holdangle="0" swingamount="0,0" swingspeed="0" swingwhenholding="False" swingwhenaiming="False" swingwhenusing="False" pickingtime="5" canbepicked="False" allowingameediting="True" msg="ItemMsgForceOpenCrowbar">
-      <requireditem items="crowbar" type="Equipped" optional="false" ignoreineditor="false" />
+<ItemAssembly name="oxygeniteshard90" description="" hideinmenus="true">
+  <Item name="" identifier="oxygeniteshard" ID="2" rotation="90" isoverride="true" rect="-15,25,30,27" noninteractable="False" nonplayerteaminteractable="False" allowswapping="True" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" invulnerabletodamage="False" tags="smallitem" displaysidebysidewhenlinked="False" disallowedupgrades="" spritedepth="0.2" hiddeningame="False">
+    <Holdable attached="True" holdpos="0,0" holdangle="0" swingamount="0,0" swingspeed="0" swingwhenholding="False" swingwhenaiming="False" swingwhenusing="False" pickingtime="5" canbepicked="True" allowingameediting="True" msg="ItemMsgForceOpenCrowbar">
+      <requireditem items="crowbar" type="Equipped" optional="false" ignoreineditor="false" excludebroken="true" />
     </Holdable>
+    <RangedWeapon pickingtime="0" canbepicked="False" allowingameediting="True" msg="" />
+    <Projectile pickingtime="0" canbepicked="False" allowingameediting="True" msg="" />
+    <ItemContainer containablerestrictions="" autofill="False" pickingtime="0" canbepicked="False" allowingameediting="True" msg="" contained="" />
   </Item>
 </ItemAssembly>
