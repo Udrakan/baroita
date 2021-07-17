@@ -2994,7 +2994,7 @@
         <StatusEffect type="OnUse" target="This" condition="-100" disabledeltatime="true" setvalue="true" eventtag="statuseffecttarget">
           <Conditional condition="gt 1" target="this" />
           <sound file="Mods/IntoTheAbyss/Content/Sounds/ita_sound_papertear.ogg" type="OnUse" range="500.0" />
-          <TriggerEvent identifier="ita_hijack1" />
+          <TriggerEvent identifier="ita_missionevent_coa_hijack1" />
         </StatusEffect>
       </input>
     </ConnectionPanel>
