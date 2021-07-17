@@ -2,10 +2,10 @@
 <Override>
 <UpgradeModules>
   <!-- WALLS NOT IN USE-->
-  <UpgradeModule identifier="increasewallhealth" maxlevel="10" categories="">
+  <UpgradeModule identifier="increasewallhealth" maxlevel="0" categories="nothing">
     <Price baseprice="2000" increaselow="+15%" increasehigh="+25%"/>
     <Structure maxhealth="+10%" crushdepth="+5%"/>
-    <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="640,640,128,128" origin="0.5,0.5"/>
+    <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="640,640,2,2" origin="0.5,0.5"/>
   </UpgradeModule>
 
   <!-- TURRETs NOT IN USE-->

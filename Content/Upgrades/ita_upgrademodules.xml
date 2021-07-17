@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <UpgradeModules>
   <!-- Categories -->
-  <UpgradeCategory name="" identifier="sonar" items="sonarmonitor,navterminal"/>
-  <UpgradeCategory name="" identifier="weaponry" items="searchlight,turret"/>
-  <UpgradeCategory name="" identifier="dischargecoils" items="dischargecoil"/>
+  <UpgradeCategory identifier="sonar" items="sonarmonitor,navterminal"/>
+  <UpgradeCategory identifier="weaponry" items="searchlight,turret"/>
+  <UpgradeCategory identifier="dischargecoils" items="dischargecoil"/>
   <!--UpgradeCategory name="Doors" identifier="door" items="door,hatch"/-->
-  <UpgradeCategory name="" identifier="machinery" items="pump,engine,reactor,fabricator,workbench,medicalfabricator,deconstructor,turretammosource"/>
-  <UpgradeCategory name="" identifier="electronics" items="junctionbox,battery,supercapacitor,sonarmonitor,statusmonitor,navterminal"/>
+  <UpgradeCategory identifier="machinery" items="pump,engine,reactor,fabricator,workbench,medicalfabricator,deconstructor,turretammosource"/>
+  <UpgradeCategory identifier="electronics" items="junctionbox,battery,supercapacitor,sonarmonitor,statusmonitor,navterminal"/>
+  <UpgradeCategory name="ᚱ" identifier="nothing" items="nothing"/>
 
 
   <!-- WALLS -->
-  <UpgradeModule name="" identifier="ita_wallhealth" maxlevel="6" categories="walls">
+  <UpgradeModule identifier="ita_wallhealth" maxlevel="6" categories="walls">
     <Price baseprice="2800" increaselow="+55%" increasehigh="+95%"/>
     <Structure maxhealth="+15%"/>
     <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="640,640,128,128" origin="0.5,0.5"/>
   </UpgradeModule>
-  <UpgradeModule name="" identifier="ita_wallstrength" maxlevel="6" categories="walls">
+  <UpgradeModule identifier="ita_wallstrength" maxlevel="6" categories="walls">
     <Price baseprice="3300" increaselow="+0%" increasehigh="+0%"/>
     <Structure crushdepth="+8%"/>
     <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="0,896,128,128" origin="0.5,0.5"/>
@@ -31,13 +32,13 @@
 
 
   <!-- REACTOR -->
-  <UpgradeModule name="" identifier="ita_reactoroutput" maxlevel="10" categories="reactors" >
+  <UpgradeModule identifier="ita_reactoroutput" maxlevel="10" categories="reactors" >
     <Price baseprice="1400" increaselow="+25%" increasehigh="+135%"/>
     <Reactor maxpoweroutput="+12%" fuelconsumptionrate="+5%" firedelay="-6%" meltdowndelay="-6%"/>
     <Repairable deteriorationspeed="+3%"/>
     <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="384,640,128,128" origin="0.5,0.5"/>
   </UpgradeModule>
-  <UpgradeModule name="" identifier="ita_fuelconsumption" maxlevel="4" categories="reactors">
+  <UpgradeModule identifier="ita_fuelconsumption" maxlevel="4" categories="reactors">
     <Price baseprice="2850" increaselow="+60%" increasehigh="+120%"/>
     <Reactor fuelconsumptionrate="-20%"/>
     <Repairable skillrequirementmultiplier="+10%"/>
@@ -63,7 +64,7 @@
   </UpgradeModule>
 
   <!-- PUMP -->
-  <UpgradeModule name="" identifier="ita_pumpflow" maxlevel="5" categories="pumps">
+  <UpgradeModule identifier="ita_pumpflow" maxlevel="5" categories="pumps">
     <Price baseprice="2150" increaselow="+66%" increasehigh="+99%"/>
     <Pump maxflow="+15%" powerconsumption="+25%" />
     <Repairable deteriorationspeed="+33%" fixdurationlowskill="+25%" fixdurationhighskill="+15%"/>
@@ -72,7 +73,7 @@
 
 
   <!-- ENGINE -->
-  <UpgradeModule name="" identifier="ita_engineforce" maxlevel="5" categories="engines">
+  <UpgradeModule identifier="ita_engineforce" maxlevel="5" categories="engines">
     <Price baseprice="2650" increaselow="+35%" increasehigh="+80%"/>
     <Engine maxforce="+12%" powerconsumption="+15%"/>
     <Repairable deteriorationspeed="+33%" fixdurationlowskill="+25%" fixdurationhighskill="+15%"/>
@@ -81,7 +82,7 @@
 
 
   <!-- SONARS -->
-  <UpgradeModule name="" identifier="ita_sonarrange" maxlevel="4" categories="sonar">
+  <UpgradeModule identifier="ita_sonarrange" maxlevel="4" categories="sonar">
     <Price baseprice="3830" increaselow="+25%" increasehigh="+25%"/>
     <Sonar range="+15%" powerconsumption="+75%"/>
     <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_UpgradeIcons.png" sourcerect="0,0,128,128" origin="0.5,0.5"/>
@@ -89,18 +90,18 @@
 
 
   <!-- TURRET -->
-  <UpgradeModule name="" identifier="ita_weaponryrotation" maxlevel="5" categories="weaponry">
+  <UpgradeModule identifier="ita_weaponryrotation" maxlevel="5" categories="weaponry">
     <Price baseprice="2200" increaselow="+15%" increasehigh="+25%"/>
     <Turret rotationspeedlowskill="+12%" rotationspeedhighskill="+3%"/>
     <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="256,768,128,128" origin="0.5,0.5"/>
   </UpgradeModule>
-  <UpgradeModule name="" identifier="ita_turretoffset" maxlevel="3" categories="weaponry">
+  <UpgradeModule identifier="ita_turretoffset" maxlevel="3" categories="weaponry">
     <Price baseprice="2000" increaselow="+40%" increasehigh="+80%"/>
     <Item offsetonselectedmultiplier="+5%"/>
     <LightComponent range="+10%" powerconsumption="+70%"/>
     <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="384,768,128,128" origin="0.5,0.5"/>
   </UpgradeModule>
-  <UpgradeModule name="" identifier="ita_turretfirerate" maxlevel="3" categories="weaponry">
+  <UpgradeModule identifier="ita_turretfirerate" maxlevel="3" categories="weaponry">
     <Price baseprice="4400" increaselow="+20%" increasehigh="+20%"/>
     <Turret reload="-20%" powerconsumption="+15%"/>
     <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_UpgradeIcons.png" sourcerect="128,0,128,128" origin="0.5,0.5"/>
@@ -108,7 +109,7 @@
 
 
   <!-- DISCHARGE COILS -->
-  <UpgradeModule name="" identifier="ita_coilrange" maxlevel="3" categories="dischargecoils">
+  <UpgradeModule identifier="ita_coilrange" maxlevel="3" categories="dischargecoils">
     <Price baseprice="1780" increaselow="+80%" increasehigh="+120%"/>
     <ElectricalDischarger range="+15%" powerconsumption="+15%"/>
     <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_UpgradeIcons.png" sourcerect="256,0,128,128" origin="0.5,0.5"/>
@@ -116,7 +117,7 @@
 
 
   <!-- OXYGEN GENERATOR -->
-  <UpgradeModule name="" identifier="ita_oxygengeneration" maxlevel="3" categories="oxygengenerators">
+  <UpgradeModule identifier="ita_oxygengeneration" maxlevel="3" categories="oxygengenerators">
     <Price baseprice="3430" increaselow="+40%" increasehigh="+45%"/>
     <OxygenGenerator generatedamount="+18%"/>
     <Repairable deteriorationspeed="+33%" fixdurationlowskill="+25%" fixdurationhighskill="+15%"/>
@@ -125,7 +126,7 @@
 
 
   <!-- FABRICATOR -->
-  <UpgradeModule name="" identifier="ita_fabricationspeed" maxlevel="5" categories="fabricators">
+  <UpgradeModule identifier="ita_fabricationspeed" maxlevel="5" categories="fabricators">
     <Price baseprice="2550" increaselow="+50%" increasehigh="+50%"/>
     <Fabricator fabricationspeed="+15%" powerconsumption="+25%"/>
     <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="0,768,128,128" origin="0.5,0.5"/>
@@ -133,7 +134,7 @@
 
 
   <!-- DECONSTRUCTOR -->
-  <UpgradeModule name="" identifier="ita_deconstructiontime" maxlevel="3" categories="deconstructors">
+  <UpgradeModule identifier="ita_deconstructiontime" maxlevel="3" categories="deconstructors">
     <Price baseprice="1800" increaselow="+33%" increasehigh="+99%"/>
     <Deconstructor deconstructionspeed="+33%" powerconsumption="+25%"/>
     <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="768,640,128,128" origin="0.5,0.5"/>
@@ -141,25 +142,25 @@
 
 
   <!-- MACHINE REPAIRS -->
-  <UpgradeModule name="" identifier="ita_deteriorationspeed" maxlevel="1" categories="junctionboxes,pumps,engines,reactors">
+  <UpgradeModule identifier="ita_deteriorationspeed" maxlevel="1" categories="junctionboxes,pumps,engines,reactors">
     <Price baseprice="7500" increaselow="+0%" increasehigh="+0%"/>
     <Repairable deteriorationspeed="-33%"/>
     <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="0,896,128,128" origin="0.5,0.5"/>
   </UpgradeModule>
-  <UpgradeModule name="" identifier="ita_deteriorationdelay" maxlevel="3" categories="machinery,electronics">
+  <UpgradeModule identifier="ita_deteriorationdelay" maxlevel="3" categories="machinery,electronics">
     <Price baseprice="5500" increaselow="+30%" increasehigh="+30%"/>
     <Repairable mindeteriorationdelay="+15%" maxdeteriorationdelay="+15%"/>
-    <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="256,896,128,128" origin="0.5,0.5"/>
-  </UpgradeModule>
-  <UpgradeModule name="" identifier="ita_lowskillfixduration" maxlevel="3" categories="machinery,electronics">
-    <Price baseprice="2200" increaselow="+85%" increasehigh="+85%"/>
-    <Repairable fixdurationlowskill="-15%" fixdurationhighskill="-5%"/>
     <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_UpgradeIcons.png" sourcerect="128,128,128,128" origin="0.5,0.5"/>
   </UpgradeModule>
-  <UpgradeModule name="" identifier="ita_requiredskilllevel" maxlevel="1" categories="electronics,pumps,engines">
+  <UpgradeModule identifier="ita_lowskillfixduration" maxlevel="3" categories="machinery,electronics">
+    <Price baseprice="2200" increaselow="+85%" increasehigh="+85%"/>
+    <Repairable fixdurationlowskill="-15%" fixdurationhighskill="-5%"/>
+    <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="384,896,128,128" origin="0.5,0.5"/>
+  </UpgradeModule>
+  <UpgradeModule identifier="ita_requiredskilllevel" maxlevel="1" categories="electronics,pumps,engines">
     <Price baseprice="4700" increaselow="+0%" increasehigh="+0%"/>
     <Repairable skillrequirementmultiplier="-30%"/>
-    <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="384,896,128,128" origin="0.5,0.5"/>
+    <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="256,896,128,128" origin="0.5,0.5"/>
   </UpgradeModule>
   
 </UpgradeModules>
