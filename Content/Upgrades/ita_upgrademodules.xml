@@ -17,8 +17,8 @@
     <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="640,640,128,128" origin="0.5,0.5"/>
   </UpgradeModule>
   <UpgradeModule identifier="ita_wallstrength" maxlevel="6" categories="walls">
-    <Price baseprice="3300" increaselow="+0%" increasehigh="+0%"/>
-    <Structure crushdepth="+8%"/>
+    <Price baseprice="3600" increaselow="+0%" increasehigh="+0%"/>
+    <Structure crushdepth="+10%"/>
     <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="0,896,128,128" origin="0.5,0.5"/>
   </UpgradeModule>
 
