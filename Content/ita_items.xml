@@ -214,7 +214,7 @@
       </StatusEffect>
     </ItemContainer>
   </Item>
-  <Item name="" identifier="ita_mcrate_raptor1" tags="captive" scale="0.6" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="false">
+  <Item name="" identifier="ita_mcrate_raptor1" tags="captive" scale="0.6" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_soft" hideinmenus="false">
     <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_sprites_campaign.png" depth="0.54" sourcerect="0,588,286,129" origin="0.5,0.5" />
     <Body width="286" height="129" density="8" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect">
@@ -415,9 +415,12 @@
       <Containable items="smallitem" />
     </ItemContainer>
   </Item>
-  <Item name="" identifier="guide1" category="Electrical" Tags="smallitem,logic" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_metal_light" isshootable="true">
-    <Upgrade gameversion="0.9.9000.0" scale="0.25" />
+  <Item name="" identifier="guide1" category="Electrical" Tags="smallitem,logic" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_soft">
+    <Upgrade gameversion="0.16.0.0" scale="0.25" />
     <Price baseprice="100" soldeverywhere="true" />
+    <Deconstruct time="5">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
     <InventoryIcon texture="Mods/IntoTheAbyss/Content/Sprites/ita_document_icon.png" sourcerect="0,0,52,64" />
     <Sprite texture="Mods/IntoTheAbyss/Content/Sprites/ita_document_icon.png" sourcerect="0,0,52,64" depth="0.55" origin="0.5,0.5" scale="10.5" />
     <Body width="52" height="64" density="10" />
@@ -464,10 +467,10 @@
       <StatusEffect type="Always" target="This" voltage="1" checkconditionalalways="true">
         <RequiredItem items="hot" type="Contained" excludebroken="false"/>
       </StatusEffect>
-      <StatusEffect type="Always" target="This" IsOn="true" setvalue="true">
+      <StatusEffect type="Always" target="This" IsOn="true" sonarsize="20" setvalue="true">
         <Conditional voltage="gt 0.7" />
       </StatusEffect>
-      <StatusEffect type="Always" target="This" IsOn="false" setvalue="true" checkconditionalalways="true">
+      <StatusEffect type="Always" target="This" IsOn="false" sonarsize="0" setvalue="true" checkconditionalalways="true">
         <Conditional voltage="lt 0.7" />
       </StatusEffect>
       <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" checkconditionalalways="true">
@@ -525,10 +528,10 @@
       <StatusEffect type="InWater" target="This" range="-1" delay="2" duration="1" stackable="false"/>
     </LightComponent>
     <Holdable slots="RightHand,LeftHand" holdpos="30,-15" handle1="0,0" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="Always" target="This" IsOn="true" tags="hot" voltage="1" setvalue="true">
+      <StatusEffect type="Always" target="This" IsOn="true" sonarsize="20" tags="hot" voltage="1" setvalue="true">
         <Conditional range="gt 50" targetitemcomponent="LightComponent" />
       </StatusEffect>
-      <StatusEffect type="Always" target="This" IsOn="false" tags="cold" setvalue="true">
+      <StatusEffect type="Always" target="This" IsOn="false" sonarsize="0" tags="cold" setvalue="true">
         <Conditional range="lt 50" targetitemcomponent="LightComponent" />
       </StatusEffect>
       <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" allowwhenbroken="true" checkconditionalalways="true">
@@ -600,12 +603,12 @@
 			<StatusEffect type="InWater" target="This" range="-1" delay="2" duration="1" stackable="false" allowwhenbroken="true" />
 		</LightComponent>
 		<Holdable slots="RightHand,LeftHand" holdpos="30,-15" handle1="0,0" msg="ItemMsgPickUpSelect">
-			<StatusEffect type="Always" target="This" IsOn="true" tags="hot" voltage="1" setvalue="true" allowwhenbroken="true">
-				<Conditional range="gt 50" targetitemcomponent="LightComponent" />
-			</StatusEffect>
-			<StatusEffect type="Always" target="This" IsOn="false" tags="cold" setvalue="true" allowwhenbroken="true">
-        <Conditional range="lt 50" targetitemcomponent="LightComponent"/>
-			</StatusEffect>
+      <StatusEffect type="Always" target="This" IsOn="true" sonarsize="20" tags="hot" voltage="1" setvalue="true">
+        <Conditional range="gt 50" targetitemcomponent="LightComponent" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" IsOn="false" sonarsize="0" tags="cold" setvalue="true">
+        <Conditional range="lt 50" targetitemcomponent="LightComponent" />
+      </StatusEffect>
       <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" allowwhenbroken="true" checkconditionalalways="true">
         <Conditional hastag="reactor" targetcontainer="true" />
       </StatusEffect>
@@ -674,12 +677,12 @@
 			<StatusEffect type="InWater" target="This" range="-1" delay="2" duration="1" stackable="false" allowwhenbroken="true" />
 		</LightComponent>
 		<Holdable slots="RightHand,LeftHand" holdpos="30,-15" handle1="0,0" msg="ItemMsgPickUpSelect">
-			<StatusEffect type="Always" target="This" IsOn="true" tags="hot" voltage="1" setvalue="true" allowwhenbroken="true">
-				<Conditional range="gt 50" targetitemcomponent="LightComponent" />
-			</StatusEffect>
-			<StatusEffect type="Always" target="This" IsOn="false" tags="cold" setvalue="true" allowwhenbroken="true">
-        <Conditional range="lt 50" targetitemcomponent="LightComponent"/>
-			</StatusEffect>
+      <StatusEffect type="Always" target="This" IsOn="true" sonarsize="20" tags="hot" voltage="1" setvalue="true">
+        <Conditional range="gt 50" targetitemcomponent="LightComponent" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" IsOn="false" sonarsize="0" tags="cold" setvalue="true">
+        <Conditional range="lt 50" targetitemcomponent="LightComponent" />
+      </StatusEffect>
       <StatusEffect type="OnContained" target="This" scale="0.5" setvalue="true" allowwhenbroken="true" checkconditionalalways="true">
         <Conditional hastag="reactor" targetcontainer="true" />
       </StatusEffect>
@@ -729,27 +732,35 @@
   </Override>
   <!--Minerals-->
   <Override>
-    <Item name="" identifier="uraniumore" category="Material" maxstacksize="8" Tags="smallitem,ore" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="locker" />
+    <Item name="" identifier="uraniumore" category="Material" Tags="smallitem,ore" maxstacksize="8" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="mineralcontainer" spawnprobability="0.1" />
-      <Price baseprice="840" soldeverywhere="false">
+      <PreferredContainer secondary="locker" />
+      <Price baseprice="1640" soldeverywhere="false">
         <Price locationtype="outpost" multiplier="1.1" sold="false" />
         <Price locationtype="city" multiplier="1.25" sold="false" />
         <Price locationtype="research" multiplier="1" sold="false" />
         <Price locationtype="military" multiplier="1" sold="false" />
         <Price locationtype="mine" multiplier="0.75" sold="false" />
       </Price>
-      <Deconstruct time="5">
+      <Deconstruct time="15">
         <Item identifier="uranium" />
         <Item identifier="uranium" />
         <Item identifier="uranium" />
       </Deconstruct>
-      <!-- TODO: sprite and inventory icon -->
-      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="455,580,60,60" origin="0.5,0.5" />
-      <ContainedSprite texture="Content/Items/Materials/MineralEnvironment.png" usewhenattached="true" depth="0.2" sourcerect="797,740,215,137" origin="0.5,0.5" />
-      <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.55" sourcerect="912,265,107,116" origin="0.5,0.5" />
+      <LightComponent lightcolor="83,160,100,225" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
+        <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+      </LightComponent>
+      <ContainedSprite texture="Content/Items/Materials/MineralEnvironment.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible"  depth="0.55" sourcerect="768,731,86,147" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.3" sourcerect="912,265,107,116" origin="0.5,0.5" />
+      <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.49" sourcerect="853,731,86,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+      <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.48" sourcerect="938,731,86,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+      <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.51" sourcerect="853,731,86,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+      <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.52" sourcerect="938,731,86,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+      <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.491" sourcerect="853,731,86,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+      <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.53" sourcerect="938,731,86,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+      <DecorativeSprite texture="Content/Items/Materials/Minerals.png" depth="0.4" sourcerect="810,893,173,131" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
       <Body radius="40" width="20" density="50" />
-      <LevelResource deattachduration="8">
+      <LevelResource deattachduration="8" randomoffsetfromwall="80">
         <Commonness commonness="0" />
         <Commonness commonness="0" leveltype="ridgebasic" />
         <Commonness commonness="0" leveltype="plateaubasic" />
@@ -761,53 +772,99 @@
     </Item>
   </Override>
   <Override>
-    <Item name="" identifier="thorianite" category="Material" maxstacksize="8" Tags="smallitem,ore" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="locker" />
+    <Item name="" identifier="thorianite" category="Material" Tags="smallitem,ore" maxstacksize="8" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="mineralcontainer" spawnprobability="0.1" />
-      <Price baseprice="3200" soldeverywhere="false">
+      <PreferredContainer secondary="locker" />
+      <Price baseprice="2800" soldeverywhere="false">
         <Price locationtype="outpost" multiplier="1.1" sold="false" />
         <Price locationtype="city" multiplier="1.25" sold="false" />
         <Price locationtype="research" multiplier="1" sold="false" />
         <Price locationtype="military" multiplier="1" sold="false" />
         <Price locationtype="mine" multiplier="0.75" sold="false" />
       </Price>
-      <Deconstruct time="5">
+      <Deconstruct time="15">
         <Item identifier="thorium" />
         <Item identifier="thorium" />
       </Deconstruct>
-      <!-- TODO: sprite and inventory icon -->
-      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="520,580,60,60" origin="0.5,0.5" />
-      <ContainedSprite texture="Content/Items/Materials/MineralEnvironment.png" usewhenattached="true" depth="0.2" sourcerect="20,875,224,147" origin="0.5,0.5" />
-      <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.55" sourcerect="14,393,111,114" origin="0.5,0.5" />
+      <LightComponent lightcolor="160,175,187,225" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
+        <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+      </LightComponent>
+      <ContainedSprite texture="Content/Items/Materials/MineralEnvironment.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible"  depth="0.55" sourcerect="85,877,88,147" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.3" sourcerect="14,393,111,114" origin="0.5,0.5" />
+      <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.49" sourcerect="0,877,86,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+      <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.48" sourcerect="172,877,84,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+      <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.51" sourcerect="0,877,86,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+      <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.52" sourcerect="172,877,84,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+      <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.491" sourcerect="0,877,86,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+      <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.53" sourcerect="172,877,84,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+      <DecorativeSprite texture="Content/Items/Materials/Minerals.png" depth="0.4" sourcerect="810,893,173,131" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
       <Body radius="40" width="20" density="50" />
-      <LevelResource deattachduration="8">
+      <LevelResource deattachduration="8" randomoffsetfromwall="80">
         <Commonness commonness="0" />
         <Commonness commonness="0" leveltype="ridgebasic" />
         <Commonness commonness="0" leveltype="plateaubasic" />
         <Commonness commonness="0.25" leveltype="greatseabasic" />
-        <Commonness commonness="0.50" leveltype="wastesbasic" />
+        <Commonness commonness="0.55" leveltype="wastesbasic" />
         <RequiredItem items="cuttingequipment" type="Equipped" />
       </LevelResource>
       <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
     </Item>
   </Override>
+  <Override>
+  <Item name="" identifier="brockite" category="Material" Tags="smallitem,ore" maxstacksize="8" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="mineralcontainer" spawnprobability="0.2" />
+    <PreferredContainer secondary="locker" />
+    <Price baseprice="1150" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.1" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="0.75" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="phosphorus" />
+      <Item identifier="thorium" />
+    </Deconstruct>
+    <LightComponent lightcolor="178,108,109,225" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
+      <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+    </LightComponent>
+    <ContainedSprite texture="Content/Items/Materials/MineralEnvironment.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible"  depth="0.55" sourcerect="0,731,86,147" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.3" sourcerect="524,262,109,117" origin="0.5,0.5" />
+    <Body radius="40" width="20" density="50" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.49" sourcerect="85,731,85,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.48" sourcerect="172,731,84,147" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.51" sourcerect="85,731,85,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.52" sourcerect="172,731,84,147" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.491" sourcerect="85,731,85,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/MineralEnvironment.png" depth="0.53" sourcerect="172,731,84,147" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/Minerals.png" depth="0.4" sourcerect="810,893,173,131" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
+    <LevelResource deattachduration="8" randomoffsetfromwall="80">
+      <Commonness commonness="0" />
+      <Commonness commonness="0" leveltype="ridgebasic" />
+      <Commonness commonness="0" leveltype="plateaubasic" />
+      <Commonness commonness="0.60" leveltype="greatseabasic" />
+      <Commonness commonness="0.75" leveltype="wastesbasic" />
+      <RequiredItem items="cuttingequipment" type="Equipped" />
+    </LevelResource>
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
+  </Item>
+  </Override>    
   <!--Ores-->
   <Override>
-    <Item name="" identifier="uranium" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="storagecab" minamount="1" maxamount="2" spawnprobability="0.75" />
-      <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Item name="" identifier="uranium" category="Material" Tags="smallitem" maxstacksize="8" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="storagecab" minamount="1" maxamount="2" spawnprobability="0.35" />
+      <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.1" />
       <Price baseprice="780" soldeverywhere="false">
         <Price locationtype="outpost" multiplier="1.3" sold="false" />
         <Price locationtype="city" multiplier="1.25" sold="false" />
-        <Price locationtype="research" multiplier="1.1" sold="false" />
-        <Price locationtype="military" multiplier="1.1" minavailable="3" maxavailable="6" />
-        <Price locationtype="mine" multiplier="0.8" sold="true" minavailable="5" maxavailable="9" />
+        <Price locationtype="research" multiplier="1.2" sold="false" />
+        <Price locationtype="military" multiplier="1.2" minavailable="3" maxavailable="6" />
+        <Price locationtype="mine" multiplier="1" sold="true" minavailable="5" maxavailable="9" />
       </Price>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="898,192,61,63" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Materials/CraftingElements1.png" sourcerect="4,130,49,41" depth="0.55" origin="0.5,0.5" />
       <Body width="45" height="32" density="50" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-        <!-- Remove the item when fully used -->
         <StatusEffect type="OnBroken" target="This">
           <Remove />
         </StatusEffect>
@@ -815,21 +872,20 @@
     </Item>
   </Override>
   <Override>
-    <Item name="" identifier="thorium" category="Material" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="thorium" category="Material" Tags="smallitem" maxstacksize="8" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="storagecab" minamount="0" maxamount="1" spawnprobability="0.125" />
       <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
-      <Price baseprice="1400" soldeverywhere="false">
+      <Price baseprice="1200" soldeverywhere="false">
         <Price locationtype="outpost" multiplier="1.3" sold="false" />
         <Price locationtype="city" multiplier="1.25" sold="false" />
-        <Price locationtype="research" multiplier="1.1" sold="false" />
-        <Price locationtype="military" multiplier="1.1" sold="false" />
-        <Price locationtype="mine" multiplier="0.8" sold="true" minavailable="3" maxavailable="6" />
+        <Price locationtype="research" multiplier="1.2" sold="false" />
+        <Price locationtype="military" multiplier="1.2" sold="false" />
+        <Price locationtype="mine" multiplier="1" sold="true" minavailable="3" maxavailable="6" />
       </Price>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,192,64,64" />
       <Sprite texture="Content/Items/Materials/CraftingElements1.png" sourcerect="54,131,46,39" depth="0.55" origin="0.5,0.5" />
       <Body width="45" height="30" density="50" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-        <!-- Remove the item when fully used -->
         <StatusEffect type="OnBroken" target="This">
           <Remove />
         </StatusEffect>
@@ -1843,16 +1899,15 @@
   </Override>
   <!--Cash-->
   <Item name="" identifier="ita_wallet1" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem" scale="0.1" impactsoundtag="impact_soft">
-    <Price baseprice="35">
-      <Price locationtype="city" multiplier="1" sold="true" minavailable="20" maxavailable="20" />
-      <Price locationtype="research" multiplier="1" sold="true" minavailable="20" maxavailable="20" />
-      <Price locationtype="military" multiplier="1" sold="true" minavailable="20" maxavailable="20" />
-      <Price locationtype="mine" multiplier="1" sold="true" minavailable="20" maxavailable="20" />
-      <Price locationtype="outpost" multiplier="1" sold="true" minavailable="20" maxavailable="20" />
+    <Price baseprice="45">
+      <Price locationtype="city" multiplier="1" sold="true" minavailable="8" maxavailable="16" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="true" minavailable="8" maxavailable="16" />
     </Price>
     <Deconstruct time="10">
       <Item identifier="organicfiber" />
-      <Item identifier="plastic" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="10">
       <RequiredSkill identifier="mechanical" level="10" />
@@ -3005,13 +3060,13 @@
       <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="1,497,238,396" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
       <LightComponent range="0.0" lightcolor="255,255,255,111" IsOn="true" castshadows="false" allowingameediting="false">
         <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="241,497,238,396" depth="0.1" origin="0.5,0.5" alpha="1.0" />
-        <Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_vending2.ogg" type="Always" loop="true" range="400" />
+        <Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_vending2.ogg" type="Always" loop="true" range="150" />
       </LightComponent>
       <ItemContainer hideitems="true" capacity="1" canbeselected="false" maxstacksize="1">
         <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
         <Containable items="ita_coin1" />
         <StatusEffect type="Always" target="Contained" stackable="false" disabledeltatime="true">
-          <Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_vending1.ogg" range="500" />
+          <Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_vending1.ogg" range="300" />
           <RequiredItem items="ita_coin1" type="Contained" />
           <Remove />
         </StatusEffect>
@@ -3028,13 +3083,13 @@
       <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="481,497,238,396" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
       <LightComponent range="0.0" lightcolor="255,255,255,111" IsOn="true" castshadows="false" allowingameediting="false">
         <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="721,497,238,396" depth="0.1" origin="0.5,0.5" alpha="1.0" />
-        <Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_vending2.ogg" type="Always" loop="true" range="400" />
+        <Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_vending2.ogg" type="Always" loop="true" range="150" />
       </LightComponent>
       <ItemContainer hideitems="true" capacity="1" canbeselected="false" maxstacksize="1">
         <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
         <Containable items="ita_coin1" />
         <StatusEffect type="Always" target="Contained" stackable="false" disabledeltatime="true">
-          <Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_vending1.ogg" range="500" />
+          <Sound file="Mods/IntoTheAbyss/Content/Sounds/ita_vending1.ogg" range="300" />
           <RequiredItem items="ita_coin1" type="Contained" />
           <Remove />
         </StatusEffect>
@@ -4146,7 +4201,7 @@
     <Body width="89" height="45" density="50" />
     <Holdable slots="Any" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name="" identifier="ita_ancientpiece" category="Alien" Tags="alien, smallitem" scale="0.5" impactsoundtag="impact_metal_heavy" description="">
+  <Item name="" identifier="ita_ancientpiece" category="Alien" Tags="alien,smallitem" scale="0.5" impactsoundtag="impact_metal_heavy" description="">
     <Price baseprice="900" soldeverywhere="false">
       <Price locationtype="city" multiplier="0.85" sold="false" />
       <Price locationtype="research" multiplier="1.3" sold="false" />
@@ -4161,42 +4216,44 @@
   </Item>
   <!--alienpistol-->
   <Override>
-    <Item name="" identifier="alienpistol" category="Equipment" tags="smallitem,weapon,alien" Scale="0.8" impactsoundtag="impact_metal_light">
-      <Price baseprice="1300" soldeverywhere="false">
-        <Price locationtype="city" multiplier="0.7" sold="false" />
-        <Price locationtype="research" multiplier="1.3" sold="false" />
-        <Price locationtype="military" multiplier="1.2" sold="false" />
-      </Price>
-      <PreferredContainer primary="wrecksecurearmcab,wreckshuttlecrate" minamount="0" maxamount="1" spawnprobability="0.05" />
-      <InventoryIcon texture="Mods/IntoTheAbyss/Content/Sprites/ita_sprites_alien.png" sourcerect="376,620,140,87" />
-      <Sprite texture="Content/Items/Alien/alientools.png" sourcerect="0,50,54,32" depth="0.55" />
-      <Body radius="15" width="15" density="50" />
-      <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="90,10" handle1="2,-7" msg="ItemMsgPickUpSelect">
-        <StatusEffect type="OnBroken" target="This" Condition="100" setvalue="true" delay="1" />
-      </Holdable>
-      <ItemContainer capacity="1" hideitems="true" itempos="20,-20" maxstacksize="1">
-        <Containable items="alienpowercell" />
-      </ItemContainer>
-      <RepairTool structurefixamount="-3.0" range="1000" barrelpos="25,5" combatpriority="30">
-        <sound file="Content/Items/Alien/AlienTurret1.ogg" type="OnUse" range="500.0" loop="false" />
-        <RequiredItems items="alienpowercell" type="Contained" />
-        <Fixable identifier="structure" />
-        <ParticleEmitter particle="plasma" particlespersecond="50" copyentityangle="true" />
-        <ParticleEmitterHitStructure particle="plasmaspark" particleamount="10" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800" />
-        <ParticleEmitterHitItem particle="plasmaspark" particleamount="10" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800" />
-        <ParticleEmitterHitStructure particle="plasmasmoke" particleamount="5" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20" />
-        <ParticleEmitterHitItem particle="plasmasmoke" particleamount="5" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
-        <ParticleEmitterHitCharacter particle="fleshsmoke" particleamount="5" anglemin="0" anglemax="360" velocitymin="0" velocitymax="20" />
-        <ParticleEmitterHitCharacter particle="plasmaspark" particleamount="10" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800" />
-        <StatusEffect type="OnUse" target="This" Condition="-100" disabledeltatime="true" />
-        <StatusEffect type="OnUse" target="Contained" Condition="-5.0" disabledeltatime="true" />
-        <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
-          <Explosion range="150.0" force="3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0">
-            <Affliction identifier="psychosis" strength="2" />
-          </Explosion>
-          <Affliction identifier="ancientburn" amount="0.4" />
-        </StatusEffect>
-      </RepairTool>
+    <Item name="" identifier="alienpistol" category="Equipment" tags="smallitem,weapon,alien" Scale="0.8" HideConditionBar="true" impactsoundtag="impact_metal_light" >
+        <Price baseprice="1300" soldeverywhere="false">
+          <Price locationtype="city" multiplier="0.7" sold="false" />
+          <Price locationtype="research" multiplier="1.3" sold="false" />
+          <Price locationtype="military" multiplier="1.2" sold="false" />
+        </Price>
+        <PreferredContainer primary="wrecksecurearmcab,wreckshuttlecrate" minamount="0" maxamount="1" spawnprobability="0.05" />
+        <InventoryIcon texture="Mods/IntoTheAbyss/Content/Sprites/ita_sprites_alien.png" sourcerect="376,620,140,87" />
+        <Sprite texture="Content/Items/Alien/alientools.png" sourcerect="0,50,54,32" depth="0.55" />
+        <Body radius="15" width="15" density="50" />
+        <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="90,10" handle1="2,-7" msg="" displaystatus="false">
+          <StatusEffect type="OnBroken" target="This" Condition="100" setvalue="true" delay="1" />
+        </Holdable>
+        <ItemContainer hideitems="true" capacity="1" maxstacksize="1" itempos="20,-20" drawinventory="false" canbeselected="false" containedstateindicatorstyle="battery" >
+          <Containable items="alienpowercell" />
+        </ItemContainer>
+        <RepairTool structurefixamount="-6" range="1000" barrelpos="25,5" combatpriority="30" >
+          <sound file="Content/Items/Alien/AlienTurret1.ogg" type="OnUse" range="500.0" loop="false" />
+          <RequiredItems items="alienpowercell" type="Contained" />
+          <Fixable identifier="structure" />
+            <ParticleEmitter particle="plasma" particlespersecond="50" copyentityangle="true" />
+            <ParticleEmitterHitStructure particle="plasmaspark" particleamount="10" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800" />
+            <ParticleEmitterHitItem particle="plasmaspark" particleamount="10" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800" />
+            <ParticleEmitterHitStructure particle="plasmasmoke" particleamount="5" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20" />
+            <ParticleEmitterHitItem particle="plasmasmoke" particleamount="5" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
+            <ParticleEmitterHitCharacter particle="fleshsmoke" particleamount="5" anglemin="0" anglemax="360" velocitymin="0" velocitymax="20" />
+            <ParticleEmitterHitCharacter particle="plasmaspark" particleamount="10" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800" />
+          <StatusEffect type="OnUse" target="This" Condition="-100" disabledeltatime="true" />
+          <StatusEffect type="OnUse" target="Contained" Condition="-5.0" disabledeltatime="true" />
+          <StatusEffect type="OnUse" targettype="UseTarget" targets="ductblock" Condition="-3600.0" Stuck="-3600.0"/>
+          <StatusEffect type="OnUse" targettype="UseTarget" targets="door" Condition="-1700.0" Stuck="-1700.0"/>
+          <StatusEffect type="OnUse" targettype="UseTarget" disabledeltatime="true" >
+            <Explosion range="150.0" force="6" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="8.0">
+              <Affliction identifier="psychosis" strength="1.5" />
+            </Explosion>
+            <Affliction identifier="ancientburn" amount="0.4" />
+          </StatusEffect>
+        </RepairTool>
     </Item>
   </Override>
   <!--ancientweapon-->
