@@ -173,7 +173,7 @@
         <itemassembly
           prefab="ita_entrance_shaft1a"
           alignment="Center"
-          type="Hatch" />
+          type="Hatch"/>
       </ChooseOne>
     </RoomType>
     <RoomType
@@ -407,7 +407,7 @@
           minroomsize="1200,1600"
           minoffset="0,0.1"
           maxoffset="0,0.5"
-          commonness="5" />
+          commonness="6" />
         <itemassembly
           prefab="alienpumpassembly1"
           alignment="Bottom"
