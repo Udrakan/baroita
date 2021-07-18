@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.14.6.0" steamworkshopid="2005463692" >
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.14.6.0" steamworkshopid="2005463692" installtime="1625249240">
   <Text file="Mods/IntoTheAbyss/Content/Texts/ita_English.xml" />
   <UIStyle file="Mods/IntoTheAbyss/Content/ita_style.xml" />
   <SkillSettings file="Mods/IntoTheAbyss/Content/ita_skillsettings.xml" />
@@ -102,6 +102,8 @@
   <ItemAssembly file="Mods/IntoTheAbyss/Content/Assemblies/ita_armory_bluechest2.xml" />
   <ItemAssembly file="Mods/IntoTheAbyss/Content/Assemblies/ita_armory_redchest1.xml" />
   <ItemAssembly file="Mods/IntoTheAbyss/Content/Assemblies/ita_armory_redchest2.xml" />
+  <ItemAssembly file="Mods/IntoTheAbyss/Content/Assemblies/ita_alienturret.xml" />
+  <ItemAssembly file="Mods/IntoTheAbyss/Content/Assemblies/ita_alienhatch3.xml" />
   <ItemAssembly file="Mods/IntoTheAbyss/Content/Assemblies/ita_vaults_1a.xml" />
   <ItemAssembly file="Mods/IntoTheAbyss/Content/Assemblies/ita_vaults_1b.xml" />
   <ItemAssembly file="Mods/IntoTheAbyss/Content/Assemblies/ita_genericb_trap1a.xml" />
@@ -183,7 +185,6 @@
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_city_shop_bar2.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_city_shop_petshop1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_military_engineering1.sub" />
-  <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_outpost_hab_dock2.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_MineTransition_1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_mine_1.sub" />
   <OutpostModule file="Mods/IntoTheAbyss/Content/Subs/ita_mine_2.sub" />

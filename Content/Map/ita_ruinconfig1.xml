@@ -231,6 +231,34 @@
           alignment="Center"
           type="Door"
           minroomsize="100,0" />
+        <itemassembly
+          prefab="aliendoorassembly2"
+          alignment="Center"
+          type="Door"
+          minroomsize="400,0" />
+        <itemassembly
+          prefab="aliendoorassembly5"
+          alignment="Center"
+          type="Door"
+          minroomsize="400,0" />
+        <itemassembly
+          prefab="alienhatchassembly"
+          alignment="Center"
+          type="Hatch"
+          minroomsize="0,400"
+          commonness="2"/>
+        <itemassembly
+          prefab="alienhatchassembly2"
+          alignment="Center"
+          type="Hatch"
+          minroomsize="0,600"
+          commonness="2"/>
+        <itemassembly
+          prefab="ita_alienhatch3"
+          alignment="Center"
+          type="Hatch"
+          minroomsize="0,100"
+          commonness="4"/>
         <item
           prefab="ita_corridor_trap1a"
           alignment="Center"
@@ -244,8 +272,8 @@
           prefab="ita_corridor_1b"
           alignment="Center"
           type="Door"
-          minroomsize="1100,0"
-          commonness="7" />
+          minroomsize="800,0"
+          commonness="6" />
         <item
           prefab="ita_corridor_1c"
           alignment="Center"
@@ -257,8 +285,8 @@
           alignment="Center"
           type="Door"
           minroomsize="250,0"
-          minoffset="-150,0"
-          maxoffset="-150,0"
+          minoffset="-200,0"
+          maxoffset="-200,0"
           commonness="10" />
       </ChooseOne>
     </RoomType>
@@ -344,8 +372,61 @@
           type="Prop"
           commonness="5" />
         <itemassembly
-          prefab="ita_genericb_house1"
+          prefab="aliengenericroomassembly4"
           alignment="Center"
+          type="Prop"
+          minroomsize="900,1000"
+          commonness="3" />
+        <itemassembly
+          prefab="aliengenericroomassembly5"
+          alignment="Bottom"
+          type="Prop"
+          minroomsize="800,900"
+          maxroomsize="10000,1000"
+          commonness="4" />
+        <itemassembly
+          prefab="aliengenericroomassembly7"
+          alignment="Center"
+          type="Prop"
+          minroomsize="1200,800"
+          minoffset="0,0.1"
+          maxoffset="0,0.5"
+          commonness="1" />
+        <itemassembly
+          prefab="aliengenericroomassembly8"
+          alignment="Center"
+          type="Prop"
+          minroomsize="800,800"
+          minoffset="0,0.1"
+          maxoffset="0,0.5"
+          commonness="3" />
+        <itemassembly
+          prefab="ita_alienturret"
+          alignment="Top,Right"
+          type="Prop"
+          minroomsize="1200,1600"
+          minoffset="0,0.1"
+          maxoffset="0,0.5"
+          commonness="5" />
+        <itemassembly
+          prefab="alienpumpassembly1"
+          alignment="Bottom"
+          type="Prop"
+          minamount="-2"
+          maxamount="1"
+          minroomsize="700,500"
+          commonness="3" />
+        <itemassembly
+          prefab="alienpumpassembly2"
+          alignment="Bottom"
+          type="Prop"
+          minamount="-2"
+          maxamount="1"
+          minroomsize="700,500"
+          commonness="3" />
+        <itemassembly
+          prefab="ita_genericb_house1"
+          alignment="Right,Center"
           minroomsize="600,650"
           type="Prop"
           commonness="1">
@@ -380,7 +461,7 @@
         </itemassembly>
         <itemassembly
           prefab="ita_genericb_house2"
-          alignment="Center"
+          alignment="Left,Center"
           minroomsize="600,650"
           type="Prop"
           commonness="1">
@@ -733,7 +814,7 @@
         <itemassembly
           prefab="ita_armory_blackchest1"
           alignment="Center"
-          minroomsize="400,400"
+          minroomsize="800,700"
           type="Prop"
           commonness="2">
           <item
@@ -761,10 +842,10 @@
         <itemassembly
           prefab="ita_armory_blackchest2"
           alignment="Left"
-          minroomsize="900,750"
+          minroomsize="1000,800"
           type="Prop"
-          minoffset="0,-30"
-          maxoffset="0,-30"
+          minoffset="100,-30"
+          maxoffset="100,-30"
           commonness="3">
           <item
             prefab="alientrinket1"
@@ -818,29 +899,25 @@
         </itemassembly>
         <itemassembly
           prefab="ita_armory_bluechest1"
-          alignment="Top,Center"
-          maxoffset="0.0,0.0"
+          alignment="Bottom,Center"
           minroomsize="700,900"
           type="Prop"
           commonness="2" />
         <itemassembly
           prefab="ita_armory_bluechest2"
           alignment="Center"
-          maxoffset="0.0,0.0"
           minroomsize="700,900"
           type="Prop"
           commonness="2" />
         <itemassembly
           prefab="ita_armory_redchest1"
           alignment="Center"
-          maxoffset="0.0,0.0"
           minroomsize="750,800"
           type="Prop"
           commonness="1" />
         <itemassembly
           prefab="ita_armory_redchest2"
           alignment="Center"
-          maxoffset="0.0,0.0"
           minroomsize="750,800"
           type="Prop"
           commonness="1" />

@@ -3640,7 +3640,7 @@
       <Conditional Charge="gt 1" targetitemcomponent="PowerContainer" />
     </DecorativeSprite>
     <LightComponent AllowInGameEditing="false" lightcolor="112,146,190,180" canbeselected="false" range="250.0" IsOn="true" />
-    <ItemContainer capacity="1" canbeselected="true" hideitems="false" itempos="100,-100" autointeractwithcontained="true">
+    <ItemContainer capacity="1" canbeselected="true" hideitems="false" itempos="100,-120" autointeractwithcontained="true">
       <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
       <Containable items="alientrinket1"></Containable>
     </ItemContainer>
@@ -3673,7 +3673,7 @@
       <Conditional Charge="gt 1" targetitemcomponent="PowerContainer" />
     </DecorativeSprite>
     <LightComponent AllowInGameEditing="false" lightcolor="112,146,190,180" canbeselected="false" range="250.0" IsOn="true" />
-    <ItemContainer capacity="1" canbeselected="true" hideitems="false" itempos="100,-100" autointeractwithcontained="true">
+    <ItemContainer capacity="1" canbeselected="true" hideitems="false" itempos="100,-120" autointeractwithcontained="true">
       <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
       <Containable items="alientrinket2"></Containable>
     </ItemContainer>
@@ -3706,7 +3706,7 @@
       <Conditional Charge="gt 1" targetitemcomponent="PowerContainer" />
     </DecorativeSprite>
     <LightComponent AllowInGameEditing="false" lightcolor="112,146,190,180" canbeselected="false" range="250.0" IsOn="true" />
-    <ItemContainer capacity="1" canbeselected="true" hideitems="false" itempos="100,-100" autointeractwithcontained="true">
+    <ItemContainer capacity="1" canbeselected="true" hideitems="false" itempos="100,-120" autointeractwithcontained="true">
       <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
       <Containable items="alientrinket3"></Containable>
     </ItemContainer>
